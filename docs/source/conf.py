@@ -2,12 +2,12 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'Manual de Integração do PNCP'
+copyright = '2026, Ministério da Gestão e Inovação em Serviços Públicos'
+author = 'COPNCP/CGGES/DELOG/SEGES/MGI'
 
-release = '0.1'
-version = '0.1.0'
+release = '2.3.10'
+version = '2.3.10'
 
 # -- General configuration
 
