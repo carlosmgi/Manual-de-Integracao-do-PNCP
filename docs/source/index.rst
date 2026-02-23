@@ -1,22 +1,18 @@
-Welcome to Lumache's documentation!
+Manual de Integração do PNCP
 ===================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
-
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+**Versão 2.3.9**
+Publicação: 06/01/26
 
 .. note::
 
-   This project is under active development.
+   Este documento contempla as orientações para realizar a integração de sistemas externos com as API REST do PNCP (Portal Nacional de Contratações Públicas).
 
-Contents
+Sumário
 --------
 
 .. toctree::
 
-   usage
-   api
+   Objetivo
+   Protocolo de Comunicação
+   Acesso ao PNCP
