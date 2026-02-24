@@ -52,6 +52,7 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
   alimentar o parâmetro {cnpj}, {anoCompra} e {sequencialCompra} na URL.
 
 .. list-table::
+   :width: 100
    :widths: 5 25 15 10 25
    :header-rows: 1
 
