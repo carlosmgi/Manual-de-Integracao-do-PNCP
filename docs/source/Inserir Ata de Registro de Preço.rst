@@ -9,33 +9,9 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
 **Endpoint**                                                   **Método HTTP**
 -------------------------------------------------------------  ----------------------------------------------------------------------
 /v1/orgaos/{cnpj}/compras/{anoCompra}/{sequencialCompra}/atas  POST      
-=============================================================  ====================================================================== 
+=============================================================  ======================================================================
 
-**Exemplo de Payload 1**
-
-.. code-block:: JSON
-
-    {
-        "numeroAtaRegistroPreco": "00001",
-        "anoAta": 2021,
-        "dataAssinatura": true,
-        "skills": ["Python", "Sphinx", "JSON"]
-    }
-
-**Exemplo de Payload 2**
-
-.. code-block:: JSON
-  
-    { 
-        "numeroAtaRegistroPreco": "00001",
-        "anoAta": 2021,
-        "dataAssinatura": "2021-07-21",
-        "dataVigenciaInicio": "2021-07-21",
-        "dataVigenciaFim": "2022-07-21",
-        "possibilidadeAdesao": true
-    }
-
-**Exemplo de Payload 3**
+**Exemplo de Payload**
 
 .. code-block:: JSON
   
