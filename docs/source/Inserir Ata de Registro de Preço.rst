@@ -52,7 +52,7 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
 Dados de Entrada
 ----------------
 .. list-table::
-   :widths: 5 25 15 10 45
+   :widths: 5 25 15 10 25
    :header-rows: 1
 
    * - Id
