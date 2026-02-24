@@ -1,9 +1,7 @@
 Inserir Ata de Registro de Preço
 ================================
-
-.. note::
   
-  Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a uma contratação. 
+**Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a uma contratação.**
 
 **Detalhes da Requisição**
 
@@ -46,3 +44,92 @@ Inserir Ata de Registro de Preço
     ] 
 
   } 
+
+**Dados de entrada** 
+
+.. note::
+  
+  alimentar o parâmetro {cnpj}, {anoCompra} e {sequencialCompra} na URL.
+  
+Dados de Entrada
+----------------
+.. list-table:: Dados de Entrada
+   :widths: 5 25 15 10 45
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Obrigatório
+     - Descrição
+   * - 1
+     - cnpji
+     - Texto (14)
+     - Sim
+     - Cnpji do órgão originário da contratação informado na inclusão (proprietário da contratação).
+   * - 2
+     - anoCompra
+     - Inteiro
+     - Sim
+     - Ano da contratação.
+   * - 3
+     - sequencialCompra
+     - Inteiro
+     - Sim
+     - Sequencial da contratação no PNCP; Número sequencial gerado no momento que a contratação foi inserida no PNCP.
+   * - 4
+     - numeroAtaRegistroPreco
+     - Texto (50)
+     - Sim
+     - Número da ata no sistema de origem.
+   * - 5
+     - anoAta
+     - Inteiro
+     - Sim
+     - Ano da ata.
+   * - 6
+     - dataAssinatura
+     - Data
+     - Sim
+     - Informar a data de assinatura da ata.
+   * - 7
+     - dataVigenciaInicio
+     - Data
+     - Sim
+     - Informar a data de início de vigência da ata.
+   * - 8
+     - dataVigenciaFim
+     - Data
+     - Sim
+     - Informar a data de fim de vigência da ata.
+   * - 9
+     - possibilidadeAdesao
+     - Booleano
+     - Sim
+     - Indicador se a Ata permite adesão de não participantes (False=Não / True=Sim).
+   * - 10
+     - Lista de Partes Envolvidas
+     - 
+     - Não
+     - Lista de partes envolvidas.
+   * - 10.1
+     - tipoParteEnvolvidaId
+     - Inteiro
+     - Não
+     - Código do Tipo de Parte Envolvida:
+       
+       * **Código 1** - Gerenciadora
+       * **Código 2** - Participante
+       * **Código 3** - Não Participante
+   * - 10.2
+     - cnpj
+     - Texto (14)
+     - Não
+     - CNPJ do órgão.
+   * - 10.3
+     - codigoUnidadeCompradora
+     - Texto (30)
+     - Não
+     - Código da Unidade Administrativa.
+
+---
