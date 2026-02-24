@@ -135,4 +135,40 @@ Data: 13/06/2025
 
 6.3.13. Consultar Itens de uma Contratação 
 
-6.3.14. Consultar Item de uma Contratação 
+6.3.14. Consultar Item de uma Contratação
+
+Versão: 2.3.6
+++++++++++++++
+
+Data: 13/05/2025
+
+.. note::
+ Funcionalidade que possibilita recepcionar e exibir a origem dos recursos utilizados em contratações públicas, sendo eles municipais, estaduais, federais ou oriundos de entidades internacionais, conforme a Lei nº 14.133/2021. 
+
+**5.25 Fonte Orçamentária**
+
+5.25.1 Consultar Fonte Orçamentária por Código 
+
+5.25.2 Consultar Fontes Orçamentárias 
+
+**5.26. Regra de conformidade entre Modalidade de Contratação e Fonte Orçamentária**
+
+5.26.1. Consultar conformidade entre Modalidade de Contratação e Fonte Orçamentária por Código 
+
+5.26.2. Consultar conformidade entre Modalidade de Contratação e Fonte Orçamentaria 
+
+**6.2.4. Incluir Unidade**
+
+6.2.5. Atualizar Unidade 
+
+**6.3.1. Inserir Contratação**
+
+6.3.5. Consultar uma Contratação 
+
+**6.3.24. Inserir Fonte Orçamentária da Contratação**
+
+6.3.25. Excluir Fonte Orçamentária da Contratação 
+
+6.3.26. Consultar Fonte Orçamentária da Contratação 
+
+6.3.27. Consultar Todas as Fontes Orçamentárias da Contratação
