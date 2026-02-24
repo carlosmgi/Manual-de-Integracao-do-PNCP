@@ -116,3 +116,11 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
      - Não
      - Código da Unidade Administrativa.
   
+.. csv-table:: Dados de Entrada
+   :header: "Treat", "Quantity", "Description"
+   :widths: 15, 10, 30
+
+   "Albatross", 2.99, "On a stick!"
+   "Crunchy Frog", 1.49, "If we took the bones out,
+   it wouldn't be crunchy, now would it?"
+   "Gannet Ripple", 1.99, "On a stick!"
