@@ -6,9 +6,10 @@ Versão: 2.3.10
 
 Data: 24/02/2026
 
-Funcionalidades que possibilitam recepcionar e identificar contratos fruto de ata de registro de preços no PNCP, bem como informações sobre as partes envolvidas. 
+.. note::
+ **Funcionalidades que possibilitam recepcionar e identificar contratos fruto de ata de registro de preços no PNCP, bem como informações sobre as partes envolvidas.**
  
-6.4. Serviços de Ata 
+**6.4. Serviços de Ata**
 
 6.4.1. Inserir Ata de Registro de Preço 
 
@@ -32,7 +33,7 @@ Funcionalidades que possibilitam recepcionar e identificar contratos fruto de at
 
 6.4.16. Consultar Partes envolvidas em Ata de Registro de Preço 
 
-6.5. Serviços de Contrato/Empenho 
+**6.5. Serviços de Contrato/Empenho**
 
 6.5.1. Inserir Contrato/Empenho 
 
@@ -47,13 +48,14 @@ Versão: 2.3.9
 
 Data: 06/01/2026
 
-Funcionalidades voltadas ao fortalecimento da segurança e à padronização da gestão de acessos, órgãos e plataformas. As alterações impactam órgãos e entidades da Administração Pública, bem como plataformas públicas e privadas integradas ao Portal. 
+.. note::
+ **Funcionalidades voltadas ao fortalecimento da segurança e à padronização da gestão de acessos, órgãos e plataformas. As alterações impactam órgãos e entidades da Administração Pública, bem como plataformas públicas e privadas integradas ao Portal.** 
 
-4. Recomendações Iniciais 
+**4. Recomendações Iniciais**
 
 4.1. Cadastro Inicial dos Órgãos/Entidades e suas Unidades 
 
-6.1. Serviços de Usuário 
+**6.1. Serviços de Usuário**
 
 6.1.5. Inserir Entes Autorizados para um Usuário 
 
@@ -61,7 +63,7 @@ Funcionalidades voltadas ao fortalecimento da segurança e à padronização da 
 
 6.1.7 Gestão de Plataforma 
 
-6.2. Serviços de Órgão/Entidade 
+**6.2. Serviços de Órgão/Entidade**
 
 6.2.4. Incluir Unidade 
 
@@ -71,10 +73,44 @@ Funcionalidades voltadas ao fortalecimento da segurança e à padronização da 
 
 6.2.9. Gestão de Órgão e Entidade 
 
-Incluir Gestor de Órgão e Entidade 
+ Incluir Gestor de Órgão e Entidade 
 
-Habilitar/Desabilitar plataforma 
+ Habilitar/Desabilitar plataforma 
 
-Incluir Unidade Administrativa 
+ Incluir Unidade Administrativa 
 
-Editar, Ativar/Inativar Unidade Administrativa 
+ Editar, Ativar/Inativar Unidade Administrativa 
+
+Versão: 2.3.8
+++++++++++++++
+
+Data: 18/08/2025
+
+.. note::
+ **Funcionalidades que possibilitam a gestão de entes públicos, com o objetivo de reforçar a segurança e a confiabilidade das informações divulgadas no PNCP.**
+
+**4. Recomendações Iniciais**
+
+4.1. Cadastro Inicial dos Órgãos/Entidades e suas Unidades 
+
+**6.1. Serviços de Usuário**
+
+6.1.1. Atualizar Usuário 
+
+6.1.2. Consultar Usuário por Id 
+
+6.1.3. Consultar Usuário por Login ou por CPF/CNPJ 
+
+6.1.5. Inserir Entes Autorizados para um Usuário 
+
+6.1.6. Excluir Entes Autorizados de um Usuário 
+
+**6.2. Serviços de Órgão/Entidade**
+
+6.2.1. Incluir Órgão 
+
+6.2.2. Atualizar Órgão 
+
+6.2.4. Incluir Unidade 
+
+6.2.5. Atualizar Unidade 
