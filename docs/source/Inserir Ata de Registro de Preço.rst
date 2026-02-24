@@ -15,21 +15,21 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
 
 .. code-block:: JSON
   
-  { 
-    "numeroAtaRegistroPreco":"00001", 
-    "anoAta":2021, 
-    "dataAssinatura":“2021-07-21", 
-    "dataVigenciaInicio":“2021-07-21", 
-    "dataVigenciaFim":“2022-07-21", 
-    "possibilidadeAdesao":true, 
-    "partesEnvolvidas":[ 
-      { 
-        "tipoParteEnvolvidaId": 1, 
-        "cnpj": "10000000000003", 
-        "codigoUnidadeCompradora": "1" 
-      } 
-    ] 
-  }
+    { 
+      "numeroAtaRegistroPreco":"00001", 
+      "anoAta":2021, 
+      "dataAssinatura":“2021-07-21", 
+      "dataVigenciaInicio":“2021-07-21", 
+      "dataVigenciaFim":“2022-07-21", 
+      "possibilidadeAdesao":true, 
+      "partesEnvolvidas":[ 
+        { 
+          "tipoParteEnvolvidaId": 1, 
+          "cnpj": "10000000000003", 
+          "codigoUnidadeCompradora": "1" 
+        } 
+      ] 
+    }
   
 **Dados de Entrada**
 
@@ -116,11 +116,3 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
      - Não
      - Código da Unidade Administrativa.
   
-.. csv-table:: Dados de Entrada
-   :header: "Treat", "Quantity", "Description"
-   :widths: 15, 10, 30
-
-   "Albatross", 2.99, "On a stick!"
-   "Crunchy Frog", 1.49, "If we took the bones out,
-   it wouldn't be crunchy, now would it?"
-   "Gannet Ripple", 1.99, "On a stick!"
