@@ -7,7 +7,7 @@ Versão: 2.3.10
 Data: 24/02/2026
 
 .. note::
- **Funcionalidades que possibilitam recepcionar e identificar contratos fruto de ata de registro de preços no PNCP, bem como informações sobre as partes envolvidas.**
+ Funcionalidades que possibilitam recepcionar e identificar contratos fruto de ata de registro de preços no PNCP, bem como informações sobre as partes envolvidas.
  
 **6.4. Serviços de Ata**
 
@@ -49,7 +49,7 @@ Versão: 2.3.9
 Data: 06/01/2026
 
 .. note::
- **Funcionalidades voltadas ao fortalecimento da segurança e à padronização da gestão de acessos, órgãos e plataformas. As alterações impactam órgãos e entidades da Administração Pública, bem como plataformas públicas e privadas integradas ao Portal.** 
+ Funcionalidades voltadas ao fortalecimento da segurança e à padronização da gestão de acessos, órgãos e plataformas. As alterações impactam órgãos e entidades da Administração Pública, bem como plataformas públicas e privadas integradas ao Portal.
 
 **4. Recomendações Iniciais**
 
@@ -87,7 +87,7 @@ Versão: 2.3.8
 Data: 18/08/2025
 
 .. note::
- **Funcionalidades que possibilitam a gestão de entes públicos, com o objetivo de reforçar a segurança e a confiabilidade das informações divulgadas no PNCP.**
+ Funcionalidades que possibilitam a gestão de entes públicos, com o objetivo de reforçar a segurança e a confiabilidade das informações divulgadas no PNCP.
 
 **4. Recomendações Iniciais**
 
@@ -114,3 +114,25 @@ Data: 18/08/2025
 6.2.4. Incluir Unidade 
 
 6.2.5. Atualizar Unidade 
+
+Versão: 2.3.7
+++++++++++++++
+
+Data: 13/06/2025
+
+.. note::
+ Funcionalidade que possibilita recepcionar e exibir o tipo de margem de preferência utilizado em contratações públicas, sendo elas Resolução CIIA-PAC e CICS, conforme a Lei nº 14.133/2021.
+
+**6.3. Serviços de Contratação (Editais, Avisos e Atos)**
+
+6.3.1. Inserir Contratação 
+
+6.3.10. Inserir Itens a uma Contratação 
+
+6.3.11. Retificar Item de uma Contratação 
+
+6.3.12. Retificar parcialmente um Item de uma Contratação 
+
+6.3.13. Consultar Itens de uma Contratação 
+
+6.3.14. Consultar Item de uma Contratação 
