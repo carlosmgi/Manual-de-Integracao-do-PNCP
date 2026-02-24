@@ -41,3 +41,40 @@ Funcionalidades que possibilitam recepcionar e identificar contratos fruto de at
 6.5.8. Consultar Contrato/Empenho 
 
 6.5.9. Consultar Contratos/Empenhos de uma Contratação 
+
+Versão: 2.3.9
+++++++++++++++
+
+Data: 06/01/2026
+
+Funcionalidades voltadas ao fortalecimento da segurança e à padronização da gestão de acessos, órgãos e plataformas. As alterações impactam órgãos e entidades da Administração Pública, bem como plataformas públicas e privadas integradas ao Portal. 
+
+4. Recomendações Iniciais 
+
+4.1. Cadastro Inicial dos Órgãos/Entidades e suas Unidades 
+
+6.1. Serviços de Usuário 
+
+6.1.5. Inserir Entes Autorizados para um Usuário 
+
+6.1.6. Excluir Entes Autorizados de um Usuário 
+
+6.1.7 Gestão de Plataforma 
+
+6.2. Serviços de Órgão/Entidade 
+
+6.2.4. Incluir Unidade 
+
+6.2.5. Atualizar Unidade 
+
+6.2.8. Requerimento Perfil Gestor 
+
+6.2.9. Gestão de Órgão e Entidade 
+
+Incluir Gestor de Órgão e Entidade 
+
+Habilitar/Desabilitar plataforma 
+
+Incluir Unidade Administrativa 
+
+Editar, Ativar/Inativar Unidade Administrativa 
