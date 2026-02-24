@@ -44,13 +44,13 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
     ] 
 
   } 
+  
+**Dados de Entrada**
 
 .. note::
   
   alimentar o parâmetro {cnpj}, {anoCompra} e {sequencialCompra} na URL.
-  
-Dados de Entrada
-----------------
+
 .. list-table::
    :widths: 5 25 15 10 25
    :header-rows: 1
