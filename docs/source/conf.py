@@ -3,7 +3,7 @@
 # -- Project information
 
 project = 'Manual de Integração do PNCP'
-copyright = '2026, Ministério da Gestão e Inovação em Serviços Públicos'
+copyright = '2026, Ministério da Gestão e Inovação em Serviços Públicos - MGI'
 author = 'COPNCP/CGGES/DELOG/SEGES/MGI'
 
 release = '2.3.10'
