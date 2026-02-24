@@ -1,7 +1,7 @@
 Sumário
 =======
 
-.. toctree::
+toctree::
 
    Histórico de Versões
    Objetivo
