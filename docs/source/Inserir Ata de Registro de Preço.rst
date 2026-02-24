@@ -13,7 +13,7 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
 
 **Exemplo de Payload**
 
-.. code-block::
+.. code-block:: JSON
   
   { 
 
