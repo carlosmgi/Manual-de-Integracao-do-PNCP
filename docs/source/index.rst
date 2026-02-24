@@ -10,7 +10,7 @@ Manual de Integração do PNCP
 
 .. note::
 
-   Este documento contempla as orientações para realizar a integração de sistemas externos com as API REST do PNCP (Portal Nacional de Contratações Públicas).
+   Este documento contempla as orientações para realizar a integração de sistemas externos com as API REST do Portal Nacional de Contratações Públicas - PNCP.
 
 Sumário
 --------

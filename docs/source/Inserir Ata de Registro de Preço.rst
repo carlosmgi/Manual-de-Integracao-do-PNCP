@@ -14,33 +14,32 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
 **Exemplo de Payload**
 
 .. code-block::
+  { 
 
-{ 
+    "numeroAtaRegistroPreco": "00001", 
 
-  "numeroAtaRegistroPreco": "00001", 
+    "anoAta": 2021, 
 
-  "anoAta": 2021, 
+    "dataAssinatura": “2021-07-21", 
 
-  "dataAssinatura": “2021-07-21", 
+    "dataVigenciaInicio": “2021-07-21", 
 
-  "dataVigenciaInicio": “2021-07-21", 
+    "dataVigenciaFim": “2022-07-21", 
 
-  "dataVigenciaFim": “2022-07-21", 
+    "possibilidadeAdesao": true, 
 
-  "possibilidadeAdesao": true, 
+    "partesEnvolvidas": [ 
 
-  "partesEnvolvidas": [ 
+      { 
 
-    { 
+        "tipoParteEnvolvidaId": 1, 
 
-      "tipoParteEnvolvidaId": 1, 
+        "cnpj": "10000000000003", 
 
-      "cnpj": "10000000000003", 
+        "codigoUnidadeCompradora": "1" 
 
-      "codigoUnidadeCompradora": "1" 
+      } 
 
-    } 
+    ] 
 
-  ] 
-
-} 
+  } 
