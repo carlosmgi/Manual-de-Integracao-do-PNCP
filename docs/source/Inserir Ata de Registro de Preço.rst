@@ -101,10 +101,7 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
      - tipoParteEnvolvidaId
      - Inteiro
      - Não
-     - Código do Tipo de Parte Envolvida: \
-      **Código 1** - Gerenciadora \
-      **Código 2** - Participante \
-      **Código 3** - Não Participante
+     - Código do Tipo de Parte Envolvida: \ **Código 1** - Gerenciadora \ **Código 2** - Participante \ **Código 3** - Não Participante
    * - 10.2
      - cnpj
      - Texto (14)
