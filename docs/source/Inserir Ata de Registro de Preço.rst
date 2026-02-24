@@ -14,8 +14,8 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
 **Exemplo de Payload**
 
 .. code-block:: JSON
-  
-    { 
+
+    {
         "numeroAtaRegistroPreco": "00001",
         "anoAta": 2021,
         "dataAssinatura": "2021-07-21",
@@ -30,7 +30,7 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
             }
         ]
     }
-  
+
 **Dados de Entrada**
 
 .. note::
