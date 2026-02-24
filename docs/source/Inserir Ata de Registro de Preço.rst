@@ -11,6 +11,15 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
 /v1/orgaos/{cnpj}/compras/{anoCompra}/{sequencialCompra}/atas  POST      
 =============================================================  ====================================================================== 
 
+.. code-block:: json
+
+    {
+        "name": "John Doe",
+        "age": 30,
+        "is_active": true,
+        "skills": ["Python", "Sphinx", "JSON"]
+    }
+
 **Exemplo de Payload**
 
 .. code-block:: JSON
