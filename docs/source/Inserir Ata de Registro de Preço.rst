@@ -116,3 +116,18 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
      - Não
      - Código da Unidade Administrativa.
   
+**Dados de Retorno**
+
+.. list-table::
+   :width: 100
+   :widths: 5 25 15
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Descrição
+    * - 1
+      - location
+      - Texto (255)
+      - Endereço http do recurso criado 
