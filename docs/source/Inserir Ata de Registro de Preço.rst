@@ -11,16 +11,18 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
 /v1/orgaos/{cnpj}/compras/{anoCompra}/{sequencialCompra}/atas  POST      
 =============================================================  ====================================================================== 
 
+**Exemplo de Payload 1**
+
 .. code-block:: JSON
 
     {
-        "name": "John Doe",
+        "numeroAtaRegistroPreco": "00001",
         "age": 30,
         "is_active": true,
         "skills": ["Python", "Sphinx", "JSON"]
     }
 
-**Exemplo de Payload**
+**Exemplo de Payload 2**
 
 .. code-block:: JSON
   
@@ -33,7 +35,7 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
         "possibilidadeAdesao": true
     }
 
-**Exemplo de Payload 2**
+**Exemplo de Payload 3**
 
 .. code-block:: JSON
   
