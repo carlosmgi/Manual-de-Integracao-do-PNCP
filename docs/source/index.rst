@@ -21,3 +21,4 @@ Sumário
    Objetivo
    Protocolo de Comunicação
    Acesso ao PNCP
+   Inserir Ata de Registro de Preço
