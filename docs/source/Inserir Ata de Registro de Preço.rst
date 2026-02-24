@@ -11,30 +11,18 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
 /v1/orgaos/{cnpj}/compras/{anoCompra}/{sequencialCompra}/atas  POST      
 =============================================================  ====================================================================== 
 
-
-.. code-block:: JSON
-
-	
-		{
-		  "provider":"(IndicarÃ¡ qual o provedor disponibilizarÃ¡ o certificado. AparecerÃ¡ para certificado em nuvem)",
-		  "amr":["(Lista de forma de certificados autenticados. PadrÃ£o Ã© x509)"],
-		  "certificate":"(Demonstra o nome do cerfificado da autenticaÃ§Ã£o)",
-		  "type":"(Informa qual tipo de certificado utilizado para autenticaÃ§Ã£o. O contÃ©udo serÃ¡ <device> para certificados A1 e A3 e <cloud> para indicar certificado em nÃºvem)"
-		}
-
-
 **Exemplo de Payload**
 
 .. code-block:: JSON
   
   { 
-    "numeroAtaRegistroPreco": "00001", 
-    "anoAta": 2021, 
-    "dataAssinatura": “2021-07-21", 
-    "dataVigenciaInicio": “2021-07-21", 
-    "dataVigenciaFim": “2022-07-21", 
-    "possibilidadeAdesao": true, 
-    "partesEnvolvidas": [ 
+    "numeroAtaRegistroPreco":"00001", 
+    "anoAta":2021, 
+    "dataAssinatura":“2021-07-21", 
+    "dataVigenciaInicio":“2021-07-21", 
+    "dataVigenciaFim":“2022-07-21", 
+    "possibilidadeAdesao":true, 
+    "partesEnvolvidas":[ 
       { 
         "tipoParteEnvolvidaId": 1, 
         "cnpj": "10000000000003", 
@@ -114,9 +102,11 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
      - Inteiro
      - Não
      - Código do Tipo de Parte Envolvida:
-        **Código 1** - Gerenciadora
-        **Código 2** - Participante
-        **Código 3** - Não Participante
+      **Código 1** - Gerenciadora
+      
+      **Código 2** - Participante
+      
+      **Código 3** - Não Participante
    * - 10.2
      - cnpj
      - Texto (14)
