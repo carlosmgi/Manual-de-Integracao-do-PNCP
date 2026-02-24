@@ -6,7 +6,7 @@ Manual de Integração do PNCP
    :align: center
    :alt: Capa do Manual de Intergração PNCP
 
-#.
+ 
 
 .. note::
 
