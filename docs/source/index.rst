@@ -1,8 +1,10 @@
 Manual de Integração do PNCP
 ===================================
 
-**Versão 2.3.9**
-Publicação: 06/01/26
+.. figure:: ../Capa_Manual_de_Intergracao_PNCP.jpg
+   :width: 80%
+   :align: center
+   :alt: Capa do Manual de Intergração PNCP
 
 .. note::
 
