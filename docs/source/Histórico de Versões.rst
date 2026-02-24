@@ -4,6 +4,7 @@ Histórico de Versões
 Data: 24/02/2026
 
 Versão: 2.3.10
+++++++++++++++
 
 Funcionalidades que possibilitam recepcionar e identificar contratos fruto de ata de registro de preços no PNCP, bem como informações sobre as partes envolvidas. 
  
