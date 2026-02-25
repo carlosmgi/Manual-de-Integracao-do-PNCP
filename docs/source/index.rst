@@ -18,9 +18,9 @@ Sumário
 .. toctree::
    :numbered:
 
-   historico_de_versoes
-   objetivo
-   protocolo_comunicacao
-   acesso_ao_pncp
-   recomendacoes_iniciais
-   inserir_ata_registro_preco
+   Histórico de Versões
+   Objetivo
+   Protocolo de Comunicação
+   Acesso ao PNCP
+   Recomendações Iniciais
+   Inserir Ata de Registro de Preço
