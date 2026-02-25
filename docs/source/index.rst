@@ -22,4 +22,4 @@ Sumário
 2. Protocolo de Comunicação
 3. Acesso ao PNCP
 4. Recomendações Iniciais
-?. Inserir Ata de Registro de Preço
+c. Inserir Ata de Registro de Preço
