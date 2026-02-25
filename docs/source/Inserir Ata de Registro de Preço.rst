@@ -5,15 +5,19 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
 
 **Detalhes da Requisição**
 
-=============================================================  ======================================================================
-**Endpoint**                                                   **Método HTTP**
--------------------------------------------------------------  ----------------------------------------------------------------------
-/v1/orgaos/{cnpj}/compras/{anoCompra}/{sequencialCompra}/atas  POST      
-=============================================================  ======================================================================
+.. list-table::
+   :width: 100%
+   :widths: 50 15
+   :header-rows: 1
+
+   * - Endpoint
+     - Método HTTP
+   * - /v1/orgaos/{cnpj}/compras/{anoCompra}/{sequencialCompra}/atas
+     - POST
 
 **Exemplo de Payload**
 
-.. code-block:: JSON
+.. code-block:: json
 
   {
       "numeroAtaRegistroPreco": "00001",
@@ -33,7 +37,7 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
 
 **Exemplo Requisição (cURL)**
 
-.. code-block:: cURL
+.. code-block:: c
 
   curl -k -X POST --header "Authorization: Bearer access_token"
   "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/atas" -H "Accept: application/json” -H “ContentType: application/json” -d '{
@@ -148,7 +152,7 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
 
 **Exemplo de Retorno**
 
-.. code-block:: json
+.. code-block:: c
 
   access-control-allow-credentials: true
   access-control-allow-headers: Content-Type,Authorization,X-Requested-With,Content-Length,Accept,Origin,
@@ -165,3 +169,29 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
   x-firefox-spdy: ?
   x-frame-options: DENY
   x-xss-protection: ?; mode=block
+
+**Códigos de Retorno**
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 25
+   :header-rows: 1
+
+   * - Código HTTP
+     - Mensagem
+     - Tipo
+   * - 200
+     - Created
+     - Sucesso
+   * - 400
+     - BadRequest
+     - Erro
+   * - 401
+     - Unauthorized
+     - Erro
+   * - 422
+     - Unprocessable
+     - Erro
+   * - 500
+     - Internal Server Error
+     - Erro
