@@ -10,7 +10,7 @@
 
 **Plataforma privada:** operada por empresas privadas para prestar serviço à Administração Pública.
 
-A plataforma deverá cadastrar os órgãos/entidades e suas respectivas :red:`unidades compradoras` antes de enviar os dados das contratações realizadas por estas.
+A plataforma deverá cadastrar os órgãos/entidades e suas respectivas unidades compradoras antes de enviar os dados das contratações realizadas por estas.
 
 Uma vez habilitada, a plataforma usuária deve realizar os seguintes passos:
 
