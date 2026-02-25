@@ -64,7 +64,9 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
 .. deprecated:: 2.3.10
 
   não houve alterações.
-  
+
+.. line-block::
+
 **Detalhes da Requisição**
 
 .. list-table::
