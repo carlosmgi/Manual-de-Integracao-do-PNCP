@@ -16,9 +16,18 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
         "cnpj": "10000000000003",
         "codigoUnidadeCompradora": "1"
       }
-  ]  
+  ]
+
+.. versionchanged:: 2.3.10
+
+  Não houve alterações.
+
+.. deprecated:: 2.3.10
+
+  Não houve alterações.
   
 **Detalhes da Requisição**
+--------------------------
 
 .. list-table::
    :width: 100%
