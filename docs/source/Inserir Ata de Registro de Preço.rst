@@ -38,6 +38,7 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
   alimentar o parâmetro {cnpj}, {anoCompra} e {sequencialCompra} na URL.
 
 .. list-table::
+   :width: 100%
    :widths: 5 25 15 10 25
    :header-rows: 1
 
@@ -118,6 +119,7 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
 **Dados de Retorno**
 
 .. list-table::
+   :width: 100%
    :widths: 5 25 15 10
    :header-rows: 1
 
@@ -131,7 +133,7 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
      - Endereço http do recurso criado
     
 .. list-table::
-   :width: 100
+   :width: 100%
    :widths: 5 25 15 25
    :header-rows: 1
 
