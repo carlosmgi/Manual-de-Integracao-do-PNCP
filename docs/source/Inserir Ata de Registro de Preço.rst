@@ -31,6 +31,20 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
         ]
     }
 
+**Exemplo Requisição (cURL)**
+
+.. code-block:: cURL
+
+    curl -k -X POST --header "Authorization: Bearer access_token"
+    "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/atas" -H "Accept: application/json” -H “ContentType: application/json” -d '{
+      "numeroAtaRegistroPreco": "string",
+      "anoAta": 0,
+      "dataAssinatura": "2021-07-27",
+      "dataVigenciaInicio": "2021-07-27",
+      "dataVigenciaFim": "2021-07-27",
+      "possibilidadeAdesao": true
+    }'
+
 **Dados de Entrada**
 
 .. note::
@@ -117,20 +131,6 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
      - Código da Unidade Administrativa.
   
 **Dados de Retorno**
-
-.. list-table::
-   :width: 100%
-   :widths: 5 25 15 10
-   :header-rows: 1
-
-   * - Id
-     - Campo
-     - Tipo
-     - Descrição
-   * - 1
-     - location
-     - Texto (255)
-     - Endereço http do recurso criado
     
 .. list-table::
    :width: 100%
