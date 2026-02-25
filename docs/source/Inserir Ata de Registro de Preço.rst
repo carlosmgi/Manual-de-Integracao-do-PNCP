@@ -15,35 +15,35 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
 
 .. code-block:: JSON
 
-    {
-        "numeroAtaRegistroPreco": "00001",
-        "anoAta": 2021,
-        "dataAssinatura": "2021-07-21",
-        "dataVigenciaInicio": "2021-07-21",
-        "dataVigenciaFim": "2022-07-21",
-        "possibilidadeAdesao": true,
-        "partesEnvolvidas":[
-            {
-              "tipoParteEnvolvidaId": 1,
-              "cnpj": "10000000000003",
-              "codigoUnidadeCompradora": "1"
-            }
-        ]
-    }
+  {
+      "numeroAtaRegistroPreco": "00001",
+      "anoAta": 2021,
+      "dataAssinatura": "2021-07-21",
+      "dataVigenciaInicio": "2021-07-21",
+      "dataVigenciaFim": "2022-07-21",
+      "possibilidadeAdesao": true,
+      "partesEnvolvidas":[
+          {
+            "tipoParteEnvolvidaId": 1,
+            "cnpj": "10000000000003",
+            "codigoUnidadeCompradora": "1"
+          }
+      ]
+  }
 
 **Exemplo Requisição (cURL)**
 
 .. code-block:: cURL
 
-    curl -k -X POST --header "Authorization: Bearer access_token"
-    "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/atas" -H "Accept: application/json” -H “ContentType: application/json” -d '{
-      "numeroAtaRegistroPreco": "string",
-      "anoAta": 0,
-      "dataAssinatura": "2021-07-27",
-      "dataVigenciaInicio": "2021-07-27",
-      "dataVigenciaFim": "2021-07-27",
-      "possibilidadeAdesao": true
-    }'
+  curl -k -X POST --header "Authorization: Bearer access_token"
+  "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/atas" -H "Accept: application/json” -H “ContentType: application/json” -d '{
+    "numeroAtaRegistroPreco": "string",
+    "anoAta": 0,
+    "dataAssinatura": "2021-07-27",
+    "dataVigenciaInicio": "2021-07-27",
+    "dataVigenciaFim": "2021-07-27",
+    "possibilidadeAdesao": true
+  }'
 
 **Dados de Entrada**
 
@@ -145,3 +145,23 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
      - location
      - Texto (255)
      - Endereço http do recurso criado 
+
+**Exemplo de Retorno**
+
+.. code-block:: json
+
+  access-control-allow-credentials: true
+  access-control-allow-headers: Content-Type,Authorization,X-Requested-With,Content-Length,Accept,Origin,
+  access-control-allow-methods: GET,PUT,POST,DELETE,OPTIONS
+  access-control-allow-origin: *
+  cache-control: no-cache,no-store,max-age=0,must-revalidate
+  content-length: 0
+  date: ?
+  expires: ?
+  location: https://treina.pncp.gov.br/api/pncp/v1/orgaos/10000000000003/compras/2021/1/atas/1
+  pragma: no-cache
+  strict-transport-security: max-age=?
+  x-content-type-options: nosniff
+  x-firefox-spdy: ?
+  x-frame-options: DENY
+  x-xss-protection: ?; mode=block
