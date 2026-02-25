@@ -16,7 +16,7 @@ Sumário
 -------
 
 .. toctree::
-   :maxdepth: 2
+   :numbered:
 
    historico_de_versoes
    objetivo
