@@ -1,3 +1,6 @@
+4. Recomendações Iniciais
+==========================================================
+
 4.1. Cadastro Inicial dos Órgãos/Entidades e suas Unidades
 ==========================================================
 

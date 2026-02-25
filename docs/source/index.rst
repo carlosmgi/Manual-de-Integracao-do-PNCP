@@ -18,7 +18,8 @@ Sumário
 .. toctree::
 
    Histórico de Versões
-   Objetivo
-   Protocolo de Comunicação
-   Acesso ao PNCP
-   Inserir Ata de Registro de Preço
+1. Objetivo
+2. Protocolo de Comunicação
+3. Acesso ao PNCP
+4. Recomendações Iniciais
+c. Inserir Ata de Registro de Preço
