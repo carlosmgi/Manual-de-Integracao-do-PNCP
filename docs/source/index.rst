@@ -15,11 +15,12 @@ Manual de Integração do PNCP
 Sumário
 -------
    .. toctree::
+   :maxdepth: 2
+   :numbered:
 
-      1. Histórico de Versões
-      2. Objetivo
-      3. Protocolo de Comunicação
-      4. Acesso ao PNCP
-      5. Recomendações Iniciais
-         5.1. Cadastro Inicial dos Órgãos/Entidades e suas Unidades
-      6. Inserir Ata de Registro de Preço
+   historico_versoes
+   objetivo
+   protocolo_comunicacao
+   acesso_pncp
+   recomendacoes_iniciais
+   inserir_ata_registro_preco
