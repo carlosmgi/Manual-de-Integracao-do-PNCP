@@ -14,7 +14,6 @@ Manual de Integração do PNCP
 
 Sumário
 --------
-
 .. toctree::
 
    1. Histórico de Versões
