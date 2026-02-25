@@ -9,6 +9,7 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
 .. versionadded:: 2.3.10
 
 .. code-block:: json
+  :linenos:
 
   "possibilidadeAdesao": true,
   "partesEnvolvidas":[
