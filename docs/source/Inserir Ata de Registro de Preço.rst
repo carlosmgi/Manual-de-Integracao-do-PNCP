@@ -3,6 +3,21 @@ Inserir Ata de Registro de Preço
   
 Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a uma contratação.
 
+**Atualizações da versão 2.3.10**
+
+.. versionadded:: 2.3.10
+
+.. code-block:: json
+
+  "possibilidadeAdesao": true,
+  "partesEnvolvidas":[
+      {
+        "tipoParteEnvolvidaId": 1,
+        "cnpj": "10000000000003",
+        "codigoUnidadeCompradora": "1"
+      }
+  ]  
+
 **Detalhes da Requisição**
 
 .. list-table::
@@ -53,7 +68,7 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
 
 .. note::
   
-  alimentar o parâmetro {cnpj}, {anoCompra} e {sequencialCompra} na URL.
+  informar o parâmetro {cnpj}, {anoCompra} e {sequencialCompra} na URL.
 
 .. list-table::
    :width: 100%
