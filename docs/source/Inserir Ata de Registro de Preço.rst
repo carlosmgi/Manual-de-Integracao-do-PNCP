@@ -9,7 +9,6 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
 .. versionadded:: 2.3.10
 
 .. code-block:: json
-  :linenos:
 
   "possibilidadeAdesao": true,
   "partesEnvolvidas":[
@@ -83,6 +82,7 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
 ----------------------
 
 .. code-block:: json
+  :linenos:
 
   {
       "numeroAtaRegistroPreco": "00001",
@@ -104,6 +104,7 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
 -----------------------------
 
 .. code-block:: lua
+  :linenos:
 
   curl -k -X POST --header "Authorization: Bearer access_token"
   "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/atas" -H "Accept: application/json” -H “ContentType: application/json” -d '{
@@ -222,6 +223,7 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
 ----------------------
 
 .. code-block:: c
+  :linenos:
 
   access-control-allow-credentials: true
   access-control-allow-headers: Content-Type,Authorization,X-Requested-With,Content-Length,Accept,Origin,
