@@ -14,13 +14,11 @@ Manual de Integração do PNCP
 
 Sumário
 -------
-   .. toctree::
-   :maxdepth: 2
-   :numbered:
+.. toctree::
 
-   historico_versoes
-   objetivo
-   protocolo_comunicacao
-   acesso_pncp
-   recomendacoes_iniciais
-   inserir_ata_registro_preco
+Historico de Versões
+Objetivo
+Protocolo Comunicacao
+Acessoao PNCP
+Recomendacoes iniciais
+Inserir ata de Registro Preco
