@@ -4,6 +4,7 @@ Inserir Ata de Registro de Preço
 Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a uma contratação.
 
 **Atualizações da versão 2.3.10**
+---------------------------------
 
 .. versionadded:: 2.3.10
 
@@ -67,9 +68,8 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
 
 .. line-block::
 
-\
-
 **Detalhes da Requisição**
+--------------------------
 
 .. list-table::
    :width: 100%
@@ -82,6 +82,7 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
      - POST
 
 **Exemplo de Payload**
+----------------------
 
 .. code-block:: json
 
@@ -102,6 +103,7 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
   }
 
 **Exemplo Requisição (cURL)**
+-----------------------------
 
 .. code-block:: c
 
@@ -116,6 +118,7 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
   }'
 
 **Dados de Entrada**
+--------------------
 
 .. note::
   
@@ -201,7 +204,8 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
      - Código da Unidade Administrativa.
   
 **Dados de Retorno**
-    
+--------------------
+
 .. list-table::
    :width: 100%
    :widths: 5 25 15 25
@@ -217,6 +221,7 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
      - Endereço http do recurso criado 
 
 **Exemplo de Retorno**
+----------------------
 
 .. code-block:: c
 
@@ -237,6 +242,7 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
   x-xss-protection: ?; mode=block
 
 **Códigos de Retorno**
+----------------------
 
 .. list-table::
    :width: 100%
