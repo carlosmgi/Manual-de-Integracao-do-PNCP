@@ -120,7 +120,7 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
 
 .. list-table::
    :width: 100
-   :widths: 5 25 15
+   :widths: 5 25 15 25
    :header-rows: 1
 
    * - Id
