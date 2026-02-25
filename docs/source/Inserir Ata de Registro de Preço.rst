@@ -270,7 +270,7 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
 -----------------------------------------------
 
 **Atualizações da versão 2.3.10**
----------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. versionadded:: 2.3.10
 
@@ -333,7 +333,7 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
   não houve alterações.
 
 **Atualizações da versão 2.3.9**
----------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. versionadded:: 2.3.9
 
