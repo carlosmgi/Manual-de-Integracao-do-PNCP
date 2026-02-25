@@ -332,7 +332,7 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
 
   não houve alterações.
 
-**Atualizações da versão 2.3.10**
+**Atualizações da versão 2.3.9**
 ---------------------------------
 
 .. versionadded:: 2.3.9
