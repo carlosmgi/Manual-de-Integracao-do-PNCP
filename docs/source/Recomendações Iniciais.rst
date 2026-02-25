@@ -1,8 +1,8 @@
-4. Recomendações Iniciais
-==========================================================
+Recomendações Iniciais
+======================
 
-4.1. Cadastro Inicial dos Órgãos/Entidades e suas Unidades
-==========================================================
+Cadastro Inicial dos Órgãos/Entidades e suas Unidades
+-----------------------------------------------------
 
 .. note::
 
@@ -24,16 +24,14 @@ Uma vez habilitada, a plataforma usuária deve realizar os seguintes passos:
 #. Iniciar o envio das informações através dos serviços disponíveis.
 
 .. note::
-Nota:
 
    O PNCP possui os CNPJs da administração pública divulgados pela RFB previamente cadastrados no portal.  
    Caso o órgão desejado não seja encontrado, é necessário inserir o dado antes de seguir para o próximo passo.
 
-
 .. _manutencao-dados-contratacoes:
 
-4.2. Manutenção dos Dados das Contratações Enviadas
-==================================================
+Manutenção dos Dados das Contratações Enviadas
+----------------------------------------------
 
 É responsabilidade da plataforma do usuário garantir a precisão e a manutenção adequada dos dados enviados para o PNCP, a fim de refletir a realidade das contratações públicas em questão.
 
@@ -41,11 +39,10 @@ Para garantir o cumprimento desse objetivo, vários domínios foram definidos pa
 
 Além das APIs de inclusão, também estão disponíveis serviços para retificar e excluir os metadados enviados.
 
-
 .. _composicao-numero-controle-pncp:
 
-4.3. Composição do Número de Controle PNCP de PCA/Contratação/Ata/Contrato
-==========================================================================
+Composição do Número de Controle PNCP de PCA/Contratação/Ata/Contrato
+---------------------------------------------------------------------
 
 O PNCP gera automaticamente um identificador (número de controle) utilizado para reconhecer todas as demais transações realizadas para aquele registro.
 
