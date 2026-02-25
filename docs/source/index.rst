@@ -22,4 +22,5 @@ Sumário
    3. Protocolo de Comunicação
    4. Acesso ao PNCP
    5. Recomendações Iniciais
+      5.1. Cadastro Inicial dos Órgãos/Entidades e suas Unidades
    6. Inserir Ata de Registro de Preço
