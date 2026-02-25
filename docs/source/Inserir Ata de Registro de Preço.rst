@@ -24,7 +24,7 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
   :header-rows: 1
 
   * - Id
-    - Campo
+    - .. centered:: Campo
     - Tipo
     - Obrigatório
     - Descrição
