@@ -24,3 +24,4 @@ Sumário
    Acesso ao PNCP
    Recomendações Iniciais
    Inserir Ata de Registro de Preço
+   Inserir Contratos ou Empenhos
