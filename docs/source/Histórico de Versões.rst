@@ -10,7 +10,7 @@ Data: 24/02/2026
  Funcionalidades que possibilitam recepcionar e identificar contratos fruto de ata de registro de preços no PNCP, bem como informações sobre as partes envolvidas.
  
 .. toctree:: **Serviços de Ata**
-   :hidden:
+ :hidden:
 
  Inserir Ata de Registro de Preço
 
