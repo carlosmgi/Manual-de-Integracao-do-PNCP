@@ -13,14 +13,16 @@ Detalhes da Requisição
 
 .. list-table::
    :header-rows: 1
-   :widths: 20 10 70
+   :widths: 70 30
 
    * - Endpoint
      - Método HTTP
-     - Exemplo de Payload
    * - ``/v1/orgaos/{cnpj}/contratos``
      - **POST**
-     - .. code-block:: json
+
+Exemplo de Payload
+------------------
+.. code-block:: json
           :linenos:
 
            {
@@ -52,3 +54,15 @@ Detalhes da Requisição
              "identificadorCipi": "11111-011",
              "urlCipi": "https://cipi.economia.gov.br/11111-011"
            }
+
+Exemplo Requisição (cURL)
+-------------------------
+
+.. code-block:: bash
+
+   curl -X POST \
+     --header "Authorization: Bearer access_token" \
+     --header "accept: */*" \
+     --header "Content-Type: application/json" \
+     --data "@home/objeto.json" \
+     "$BASE_URL/v1/orgaos/100000000000003/contratos"
