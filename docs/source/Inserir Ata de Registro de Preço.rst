@@ -9,6 +9,7 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
 .. versionadded:: 2.3.10
 
 .. code-block:: json
+  :emphasize-lines: 3,4
 
   "possibilidadeAdesao": true,
   "partesEnvolvidas":[
@@ -24,7 +25,7 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
   :header-rows: 1
 
   * - Id
-    - .. centered:: Campo
+    - Campo
     - Tipo
     - Obrigatório
     - Descrição
