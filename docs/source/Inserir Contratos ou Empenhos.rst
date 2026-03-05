@@ -8,9 +8,53 @@ qualquer plataforma digital credenciada.
   
   Conforme regra de conformidade, prevista no item 5.19, não é possível a inclusão ou retificação de contrato ou empenho que pertença à contratação realizada por Sistema de Registro de Preços (SRP), a qual não possua ao menos uma ata de registro de preços publicada no PNCP. 
 
-Atualizações da versão 2.3.10
------------------------------
+**Atualizações da versão 2.3.10**
+---------------------------------
 
+.. versionadded:: 2.3.10
+
+.. code-block:: json
+
+  "possibilidadeAdesao": true,
+  "partesEnvolvidas":[
+      {
+         "sequencialAta": 1, 
+         "frutoAdesao": true
+      }
+  ]
+
+.. list-table::
+  :widths: auto
+  :header-rows: 1
+
+  * - Id
+    - Campo
+    - Tipo
+    - Obrigatório
+    - Descrição
+  * - 27
+    - dataVigenciaFim
+    - Data
+    - Não
+    - Data do término da vigência do contrato. Opcional apenas para contrato do tipo igual a 1.
+  * - 30
+    - sequencialAta
+    - Inteiro
+    - Não
+    - Número sequencial da ata de registro de preço (gerado pelo PNCP no momento da inclusão da ata).
+  * - 31
+    - frutoAdesao
+    - Booleano
+    - Sim
+    - Indicador se o contrato/empenho é de um não participante, ou seja, fruto da adesão a uma ata de registro de preço.
+
+.. versionchanged:: 2.3.10
+
+  não houve alterações.
+
+.. deprecated:: 2.3.10
+
+  não houve alterações.
 Detalhes da Requisição
 ----------------------
 
