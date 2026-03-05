@@ -15,14 +15,9 @@ qualquer plataforma digital credenciada.
 
 .. code-block:: json
 
-  "possibilidadeAdesao": true,
-  "partesEnvolvidas":[
-      {
-         "sequencialAta": 1, 
-         "frutoAdesao": true
-      }
-  ]
-
+  "sequencialAta": 1, 
+  "frutoAdesao": true
+ 
 .. list-table::
   :widths: auto
   :header-rows: 1
