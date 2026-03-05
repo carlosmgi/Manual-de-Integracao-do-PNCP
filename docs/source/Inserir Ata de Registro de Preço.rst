@@ -12,7 +12,7 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
 ----------------------
 
 .. code-block:: json
-  :emphasize-lines: 7,8,9,10,11,12,13,14
+  :emphasize-lines: 7-14
 
   {
       "numeroAtaRegistroPreco": "00001",
