@@ -12,13 +12,14 @@ Detalhes da Requisição
 ----------------------
 
 .. list-table::
+   :width: 100%
+   :widths: 50 15
    :header-rows: 1
-   :widths: 70 30
 
    * - Endpoint
      - Método HTTP
-   * - ``/v1/orgaos/{cnpj}/contratos``
-     - **POST**
+   * - /v1/orgaos/{cnpj}/contratos
+     - POST
 
 Exemplo de Payload
 ------------------
@@ -265,17 +266,18 @@ Exemplo de Retorno
 .. code-block:: http
    :linenos:
 
+   HTTP/1.1 201 Created
    access-control-allow-credentials: true
    access-control-allow-headers: Content-Type,Authorization,X-Requested-With,Content-Length,Accept,Origin
    access-control-allow-methods: GET,PUT,POST,DELETE,OPTIONS
    access-control-allow-origin: *
    cache-control: no-cache,no-store,max-age=0,must-revalidate
    content-length: 0
-   date: ?
+   date: Tue, 21 Jul 2021 10:00:00 GMT
    expires: 0
    location: https://treina.pncp.gov.br/api/pncp/v1/orgaos/10000000000003/contratos/2021/1
    pragma: no-cache
-   strict-transport-security: max-age=?
+   strict-transport-security: max-age=31536000
    x-content-type-options: nosniff
    x-frame-options: DENY
    x-xss-protection: 1; mode=block
