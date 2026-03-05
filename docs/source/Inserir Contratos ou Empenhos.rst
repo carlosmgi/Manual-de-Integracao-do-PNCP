@@ -28,12 +28,12 @@ qualquer plataforma digital credenciada.
     - Não
     - Data do término da vigência do contrato. Opcional apenas para contrato do tipo igual a 1.
   * - 30
-    - sequencialAta
+    -  :guilabel:`sequencialAta`
     - Inteiro
     - Não
     - Número sequencial da ata de registro de preço (gerado pelo PNCP no momento da inclusão da ata).
   * - 31
-    - frutoAdesao
+    -   :guilabel:`frutoAdesao`
     - Booleano
     - Sim
     - Indicador se o contrato/empenho é de um não participante, ou seja, fruto da adesão a uma ata de registro de preço.
