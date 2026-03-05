@@ -11,6 +11,7 @@ Data: 24/02/2026
  
 .. toctree:: **Serviços de Ata**
  :hidden:
+ :numbered:
 
  Inserir Ata de Registro de Preço
 
