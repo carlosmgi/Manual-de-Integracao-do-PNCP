@@ -12,39 +12,6 @@ qualquer plataforma digital credenciada.
 ---------------------------------
 
 .. versionadded:: 2.3.10
-
-.. code-block:: json
-  :emphasize-lines: 5,6
-
-  {
-      "cnpjCompra": "100000000000003",
-      "anoCompra": 2021,
-      "sequencialCompra": 1,
-      "sequencialAta": 1,
-      "frutoAdesao": true,
-      "tipoContrato": 1,
-      "numeroContratoEmpenho": "1",
-      "anoContrato": 2021,
-      "processo": "1/2021",
-      "categoriaProcesso": 2,
-      "receita": false,
-      "codigoUnidade": "1",
-      "niFornecedor": "100000000000010",
-      "tipoPessoaFornecedor": "PJ",
-      "nomeRazaoSocialFornecedor": "Fornecedor do Teste I",
-      "objetoContrato": "Contrato para exemplificar uso da API PNCP",
-      "informacaoComplementar": "",
-      "valorInicial": 10000.0000,
-      "numeroParcelas": 2,
-      "valorParcela": 5000.0000,
-      "valorGlobal": 10000.0000,
-      "valorAcumulado": 10000.0000,
-      "dataAssinatura": "2021-07-27",
-      "dataVigenciaInicio": "2021-07-28",
-      "dataVigenciaFim": "2021-07-29",
-      "identificadorCipi": "11111-011",
-      "urlCipi": "https://cipi.economia.gov.br/11111-011"
-  }
  
 .. list-table::
   :widths: auto
@@ -97,6 +64,7 @@ Exemplo de Payload
 
 .. code-block:: json
   :linenos:
+  :emphasize-lines: 5,6
   
   {
       "cnpjCompra": "100000000000003",
