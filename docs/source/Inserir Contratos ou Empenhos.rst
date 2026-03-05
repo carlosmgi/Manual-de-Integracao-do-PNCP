@@ -66,7 +66,6 @@ Detalhes da Requisição
 Exemplo de Payload
 ------------------
 .. code-block:: json
-:emphasize-lines: 5,6
           :linenos:
 
            {
