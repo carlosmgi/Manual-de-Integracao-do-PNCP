@@ -119,6 +119,7 @@ Dados de Entrada
    :width: 100%
    :widths: 5 25 15 10 25
    :header-rows: 1
+   :emphasize-lines: 5,6
 
    * - Id
      - Campo
