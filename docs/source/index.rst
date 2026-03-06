@@ -25,3 +25,4 @@ Sumário
    Recomendações Iniciais
    Inserir Ata de Registro de Preço
    Inserir Contratos ou Empenhos
+   Retificar Contrato ou Empenho 
