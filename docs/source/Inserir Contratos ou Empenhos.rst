@@ -119,7 +119,6 @@ Dados de Entrada
    :width: 100%
    :widths: 5 25 15 10 25
    :header-rows: 1
-   :emphasize-lines: 5,6
 
    * - Id
      - Campo
@@ -271,6 +270,9 @@ Dados de Entrada
      - String (8 a 14)
      - Não
      - URL com informações do contrato no sistema de Cadastro Integrado de Projetos de Investimento. Não se aplica a leilão.
+
+   .. rst-class:: highlighted-row
+
    * - 30
      - sequencialAta
      - Inteiro
