@@ -270,10 +270,7 @@ Dados de Entrada
      - String (8 a 14)
      - Não
      - URL com informações do contrato no sistema de Cadastro Integrado de Projetos de Investimento. Não se aplica a leilão.
-
-.. rst-class:: highlighted-row
-
-* - 30
+   * - 30
      - sequencialAta
      - Inteiro
      - Não
