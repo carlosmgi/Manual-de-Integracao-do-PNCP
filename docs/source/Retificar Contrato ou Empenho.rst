@@ -59,3 +59,45 @@ Detalhes da Requisição
      - Método HTTP
    * - /v1/orgaos/{cnpj}/contratos/{ano}/{sequencial}
      - PUT
+
+Exemplo de Payload
+------------------
+
+.. code-block:: json
+  :linenos:
+  :emphasize-lines: 5,6
+  
+  {
+    "cnpjCompra": "10000000000003",
+    "anoCompra": 2021,
+    "sequencialCompra": 1,
+    "sequencialAta": 1,
+    "frutoAdesao": true,
+    "tipoContratoId": 1,
+    "numeroContratoEmpenho": "1",
+    "processo": "1/2021",
+    "categoriaProcessoId": 2,
+    "receita": false,
+    "codigoUnidade": "1",
+    "cnpjOrgaoSubRogado": "",
+    "codigoUnidadeSubRogada": "",
+    "niFornecedor": "10000000000010",
+    "tipoPessoaFornecedor": "PJ",
+    "nomeRazaoSocialFornecedor": "Fornecedor do Teste I",
+    "niFornecedorSubContratado": "",
+    "tipoPessoaFornecedorSubContratado": "",
+    "nomeRazaoSocialFornecedorSubContratado": "",
+    "objetoContrato": "Contrato para exemplificar uso da API de retificação no PNCP.",
+    "informacaoComplementar": "",
+    "valorInicial": 10000.00,
+    "numeroParcelas": 2,
+    "valorParcela": 5000.00,
+    "valorGlobal": 10000.00,
+    "valorAcumulado": 10000.00,
+    "dataAssinatura": "2021-07-21",
+    "dataVigenciaInicio": "2021-07-22",
+    "dataVigenciaFim": "2021-07-23",
+    "justificativa": "motivo/justificativa para a retificação do contrato"
+    “identificadorCipi”: “111.11-011”,
+    “urlCipi”: ” https://cipi.economia.gov.br/111.11-011”
+}
