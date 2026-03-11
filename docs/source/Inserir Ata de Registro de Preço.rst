@@ -1,4 +1,4 @@
-.. _inserir-ata:
+.. _inserir_ata_registro_preco:
 
 Inserir Ata de Registro de Preço
 ================================
