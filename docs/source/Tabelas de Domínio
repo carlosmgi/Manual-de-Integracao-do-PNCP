@@ -1,0 +1,38 @@
+Tabelas de Domínio
+==================
+
+Instrumento Convocatório
+------------------------
+
+Para consulta aos instrumentos convocatórios cadastrados acessar a página no Portal 
+PNCP pelo endereço `https://pncp.gov.br/app/entidades-dominio <https://pncp.gov.br/app/entidades-dominio>`_. 
+Para ajudar na integração com o PNCP foram disponibilizados os serviços para consulta 
+de instrumento/os convocatório/os a seguir.
+
+Consultar Instrumento Convocatório por Código
+----------------------------------------------
+
+Serviço que permite consultar um instrumento convocatório pelo seu código.
+
+Detalhes da Requisição
+----------------------
+
+.. list-table::
+   :width: 100%
+   :widths: 50 20 30
+   :header-rows: 1
+
+   * - Endpoint
+     - Método HTTP
+     - Exemplo de Payload
+   * - /v1/tipos-instrumentos-convocatorios/{id}
+     - GET
+     - Não se aplica
+
+Exemplo de Requisição (cURL)
+----------------------------
+
+.. code-block:: bash
+
+   curl -X GET "${BASE_URL}/v1/tipos-instrumentos-convocatorios/{id}" \
+   -H "accept: */*"
