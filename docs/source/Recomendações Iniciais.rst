@@ -7,7 +7,7 @@ Cadastro Inicial dos Órgãos/Entidades e suas Unidades
 .. note::
 
    Disponível apenas no ambiente de treinamento/homologação.  
-   No ambiente de produção, utilize o procedimento do item :ref:`gestao-orgao-entidade`.
+   No ambiente de produção, utilize o procedimento do item Gestão de Órgão e Entidade<`gestao-orgao-entidade`>.
 
 **Plataforma pública:** operada por órgãos ou entidades da Administração Pública.  
 
