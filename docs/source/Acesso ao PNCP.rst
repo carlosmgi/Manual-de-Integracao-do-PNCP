@@ -44,6 +44,8 @@ As plataformas digitais que fornecerão os dados para publicação, representand
    - Caracteres “brancos” no início e no fim da senha serão desprezados (a senha pode conter caracteres “brancos” entre outros caracteres).
 
 A plataforma usuária deverá se autenticar com login e senha para obter um JSON Web Token (JWT). Utilizando esse token, a plataforma poderá acessar os serviços disponíveis, até a expiração do mesmo (prazo de 1 hora a partir da sua geração). Um único token é 
-necessário para a plataforma durante sua validade e, uma vez expirado, uma nova autenticação será necessária para obter um novo token. 
-A API de login (POST https://pncp.gov.br/api/pncp/v1/usuarios/login) retorna o JWT no cabeçalho (header) da resposta HTTP, specificamente no campo “Authorization”, após o texto “Bearer”. As requisições a APIs de manutenção de dados no PNCP requerem esse campo de cabeçalho idêntico para autenticação e autorização. 
+necessário para a plataforma durante sua validade e, uma vez expirado, uma nova autenticação será necessária para obter um novo token.
+
+A API de login (POST https://pncp.gov.br/api/pncp/v1/usuarios/login) retorna o JWT no cabeçalho (header) da resposta HTTP, specificamente no campo “Authorization”, após o texto “Bearer”. As requisições a APIs de manutenção de dados no PNCP requerem esse campo de cabeçalho idêntico para autenticação e autorização.
+
 Quando da primeira publicação do sistema, a associação entre usuários e seus órgãos/entidades autorizados estará sendo feita pelo próprio usuário. Ou seja, a plataforma deverá informar ao sistema quais CNPJs ela representa e assim estará autorizada a enviar dados em nome destes. O sistema confiará na plataforma e ela será juridicamente responsável por quaisquer equívocos, intencionais ou acidentais. 
