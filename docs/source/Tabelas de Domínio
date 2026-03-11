@@ -28,11 +28,3 @@ Detalhes da Requisição
    * - /v1/tipos-instrumentos-convocatorios/{id}
      - GET
      - Não se aplica
-
-Exemplo de Requisição (cURL)
-----------------------------
-
-.. code-block:: bash
-
-   curl -X GET "${BASE_URL}/v1/tipos-instrumentos-convocatorios/{id}" \
-   -H "accept: */*"
