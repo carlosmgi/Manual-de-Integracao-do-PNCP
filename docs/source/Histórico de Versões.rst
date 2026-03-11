@@ -13,7 +13,7 @@ Data: 24/02/2026
  :hidden:
  :numbered:
 
-`Teste <inserir-ata>`_
+`Teste <inserir_ata_registro_preco>`_
 
 
 `Inserir Ata de Registro de Preço <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/Inserir%20Ata%20de%20Registro%20de%20Pre%C3%A7o.html>`_ 
