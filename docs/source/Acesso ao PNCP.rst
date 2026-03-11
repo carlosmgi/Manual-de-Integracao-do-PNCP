@@ -30,7 +30,7 @@ Autenticação/Autorização
 O acesso ao Portal de consultas é público. Já as APIs de manutenção (serviços de inserção, retificação ou exclusão de dados) requerem autenticação/autorização.
 As plataformas digitais que fornecerão os dados para publicação, representando os órgãos públicos e entidades, deverão realizar credenciamento junto ao Ministério da Gestão e da Inovação em Serviços Públicos, quando receberão login e senha para acesso. A plataforma digital é responsável pela guarda e confidencialidade das suas credenciais.
 
-.. important::
+.. note::
 
    Qualquer usuário pode alterar sua própria senha, seguindo as seguintes regras:
 
