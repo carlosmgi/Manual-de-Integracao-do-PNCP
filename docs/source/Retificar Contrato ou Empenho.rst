@@ -334,10 +334,10 @@ Exemplo de retorno
 
    Retorno:
    access-control-allow-credentials: true
-   access-control-allow-headers: Content-Type,Authorization,X-Requested-With,Content-Length,Accept,Origin,
-   access-control-allow-methods: GET,PUT,POST,DELETE,OPTIONS
+   access-control-allow-headers: Content-Type, Authorization, X-Requested-With, Content-Length, Accept, Origin
+   access-control-allow-methods: GET, PUT, POST, DELETE, OPTIONS
    access-control-allow-origin: *
-   cache-control: no-cache,no-store,max-age=0,must-revalidate
+   cache-control: no-cache, no-store, max-age=0, must-revalidate
    content-length: 0
    date: ?
    expires: 0
@@ -372,3 +372,5 @@ Exemplo de retorno
    * - 500
      - Internal Server Error
      - Erro
+
+
