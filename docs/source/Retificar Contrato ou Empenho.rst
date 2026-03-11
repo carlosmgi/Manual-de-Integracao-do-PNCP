@@ -332,7 +332,7 @@ Exemplo de retorno
 .. code-block:: http
    :linenos:
 
-   Retorno:
+   HTTP/1.1 204 No Content
    access-control-allow-credentials: true
    access-control-allow-headers: Content-Type, Authorization, X-Requested-With, Content-Length, Accept, Origin
    access-control-allow-methods: GET, PUT, POST, DELETE, OPTIONS
@@ -345,7 +345,6 @@ Exemplo de retorno
    pragma: no-cache
    strict-transport-security: max-age=?
    x-content-type-options: nosniff
-   x-firefox-spdy: ?
    x-frame-options: DENY
    x-xss-protection: 1; mode=block
 
