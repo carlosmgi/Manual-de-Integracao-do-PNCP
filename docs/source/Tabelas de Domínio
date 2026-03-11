@@ -14,15 +14,3 @@ Serviço que permite consultar um instrumento convocatório pelo seu código.
 
 Detalhes da Requisição
 ----------------------
-
-.. list-table::
-   :width: 100%
-   :widths: 50 20 30
-   :header-rows: 1
-
-   * - Endpoint
-     - Método HTTP
-     - Exemplo de Payload
-   * - /v1/tipos-instrumentos-convocatorios/{id}
-     - GET
-     - Não se aplica
