@@ -1,7 +1,7 @@
 Excluir Contrato ou Empenho
 ===========================
 
-Serviço que permite remover um contrato/empenho. Este serviço será acionado por
+Serviço que permite remover um contrato ou empenho. Este serviço será acionado por
 qualquer plataforma digital credenciada
 
 .. Attention::
@@ -29,7 +29,7 @@ Exemplo de Payload
    :emphasize-lines: 5,6
 
    {
-      "justificativa": "motivo/justificativa para exclusão do contrato/empenho"
+      "justificativa": "motivo/justificativa para exclusão do contrato ou empenho"
    }
 
 Exemplo Requisição (cURL)
@@ -80,7 +80,7 @@ Dados de Entrada
      - justificativa
      - Texto (255) 
      - Sim
-     - Motivo/justificativa para exclusão do contrato/empenho.
+     - Motivo/justificativa para exclusão do contrato ou empenho.
 
 **Códigos de Retorno**
 ----------------------
