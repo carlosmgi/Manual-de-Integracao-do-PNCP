@@ -3,7 +3,7 @@ Endereços de Acesso
 
 A invocação dos serviços será realizada através das  URLs citadas abaixo, conforme requisitos de segurança detalhados na seção seguinte. 
 
-Ambiente de Homologação Externa 
+Ambiente de Treinamento/Homologação Externa 
 -------------------------------
 
   **Portal:** https://treina.pncp.gov.br 
