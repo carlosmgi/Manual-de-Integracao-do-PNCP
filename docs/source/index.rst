@@ -26,3 +26,4 @@ Sumário
    Inserir Ata de Registro de Preço
    Inserir Contratos ou Empenhos
    Retificar Contrato ou Empenho 
+   Excluir Contrato ou Empenho
