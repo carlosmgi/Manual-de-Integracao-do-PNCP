@@ -24,7 +24,9 @@ Detalhes da Requisição
 
 Dados de entrada
 
-.. list-table:: Nota: alimentar o path parâmetro {id} na URL. 
+**Nota:** alimentar o path parâmetro {id} na URL.
+
+.. list-table::  
    :width: 100%
    :widths: 5 25 15 25
    :header-rows: 1
@@ -81,7 +83,9 @@ Dados de retorno
      - Booleano
      - Indicador de status do instrumento convocatório. True = Ativo / False = Inativo
 
-.. list-table:: Códigos de Retorno
+Códigos de Retorno
+
+.. list-table:: 
    :header-rows: 1
    :widths: 15 35 20 20
 
@@ -133,7 +137,9 @@ Detalhes da Requisição
 
 Dados de entrada
 
-.. list-table:: **Nota:** alimentar o query parâmetro ``statusAtivo``.
+**Nota:** alimentar o query parâmetro `statusAtivo`.
+
+.. list-table:: 
    :header-rows: 1
    :widths: 25 15 15 100
 
@@ -146,7 +152,9 @@ Dados de entrada
      - Não
      - Indicador de status do instrumento convocatório. True = Ativo / False = Inativo
 
-.. list-table:: Dados de retorno
+Dados de retorno
+
+.. list-table:: 
    :header-rows: 1
    :widths: 5 25 15 45
 
@@ -187,7 +195,9 @@ Dados de entrada
      - Booleano
      - Indicador de status do instrumento convocatório. True = Ativo / False = Inativo
 
-.. list-table:: Códigos de Retorno
+Códigos de Retorno
+
+.. list-table:: 
    :header-rows: 1
    :widths: 15 35 20
 
@@ -232,7 +242,9 @@ Detalhes da Requisição
 
 Dados de entrada
 
-.. list-table:: **Nota:** alimentar o path parâmetro ``{id}`` na URL.
+**Nota:** alimentar o path parâmetro `{id}` na URL.
+
+.. list-table:: 
    :header-rows: 1
    :widths: 20 20 20 40
 
@@ -245,7 +257,9 @@ Dados de entrada
      - Sim
      - Código de identificação da modalidade de contratação
 
-.. list-table:: Dados de retorno
+Dados de retorno
+
+.. list-table:: 
    :header-rows: 1
    :widths: 5 25 15 55
 
@@ -278,7 +292,9 @@ Dados de entrada
      - Booleano
      - Indicador de status da modalidade de contratação. True = Ativo / False = Inativo
 
-.. list-table:: Códigos de Retorno
+Códigos de Retorno
+
+.. list-table:: 
    :header-rows: 1
    :widths: 15 50 35
 
@@ -322,7 +338,9 @@ Detalhes da Requisição
 
 Dados de entrada
 
-.. list-table:: **Nota:** alimentar o query parâmetro ``statusAtivo``.
+**Nota:** alimentar o query parâmetro `statusAtivo`.
+
+.. list-table:: 
    :header-rows: 1
    :widths: 25 15 15 45
 
@@ -335,7 +353,9 @@ Dados de entrada
      - Não
      - Indicador de status da modalidade de contratação. True = Ativa / False = Inativa
 
-.. list-table:: Dados de retorno
+Dados de retorno
+
+.. list-table:: 
    :header-rows: 1
    :widths: 5 25 15 55
 
@@ -368,7 +388,9 @@ Dados de entrada
      - Booleano
      - Indicador de status da modalidade de contratação. True = Ativa / False = Inativa
 
-.. list-table:: Códigos de Retorno
+Códigos de Retorno
+
+.. list-table:: 
    :header-rows: 1
    :widths: 15 50 35
 
@@ -413,7 +435,9 @@ Detalhes da Requisição
 
 Dados de entrada
 
-.. list-table:: **Nota:** alimentar o path parâmetro ``{id}`` na URL.
+**Nota:** alimentar o path parâmetro `{id}` na URL.
+
+.. list-table:: 
    :header-rows: 1
    :widths: 20 20 20 40
 
@@ -426,7 +450,9 @@ Dados de entrada
      - Sim
      - Código de identificação do modo de disputa
 
-.. list-table:: Dados de retorno
+Dados de retorno
+
+.. list-table:: 
    :header-rows: 1
    :widths: 5 25 15 55
 
@@ -459,7 +485,9 @@ Dados de entrada
      - Booleano
      - Indicador de status do modo de disputa. True = Ativo / False = Inativo
 
-.. list-table:: Códigos de Retorno
+Códigos de Retorno
+
+.. list-table:: 
    :header-rows: 1
    :widths: 15 50 35
 
@@ -503,7 +531,9 @@ Detalhes da Requisição
 
 Dados de entrada
 
-.. list-table:: **Nota:** alimentar o query parâmetro ``statusAtivo``.
+**Nota:** alimentar o query parâmetro `statusAtivo`.
+
+.. list-table:: 
    :header-rows: 1
    :widths: 25 15 15 45
 
@@ -516,7 +546,9 @@ Dados de entrada
      - Não
      - Indicador de status do modo de disputa. True = Ativo / False = Inativo
 
-.. list-table:: Dados de retorno
+Dados de retorno
+
+.. list-table:: 
    :header-rows: 1
    :widths: 5 25 15 55
 
@@ -549,7 +581,9 @@ Dados de entrada
      - Booleano
      - Indicador de status do modo de disputa. True = Ativo / False = Inativo
 
-.. list-table:: Códigos de Retorno
+Códigos de Retorno
+
+.. list-table:: 
    :header-rows: 1
    :widths: 15 50 35
 
@@ -595,7 +629,9 @@ Detalhes da Requisição
 
 Dados de entrada
 
-.. list-table:: **Nota:** alimentar o path parâmetro {id} na URL.
+**Nota:** alimentar o path parâmetro {id} na URL.
+
+.. list-table:: 
    :header-rows: 1
    :widths: 25 15 15 45
 
@@ -608,7 +644,9 @@ Dados de entrada
      - Não
      - Indicador de status do modo de disputa. True = Ativo / False = Inativo
 
-.. list-table:: Dados de retorno
+Dados de retorno
+
+.. list-table:: 
    :header-rows: 1
    :widths: 5 25 15 55
 
@@ -641,7 +679,9 @@ Dados de entrada
      - Booleano
      - Indicador de status do modo de disputa. True = Ativo / False = Inativo
 
-.. list-table:: Códigos de Retorno
+Códigos de Retorno
+
+.. list-table:: 
    :header-rows: 1
    :widths: 15 50 35
 
@@ -685,7 +725,9 @@ Detalhes da Requisição
 
 Dados de entrada
 
-.. list-table:: **Nota:** alimentar o query parâmetro {statusAtivo}. 
+**Nota:** alimentar o query parâmetro {statusAtivo}. 
+
+.. list-table:: 
    :header-rows: 1
    :widths: 25 15 15 45
 
@@ -698,7 +740,9 @@ Dados de entrada
      - Não
      - Indicador de status do modo de disputa. True = Ativo / False = Inativo
 
-.. list-table:: Dados de retorno
+Dados de retorno
+
+.. list-table:: 
    :header-rows: 1
    :widths: 5 25 15 55
 
@@ -731,7 +775,9 @@ Dados de entrada
      - Booleano
      - Indicador de status do modo de disputa. True = Ativo / False = Inativo
 
-.. list-table:: Códigos de Retorno
+Códigos de Retorno
+
+.. list-table:: 
    :header-rows: 1
    :widths: 15 50 35
 
