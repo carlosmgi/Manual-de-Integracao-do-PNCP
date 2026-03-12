@@ -10,7 +10,7 @@ Consultar Instrumento Convocatório por Código
 Serviço que permite consultar um instrumento convocatório pelo seu código. 
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+
 +-----------------------------+-------------+---------------------------+
 | Endpoint                    | Método HTTP | Exemplo Payload           |
 +=============================+=============+===========================+
@@ -23,7 +23,7 @@ Detalhes da Requisição
 +-----------------------------------------------------------------------+
 
 Dados de entrada
-^^^^^^^^^^^^^^^^
+
 .. list-table:: Nota: alimentar o path parâmetro {id} na URL. 
    :width: 100%
    :widths: 5 25 15 25
@@ -113,7 +113,7 @@ Consultar Instrumentos Convocatórios
 Serviço que permite consultar os instrumentos convocatórios cadastrados no PNCP. 
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+
 +-------------------------------------+---------------+-----------------+
 | Endpoint                            | Método HTTP   | Exemplo Payload |
 +=====================================+===============+=================+
@@ -130,7 +130,6 @@ Detalhes da Requisição
 +-----------------------------------------------------------------------+
 
 Dados de entrada
-^^^^^^^^^^^^^^^^
 
 .. list-table:: **Nota:** alimentar o query parâmetro ``statusAtivo``.
    :header-rows: 1
@@ -218,7 +217,7 @@ Consultar Modalidade de Contratação por Código
 Serviço que permite consultar uma modalidade de contratação pelo seu código. 
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+
 +-------------------------------------+---------------+-----------------+
 | Endpoint                            | Método HTTP   | Exemplo Payload |
 +=====================================+===============+=================+
@@ -230,7 +229,7 @@ Detalhes da Requisição
 +-----------------------------------------------------------------------+
 
 Dados de entrada
-^^^^^^^^^^^^^^^^
+
 .. list-table:: **Nota:** alimentar o path parâmetro ``{id}`` na URL.
    :header-rows: 1
    :widths: 20 20 20 40
@@ -305,7 +304,7 @@ Consultar Modalidades de Contratação
 Serviço que permite consultar as modalidades de contratação cadastradas no PNCP. 
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+
 +-------------------------------------+---------------+-----------------+
 | Endpoint                            | Método HTTP   | Exemplo Payload |
 +=====================================+===============+=================+
@@ -320,7 +319,6 @@ Detalhes da Requisição
 +-----------------------------------------------------------------------+
 
 Dados de entrada
-^^^^^^^^^^^^^^^^
 
 .. list-table:: **Nota:** alimentar o query parâmetro ``statusAtivo``.
    :header-rows: 1
@@ -400,7 +398,7 @@ Consultar Modo de Disputa por Código
 Serviço que permite consultar um modo de disputa pelo seu código. 
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+
 +-------------------------------------+---------------+-----------------+
 | Endpoint                            | Método HTTP   | Exemplo Payload |
 +=====================================+===============+=================+
@@ -412,7 +410,7 @@ Detalhes da Requisição
 +-----------------------------------------------------------------------+
 
 Dados de entrada
-^^^^^^^^^^^^^^^^
+
 .. list-table:: **Nota:** alimentar o path parâmetro ``{id}`` na URL.
    :header-rows: 1
    :widths: 20 20 20 40
@@ -487,7 +485,7 @@ Consultar Modos de Disputa
 Serviço que permite consultar os modos de disputa cadastrados no PNCP.
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+
 +-------------------------------------+---------------+-----------------+
 | Endpoint                            | Método HTTP   | Exemplo Payload |
 +=====================================+===============+=================+
@@ -502,7 +500,7 @@ Detalhes da Requisição
 +-----------------------------------------------------------------------+
 
 Dados de entrada
-^^^^^^^^^^^^^^^^
+
 .. list-table:: **Nota:** alimentar o query parâmetro ``statusAtivo``.
    :header-rows: 1
    :widths: 25 15 15 45
@@ -581,7 +579,7 @@ Consultar Critério de Julgamento por Código
 Serviço que permite consultar um critério de julgamento pelo seu código.
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+
 +-------------------------------------+---------------+-----------------+
 | Endpoint                            | Método HTTP   | Exemplo Payload |
 +=====================================+===============+=================+
@@ -594,7 +592,7 @@ Detalhes da Requisição
 +-----------------------------------------------------------------------+
 
 Dados de entrada
-^^^^^^^^^^^^^^^^
+
 .. list-table:: **Nota:** alimentar o path parâmetro {id} na URL.
    :header-rows: 1
    :widths: 25 15 15 45
@@ -669,7 +667,7 @@ Consultar Critérios de Julgamento
 Serviço que permite consultar os critérios de julgamento cadastrados no PNCP.
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+
 +-------------------------------------+---------------+-----------------+
 | Endpoint                            | Método HTTP   | Exemplo Payload |
 +=====================================+===============+=================+
@@ -684,7 +682,7 @@ Detalhes da Requisição
 +-----------------------------------------------------------------------+
 
 Dados de entrada
-^^^^^^^^^^^^^^^^
+
 .. list-table:: **Nota:** alimentar o query parâmetro {statusAtivo}. 
    :header-rows: 1
    :widths: 25 15 15 45
