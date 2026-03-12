@@ -129,7 +129,8 @@ Detalhes da Requisição
 +-----------------------------------------------------------------------+
 | curl -X 'GET' '${BASE_URL}/v1/tipos-instrumentos-convocatorios'       |
 | -H 'accept: */*'                                                      |
-| ou                                                                    |
+|                                                                       |
+| ou                                                                    |                                                                |                                                                       |
 | curl -X 'GET' '${BASE_URL}/v1/tipos-instrumentos-convocatorios?       |
 | statusAtivo=true'                                                     |
 | -H 'accept: */*'                                                      |
@@ -279,15 +280,15 @@ Dados de retorno
      - descricao
      - Texto
      - Descrição da modalidade de contratação
-   * - 6
+   * - 4
      - dataInclusao
      - Data/Hora
      - Data e hora da inclusão do registro
-   * - 7
+   * - 5
      - dataAtualizacao
      - Data/Hora
      - Data e hora da última atualização do registro
-   * - 8
+   * - 6
      - statusAtivo
      - Booleano
      - Indicador de status da modalidade de contratação. True = Ativo / False = Inativo
@@ -331,7 +332,9 @@ Detalhes da Requisição
 | Exemplo Requisição (cURL)                                             |
 +-----------------------------------------------------------------------+
 | curl -X 'GET' '${BASE_URL}/v1/modalidades' -H 'accept: */*'           |
-| ou                                                                    |
+|                                                                       |
+|ou                                                                     |
+|                                                                       |
 | curl -X 'GET' '${BASE_URL}/v1/modalidades?statusAtivo=true'-          |
 | H 'accept: */*'                                                       |
 +-----------------------------------------------------------------------+
@@ -375,15 +378,15 @@ Dados de retorno
      - descricao
      - Texto
      - Descrição da modalidade de contratação
-   * - 6
+   * - 4
      - dataInclusao
      - Data/Hora
      - Data e hora da inclusão do registro
-   * - 7
+   * - 5
      - dataAtualizacao
      - Data/Hora
      - Data e hora da última atualização do registro
-   * - 8
+   * - 6
      - statusAtivo
      - Booleano
      - Indicador de status da modalidade de contratação. True = Ativa / False = Inativa
@@ -472,15 +475,15 @@ Dados de retorno
      - descricao
      - Texto
      - Descrição do modo de disputa
-   * - 6
+   * - 4
      - dataInclusao
      - Data/Hora
      - Data e hora da inclusão do registro
-   * - 7
+   * - 5
      - dataAtualizacao
      - Data/Hora
      - Data e hora da última atualização do registro
-   * - 8
+   * - 6
      - statusAtivo
      - Booleano
      - Indicador de status do modo de disputa. True = Ativo / False = Inativo
@@ -524,7 +527,9 @@ Detalhes da Requisição
 | Exemplo Requisição (cURL)                                             |
 +-----------------------------------------------------------------------+
 | curl -X 'GET' '${BASE_URL}/v1/modos-disputas' -H 'accept: */*'        |  
+|                                                                       |
 | ou                                                                    |
+|                                                                       |
 | curl -X 'GET' '${BASE_URL}/v1/modos-disputas?statusAtivo=true'        |
 | -H 'accept: */*'                                                      |
 +-----------------------------------------------------------------------+
@@ -568,15 +573,15 @@ Dados de retorno
      - descricao
      - Texto
      - Descrição do modo de disputa
-   * - 6
+   * - 4
      - dataInclusao
      - Data/Hora
      - Data e hora da inclusão do registro
-   * - 7
+   * - 5
      - dataAtualizacao
      - Data/Hora
      - Data e hora da última atualização do registro
-   * - 8
+   * - 6
      - statusAtivo
      - Booleano
      - Indicador de status do modo de disputa. True = Ativo / False = Inativo
@@ -666,15 +671,15 @@ Dados de retorno
      - descricao
      - Texto
      - Descrição do modo de disputa
-   * - 6
+   * - 4
      - dataInclusao
      - Data/Hora
      - Data e hora da inclusão do registro
-   * - 7
+   * - 5
      - dataAtualizacao
      - Data/Hora
      - Data e hora da última atualização do registro
-   * - 8
+   * - 6
      - statusAtivo
      - Booleano
      - Indicador de status do modo de disputa. True = Ativo / False = Inativo
@@ -718,7 +723,9 @@ Detalhes da Requisição
 | Exemplo Requisição (cURL)                                             |
 +-----------------------------------------------------------------------+
 | curl -X 'GET' '${BASE_URL}/v1/criterios-julgamentos' -H 'accept: */*' |
+|                                                                       |                                 
 | ou                                                                    |
+|                                                                       |
 | curl -X 'GET' '${BASE_URL}/v1/criterios-julgamentos?statusAtivo=true' |
 | -H 'accept: */*'                                                      |  
 +-----------------------------------------------------------------------+
@@ -762,15 +769,15 @@ Dados de retorno
      - descricao
      - Texto
      - Descrição do modo de disputa
-   * - 6
+   * - 4
      - dataInclusao
      - Data/Hora
      - Data e hora da inclusão do registro
-   * - 7
+   * - 5
      - dataAtualizacao
      - Data/Hora
      - Data e hora da última atualização do registro
-   * - 8
+   * - 6
      - statusAtivo
      - Booleano
      - Indicador de status do modo de disputa. True = Ativo / False = Inativo
@@ -816,7 +823,7 @@ Situação do Item da Contratação
 
 - (código = 2) **Homologado:** Item com resultado (fornecedor/arrematante informado).
 
-- **(código = 3) **Anulado/Revogado/Cancelado:** Item cancelado conforme justificativa.
+- (código = 3) **Anulado/Revogado/Cancelado:** Item cancelado conforme justificativa.
 
 - (código = 4) **Deserto:** Item sem resultado (sem fornecedores/arrematantes interessados).
 
@@ -1056,11 +1063,11 @@ Código – Natureza Jurídica
 
 Porte da Empresa 
 ----------------
-- **(código = 1) ME:** Microempresa
-- **(código = 2) EPP:** Empresa de pequeno porte
-- **(código = 3) Demais:** Demais empresas
-- **(código = 4) Não se aplica:** Quando o fornecedor/arrematante for pessoa física.
-- **(código = 5) Não informado:** Quando não possuir o porte da empresa.
+- (código = 1) **ME:** Microempresa
+- (código = 2) **EPP:** Empresa de pequeno porte
+- (código = 3) **Demais:** Demais empresas
+- (código = 4) **Não se aplica:** Quando o fornecedor/arrematante for pessoa física.
+- (código = 5) **Não informado:** Quando não possuir o porte da empresa.
 
 Amparo Legal 
 ------------
@@ -1284,8 +1291,7 @@ Dados de retorno
    * - 7
      - statusAtivo
      - Booleano
-     - Indicador de status do amparo legal.
-       | True = Ativo / False = Inativo.
+     - Indicador de status do amparo legal. True = Ativo / False = Inativo.
 
 Códigos de Retorno
 
@@ -1311,3 +1317,545 @@ Códigos de Retorno
    * - 500
      - Internal Server Error
      - Erro
+
+Tipos de Amparos Legais
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Domínio do tipo de amparo legal:
+
+- **Contratação:** Tipo de amparo legal que deverá ser utilizado na
+  fundamentação legal da contratação.
+
+- **Margem de preferência:** Tipo de amparo legal que deverá ser utilizado na
+  fundamentação legal da aplicação da margem de preferência no resultado do item.
+
+- **Critério de desempate:** Tipo de amparo legal que deverá ser utilizado na
+  fundamentação legal da aplicação do critério de desempate no resultado do item.
+
+Envio de arquivos pelas APIs de Documento 
+-----------------------------------------
+
+Ao anexar um documento digital, complementando os metadados enviados, as seguintes extensões de arquivo serão aceitas para upload:
+
+- pdf,  txt,  rtf,  doc,  docx, xls, xlsx,  odt, ods, sxw,  zip, 7z, rar, dwg, dwt, dxf, dwf, dwfx, svg, sldprt, sldasm, dgn, ifc, skp, 3ds, dae, obj, rfa e rte. 
+
+**Nota:** O tamanho máximo aceito, por arquivo enviado, é de 30 MB (Megabytes). 
+
+Categoria de Item (Plano de Contratações e Contratações)
+--------------------------------------------------------
+
+Para consulta às categorias de item acessar a página no Portal PNCP pelo endereço `https://pncp.gov.br/app/entidades-dominio <https://pncp.gov.br/app/entidades-dominio>`_. Para ajudar na integração com o PNCP foram disponibilizados os serviços para consulta de categorias de item a seguir. 
+
+Consultar Categoria de Item por Código
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Serviço que permite consultar uma categoria de item pelo seu código. 
+
+Detalhes da Requisição 
+
++-------------------------------------+---------------+-----------------+
+| Endpoint                            | Método HTTP   | Exemplo Payload |
++=====================================+===============+=================+
+| /v1/categoriaItemPcas/{id}          | GET           | Não se aplica   |
++-------------------------------------+---------------+-----------------+
+| Exemplo Requisição (cURL)                                             |
++-----------------------------------------------------------------------+
+| curl -X 'GET' '${BASE_URL}/v1/categoriaItemPcas/{id}' -H 'accept: */*'|
++-----------------------------------------------------------------------+
+
+Dados de entrada 
+
+Nota: alimentar o path parâmetro {id} na URL.
+
+.. list-table::
+   :header-rows: 1
+   :widths: 20 15 15 50
+
+   * - Campo
+     - Tipo
+     - Obrigatório
+     - Descrição
+   * - id
+     - Inteiro
+     - Sim
+     - Código de identificação da categoria de item.
+
+Dados de retorno
+
+.. list-table::
+   :header-rows: 1
+   :widths: 5 25 15 55
+
+   * - Id
+     - Campo
+     - Tipo
+     - Descrição
+   * - 1
+     - id
+     - Inteiro
+     - Código de identificação da categoria de item.
+   * - 2
+     - nome
+     - Texto
+     - Nome da categoria de item.
+   * - 3
+     - descricao
+     - Texto
+     - Descrição da categoria de item.
+   * - 4
+     - dataInclusao
+     - Data/Hora
+     - Data e hora da inclusão do registro.
+   * - 5
+     - dataAtualizacao
+     - Data/Hora
+     - Data e hora da última atualização do registro.
+   * - 6
+     - statusAtivo
+     - Booleano
+     - Indicador de status da categoria de item. True = Ativo / False = Inativo.
+
+Códigos de Retorno
+
+.. list-table:: 
+   :header-rows: 1
+   :widths: 15 50 35
+
+   * - Código HTTP
+     - Mensagem
+     - Tipo
+   * - 200
+     - OK
+     - Sucesso
+   * - 400
+     - BadRequest
+     - Erro
+   * - 404
+     - Modo de disputa não encontrado
+     - NotFound
+   * - 422
+     - Unprocessable Entity
+     - Erro
+   * - 500
+     - Internal Server Error
+     - Erro
+
+Consultar Categorias de Item
+
+Serviço que permite consultar as categorias de item cadastradas no PNCP.
+
+Detalhes da Requisição 
+
++-------------------------------------+---------------+-----------------+
+| Endpoint                            | Método HTTP   | Exemplo Payload |
++=====================================+===============+=================+
+| /v1/categoriaItemPcas               | GET           | Não se aplica   |
++-------------------------------------+---------------+-----------------+
+| Exemplo Requisição (cURL)                                             |
++-----------------------------------------------------------------------+
+| curl -X 'GET' '${BASE_URL}/v1/categoriaItemPcas' -H 'accept: */*'     |
+|                                                                       |
+| ou                                                                    |
+|                                                                       |
+| curl -X 'GET' '${BASE_URL}/v1/categoriaItemPcas?statusAtivo=true'     |
+| -H 'accept: */*'                                                      |
++-----------------------------------------------------------------------+
+
+Dados de entrada 
+Nota: alimentar o query parâmetro {statusAtivo}.
+
+.. list-table::
+   :header-rows: 1
+   :widths: 25 15 15 45
+
+   * - Campo
+     - Tipo
+     - Obrigatório
+     - Descrição
+   * - statusAtivo
+     - Boolean
+     - Não
+     - Indicador de status da categoria de item. True = Ativa / False = Inativa.
+
+Dados de retorno
+
+Dados de retorno
+
+.. list-table::
+   :header-rows: 1
+   :widths: 5 25 15 55
+
+   * - Id
+     - Campo
+     - Tipo
+     - Descrição
+   * - 1
+     - id
+     - Inteiro
+     - Código de identificação da categoria de item.
+   * - 2
+     - nome
+     - Texto
+     - Nome da categoria de item.
+   * - 3
+     - descricao
+     - Texto
+     - Descrição da categoria de item.
+   * - 4
+     - dataInclusao
+     - Data/Hora
+     - Data e hora da inclusão do registro.
+   * - 5
+     - dataAtualizacao
+     - Data/Hora
+     - Data e hora da última atualização do registro.
+   * - 6
+     - statusAtivo
+     - Booleano
+     - Indicador de status da categoria de item. True = Ativa / False = Inativa.
+
+Códigos de Retorno
+
+.. list-table:: 
+   :header-rows: 1
+   :widths: 15 50 35
+
+   * - Código HTTP
+     - Mensagem
+     - Tipo
+   * - 200
+     - OK
+     - Sucesso
+   * - 400
+     - BadRequest
+     - Erro
+   * - 404
+     - Modo de disputa não encontrado
+     - NotFound
+   * - 422
+     - Unprocessable Entity
+     - Erro
+   * - 500
+     - Internal Server Error
+     - Erro
+
+Regra de conformidade entre Instrumento Convocatório, Modalidade de Contratação e Amparo Legal 
+----------------------------------------------------------------------------------------------
+
+Para consulta às combinações de conformidade entre instrumento convocatório, modalidade de contratação e amparo legal acessar a página no Portal PNCP pelo endereço`https://pncp.gov.br/app/entidades-dominio <https://pncp.gov.br/app/entidades-dominio>`_. Para ajudar na integração com o PNCP foram disponibilizados os serviços para consulta das combinações de conformidade entre instrumento convocatório, modalidade de contratação e amparo legal a seguir.
+
+Consultar conformidade entre Instrumento Convocatório, Modalidade de Contratação e Amparo Legal por Código
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Serviço que permite consultar a combinação de conformidade pelo código do instrumento convocatório, código da modalidade de contratação e código do amparo 
+legal. 
+
+Detalhes da Requisição 
+
++-------------------------------------+---------------+-----------------+
+| Endpoint                            | Método HTTP   | Exemplo Payload |
++=====================================+===============+=================+
+| /v1/instrumento-convocatorio-       | GET           | Não se aplica   |
+| modalidade-amparo                   |               |                 |
+| legal/{amparoLegalId}/{modalidadeId}|               |                 | 
+| /{tipoInstrumentoConvocatorioId}    |               |                 |
++-------------------------------------+---------------+-----------------+
+| Exemplo Requisição (cURL)                                             |
++-----------------------------------------------------------------------+
+| curl -X 'GET' '${BASE_URL}/v1/instrumento-convocatorio-modalidade-    |
+| amparo-legal/1/6/1' -H 'accept: */*'                                  |
++-----------------------------------------------------------------------+
+
+Dados de entrada 
+
+Nota: alimentar o path parâmetro {amparoLegalId} e {modalidadeId} e {tipoInstrumentoConvocatorioId} na URL. 
+
+.. list-table::
+   :header-rows: 1
+   :widths: 30 15 15 40
+
+   * - Campo
+     - Tipo
+     - Obrigatório
+     - Descrição
+   * - amparoLegalId
+     - Inteiro
+     - Sim
+     - Código de identificação do amparo legal.
+   * - modalidadeId
+     - Inteiro
+     - Sim
+     - Código de identificação da modalidade de contratação.
+   * - tipoInstrumentoConvocatorioId
+     - Inteiro
+     - Sim
+     - Código de identificação do instrumento convocatório.
+
+Dados de retorno
+
+.. list-table::
+   :header-rows: 1
+   :widths: 5 25 15 55
+
+   * - Id
+     - Campo
+     - Tipo
+     - Descrição
+   * - 1
+     - amparoLegal
+     -
+     - Dados do Amparo Legal.
+   * - 1.1
+     - id
+     - Inteiro
+     - Código de identificação do amparo legal.
+   * - 1.2
+     - nome
+     - Texto
+     - Nome do amparo legal.
+   * - 1.3
+     - descricao
+     - Texto
+     - Descrição do amparo legal.
+   * - 1.4
+     - statusAtivo
+     - Booleano
+     - Indicador de status do amparo legal. True = Ativo / False = Inativo.
+   * - 2
+     - modalidade
+     -
+     - Dados da Modalidade de Contratação.
+   * - 2.1
+     - id
+     - Inteiro
+     - Código de identificação da modalidade de contratação.
+   * - 2.2
+     - nome
+     - Texto
+     - Nome da modalidade de contratação.
+   * - 2.3
+     - descricao
+     - Texto
+     - Descrição da modalidade de contratação.
+   * - 2.4
+     - statusAtivo
+     - Booleano
+     - Indicador de status da modalidade de contratação. True = Ativo / False = Inativo.
+   * - 3
+     - tipoInstrumentoConvocatorio
+     -
+     - Dados do Instrumento Convocatório.
+   * - 3.1
+     - id
+     - Inteiro
+     - Código de identificação do instrumento convocatório.
+   * - 3.2
+     - nome
+     - Texto
+     - Nome do instrumento convocatório.
+   * - 3.3
+     - descricao
+     - Texto
+     - Descrição do instrumento convocatório.
+   * - 3.4
+     - statusAtivo
+     - Booleano
+     - Indicador de status do instrumento convocatório. True = Ativo / False = Inativo.
+   * - 4
+     - dataInclusao
+     - Data/Hora
+     - Data e hora da inclusão do registro
+
+Códigos de Retorno
+
+.. list-table:: 
+   :header-rows: 1
+   :widths: 15 50 35
+
+   * - Código HTTP
+     - Mensagem
+     - Tipo
+   * - 200
+     - OK
+     - Sucesso
+   * - 400
+     - BadRequest
+     - Erro
+   * - 404
+     - Modo de disputa não encontrado
+     - NotFound
+   * - 422
+     - Unprocessable Entity
+     - Erro
+   * - 500
+     - Internal Server Error
+     - Erro
+
+Consultar conformidade entre Instrumento Convocatório, Modalidade de Contratação e Amparo Legal
+
+Serviço que permite consultar as combinações de conformidade entre instrumento convocatório, modalidade de contratação e amparo legal cadastradas no PNCP. 
+
+Detalhes da Requisição 
+
++-------------------------------------+---------------+-----------------+
+| Endpoint                            | Método HTTP   | Exemplo Payload |
++=====================================+===============+=================+
+| /v1/instrumento-convocatorio        |               |                 | 
+| modalidade-amparo-legal             | GET           | Não se aplica   |
++-------------------------------------+---------------+-----------------+
+| Exemplo Requisição (cURL)                                             |
++-----------------------------------------------------------------------+
+| curl -X 'GET' '${BASE_URL}/v1/instrumento-convocatorio-modalidade-    |
+| amparo-legal' -H 'accept: */*'                                        |
+|                                                                       |
+| ou                                                                    |
+|                                                                       |
+| curl -X 'GET' '${BASE_URL}/v1/instrumento-convocatorio-               |
+| modalidade-amparo legal?tipoInstrumentoConvocatorioId=1&              |
+| modalidadeId=6' -H 'accept: */*'                                      |
+|                                                                       |
+| ou                                                                    |
+|                                                                       |
+| curl -X 'GET' '${BASE_URL}/v1/instrumento-                            |
+| convocatorio-modalidade-amparo legal?tipoInstrumentoConvocatorioId=   |
+| 1' -H 'accept: */*'                                                   |
++-----------------------------------------------------------------------+
+
+Dados de entrada 
+
+Nota: alimentar o query parâmetro {amparoLegalId} ou {modalidadeId} ou {tipoInstrumentoConvocatorioId}. 
+
+.. list-table::
+   :header-rows: 1
+   :widths: 30 15 15 40
+
+   * - Campo
+     - Tipo
+     - Obrigatório
+     - Descrição
+   * - amparoLegalId
+     - Inteiro
+     - Não
+     - Código de identificação do amparo legal.
+   * - modalidadeId
+     - Inteiro
+     - Não
+     - Código de identificação da modalidade de contratação.
+   * - tipoInstrumentoConvocatorioId
+     - Inteiro
+     - Não
+     - Código de identificação do instrumento convocatório.
+
+Dados de retorno (lista de combinações) 
+
+Dados de retorno
+
+.. list-table::
+   :header-rows: 1
+   :widths: 5 25 15 55
+
+   * - Id
+     - Campo
+     - Tipo
+     - Descrição
+   * - 1
+     - amparoLegal
+     -
+     - Dados do Amparo Legal.
+   * - 1.1
+     - id
+     - Inteiro
+     - Código de identificação do amparo legal.
+   * - 1.2
+     - nome
+     - Texto
+     - Nome do amparo legal.
+   * - 1.3
+     - descricao
+     - Texto
+     - Descrição do amparo legal.
+   * - 1.4
+     - statusAtivo
+     - Booleano
+     - Indicador de status do amparo legal. True = Ativo / False = Inativo.
+   * - 2
+     - modalidade
+     -
+     - Dados da Modalidade de Contratação.
+   * - 2.1
+     - id
+     - Inteiro
+     - Código de identificação da modalidade de contratação.
+   * - 2.2
+     - nome
+     - Texto
+     - Nome da modalidade de contratação.
+   * - 2.3
+     - descricao
+     - Texto
+     - Descrição da modalidade de contratação.
+   * - 2.4
+     - statusAtivo
+     - Booleano
+     - Indicador de status da modalidade de contratação. True = Ativo / False = Inativo.
+   * - 3
+     - tipoInstrumentoConvocatorio
+     -
+     - Dados do Instrumento Convocatório.
+   * - 3.1
+     - id
+     - Inteiro
+     - Código de identificação do instrumento convocatório.
+   * - 3.2
+     - nome
+     - Texto
+     - Nome do instrumento convocatório.
+   * - 3.3
+     - descricao
+     - Texto
+     - Descrição do instrumento convocatório.
+   * - 3.4
+     - statusAtivo
+     - Booleano
+     - Indicador de status do instrumento convocatório. True = Ativo / False = Inativo.
+   * - 4
+     - dataInclusao
+     - Data/Hora
+     - Data e hora da inclusão do registro.
+
+Códigos de Retorno
+
+.. list-table:: 
+   :header-rows: 1
+   :widths: 15 50 35
+
+   * - Código HTTP
+     - Mensagem
+     - Tipo
+   * - 200
+     - OK
+     - Sucesso
+   * - 400
+     - BadRequest
+     - Erro
+   * - 404
+     - Modo de disputa não encontrado
+     - NotFound
+   * - 422
+     - Unprocessable Entity
+     - Erro
+   * - 500
+     - Internal Server Error
+     - Erro
+
+Regra de conformidade entre Instrumento Convocatório e Modo de Disputa 
+----------------------------------------------------------------------
+
+Para consulta às combinações de conformidade entre instrumento convocatório e modo de disputa acessar a página no Portal PNCP pelo endereço 
+`https://pncp.gov.br/app/entidades-dominio <https://pncp.gov.br/app/entidades-dominio>`_. Para ajudar na integração com o PNCP foram disponibilizados os serviços para consulta de combinações de conformidade entre instrumento convocatório e modo de disputa a seguir. 
+
+Consultar conformidade entre Instrumentos Convocatórios e Modos de Disputa por Código 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Serviço que permite consultar a combinação de conformidade pelo código do instrumento convocatório e pelo código do modo de disputa.
+
