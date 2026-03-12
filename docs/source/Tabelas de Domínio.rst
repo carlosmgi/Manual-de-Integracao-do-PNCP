@@ -37,8 +37,10 @@ Dados de entrada
      - Inteiro
      - Sim
      - Código de identificação do instrumento convocatório. 
-    
-.. list-table:: Dados de retorno
+
+Dados de retorno
+
+.. list-table:: 
    :header-rows: 1
    :widths: 5 30 15 50
 
