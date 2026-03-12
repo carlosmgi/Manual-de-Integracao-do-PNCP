@@ -6,11 +6,11 @@ Instrumento Convocatório
 Para consulta aos instrumentos convocatórios cadastrados acessar a página no Portal PNCP pelo endereço `https://pncp.gov.br/app/entidades-dominio <https://pncp.gov.br/app/entidades-dominio>`_. Para ajudar na integração com o PNCP foram disponibilizados os serviços para consulta de instrumento/os convocatório/os a seguir.
 
 Consultar Instrumento Convocatório por Código
----------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Serviço que permite consultar um instrumento convocatório pelo seu código. 
 
 Detalhes da Requisição
-~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^
 +-----------------------------+-------------+---------------------------+
 | Endpoint                    | Método HTTP | Exemplo Payload           |
 +=============================+=============+===========================+
@@ -109,11 +109,11 @@ Dados de entrada
      - Erro interno no servidor
 
 Consultar Instrumentos Convocatórios 
-------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Serviço que permite consultar os instrumentos convocatórios cadastrados no PNCP. 
 
 Detalhes da Requisição
-~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^
 +-------------------------------------+---------------+-----------------+
 | Endpoint                            | Método HTTP   | Exemplo Payload |
 +=====================================+===============+=================+
@@ -214,11 +214,11 @@ Modalidade de Contratação
 Para consulta às modalidades de contratação acessar a página no Portal PNCP pelo endereço `https://pncp.gov.br/app/entidades-dominio <https://pncp.gov.br/app/entidades-dominio>`_. Para ajudar na integração com o PNCP foram disponibilizados os serviços para consulta de modalidade/es de contratação a seguir. 
 
 Consultar Modalidade de Contratação por Código
-----------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Serviço que permite consultar uma modalidade de contratação pelo seu código. 
 
 Detalhes da Requisição
-~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^
 +-------------------------------------+---------------+-----------------+
 | Endpoint                            | Método HTTP   | Exemplo Payload |
 +=====================================+===============+=================+
@@ -231,7 +231,6 @@ Detalhes da Requisição
 
 Dados de entrada
 ^^^^^^^^^^^^^^^^
-
 .. list-table:: **Nota:** alimentar o path parâmetro ``{id}`` na URL.
    :header-rows: 1
    :widths: 20 20 20 40
@@ -302,11 +301,11 @@ Dados de entrada
      - Erro
 
 Consultar Modalidades de Contratação 
-------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Serviço que permite consultar as modalidades de contratação cadastradas no PNCP. 
 
 Detalhes da Requisição
-~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^
 +-------------------------------------+---------------+-----------------+
 | Endpoint                            | Método HTTP   | Exemplo Payload |
 +=====================================+===============+=================+
@@ -397,11 +396,11 @@ Modo de Disputa
 Para consulta aos modos de disputa acessar a página no Portal PNCP pelo endereço `https://pncp.gov.br/app/entidades-dominio <https://pncp.gov.br/app/entidades-dominio>`_. Para ajudar na integração com o PNCP foram disponibilizados os serviços para consulta de modo/os de disputa a seguir. 
 
 Consultar Modo de Disputa por Código 
-------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Serviço que permite consultar um modo de disputa pelo seu código. 
 
 Detalhes da Requisição
-~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^
 +-------------------------------------+---------------+-----------------+
 | Endpoint                            | Método HTTP   | Exemplo Payload |
 +=====================================+===============+=================+
@@ -484,11 +483,11 @@ Dados de entrada
      - Erro
 
 Consultar Modos de Disputa
---------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 Serviço que permite consultar os modos de disputa cadastrados no PNCP.
 
 Detalhes da Requisição
-~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^
 +-------------------------------------+---------------+-----------------+
 | Endpoint                            | Método HTTP   | Exemplo Payload |
 +=====================================+===============+=================+
@@ -578,11 +577,11 @@ Critério de Julgamento
 Para consulta aos critérios de julgamento acessar a página no Portal PNCP pelo endereço `https://pncp.gov.br/app/entidades-dominio <https://pncp.gov.br/app/entidades-dominio>`_. Para ajudar na integração com o PNCP foram disponibilizados os serviços para consulta de critério/os de julgamento a seguir.
 
 Consultar Critério de Julgamento por Código 
--------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Serviço que permite consultar um critério de julgamento pelo seu código.
 
 Detalhes da Requisição
-~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^
 +-------------------------------------+---------------+-----------------+
 | Endpoint                            | Método HTTP   | Exemplo Payload |
 +=====================================+===============+=================+
@@ -666,11 +665,11 @@ Dados de entrada
      - Erro
 
 Consultar Critérios de Julgamento 
----------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Serviço que permite consultar os critérios de julgamento cadastrados no PNCP.
 
 Detalhes da Requisição
-~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^
 +-------------------------------------+---------------+-----------------+
 | Endpoint                            | Método HTTP   | Exemplo Payload |
 +=====================================+===============+=================+
@@ -777,7 +776,6 @@ Situação do Item da Contratação
 
 - (código = 5) **Fracassado:** Item sem resultado (fornecedores/arrematantes desclassificados ou inabilitados).
 
-
 Tipo de Benefício
 -----------------
 - (código = 1) **Participação exclusiva para ME/EPP**
@@ -795,7 +793,6 @@ Situação do Resultado do Item da Contratação
 - (código = 1) **Informado:** Possui valor, fornecedor e marca oriundos do resultado da contratação. Situação atribuída na inclusão do resultado do item da contratação.
 
 - (código = 2) **Cancelado:** Resultado do item cancelado conforme justificativa.
-
 
 Tipo de Contrato
 ----------------
@@ -918,7 +915,6 @@ Natureza Jurídica
 -----------------
 
 Código – Natureza Jurídica
---------------------------
 
 - **0000** – Natureza Jurídica não informada
 - **1015** – Órgão Público do Poder Executivo Federal
