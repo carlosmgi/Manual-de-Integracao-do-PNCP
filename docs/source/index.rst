@@ -30,3 +30,4 @@ Sumário
    Excluir Contrato ou Empenho
    Inserir Documento a um Contrato ou Empenho
    Excluir Documento do Contrato ou Empenho
+   Consultar Todos os Documentos de um Contrato ou Empenho
