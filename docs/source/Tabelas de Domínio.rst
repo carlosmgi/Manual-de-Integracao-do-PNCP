@@ -10,23 +10,34 @@ Consultar Instrumento Convocatório por Código
 Serviço que permite consultar um instrumento convocatório pelo seu código. 
 
 Detalhes da Requisição
+----------------------
 
-+-----------------------------+-------------+---------------------------+
-| Endpoint                    | Método HTTP | Exemplo Payload           |
-+=============================+=============+===========================+
-| /v1/tipos-instrumentos-     | GET         | Não se aplica             |
-| convocatorios/{id}          |             |                           |
-+-----------------------------+-------------+---------------------------+
-| Exemplo Requisição (cURL)                                             |
-+-----------------------------------------------------------------------+
-| curl -X GET "${BASE_URL}/v1/tipos-instrumentos-convocatorios/{id}"    |
-+-----------------------------------------------------------------------+
+.. list-table::
+   :width: 100%
+   :widths: 50 15
+   :header-rows: 1
 
-Dados de entrada
+   * - Endpoint
+     - Método HTTP
+   * - /v1/tipos-instrumentos-convocatorios/{id}
+     - GET
 
-**Nota:** alimentar o path parâmetro {id} na URL.
+Exemplo Requisição (cURL)
+-------------------------
 
-.. list-table::  
+.. code-block:: bash
+
+curl -X GET 
+"${BASE_URL}/v1/tipos-instrumentos-convocatorios/{id}"
+   
+Dados de Entrada
+----------------
+
+.. note:: 
+
+Alimentar o path parâmetro {id} na URL.  
+
+.. list-table::
    :width: 100%
    :widths: 5 25 15 25
    :header-rows: 1
@@ -40,11 +51,14 @@ Dados de entrada
      - Sim
      - Código de identificação do instrumento convocatório. 
 
+
 Dados de retorno
+----------------
 
 .. list-table:: 
+   :width: 100%
    :header-rows: 1
-   :widths: 5 30 15 50
+   :widths: 5 25 15 25
 
    * - Id
      - Campo
@@ -84,8 +98,10 @@ Dados de retorno
      - Indicador de status do instrumento convocatório. True = Ativo / False = Inativo
 
 Códigos de Retorno
+------------------
 
 .. list-table:: 
+   :width: 100%
    :header-rows: 1
    :widths: 15 35 20 20
 
