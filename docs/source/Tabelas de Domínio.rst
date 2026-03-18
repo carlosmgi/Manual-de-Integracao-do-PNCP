@@ -97,8 +97,8 @@ Dados de retorno
      - Booleano
      - Indicador de status do instrumento convocatório. True = Ativo / False = Inativo
 
-**Códigos de Retorno**
-^^^^^^^^^^^^^^^^^^^^^^
+Códigos de Retorno
+^^^^^^^^^^^^^^^^^^
 
 .. list-table::
    :width: 100%
@@ -220,8 +220,8 @@ Dados de retorno
      - Booleano
      - Indicador de status do instrumento convocatório. True = Ativo / False = Inativo
 
-**Códigos de Retorno**
-^^^^^^^^^^^^^^^^^^^^^^
+Códigos de Retorno
+^^^^^^^^^^^^^^^^^^
 
 .. list-table::
    :width: 100%
@@ -335,8 +335,8 @@ Dados de retorno
      - Booleano
      - Indicador de status da modalidade de contratação. True = Ativo / False = Inativo
 
-**Códigos de Retorno**
-^^^^^^^^^^^^^^^^^^^^^^
+Códigos de Retorno
+^^^^^^^^^^^^^^^^^^
 
 .. list-table::
    :width: 100%
@@ -449,8 +449,8 @@ Dados de retorno
      - Booleano
      - Indicador de status da modalidade de contratação. True = Ativa / False = Inativa
 
-**Códigos de Retorno**
-^^^^^^^^^^^^^^^^^^^^^^
+Códigos de Retorno
+^^^^^^^^^^^^^^^^^^
 
 .. list-table::
    :width: 100%
@@ -564,8 +564,8 @@ Dados de retorno
      - Booleano
      - Indicador de status do modo de disputa. True = Ativo / False = Inativo
 
-**Códigos de Retorno**
-^^^^^^^^^^^^^^^^^^^^^^
+Códigos de Retorno
+^^^^^^^^^^^^^^^^^^
 
 .. list-table::
    :width: 100%
@@ -680,8 +680,8 @@ Dados de retorno
      - Booleano
      - Indicador de status do modo de disputa. True = Ativo / False = Inativo
 
-**Códigos de Retorno**
-^^^^^^^^^^^^^^^^^^^^^^
+Códigos de Retorno
+^^^^^^^^^^^^^^^^^^
 
 .. list-table::
    :width: 100%
@@ -716,25 +716,38 @@ Consultar Critério de Julgamento por Código
 Serviço que permite consultar um critério de julgamento pelo seu código.
 
 Detalhes da Requisição
+^^^^^^^^^^^^^^^^^^^^^^
 
-+-------------------------------------+---------------+-----------------+
-| Endpoint                            | Método HTTP   | Exemplo Payload |
-+=====================================+===============+=================+
-| /v1/criterios-julgamentos/{id}      | GET           | Não se aplica   |
-+-------------------------------------+---------------+-----------------+
-| Exemplo Requisição (cURL)                                             |
-+-----------------------------------------------------------------------+
-| curl -X 'GET' '${BASE_URL}/v1/criterios-julgamentos/{id}'             |
-| -H 'accept: */*'                                                      |  
-+-----------------------------------------------------------------------+
-
-Dados de entrada
-
-**Nota:** alimentar o path parâmetro {id} na URL.
-
-.. list-table:: 
+.. list-table::
+   :width: 100%
+   :widths: 50 15
    :header-rows: 1
-   :widths: 25 15 15 45
+
+   * - Endpoint
+     - Método HTTP
+   * - /v1/criterios-julgamentos/{id}
+     - GET
+
+Exemplo Requisição (cURL)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+   curl -X 'GET' 
+   '${BASE_URL}/v1/criterios-julgamentos/{id}'  
+   -H 'accept: */*'
+
+Dados de Entrada
+^^^^^^^^^^^^^^^^
+
+.. note:: 
+
+Alimentar o path parâmetro {id} na URL.
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 25
+   :header-rows: 1
 
    * - Campo
      - Tipo
@@ -746,10 +759,12 @@ Dados de entrada
      - Indicador de status do modo de disputa. True = Ativo / False = Inativo
 
 Dados de retorno
+^^^^^^^^^^^^^^^^
 
 .. list-table:: 
+   :width: 100%
    :header-rows: 1
-   :widths: 5 25 15 55
+   :widths: 5 25 15 25
 
    * - Id
      - Campo
@@ -781,10 +796,12 @@ Dados de retorno
      - Indicador de status do modo de disputa. True = Ativo / False = Inativo
 
 Códigos de Retorno
+^^^^^^^^^^^^^^^^^^
 
-.. list-table:: 
+.. list-table::
+   :width: 100%
+   :widths: 10 25 20
    :header-rows: 1
-   :widths: 15 50 35
 
    * - Código HTTP
      - Mensagem
@@ -810,29 +827,42 @@ Consultar Critérios de Julgamento
 Serviço que permite consultar os critérios de julgamento cadastrados no PNCP.
 
 Detalhes da Requisição
+^^^^^^^^^^^^^^^^^^^^^^
 
-+-------------------------------------+---------------+-----------------+
-| Endpoint                            | Método HTTP   | Exemplo Payload |
-+=====================================+===============+=================+
-| /v1/criterios-julgamentos           | GET           | Não se aplica   |
-+-------------------------------------+---------------+-----------------+
-| Exemplo Requisição (cURL)                                             |
-+-----------------------------------------------------------------------+
-| curl -X 'GET' '${BASE_URL}/v1/criterios-julgamentos' -H 'accept: */*' |
-|                                                                       |                                 
-| ou                                                                    |
-|                                                                       |
-| curl -X 'GET' '${BASE_URL}/v1/criterios-julgamentos?statusAtivo=true' |
-| -H 'accept: */*'                                                      |  
-+-----------------------------------------------------------------------+
-
-Dados de entrada
-
-**Nota:** alimentar o query parâmetro {statusAtivo}. 
-
-.. list-table:: 
+.. list-table::
+   :width: 100%
+   :widths: 50 15
    :header-rows: 1
-   :widths: 25 15 15 45
+
+   * - Endpoint
+     - Método HTTP
+   * - /v1/criterios-julgamentos
+     - GET
+
+Exemplo Requisição (cURL)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+   curl -X 'GET' 
+   '${BASE_URL}/v1/criterios-julgamentos' 
+   -H 'accept: */*'
+   ou
+   curl -X 'GET' 
+   '${BASE_URL}/v1/criterios-julgamentos?statusAtivo=true'
+   -H 'accept: */*'
+
+Dados de Entrada
+^^^^^^^^^^^^^^^^
+
+.. note:: 
+
+Alimentar o query parâmetro {statusAtivo}. 
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 25
+   :header-rows: 1
 
    * - Campo
      - Tipo
@@ -844,10 +874,12 @@ Dados de entrada
      - Indicador de status do modo de disputa. True = Ativo / False = Inativo
 
 Dados de retorno
+^^^^^^^^^^^^^^^^
 
 .. list-table:: 
+   :width: 100%
    :header-rows: 1
-   :widths: 5 25 15 55
+   :widths: 5 25 15 25
 
    * - Id
      - Campo
@@ -879,10 +911,12 @@ Dados de retorno
      - Indicador de status do modo de disputa. True = Ativo / False = Inativo
 
 Códigos de Retorno
+^^^^^^^^^^^^^^^^^^
 
-.. list-table:: 
+.. list-table::
+   :width: 100%
+   :widths: 10 25 20
    :header-rows: 1
-   :widths: 15 50 35
 
    * - Código HTTP
      - Mensagem
@@ -1176,24 +1210,38 @@ Consultar Amparo Legal por Código
 Serviço que permite consultar um amparo legal pelo seu código.
 
 Detalhes da Requisição
+^^^^^^^^^^^^^^^^^^^^^^
 
-+-------------------------------------+---------------+-----------------+
-| Endpoint                            | Método HTTP   | Exemplo Payload |
-+=====================================+===============+=================+
-| /v1/amparos-legais/{id}             | GET           | Não se aplica   |
-+-------------------------------------+---------------+-----------------+
-| Exemplo Requisição (cURL)                                             |
-+-----------------------------------------------------------------------+
-| curl -X 'GET' '${BASE_URL}/v1/amparos-legais/{id}' -H 'accept: */*'   |  
-+-----------------------------------------------------------------------+
-
-Dados de entrada
-
-**Nota:** alimentar o path parâmetro {id} na URL. 
-
-.. list-table:: 
+.. list-table::
+   :width: 100%
+   :widths: 50 15
    :header-rows: 1
-   :widths: 25 15 15 45
+
+   * - Endpoint
+     - Método HTTP
+   * - /v1/amparos-legais/{id}  
+     - GET
+
+Exemplo Requisição (cURL)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+   curl -X 'GET' 
+   '${BASE_URL}/v1/amparos-legais/{id}'
+   -H 'accept: */*'
+
+Dados de Entrada
+^^^^^^^^^^^^^^^^
+
+.. note:: 
+
+Alimentar o path parâmetro {id} na URL.   
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 25
+   :header-rows: 1
 
    * - Campo
      - Tipo
@@ -1205,10 +1253,12 @@ Dados de entrada
      - Código de identificação do amparo legal 
 
 Dados de retorno
+^^^^^^^^^^^^^^^^
 
 .. list-table:: 
+   :width: 100%
    :header-rows: 1
-   :widths: 5 25 15 55
+   :widths: 5 25 15 25
 
    * - Id
      - Campo
@@ -1260,10 +1310,12 @@ Dados de retorno
      - Indicador de status do amparo legal. True = Ativo / False = Inativo.
 
 Códigos de Retorno
+^^^^^^^^^^^^^^^^^^
 
-.. list-table:: 
+.. list-table::
+   :width: 100%
+   :widths: 10 25 20
    :header-rows: 1
-   :widths: 15 50 35
 
    * - Código HTTP
      - Mensagem
@@ -1290,35 +1342,41 @@ Consultar Amparos Legais
 Serviço que permite consultar os amparos legais cadastrados no PNCP. 
 
 Detalhes da Requisição
+^^^^^^^^^^^^^^^^^^^^^^
 
-+-------------------------------------+---------------+-----------------+
-| Endpoint                            | Método HTTP   | Exemplo Payload |
-+=====================================+===============+=================+
-| /v1/amparos-legais                  | GET           | Não se aplica   |
-+-------------------------------------+---------------+-----------------+
-| Exemplo Requisição (cURL)                                             |
-+-----------------------------------------------------------------------+
-| curl -X 'GET' '${BASE_URL}/v1/amparos-legais' -H 'accept: */*'        |
-|                                                                       |
-| ou                                                                    |
-|                                                                       |
-| curl -X 'GET' '${BASE_URL}/v1/amparos-legais?statusAtivo=true'        |
-| -H 'accept: */*'                                                      |
-|                                                                       |
-| ou                                                                    |
-|                                                                       |
-| curl -X 'GET' '${BASE_URL}/v1/amparos-legais?                         |
-| tipoAmparoLegalId=1&statusAtivo=true' -H                              |
-| 'accept: */*'                                                         |
-+-----------------------------------------------------------------------+
-
-Dados de entrada
-
-**Nota:** alimentar o path parâmetro {id} na URL. 
-
-.. list-table:: 
+.. list-table::
+   :width: 100%
+   :widths: 50 15
    :header-rows: 1
-   :widths: 25 15 15 45
+
+   * - Endpoint
+     - Método HTTP
+   * - /v1/amparos-legais
+     - GET
+
+Exemplo Requisição (cURL)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+   curl -X 'GET' 
+   '${BASE_URL}/v1/amparos-legais'
+   -H 'accept: */*'
+   ou
+   curl -X 'GET' 
+   '${BASE_URL}/v1/amparos-legais?statusAtivo=true'
+   -H 'accept: */*'
+   ou
+   curl -X 'GET' 
+   '${BASE_URL}/v1/amparos-legais?tipoAmparoLegalId=1&statusAtivo=true'
+   -H 'accept: */*'
+
+Dados de Entrada
+^^^^^^^^^^^^^^^^
+
+.. note:: 
+
+Alimentar o path parâmetro {id} na URL.  
 
    * - Campo
      - Tipo
@@ -1334,10 +1392,12 @@ Dados de entrada
      - Indicador de status do critério de julgamento. True-Ativa / False-Inativa
 
 Dados de retorno
+^^^^^^^^^^^^^^^^
 
-.. list-table::
+.. list-table:: 
+   :width: 100%
    :header-rows: 1
-   :widths: 5 25 15 55
+   :widths: 5 25 15 25
 
    * - Id
      - Campo
@@ -1390,10 +1450,12 @@ Dados de retorno
      - Indicador de status do amparo legal. True = Ativo / False = Inativo.
 
 Códigos de Retorno
+^^^^^^^^^^^^^^^^^^
 
-.. list-table:: 
+.. list-table::
+   :width: 100%
+   :widths: 10 25 20
    :header-rows: 1
-   :widths: 15 50 35
 
    * - Código HTTP
      - Mensagem
@@ -1447,25 +1509,40 @@ Consultar Categoria de Item por Código
 
 Serviço que permite consultar uma categoria de item pelo seu código. 
 
-Detalhes da Requisição 
-
-+-------------------------------------+---------------+-----------------+
-| Endpoint                            | Método HTTP   | Exemplo Payload |
-+=====================================+===============+=================+
-| /v1/categoriaItemPcas/{id}          | GET           | Não se aplica   |
-+-------------------------------------+---------------+-----------------+
-| Exemplo Requisição (cURL)                                             |
-+-----------------------------------------------------------------------+
-| curl -X 'GET' '${BASE_URL}/v1/categoriaItemPcas/{id}' -H 'accept: */*'|
-+-----------------------------------------------------------------------+
-
-Dados de entrada 
-
-Nota: alimentar o path parâmetro {id} na URL.
+Detalhes da Requisição
+^^^^^^^^^^^^^^^^^^^^^^
 
 .. list-table::
+   :width: 100%
+   :widths: 50 15
    :header-rows: 1
-   :widths: 20 15 15 50
+
+   * - Endpoint
+     - Método HTTP
+   * - /v1/categoriaItemPcas/{id}  
+     - GET
+
+Exemplo Requisição (cURL)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+   curl -X 'GET' 
+   '${BASE_URL}/v1/categoriaItemPcas/{id} 
+   -H 'accept: */*'
+ 
+
+Dados de Entrada
+^^^^^^^^^^^^^^^^
+
+.. note:: 
+
+Alimentar o path parâmetro {id} na URL.  
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 25
+   :header-rows: 1
 
    * - Campo
      - Tipo
@@ -1477,10 +1554,12 @@ Nota: alimentar o path parâmetro {id} na URL.
      - Código de identificação da categoria de item.
 
 Dados de retorno
+^^^^^^^^^^^^^^^^
 
-.. list-table::
+.. list-table:: 
+   :width: 100%
    :header-rows: 1
-   :widths: 5 25 15 55
+   :widths: 5 25 15 25
 
    * - Id
      - Campo
@@ -1512,10 +1591,12 @@ Dados de retorno
      - Indicador de status da categoria de item. True = Ativo / False = Inativo.
 
 Códigos de Retorno
+^^^^^^^^^^^^^^^^^^
 
-.. list-table:: 
+.. list-table::
+   :width: 100%
+   :widths: 10 25 20
    :header-rows: 1
-   :widths: 15 50 35
 
    * - Código HTTP
      - Mensagem
