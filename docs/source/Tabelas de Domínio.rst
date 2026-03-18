@@ -2094,7 +2094,7 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
 
    curl -X 'GET' 
-   '${BASE_URL}/v1/tipo-instrumento-convocatorio-modo-disputa/1/1' -H 'accept: */*' 
+   '${BASE_URL}/v1/tipo-instrumento-convocatorio-modo-disputa/1/1' 
    -H 'accept: */*'
 
 Dados de Entrada
