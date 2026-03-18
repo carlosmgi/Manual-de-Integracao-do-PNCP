@@ -1434,8 +1434,7 @@ Dados de retorno
    * - 4.4
      - statusAtivo
      - Booleano
-     - Indicador de status do tipo de amparo legal.
-       | True = Ativo / False = Inativo.
+     - Indicador de status do tipo de amparo legal. True = Ativo / False = Inativo.
    * - 5
      - dataInclusao
      - Data/Hora
@@ -1497,7 +1496,9 @@ Ao anexar um documento digital, complementando os metadados enviados, as seguint
 
 - pdf,  txt,  rtf,  doc,  docx, xls, xlsx,  odt, ods, sxw,  zip, 7z, rar, dwg, dwt, dxf, dwf, dwfx, svg, sldprt, sldasm, dgn, ifc, skp, 3ds, dae, obj, rfa e rte. 
 
-**Nota:** O tamanho máximo aceito, por arquivo enviado, é de 30 MB (Megabytes). 
+.. note:: 
+
+   O tamanho máximo aceito, por arquivo enviado, é de 30 MB (Megabytes). 
 
 Categoria de Item (Plano de Contratações e Contratações)
 --------------------------------------------------------
@@ -1618,32 +1619,48 @@ Códigos de Retorno
      - Erro
 
 Consultar Categorias de Item
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Serviço que permite consultar as categorias de item cadastradas no PNCP.
 
-Detalhes da Requisição 
-
-+-------------------------------------+---------------+-----------------+
-| Endpoint                            | Método HTTP   | Exemplo Payload |
-+=====================================+===============+=================+
-| /v1/categoriaItemPcas               | GET           | Não se aplica   |
-+-------------------------------------+---------------+-----------------+
-| Exemplo Requisição (cURL)                                             |
-+-----------------------------------------------------------------------+
-| curl -X 'GET' '${BASE_URL}/v1/categoriaItemPcas' -H 'accept: */*'     |
-|                                                                       |
-| ou                                                                    |
-|                                                                       |
-| curl -X 'GET' '${BASE_URL}/v1/categoriaItemPcas?statusAtivo=true'     |
-| -H 'accept: */*'                                                      |
-+-----------------------------------------------------------------------+
-
-Dados de entrada 
-Nota: alimentar o query parâmetro {statusAtivo}.
+Detalhes da Requisição
+^^^^^^^^^^^^^^^^^^^^^^
 
 .. list-table::
+   :width: 100%
+   :widths: 50 15
    :header-rows: 1
-   :widths: 25 15 15 45
+
+   * - Endpoint
+     - Método HTTP
+   * - /v1/categoriaItemPcas
+     - GET
+
+Exemplo Requisição (cURL)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+   curl -X 'GET' 
+   curl -X 'GET' '${BASE_URL}/v1/categoriaItemPcas' -H 'accept: */*' 
+   -H 'accept: */*'
+   ou
+   curl -X 'GET' 
+   '${BASE_URL}/v1/categoriaItemPcas?statusAtivo=true'
+   -H 'accept: */*'   
+
+Dados de Entrada
+^^^^^^^^^^^^^^^^
+
+.. note:: 
+
+Alimentar o query parâmetro {statusAtivo}.
+
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 25
+   :header-rows: 1 
 
    * - Campo
      - Tipo
@@ -1655,12 +1672,12 @@ Nota: alimentar o query parâmetro {statusAtivo}.
      - Indicador de status da categoria de item. True = Ativa / False = Inativa.
 
 Dados de retorno
+^^^^^^^^^^^^^^^^
 
-Dados de retorno
-
-.. list-table::
+.. list-table:: 
+   :width: 100%
    :header-rows: 1
-   :widths: 5 25 15 55
+   :widths: 5 25 15 25
 
    * - Id
      - Campo
@@ -1692,10 +1709,12 @@ Dados de retorno
      - Indicador de status da categoria de item. True = Ativa / False = Inativa.
 
 Códigos de Retorno
+^^^^^^^^^^^^^^^^^^
 
-.. list-table:: 
+.. list-table::
+   :width: 100%
+   :widths: 10 25 20
    :header-rows: 1
-   :widths: 15 50 35
 
    * - Código HTTP
      - Mensagem
@@ -1727,29 +1746,39 @@ Consultar conformidade entre Instrumento Convocatório, Modalidade de Contrataç
 Serviço que permite consultar a combinação de conformidade pelo código do instrumento convocatório, código da modalidade de contratação e código do amparo 
 legal. 
 
-Detalhes da Requisição 
-
-+-------------------------------------+---------------+-----------------+
-| Endpoint                            | Método HTTP   | Exemplo Payload |
-+=====================================+===============+=================+
-| /v1/instrumento-convocatorio-       | GET           | Não se aplica   |
-| modalidade-amparo                   |               |                 |
-| legal/{amparoLegalId}/{modalidadeId}|               |                 | 
-| /{tipoInstrumentoConvocatorioId}    |               |                 |
-+-------------------------------------+---------------+-----------------+
-| Exemplo Requisição (cURL)                                             |
-+-----------------------------------------------------------------------+
-| curl -X 'GET' '${BASE_URL}/v1/instrumento-convocatorio-modalidade-    |
-| amparo-legal/1/6/1' -H 'accept: */*'                                  |
-+-----------------------------------------------------------------------+
-
-Dados de entrada 
-
-Nota: alimentar o path parâmetro {amparoLegalId} e {modalidadeId} e {tipoInstrumentoConvocatorioId} na URL. 
+Detalhes da Requisição
+^^^^^^^^^^^^^^^^^^^^^^
 
 .. list-table::
+   :width: 100%
+   :widths: 50 15
    :header-rows: 1
-   :widths: 30 15 15 40
+
+   * - Endpoint
+     - Método HTTP
+   * - /v1/tipos-instrumentos-convocatoriosmodalidade-amparo-legal/{amparoLegalId}/{modalidadeId}/{tipoInstrumentoConvocatorioId}
+     - GET
+
+Exemplo Requisição (cURL)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+   curl -X 'GET' 
+   '${BASE_URL}/v1/instrumento-convocatorio-modalidade-amparo-legal/1/6/1'
+   -H 'accept: */*'
+
+Dados de Entrada
+^^^^^^^^^^^^^^^^
+
+.. note:: 
+
+Alimentar o path parâmetro {amparoLegalId} e {modalidadeId} e {tipoInstrumentoConvocatorioId} na URL. 
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 25
+   :header-rows: 1
 
    * - Campo
      - Tipo
@@ -1769,10 +1798,12 @@ Nota: alimentar o path parâmetro {amparoLegalId} e {modalidadeId} e {tipoInstru
      - Código de identificação do instrumento convocatório.
 
 Dados de retorno
+^^^^^^^^^^^^^^^^
 
-.. list-table::
+.. list-table:: 
+   :width: 100%
    :header-rows: 1
-   :widths: 5 25 15 55
+   :widths: 5 25 15 25
 
    * - Id
      - Campo
@@ -1844,10 +1875,12 @@ Dados de retorno
      - Data e hora da inclusão do registro
 
 Códigos de Retorno
+^^^^^^^^^^^^^^^^^^
 
-.. list-table:: 
+.. list-table::
+   :width: 100%
+   :widths: 10 25 20
    :header-rows: 1
-   :widths: 15 50 35
 
    * - Código HTTP
      - Mensagem
@@ -1872,39 +1905,43 @@ Consultar conformidade entre Instrumento Convocatório, Modalidade de Contrataç
 
 Serviço que permite consultar as combinações de conformidade entre instrumento convocatório, modalidade de contratação e amparo legal cadastradas no PNCP. 
 
-Detalhes da Requisição 
-
-+-------------------------------------+---------------+-----------------+
-| Endpoint                            | Método HTTP   | Exemplo Payload |
-+=====================================+===============+=================+
-| /v1/instrumento-convocatorio        |               |                 | 
-| modalidade-amparo-legal             | GET           | Não se aplica   |
-+-------------------------------------+---------------+-----------------+
-| Exemplo Requisição (cURL)                                             |
-+-----------------------------------------------------------------------+
-| curl -X 'GET' '${BASE_URL}/v1/instrumento-convocatorio-modalidade-    |
-| amparo-legal' -H 'accept: */*'                                        |
-|                                                                       |
-| ou                                                                    |
-|                                                                       |
-| curl -X 'GET' '${BASE_URL}/v1/instrumento-convocatorio-               |
-| modalidade-amparo legal?tipoInstrumentoConvocatorioId=1&              |
-| modalidadeId=6' -H 'accept: */*'                                      |
-|                                                                       |
-| ou                                                                    |
-|                                                                       |
-| curl -X 'GET' '${BASE_URL}/v1/instrumento-                            |
-| convocatorio-modalidade-amparo legal?tipoInstrumentoConvocatorioId=   |
-| 1' -H 'accept: */*'                                                   |
-+-----------------------------------------------------------------------+
-
-Dados de entrada 
-
-Nota: alimentar o query parâmetro {amparoLegalId} ou {modalidadeId} ou {tipoInstrumentoConvocatorioId}. 
+Detalhes da Requisição
+^^^^^^^^^^^^^^^^^^^^^^
 
 .. list-table::
+   :width: 100%
+   :widths: 50 15
    :header-rows: 1
-   :widths: 30 15 15 40
+
+   * - Endpoint
+     - Método HTTP
+   * - /v1/instrumento-convocatorio-modalidade-amparo-legal
+     - GET
+
+Exemplo Requisição (cURL)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+   curl -X 'GET' '${BASE_URL}/v1/instrumento-convocatorio-modalidade-amparo-legal' 
+   -H 'accept: */*' 
+   ou 
+   curl -X 'GET' 
+   '${BASE_URL}/v1/instrumento-convocatorio-modalidade-amparo-legal?tipoInstrumentoConvocatorioId=1&modalidadeId=6' 
+   -H 'accept: */*' 
+
+
+Dados de Entrada
+^^^^^^^^^^^^^^^^
+
+.. note:: 
+
+Alimentar o query parâmetro {amparoLegalId} ou {modalidadeId} ou {tipoInstrumentoConvocatorioId}.
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 25
+   :header-rows: 1 
 
    * - Campo
      - Tipo
@@ -1924,12 +1961,12 @@ Nota: alimentar o query parâmetro {amparoLegalId} ou {modalidadeId} ou {tipoIns
      - Código de identificação do instrumento convocatório.
 
 Dados de retorno (lista de combinações) 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Dados de retorno
-
-.. list-table::
+.. list-table:: 
+   :width: 100%
    :header-rows: 1
-   :widths: 5 25 15 55
+   :widths: 5 25 15 25
 
    * - Id
      - Campo
@@ -2001,10 +2038,12 @@ Dados de retorno
      - Data e hora da inclusão do registro.
 
 Códigos de Retorno
+^^^^^^^^^^^^^^^^^^
 
-.. list-table:: 
+.. list-table::
+   :width: 100%
+   :widths: 10 25 20
    :header-rows: 1
-   :widths: 15 50 35
 
    * - Código HTTP
      - Mensagem
@@ -2036,3 +2075,293 @@ Consultar conformidade entre Instrumentos Convocatórios e Modos de Disputa por 
 
 Serviço que permite consultar a combinação de conformidade pelo código do instrumento convocatório e pelo código do modo de disputa.
 
+Detalhes da Requisição
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 50 15
+   :header-rows: 1
+
+   * - Endpoint
+     - Método HTTP
+   * - /v1/tipo-instrumento-convocatorio-modo-disputa/{tipoInstrumentoConvocatorioId}/{modoDisputaId} 
+     - GET
+
+Exemplo Requisição (cURL)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+   curl -X 'GET' 
+   '${BASE_URL}/v1/tipo-instrumento-convocatorio-modo-disputa/1/1' -H 'accept: */*' 
+   -H 'accept: */*'
+
+Dados de Entrada
+^^^^^^^^^^^^^^^^
+
+.. note:: 
+
+   Alimentar o path parâmetro {tipoInstrumentoConvocatorioId} e {modoDisputaId} na URL.
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 25
+   :header-rows: 1
+
+   * - Campo
+     - Tipo
+     - Obrigatório
+     - Descrição
+   * - tipoInstrumentoConvocatorioId
+     - Inteiro
+     - Sim
+     - Código de identificação do instrumento convocatório
+   * - modoDisputaId
+     - Inteiro
+     - Sim
+     - Código de identificação do modo de disputa
+
+Dados de Retorno
+^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 55
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Descrição
+   * - 1
+     - tipoInstrumentoConvocatorio
+     - 
+     - Dados do Instrumento Convocatório
+   * - 1.1
+     - id
+     - Inteiro
+     - Código de identificação do instrumento convocatório
+   * - 1.2
+     - nome
+     - Texto
+     - Nome do instrumento convocatório
+   * - 1.3
+     - descricao
+     - Texto
+     - Descrição do instrumento convocatório
+   * - 1.4
+     - statusAtivo
+     - Booleano
+     - Indicador de status do instrumento convocatório. True-Ativo / False-Inativo
+   * - 2
+     - modoDisputa
+     - 
+     - Dados do Modo de Disputa
+   * - 2.1
+     - id
+     - Inteiro
+     - Código de identificação do modo de disputa
+   * - 2.2
+     - nome
+     - Texto
+     - Nome do modo de disputa
+   * - 2.3
+     - descricao
+     - Texto
+     - Descrição do modo de disputa
+   * - 2.4
+     - statusAtivo
+     - Booleano
+     - Indicador de status do modo de disputa. True-Ativo / False-Inativo
+   * - 3
+     - dataInclusao
+     - Data/Hora
+     - Data e hora da inclusão do registro
+
+Códigos de Retorno
+^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 10 25 20
+   :header-rows: 1
+
+   * - Código HTTP
+     - Mensagem
+     - Tipo
+   * - 200
+     - OK
+     - Sucesso
+   * - 400
+     - BadRequest
+     - Erro
+   * - 404
+     - Modo de disputa não encontrado
+     - NotFound
+   * - 422
+     - Unprocessable Entity
+     - Erro
+   * - 500
+     - Internal Server Error
+     - Erro
+
+Consultar conformidade entre Instrumentos Convocatórios e Modos de Disputa
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Serviço que permite consultar as combinações de conformidade de instrumento convocatório e/ou modo de disputa ou todas as combinações cadastradas no PNCP. 
+
+Detalhes da Requisição
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 50 15
+   :header-rows: 1
+
+   * - Endpoint
+     - Método HTTP
+   * - /v1/tipo-instrumento-convocatorio-modo-disputa 
+     - GET
+
+Exemplo Requisição (cURL)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+   curl -X 'GET' 
+   '${BASE_URL}/v1/tipo-instrumento-convocatorio-modo-disputa' 
+   -H 'accept: */*'
+   ou 
+   curl -X 'GET' 
+   '${BASE_URL}/v1/tipo-instrumento-convocatorio-modo-disputa?tipoInstrumentoConvocatorioId=1' 
+   -H 'accept: */*' 
+   ou 
+   curl -X 'GET' 
+   '${BASE_URL}/v1/tipo-instrumento-convocatorio-modo-disputa?tipoInstrumentoConvocatorioId=1&modoDisputaId=1' 
+   -H 'accept: */*' 
+
+Dados de Entrada
+^^^^^^^^^^^^^^^^
+
+.. note::
+
+   Alimentar o query parâmetro ``tipoInstrumentoConvocatorioId`` ou ``modoDisputaId``.
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 55
+   :header-rows: 1
+
+   * - Campo
+     - Tipo
+     - Obrigatório
+     - Descrição
+   * - tipoInstrumentoConvocatorioId
+     - Inteiro
+     - Não
+     - Código de identificação do instrumento convocatório
+   * - modoDisputaId
+     - Inteiro
+     - Não
+     - Código de identificação do modo de disputa
+
+Dados de Retorno (lista de combinações)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 55
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Descrição
+   * - 1
+     - tipoInstrumentoConvocatorio
+     - 
+     - Dados do Instrumento Convocatório
+   * - 1.1
+     - id
+     - Inteiro
+     - Código de identificação do instrumento convocatório
+   * - 1.2
+     - nome
+     - Texto
+     - Nome do instrumento convocatório
+   * - 1.3
+     - descricao
+     - Texto
+     - Descrição do instrumento convocatório
+   * - 1.4
+     - statusAtivo
+     - Booleano
+     - Indicador de status do instrumento convocatório. True-Ativo / False-Inativo
+   * - 2
+     - modoDisputa
+     - 
+     - Dados do Modo de Disputa
+   * - 2.1
+     - id
+     - Inteiro
+     - Código de identificação do modo de disputa
+   * - 2.2
+     - nome
+     - Texto
+     - Nome do modo de disputa
+   * - 2.3
+     - descricao
+     - Texto
+     - Descrição do modo de disputa
+   * - 2.4
+     - statusAtivo
+     - Booleano
+     - Indicador de status do modo de disputa. True-Ativo / False-Inativo
+   * - 3
+     - dataInclusao
+     - Data/Hora
+     - Data e hora da inclusão do registro
+
+Códigos de Retorno
+^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 10 25 20
+   :header-rows: 1
+
+   * - Código HTTP
+     - Mensagem
+     - Tipo
+   * - 200
+     - OK
+     - Sucesso
+   * - 400
+     - BadRequest
+     - Erro
+   * - 404
+     - Modo de disputa não encontrado
+     - NotFound
+   * - 422
+     - Unprocessable Entity
+     - Erro
+   * - 500
+     - Internal Server Error
+     - Erro
+
+Regra para permissão de inclusão ou retificação de contrato oriundos de contratações no Sistema de Registro de Preços (SRP)
+---------------------------------------------------------------------------------------------------------------------------
+
+O sistema não permitirá a inclusão ou retificação de Contrato oriundos de Contratação no Sistema de Registro de Preços (SRP) que não possua pelo menos uma Ata de Registro de Preço publicada no Portal PNCP para esta Contratação. 
+
+Envio de imagens pelas APIs de Imagens de Item
+----------------------------------------------
+
+Ao enviar uma imagem digital, complementando os metadados enviados, as seguintes extensões de arquivo serão aceitas para upload: 
+
+- webp, jpg, jpeg, jpe, jfif, pjpeg, pjp, png, apng, tiff, tif, svg, avif, bmp e gif. 
+
+.. note::
+
+   Cada item de contratação poderá ter até 5 imagens sendo o tamanho máximo aceito, por arquivo de imagem enviado, é de 3 MB (Megabytes). Serviço disponível atualmente para modalidade leilão, saiba mais no item 6.3.20. 
