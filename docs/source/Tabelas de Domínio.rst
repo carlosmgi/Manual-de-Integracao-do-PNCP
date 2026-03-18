@@ -10,7 +10,7 @@ Consultar Instrumento Convocatório por Código
 Serviço que permite consultar um instrumento convocatório pelo seu código. 
 
 Detalhes da Requisição
-----------------------
+^^^^^^^^^^^^^^^^^^^^^^
 
 .. list-table::
    :width: 100%
@@ -23,15 +23,15 @@ Detalhes da Requisição
      - GET
 
 Exemplo Requisição (cURL)
--------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: bash
 
-curl -X GET 
-"${BASE_URL}/v1/tipos-instrumentos-convocatorios/{id}"
+   curl -X GET 
+   "${BASE_URL}/v1/tipos-instrumentos-convocatorios/{id}"
    
 Dados de Entrada
-----------------
+^^^^^^^^^^^^^^^^
 
 .. note:: 
 
@@ -53,7 +53,7 @@ Alimentar o path parâmetro {id} na URL.
 
 
 Dados de retorno
-----------------
+^^^^^^^^^^^^^^^^
 
 .. list-table:: 
    :width: 100%
@@ -97,68 +97,74 @@ Dados de retorno
      - Booleano
      - Indicador de status do instrumento convocatório. True = Ativo / False = Inativo
 
-Códigos de Retorno
-------------------
+**Códigos de Retorno**
+^^^^^^^^^^^^^^^^^^^^^^
 
-.. list-table:: 
+.. list-table::
    :width: 100%
+   :widths: 10 25 20
    :header-rows: 1
-   :widths: 15 35 20 20
 
    * - Código HTTP
      - Mensagem
      - Tipo
-     - Descrição
    * - 200
      - OK
      - Sucesso
-     - Requisição processada com sucesso
    * - 400
      - BadRequest
      - Erro
-     - Requisição inválida
    * - 404
      - Instrumento convocatório não encontrado
      - NotFound
-     - O instrumento convocatório solicitado não foi encontrado
    * - 422
      - Unprocessable Entity
      - Erro
-     - A requisição não pôde ser processada devido a erros de validação
    * - 500
      - Internal Server Error
      - Erro
-     - Erro interno no servidor
 
 Consultar Instrumentos Convocatórios 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Serviço que permite consultar os instrumentos convocatórios cadastrados no PNCP. 
 
 Detalhes da Requisição
+^^^^^^^^^^^^^^^^^^^^^^
 
-+-------------------------------------+---------------+-----------------+
-| Endpoint                            | Método HTTP   | Exemplo Payload |
-+=====================================+===============+=================+
-| /v1/tipos-instrumentos-convocatorios| GET           | Não se aplica   |
-+-------------------------------------+---------------+-----------------+
-| Exemplo Requisição (cURL)                                             |
-+-----------------------------------------------------------------------+
-| curl -X 'GET' '${BASE_URL}/v1/tipos-instrumentos-convocatorios'       |
-| -H 'accept: */*'                                                      |
-|                                                                       |
-| ou                                                                    |                                                                |                                                                       |
-| curl -X 'GET' '${BASE_URL}/v1/tipos-instrumentos-convocatorios?       |
-| statusAtivo=true'                                                     |
-| -H 'accept: */*'                                                      |
-+-----------------------------------------------------------------------+
-
-Dados de entrada
-
-**Nota:** alimentar o query parâmetro `statusAtivo`.
-
-.. list-table:: 
+.. list-table::
+   :width: 100%
+   :widths: 50 15
    :header-rows: 1
-   :widths: 25 15 15 100
+
+   * - Endpoint
+     - Método HTTP
+   * - /v1/tipos-instrumentos-convocatorios
+     - GET
+
+Exemplo Requisição (cURL)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+   curl -X 'GET' 
+   '${BASE_URL}/v1/tipos-instrumentos-convocatorios 
+   -H 'accept: */*'
+   ou
+   curl -X 'GET' '${BASE_URL}/v1/tipos-instrumentos-convocatorios?statusAtivo=true'
+   -H 'accept: */*'
+
+   
+Dados de Entrada
+^^^^^^^^^^^^^^^^
+
+.. note:: 
+
+Alimentar o query parâmetro `statusAtivo`.  
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 25
+   :header-rows: 1
 
    * - Campo
      - Tipo
@@ -170,10 +176,12 @@ Dados de entrada
      - Indicador de status do instrumento convocatório. True = Ativo / False = Inativo
 
 Dados de retorno
+^^^^^^^^^^^^^^^^
 
 .. list-table:: 
+   :width: 100%
    :header-rows: 1
-   :widths: 5 25 15 45
+   :widths: 5 25 15 25
 
    * - Id
      - Campo
@@ -212,11 +220,13 @@ Dados de retorno
      - Booleano
      - Indicador de status do instrumento convocatório. True = Ativo / False = Inativo
 
-Códigos de Retorno
+**Códigos de Retorno**
+^^^^^^^^^^^^^^^^^^^^^^
 
-.. list-table:: 
+.. list-table::
+   :width: 100%
+   :widths: 10 25 20
    :header-rows: 1
-   :widths: 15 35 20
 
    * - Código HTTP
      - Mensagem
@@ -246,24 +256,38 @@ Consultar Modalidade de Contratação por Código
 Serviço que permite consultar uma modalidade de contratação pelo seu código. 
 
 Detalhes da Requisição
+^^^^^^^^^^^^^^^^^^^^^^
 
-+-------------------------------------+---------------+-----------------+
-| Endpoint                            | Método HTTP   | Exemplo Payload |
-+=====================================+===============+=================+
-| /v1/modalidades/{id}                | GET           | Não se aplica   |
-+-------------------------------------+---------------+-----------------+
-| Exemplo Requisição (cURL)                                             |
-+-----------------------------------------------------------------------+
-| curl -X 'GET' '${BASE_URL}/v1/modalidades/{id}' -H 'accept: */*'      |
-+-----------------------------------------------------------------------+
-
-Dados de entrada
-
-**Nota:** alimentar o path parâmetro `{id}` na URL.
-
-.. list-table:: 
+.. list-table::
+   :width: 100%
+   :widths: 50 15
    :header-rows: 1
-   :widths: 20 20 20 40
+
+   * - Endpoint
+     - Método HTTP
+   * - /v1/modalidades/{id} 
+     - GET
+
+Exemplo Requisição (cURL)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+   curl -X 'GET' 
+   '${BASE_URL}/v1/modalidades/{id}' 
+   -H 'accept: */*
+
+Dados de Entrada
+^^^^^^^^^^^^^^^^
+
+.. note:: 
+
+Alimentar o path parâmetro `{id}` na URL.
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 25
+   :header-rows: 1
 
    * - Campo
      - Tipo
@@ -275,10 +299,12 @@ Dados de entrada
      - Código de identificação da modalidade de contratação
 
 Dados de retorno
+^^^^^^^^^^^^^^^^
 
 .. list-table:: 
+   :width: 100%
    :header-rows: 1
-   :widths: 5 25 15 55
+   :widths: 5 25 15 25
 
    * - Id
      - Campo
@@ -309,11 +335,13 @@ Dados de retorno
      - Booleano
      - Indicador de status da modalidade de contratação. True = Ativo / False = Inativo
 
-Códigos de Retorno
+**Códigos de Retorno**
+^^^^^^^^^^^^^^^^^^^^^^
 
-.. list-table:: 
+.. list-table::
+   :width: 100%
+   :widths: 10 25 20
    :header-rows: 1
-   :widths: 15 50 35
 
    * - Código HTTP
      - Mensagem
@@ -339,29 +367,41 @@ Consultar Modalidades de Contratação
 Serviço que permite consultar as modalidades de contratação cadastradas no PNCP. 
 
 Detalhes da Requisição
+^^^^^^^^^^^^^^^^^^^^^^
 
-+-------------------------------------+---------------+-----------------+
-| Endpoint                            | Método HTTP   | Exemplo Payload |
-+=====================================+===============+=================+
-| /v1/modalidades                     | GET           | Não se aplica   |
-+-------------------------------------+---------------+-----------------+
-| Exemplo Requisição (cURL)                                             |
-+-----------------------------------------------------------------------+
-| curl -X 'GET' '${BASE_URL}/v1/modalidades' -H 'accept: */*'           |
-|                                                                       |
-|ou                                                                     |
-|                                                                       |
-| curl -X 'GET' '${BASE_URL}/v1/modalidades?statusAtivo=true'-          |
-| H 'accept: */*'                                                       |
-+-----------------------------------------------------------------------+
-
-Dados de entrada
-
-**Nota:** alimentar o query parâmetro `statusAtivo`.
-
-.. list-table:: 
+.. list-table::
+   :width: 100%
+   :widths: 50 15
    :header-rows: 1
-   :widths: 25 15 15 45
+
+   * - Endpoint
+     - Método HTTP
+   * - /v1/modalidades
+     - GET
+
+Exemplo Requisição (cURL)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+   curl -X 'GET' 
+   '${BASE_URL}/v1/modalidades' -H 'accept: */*' 
+   -H 'accept: */*'
+   ou
+   curl -X 'GET' '${BASE_URL}/v1/modalidades?statusAtivo=true'
+   -H 'accept: */* 
+
+Dados de Entrada
+^^^^^^^^^^^^^^^^
+
+.. note:: 
+
+Alimentar o query parâmetro `statusAtivo`.
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 25
+   :header-rows: 1
 
    * - Campo
      - Tipo
@@ -373,10 +413,12 @@ Dados de entrada
      - Indicador de status da modalidade de contratação. True = Ativa / False = Inativa
 
 Dados de retorno
+^^^^^^^^^^^^^^^^
 
 .. list-table:: 
+   :width: 100%
    :header-rows: 1
-   :widths: 5 25 15 55
+   :widths: 5 25 15 25
 
    * - Id
      - Campo
@@ -407,11 +449,13 @@ Dados de retorno
      - Booleano
      - Indicador de status da modalidade de contratação. True = Ativa / False = Inativa
 
-Códigos de Retorno
+**Códigos de Retorno**
+^^^^^^^^^^^^^^^^^^^^^^
 
-.. list-table:: 
+.. list-table::
+   :width: 100%
+   :widths: 10 25 20
    :header-rows: 1
-   :widths: 15 50 35
 
    * - Código HTTP
      - Mensagem
@@ -441,24 +485,38 @@ Consultar Modo de Disputa por Código
 Serviço que permite consultar um modo de disputa pelo seu código. 
 
 Detalhes da Requisição
+^^^^^^^^^^^^^^^^^^^^^^
 
-+-------------------------------------+---------------+-----------------+
-| Endpoint                            | Método HTTP   | Exemplo Payload |
-+=====================================+===============+=================+
-| /v1/modos-disputas/{id}             | GET           | Não se aplica   |
-+-------------------------------------+---------------+-----------------+
-| Exemplo Requisição (cURL)                                             |
-+-----------------------------------------------------------------------+
-| curl -X 'GET' '${BASE_URL}/v1/modos-disputas/{id}' -H 'accept: */*'   |
-+-----------------------------------------------------------------------+
-
-Dados de entrada
-
-**Nota:** alimentar o path parâmetro `{id}` na URL.
-
-.. list-table:: 
+.. list-table::
+   :width: 100%
+   :widths: 50 15
    :header-rows: 1
-   :widths: 20 20 20 40
+
+   * - Endpoint
+     - Método HTTP
+   * - /v1/modos-disputas/{id}
+     - GET
+
+Exemplo Requisição (cURL)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+   curl -X 'GET' 
+  '${BASE_URL}/v1/modos-disputas/{id} 
+   -H 'accept: */*'
+
+Dados de Entrada
+^^^^^^^^^^^^^^^^
+
+.. note:: 
+
+Alimentar o path parâmetro `{id}` na URL.
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 25
+   :header-rows: 1
 
    * - Campo
      - Tipo
@@ -470,10 +528,12 @@ Dados de entrada
      - Código de identificação do modo de disputa
 
 Dados de retorno
+^^^^^^^^^^^^^^^^
 
 .. list-table:: 
+   :width: 100%
    :header-rows: 1
-   :widths: 5 25 15 55
+   :widths: 5 25 15 25
 
    * - Id
      - Campo
@@ -504,11 +564,13 @@ Dados de retorno
      - Booleano
      - Indicador de status do modo de disputa. True = Ativo / False = Inativo
 
-Códigos de Retorno
+**Códigos de Retorno**
+^^^^^^^^^^^^^^^^^^^^^^
 
-.. list-table:: 
+.. list-table::
+   :width: 100%
+   :widths: 10 25 20
    :header-rows: 1
-   :widths: 15 50 35
 
    * - Código HTTP
      - Mensagem
@@ -534,29 +596,43 @@ Consultar Modos de Disputa
 Serviço que permite consultar os modos de disputa cadastrados no PNCP.
 
 Detalhes da Requisição
+^^^^^^^^^^^^^^^^^^^^^^
 
-+-------------------------------------+---------------+-----------------+
-| Endpoint                            | Método HTTP   | Exemplo Payload |
-+=====================================+===============+=================+
-| /v1/modos-disputas                  | GET           | Não se aplica   |
-+-------------------------------------+---------------+-----------------+
-| Exemplo Requisição (cURL)                                             |
-+-----------------------------------------------------------------------+
-| curl -X 'GET' '${BASE_URL}/v1/modos-disputas' -H 'accept: */*'        |  
-|                                                                       |
-| ou                                                                    |
-|                                                                       |
-| curl -X 'GET' '${BASE_URL}/v1/modos-disputas?statusAtivo=true'        |
-| -H 'accept: */*'                                                      |
-+-----------------------------------------------------------------------+
-
-Dados de entrada
-
-**Nota:** alimentar o query parâmetro `statusAtivo`.
-
-.. list-table:: 
+.. list-table::
+   :width: 100%
+   :widths: 50 15
    :header-rows: 1
-   :widths: 25 15 15 45
+
+   * - Endpoint
+     - Método HTTP
+   * - /v1/tipos-instrumentos-convocatorios
+     - GET
+
+Exemplo Requisição (cURL)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+   curl -X 'GET' 
+   '${BASE_URL}/v1/modos-disputas' 
+   -H 'accept: */*'
+   ou
+   curl -X 'GET' 
+   '${BASE_URL}/v1/modos-disputas?statusAtivo=true'
+   -H 'accept: */*'
+
+
+Dados de Entrada
+^^^^^^^^^^^^^^^^
+
+.. note:: 
+
+Alimentar o query parâmetro `statusAtivo`.
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 25
+   :header-rows: 1
 
    * - Campo
      - Tipo
@@ -568,10 +644,12 @@ Dados de entrada
      - Indicador de status do modo de disputa. True = Ativo / False = Inativo
 
 Dados de retorno
+^^^^^^^^^^^^^^^^
 
 .. list-table:: 
+   :width: 100%
    :header-rows: 1
-   :widths: 5 25 15 55
+   :widths: 5 25 15 25
 
    * - Id
      - Campo
@@ -602,11 +680,13 @@ Dados de retorno
      - Booleano
      - Indicador de status do modo de disputa. True = Ativo / False = Inativo
 
-Códigos de Retorno
+**Códigos de Retorno**
+^^^^^^^^^^^^^^^^^^^^^^
 
-.. list-table:: 
+.. list-table::
+   :width: 100%
+   :widths: 10 25 20
    :header-rows: 1
-   :widths: 15 50 35
 
    * - Código HTTP
      - Mensagem
