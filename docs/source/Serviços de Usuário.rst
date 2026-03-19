@@ -740,7 +740,7 @@ Para plataformas privadas, a exclusão de novos entes autorizados requer contato
 .. warning::
 Atenção: disponível apenas no ambiente de treinamento/homologação. No ambiente de produção, utilize o procedimento do item 6.2.9 – Gestão de Órgão e Entidade.
 
-.. image:: img/Redefinicao_login_senha.jpg
+.. image:: ../../img/Redefinicao_login_senha.jpg
    :alt: Descrição da imagem
    :width: 400px
    :align: center
