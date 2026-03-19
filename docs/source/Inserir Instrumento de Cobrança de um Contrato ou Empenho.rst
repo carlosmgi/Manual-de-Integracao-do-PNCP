@@ -21,8 +21,6 @@ Exemplo de Payload
 ------------------
 
 .. code-block:: json
-   :linenos:
-   :emphasize-lines: 5,6
 
    {
      "tipoInstrumentoCobrancaId": 1,
