@@ -2081,7 +2081,7 @@ Dados de Entrada
 
 .. note:: 
 
-   Alimentar o path parâmetro {tipoInstrumentoConvocatorioId} e {modoDisputaId} na URL.
+   Alimentar o path parâmetro '{tipoInstrumentoConvocatorioId}' e '{modoDisputaId}' na URL.
 
 .. list-table::
    :width: 100%
