@@ -1,5 +1,5 @@
-Catálogo de Serviços (APIs)
-===========================
+Catálogo de Serviços
+====================
 
 Serviços de Usuário
 -------------------
