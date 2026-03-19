@@ -1250,6 +1250,7 @@ Incluído no PNCP o código genérico 9097071 a ser usado como codigoIBGE possib
 município “Exterior” e UF “EX”. 
 
 .. warning::
+
 	Disponível apenas no ambiente de treinamento/homologação. No ambiente de produção, utilize o procedimento do item 6.2.9 – Gestão de Órgão e Entidade. 
 
 .. figure:: ../../img/Editar_unidade_administrativa.jpg
