@@ -44,6 +44,68 @@ Exemplo Requisição (cURL)
 
 .. code-block:: bash
 
-   curl -X 'GET' 
-   '${BASE_URL}/v1/tipos-instrumentos-convocatorios 
-   -H 'accept: */*'
+ curl -k -X PUT --header "Authorization: Bearer access_token" 
+ "${BASE_URL}/v1/usuarios/5" -H "accept: */*" -H "Content-Type: application/json" --data "@/home/objeto.json" 
+
+Dados de entrada
+^^^^^^^^^^^^^^^^
+
+.. note::
+   Informar o parâmetro ``id`` na URL.
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 25
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Obrigatório
+     - Descrição
+
+   * - 1
+     - nome
+     - Texto (255)
+     - Não
+     - Nome ou razão social do usuário
+   * - 2
+     - email
+     - Texto (255)
+     - Não
+     - E-mail do usuário
+   * - 3
+     - senha
+     - Texto (255)
+     - Não
+     - Senha do usuário
+   * - 4
+     - entesAutorizados
+     - Vetor de string
+     - Não
+     - Vetor com a lista de CNPJ de órgãos que o usuário possui acesso
+
+Dados de retorno 
+Não se aplica.  
+
+Exemplo de Retorno
+^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+ Retorno: 
+
+ access-control-allow-credentials: true 
+ access-control-allow-headers: Content-Type,Authorization,X-Requested-With,Content-Length,Accept,Origin, 
+ access-control-allow-methods: GET,PUT,POST,DELETE,OPTIONS 
+ access-control-allow-origin: * 
+ cache-control: no-cache,no-store,max-age=0,must-revalidate 
+ content-length: 0 
+ date: ? 
+ expires: 0 
+ pragma: no-cache 
+ strict-transport-security: max-age=? 
+ x-content-type-options: nosniff 
+ x-firefox-spdy: ? 
+ x-frame-options: DENY 
+ x-xss-protection: 1; mode=block
