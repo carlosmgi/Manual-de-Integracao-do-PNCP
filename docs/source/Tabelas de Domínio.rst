@@ -2733,20 +2733,513 @@ Dados de retorno
      - descricao
      - Texto
      - Descrição do catálogo
-   * - 6
+   * - 4
      - dataInclusao
      - Data/Hora
      - Data e hora da inclusão do registro
-   * - 7
+   * - 5
      - dataAtualizacao
      - Data/Hora
      - Data e hora da última atualização do registro
-   * - 8
+   * - 6
      - statusAtivo
      - Booleano
      - Indicador de status do catálogo. True-Ativo / False-Inativo
-   * - 9
+   * - 7
      - url
      - Texto
      - URL para o catálogo
+
+Códigos de Retorno
+^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 10 25 20
+   :header-rows: 1
+
+   * - Código HTTP
+     - Mensagem
+     - Tipo
+   * - 200
+     - OK
+     - Sucesso
+   * - 400
+     - BadRequest
+     - Erro
+   * - 404
+     - Modo de disputa não encontrado
+     - NotFound
+   * - 422
+     - Unprocessable Entity
+     - Erro
+   * - 500
+     - Internal Server Error
+     - Erro
+
+Consultar Catálogos 
+~~~~~~~~~~~~~~~~~~~
+
+Serviço que permite consultar os catálogos cadastrados no PNCP. 
+
+Detalhes da Requisição
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 50 15
+   :header-rows: 1
+
+   * - Endpoint
+     - Método HTTP
+   * - /v1/catalogos
+     - GET
+
+Exemplo Requisição (cURL)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+   curl -X 'GET' 
+   '${BASE_URL}/v1/catalogos' 
+   -H 'accept: */*'
+   ou
+   curl -X 'GET' 
+   '${BASE_URL}/v1/catalogos?statusAtivo=true' 
+   -H 'accept: */*'
+
+Dados de entrada
+^^^^^^^^^^^^^^^^
+
+.. note::
+   Informar o parâmetro de query ``statusAtivo``.
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 25
+   :header-rows: 1
+
+   * - Campo
+     - Tipo
+     - Obrigatório
+     - Descrição
+   * - statusAtivo
+     - Booleano
+     - Não
+     - Indicador de status do catálogo. True-Ativo / False-Inativo
+
+Dados de retorno
+^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 25
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Descrição
+
+   * - 1
+     - id
+     - Inteiro
+     - Código de identificação do catálogo
+   * - 2
+     - nome
+     - Texto
+     - Nome do catálogo
+   * - 3
+     - descricao
+     - Texto
+     - Descrição do catálogo
+   * - 4
+     - dataInclusao
+     - Data/Hora
+     - Data e hora da inclusão do registro
+   * - 5
+     - dataAtualizacao
+     - Data/Hora
+     - Data e hora da última atualização do registro
+   * - 6
+     - statusAtivo
+     - Booleano
+     - Indicador de status do catálogo. True-Ativo / False-Inativo
+
+Códigos de Retorno
+^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 10 25 20
+   :header-rows: 1
+
+   * - Código HTTP
+     - Mensagem
+     - Tipo
+   * - 200
+     - OK
+     - Sucesso
+   * - 400
+     - BadRequest
+     - Erro
+   * - 404
+     - Modo de disputa não encontrado
+     - NotFound
+   * - 422
+     - Unprocessable Entity
+     - Erro
+   * - 500
+     - Internal Server Error
+     - Erro
+
+Tipo de Instrumento de Cobrança 
+-------------------------------
+
+Para consulta aos tipos de instrumentos de cobrança cadastrados acessar a página no Portal PNCP pelo endereço `https://pncp.gov.br/app/entidades-dominio <https://pncp.gov.br/app/entidades-dominio>`_. Para ajudar na integração com o PNCP foram disponibilizados os serviços para consulta de tipos de instrumentos de cobrança a seguir. 
+
+Consultar Tipo de Instrumento de Cobrança por Código 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Serviço que permite consultar um tipo de instrumento de cobrança pelo seu código.
+
+Detalhes da Requisição
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 50 15
+   :header-rows: 1
+
+   * - Endpoint
+     - Método HTTP
+   * - /v1/tipos-instrumentos-cobranca/{id} 
+     - GET
+
+Exemplo Requisição (cURL)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+   curl -X 'GET' 
+   '${BASE_URL}/v1/tipos-instrumentos-cobranca/{id}' 
+   -H 'accept: */*'
+
+Dados de entrada
+^^^^^^^^^^^^^^^^
+
+.. note::
+   Informar o parâmetro de path ``id`` na URL.
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 25
+   :header-rows: 1
+
+   * - Campo
+     - Tipo
+     - Obrigatório
+     - Descrição
+   * - id
+     - Inteiro
+     - Sim
+     - Código de identificação do instrumento convocatório
+
+Dados de retorno
+^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 25
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Descrição
+
+   * - 1
+     - id
+     - Inteiro
+     - Código de identificação do tipo de instrumento de cobrança
+   * - 2
+     - nome
+     - Texto
+     - Nome do tipo de instrumento de cobrança
+   * - 3
+     - descricao
+     - Texto
+     - Descrição do tipo de instrumento de cobrança
+   * - 4
+     - dataInclusao
+     - Data/Hora
+     - Data e hora da inclusão do registro
+   * - 5
+     - dataAtualizacao
+     - Data/Hora
+     - Data e hora da última atualização do registro
+   * - 6
+     - statusAtivo
+     - Booleano
+     - Indicador de status do tipo de instrumento de cobrança. True-Ativo / False-Inativo
+
+Códigos de Retorno
+^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 10 25 20
+   :header-rows: 1
+
+   * - Código HTTP
+     - Mensagem
+     - Tipo
+   * - 200
+     - OK
+     - Sucesso
+   * - 400
+     - BadRequest
+     - Erro
+   * - 404
+     - Modo de disputa não encontrado
+     - NotFound
+   * - 422
+     - Unprocessable Entity
+     - Erro
+   * - 500
+     - Internal Server Error
+     - Erro
+
+Consultar Tipo de Instrumento de Cobrança 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Serviço que permite consultar os tipos de instrumentos de cobrança cadastrados no PNCP. 
+
+Detalhes da Requisição
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 50 15
+   :header-rows: 1
+
+   * - Endpoint
+     - Método HTTP
+   * - /v1/tipos-instrumentos-cobranca
+     - GET
+
+Exemplo Requisição (cURL)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+   curl -X 'GET' 
+   '${BASE_URL}/v1/tipos-instrumentos-cobranca' 
+   -H 'accept: */*' 
+   ou 
+   curl -X 'GET' 
+   '${BASE_URL}/v1/tipos-instrumentos-cobranca?statusAtivo=true' 
+   -H 'accept: */*'
+
+Dados de entrada
+^^^^^^^^^^^^^^^^
+
+.. note::
+   Informar o parâmetro de query ``statusAtivo``.
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 25
+   :header-rows: 1
+
+   * - Campo
+     - Tipo
+     - Obrigatório
+     - Descrição
+   * - statusAtivo
+     - Booleano
+     - Não
+     - Indicador de status do instrumento convocatório. True-Ativo / False-Inativo
+
+Dados de retorno
+^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 25
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Descrição
+
+   * - 1
+     - id
+     - Inteiro
+     - Código de identificação do tipo de instrumento de cobrança
+   * - 2
+     - nome
+     - Texto
+     - Nome do tipo de instrumento de cobrança
+   * - 3
+     - descricao
+     - Texto
+     - Descrição do tipo de instrumento de cobrança
+   * - 4
+     - dataInclusao
+     - Data/Hora
+     - Data e hora da inclusão do registro
+   * - 5
+     - dataAtualizacao
+     - Data/Hora
+     - Data e hora da última atualização do registro
+   * - 6
+     - statusAtivo
+     - Booleano
+     - Indicador de status do tipo de instrumento de cobrança. True-Ativo / False-Inativo
+
+Códigos de Retorno
+^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 10 25 20
+   :header-rows: 1
+
+   * - Código HTTP
+     - Mensagem
+     - Tipo
+   * - 200
+     - OK
+     - Sucesso
+   * - 400
+     - BadRequest
+     - Erro
+   * - 404
+     - Modo de disputa não encontrado
+     - NotFound
+   * - 422
+     - Unprocessable Entity
+     - Erro
+   * - 500
+     - Internal Server Error
+     - Erro
+
+Fonte Orçamentária
+------------------
+
+Para consulta às fontes orçamentárias cadastradas acessar a página no Portal PNCP pelo endereço `https://pncp.gov.br/app/entidades-dominio <https://pncp.gov.br/app/entidades-dominio>`_. Para ajudar na integração com o PNCP foram disponibilizados os serviços para consulta de fontes orçamentárias a seguir.
+
+Consultar Fonte Orçamentária por Código 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Serviço que permite consultar uma fonte orçamentária pelo seu código. 
+
+Detalhes da Requisição
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 50 15
+   :header-rows: 1
+
+   * - Endpoint
+     - Método HTTP
+   * - /v1/fontes-orcamentarias/{id} 
+     - GET
+
+Exemplo Requisição (cURL)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+   curl -X 'GET' 
+   '${BASE_URL}/v1/fontes-orcamentarias/1'
+   -H 'accept: */*'
+
+Dados de entrada
+^^^^^^^^^^^^^^^^
+
+.. note::
+   Informar o parâmetro de path ``id`` na URL.
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 25
+   :header-rows: 1
+
+   * - Campo
+     - Tipo
+     - Obrigatório
+     - Descrição
+   * - id
+     - Inteiro
+     - Sim
+     - Código de identificação da fonte orçamentária
+
+Dados de retorno
+^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 25
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Descrição
+
+   * - 1
+     - id
+     - Inteiro
+     - Código de identificação da fonte orçamentária
+   * - 2
+     - nome
+     - Texto
+     - Nome da fonte orçamentária
+   * - 3
+     - descricao
+     - Texto
+     - Descrição da fonte orçamentária
+   * - 4
+     - dataInclusao
+     - Data/Hora
+     - Data e hora da inclusão do registro
+   * - 5
+     - dataAtualizacao
+     - Data/Hora
+     - Data e hora da última atualização do registro
+   * - 6
+     - statusAtivo
+     - Booleano
+     - Indicador de status da fonte orçamentária. True-Ativo / False-Inativo
+
+Códigos de Retorno
+^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 10 25 20
+   :header-rows: 1
+
+   * - Código HTTP
+     - Mensagem
+     - Tipo
+   * - 200
+     - OK
+     - Sucesso
+   * - 400
+     - BadRequest
+     - Erro
+   * - 404
+     - Modo de disputa não encontrado
+     - NotFound
+   * - 422
+     - Unprocessable Entity
+     - Erro
+   * - 500
+     - Internal Server Error
+     - Erro
 
