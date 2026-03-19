@@ -24,7 +24,7 @@ Sumário
    Acesso ao PNCP
    Recomendações Iniciais
    Tabelas de Domínio
-   Serviços de Usuário
+   Catálogo de Serviços (APIs)
    Inserir Ata de Registro de Preço
    Inserir Contratos ou Empenhos
    Retificar Contrato ou Empenho 
