@@ -742,7 +742,7 @@ Atenção: disponível apenas no ambiente de treinamento/homologação. No ambie
 
 
    .. figure:: ../../img/Redefinicao_login_senha.jpg
-   :width: 80%
-   :align: center
-   :alt: Redefinição de login e senha
+	   :width: 80%
+	   :align: center
+	   :alt: Redefinição de login e senha
 
