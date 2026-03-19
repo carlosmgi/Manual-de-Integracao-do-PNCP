@@ -36,3 +36,4 @@ Sumário
    Consultar Contrato ou Empenho
    Consultar Contratos ou Empenhos de uma Contratação
    Inserir Instrumento de Cobrança de um Contrato ou Empenho
+   Retificar Parcialmente Instrumento de Cobrança de Contrato ou Empenho
