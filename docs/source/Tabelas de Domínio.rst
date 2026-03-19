@@ -1625,7 +1625,7 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
 
    curl -X 'GET' 
-   curl -X 'GET' '${BASE_URL}/v1/categoriaItemPcas' -H 'accept: */*' -H 'accept: */*'
+   curl -X 'GET' '${BASE_URL}/v1/categoriaItemPcas' -H 'accept: */*'
    ou
    curl -X 'GET' 
    '${BASE_URL}/v1/categoriaItemPcas?statusAtivo=true' -H 'accept: */*'   
