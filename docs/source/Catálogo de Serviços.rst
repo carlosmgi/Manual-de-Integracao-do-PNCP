@@ -1241,3 +1241,18 @@ Códigos de Retorno
    * - 500
      - Internal Server Error
      - Erro
+
+Atualizar Unidade
+~~~~~~~~~~~~~~~~~
+
+Serviço que permite atualizar os dados (nome da unidade e código IBGE do município) de uma unidade em um órgão/entidade. 
+Incluído no PNCP o código genérico 9097071 a ser usado como codigoIBGE possibilitando inclusão de Unidade localizada no exterior. Será retornado nome do 
+município “Exterior” e UF “EX”. 
+
+.. warning::
+	Disponível apenas no ambiente de treinamento/homologação. No ambiente de produção, utilize o procedimento do item 6.2.9 – Gestão de Órgão e Entidade. 
+
+.. figure:: ../../img/Editar_unidade_administrativa.jpg
+	:width: 80%
+	:align: center
+	:alt: Editar Unidade Administrativa
