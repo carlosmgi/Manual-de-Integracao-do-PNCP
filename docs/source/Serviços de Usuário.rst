@@ -26,18 +26,17 @@ Detalhes da Requisição
      - PUT
 
 Exemplo de Payload
-------------------
+^^^^^^^^^^^^^^^^^^
 
 .. code-block:: json
   :linenos:
   :emphasize-lines: 5,6
-
-{ 
-  "nome": "Fulano de Tal", 
-  "email": "fulano@example.com", 
-  "senha": "&1NaoCompartilho1Senha&", 
-  "entesAutorizados": ["10000000000003", "10000000000005"] 
-} 
+  { 
+    "nome": "Fulano de Tal", 
+    "email": "fulano@example.com", 
+    "senha": "&1NaoCompartilho1Senha&", 
+    "entesAutorizados": ["10000000000003", "10000000000005"] 
+  } 
 
 Exemplo Requisição (cURL)
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -45,7 +44,8 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
 
  curl -k -X PUT --header "Authorization: Bearer access_token" 
- "${BASE_URL}/v1/usuarios/5" -H "accept: */*" -H "Content-Type: application/json" --data "@/home/objeto.json" 
+ "${BASE_URL}/v1/usuarios/5" -H "accept: */*" -H "Content-Type: application/json" 
+ --data "@/home/objeto.json" 
 
 Dados de entrada
 ^^^^^^^^^^^^^^^^
@@ -135,3 +135,31 @@ Códigos de Retorno
    * - 500
      - Internal Server Error
      - Erro
+
+Consultar Usuário por Id
+------------------------
+
+Serviço que permite consultar os dados de um usuário pelo id. Disponível para o próprio usuário logado ou um usuário administrador. 
+
+Detalhes da Requisição
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 50 15
+   :header-rows: 1
+
+   * - Endpoint
+     - Método HTTP
+   * - /v1/usuarios/{id} 
+     - GET
+	 
+Exemplo Requisição (cURL)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+ 
+   curl -k -X GET --header "Authorization: Bearer access_token" 
+   "${BASE_URL}/v1/usuarios/5" -H "accept: */*" 
+
+
