@@ -28,7 +28,7 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
 
    curl -X GET 
-   "${BASE_URL}/v1/tipos-instrumentos-convocatorios/{id}"
+   "${BASE_URL}/v1/tipos-instrumentos-convocatorios/{id}" -H 'accept: */*' 
    
 Dados de Entrada
 ^^^^^^^^^^^^^^^^
@@ -147,12 +147,9 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
 
    curl -X 'GET' 
-   '${BASE_URL}/v1/tipos-instrumentos-convocatorios 
-   -H 'accept: */*'
+   '${BASE_URL}/v1/tipos-instrumentos-convocatorios -H 'accept: */*'
    ou
-   curl -X 'GET' '${BASE_URL}/v1/tipos-instrumentos-convocatorios?statusAtivo=true'
-   -H 'accept: */*'
-
+   curl -X 'GET' '${BASE_URL}/v1/tipos-instrumentos-convocatorios?statusAtivo=true' -H 'accept: */*'
    
 Dados de Entrada
 ^^^^^^^^^^^^^^^^
@@ -274,8 +271,7 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
 
    curl -X 'GET' 
-   '${BASE_URL}/v1/modalidades/{id}' 
-   -H 'accept: */*
+   '${BASE_URL}/v1/modalidades/{id}' -H 'accept: */*
 
 Dados de Entrada
 ^^^^^^^^^^^^^^^^
@@ -385,11 +381,9 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
 
    curl -X 'GET' 
-   '${BASE_URL}/v1/modalidades' -H 'accept: */*' 
-   -H 'accept: */*'
+   '${BASE_URL}/v1/modalidades' -H 'accept: */*' -H 'accept: */*'
    ou
-   curl -X 'GET' '${BASE_URL}/v1/modalidades?statusAtivo=true'
-   -H 'accept: */* 
+   curl -X 'GET' '${BASE_URL}/v1/modalidades?statusAtivo=true' -H 'accept: */* 
 
 Dados de Entrada
 ^^^^^^^^^^^^^^^^
@@ -503,8 +497,7 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
 
    curl -X 'GET' 
-  '${BASE_URL}/v1/modos-disputas/{id} 
-   -H 'accept: */*'
+  '${BASE_URL}/v1/modos-disputas/{id} -H 'accept: */*'
 
 Dados de Entrada
 ^^^^^^^^^^^^^^^^
@@ -614,12 +607,10 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
 
    curl -X 'GET' 
-   '${BASE_URL}/v1/modos-disputas' 
-   -H 'accept: */*'
+   '${BASE_URL}/v1/modos-disputas' -H 'accept: */*'
    ou
    curl -X 'GET' 
-   '${BASE_URL}/v1/modos-disputas?statusAtivo=true'
-   -H 'accept: */*'
+   '${BASE_URL}/v1/modos-disputas?statusAtivo=true' -H 'accept: */*'
 
 
 Dados de Entrada
@@ -734,8 +725,7 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
 
    curl -X 'GET' 
-   '${BASE_URL}/v1/criterios-julgamentos/{id}'  
-   -H 'accept: */*'
+   '${BASE_URL}/v1/criterios-julgamentos/{id}' -H 'accept: */*'
 
 Dados de Entrada
 ^^^^^^^^^^^^^^^^
@@ -845,12 +835,10 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
 
    curl -X 'GET' 
-   '${BASE_URL}/v1/criterios-julgamentos' 
-   -H 'accept: */*'
+   '${BASE_URL}/v1/criterios-julgamentos' -H 'accept: */*'
    ou
    curl -X 'GET' 
-   '${BASE_URL}/v1/criterios-julgamentos?statusAtivo=true'
-   -H 'accept: */*'
+   '${BASE_URL}/v1/criterios-julgamentos?statusAtivo=true' -H 'accept: */*'
 
 Dados de Entrada
 ^^^^^^^^^^^^^^^^
@@ -1228,8 +1216,7 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
 
    curl -X 'GET' 
-   '${BASE_URL}/v1/amparos-legais/{id}'
-   -H 'accept: */*'
+   '${BASE_URL}/v1/amparos-legais/{id}' -H 'accept: */*'
 
 Dados de Entrada
 ^^^^^^^^^^^^^^^^
@@ -1360,16 +1347,13 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
 
    curl -X 'GET' 
-   '${BASE_URL}/v1/amparos-legais'
-   -H 'accept: */*'
+   '${BASE_URL}/v1/amparos-legais' -H 'accept: */*'
    ou
    curl -X 'GET' 
-   '${BASE_URL}/v1/amparos-legais?statusAtivo=true'
-   -H 'accept: */*'
+   '${BASE_URL}/v1/amparos-legais?statusAtivo=true' -H 'accept: */*'
    ou
    curl -X 'GET' 
-   '${BASE_URL}/v1/amparos-legais?tipoAmparoLegalId=1&statusAtivo=true'
-   -H 'accept: */*'
+   '${BASE_URL}/v1/amparos-legais?tipoAmparoLegalId=1&statusAtivo=true' -H 'accept: */*'
 
 Dados de Entrada
 ^^^^^^^^^^^^^^^^
@@ -1529,8 +1513,7 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
 
    curl -X 'GET' 
-   '${BASE_URL}/v1/categoriaItemPcas/{id} 
-   -H 'accept: */*'
+   '${BASE_URL}/v1/categoriaItemPcas/{id} -H 'accept: */*'
  
 
 Dados de Entrada
@@ -1642,12 +1625,10 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
 
    curl -X 'GET' 
-   curl -X 'GET' '${BASE_URL}/v1/categoriaItemPcas' -H 'accept: */*' 
-   -H 'accept: */*'
+   curl -X 'GET' '${BASE_URL}/v1/categoriaItemPcas' -H 'accept: */*' -H 'accept: */*'
    ou
    curl -X 'GET' 
-   '${BASE_URL}/v1/categoriaItemPcas?statusAtivo=true'
-   -H 'accept: */*'   
+   '${BASE_URL}/v1/categoriaItemPcas?statusAtivo=true' -H 'accept: */*'   
 
 Dados de Entrada
 ^^^^^^^^^^^^^^^^
@@ -1765,8 +1746,7 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
 
    curl -X 'GET' 
-   '${BASE_URL}/v1/instrumento-convocatorio-modalidade-amparo-legal/1/6/1'
-   -H 'accept: */*'
+   '${BASE_URL}/v1/instrumento-convocatorio-modalidade-amparo-legal/1/6/1' -H 'accept: */*'
 
 Dados de Entrada
 ^^^^^^^^^^^^^^^^
@@ -1902,6 +1882,7 @@ Códigos de Retorno
      - Erro
 
 Consultar conformidade entre Instrumento Convocatório, Modalidade de Contratação e Amparo Legal
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Serviço que permite consultar as combinações de conformidade entre instrumento convocatório, modalidade de contratação e amparo legal cadastradas no PNCP. 
 
@@ -1923,12 +1904,11 @@ Exemplo Requisição (cURL)
 
 .. code-block:: bash
 
-   curl -X 'GET' '${BASE_URL}/v1/instrumento-convocatorio-modalidade-amparo-legal' 
-   -H 'accept: */*' 
+   curl -X 'GET' 
+   '${BASE_URL}/v1/instrumento-convocatorio-modalidade-amparo-legal' -H 'accept: */*' 
    ou 
    curl -X 'GET' 
-   '${BASE_URL}/v1/instrumento-convocatorio-modalidade-amparo-legal?tipoInstrumentoConvocatorioId=1&modalidadeId=6' 
-   -H 'accept: */*' 
+   '${BASE_URL}/v1/instrumento-convocatorio-modalidade-amparo-legal?tipoInstrumentoConvocatorioId=1&modalidadeId=6' -H 'accept: */*' 
 
 
 Dados de Entrada
@@ -2094,8 +2074,7 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
 
    curl -X 'GET' 
-   '${BASE_URL}/v1/tipo-instrumento-convocatorio-modo-disputa/1/1' 
-   -H 'accept: */*'
+   '${BASE_URL}/v1/tipo-instrumento-convocatorio-modo-disputa/1/1' -H 'accept: */*'
 
 Dados de Entrada
 ^^^^^^^^^^^^^^^^
@@ -2230,16 +2209,13 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
 
    curl -X 'GET' 
-   '${BASE_URL}/v1/tipo-instrumento-convocatorio-modo-disputa' 
-   -H 'accept: */*'
+   '${BASE_URL}/v1/tipo-instrumento-convocatorio-modo-disputa' -H 'accept: */*'
    ou 
    curl -X 'GET' 
-   '${BASE_URL}/v1/tipo-instrumento-convocatorio-modo-disputa?tipoInstrumentoConvocatorioId=1' 
-   -H 'accept: */*' 
+   '${BASE_URL}/v1/tipo-instrumento-convocatorio-modo-disputa?tipoInstrumentoConvocatorioId=1' -H 'accept: */*' 
    ou 
    curl -X 'GET' 
-   '${BASE_URL}/v1/tipo-instrumento-convocatorio-modo-disputa?tipoInstrumentoConvocatorioId=1&modoDisputaId=1' 
-   -H 'accept: */*' 
+   '${BASE_URL}/v1/tipo-instrumento-convocatorio-modo-disputa?tipoInstrumentoConvocatorioId=1&modoDisputaId=1' -H 'accept: */*' 
 
 Dados de Entrada
 ^^^^^^^^^^^^^^^^
@@ -2395,8 +2371,7 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
 
    curl -X 'GET' 
-   '${BASE_URL}/v1/modalidade-criterio-julgamento/6/1'
-   -H 'accept: */*'
+   '${BASE_URL}/v1/modalidade-criterio-julgamento/6/1' -H 'accept: */*'
 
 Dados de Entrada
 ^^^^^^^^^^^^^^^^
@@ -2531,19 +2506,15 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
 
    curl -X 'GET' 
-   '${BASE_URL}/v1/modalidade-criterio-julgamento' 
-   -H 'accept: */*'
+   '${BASE_URL}/v1/modalidade-criterio-julgamento' -H 'accept: */*'
    ou
-   curl -X 'GET' '${BASE_URL}/v1/modalidade-criterio-julgamento?modalidadeId=6' 
-   -H 'accept: */*' 
+   curl -X 'GET' '${BASE_URL}/v1/modalidade-criterio-julgamento?modalidadeId=6' -H 'accept: */*' 
    ou 
    curl 
-   'GET' '${BASE_URL}/v1/modalidade-criterio-julgamento?criterioJulgamentoId=1' -H 
-   'accept: */*' 
+   'GET' '${BASE_URL}/v1/modalidade-criterio-julgamento?criterioJulgamentoId=1' -H 'accept: */*' 
    ou 
    curl -X 'GET' 
-   '${BASE_URL}/v1/modalidade-criterio-julgamento?modalidadeId=6&criterioJulgamentoId=1' 
-   -H 'accept: */*' 
+   '${BASE_URL}/v1/modalidade-criterio-julgamento?modalidadeId=6&criterioJulgamentoId=1' -H 'accept: */*' 
 
 Dados de entrada
 ^^^^^^^^^^^^^^^^
@@ -2685,8 +2656,7 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
 
    curl -X 'GET' 
-   '${BASE_URL}/v1/catalogos/{id}' 
-   -H 'accept: */*'
+   '${BASE_URL}/v1/catalogos/{id}' -H 'accept: */*'
 
 Dados de entrada
 ^^^^^^^^^^^^^^^^
@@ -2801,17 +2771,16 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
 
    curl -X 'GET' 
-   '${BASE_URL}/v1/catalogos' 
-   -H 'accept: */*'
+   '${BASE_URL}/v1/catalogos' -H 'accept: */*'
    ou
    curl -X 'GET' 
-   '${BASE_URL}/v1/catalogos?statusAtivo=true' 
-   -H 'accept: */*'
+   '${BASE_URL}/v1/catalogos?statusAtivo=true' -H 'accept: */*'
 
 Dados de entrada
 ^^^^^^^^^^^^^^^^
 
 .. note::
+
    Informar o parâmetro de query ``statusAtivo``.
 
 .. list-table::
@@ -2922,8 +2891,7 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
 
    curl -X 'GET' 
-   '${BASE_URL}/v1/tipos-instrumentos-cobranca/{id}' 
-   -H 'accept: */*'
+   '${BASE_URL}/v1/tipos-instrumentos-cobranca/{id}' -H 'accept: */*'
 
 Dados de entrada
 ^^^^^^^^^^^^^^^^
@@ -3034,12 +3002,10 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
 
    curl -X 'GET' 
-   '${BASE_URL}/v1/tipos-instrumentos-cobranca' 
-   -H 'accept: */*' 
+   '${BASE_URL}/v1/tipos-instrumentos-cobranca' -H 'accept: */*' 
    ou 
    curl -X 'GET' 
-   '${BASE_URL}/v1/tipos-instrumentos-cobranca?statusAtivo=true' 
-   -H 'accept: */*'
+   '${BASE_URL}/v1/tipos-instrumentos-cobranca?statusAtivo=true' -H 'accept: */*'
 
 Dados de entrada
 ^^^^^^^^^^^^^^^^
@@ -3155,8 +3121,7 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
 
    curl -X 'GET' 
-   '${BASE_URL}/v1/fontes-orcamentarias/1'
-   -H 'accept: */*'
+   '${BASE_URL}/v1/fontes-orcamentarias/1' -H 'accept: */*'
 
 Dados de entrada
 ^^^^^^^^^^^^^^^^
@@ -3267,12 +3232,10 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
 
    curl -X 'GET' 
-   '${BASE_URL}/v1/fontes-orcamentarias' 
-   -H 'accept: */*' 
+   '${BASE_URL}/v1/fontes-orcamentarias' -H 'accept: */*' 
    ou 
    curl -X 'GET' 
-   '${BASE_URL}/v1/fontes-orcamentarias?statusAtivo=true' 
-   -H 'accept: */*' 
+   '${BASE_URL}/v1/fontes-orcamentarias?statusAtivo=true' -H 'accept: */*' 
 
 Dados de entrada
 ^^^^^^^^^^^^^^^^
@@ -3388,8 +3351,7 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
 
    curl -X 'GET' 
-   '${BASE_URL}/v1/modalidade-fonte-orcamentaria/6/1'
-   -H 'accept: */*'
+   '${BASE_URL}/v1/modalidade-fonte-orcamentaria/6/1' -H 'accept: */*'
 
 Dados de entrada
 ^^^^^^^^^^^^^^^^
@@ -3526,20 +3488,16 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
 
    curl -X 'GET' 
-   '${BASE_URL}/v1/modalidade-fonte-orcamentaria' 
-   -H 'accept: */*' 
+   '${BASE_URL}/v1/modalidade-fonte-orcamentaria' -H 'accept: */*' 
    ou 
    curl -X 'GET' 
-   '${BASE_URL}/v1/modalidade-fonte-orcamentaria?modalidadeId=6'  
-   -H 'accept: */*' 
+   '${BASE_URL}/v1/modalidade-fonte-orcamentaria?modalidadeId=6' -H 'accept: */*' 
    ou 
    curl 'GET' 
-   '${BASE_URL}/v1/modalidade-fonte-orcamentaria?fonteOrcamentariaId=1' 
-   -H 'accept: */*' 
+   '${BASE_URL}/v1/modalidade-fonte-orcamentaria?fonteOrcamentariaId=1' -H 'accept: */*' 
    ou 
    curl -X 'GET' 
-   '${BASE_URL}/v1/modalidade-fonte-orcamentaria?modalidadeId=6&fonteOrcamentariaId=1' 
-   -H 'accept: */*'
+   '${BASE_URL}/v1/modalidade-fonte-orcamentaria?modalidadeId=6&fonteOrcamentariaId=1' -H 'accept: */*'
 
 Dados de entrada
 ^^^^^^^^^^^^^^^^
