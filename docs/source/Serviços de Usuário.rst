@@ -85,7 +85,9 @@ Dados de entrada
      - Não
      - Vetor com a lista de CNPJ de órgãos que o usuário possui acesso
 
-Dados de retorno 
+Dados de retorno
+^^^^^^^^^^^^^^^^
+
 Não se aplica.  
 
 Exemplo de Retorno
@@ -109,3 +111,27 @@ Exemplo de Retorno
  x-firefox-spdy: ? 
  x-frame-options: DENY 
  x-xss-protection: 1; mode=block
+
+Códigos de Retorno
+^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 10 25 20
+   :header-rows: 1
+
+   * - Código HTTP
+     - Mensagem
+     - Tipo
+   * - 200
+     - OK
+     - Sucesso
+   * - 400
+     - BadRequest
+     - Erro
+   * - 422
+     - Unprocessable Entity
+     - NotFound
+   * - 500
+     - Internal Server Error
+     - Erro
