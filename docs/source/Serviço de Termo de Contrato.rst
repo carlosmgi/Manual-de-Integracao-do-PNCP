@@ -239,7 +239,7 @@ Dados de retorno
 Exemplo de retorno
 ------------------
 
-.. code-block:: http
+.. code-block:: text
    :linenos:
 
    Retorno:
