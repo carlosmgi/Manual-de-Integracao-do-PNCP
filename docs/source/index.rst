@@ -39,3 +39,4 @@ Sumário
    Inserir Instrumento de Cobrança de um Contrato ou Empenho
    Retificar Parcialmente Instrumento de Cobrança de Contrato ou Empenho
    Serviço de Termo de Contrato
+   Retificar Termo de Contrato
