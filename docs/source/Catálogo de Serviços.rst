@@ -1869,7 +1869,7 @@ Habilitar/Desabilitar plataforma
 Incluir Unidade Administrativa
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. figure:: ../../img/Incluir_nidade_dministrativa.jpg
+.. figure:: ../../img/Incluir_unidade_administrativa.jpg
 	:width: 80%
 	:align: center
 	:alt: Incluir Unidade Administrativa (adicionar)
@@ -1877,7 +1877,7 @@ Incluir Unidade Administrativa
 Editar, Ativar/Inativar Unidade Administrativa
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. figure:: ../../img/Editar_nidade_dministrativa.jpg
+.. figure:: ../../img/Editar_unidade_administrativa.jpg
 	:width: 80%
 	:align: center
 	:alt: Editar, Ativar/Inativar Unidade Administrativa
