@@ -1,8 +1,5 @@
-Catálogo de Serviços
-====================
-
 Serviços de Usuário
--------------------
+===================
 
 Atualizar Usuário
 ~~~~~~~~~~~~~~~~~
