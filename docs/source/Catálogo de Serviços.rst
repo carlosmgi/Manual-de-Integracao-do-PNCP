@@ -1802,6 +1802,7 @@ Códigos de Retorno
      - Internal Server Error
      - Erro
 
+
 Requerimento Perfil Gestor
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -1823,10 +1824,12 @@ Com essa habilitação, o gestor se torna o responsável por fazer a gestão de 
 	:align: center
 	:alt: Requerimento Perfil Gestor (dados do órgão/entidade)
 
+
 .. figure:: ../../img/Requerimento_perfil_gestor_3.jpg
 	:width: 80%
 	:align: center
 	:alt: Requerimento Perfil Gestor (documentação comprobatória)
+
 
 Gestão de Órgão e Entidade 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1848,6 +1851,7 @@ Cabe ao gestor órgão autorizar plataforma publicadora, seja ela pública ou pr
 	:alt: Gestão de Órgão/Entidade
 
 
+
 Incluir Gestor de Órgão e Entidade
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -1855,6 +1859,7 @@ Incluir Gestor de Órgão e Entidade
 	:width: 80%
 	:align: center
 	:alt: Incluir Gestor de Órgão e Entidade
+
 
 
 Habilitar/Desabilitar plataforma 
@@ -1872,6 +1877,7 @@ Habilitar/Desabilitar plataforma
 	:alt: Habilitar/Desabilitar plataforma (adicionar)
 
 
+
 Incluir Unidade Administrativa
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -1879,6 +1885,7 @@ Incluir Unidade Administrativa
 	:width: 80%
 	:align: center
 	:alt: Incluir Unidade Administrativa (adicionar)
+
 
 
 Editar, Ativar/Inativar Unidade Administrativa
