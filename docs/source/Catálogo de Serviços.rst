@@ -745,7 +745,7 @@ Para plataformas privadas, a exclusão de novos entes autorizados requer contato
 
 
 .. figure:: ../../img/Redefinicao_login_senha.jpg
-	:width: 80%
+	:width: 50%
 	:align: center
 	:alt: Redefinição de login e senha
 
@@ -1098,7 +1098,7 @@ Será retornado nome do município ``Exterior`` e UF ``EX``.
    No ambiente de produção, utilize o procedimento do item 6.2.9 – Gestão de Órgão e Entidade.
 
 .. figure:: ../../img/Incluir_unidade_administrativa.jpg
-	:width: 80%
+	:width: 50%
 	:align: center
 	:alt: Incluir Unidade Administrativa
 
@@ -1254,7 +1254,7 @@ município “Exterior” e UF “EX”.
 	Disponível apenas no ambiente de treinamento/homologação. No ambiente de produção, utilize o procedimento do item 6.2.9 – Gestão de Órgão e Entidade. 
 
 .. figure:: ../../img/Editar_unidade_administrativa.jpg
-	:width: 80%
+	:width: 50%
 	:align: center
 	:alt: Editar Unidade Administrativa
 
@@ -1813,18 +1813,18 @@ pelo Ministério da Gestão e da Inovação em Serviços Públicos (MGI) e habil
 Com essa habilitação, o gestor se torna o responsável por fazer a gestão de acesso de outros agentes públicos de seu órgão, autorizar plataformas e gerenciar unidades administrativas.  
 
 .. figure:: ../../img/Requerimento_perfil_gestor_1.jpg
-	:width: 80%
+	:width: 50%
 	:align: center
 	:alt: Requerimento Perfil Gestor (dados do solicitante)
 
 
 .. figure:: ../../img/Requerimento_perfil_gestor_2.jpg
-	:width: 80%
+	:width: 50%
 	:align: center
 	:alt: Requerimento Perfil Gestor (dados do órgão/entidade)
 
 .. figure:: ../../img/Requerimento_perfil_gestor_3.jpg
-	:width: 80%
+	:width: 50%
 	:align: center
 	:alt: Requerimento Perfil Gestor (documentação comprobatória)
 
@@ -1836,12 +1836,12 @@ O acesso à funcionalidade se dá pelo endereço: `https://pncp.gov.br/app/area-
 Cabe ao gestor órgão autorizar plataforma publicadora, seja ela pública ou privada, que passe a representar um novo órgão perante o PNCP.
 
 .. figure:: ../../img/Consultar_orgao_entidade.jpg
-	:width: 80%
+	:width: 50%
 	:align: center
 	:alt: Consultar Órgão/Entidade
 
 .. figure:: ../../img/Gestao_orgao_entidade.jpg
-	:width: 80%
+	:width: 50%
 	:align: center
 	:alt: Gestão de Órgão/Entidade
 
@@ -1849,7 +1849,7 @@ Incluir Gestor de Órgão e Entidade
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. figure:: ../../img/Incluir_gestor_orgao_entidade.jpg
-	:width: 80%
+	:width: 50%
 	:align: center
 	:alt: Incluir Gestor de Órgão e Entidade
 
@@ -1857,12 +1857,12 @@ Habilitar/Desabilitar plataforma
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. figure:: ../../img/Habilitar_desabilitar_plataforma_busca.jpg
-	:width: 80%
+	:width: 50%
 	:align: center
 	:alt: Habilitar/Desabilitar plataforma (busca)
 
 .. figure:: ../../img/Habilitar_desabilitar_plataforma_adicionar.jpg
-	:width: 80%
+	:width: 50%
 	:align: center
 	:alt: Habilitar/Desabilitar plataforma (adicionar)
 
@@ -1870,7 +1870,7 @@ Incluir Unidade Administrativa
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. figure:: ../../img/Incluir_nidade_dministrativa.jpg
-	:width: 80%
+	:width: 50%
 	:align: center
 	:alt: Incluir Unidade Administrativa (adicionar)
 
@@ -1878,7 +1878,7 @@ Editar, Ativar/Inativar Unidade Administrativa
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. figure:: ../../img/Editar_nidade_dministrativa.jpg
-	:width: 80%
+	:width: 50%
 	:align: center
 	:alt: Editar, Ativar/Inativar Unidade Administrativa
 
