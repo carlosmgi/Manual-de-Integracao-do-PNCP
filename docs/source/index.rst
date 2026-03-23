@@ -49,3 +49,4 @@ Sumário
    Inserir Documento a um Termo de Contrato
    Excluir Documento de um Termo de Contrato
    Consultar Documento de um Termo de Contrato
+   Serviços de Plano de Contratações
