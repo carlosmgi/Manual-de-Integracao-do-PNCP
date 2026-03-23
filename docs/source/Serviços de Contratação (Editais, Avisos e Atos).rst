@@ -1537,4 +1537,26 @@ Exemplo de Retorno
 	x-xss-protection: 1; mode=block
 
 
+Códigos de Retorno
+^^^^^^^^^^^^^^^^^^
 
+.. list-table::
+   :width: 100%
+   :widths: 10 25 20
+   :header-rows: 1
+
+   * - Código HTTP
+     - Mensagem
+     - Tipo
+   * - 201
+     - Created
+     - Sucesso
+   * - 400
+     - BadRequest
+     - Erro
+   * - 422
+     - Unprocessable Entity
+     - NotFound
+   * - 500
+     - Internal Server Error
+     - Erro
