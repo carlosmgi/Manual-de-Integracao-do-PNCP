@@ -1673,8 +1673,9 @@ Códigos de Retorno
      - Internal Server Error
      - Erro
 
- Consultar Todos Documentos de uma Contratação 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Consultar Todos Documentos de uma Contratação 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Serviço que permite consultar a lista de documentos pertencentes a uma contratação. 
 
