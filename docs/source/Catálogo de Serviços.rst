@@ -1806,7 +1806,7 @@ Requerimento Perfil Gestor
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 A funcionalidade **“Requerimento Perfil Gestor”**, disponível na **Área de Trabalho do PNCP**,  é utilizada para o cadastro do primeiro Gestor do órgão ou entidade no PNCP. 
-O acesso à funcionalidade é realizado pelo endereço: `https://pncp.gov.br/app/area de-trabalho. <https://pncp.gov.br/app/area de-trabalho>`_  
+O acesso à funcionalidade é realizado pelo endereço: `https://pncp.gov.br/app/area-de-trabalho. <https://pncp.gov.br/app/area-de-trabalho>`_  
 O responsável pelo órgão acessa o PNCP, realiza a autenticação com login gov.br (nível prata) e preenche o requerimento.
 Junto com o requerimento, deverá ser anexado documento comprobatório de sua vinculação ao órgão (portaria de nomeação, por exemplo). Será realizada a validação 
 pelo Ministério da Gestão e da Inovação em Serviços Públicos (MGI) e habilitação do gestor. 
@@ -1827,3 +1827,20 @@ Com essa habilitação, o gestor se torna o responsável por fazer a gestão de 
 	:width: 80%
 	:align: center
 	:alt: Requerimento Perfil Gestor (documentação comprobatória)
+
+Gestão de Órgão e Entidade 
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+A funcionalidade “Gestão de Órgão/Entidade”, disponível na Área de Trabalho do PNCP, é utilizada pelo Gestor habilitado para realizar a gestão de acessos, a gestão de plataformas e a gestão de unidades. 
+O acesso à funcionalidade se dá pelo endereço: `https://pncp.gov.br/app/area-de-trabalho. <https://pncp.gov.br/app/area-de-trabalho.>`_  
+Cabe ao gestor órgão autorizar plataforma publicadora, seja ela pública ou privada, que passe a representar um novo órgão perante o PNCP.
+
+.. figure:: ../../img/Consultar_orgao_entidade.jpg
+	:width: 80%
+	:align: center
+	:alt: Requerimento Perfil Gestor (consultar Órgão/Entidade)
+
+.. figure:: ../../img/Gestao_orgao_entidade.jpg
+	:width: 80%
+	:align: center
+	:alt: Requerimento Perfil Gestor (Gestão de Órgão/Entidade)
