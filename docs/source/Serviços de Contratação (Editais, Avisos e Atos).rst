@@ -957,9 +957,113 @@ Códigos de Retorno
      - Internal Server Error
      - Erro
 	 
-Retificar Parcialmente uma Contratação
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Excluir Contratação
+^^^^^^^^^^^^^^^^^^^
 
+Serviço que permite excluir uma contratação. Este serviço será acionado por qualquer plataforma digital credenciada. 
 
+.. warning::
 
+	Não será possível excluir Contratação com Ata de Registro de Preços ou Contrato ativo. 
+
+Detalhes da Requisição
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 50 15
+   :header-rows: 1
+
+   * - Endpoint
+     - Método HTTP
+   * - /v1/orgaos/{cnpj}/compras/{ano}/{sequencial} 
+     - DELETE
 	 
+
+Exemplo de Payload
+^^^^^^^^^^^^^^^^^^
+
+.. code-block:: json
+  :linenos:
+  :emphasize-lines: 5,6
+
+	{ 
+		"justificativa": "Motivo/justificativa a exclusão da contratação" 
+	} 
+
+
+Exemplo Requisição (cURL)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+	curl -k -X  DELETE --header "Authorization: Bearer access_token" 
+	"${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1" -H "accept: */*" -H "Content-Type: application/json"
+
+	 Dados de Entrada
+^^^^^^^^^^^^^^^^
+
+.. note::
+
+   Alimentar os parâmetros ``cnpj``, ``ano`` e ``sequencial`` na URL.
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 10 45
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Obrigatório
+     - Descrição
+   * - 1
+     - cnpj
+     - Texto (14)
+     - Sim
+     - CNPJ do órgão originário da contratação
+   * - 2
+     - ano
+     - Inteiro
+     - Sim
+     - Ano da contratação
+   * - 3
+     - sequencial
+     - Inteiro
+     - Sim
+     - Sequencial da contratação no PNCP
+   * - 4
+     - justificativa
+     - Texto (255)
+     - Sim
+     - Motivo/justificativa para exclusão da contratação
+
+Códigos de Retorno
+^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 10 25 20
+   :header-rows: 1
+
+   * - Código HTTP
+     - Mensagem
+     - Tipo
+   * - 200
+     - OK
+     - Sucesso
+   * - 400
+     - BadRequest
+     - Erro
+   * - 422
+     - Unprocessable Entity
+     - NotFound
+   * - 500
+     - Internal Server Error
+     - Erro
+	 
+Consultar uma Contratação 
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Serviço que permite consultar uma contratação. 
+
