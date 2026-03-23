@@ -30,7 +30,6 @@ Exemplo de Payload
 
 .. code-block:: json
   :linenos:
-  :emphasize-lines: 5,6
 
         {
     	"codigoUnidadeCompradora": "1010",
@@ -529,7 +528,6 @@ Exemplo de Payload
 
 .. code-block:: json
   :linenos:
-  :emphasize-lines: 5,6
 
 	{
 		"tipoInstrumentoConvocatorioId": "1",
@@ -757,7 +755,6 @@ Exemplo de Payload
 
 .. code-block:: json
   :linenos:
-  :emphasize-lines: 5,6
 
 	{
 		"tipoInstrumentoConvocatorioId": "1",
@@ -985,7 +982,6 @@ Exemplo de Payload
 
 .. code-block:: json
   :linenos:
-  :emphasize-lines: 5,6
 
 	{ 
 		"justificativa": "Motivo/justificativa a exclusão da contratação" 
@@ -1585,7 +1581,6 @@ Exemplo de Payload
 
 .. code-block:: json
   :linenos:
-  :emphasize-lines: 5,6
 
 	{ 
 		"justificativa": "Motivo/justificativa para exclusão do documento da contratação" 
@@ -1947,7 +1942,6 @@ Exemplo de Payload
 
 .. code-block:: json
   :linenos:
-  :emphasize-lines: 5,6
 
 	[
 		{
@@ -2263,7 +2257,6 @@ Exemplo de Payload
 
 .. code-block:: json
   :linenos:
-  :emphasize-lines: 5,6
 
 	{
 		"numeroItem": 2,
