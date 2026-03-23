@@ -25,6 +25,8 @@ Sumário
    Recomendações Iniciais
    Tabelas de Domínio
    Serviços de Usuário
+   Serviços de Órgão e Entidade
+   Serviços de Contratação (Editais, Avisos e Atos) 
    Inserir Ata de Registro de Preço
    Inserir Contratos ou Empenhos
    Retificar Contrato ou Empenho 
