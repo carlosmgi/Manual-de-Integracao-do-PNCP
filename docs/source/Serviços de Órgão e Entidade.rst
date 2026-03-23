@@ -29,7 +29,7 @@ Exemplo de Payload
 
 .. code-block:: json
   :linenos:
-  :emphasize-lines: 5,6
+
 	{
 		"cnpj": "10000000000003" 
 	} 
@@ -155,7 +155,7 @@ Exemplo de Payload
 
 .. code-block:: json
   :linenos:
-  :emphasize-lines: 5,6
+
 	{ 
 		"cnpj": "10000000000003" 
 	}  
@@ -370,7 +370,7 @@ Exemplo de Payload
 
 .. code-block:: json
   :linenos:
-  :emphasize-lines: 5,6
+
 	{ 
 		"codigoIBGE": "1000001", 
 		"codigoUnidade": "1", 
@@ -531,7 +531,7 @@ Exemplo de Payload
 
 .. code-block:: json
   :linenos:
-  :emphasize-lines: 5,6
+  
   	{ 
   		"codigoUnidade": "1", 
   		"nomeUnidade": "Unidade administrativa", 
