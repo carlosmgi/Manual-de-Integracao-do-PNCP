@@ -63,17 +63,17 @@ Dados de Entrada
      - cnpj
      - Texto (14)
      - Sim
-     - CNPJ do órgão do contrato/empenho
+     - CNPJ do órgão do contrato ou empenho
    * - 2
      - ano
      - Inteiro
      - Sim
-     - Ano do contrato/empenho
+     - Ano do contrato ou empenho
    * - 3
      - sequencialContrato
      - Inteiro
      - Sim
-     - Número sequencial do contrato/empenho (gerado pelo PNCP no momento da inclusão do contrato/empenho)
+     - Número sequencial do contrato ou empenho (gerado pelo PNCP no momento da inclusão do contrato ou empenho)
    * - 4
      - tipoInstrumentoCobrancaId
      - Inteiro
