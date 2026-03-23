@@ -1,5 +1,5 @@
-Create Serviços de Contratação (Editais, Avisos e Atos) 
-=======================================================
+Serviços de Contratação (Editais, Avisos e Atos) 
+================================================
 
 Inserir Contratação
 ~~~~~~~~~~~~~~~~~~~
