@@ -63,7 +63,7 @@ Dados de Entrada
      - ano
      - Inteiro
      - Sim
-     - Ano do contrato/empenho
+     - Ano do contrato ou empenho
    * - 3
      - sequencialContrato
      - Inteiro
