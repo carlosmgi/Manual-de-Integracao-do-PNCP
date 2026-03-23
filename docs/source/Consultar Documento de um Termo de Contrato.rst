@@ -62,17 +62,17 @@ Dados de Entrada
      - sequencial
      - Inteiro
      - Sim
-     - Sequencial do contrato no PNCP; número gerado no momento da inclusão
+     - Sequencial do contrato no PNCP; Número sequencial gerado no momento que o contrato foi inserido no PNCP;
    * - 4
      - sequencialTermo
      - Inteiro
      - Sim
-     - Sequencial do termo de contrato no PNCP; número gerado no momento da inclusão
+     - Sequencial do termo de contrato no PNCP; Número sequencial gerado no momento que o termo de contrato foi inserido no PNCP;
    * - 5
      - sequencialDocumento
      - Inteiro
      - Sim
-     - Sequencial do documento no PNCP; número gerado no momento da inclusão
+     - Sequencial do documento no PNCP; Número sequencial gerado no momento que o documento foi inserido no PNCP;
 
 **Dados de Retorno**
 --------------------
