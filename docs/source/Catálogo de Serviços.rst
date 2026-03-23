@@ -1813,6 +1813,7 @@ Junto com o requerimento, deverá ser anexado documento comprobatório de sua vi
 pelo Ministério da Gestão e da Inovação em Serviços Públicos (MGI) e habilitação do gestor. 
 Com essa habilitação, o gestor se torna o responsável por fazer a gestão de acesso de outros agentes públicos de seu órgão, autorizar plataformas e gerenciar unidades administrativas.  
 
+
 .. figure:: ../../img/Requerimento_perfil_gestor_1.jpg
 	:width: 80%
 	:align: center
@@ -1855,6 +1856,7 @@ Cabe ao gestor órgão autorizar plataforma publicadora, seja ela pública ou pr
 Incluir Gestor de Órgão e Entidade
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+
 .. figure:: ../../img/Incluir_gestor_orgao_entidade.jpg
 	:width: 80%
 	:align: center
@@ -1864,6 +1866,7 @@ Incluir Gestor de Órgão e Entidade
 
 Habilitar/Desabilitar plataforma 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 
 .. figure:: ../../img/Habilitar_desabilitar_plataforma_busca.jpg
 	:width: 80%
@@ -1881,6 +1884,7 @@ Habilitar/Desabilitar plataforma
 Incluir Unidade Administrativa
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+
 .. figure:: ../../img/Incluir_unidade_administrativa.jpg
 	:width: 80%
 	:align: center
@@ -1890,6 +1894,7 @@ Incluir Unidade Administrativa
 
 Editar, Ativar/Inativar Unidade Administrativa
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 
 .. figure:: ../../img/Editar_unidade_administrativa.jpg
 	:width: 80%
