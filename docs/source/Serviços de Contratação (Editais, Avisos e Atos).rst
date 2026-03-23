@@ -938,7 +938,7 @@ Códigos de Retorno
 
 .. list-table::
    :width: 100%
-   :widths: 10 25 20
+   :widths: 15 25 20
    :header-rows: 1
 
    * - Código HTTP
@@ -948,11 +948,11 @@ Códigos de Retorno
      - OK
      - Sucesso
    * - 400
-     - BadRequest
+     - Bad Request
      - Erro
    * - 422
      - Unprocessable Entity
-     - NotFound
+     - Erro
    * - 500
      - Internal Server Error
      - Erro
