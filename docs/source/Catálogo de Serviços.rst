@@ -1838,9 +1838,53 @@ Cabe ao gestor órgão autorizar plataforma publicadora, seja ela pública ou pr
 .. figure:: ../../img/Consultar_orgao_entidade.jpg
 	:width: 80%
 	:align: center
-	:alt: Requerimento Perfil Gestor (consultar Órgão/Entidade)
+	:alt: Consultar Órgão/Entidade
 
 .. figure:: ../../img/Gestao_orgao_entidade.jpg
 	:width: 80%
 	:align: center
-	:alt: Requerimento Perfil Gestor (Gestão de Órgão/Entidade)
+	:alt: Gestão de Órgão/Entidade
+
+Incluir Gestor de Órgão e Entidade
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. figure:: ../../img/Incluir_gestor_orgao_entidade.jpg
+	:width: 80%
+	:align: center
+	:alt: Incluir Gestor de Órgão e Entidade
+
+Habilitar/Desabilitar plataforma 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. figure:: ../../img/Habilitar_desabilitar_plataforma_busca.jpg
+	:width: 80%
+	:align: center
+	:alt: Habilitar/Desabilitar plataforma (busca)
+
+.. figure:: ../../img/Habilitar_desabilitar_plataforma_adicionar.jpg
+	:width: 80%
+	:align: center
+	:alt: Habilitar/Desabilitar plataforma (adicionar)
+
+Incluir Unidade Administrativa
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. figure:: ../../img/Incluir_nidade_dministrativa.jpg
+	:width: 80%
+	:align: center
+	:alt: Incluir Unidade Administrativa (adicionar)
+
+Editar, Ativar/Inativar Unidade Administrativa
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. figure:: ../../img/Editar_nidade_dministrativa.jpg
+	:width: 80%
+	:align: center
+	:alt: Editar, Ativar/Inativar Unidade Administrativa
+
+
+.. warning::
+
+	- Nome da Unidade: campo alfanumérico de livre escolha;
+	- Código Unidade: campo único para o órgão alfanumérico de livre escolha (não é editável);
+	- Código IBGE: Códigos de Municípios do IBGE composto de 7 dígitos, sendo os dois primeiros referentes ao código da Unidade da Federação. `https://www.ibge.gov.br/explica/codigos-dos-municipios.php. <https://www.ibge.gov.br/explica/codigos-dos-municipios.php>`_
