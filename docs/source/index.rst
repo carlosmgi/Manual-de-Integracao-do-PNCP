@@ -35,6 +35,7 @@ Sumário
    Excluir Documento do Contrato ou Empenho
    Consultar Todos os Documentos de um Contrato ou Empenho
    Consultar Documento de um Contrato ou Empenho
+   Consultar Todos os Documentos de um Termo de Contrato
    Consultar Todos os Termos de um Contrato
    Consultar Contrato ou Empenho
    Consultar Contratos ou Empenhos de uma Contratação
