@@ -64,27 +64,27 @@ Dados de Entrada
      - cnpj
      - Texto (14)
      - Sim
-     - Cnpj do órgão do contrato/empenho
+     - Cnpj do órgão do contrato ou empenho
    * - 2
      - ano
      - Inteiro
      - Sim
-     - Ano do contrato/empenho
+     - Ano do contrato ou empenho
    * - 3
      - sequencialContrato
      - Inteiro
      - Sim
-     - Número sequencial do contrato/empenho (gerado pelo PNCP no momento da inclusão do contrato/empenho)
+     - Número sequencial do contrato ou empenho (gerado pelo PNCP no momento da inclusão do contrato/empenho)
    * - 4
      - sequencialInstrumentoCobranca
      - Inteiro
      - Sim
-     - Número sequencial do instrumento de cobrança do contrato/empenho (gerado pelo PNCP no momento da inclusão do instrumento de cobrança)
+     - Número sequencial do instrumento de cobrança do contrato ou empenho (gerado pelo PNCP no momento da inclusão do instrumento de cobrança)
    * - 5
      - justificativa
      - Texto (255)
      - Sim
-     - Motivo/justificativa para a retificação do instrumento de cobrança do contrato/empenho
+     - Motivo/justificativa para a retificação do instrumento de cobrança do contrato ou empenho
    * - 6
      - tipoInstrumentoCobrancaId
      - Inteiro
