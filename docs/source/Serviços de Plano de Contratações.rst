@@ -29,8 +29,6 @@ Exemplo de Payload
 ------------------
 
 .. code-block:: json
-   :linenos:
-   :emphasize-lines: 5,6
 
    {
      "codigoUnidade": "170456",
