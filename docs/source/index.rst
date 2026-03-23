@@ -46,3 +46,4 @@ Sumário
    Excluir Termo de Contrato
    Consultar um Termo de Contrato
    Inserir Documento a um Termo de Contrato
+   Excluir Documento de um Termo de Contrato
