@@ -1835,15 +1835,18 @@ A funcionalidade “Gestão de Órgão/Entidade”, disponível na Área de Trab
 O acesso à funcionalidade se dá pelo endereço: `https://pncp.gov.br/app/area-de-trabalho. <https://pncp.gov.br/app/area-de-trabalho.>`_  
 Cabe ao gestor órgão autorizar plataforma publicadora, seja ela pública ou privada, que passe a representar um novo órgão perante o PNCP.
 
+
 .. figure:: ../../img/Consultar_orgao_entidade.jpg
 	:width: 80%
 	:align: center
 	:alt: Consultar Órgão/Entidade
 
-.. figure:: ../../img/Gestao_orgao_entidade.jpg
+
+.. figure:: ../../img/Gestao_orgao_entidade.png
 	:width: 80%
 	:align: center
 	:alt: Gestão de Órgão/Entidade
+
 
 Incluir Gestor de Órgão e Entidade
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1853,6 +1856,7 @@ Incluir Gestor de Órgão e Entidade
 	:align: center
 	:alt: Incluir Gestor de Órgão e Entidade
 
+
 Habilitar/Desabilitar plataforma 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -1861,10 +1865,12 @@ Habilitar/Desabilitar plataforma
 	:align: center
 	:alt: Habilitar/Desabilitar plataforma (busca)
 
+
 .. figure:: ../../img/Habilitar_desabilitar_plataforma_adicionar.jpg
 	:width: 80%
 	:align: center
 	:alt: Habilitar/Desabilitar plataforma (adicionar)
+
 
 Incluir Unidade Administrativa
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1873,6 +1879,7 @@ Incluir Unidade Administrativa
 	:width: 80%
 	:align: center
 	:alt: Incluir Unidade Administrativa (adicionar)
+
 
 Editar, Ativar/Inativar Unidade Administrativa
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
