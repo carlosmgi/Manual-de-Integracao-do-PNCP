@@ -941,7 +941,7 @@ Códigos de Retorno
    :widths: 10 25 20
    :header-rows: 1
 
-    * - Código HTTP
+   * - Código HTTP
      - Mensagem
      - Tipo
    * - 200
