@@ -4220,7 +4220,7 @@ Dados de Retorno
 ^^^^^^^^^^^^^^^^
 
 .. note::
-   A resposta retorna uma lista de resultados associados aos itens da contratação, incluindo dados do fornecedor, valores homologados e informações complementares.
+   A resposta apresenta a lista de resultados dos itens da contratação, incluindo dados do fornecedor, valores homologados e informações complementares.
 
 .. list-table::
    :width: 100%
@@ -4235,42 +4235,42 @@ Dados de Retorno
    * - 1
      - listaResultados
      - Lista
-     - Lista de resultados de um item da contratação.
+     - Resultados de um item da contratação.
 
    * - 1.1
      - numeroItem
      - Inteiro
-     - Número do item na contratação (único e sequencial crescente).
+     - Número do item na contratação (único e sequencial crescente) a que está relacionado o resultado.
 
    * - 1.2
      - sequencialResultado
      - Inteiro
-     - Sequencial do resultado do item no PNCP.
+     - Sequencial do resultado do item da contratação no PNCP.
 
    * - 1.3
      - quantidadeHomologada
      - Decimal
-     - Quantidade homologada (até 4 casas decimais). Ex: 1.0001.
+     - Quantidade do item homologada. Precisão de até 4 casas decimais. Ex: 1.0001.
 
    * - 1.4
      - valorUnitarioHomologado
      - Decimal
-     - Valor unitário homologado (até 4 casas decimais). Ex: 100.0001.
+     - Valor unitário do item homologado. Precisão de até 4 casas decimais. Ex: 100.0001.
 
    * - 1.5
      - percentualDesconto
      - Decimal
-     - Percentual de desconto (4 casas decimais). Ex: 10.0000.
+     - Percentual de desconto aplicado quando o critério for maior desconto. Precisão de 4 casas decimais. Ex: 10.0000.
 
    * - 1.6
      - tipoPessoa
      - Texto (2)
-     - PJ (jurídica), PF (física), PE (estrangeira).
+     - PJ (jurídica); PF (física); PE (estrangeira).
 
    * - 1.7
      - niFornecedor
      - Texto (30)
-     - Identificação do fornecedor (CNPJ, CPF ou estrangeiro).
+     - Identificação do fornecedor (CNPJ, CPF ou identificador estrangeiro).
 
    * - 1.8
      - nomeRazaoSocialFornecedor
@@ -4280,7 +4280,7 @@ Dados de Retorno
    * - 1.9
      - porteFornecedorId
      - Inteiro
-     - Código do porte (1-ME; 2-EPP; 3-Demais; 4-Não se aplica; 5-Não informado).
+     - Porte: 1-ME; 2-EPP; 3-Demais; 4-Não se aplica; 5-Não informado.
 
    * - 1.10
      - porteFornecedorNome
@@ -4290,52 +4290,52 @@ Dados de Retorno
    * - 1.11
      - naturezaJuridicaId
      - Inteiro
-     - Código da natureza jurídica.
+     - Código da natureza jurídica do fornecedor.
 
    * - 1.12
      - naturezaJuridicaNome
      - Texto (100)
-     - Nome da natureza jurídica.
+     - Nome da natureza jurídica do fornecedor.
 
    * - 1.13
      - codigoPais
      - Texto (3)
-     - Código ISO Alpha-3 do país (ex: BRA).
+     - Código ISO Alpha-3 do país do fornecedor (ex: BRA).
 
    * - 1.14
      - indicadorSubcontratacao
      - Booleano
-     - Indica subcontratação (false/não, true/sim).
+     - Indica subcontratação (false: não; true: sim).
 
    * - 1.15
      - ordemClassificacaoSrp
      - Inteiro
-     - Ordem de classificação do fornecedor.
+     - Ordem de classificação do fornecedor na contratação.
 
    * - 1.16
      - dataResultado
      - Data
-     - Data da homologação do item.
+     - Data do resultado da homologação do item.
 
    * - 1.17
      - dataCancelamento
      - Data e Hora
-     - Data de cancelamento do resultado.
+     - Data de cancelamento do resultado do item.
 
    * - 1.18
      - motivoCancelamento
      - Texto (200)
-     - Motivo do cancelamento.
+     - Motivo do cancelamento do resultado.
 
    * - 1.19
      - situacaoCompraItemResultadoId
      - Inteiro
-     - Código da situação do resultado.
+     - Código conforme tabela de situação do resultado do item.
 
    * - 1.20
      - situacaoCompraItemResultadoNome
      - Texto (30)
-     - Nome da situação do resultado.
+     - Descrição da situação do resultado do item.
 
    * - 1.21
      - dataInclusao
@@ -4345,7 +4345,7 @@ Dados de Retorno
    * - 1.22
      - dataAtualizacao
      - Data e Hora
-     - Data da última atualização.
+     - Data da última atualização do registro no PNCP.
 
    * - 1.23
      - numeroControlePNCPCompra
@@ -4355,7 +4355,7 @@ Dados de Retorno
    * - 1.24
      - aplicacaoMargemPreferencia
      - Booleano
-     - Indica aplicação de margem de preferência.
+     - Indica aplicação de margem de preferência (false/não; true/sim).
 
    * - 1.25
      - amparoLegalMargemPreferencia
@@ -4380,17 +4380,17 @@ Dados de Retorno
    * - 1.25.4
      - statusAtivo
      - Booleano
-     - Status (false/inativo; true/ativo).
+     - Status (false: inativo; true: ativo).
 
    * - 1.26
      - paisOrigemProdutoServico
      - Objeto
-     - Dados do país de origem.
+     - Dados do país de origem do produto ou serviço.
 
    * - 1.26.1
      - id
      - Texto
-     - Código ISO Alpha-3 do país.
+     - Código ISO Alpha-3 do país (ex: BRA, ARG).
 
    * - 1.26.2
      - nome
@@ -4405,12 +4405,12 @@ Dados de Retorno
    * - 1.28
      - aplicacaoCriterioDesempate
      - Booleano
-     - Indica critério de desempate (Art. 60).
+     - Indica aplicação de critério de desempate (Art. 60).
 
    * - 1.29
      - amparoLegalCriterioDesempate
      - Objeto
-     - Fundamentação legal do critério de desempate.
+     - Dados da fundamentação legal do critério de desempate.
 
    * - 1.29.1
      - id
@@ -4430,7 +4430,7 @@ Dados de Retorno
    * - 1.29.4
      - statusAtivo
      - Booleano
-     - Status (false/inativo; true/ativo).
+     - Status (false: inativo; true: ativo).
 
    * - 1.30
      - dataCotacaoMoedaEstrangeira
@@ -4440,12 +4440,12 @@ Dados de Retorno
    * - 1.31
      - timezoneCotacaoMoedaEstrangeira
      - Texto
-     - Fuso horário no formato UTC±hhmm.
+     - Fuso horário no formato UTC±[hh][mm] ou UTC±[hh].
 
    * - 1.32
      - valorNominalMoedaEstrangeira
      - Decimal
-     - Valor em BRL para 1 unidade da moeda estrangeira.
+     - Valor em BRL correspondente a 1 unidade da moeda estrangeira.
 
    * - 1.33
      - moedaEstrangeira
@@ -4455,17 +4455,17 @@ Dados de Retorno
    * - 1.33.1
      - id
      - Inteiro
-     - Código da moeda.
+     - Código da moeda estrangeira.
 
    * - 1.33.2
      - simbolo
      - Texto
-     - Código ISO Alpha-3 (ex: USD, EUR).
+     - Código ISO Alpha-3 (ex: USD, EUR, GBP).
 
    * - 1.33.3
      - nome
      - Texto
-     - Nome da moeda.
+     - Nome da moeda estrangeira.
 
 Códigos de Retorno
 ^^^^^^^^^^^^^^^^^^
