@@ -98,7 +98,7 @@ Dados de retorno
    * - 1
      - numeroControlePNCP
      - String
-     - Número de controle PNCP do contrato/empenho (id contrato PNCP)
+     - Número de controle PNCP do contrato ou empenho (id contrato PNCP)
    * - 2
      - numeroControlePNCPCompra
      - String
@@ -110,11 +110,11 @@ Dados de retorno
    * - 4
      - anoContrato
      - Inteiro
-     - Ano do contrato/empenho
+     - Ano do contrato ou empenho
    * - 5
      - sequencialContrato
      - Inteiro
-     - Número sequencial do contrato/empenho (gerado pelo PNCP)
+     - Número sequencial do contrato ou empenho (gerado pelo PNCP)
    * - 6
      - processo
      - Texto (50)
@@ -122,7 +122,7 @@ Dados de retorno
    * - 7
      - tipoContrato
      - Agrupador
-     - Dados do tipo de contrato/empenho
+     - Dados do tipo de contrato ou empenho
    * - 7.1
      - Id
      - Inteiro
@@ -150,7 +150,7 @@ Dados de retorno
    * - 10
      - objetoContrato
      - Texto (5120)
-     - Descrição do objeto do contrato/empenho
+     - Descrição do objeto do contrato ou empenho
    * - 11
      - informacaoComplementar
      - Texto (5120)
@@ -158,11 +158,11 @@ Dados de retorno
    * - 12
      - orgaoEntidade
      - Agrupador
-     - Dados do órgão/entidade do contrato/empenho
+     - Dados do órgão/entidade do contrato ou empenho
    * - 12.1
      - cnpj
      - String
-     - CNPJ do órgão referente ao contrato/empenho
+     - CNPJ do órgão referente ao contrato ou empenho
    * - 12.2
      - razaosocial
      - String
