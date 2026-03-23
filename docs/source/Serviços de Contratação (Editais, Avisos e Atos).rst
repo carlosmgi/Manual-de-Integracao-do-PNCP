@@ -1661,14 +1661,14 @@ Códigos de Retorno
      - Mensagem
      - Tipo
    * - 200
-     - Delete
+     - OK
      - Sucesso
    * - 400
-     - BadRequest
+     - Bad Request
      - Erro
    * - 422
      - Unprocessable Entity
-     - NotFound
+     - Erro
    * - 500
      - Internal Server Error
      - Erro
