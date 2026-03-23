@@ -30,7 +30,6 @@ Exemplo de Payload
 
 .. code-block:: json
   :linenos:
-  :emphasize-lines: 5,6
   { 
     "nome": "Fulano de Tal", 
     "email": "fulano@example.com", 
@@ -488,7 +487,6 @@ Exemplo de Payload
 
 .. code-block:: json
   :linenos:
-  :emphasize-lines: 5,6
 
 	{ 
 		"login": "1b182cec-f639-11eb-9a03-0242ac130003", 
@@ -625,7 +623,7 @@ Exemplo de Payload
 
 .. code-block:: json
   :linenos:
-  :emphasize-lines: 5,6
+
   	{
 	"entesAutorizados":
 		[
