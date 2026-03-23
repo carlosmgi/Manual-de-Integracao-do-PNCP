@@ -1842,7 +1842,7 @@ Cabe ao gestor órgão autorizar plataforma publicadora, seja ela pública ou pr
 	:alt: Consultar Órgão/Entidade
 
 
-.. figure:: ../../img/Gestao_orgao_entidade.png
+.. figure:: ../../img/Gestao_orgao_entidade.jpg
 	:width: 80%
 	:align: center
 	:alt: Gestão de Órgão/Entidade
