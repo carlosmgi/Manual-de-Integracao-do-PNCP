@@ -45,3 +45,4 @@ Sumário
    Retificar Termo de Contrato
    Excluir Termo de Contrato
    Consultar um Termo de Contrato
+   Inserir Documento a um Termo de Contrato
