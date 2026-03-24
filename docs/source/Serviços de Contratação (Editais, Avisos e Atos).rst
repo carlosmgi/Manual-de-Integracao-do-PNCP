@@ -4831,5 +4831,10 @@ Códigos de Retorno
    * - 500
      - Internal Server Error
      - Erro
-	 
+
+Consultar Histórico da Contratação
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Serviço que permite consultar todos os eventos de uma contratação específica, dos Itens, dos Resultados e de seus documentos/arquivos.
+
 
