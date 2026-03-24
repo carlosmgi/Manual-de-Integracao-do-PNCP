@@ -51,3 +51,4 @@ Sumário
    Consultar Documento de um Termo de Contrato
    Serviços de Plano de Contratações
    Excluir Plano de Contratações
+   Consultar Plano por Órgão e Ano
