@@ -50,3 +50,4 @@ Sumário
    Excluir Documento de um Termo de Contrato
    Consultar Documento de um Termo de Contrato
    Serviços de Plano de Contratações
+   Excluir Plano de Contratações
