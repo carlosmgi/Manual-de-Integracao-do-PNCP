@@ -87,78 +87,31 @@ Dados de retorno
    * - 1
      - Lista
      - Lista
-     - Lista de PCAs por Unidade
+     - Lista de informações
 
    * - 1.1
-     - cnpj
+     - categoriaItemNome
      - Texto
-     - CNPJ do órgão
+     - Nome da categoria do item conforme tabela
+       de domínio Categoria do Item do Plano de
+       Contratações
 
    * - 1.2
-     - razaoSocial
-     - Texto
-     - Razão Social do órgão
+     - quantidadeItens
+     - Decimal (17,4)
+     - Quantidade de itens do plano por categoria
 
    * - 1.3
-     - esfera
-     - Texto
-     - Esfera do órgão
-
-   * - 1.4
-     - poder
-     - Texto
-     - Poder do órgão
-
-   * - 1.5
-     - codigoUnidade
-     - Texto
-     - Código da Unidade Responsável
-
-   * - 1.6
-     - nomeUnidade
-     - Texto
-     - Nome da Unidade Responsável
-
-   * - 1.7
-     - anoPca
-     - Inteiro
-     - Ano do Plano de Contratações
-
-   * - 1.8
-     - sequencialPca
-     - Inteiro
-     - Sequencial do pca no PNCP; Número
-       sequencial gerado no momento que o plano
-       de contratações da unidade foi inserido no
-       PNCP
-
-   * - 1.9
-     - numeroControlePNCP
-     - Texto
-     - Número de Controle PNCP do Plano (id pca
-       PNCP)
-
-   * - 1.10
-     - dataPublicacaoPncp
-     - Data
-     - Data da publicação da Ata no PNCP
-
-   * - 1.11
-     - dataAtualizacao
-     - Data
-     - Data da última atualização do registro da Ata
-
-   * - 1.12
-     - quantidade
-     - Decimal (17,4)
-     - Quantidade de itens do plano. Precisão de até
-       4 dígitos decimais; Ex: 10.0001;
-
-   * - 1.13
      - valorTotal
      - Decimal (17,4)
-     - Valor total do plano. Precisão de até 4 dígitos
-       decimais; Ex: 100.0001;
+     - Valor total por categoria
+
+   * - 1.4
+     - categoriaItemId
+     - Inteiro
+     - Código da categoria do item conforme tabela
+       de domínio Categoria do Item do Plano de
+       Contratações
 
 **Códigos de Retorno**
 ----------------------
