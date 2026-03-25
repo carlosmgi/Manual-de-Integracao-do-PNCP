@@ -36,7 +36,7 @@ Dados de Entrada
 
 .. note::
 
-   Alimentar o parâmetro {cnpj} e {ano} na URL.
+   Alimentar o parâmetro {cnpj}, {ano} e {sequencial} na URL.
 
 .. list-table::
    :width: 100%
