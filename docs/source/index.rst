@@ -53,3 +53,4 @@ Sumário
    Excluir Plano de Contratações
    Consultar Plano por Órgão e Ano
    Consultar Plano das Unidades por Órgão e Ano
+   Consultar Valores de Planos de Contratação de um Órgão por Categoria
