@@ -56,3 +56,4 @@ Sumário
    Consultar Valores de Planos de Contratação de um Órgão por Categoria
    Consultar Plano de Contratação Consolidado (Plano de Contratações de uma Unidade e Ano)
    Consultar Valores de um Plano de Contratação por Categoria
+   Inserir Itens de Plano de Contratação
