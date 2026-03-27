@@ -65,3 +65,4 @@ Sumário
    Recuperar Itens de Plano de Contratação por Número da Contratação
    Excluir Itens de Plano de Contratação por Número da Contratação
    Gerar arquivo CSV de Itens dos Planos por Órgão
+   Suporte
