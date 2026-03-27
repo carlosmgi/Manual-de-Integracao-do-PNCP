@@ -60,3 +60,4 @@ Sumário
    Consultar Itens do Plano de Contratações de uma Unidade e Ano
    Retificar Parcialmente Item de Plano de Contratação
    Retificar Parcialmente Itens de um Plano de Contratação
+   Excluir Item de Plano de Contratação
