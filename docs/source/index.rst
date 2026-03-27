@@ -62,3 +62,4 @@ Sumário
    Retificar Parcialmente Itens de um Plano de Contratação
    Excluir Item de Plano de Contratação
    Excluir Itens de um Plano de Contratação
+   Recuperar Itens de Plano de Contratação por Número da Contratação
