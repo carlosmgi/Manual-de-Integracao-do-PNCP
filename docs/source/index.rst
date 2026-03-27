@@ -63,3 +63,4 @@ Sumário
    Excluir Item de Plano de Contratação
    Excluir Itens de um Plano de Contratação
    Recuperar Itens de Plano de Contratação por Número da Contratação
+   Excluir Itens de Plano de Contratação por Número da Contratação
