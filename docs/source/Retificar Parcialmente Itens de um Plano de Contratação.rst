@@ -5,7 +5,6 @@ Serviço que permite retificar itens de um plano de contratação no PNCP. Este 
 requer autenticação para ser acionado.
 
 .. Attention::
-
 Na retificação parcial, você precisa enviar apenas as informações que sofreram alteração. Por exemplo, se você desejar apenas atualizar a categoria de um item, você deve informar apenas o atributo
 categoriaItemPca e ignorar todos os demais atributos.
 
