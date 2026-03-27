@@ -1,8 +1,7 @@
 Gerar arquivo CSV de Itens dos Planos por Órgão
 ===============================================
 
-Serviço que gera arquivo CSV contendo as informações de itens dos Planos de
-Contratações Anuais das Unidades associadas ao Órgão e Ano recebidos.
+Serviço que gera arquivo CSV contendo as informações de itens dos Planos de Contratações Anuais das Unidades associadas ao Órgão e Ano recebidos.
 
 Detalhes da Requisição
 ----------------------
