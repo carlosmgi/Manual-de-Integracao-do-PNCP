@@ -61,3 +61,4 @@ Sumário
    Retificar Parcialmente Item de Plano de Contratação
    Retificar Parcialmente Itens de um Plano de Contratação
    Excluir Item de Plano de Contratação
+   Excluir Itens de um Plano de Contratação
