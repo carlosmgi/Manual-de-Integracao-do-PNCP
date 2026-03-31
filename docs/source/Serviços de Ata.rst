@@ -557,7 +557,7 @@ Exemplo de Payload
 
 .. code-block:: json
   :linenos:
-  :emphasize-lines: 1-11
+  :emphasize-lines: 1,2,3,4,5,6,7,8,9,10,11
 
 	{
 	  "possibilidadeAdesao": true,
@@ -576,11 +576,91 @@ Exemplo Requisição (cURL)
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: bash
-	:emphasize-lines: 1-4
+	:emphasize-lines: 1,2,3,4
+
 		curl -X 'PATCH' '${BASE_URL}/v1/orgaos/00394460000141/compras/2021/1/atas/1' \
 		  -H 'accept: */*' -H 'Authorization: Bearer <TOKEN_AUTORIZACAO>' \
 		  -H 'Content-Type: application/json' \
 		  -d '@/home/objeto.json'
+
+Dados de entrada
+^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 25
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Obrigatório
+     - Descrição
+   * - :kbd:`1`
+     - :kbd:`cnpj`
+     - :kbd:`Texto (14)`
+     - :kbd:`Sim`
+     - :kbd:`CNPJ do órgão originário da contratação informado na inclusão (proprietário da contratação)`
+   * - :kbd:`2`
+     - :kbd:`anoCompra`
+     - :kbd:`Inteiro`
+     - :kbd:`Sim`
+     - :kbd:`Ano da contratação`
+   * - :kbd:`3`
+     - :kbd:`sequencialCompra`
+     - :kbd:`Inteiro`
+     - :kbd:`Sim`
+     - :kbd:`Sequencial da contratação no PNCP; número sequencial gerado no momento que a contratação foi inserida no PNCP`
+   * - :kbd:`4`
+     - :kbd:`sequencialAta`
+     - :kbd:`Inteiro`
+     - :kbd:`Sim`
+     - :kbd:`Sequencial da ata no PNCP; número sequencial gerado no momento que a ata foi inserida no PNCP`
+   * - :kbd:`5`
+     - :kbd:`numeroAtaRegistroPreco`
+     - :kbd:`Texto (50)`
+     - :kbd:`Não`
+     - :kbd:`Número da ata no sistema de origem`
+   * - :kbd:`6`
+     - :kbd:`anoAta`
+     - :kbd:`Inteiro`
+     - :kbd:`Não`
+     - :kbd:`Ano da ata`
+   * - :kbd:`7`
+     - :kbd:`dataAssinatura`
+     - :kbd:`Data`
+     - :kbd:`Não`
+     - :kbd:`Informar a data de assinatura da ata`
+   * - :kbd:`8`
+     - :kbd:`dataInicioVigencia`
+     - :kbd:`Data`
+     - :kbd:`Não`
+     - :kbd:`Informar a data de início de vigência da ata`
+   * - :kbd:`9`
+     - :kbd:`dataFimVigencia`
+     - :kbd:`Data`
+     - :kbd:`Não`
+     - :kbd:`Informar a data de fim de vigência da ata`
+   * - :kbd:`10`
+     - :kbd:`cancelado`
+     - :kbd:`Booleano`
+     - :kbd:`Não`
+     - :kbd:`Indicador de cancelamento da ata; se omitido, assume valor "false"`
+   * - :kbd:`11`
+     - :kbd:`dataCancelamento`
+     - :kbd:`Data e Hora`
+     - :kbd:`Não`
+     - :kbd:`Informar a data e hora de cancelamento da ata, caso o indicador de cancelamento seja verdadeiro`
+   * - :kbd:`12`
+     - :kbd:`possibilidadeAdesao`
+     - :kbd:`Booleano`
+     - :kbd:`Não`
+     - :kbd:`Indicador se a ata permite adesão de não participantes (false = não / true = sim)`
+   * - :kbd:`13`
+     - :kbd:`justificativa`
+     - :kbd:`Texto (255)`
+     - :kbd:`Sim`
+     - :kbd:`Motivo/justificativa para a retificação dos atributos da ata`
 
 
 
