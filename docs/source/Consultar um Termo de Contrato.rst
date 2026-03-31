@@ -25,6 +25,7 @@ Exemplo Requisição (cURL)
 -------------------------
 
 .. code-block:: bash
+  :linenos:
 
    curl -k -X GET \
      "${BASE_URL}/v1/orgaos/10000000000003/contratos/2021/1/termos/1" \
@@ -96,6 +97,7 @@ Formato de Retorno
 ------------------
 
 .. code-block:: json
+  :linenos:
 
    {
      "unidade": { "dados": "da unidade" },
