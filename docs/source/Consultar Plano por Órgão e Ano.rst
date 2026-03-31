@@ -48,13 +48,11 @@ Dados de Entrada
      - Tipo
      - Obrigatório
      - Descrição
-
    * - 1
      - cnpj
      - Texto (14)
      - Sim
      - Cnpj do órgão
-
    * - 2
      - ano
      - Inteiro
@@ -73,32 +71,26 @@ Dados de retorno
      - Campo
      - Tipo
      - Descrição
-
    * - 1
      - cnpj
      - Texto
      - CNPJ do órgão
-
    * - 2
      - razaoSocial
      - Texto
      - Razão Social do órgão
-
    * - 3
      - esfera
      - Texto
      - Esfera do órgão
-
    * - 4
      - poder
      - Texto
      - Poder do órgão
-
    * - 5
      - anoPca
      - Inteiro
      - Ano do Plano de Contratações
-
    * - 6
      - quantidade
      - Decimal (17,4)
@@ -106,20 +98,17 @@ Dados de retorno
        (somatório da qtde de itens de todos os
        planos das unidades). Precisão de até 4 dígitos
        decimais; Ex: 10.0001;
-
    * - 7
      - valorTotal
      - Decimal (17,4)
      - Valor total do plano do órgão (somatório do
        valor total dos planos das unidades). Precisão
        de até 4 dígitos decimais; Ex: 100.0001;
-
    * - 8
      - dataPublicacaoPncp
      - Data
      - Data da publicação do primeiro plano de
        unidade no PNCP
-
    * - 9
      - dataAtualizacao
      - Data
