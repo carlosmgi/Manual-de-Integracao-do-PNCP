@@ -27,7 +27,7 @@ Sumário
    Serviços de Usuário
    Serviços de Órgão e Entidade
    Serviços de Contratação (Editais, Avisos e Atos) 
-   Inserir Ata de Registro de Preço
+   Serviços de Ata
    Inserir Contratos ou Empenhos
    Retificar Contrato ou Empenho 
    Excluir Contrato ou Empenho
