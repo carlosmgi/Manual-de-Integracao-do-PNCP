@@ -122,7 +122,6 @@ Dados de retorno
      - Inteiro
      - Sequencial da contratação no PNCP; número gerado no momento da inclusão
 
-
 **Códigos de Retorno**
 ----------------------
 
