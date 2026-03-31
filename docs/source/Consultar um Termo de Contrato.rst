@@ -16,7 +16,6 @@ Detalhes da Requisição
    * - /v1/orgaos/{cnpj}/contratos/{ano}/{sequencial}/termos/{sequencialTermoContrato}
      - GET
 
-
 Exemplo de Payload
 ------------------
 
