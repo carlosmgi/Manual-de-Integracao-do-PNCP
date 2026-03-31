@@ -105,6 +105,7 @@ Exemplo Requisição (cURL)
 -------------------------
 
 .. code-block:: bash
+  :linenos:
 
    curl -k -X PUT \
      --header "Authorization: Bearer access_token" \
@@ -329,6 +330,7 @@ Exemplo de retorno
 ------------------
 
 .. code-block:: http
+  :linenos:
    
    HTTP/1.1 204 No Content
    access-control-allow-credentials: true
