@@ -21,6 +21,7 @@ Exemplo de Payload
 ------------------
 
 .. code-block:: json
+  :linenos:
 
    {
      "justificativa": "motivo/justificativa para a retificação do instrumento de cobrança do contrato ou empenho",
@@ -35,6 +36,7 @@ Exemplo Requisição (cURL)
 -------------------------
 
 .. code-block:: bash
+  :linenos:
 
    curl -k -X PUT \
      --header "Authorization: Bearer access_token" \
