@@ -982,3 +982,164 @@ Consultar Ata de Registro de Preço
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Serviço que permite recuperar uma ata específica.
+
+Detalhes da Requisição
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 50 15
+   :header-rows: 1
+
+   * - Endpoint
+     - Método HTTP
+   * - /v1/orgaos/{cnpj}/compras/{anoCompra}/{sequencialCompra}/atas/{sequencialAta}
+     - GET
+
+
+Exemplo Requisição (cURL)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+	curl -X 'GET' '${BASE_URL}/v1/orgaos/00394460000141/compras/2021/1/atas/1' \
+	-H 'accept: */*'
+
+
+Dados de entrada
+^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 10 25
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Obrigatório
+     - Descrição
+   * - 1
+     - cnpj
+     - Texto (14)
+     - Sim
+     - CNPJ do órgão originário da contratação informado na inclusão (proprietário da contratação)
+   * - 2
+     - anoCompra
+     - Inteiro
+     - Sim
+     - Ano da contratação
+   * - 3
+     - sequencialCompra
+     - Inteiro
+     - Sim
+     - Sequencial da contratação no PNCP; número sequencial gerado no momento que a contratação foi inserida no PNCP
+   * - 4
+     - sequencialAta
+     - Inteiro
+     - Sim
+     - Sequencial da ata no PNCP; número sequencial gerado no momento que a ata foi inserida no PNCP
+
+
+Dados de retorno
+^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 5 30 20 45
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Descrição
+   * - 1
+     - numeroAtaRegistroPreco
+     - Texto (50)
+     - Número da ata no sistema de origem
+   * - 2
+     - anoAta
+     - Inteiro
+     - Ano da ata
+   * - 3
+     - dataAssinatura
+     - Data
+     - Data de assinatura da ata
+   * - 4
+     - dataVigenciaInicio
+     - Data
+     - Data de início de vigência da ata
+   * - 5
+     - dataVigenciaFim
+     - Data
+     - Data de fim de vigência da ata
+   * - 6
+     - dataCancelamento
+     - Data
+     - Data de cancelamento da ata
+   * - 7
+     - cancelado
+     - Booleano
+     - Indicador de cancelamento da ata
+   * - 8
+     - dataPublicacaoPncp
+     - Data
+     - Data de publicação da ata no PNCP
+   * - 9
+     - dataInclusao
+     - Data
+     - Data de inclusão do registro da ata no PNCP
+   * - 10
+     - dataAtualizacao
+     - Data
+     - Data da última atualização do registro da ata
+   * - 11
+     - sequencialAta
+     - Inteiro
+     - Número sequencial da ata, gerado pelo PNCP
+   * - 12
+     - numeroControlePNCP
+     - String
+     - Número de controle PNCP da ata
+   * - 13
+     - localCompra
+     - String
+     - Município e estado referentes à contratação
+   * - 14
+     - orgaoCompra
+     - String
+     - Órgão referente à contratação
+   * - 15
+     - orgaoSubRogadoCompra
+     - String
+     - Órgão sub-rogado referente à contratação
+   * - 16
+     - modalidadeNome
+     - String
+     - Modalidade referente à contratação
+   * - 17
+     - objetoCompra
+     - String
+     - Descrição do objeto referente à contratação
+   * - 18
+     - informacaoComplementarCompra
+     - String
+     - Informação complementar do objeto referente à contratação
+   * - 19
+     - dataAtualizacaoGlobal
+     - Data
+     - Data da última atualização global do registro da ata, considerando seus dependentes (documentos da ata)
+   * - 20
+     - usuarioNome
+     - Texto
+     - Nome da plataforma que publicou a ata no PNCP
+   * - kbd:`21`
+     - kbd:`possibilidadeAdesao`
+     - kbd:`Booleano`
+     - kbd:`Indicador se a ata permite adesão de não participantes (false = não / true = sim)`
+
+
+Inserir Documento de uma Ata
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Serviço que permite inserir/anexar documento/arquivo a uma Ata. O sistema permite o upload de arquivos com as extensões listadas na seção: Tabelas de domínio - Extensões de arquivos aceitos pelas APIs de Documento.
