@@ -47,7 +47,6 @@ Dados de Entrada
      - Tipo
      - Obrigatório
      - Descrição
-
    * - 1
      - cnpj
      - Texto (14)
@@ -55,13 +54,11 @@ Dados de Entrada
      - Cnpj do órgão a que a unidade
        administrativa do PCA está
        vinculada
-
    * - 2
      - ano
      - Inteiro
      - Sim
      - Ano do PCA
-
    * - 3
      - categoriaItem
      - Inteiro
@@ -83,29 +80,24 @@ Dados de retorno
      - Campo
      - Tipo
      - Descrição
-
    * - 1
      - Lista
      - Lista
      - Lista de informações
-
    * - 1.1
      - categoriaItemNome
      - Texto
      - Nome da categoria do item conforme tabela
        de domínio Categoria do Item do Plano de
        Contratações
-
    * - 1.2
      - quantidadeItens
      - Decimal (17,4)
      - Quantidade de itens do plano por categoria
-
    * - 1.3
      - valorTotal
      - Decimal (17,4)
      - Valor total por categoria
-
    * - 1.4
      - categoriaItemId
      - Inteiro
