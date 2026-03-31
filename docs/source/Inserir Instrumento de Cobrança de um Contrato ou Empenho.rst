@@ -21,6 +21,7 @@ Exemplo de Payload
 ------------------
 
 .. code-block:: json
+  :linenos:
 
    {
      "tipoInstrumentoCobrancaId": 1,
@@ -34,6 +35,7 @@ Exemplo Requisição (cURL)
 -------------------------
 
 .. code-block:: bash
+  :linenos:
 
    curl -k -X POST \
      --header "Authorization: Bearer access_token" \
