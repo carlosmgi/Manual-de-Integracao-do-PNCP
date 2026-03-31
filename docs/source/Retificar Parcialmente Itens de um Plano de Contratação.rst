@@ -76,7 +76,6 @@ Exemplo Requisição (cURL)
 -------------------------
 
 .. code-block:: bash
-   :linenos:
 
    curl -k -X PATCH \
      --header "Authorization: Bearer access_token" \
