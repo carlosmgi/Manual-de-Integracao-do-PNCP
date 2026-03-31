@@ -1133,10 +1133,10 @@ Dados de retorno
      - usuarioNome
      - Texto
      - Nome da plataforma que publicou a ata no PNCP
-   * - kbd:`21`
-     - kbd:`possibilidadeAdesao`
-     - kbd:`Booleano`
-     - kbd:`Indicador se a ata permite adesão de não participantes (false = não / true = sim)`
+   * - :kbd:`21`
+     - :kbd:`possibilidadeAdesao`
+     - :kbd:`Booleano`
+     - :kbd:`Indicador se a ata permite adesão de não participantes (false = não / true = sim)`
 
 
 Inserir Documento de uma Ata
