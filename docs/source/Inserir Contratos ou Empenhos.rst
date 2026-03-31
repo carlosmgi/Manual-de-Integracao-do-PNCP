@@ -100,6 +100,7 @@ Exemplo Requisição (cURL)
 -------------------------
 
 .. code-block:: bash
+  :linenos:
 
    curl -X POST \
      --header "Authorization: Bearer access_token" \
