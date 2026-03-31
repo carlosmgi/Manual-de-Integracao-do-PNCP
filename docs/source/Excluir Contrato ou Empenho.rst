@@ -34,8 +34,7 @@ Exemplo Requisição (cURL)
 ---------------------
 
 .. code-block:: bash
-   :linenos:
-
+   
    curl -k -X DELETE \
    --header "Authorization: Bearer access_token" \
    -H "accept: */*" \
