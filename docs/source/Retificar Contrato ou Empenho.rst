@@ -330,23 +330,23 @@ Exemplo de retorno
 ------------------
 
 .. code-block:: http
-  :linenos:
-   
+   :linenos:
+
    HTTP/1.1 204 No Content
-   access-control-allow-credentials: true
-   access-control-allow-headers: Content-Type, Authorization, X-Requested-With, Content-Length, Accept, Origin
-   access-control-allow-methods: GET, PUT, POST, DELETE, OPTIONS
-   access-control-allow-origin: *
-   cache-control: no-cache, no-store, max-age=0, must-revalidate
-   content-length: 0
-   date: ?
-   expires: 0
-   location: https://treina.pncp.gov.br/api/pncp/v1/orgaos/10000000000003/contratos/2021/1
-   pragma: no-cache
-   strict-transport-security: max-age=?
-   x-content-type-options: nosniff
-   x-frame-options: DENY
-   x-xss-protection: 1; mode=block
+   Access-Control-Allow-Credentials: true
+   Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With, Content-Length, Accept, Origin
+   Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS
+   Access-Control-Allow-Origin: *
+   Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+   Content-Length: 0
+   Date: ?
+   Expires: 0
+   Location: https://treina.pncp.gov.br/api/pncp/v1/orgaos/10000000000003/contratos/2021/1
+   Pragma: no-cache
+   Strict-Transport-Security: max-age=?
+   X-Content-Type-Options: nosniff
+   X-Frame-Options: DENY
+   X-XSS-Protection: 1; mode=block
 
 **Códigos de Retorno**
 ----------------------
