@@ -99,7 +99,6 @@ Exemplo de Retorno
 ----------------------
 
 .. code-block:: http
-   :linenos:
 
    Retorno:
    access-control-allow-credentials: true
