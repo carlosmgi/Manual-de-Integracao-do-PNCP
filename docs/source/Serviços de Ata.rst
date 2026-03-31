@@ -663,5 +663,166 @@ Dados de entrada
      - :kbd:`Motivo/justificativa para a retificação dos atributos da ata`
 
 
+Dados de retorno
+^^^^^^^^^^^^^^^^
 
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 55
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Descrição
+   * - :kbd:`1`
+     - :kbd:`ataRegistroPreco`
+     - :kbd:`JSON`
+     - :kbd:`Dados da ata de registro de preço após alteração`
+
+Códigos de retorno
+^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 20 40 20
+   :header-rows: 1
+
+   * - Código HTTP
+     - Mensagem
+     - Tipo
+   * - :kbd:`200`
+     - :kbd:`OK`
+     - :kbd:`Sucesso`
+   * - :kbd:`400`
+     - :kbd:`BadRequest`
+     - :kbd:`Erro`
+   * - :kbd:`401`
+     - :kbd:`Unauthorized`
+     - :kbd:`Erro`
+   * - :kbd:`404`
+     - :kbd:`NotFound`
+     - :kbd:`Erro`
+   * - :kbd:`422`
+     - :kbd:`Unprocessable Entity`
+     - :kbd:`Erro`
+   * - :kbd:`500`
+     - :kbd:`Internal Server Error`
+     - :kbd:`Erro`
+
+Excluir Ata de Registro de Preço
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Serviço que permite remover uma ata de registro de preço. **Não será permitida a exclusão da Ata quando a mesma possuir órgãos não participantes.**
+
+Detalhes da Requisição
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 50 15
+   :header-rows: 1
+
+   * - Endpoint
+     - Método HTTP
+   * - /v1/orgaos/{cnpj}/compras/{anoCompra}/{sequencialCompra}/atas/{sequencialAta}
+     - DELETE
+	 
+
+Exemplo de Payload
+^^^^^^^^^^^^^^^^^^
+
+.. code-block:: json
+  :linenos:
+
+	{
+	  "justificativa": "motivo/justificativa para exclusão da ata"
+	}
+  
+
+Exemplo Requisição (cURL)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+	curl -X 'DELETE' '${BASE_URL}/v1/orgaos/00394460000141/compras/2021/1/atas/1' \
+	  -H 'accept: */*' -H 'Authorization: Bearer **<TOKEN_AUTORIZACAO>**'
+
+
+Dados de entrada
+^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 10 25
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Obrigatório
+     - Descrição
+   * - 1
+     - cnpj
+     - Texto (14)
+     - Sim
+     - CNPJ do órgão originário da contratação informado na inclusão (proprietário da contratação)
+   * - 2
+     - anoCompra
+     - Inteiro
+     - Sim
+     - Ano da contratação
+   * - 3
+     - sequencialCompra
+     - Inteiro
+     - Sim
+     - Sequencial da contratação no PNCP; número sequencial gerado no momento que a contratação foi inserida no PNCP
+   * - 4
+     - sequencialAta
+     - Inteiro
+     - Sim
+     - Sequencial da ata no PNCP; número sequencial gerado no momento que a ata foi inserida no PNCP
+   * - 5
+     - justificativa
+     - Texto (255)
+     - Sim
+     - Motivo/justificativa para a exclusão da ata
+
+
+Segue o conteúdo em **RST**, sem `:kbd:`:
+
+
+Códigos de retorno
+^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 20 40 20
+   :header-rows: 1
+
+   * - Código HTTP
+     - Mensagem
+     - Tipo
+   * - 204
+     - No Content
+     - Sucesso
+   * - 401
+     - Unauthorized
+     - Erro
+   * - 404
+     - NotFound
+     - Erro
+   * - 422
+
+Consultar Atas de Registro de Preço por Compra
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Serviço que permite recuperar as atas de Registro de Preço de uma contratação.
+
+
+     - Unprocessable Entity
+     - Erro
+   * - 500
+     - Internal Server Error
+     - Erro
 
