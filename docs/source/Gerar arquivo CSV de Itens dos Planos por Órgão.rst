@@ -47,7 +47,6 @@ Dados de Entrada
      - Tipo
      - Obrigatório
      - Descrição
-
    * - 1
      - cnpj
      - Texto (14)
@@ -55,7 +54,6 @@ Dados de Entrada
      - Cnpj do órgão a que a unidade
        administrativa do PCA está
        vinculada
-
    * - 2
      - ano
      - Inteiro
@@ -74,7 +72,6 @@ Dados de retorno
      - Campo
      - Tipo
      - Descrição
-
    * - 1
      - 
      - Texto
