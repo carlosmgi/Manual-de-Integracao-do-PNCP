@@ -311,7 +311,7 @@ Exemplo de Payload
 
 .. code-block:: json
   :linenos:
-  :emphasize-lines: 7, 18
+  :emphasize-lines: 8, 19
   
      Para retificação dos dados da ata informe todos os campos.
     {
@@ -349,5 +349,84 @@ Exemplo Requisição (cURL)
     -H 'Content-Type: application/json' \
     -d '@/home/objeto.json'
 
+
+Dados de entrada
+^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 25
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Obrigatório
+     - Descrição
+   * - 1
+     - cnpj
+     - Texto (14)
+     - Sim
+     - CNPJ do órgão originário da contratação informado na inclusão (proprietário da contratação)
+   * - 2
+     - anoCompra
+     - Inteiro
+     - Sim
+     - Ano da contratação
+   * - 3
+     - sequencialCompra
+     - Inteiro
+     - Sim
+     - Sequencial da contratação no PNCP; número sequencial gerado no momento que a contratação foi inserida no PNCP
+   * - 4
+     - sequencialAta
+     - Inteiro
+     - Sim
+     - Sequencial da ata no PNCP; número sequencial gerado no momento que a ata foi inserida no PNCP
+   * - 5
+     - numeroAtaRegistroPreco
+     - Texto (50)
+     - Sim
+     - Número da ata no sistema de origem
+   * - 6
+     - anoAta
+     - Inteiro
+     - Sim
+     - Ano da ata
+   * - 7
+     - dataAssinatura
+     - Data
+     - Sim
+     - Informar a data de assinatura da ata
+   * - 8
+     - dataInicioVigencia
+     - Data
+     - Sim
+     - Informar a data de início de vigência da ata
+   * - 9
+     - dataFimVigencia
+     - Data
+     - Sim
+     - Informar a data de fim de vigência da ata
+   * - 10
+     - cancelado
+     - Booleano
+     - Não
+     - Indicador de cancelamento da ata; se omitido, assume valor “Falso”
+   * - 11
+     - dataCancelamento
+     - Data e Hora
+     - Não
+     - Informar a data e hora de cancelamento da ata caso o indicador de cancelamento seja verdadeiro
+   * - 12
+     - justificativa
+     - Texto (255)
+     - Sim
+     - Motivo/justificativa para a retificação dos atributos da ata
+   * - :kbd:`13`
+     - :kbd:`possibilidadeAdesao`
+     - :kbd:`Booleano`
+     - :kbd:`Sim`
+     - :kbd:`Indicador se a Ata permite adesão de não participantes (False=Não / True=Sim)`
 
 
