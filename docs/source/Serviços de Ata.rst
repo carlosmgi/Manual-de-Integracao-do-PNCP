@@ -813,16 +813,172 @@ Códigos de retorno
      - NotFound
      - Erro
    * - 422
-
-Consultar Atas de Registro de Preço por Compra
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Serviço que permite recuperar as atas de Registro de Preço de uma contratação.
-
-
      - Unprocessable Entity
      - Erro
    * - 500
      - Internal Server Error
      - Erro
 
+
+Consultar Atas de Registro de Preço por Compra
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Serviço que permite recuperar as atas de Registro de Preço de uma contratação.
+
+Detalhes da Requisição
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 50 15
+   :header-rows: 1
+
+   * - Endpoint
+     - Método HTTP
+   * - /v1/orgaos/{cnpj}/compras/{anoCompra}/{sequencialCompra}/atas
+     - GET
+
+Exemplo Requisição (cURL)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+	curl -X 'GET' '${BASE_URL}/v1/orgaos/00394460000141/compras/2021/1/atas' \
+	-H 'accept: */*'
+
+
+Dados de entrada
+^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 10 25
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Obrigatório
+     - Descrição
+   * - 1
+     - cnpj
+     - Texto (14)
+     - Sim
+     - CNPJ do órgão originário da contratação informado na inclusão (proprietário da contratação)
+   * - 2
+     - anoCompra
+     - Inteiro
+     - Sim
+     - Ano da contratação
+   * - 3
+     - sequencialCompra
+     - Inteiro
+     - Sim
+     - Sequencial da contratação no PNCP; número sequencial gerado no momento que a contratação foi inserida no PNCP
+
+Dados de retorno
+^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 5 30 20 45
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Descrição
+   * - 1
+     - Atas
+     - Lista
+     - Agrupador da lista de atas
+   * - 1.1
+     - numeroAtaRegistroPreco
+     - Texto (50)
+     - Número da ata no sistema de origem
+   * - 1.2
+     - anoAta
+     - Inteiro
+     - Ano da ata
+   * - 1.3
+     - dataAssinatura
+     - Data
+     - Data de assinatura da ata
+   * - 1.4
+     - dataVigenciaInicio
+     - Data
+     - Data de início de vigência da ata
+   * - 1.5
+     - dataVigenciaFim
+     - Data
+     - Data de fim de vigência da ata
+   * - 1.6
+     - dataCancelamento
+     - Data
+     - Data de cancelamento da ata
+   * - 1.7
+     - cancelado
+     - Booleano
+     - Indicador de cancelamento da ata
+   * - 1.8
+     - dataPublicacaoPncp
+     - Data
+     - Data de publicação da ata no PNCP
+   * - 1.9
+     - dataInclusao
+     - Data
+     - Data de inclusão do registro da ata no PNCP
+   * - 1.10
+     - dataAtualizacao
+     - Data
+     - Data da última atualização do registro da ata
+   * - 1.11
+     - sequencialAta
+     - Inteiro
+     - Número sequencial da ata, gerado pelo PNCP
+   * - 1.12
+     - numeroControlePNCP
+     - String
+     - Número de controle PNCP da ata
+   * - 1.13
+     - localCompra
+     - String
+     - Município e estado referentes à contratação
+   * - 1.14
+     - orgaoCompra
+     - String
+     - Órgão referente à contratação
+   * - 1.15
+     - orgaoSubRogadoCompra
+     - String
+     - Órgão sub-rogado referente à contratação
+   * - 1.16
+     - modalidadeNome
+     - String
+     - Modalidade referente à contratação
+   * - 1.17
+     - objetoCompra
+     - String
+     - Descrição do objeto referente à contratação
+   * - 1.18
+     - informacaoComplementarCompra
+     - String
+     - Informação complementar do objeto referente à contratação
+   * - 1.19
+     - dataAtualizacaoGlobal
+     - Data
+     - Data da última atualização global do registro da ata, considerando seus dependentes (documentos da ata)
+   * - 1.20
+     - usuarioNome
+     - Texto
+     - Nome da plataforma que publicou a ata no PNCP
+   * - 1.21
+     - possibilidadeAdesao
+     - Booleano
+     - Indicador se a ata permite adesão de não participantes (false = não / true = sim)
+
+
+Consultar Ata de Registro de Preço
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Serviço que permite recuperar uma ata específica.
