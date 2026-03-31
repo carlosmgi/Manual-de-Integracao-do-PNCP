@@ -21,6 +21,7 @@ Exemplo de Payload
 ------------------
 
 .. code-block:: json
+  :linenos:
 
    {
      "justificativa": "motivo/justificativa da exclusão do instrumento de cobrança do contrato ou empenho"
@@ -30,6 +31,7 @@ Exemplo Requisição (cURL)
 -------------------------
 
 .. code-block:: bash
+  :linenos:
 
    curl -k -X DELETE \
      --header "Authorization: Bearer access_token" \
@@ -102,5 +104,3 @@ Dados de Entrada
    * - 500
      - Internal Server Error
      - Erro
-
-
