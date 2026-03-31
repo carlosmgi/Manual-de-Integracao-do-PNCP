@@ -279,9 +279,3 @@ Dados de retorno
      - numeroControlePncpAta
      - String
      - Número de controle da ata relacionada
-
-
-
-
-
-
