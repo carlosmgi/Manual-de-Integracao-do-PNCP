@@ -557,7 +557,7 @@ Exemplo de Payload
 
 .. code-block:: json
   :linenos:
-  :emphasize-lines: 1,2,3,4,5,6,7,8,9,10,11
+  :emphasize-lines: 1-11
 
 	{
 	  "possibilidadeAdesao": true,
@@ -576,7 +576,7 @@ Exemplo Requisição (cURL)
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: bash
-	:emphasize-lines: 1,2,3,4
+	:emphasize-lines: 1-4
 
 		curl -X 'PATCH' '${BASE_URL}/v1/orgaos/00394460000141/compras/2021/1/atas/1' \
 		  -H 'accept: */*' -H 'Authorization: Bearer <TOKEN_AUTORIZACAO>' \
@@ -588,7 +588,7 @@ Dados de entrada
 
 .. list-table::
    :width: 100%
-   :widths: 5 25 15 25
+   :widths: 5 25 15 10 25
    :header-rows: 1
 
    * - Id
