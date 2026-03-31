@@ -26,7 +26,6 @@ Exemplo de Payload
      "justificativa": "motivo/justificativa da exclusão do instrumento de cobrança do contrato ou empenho"
    }
 
-
 Exemplo Requisição (cURL)
 -------------------------
 
