@@ -286,3 +286,68 @@ Códigos de Retorno
      - Internal Server Error
      - Erro
 
+Retificar Ata de Registro de Preço
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Serviço que permite retificar os dados de uma ata de Registro de Preço.
+Importante lembrar que na Retificação todas as informações terão que ser enviadas novamente, não apenas as que sofreram alteração.
+
+Detalhes da Requisição
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 50 15
+   :header-rows: 1
+
+   * - Endpoint
+     - Método HTTP
+   * - /v1/orgaos/{cnpj}/compras/{anoCompra}/{sequencialCompra}/atas/{sequencialAta}
+     - PUT
+	 
+
+Exemplo de Payload
+^^^^^^^^^^^^^^^^^^
+
+.. code-block:: json
+  :linenos:
+  :emphasize-lines: 7, 18
+  
+     Para retificação dos dados da ata informe todos os campos.
+    {
+      "numeroAtaRegistroPreco": "1/2021",
+      "anoAta": 2021,
+      "dataAssinatura": “2021-07-01",
+      "dataInicioVigencia": “2021-07-01",
+      "dataFimVigencia": “2022-07-01",
+      "possibilidadeAdesao": true,
+      "justificativa": "motivo/justificativa para retificação da ata"
+    }
+    
+    Para o cancelamento da ata:
+    {
+      "numeroAtaRegistroPreco": "1/2021",
+      "anoAta": 2021,
+      "dataAssinatura": “2021-07-01",
+      "dataInicioVigencia": “2021-07-01",
+      "dataFimVigencia": “2022-07-01",
+      "possibilidadeAdesao": true,
+      "cancelado": true,
+      "dataCancelamento": "2023-01-01T12:00:00",
+      "justificativa": "motivo/justificativa para cancelamento da ata"
+    }
+
+
+Exemplo Requisição (cURL)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+  curl -X 'PUT' '${BASE_URL}/v1/orgaos/00394460000141/compras/2021/1/atas/1' \
+    -H 'accept: */*' \
+    -H 'Authorization: Bearer <TOKEN_AUTORIZACAO>' \
+    -H 'Content-Type: application/json' \
+    -d '@/home/objeto.json'
+
+
+
