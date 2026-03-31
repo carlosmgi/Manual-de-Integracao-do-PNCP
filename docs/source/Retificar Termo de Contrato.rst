@@ -252,7 +252,6 @@ Exemplo de retorno
 ------------------
 
 .. code-block:: text
-   :linenos:
 
    Retorno:
    access-control-allow-credentials: true
