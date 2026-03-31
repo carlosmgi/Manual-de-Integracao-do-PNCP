@@ -5394,5 +5394,318 @@ Códigos de Retorno
      - Internal Server Error
      - Erro
 	 
+Inserir Fonte Orçamentária da Contratação
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Serviço que permite inserir uma ou mais fontes orçamentárias a uma Contratação. Tabelas de domínio - item 5.25 Fonte Orçamentária.
+
+Detalhes da Requisição
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 50 15
+   :header-rows: 1
+
+   * - Endpoint
+     - Método HTTP
+   * - /v1/orgaos/{cnpj}/compras/{ano}/{sequencial}/fonte-orcamentaria
+     - POST
+	 
+
+Exemplo Requisição (cURL)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+	curl -X 'POST' -H 'Authorization: Bearer access_token'   "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/fonte-orcamentaria" -H "accept: */*" -H "Content-Type: application/json" -d "{ "listaFonteOrcamentariaId": [ 1, 2 ] }"
+
+Dados de entrada
+^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 25
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Descrição
+   * - 1
+     - cnpj
+     - Texto (14)
+     - CNPJ do órgão originário da contratação informado na inclusão (proprietário da contratação ou alienação de bens).
+   * - 2
+     - ano
+     - Inteiro
+     - Ano da contratação.
+   * - 3
+     - sequencial
+     - Inteiro
+     - Sequencial da contratação no PNCP; número gerado no momento que a contratação foi inserida no PNCP.
+   * - 4
+     - listaFonteOrcamentariaId
+     - Lista de Inteiros
+     - Lista de códigos de fontes orçamentárias da contratação.
+
+Códigos de Retorno
+^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 10 25 20
+   :header-rows: 1
+
+   * - Código HTTP
+     - Mensagem
+     - Tipo
+   * - 201
+     - Created
+     - Sucesso
+   * - 400
+     - BadRequest
+     - Erro
+   * - 422
+     - Unprocessable Entity
+     - NotFound
+   * - 500
+     - Internal Server Error
+     - Erro
+	 
+Excluir Fonte Orçamentária da Contratação
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Serviço que permite remover uma ou mais fontes orçamentárias de uma Contratação.
+
+Detalhes da Requisição
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 50 15
+   :header-rows: 1
+
+   * - Endpoint
+     - Método HTTP
+   * - /v1/orgaos/{cnpj}/compras/{ano}/{sequencial}/fonte-orcamentaria
+     - DELETE
+	 
+
+Exemplo de Payload
+^^^^^^^^^^^^^^^^^^
+
+.. code-block:: json
+  :linenos:
+
+	{
+	    "listaFonteOrcamentariaId": [ 2, 3 ],
+	    “justificativaAtualizacao": "Motivo/justificativa para exclusão da fonte orçamentária da contratação"
+	}
+
+
+Exemplo Requisição (cURL)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+	curl -k -X ‘DELETE’ --header 'Authorization: Bearer access_token' \
+	'${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/arquivos/1' -H 'accept: */*’ \
+	-H 'Content-Type: application/json' \
+	-d '{ "listaFonteOrcamentariaId": [ 2 ], "justificativaAtualizacao": "Justificativa da exclusão" }'
+
+Dados de entrada
+^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 25
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Descrição
+   * - 1
+     - cnpj
+     - Texto (14)
+     - CNPJ do órgão originário da contratação informado na inclusão (proprietário da contratação ou alienação de bens).
+   * - 2
+     - ano
+     - Inteiro
+     - Ano da contratação.
+   * - 3
+     - sequencial
+     - Inteiro
+     - Sequencial da contratação no PNCP; número gerado no momento que a contratação foi inserida no PNCP.
+   * - 4
+     - listaFonteOrcamentariaId
+     - Inteiro
+     - Código de identificação da fonte orçamentária. Permite o envio de múltiplos códigos separados por vírgula.
+   * - 5
+     - justificativaAtualizacao
+     - Texto (255)
+     - Motivo/justificativa para exclusão da fonte orçamentária da contratação.
+
+Códigos de Retorno
+^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 10 25 20
+   :header-rows: 1
+
+   * - Código HTTP
+     - Mensagem
+     - Tipo
+   * - 200
+     - Delete
+     - Sucesso
+   * - 400
+     - BadRequest
+     - Erro
+   * - 422
+     - Unprocessable Entity
+     - NotFound
+   * - 500
+     - Internal Server Error
+     - Erro
+	 
+Consultar Fonte Orçamentária da Contratação
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Serviço que permite consultar fonte orçamentária da contratação pelo seu código.
+
+Detalhes da Requisição
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 50 15
+   :header-rows: 1
+
+   * - Endpoint
+     - Método HTTP
+   * - /v1/orgaos/{cnpj}/compras/{ano}/{sequencial}/fonte-orcamentaria/{fonteOrcamentariaId}
+     - GET
+
+Exemplo Requisição (cURL)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+	curl -k -X GET "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/fonte-orcamentaria/1" \
+	 -H "Accept: */*”
+
+Dados de entrada
+^^^^^^^^^^^^^^^^
+
+.. note::
+   Alimentar o parâmetro {cnpj}, {ano} e {sequencial} na URL.
+
+.. list-table:: 
+   :width: 100%
+   :widths: 5 25 15 25
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Obrigatório
+     - Descrição
+   * - 1
+     - cnpj
+     - Texto (14)
+     - Sim
+     - CNPJ do órgão originário da contratação informado na inclusão (proprietário da contratação ou alienação de bens)
+   * - 2
+     - ano
+     - Inteiro
+     - Sim
+     - Ano da contratação
+   * - 3
+     - sequencial
+     - Inteiro
+     - Sim
+     - Sequencial da Contratação no PNCP; número sequencial gerado no momento que a contratação foi inserida no PNCP
+   * - 4
+     - fonteOrcamentariaId
+     - Inteiro
+     - Sim
+     - Código da fonte orçamentária
+
+
+Dados de retorno
+^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 25
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Descrição
+   * - 1
+     - numeroControlePNCPCompra
+     - Texto
+     - Número de Controle PNCP da Contratação
+   * - 2
+     - fonteOrcamentaria
+     - Lista
+     - Lista de Fontes Orçamentárias da Contratação
+   * - 2.1
+     - id
+     - Inteiro
+     - Código da fonte orçamentária
+   * - 2.2
+     - nome
+     - Texto
+     - Nome da fonte orçamentária
+   * - 2.3
+     - descricao
+     - Texto
+     - Descrição da fonte orçamentária
+   * - 2.4
+     - statusAtivo
+     - Boleano
+     - Indicador de status da fonte orçamentária. True-Ativo / False-Inativo
+   * - 3
+     - dataInclusao
+     - Data/Hora
+     - Data de inclusão da fonte orçamentária na Contratação
+
+Códigos de Retorno
+^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 10 25 20
+   :header-rows: 1
+
+   * - Código HTTP
+     - Mensagem
+     - Tipo
+   * - 200
+     - OK
+     - Sucesso
+   * - 400
+     - BadRequest
+     - Erro
+   * - 422
+     - Unprocessable Entity
+     - NotFound
+   * - 500
+     - Internal Server Error
+     - Erro
+	 
+Consultar Todas as Fontes Orçamentárias da Contratação
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Serviço que permite consultar a lista de fontes orçamentárias de uma contratação.
+
+
+
 
 
