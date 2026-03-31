@@ -24,6 +24,7 @@ Exemplo de Payload
 ------------------
 
 .. code-block:: json
+  :linenos:
 
    {
      "tipoTermoContratoId": 2,
@@ -56,6 +57,7 @@ Exemplo Requisição (cURL)
 -------------------------
 
 .. code-block:: bash
+  :linenos:
 
    curl -k -X POST \
      --header "Authorization: Bearer access_token" \
@@ -240,6 +242,7 @@ Exemplo de retorno
 ------------------
 
 .. code-block:: text
+  :linenos:
 
    Retorno:
    access-control-allow-credentials: true
