@@ -8,7 +8,6 @@ qualquer plataforma digital credenciada.
   
   Na Retificação todas as informações terão que ser enviadas novamente, não apenas as que sofreram alteração. Conforme regra de conformidade, prevista no item 5.19, não é possível a inclusão ou retificação de contrato ou empenho que pertença à contratação realizada por Sistema de Registro de Preços (SRP), a qual não possua ao menos uma ata de registro de preços publicada no PNCP.
 
-
 **Atualizações da versão 2.3.10**
 ---------------------------------
 
@@ -330,8 +329,7 @@ Exemplo de retorno
 ------------------
 
 .. code-block:: http
-   :linenos:
-
+   
    HTTP/1.1 204 No Content
    access-control-allow-credentials: true
    access-control-allow-headers: Content-Type, Authorization, X-Requested-With, Content-Length, Accept, Origin
@@ -371,5 +369,3 @@ Exemplo de retorno
    * - 500
      - Internal Server Error
      - Erro
-
-
