@@ -48,25 +48,21 @@ Dados de Entrada
      - Tipo
      - Obrigatório
      - Descrição
-
    * - 1
      - cnpj
      - Texto (14)
      - Sim
      - Cnpj do órgão a que a unidade administrativa do PCA está vinculada
-
    * - 2
      - ano
      - Inteiro
      - Sim
      - Ano do PCA
-
    * - 3
      - pagina
      - Inteiro
      - Não
      - Número da página com os registros a serem recuperados
-
    * - 4
      - tamanhoPagina
      - Inteiro
@@ -85,47 +81,38 @@ Dados de retorno
      - Campo
      - Tipo
      - Descrição
-
    * - 1
      - Lista
      - Lista
      - Lista de PCAs por Unidade
-
    * - 1.1
      - cnpj
      - Texto
      - CNPJ do órgão
-
    * - 1.2
      - razaoSocial
      - Texto
      - Razão Social do órgão
-
    * - 1.3
      - esfera
      - Texto
      - Esfera do órgão
-
    * - 1.4
      - poder
      - Texto
      - Poder do órgão
-
    * - 1.5
      - codigoUnidade
      - Texto
      - Código da Unidade Responsável
-
    * - 1.6
      - nomeUnidade
      - Texto
      - Nome da Unidade Responsável
-
    * - 1.7
      - anoPca
      - Inteiro
      - Ano do Plano de Contratações
-
    * - 1.8
      - sequencialPca
      - Inteiro
@@ -133,29 +120,24 @@ Dados de retorno
        sequencial gerado no momento que o plano
        de contratações da unidade foi inserido no
        PNCP
-
    * - 1.9
      - numeroControlePNCP
      - Texto
      - Número de Controle PNCP do Plano (id pca
        PNCP)
-
    * - 1.10
      - dataPublicacaoPncp
      - Data
      - Data da publicação da Ata no PNCP
-
    * - 1.11
      - dataAtualizacao
      - Data
      - Data da última atualização do registro da Ata
-
    * - 1.12
      - quantidade
      - Decimal (17,4)
      - Quantidade de itens do plano. Precisão de até
        4 dígitos decimais; Ex: 10.0001;
-
    * - 1.13
      - valorTotal
      - Decimal (17,4)
