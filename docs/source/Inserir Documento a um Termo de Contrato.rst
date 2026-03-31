@@ -27,6 +27,7 @@ Exemplo Requisição (cURL)
 -------------------------
 
 .. code-block:: bash
+  :linenos:
 
    curl -k -X POST \
      --header "Authorization: Bearer access_token" \
