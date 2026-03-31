@@ -355,7 +355,7 @@ Dados de entrada
 
 .. list-table::
    :width: 100%
-   :widths: 5 25 15 25
+   :widths: 5 25 15 10 25
    :header-rows: 1
 
    * - Id
@@ -412,12 +412,12 @@ Dados de entrada
      - cancelado
      - Booleano
      - Não
-     - Indicador de cancelamento da ata; se omitido, assume valor “Falso”
+     - Indicador de cancelamento da ata; se omitido, assume valor "false"
    * - 11
      - dataCancelamento
      - Data e Hora
      - Não
-     - Informar a data e hora de cancelamento da ata caso o indicador de cancelamento seja verdadeiro
+     - Informar a data e hora de cancelamento da ata, caso o indicador de cancelamento seja verdadeiro
    * - 12
      - justificativa
      - Texto (255)
@@ -427,6 +427,106 @@ Dados de entrada
      - :kbd:`possibilidadeAdesao`
      - :kbd:`Booleano`
      - :kbd:`Sim`
-     - :kbd:`Indicador se a Ata permite adesão de não participantes (False=Não / True=Sim)`
+     - :kbd:`Indicador se a ata permite adesão de não participantes (false = não / true = sim)`
+
+Dados de retorno
+^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 55
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Descrição
+   * - 1
+     - ataRegistroPreco
+     - JSON
+     - Dados da ata de registro de preço após alteração
+
+Exemplo de Retorno
+^^^^^^^^^^^^^^^^^^
+
+.. code-block:: json
+
+ 
+	 Retorno (headers HTTP):
+	
+	 access-control-allow-credentials: true
+	 access-control-allow-headers: Content-Type,Authorization,X-Requested-With,Content-Length,Accept,Origin,
+	 access-control-allow-methods: GET,PUT,POST,DELETE,OPTIONS
+	 access-control-allow-origin: *
+	 cache-control: no-cache,no-store,max-age=0,must-revalidate
+	 connection: keep-alive
+	 content-type: application/json
+	 date: Tue,27 Jul 2021 22:50:21 GMT
+	 expires: 0
+	 keep-alive: timeout=60
+	 pragma: no-cache
+	 transfer-encoding: chunked
+	 x-content-type-options: nosniff
+	 x-frame-options: DENY
+	 x-xss-protection: 1; mode=block
+	
+	Retorno (corpo da requisição)
+	{
+	  "numeroAtaRegistroPreco": "1/2021",
+	  "anoAta": 2021,
+	  "dataAssinatura": "2021-07-27",
+	  "dataVigenciaInicio": "2021-07-27",
+	  "dataVigenciaFim": "2022-07-27",
+	  "dataCancelamento": null,
+	  "cancelado": false,
+	  "dataPublicacaoPncp": "2021-07-27T19:45:57.969+00:00",
+	  "dataInclusao": "2021-07-27T19:45:57.969+00:00",
+	  "dataAtualizacao": "2021-07-27T22:50:20.352+00:00",
+	  "sequencialAta": 1,
+	  "numeroControlePNCP": "00394460000141-1-000001/2021-000001",
+	  "orgaoEntidade": {
+	    "cnpj": "00394460000141",
+	    "razaoSocial": "Ministério da Economia",
+	    "poderId": "E",
+	    "esferaId": "F"
+	  },
+	  "orgaoSubRogado": null,
+	  "unidadeOrgao": {
+	    "ufNome": "Distrito Federal",
+	    "ufSigla": "DF",
+	    "municipioId": 5570,
+	    "municipioNome": "Brasília",
+	    "codigoUnidade": "1",
+	    "nomeUnidade": "Unidade de serviços"
+	  },
+	  "unidadeSubRogada": null,
+	  "modalidadeNome": "Leilão",
+	  "objetoCompra": "Teste Teste",
+	  "informacaoComplementarCompra": "slfkweofndfejf"
+	}
 
 
+Códigos de Retorno
+^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 10 25 20
+   :header-rows: 1
+
+   * - Código HTTP
+     - Mensagem
+     - Tipo
+   * - 200
+     - OK
+     - Sucesso
+   * - 400
+     - BadRequest
+     - Erro
+   * - 422
+     - Unprocessable Entity
+     - NotFound
+   * - 500
+     - Internal Server Error
+     - Erro
+	 
