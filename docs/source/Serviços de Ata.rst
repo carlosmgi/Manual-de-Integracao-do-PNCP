@@ -1156,7 +1156,6 @@ Detalhes da Requisição
      - Método HTTP
    * - /v1/orgaos/{cnpj}/compras/{anoCompra}/{sequencialCompra}/atas/{sequencialAta}/arquivos
      - POST
-	 
 
 Exemplo Requisição (cURL)
 ^^^^^^^^^^^^^^^^^^^^^^^^^
