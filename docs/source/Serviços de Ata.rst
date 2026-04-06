@@ -2177,3 +2177,130 @@ Excluir Parte Envolvida em Ata de Registro de Preço
 
 	Serviço que recupera os dados de uma parte envolvida específica de uma ata de registro de preço.
 
+Detalhes da Requisição
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 50 15
+   :header-rows: 1
+
+   * - Endpoint
+     - Método HTTP
+   * - /v1/orgaos/{cnpj}/compras/{anoCompra}/{sequencialCompra}/atas/{sequencialAta}/partesenvolvidas/{cnpjOrgao}/{codUnidade}/{tipoParteEnvolvida}
+     - DELETE
+	 
+
+Exemplo de Payload
+^^^^^^^^^^^^^^^^^^
+
+.. code-block:: json
+  :linenos:
+  :emphasize-lines: 1-3
+
+		{
+		  "justificativa": "Motivo/justificativa para exclusão da parte envolvida"
+		}
+
+  
+Exemplo Requisição (cURL)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+	:linenos:
+ 	:emphasize-lines: 1,2
+
+	curl -k -X DELETE --header "Authorization: Bearer access_token"
+	"${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/atas/1/partesenvolvidas/10000000000003/1/2" -H "accept: */* -H "Content-Type: application/pdf"
+
+Dados de entrada
+^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 20 25
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Obrigatório
+     - Descrição
+
+   * - :kbd:`1`
+     - :kbd:`cnpj`
+     - :kbd:`Texto (14)`
+     - :kbd:`Sim`
+     - :kbd:`CNPJ do órgão originário da contratação informado na inclusão (proprietário da contratação)`
+   * - :kbd:`2`
+     - :kbd:`anoCompra`
+     - :kbd:`Inteiro`
+     - :kbd:`Sim`
+     - :kbd:`Ano da contratação`
+   * - :kbd:`3`
+     - :kbd:`sequencialCompra`
+     - :kbd:`Inteiro`
+     - :kbd:`Sim`
+     - :kbd:`Sequencial da contratação no PNCP; número gerado no momento em que a contratação foi inserida`
+   * - :kbd:`4`
+     - :kbd:`sequencialAta`
+     - :kbd:`Inteiro`
+     - :kbd:`Sim`
+     - :kbd:`Sequencial da ata no PNCP; número gerado no momento em que a ata foi inserida`
+   * - :kbd:`5`
+     - :kbd:`cnpjOrgao`
+     - :kbd:`Texto (14)`
+     - :kbd:`Sim`
+     - :kbd:`CNPJ do órgão ou entidade da parte envolvida`
+   * - :kbd:`6`
+     - :kbd:`codUnidade`
+     - :kbd:`Texto (30)`
+     - :kbd:`Sim`
+     - :kbd:`Código da unidade administrativa da parte envolvida`
+   * - :kbd:`7`
+     - :kbd:`tipoParteEnvolvida`
+     - :kbd:`Inteiro`
+     - :kbd:`Sim`
+     - :kbd:`Código do tipo da parte envolvida`
+   * - :kbd:`8`
+     - :kbd:`justificativa`
+     - :kbd:`Texto (255)`
+     - :kbd:`Sim`
+     - :kbd:`Motivo ou justificativa para a exclusão da parte envolvida da ata`
+
+Códigos de Retorno
+^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 10 25 20
+   :header-rows: 1
+
+   * - Código HTTP
+     - Mensagem
+     - Tipo
+   * - :kbd:`204`
+     - :kbd:`No Content`
+     - :kbd:`Sucesso`
+   * - :kbd:`401`
+     - :kbd:`Unauthorized`
+     - :kbd:`Erro`
+   * - :kbd:`404`
+     - :kbd:`NotFound`
+     - :kbd:`Erro`
+   * - :kbd:`422`
+     - :kbd:`Unprocessable Entity`
+     - :kbd:`Erro`
+   * - :kbd:`500`
+     - :kbd:`Internal Server Error`
+     - :kbd:`Erro`
+
+Consultar Parte Envolvida em Ata de Registro de Preço
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. container:: destaque-amarelo
+
+	Serviço que recupera os dados de uma parte envolvida específica de uma ata de registro de preço.
+
+
+
