@@ -2395,7 +2395,7 @@ Dados de retorno
      - :kbd:`Data e hora da inclusão da informação no PNCP`
    * - :kbd:`2`
      - :kbd:`tipoParteEnvolvida`
-     - :kbd:``
+     - :kbd:
      - :kbd:`Tipo de parte envolvida`
    * - :kbd:`2.1`
      - :kbd:`id`
@@ -2411,7 +2411,7 @@ Dados de retorno
      - :kbd:`Descrição do tipo de parte envolvida`
    * - :kbd:`3`
      - :kbd:`orgao`
-     - :kbd:``
+     - :kbd:
      - :kbd:`Dados do órgão ou entidade`
    * - :kbd:`3.1`
      - :kbd:`cnpj`
@@ -2423,7 +2423,7 @@ Dados de retorno
      - :kbd:`Nome do órgão ou entidade`
    * - :kbd:`4`
      - :kbd:`unidade`
-     - :kbd:``
+     - :kbd:
      - :kbd:`Dados da unidade administrativa`
    * - :kbd:`4.1`
      - :kbd:`codigo`
@@ -2435,7 +2435,7 @@ Dados de retorno
      - :kbd:`Nome da unidade administrativa`
    * - :kbd:`4.3`
      - :kbd:`localidade`
-     - :kbd:``
+     - :kbd:
      - :kbd:`Localidade da unidade administrativa`
    * - :kbd:`4.3.1`
      - :kbd:`uf`
