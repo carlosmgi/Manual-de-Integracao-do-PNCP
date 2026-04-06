@@ -1143,3 +1143,1035 @@ Inserir Documento de uma Ata
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Serviço que permite inserir/anexar documento/arquivo a uma Ata. O sistema permite o upload de arquivos com as extensões listadas na seção: Tabelas de domínio - Extensões de arquivos aceitos pelas APIs de Documento.
+
+Detalhes da Requisição
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 50 15
+   :header-rows: 1
+
+   * - Endpoint
+     - Método HTTP
+   * - /v1/orgaos/{cnpj}/compras/{anoCompra}/{sequencialCompra}/atas/{sequencialAta}/arquivos
+     - POST
+	 
+
+Exemplo Requisição (cURL)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+	curl -X 'POST' '${BASE_URL}/v1/orgaos/00394460000141/compras/2021/1/atas/1/arquivos' \
+	  -H 'accept: */*' -H 'Titulo-Documento: teste doc' -H 'Tipo-Documento: 1' \
+	  -H 'Authorization: Bearer<TOKEN_AUTORIZACAO>' \
+	  -H 'Content-Type: multipart/form-data' \
+	  -F 'arquivo=@10_coisas_que_todo_programador_Java_deve_saber.pdf;type=application/pdf'
+
+Dados de entrada
+^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 20 25
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Obrigatório
+     - Descrição
+
+   * - 1
+     - cnpj
+     - Texto (14)
+     - Sim
+     - CNPJ do órgão originário da contratação informado na inclusão (proprietário da contratação)
+   * - 2
+     - anoCompra
+     - Inteiro
+     - Sim
+     - Ano da contratação
+   * - 3
+     - sequencialCompra
+     - Inteiro
+     - Sim
+     - Sequencial da contratação no PNCP; número gerado no momento em que a contratação foi inserida
+   * - 4
+     - sequencialAta
+     - Inteiro
+     - Sim
+     - Sequencial da ata no PNCP; número gerado no momento em que a ata foi inserida
+   * - 5
+     - tituloDocumento
+     - Texto (50)
+     - Sim
+     - Título do documento
+   * - 6
+     - tipoDocumento
+     - Inteiro
+     - Sim
+     - Código da tabela de domínio tipo de documento
+   * - 7
+     - arquivo
+     - String binária
+     - Sim
+     - String binária do arquivo
+
+Dados de retorno
+^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 25
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Descrição
+
+   * - 1
+     - location
+     - Texto (255)
+     - Endereço HTTP do recurso criado
+
+Exemplo de Retorno
+^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+	Retorno:
+	
+	access-control-allow-credentials: true
+	access-control-allow-headers: Content-Type,Authorization,X-Requested-With,Content-Length,Accept,Origin,
+	access-control-allow-methods: GET,PUT,POST,DELETE,OPTIONS
+	access-control-allow-origin: *
+	cache-control: no-cache,no-store,max-age=0,must-revalidate
+	content-length: 0
+	date: ?
+	expires: 0
+	location: https://treina.pncp.gov.br/api/pncp/v1/orgaos/10000000000003/compras/2021/1/atas/1/arquivos/1
+	nome-bucket: ?
+	pragma: no-cache
+	strict-transport-security: max-age=?
+	x-content-type-options: nosniff
+	x-firefox-spdy: ?
+	x-frame-options: DENY
+	x-xss-protection: 1; mode=block
+
+Códigos de Retorno
+^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 10 25 20
+   :header-rows: 1
+
+   * - Código HTTP
+     - Mensagem
+     - Tipo
+   * - 201
+     - Created
+     - Sucesso
+   * - 400
+     - BadRequest
+     - Erro
+   * - 404
+     - NotFound
+     - Erro
+   * - 422
+     - Unprocessable Entity
+     - Erro
+   * - 500
+     - Internal Server Error
+     - Erro
+
+Excluir Documento de uma Ata
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Serviço que permite remover um documento em uma ata específica.
+
+Detalhes da Requisição
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 50 15
+   :header-rows: 1
+
+   * - Endpoint
+     - Método HTTP
+   * - /v1/orgaos/{cnpj}/compras/{anoCompra}/{sequencialCompra}/atas/{sequencialAta}/arquivos/{sequencialDocumento}
+     - DELETE
+	 
+
+Exemplo de Payload
+^^^^^^^^^^^^^^^^^^
+
+.. code-block:: json
+  :linenos:
+  
+	  {
+	     "justificativa": "motivo/justificativa para exclusão do documento da ata"
+	  }
+
+
+Exemplo Requisição (cURL)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+	curl -k -X DELETE --header "Authorization: Bearer access_token"
+	"${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/atas/1/arquivos/1" -H "accept: */* -H "Content-Type: application/pdf"
+
+Dados de entrada
+^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 20 25
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Obrigatório
+     - Descrição
+
+   * - 1
+     - cnpj
+     - Texto (14)
+     - Sim
+     - CNPJ do órgão originário da contratação informado na inclusão (proprietário da contratação)
+   * - 2
+     - anoCompra
+     - Inteiro
+     - Sim
+     - Ano da contratação
+   * - 3
+     - sequencialCompra
+     - Inteiro
+     - Sim
+     - Sequencial da contratação no PNCP; número gerado no momento em que a contratação foi inserida
+   * - 4
+     - sequencialAta
+     - Inteiro
+     - Sim
+     - Sequencial da ata no PNCP; número gerado no momento em que a ata foi inserida
+   * - 5
+     - sequencialDocumento
+     - Inteiro
+     - Sim
+     - Sequencial do documento da ata no PNCP; número gerado no momento em que o documento foi inserido
+   * - 6
+     - justificativa
+     - Texto (255)
+     - Sim
+     - Motivo ou justificativa para a exclusão do documento da ata
+
+Códigos de Retorno
+^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 10 25 20
+   :header-rows: 1
+
+   * - Código HTTP
+     - Mensagem
+     - Tipo
+   * - 204
+     - No Content
+     - Sucesso
+   * - 400
+     - BadRequest
+     - Erro
+   * - 401
+     - Unauthorized
+     - Erro
+   * - 404
+     - NotFound
+     - Erro
+   * - 422
+     - Unprocessable Entity
+     - Erro
+   * - 500
+     - Internal Server Error
+     - Erro
+
+Consultar Todos os Documentos de uma Ata
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Serviço que permite consultar a lista de documentos pertencentes a uma ata específica.
+
+Detalhes da Requisição
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 50 15
+   :header-rows: 1
+
+   * - Endpoint
+     - Método HTTP
+   * - /v1/orgaos/{cnpj}/compras/{anoCompra}/{sequencialCompra}/atas/{sequencialAta}/arquivos
+     - GET
+
+
+Exemplo Requisição (cURL)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+	curl -k -X GET "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/atas/1/arquivos" \
+	 -H "Accept: */*”
+
+
+Dados de entrada
+^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 20 25
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Obrigatório
+     - Descrição
+
+   * - 1
+     - cnpj
+     - Texto (14)
+     - Sim
+     - CNPJ do órgão originário da contratação informado na inclusão (proprietário da contratação)
+   * - 2
+     - anoCompra
+     - Inteiro
+     - Sim
+     - Ano da contratação
+   * - 3
+     - sequencialCompra
+     - Inteiro
+     - Sim
+     - Sequencial da contratação no PNCP; número gerado no momento em que a contratação foi inserida
+   * - 4
+     - sequencialAta
+     - Inteiro
+     - Sim
+     - Sequencial da ata no PNCP; número gerado no momento em que a ata foi inserida
+
+Dados de retorno
+^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 25
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Descrição
+
+   * - 1
+     - documentos
+     - Lista
+     - Lista de documentos
+   * - 1.1
+     - sequencialDocumento
+     - Inteiro
+     - Número sequencial atribuído ao arquivo
+   * - 1.2
+     - url
+     - Texto
+     - URL para download do arquivo
+   * - 1.3
+     - tipoDocumentoId
+     - Inteiro
+     - Código do tipo de documento conforme PNCP
+   * - 1.4
+     - tipoDocumentoNome
+     - Texto
+     - Nome do tipo de documento conforme PNCP
+   * - 1.5
+     - titulo
+     - Texto
+     - Título referente ao arquivo
+   * - 1.6
+     - dataPublicacaoPncp
+     - Data
+     - Data de publicação do arquivo no portal PNCP
+
+Códigos de Retorno
+^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 10 25 20
+   :header-rows: 1
+
+   * - Código HTTP
+     - Mensagem
+     - Tipo
+   * - 200
+     - OK
+     - Sucesso
+   * - 400
+     - BadRequest
+     - Erro
+   * - 404
+     - NotFound
+     - Erro
+   * - 422
+     - Unprocessable Entity
+     - Erro
+   * - 500
+     - Internal Server Error
+     - Erro
+
+Consultar Documento de uma Ata
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Serviço que permite consultar um documento específico pertencente a uma ata.
+
+Detalhes da Requisição
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 50 15
+   :header-rows: 1
+
+   * - Endpoint
+     - Método HTTP
+   * - /v1/orgaos/{cnpj}/compras/{anoCompra}/{sequencialCompra}/atas/{sequencialAta}/arquivos/{sequencialDocumento}
+     - GET
+
+Exemplo Requisição (cURL)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+	curl -k -X GET "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/atas/1/arquivos/1" \
+	 -H "Accept: */*”
+
+Dados de entrada
+^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 20 25
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Obrigatório
+     - Descrição
+
+   * - 1
+     - cnpj
+     - Texto (14)
+     - Sim
+     - CNPJ do órgão originário da contratação informado na inclusão (proprietário da contratação)
+   * - 2
+     - anoCompra
+     - Inteiro
+     - Sim
+     - Ano da contratação
+   * - 3
+     - sequencialCompra
+     - Inteiro
+     - Sim
+     - Sequencial da contratação no PNCP; número gerado no momento em que a contratação foi inserida
+   * - 4
+     - sequencialAta
+     - Inteiro
+     - Sim
+     - Sequencial da ata no PNCP; número gerado no momento em que a ata foi inserida
+   * - 5
+     - sequencialDocumento
+     - Inteiro
+     - Sim
+     - Sequencial do documento da ata no PNCP; número gerado no momento em que o documento foi inserido
+
+Dados de retorno
+^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 25
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Descrição
+
+   * - 1
+     - arquivo
+     - String binária
+     - String binária do arquivo
+
+Códigos de Retorno
+^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 10 25 20
+   :header-rows: 1
+
+   * - Código HTTP
+     - Mensagem
+     - Tipo
+   * - 200
+     - OK
+     - Sucesso
+   * - 400
+     - BadRequest
+     - Erro
+   * - 404
+     - NotFound
+     - Erro
+   * - 422
+     - Unprocessable Entity
+     - Erro
+   * - 500
+     - Internal Server Error
+     - Erro
+
+Consultar Histórico da Ata
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Serviço que permite consultar todos os eventos de uma ata específica e de seus documentos/arquivos.
+
+Detalhes da Requisição
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 50 15
+   :header-rows: 1
+
+   * - Endpoint
+     - Método HTTP
+   * - /v1/orgaos/{cnpj}/compras/{ano}/{sequencial}/atas/{sequencialAta}/historico
+     - GET
+	 
+Exemplo Requisição (cURL)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+	curl -k -X GET "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/atas/1/historico" \
+	 -H "accept: */*"
+
+Dados de entrada
+^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 25
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Descrição
+
+   * - 1
+     - cnpj
+     - Texto (14)
+     - CNPJ do órgão originário da contratação informado na inclusão (proprietário da contratação)
+   * - 2
+     - ano
+     - Inteiro
+     - Ano da contratação
+   * - 3
+     - sequencial
+     - Inteiro
+     - Sequencial da contratação no PNCP
+   * - 4
+     - sequencialAta
+     - Inteiro
+     - Sequencial da ata no PNCP
+   * - 5
+     - pagina
+     - Inteiro
+     - Utilizado para paginação dos itens; número da página
+   * - 6
+     - tamanhoPagina
+     - Inteiro
+     - Utilizado para paginação dos itens; quantidade de itens por página
+
+Dados de retorno
+^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 25
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Descrição
+
+   * - 1
+     - eventos
+     - Lista
+     - Lista de eventos
+   * - 1.1
+     - compraOrgaoCnpj
+     - String
+     - CNPJ do órgão originário da contratação informado na inclusão (proprietário da contratação ou alienação de bens)
+   * - 1.2
+     - compraAno
+     - Inteiro
+     - Ano da contratação
+   * - 1.3
+     - compraSequencial
+     - Inteiro
+     - Sequencial da contratação no PNCP; número gerado no momento em que a contratação foi inserida
+   * - 1.4
+     - logManutencaoDataInclusao
+     - Data/Hora
+     - Data e hora da operação de inclusão, retificação ou exclusão do recurso
+   * - 1.5
+     - tipoLogManutencao
+     - Inteiro
+     - Código do tipo de operação efetuada
+   * - 1.6
+     - tipoLogManutencaoNome
+     - String
+     - Nome da operação efetuada: 0 - Inclusão; 1 - Retificação; 2 - Exclusão
+   * - 1.7
+     - categoriaLogManutencao
+     - Inteiro
+     - Código do tipo de recurso que sofreu a operação
+   * - 1.8
+     - categoriaLogManutencaoNome
+     - String
+     - Nome do recurso que sofreu a operação: 1 - Contratação; 2 - Ata; 3 - Contrato; 4 - Item de Contratação; 5 - Resultado de Item de Contratação; 6 - Documento de Contratação; 7 - Documento de Ata; 8 - Documento de Contrato; 9 - Termo de Contrato; 10 - Documento de Termo de Contrato
+   * - 1.9
+     - anoAta
+     - Inteiro
+     - Ano da ata
+   * - 1.10
+     - numeroAtaRegistroPreco
+     - String
+     - Número da ata
+   * - 1.11
+     - documentoAtaSequencial
+     - Inteiro
+     - Sequencial do documento da ata no PNCP; retornado caso ``categoriaLogManutencao = 7``
+   * - 1.12
+     - documentoAtaTipo
+     - String
+     - Nome do tipo de documento conforme PNCP; retornado caso ``categoriaLogManutencao = 7``
+   * - 1.13
+     - documentoAtaTitulo
+     - String
+     - Título referente ao arquivo ou documento; retornado caso ``categoriaLogManutencao = 7``
+   * - 1.14
+     - usuarioNome
+     - String
+     - Nome do usuário ou sistema que efetuou a operação
+   * - 1.15
+     - justificativa
+     - String
+     - Motivo ou justificativa da operação de retificação ou exclusão do recurso
+
+Códigos de Retorno
+^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 10 25 20
+   :header-rows: 1
+
+   * - Código HTTP
+     - Mensagem
+     - Tipo
+   * - 200
+     - OK
+     - Sucesso
+   * - 400
+     - BadRequest
+     - Erro
+   * - 422
+     - Unprocessable Entity
+     - Erro
+   * - 500
+     - Internal Server Error
+     - Erro
+
+
+Consultar Contratos de Ata de Registro de Preço
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**Serviço que permite consultar todos os contratos/empenhos vinculados a uma ata de registro de preço específica.**
+
+Detalhes da Requisição
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 50 15
+   :header-rows: 1
+
+   * - Endpoint
+     - Método HTTP
+   * - /v1/orgaos/{cnpj}/compras/{ano}/{sequencial}/atas/{sequencialAta}/contratos
+     - GET
+	 
+
+Exemplo de Payload
+^^^^^^^^^^^^^^^^^^
+
+.. code-block:: json
+  :linenos:
+  :emphasize-lines: 5,6
+  
+  
+
+Exemplo Requisição (cURL)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+	:linenos:
+  	:emphasize-lines: 1,2
+
+	curl -k -X GET "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/atas/1/contratos" \
+	 -H "accept: */*"
+
+Dados de entrada
+^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 25
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Descrição
+
+   * - :kbd:`1`
+     - :kbd:`cnpj`
+     - :kbd:`Texto (14)`
+     - :kbd:`CNPJ do órgão originário da contratação informado na inclusão (proprietário da contratação)`
+   * - :kbd:`2`
+     - :kbd:`ano`
+     - :kbd:`Inteiro`
+     - :kbd:`Ano da contratação`
+   * - :kbd:`3`
+     - :kbd:`sequencial`
+     - :kbd:`Inteiro`
+     - :kbd:`Sequencial da contratação no PNCP`
+   * - :kbd:`4`
+     - :kbd:`sequencialAta`
+     - :kbd:`Inteiro`
+     - :kbd:`Sequencial da ata no PNCP`
+   * - :kbd:`5`
+     - :kbd:`pagina`
+     - :kbd:`Inteiro`
+     - :kbd:`Utilizado para paginação dos itens. Número da página`
+   * - :kbd:`6`
+     - :kbd:`tamanhoPagina`
+     - :kbd:`Inteiro`
+     - :kbd:`Utilizado para paginação dos itens. Quantidade de itens por página`
+
+Dados de retorno
+^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 25
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Descrição
+
+   * - :kbd:`1`
+     - :kbd:`data`
+     - :kbd:``
+     - :kbd:`Dados retornados pela consulta`
+   * - :kbd:`1.1`
+     - :kbd:`numeroControle`
+     - :kbd:`Texto`
+     - :kbd:`Número de controle PNCP do contrato/empenho (id contrato PNCP)`
+   * - :kbd:`1.2`
+     - :kbd:`sequencialContrato`
+     - :kbd:`Inteiro`
+     - :kbd:`Sequencial do contrato/empenho no PNCP; número gerado no momento em que foi inserido`
+   * - :kbd:`1.3`
+     - :kbd:`frutoAdesao`
+     - :kbd:`Booleano`
+     - :kbd:`Indicador se o contrato/empenho é fruto de adesão a ata (False-Não / True-Sim)`
+   * - :kbd:`1.4`
+     - :kbd:`orgaoEntidade`
+     - :kbd:``
+     - :kbd:`Dados do órgão/entidade do contrato/empenho`
+   * - :kbd:`1.4.1`
+     - :kbd:`cnpj`
+     - :kbd:`Texto`
+     - :kbd:`CNPJ do órgão/entidade`
+   * - :kbd:`1.4.2`
+     - :kbd:`nome`
+     - :kbd:`Texto`
+     - :kbd:`Nome do órgão/entidade`
+   * - :kbd:`1.5`
+     - :kbd:`unidadeExecutora`
+     - :kbd:``
+     - :kbd:`Dados da unidade administrativa`
+   * - :kbd:`1.5.1`
+     - :kbd:`codigo`
+     - :kbd:`Texto`
+     - :kbd:`Código da unidade administrativa`
+   * - :kbd:`1.5.2`
+     - :kbd:`nomeUnidade`
+     - :kbd:`Texto`
+     - :kbd:`Nome da unidade administrativa`
+   * - :kbd:`1.5.3`
+     - :kbd:`localidade`
+     - :kbd:``
+     - :kbd:`Localidade da unidade administrativa`
+   * - :kbd:`1.5.3.1`
+     - :kbd:`uf`
+     - :kbd:`Texto`
+     - :kbd:`Unidade federativa`
+   * - :kbd:`1.5.3.2`
+     - :kbd:`codigoIbgeMunicipio`
+     - :kbd:`Texto`
+     - :kbd:`Código IBGE do município`
+   * - :kbd:`1.5.3.3`
+     - :kbd:`nomeMunicipio`
+     - :kbd:`Texto`
+     - :kbd:`Nome do município`
+   * - :kbd:`1.6`
+     - :kbd:`numeroContratoEmpenho`
+     - :kbd:`Texto`
+     - :kbd:`Número do contrato ou empenho`
+   * - :kbd:`1.7`
+     - :kbd:`anoContrato`
+     - :kbd:`Inteiro`
+     - :kbd:`Ano do contrato ou empenho`
+   * - :kbd:`1.8`
+     - :kbd:`objetoContrato`
+     - :kbd:`Texto`
+     - :kbd:`Descrição do objeto do contrato ou empenho`
+   * - :kbd:`1.9`
+     - :kbd:`dataAssinatura`
+     - :kbd:`Data`
+     - :kbd:`Data da assinatura`
+   * - :kbd:`1.10`
+     - :kbd:`dataVigenciaInicio`
+     - :kbd:`Data`
+     - :kbd:`Data inicial de vigência`
+   * - :kbd:`1.11`
+     - :kbd:`dataVigenciaFim`
+     - :kbd:`Data`
+     - :kbd:`Data final de vigência`
+   * - :kbd:`1.12`
+     - :kbd:`valorGlobal`
+     - :kbd:``
+     - :kbd:`Valor global do contrato ou empenho`
+   * - :kbd:`1.13`
+     - :kbd:`dataPublicacaoPncp`
+     - :kbd:`Data/Hora`
+     - :kbd:`Data e hora da inclusão no PNCP`
+   * - :kbd:`1.14`
+     - :kbd:`usuarioNome`
+     - :kbd:`String`
+     - :kbd:`Nome do usuário ou sistema que efetuou a operação`
+   * - :kbd:`2`
+     - :kbd:`totalRegistros`
+     - :kbd:`Inteiro`
+     - :kbd:`Total de registros encontrados`
+   * - :kbd:`3`
+     - :kbd:`totalPaginas`
+     - :kbd:`Inteiro`
+     - :kbd:`Total de páginas`
+   * - :kbd:`4`
+     - :kbd:`numeroPagina`
+     - :kbd:`Inteiro`
+     - :kbd:`Número da página consultada`
+   * - :kbd:`5`
+     - :kbd:`paginasRestantes`
+     - :kbd:`Inteiro`
+     - :kbd:`Quantidade de páginas restantes`
+   * - :kbd:`6`
+     - :kbd:`empty`
+     - :kbd:`Booleano`
+     - :kbd:`Indicador se a lista está vazia`
+
+Códigos de Retorno
+^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 10 25 20
+   :header-rows: 1
+
+   * - Código HTTP
+     - Mensagem
+     - Tipo
+   * - :kbd:`200`
+     - :kbd:`OK`
+     - :kbd:`Sucesso`
+   * - :kbd:`400`
+     - :kbd:`BadRequest`
+     - :kbd:`Erro`
+   * - :kbd:`422`
+     - :kbd:`Unprocessable Entity`
+     - :kbd:`Erro`
+   * - :kbd:`500`
+     - :kbd:`Internal Server Error`
+     - :kbd:`Erro`
+
+Inserir Parte Envolvida na Ata de Registro de Preço
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**Serviço que permite inserir uma lista de partes envolvidas a uma ata de registro de preço.**
+
+Detalhes da Requisição
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 50 15
+   :header-rows: 1
+
+   * - Endpoint
+     - Método HTTP
+   * - /v1/orgaos/{cnpj}/compras/{anoCompra}/{sequencialCompra}/atas/{sequencialAta}/partesenvolvidas
+     - POST
+	 
+
+Exemplo de Payload
+^^^^^^^^^^^^^^^^^^
+
+.. code-block:: json
+  :linenos:
+  :emphasize-lines: 1-12
+
+	[
+	  {
+	    "tipoParteEnvolvidaId": 1,
+	    "cnpj": "00394460000141",
+	    "codigoUnidadeCompradora": "1"
+	  },
+	  {
+	    "tipoParteEnvolvidaId": 2,
+	    "cnpj": "00394460000141",
+	    "codigoUnidadeCompradora": "2"
+	  }
+	]
+
+  
+
+Exemplo Requisição (cURL)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+	:linenos:
+  	:emphasize-lines: 1,2
+
+		curl -X 'POST' '${BASE_URL}/v1/orgaos/00394460000141/compras/2021/1/atas/1/partesenvolvidas' \
+		  -H 'accept: */*' -H 'Authorization: Bearer<TOKEN_AUTORIZACAO>' \?????????????????????????
+
+
+Dados de entrada
+^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 20 25
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Obrigatório
+     - Descrição
+
+   * - :kbd:`1`
+     - :kbd:`cnpj`
+     - :kbd:`Texto (14)`
+     - :kbd:`Sim`
+     - :kbd:`CNPJ do órgão originário da contratação informado na inclusão (proprietário da contratação)`
+   * - :kbd:`2`
+     - :kbd:`anoCompra`
+     - :kbd:`Inteiro`
+     - :kbd:`Sim`
+     - :kbd:`Ano da contratação`
+   * - :kbd:`3`
+     - :kbd:`sequencialCompra`
+     - :kbd:`Inteiro`
+     - :kbd:`Sim`
+     - :kbd:`Sequencial da contratação no PNCP; número gerado no momento em que a contratação foi inserida`
+   * - :kbd:`4`
+     - :kbd:`sequencialAta`
+     - :kbd:`Inteiro`
+     - :kbd:`Sim`
+     - :kbd:`Sequencial da ata no PNCP; número gerado no momento em que a ata foi inserida`
+   * - :kbd:`5`
+     - :kbd:`partesEnvolvidas`
+     - :kbd:`Lista`
+     - :kbd:`Não`
+     - :kbd:`Lista de partes envolvidas`
+   * - :kbd:`5.1`
+     - :kbd:`tipoParteEnvolvidaId`
+     - :kbd:`Inteiro`
+     - :kbd:`Não`
+     - :kbd:`Código do tipo de parte envolvida: 1 - Gerenciadora; 2 - Participante; 3 - Não participante`
+   * - :kbd:`5.2`
+     - :kbd:`cnpj`
+     - :kbd:`Texto (14)`
+     - :kbd:`Não`
+     - :kbd:`CNPJ do órgão`
+   * - :kbd:`5.3`
+     - :kbd:`codigoUnidadeCompradora`
+     - :kbd:`Texto (30)`
+     - :kbd:`Não`
+     - :kbd:`Código da unidade administrativa`
+
+
+Códigos de Retorno
+^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 10 25 20
+   :header-rows: 1
+
+   * - Código HTTP
+     - Mensagem
+     - Tipo
+   * - :kbd:`201`
+     - :kbd:`Created`
+     - :kbd:`Sucesso`
+   * - :kbd:`400`
+     - :kbd:`BadRequest`
+     - :kbd:`Erro`
+   * - :kbd:`401`
+     - :kbd:`Unauthorized`
+     - :kbd:`Erro`
+   * - :kbd:`404`
+     - :kbd:`NotFound`
+     - :kbd:`Erro`
+   * - :kbd:`422`
+     - :kbd:`Unprocessable Entity`
+     - :kbd:`Erro`
+   * - :kbd:`500`
+     - :kbd:`Internal Server Error`
+     - :kbd:`Erro`
+
