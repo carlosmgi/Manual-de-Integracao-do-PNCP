@@ -2166,6 +2166,7 @@ Códigos de Retorno
      - :kbd:`Erro`
 
 .. container:: destaque-amarelo
+
 	Excluir Parte Envolvida em Ata de Registro de Preço
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	
