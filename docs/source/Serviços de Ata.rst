@@ -1813,7 +1813,9 @@ Códigos de Retorno
 Consultar Contratos de Ata de Registro de Preço
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Serviço que permite consultar todos os contratos/empenhos vinculados a uma ata de registro de preço específica.**
+.. container:: destaque-amarelo
+
+	Serviço que permite consultar todos os contratos/empenhos vinculados a uma ata de registro de preço específica.
 
 Detalhes da Requisição
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -2030,7 +2032,9 @@ Códigos de Retorno
 Inserir Parte Envolvida na Ata de Registro de Preço
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Serviço que permite inserir uma lista de partes envolvidas a uma ata de registro de preço.**
+.. container:: destaque-amarelo
+
+	Serviço que permite inserir uma lista de partes envolvidas a uma ata de registro de preço.
 
 Detalhes da Requisição
 ^^^^^^^^^^^^^^^^^^^^^^
