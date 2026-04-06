@@ -2165,10 +2165,11 @@ Códigos de Retorno
      - :kbd:`Internal Server Error`
      - :kbd:`Erro`
 
+
+Excluir Parte Envolvida em Ata de Registro de Preço
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 .. container:: destaque-amarelo
 
-	Excluir Parte Envolvida em Ata de Registro de Preço
-	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	
 	Serviço que recupera os dados de uma parte envolvida específica de uma ata de registro de preço.
 
