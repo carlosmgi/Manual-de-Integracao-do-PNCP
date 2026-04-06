@@ -1829,15 +1829,6 @@ Detalhes da Requisição
      - GET
 	 
 
-Exemplo de Payload
-^^^^^^^^^^^^^^^^^^
-
-.. code-block:: json
-  :linenos:
-  :emphasize-lines: 5,6
-  
-  
-
 Exemplo Requisição (cURL)
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
