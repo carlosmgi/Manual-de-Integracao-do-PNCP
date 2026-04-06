@@ -2303,4 +2303,159 @@ Consultar Parte Envolvida em Ata de Registro de Preço
 	Serviço que recupera os dados de uma parte envolvida específica de uma ata de registro de preço.
 
 
+Detalhes da Requisição
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 50 15
+   :header-rows: 1
+
+   * - Endpoint
+     - Método HTTP
+   * - /v1/orgaos/{cnpj}/compras/{anoCompra}/{sequencialCompra}/atas/{sequencialAta}/partesenvolvidas/{cnpjOrgao}/{codUnidade}/{tipoParteEnvolvida}
+     - GET
+
+Exemplo Requisição (cURL)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+	:linenos:
+	:emphasize-lines: 1,2
+
+		curl -X 'GET' '${BASE_URL}/v1/orgaos/00394460000141/compras/2021/1/atas/1/partesenvolvidas/00394460000141/1/1' \
+		-H 'accept: */*'
+
+Dados de entrada
+^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 20 25
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Obrigatório
+     - Descrição
+
+   * - :kbd:`1`
+     - :kbd:`cnpj`
+     - :kbd:`Texto (14)`
+     - :kbd:`Sim`
+     - :kbd:`CNPJ do órgão originário da contratação informado na inclusão (proprietário da contratação)`
+   * - :kbd:`2`
+     - :kbd:`anoCompra`
+     - :kbd:`Inteiro`
+     - :kbd:`Sim`
+     - :kbd:`Ano da contratação`
+   * - :kbd:`3`
+     - :kbd:`sequencialCompra`
+     - :kbd:`Inteiro`
+     - :kbd:`Sim`
+     - :kbd:`Sequencial da contratação no PNCP; número gerado no momento em que a contratação foi inserida`
+   * - :kbd:`4`
+     - :kbd:`sequencialAta`
+     - :kbd:`Inteiro`
+     - :kbd:`Sim`
+     - :kbd:`Sequencial da ata no PNCP; número gerado no momento em que a ata foi inserida`
+   * - :kbd:`5`
+     - :kbd:`cnpjOrgao`
+     - :kbd:`Texto (14)`
+     - :kbd:`Sim`
+     - :kbd:`CNPJ do órgão ou entidade da parte envolvida`
+   * - :kbd:`6`
+     - :kbd:`codUnidade`
+     - :kbd:`Texto (30)`
+     - :kbd:`Sim`
+     - :kbd:`Código da unidade administrativa da parte envolvida`
+   * - :kbd:`7`
+     - :kbd:`tipoParteEnvolvida`
+     - :kbd:`Inteiro`
+     - :kbd:`Sim`
+     - :kbd:`Código do tipo da parte envolvida`
+
+Dados de retorno
+^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 25
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Descrição
+
+   * - :kbd:`1`
+     - :kbd:`dataInclusao`
+     - :kbd:`Data/Hora`
+     - :kbd:`Data e hora da inclusão da informação no PNCP`
+   * - :kbd:`2`
+     - :kbd:`tipoParteEnvolvida`
+     - :kbd:``
+     - :kbd:`Tipo de parte envolvida`
+   * - :kbd:`2.1`
+     - :kbd:`id`
+     - :kbd:`Inteiro`
+     - :kbd:`Código do tipo de parte envolvida`
+   * - :kbd:`2.2`
+     - :kbd:`nome`
+     - :kbd:`Texto`
+     - :kbd:`Nome do tipo de parte envolvida`
+   * - :kbd:`2.3`
+     - :kbd:`descricao`
+     - :kbd:`Texto`
+     - :kbd:`Descrição do tipo de parte envolvida`
+   * - :kbd:`3`
+     - :kbd:`orgao`
+     - :kbd:``
+     - :kbd:`Dados do órgão ou entidade`
+   * - :kbd:`3.1`
+     - :kbd:`cnpj`
+     - :kbd:`Texto`
+     - :kbd:`CNPJ do órgão ou entidade`
+   * - :kbd:`3.2`
+     - :kbd:`nome`
+     - :kbd:`Texto`
+     - :kbd:`Nome do órgão ou entidade`
+   * - :kbd:`4`
+     - :kbd:`unidade`
+     - :kbd:``
+     - :kbd:`Dados da unidade administrativa`
+   * - :kbd:`4.1`
+     - :kbd:`codigo`
+     - :kbd:`Texto`
+     - :kbd:`Código da unidade administrativa`
+   * - :kbd:`4.2`
+     - :kbd:`nomeUnidade`
+     - :kbd:`Texto`
+     - :kbd:`Nome da unidade administrativa`
+   * - :kbd:`4.3`
+     - :kbd:`localidade`
+     - :kbd:``
+     - :kbd:`Localidade da unidade administrativa`
+   * - :kbd:`4.3.1`
+     - :kbd:`uf`
+     - :kbd:`Texto`
+     - :kbd:`Unidade federativa do município`
+   * - :kbd:`4.3.2`
+     - :kbd:`codigoIbgeMunicipio`
+     - :kbd:`Texto`
+     - :kbd:`Código IBGE do município`
+   * - :kbd:`4.3.3`
+     - :kbd:`nomeMunicipio`
+     - :kbd:`Texto`
+     - :kbd:`Nome do município`
+
+Consultar Partes envolvidas em Ata de Registro de Preço
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. container:: destaque-amarelo
+
+	Serviço que recupera a lista de partes envolvida em uma ata de registro de preço específica.
+
+
 
