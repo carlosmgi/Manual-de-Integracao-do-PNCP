@@ -35,16 +35,16 @@ Serviço que permite incluir um contrato ou empenho. Este serviço será acionad
     - Data
     - Não
     - Data do término da vigência do contrato. Opcional apenas para contrato do tipo igual a 1.
-  * - 30
-    -  :guilabel:`sequencialAta`
-    - Inteiro
-    - Não
-    - Número sequencial da ata de registro de preço (gerado pelo PNCP no momento da inclusão da ata).
-  * - 31
-    -   :guilabel:`frutoAdesao`
-    - Booleano
-    - Sim
-    - Indicador se o contrato/empenho é de um não participante, ou seja, fruto da adesão a uma ata de registro de preço.
+  * - :kbd:`30`
+    - :kbd:`sequencialAta`
+    - :kbd:`Inteiro`
+    - :kbd:`Não`
+    - :kbd:`Número sequencial da ata de registro de preço (gerado pelo PNCP no momento da inclusão da ata).`
+  * - :kbd:`31`
+    - :kbd:`frutoAdesao`
+    - :kbd:`Booleano`
+    - :kbd:`Sim`
+    - :kbd:`Indicador se o contrato/empenho é de um não participante, ou seja, fruto da adesão a uma ata de registro de preço.`
 
 .. versionchanged:: 2.3.10
 
