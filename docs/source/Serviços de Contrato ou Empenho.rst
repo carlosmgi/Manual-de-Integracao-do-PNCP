@@ -3326,31 +3326,33 @@ Exemplos
 **Exemplo 1 - ARP contendo somente Gerenciadora:**
 
 .. code-block:: json
+  :linenos:
 
-   "partesEnvolvidas": [
-       {
-           "tipoParteEnvolvidaId": 1,
-           "cnpj": "10000000000003",
-           "codigoUnidadeCompradora": "1"
-       }
-   ]
+	   "partesEnvolvidas": [
+	       {
+	           "tipoParteEnvolvidaId": 1,
+	           "cnpj": "10000000000003",
+	           "codigoUnidadeCompradora": "1"
+	       }
+	   ]
 
 **Exemplo 2 - ARP contendo Gerenciadora e participante(s):**
 
 .. code-block:: json
+  :linenos:
 
-   "partesEnvolvidas": [
-       {
-           "tipoParteEnvolvidaId": 1,
-           "cnpj": "10000000000003",
-           "codigoUnidadeCompradora": "1"
-       },
-       {
-           "tipoParteEnvolvidaId": 2,
-           "cnpj": "10000000000004",
-           "codigoUnidadeCompradora": "2"
-       }
-   ]
+	   "partesEnvolvidas": [
+	       {
+	           "tipoParteEnvolvidaId": 1,
+	           "cnpj": "10000000000003",
+	           "codigoUnidadeCompradora": "1"
+	       },
+	       {
+	           "tipoParteEnvolvidaId": 2,
+	           "cnpj": "10000000000004",
+	           "codigoUnidadeCompradora": "2"
+	       }
+	   ]
 
 .. note::
 
@@ -3410,31 +3412,33 @@ Exemplos
 **Exemplo 1 - ARP contendo Gerenciadora e participante(s):**
 
 .. code-block:: json
+  :linenos:
 
-   "partesEnvolvidas": [
-       {
-           "tipoParteEnvolvidaId": 1,
-           "cnpj": "10000000000003",
-           "codigoUnidadeCompradora": "1"
-       },
-       {
-           "tipoParteEnvolvidaId": 2,
-           "cnpj": "10000000000004",
-           "codigoUnidadeCompradora": "2"
-       }
-   ]
+	   "partesEnvolvidas": [
+	       {
+	           "tipoParteEnvolvidaId": 1,
+	           "cnpj": "10000000000003",
+	           "codigoUnidadeCompradora": "1"
+	       },
+	       {
+	           "tipoParteEnvolvidaId": 2,
+	           "cnpj": "10000000000004",
+	           "codigoUnidadeCompradora": "2"
+	       }
+	   ]
 
 **Exemplo 2 - Inserir somente participante posteriormente:**
 
 .. code-block:: json
+  :linenos:
 
-   "partesEnvolvidas": [
-       {
-           "tipoParteEnvolvidaId": 2,
-           "cnpj": "10000000000004",
-           "codigoUnidadeCompradora": "2"
-       }
-   ]
+	   "partesEnvolvidas": [
+	       {
+	           "tipoParteEnvolvidaId": 2,
+	           "cnpj": "10000000000004",
+	           "codigoUnidadeCompradora": "2"
+	       }
+	   ]
 
 .. note::
 
@@ -3494,36 +3498,38 @@ Exemplos
 **Exemplo 1 - ARP contendo Gerenciadora e participante(s):**
 
 .. code-block:: json
+  :linenos:
 
-   "partesEnvolvidas": [
-       {
-           "tipoParteEnvolvidaId": 1,
-           "cnpj": "10000000000003",
-           "codigoUnidadeCompradora": "1"
-       },
-       {
-           "tipoParteEnvolvidaId": 2,
-           "cnpj": "10000000000004",
-           "codigoUnidadeCompradora": "2"
-       }
-   ]
+	   "partesEnvolvidas": [
+	       {
+	           "tipoParteEnvolvidaId": 1,
+	           "cnpj": "10000000000003",
+	           "codigoUnidadeCompradora": "1"
+	       },
+	       {
+	           "tipoParteEnvolvidaId": 2,
+	           "cnpj": "10000000000004",
+	           "codigoUnidadeCompradora": "2"
+	       }
+	   ]
 
 **Exemplo 2 - Inserção posterior com participante(s) e não participante(s):**
 
 .. code-block:: json
+  :linenos:
 
-   "partesEnvolvidas": [
-       {
-           "tipoParteEnvolvidaId": 2,
-           "cnpj": "10000000000004",
-           "codigoUnidadeCompradora": "2"
-       },
-       {
-           "tipoParteEnvolvidaId": 3,
-           "cnpj": "10000000000005",
-           "codigoUnidadeCompradora": "3"
-       }
-   ]
+	   "partesEnvolvidas": [
+	       {
+	           "tipoParteEnvolvidaId": 2,
+	           "cnpj": "10000000000004",
+	           "codigoUnidadeCompradora": "2"
+	       },
+	       {
+	           "tipoParteEnvolvidaId": 3,
+	           "cnpj": "10000000000005",
+	           "codigoUnidadeCompradora": "3"
+	       }
+	   ]
 
 .. note::
 
