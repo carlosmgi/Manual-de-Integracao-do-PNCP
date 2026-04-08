@@ -7,7 +7,6 @@ Inserir Contratos ou Empenhos
 Serviço que permite incluir um contrato ou empenho. Este serviço será acionado por qualquer plataforma digital credenciada. 
 
 .. container:: destaque-amarelo
-
     O sistema exige o upload de um arquivo anexo à ata de registro de preço enviada. As extensões permitidas para o arquivo anexo são listadas na seção Tabelas de domínio - Envio de arquivos pelas APIs de Documento e os tipos de documento/arquivo aceitos pelo PNCP podem ser consultados na seção Tabelas de domínio - Tipo de Documento, deste manual.
 
 \
@@ -3449,7 +3448,7 @@ Publicação de contrato por ente não participante (SRP)
    :alt: Publicação de contrato por ente não participante (SRP)
 
 Fluxo de Processo
-^^^^^^^^^^^^^^^^^
++++++++++++++++++
 
 .. list-table::
    :width: 100%
@@ -3482,7 +3481,7 @@ Fluxo de Processo
        | • informar o campo "frutoAdesao": true
 
 Exemplos
-^^^^^^^^
+++++++++
 
 **Exemplo 1 - ARP contendo Gerenciadora e participante(s):**
 
