@@ -3290,7 +3290,7 @@ Publicação de contrato pela gerenciadora (SRP)
    :alt: Publicação de contrato pela gerenciadora (SRP)
 
 Fluxo de Processo
-^^^^^^^^^^^^^^^^^
++++++++++++++++++
 
 .. list-table::
    :width: 100%
@@ -3318,7 +3318,7 @@ Fluxo de Processo
        | • informar o campo "frutoAdesao": false
 
 Exemplos
-^^^^^^^^
+++++++++
 
 **Exemplo 1 - ARP contendo somente Gerenciadora:**
 
@@ -3354,4 +3354,184 @@ Exemplos
    • A gerenciadora sempre deverá ser informada quando se tratar de ARP.  
    • Ao inserir Ata de Registro de Preços, não é permitido informar partes envolvidas do tipo "Não Participante" ("tipoParteEnvolvidaId": 3).  
    • O contrato somente poderá ser inserido no PNCP caso o CNPJ e o "codigoUnidade" do órgão contratante constem como Parte Envolvida na ARP informada.
+
+.. Attention::
+
+	As partes envolvidas da ARP somente podem ser informadas ao PNCP pela gerenciadora. 
+
+Publicação de contrato por ente participante (SRP):
+"""""""""""""""""""""""""""""""""""""""""""""""""""
+
+.. figure:: ../../img/Publicacao_participante.png
+   :width: 80%
+   :align: center
+   :alt: Publicação de contrato por ente participante (SRP)
+
+Fluxo de Processo
++++++++++++++++++
+
+.. list-table::
+   :width: 100%
+   :widths: 25 35 40
+   :header-rows: 1
+
+   * - Ator
+     - Ação
+     - Informações relevantes
+   * - Gerenciadora
+     - Inserir Contratação (item 6.3.1. Inserir Contratação)
+     - | • informar campo "srp": true
+   * - Gerenciadora
+     - Inserir Ata de Registro de Preços (item 6.4.1 Inserir Ata de Registro de Preço)
+     - | • informar campo "possibilidadeAdesao": true/false
+       | • informar partes envolvidas:
+       |   - TipoParteEnvolvidaId: 1 (Gerenciadora)
+       |   - TipoParteEnvolvidaId: 2 (Participante)
+   * - Gerenciadora
+     - Inserir Parte Envolvida na Ata de Registro de Preço (item 6.4.13. Inserir Parte Envolvida na Ata de Registro de Preço)
+     - | • informar partes envolvidas:
+       |   - TipoParteEnvolvidaId: 2 (Participante)
+   * - Gerenciadora
+     - Inserir Contrato (item 6.5.1. Inserir Contrato/Empenho)
+     - | • informar campo cnpj do contratante (/v1/orgaos/{cnpj}/contratos)
+       | • informar campo "cnpjCompra" da gerenciadora
+       | • informar o campo "codigoUnidade" do contratante
+       | • informar o campo "sequencialAta"
+       | • informar o campo "frutoAdesao": false
+
+Exemplos
+++++++++
+
+**Exemplo 1 - ARP contendo Gerenciadora e participante(s):**
+
+.. code-block:: json
+
+   "partesEnvolvidas": [
+       {
+           "tipoParteEnvolvidaId": 1,
+           "cnpj": "10000000000003",
+           "codigoUnidadeCompradora": "1"
+       },
+       {
+           "tipoParteEnvolvidaId": 2,
+           "cnpj": "10000000000004",
+           "codigoUnidadeCompradora": "2"
+       }
+   ]
+
+**Exemplo 2 - Inserir somente participante posteriormente:**
+
+.. code-block:: json
+
+   "partesEnvolvidas": [
+       {
+           "tipoParteEnvolvidaId": 2,
+           "cnpj": "10000000000004",
+           "codigoUnidadeCompradora": "2"
+       }
+   ]
+
+.. note::
+
+   • A gerenciadora sempre deverá ser informada quando se tratar de ARP.  
+   • O ideal é que o participante seja inserido no momento do envio da ata, contudo poderá ser enviado posteriormente.  
+   • Ao inserir Ata de Registro de Preços, não é permitido informar partes envolvidas do tipo "Não Participante" ("tipoParteEnvolvidaId": 3).  
+   • Essa etapa de inserção posterior se aplica apenas quando o participante não foi informado na inclusão da ata.  
+   • O contrato somente poderá ser inserido no PNCP caso o CNPJ e o "codigoUnidade" do órgão contratante constem como Parte Envolvida na ARP informada.
+
+
+Publicação de contrato por ente não participante (SRP) 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+.. figure:: ../../img/Publicacao_nao_participante.png
+   :width: 80%
+   :align: center
+   :alt: Publicação de contrato por ente não participante (SRP)
+
+Fluxo de Processo
+^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 25 35 40
+   :header-rows: 1
+
+   * - Ator
+     - Ação
+     - Informações relevantes
+   * - Gerenciadora
+     - Inserir Contratação (item 6.3.1. Inserir Contratação)
+     - | • informar campo "srp": true
+   * - Gerenciadora
+     - Inserir Ata de Registro de Preços (item 6.4.1 Inserir Ata de Registro de Preço)
+     - | • informar campo "possibilidadeAdesao": true
+       | • informar partes envolvidas:
+       |   - TipoParteEnvolvidaId: 1 (Gerenciadora)
+       |   - TipoParteEnvolvidaId: 2 (Participante)
+   * - Gerenciadora
+     - Inserir Parte Envolvida na Ata de Registro de Preço (item 6.4.13. Inserir Parte Envolvida na Ata de Registro de Preço)
+     - | • informar partes envolvidas:
+       |   - TipoParteEnvolvidaId: 2 (Participante)
+       |   - TipoParteEnvolvidaId: 3 (Não Participante)
+   * - Gerenciadora
+     - Inserir Contrato (item 6.5.1. Inserir Contrato/Empenho)
+     - | • informar campo cnpj do contratante (/v1/orgaos/{cnpj}/contratos)
+       | • informar campo "cnpjCompra" da gerenciadora
+       | • informar o campo "codigoUnidade" do contratante
+       | • informar o campo "sequencialAta"
+       | • informar o campo "frutoAdesao": true
+
+Exemplos
+^^^^^^^^
+
+**Exemplo 1 - ARP contendo Gerenciadora e participante(s):**
+
+.. code-block:: json
+
+   "partesEnvolvidas": [
+       {
+           "tipoParteEnvolvidaId": 1,
+           "cnpj": "10000000000003",
+           "codigoUnidadeCompradora": "1"
+       },
+       {
+           "tipoParteEnvolvidaId": 2,
+           "cnpj": "10000000000004",
+           "codigoUnidadeCompradora": "2"
+       }
+   ]
+
+**Exemplo 2 - Inserção posterior com participante(s) e não participante(s):**
+
+.. code-block:: json
+
+   "partesEnvolvidas": [
+       {
+           "tipoParteEnvolvidaId": 2,
+           "cnpj": "10000000000004",
+           "codigoUnidadeCompradora": "2"
+       },
+       {
+           "tipoParteEnvolvidaId": 3,
+           "cnpj": "10000000000005",
+           "codigoUnidadeCompradora": "3"
+       }
+   ]
+
+.. note::
+
+   • A gerenciadora sempre deverá ser informada quando se tratar de ARP.  
+   • O ideal é que o participante seja inserido no momento do envio da ata, contudo poderá ser enviado posteriormente.  
+   • Ao inserir Ata de Registro de Preços, não é permitido informar partes envolvidas do tipo "Não Participante" ("tipoParteEnvolvidaId": 3); estes devem ser informados posteriormente.  
+   • A gerenciadora deve ser informada no momento da inserção da ata.  
+   • O contrato da parte envolvida do tipo "Não participante" somente poderá ser inserido no PNCP caso:
+     - o campo "possibilidadeAdesao" seja true na ARP; e
+     - o CNPJ e o "codigoUnidade" do órgão contratante constem como Parte Envolvida na ARP.
+
+
+.. Attention::
+
+	As partes envolvidas da ARP somente podem ser informadas ao PNCP pela gerenciadora. 
+
+
 
