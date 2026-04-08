@@ -3248,6 +3248,110 @@ Macroprocesso:
    :align: center
    :alt: Macroprocesso
 
+\
 
+Fluxos Específicos: 
+^^^^^^^^^^^^^^^^^^^
 
+Publicação de contrato (não SRP):
+"""""""""""""""""""""""""""""""""
+
+.. figure:: ../../img/Publicacao_nao_srp.png
+   :width: 80%
+   :align: center
+   :alt: Publicação de contrato (não SRP)
+
+.. list-table::
+   :width: 100%
+   :widths: 25 35 40
+   :header-rows: 1
+
+   * - Ator
+     - Ação
+     - Informações relevantes
+   * - Órgão Entidade/Pública
+     - Inserir Contratação (item 6.3.1. Inserir Contratação)
+     - • informar campo "srp": false
+   * - Órgão Entidade/Pública
+     - Inserir Contrato (item 6.5.1. Inserir Contrato/Empenho)
+     - • informar campo "frutoAdesao": false
+       • não informar o campo "sequencialAta"
+
+.. Attention::
+
+	Por não se tratar de uma contratação com indicação de Sistema de Registro de Preços (SRP), a Ata de Registro de Preços (ARP) não deverá ser enviada.   
+
+Publicação de contrato pela gerenciadora (SRP)
+""""""""""""""""""""""""""""""""""""""""""""""
+
+.. figure:: ../../img/Publicacao_gerenciadora.png
+   :width: 80%
+   :align: center
+   :alt: Publicação de contrato pela gerenciadora (SRP)
+
+Fluxo de Processo
+^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 25 35 40
+   :header-rows: 1
+
+   * - Ator
+     - Ação
+     - Informações relevantes
+   * - Gerenciadora
+     - Inserir Contratação (item 6.3.1. Inserir Contratação)
+     - | • informar campo "srp": true
+   * - Gerenciadora
+     - Inserir Ata de Registro de Preços (item 6.4.1 Inserir Ata de Registro de Preço)
+     - | • informar campo "possibilidadeAdesao": true/false
+       | • informar partes envolvidas:
+       |   - TipoParteEnvolvidaId: 1 (Gerenciadora)
+       |   - TipoParteEnvolvidaId: 2 (Participante)
+   * - Gerenciadora
+     - Inserir Contrato (item 6.5.1. Inserir Contrato/Empenho)
+     - | • informar campo cnpj do contratante (/v1/orgaos/{cnpj}/contratos)
+       | • informar campo "cnpjCompra" da gerenciadora
+       | • informar o campo "codigoUnidade" do contratante
+       | • informar o campo "sequencialAta"
+       | • informar o campo "frutoAdesao": false
+
+Exemplos
+^^^^^^^^
+
+**Exemplo 1 - ARP contendo somente Gerenciadora:**
+
+.. code-block:: json
+
+   "partesEnvolvidas": [
+       {
+           "tipoParteEnvolvidaId": 1,
+           "cnpj": "10000000000003",
+           "codigoUnidadeCompradora": "1"
+       }
+   ]
+
+**Exemplo 2 - ARP contendo Gerenciadora e participante(s):**
+
+.. code-block:: json
+
+   "partesEnvolvidas": [
+       {
+           "tipoParteEnvolvidaId": 1,
+           "cnpj": "10000000000003",
+           "codigoUnidadeCompradora": "1"
+       },
+       {
+           "tipoParteEnvolvidaId": 2,
+           "cnpj": "10000000000004",
+           "codigoUnidadeCompradora": "2"
+       }
+   ]
+
+.. note::
+
+   • A gerenciadora sempre deverá ser informada quando se tratar de ARP.  
+   • Ao inserir Ata de Registro de Preços, não é permitido informar partes envolvidas do tipo "Não Participante" ("tipoParteEnvolvidaId": 3).  
+   • O contrato somente poderá ser inserido no PNCP caso o CNPJ e o "codigoUnidade" do órgão contratante constem como Parte Envolvida na ARP informada.
 
