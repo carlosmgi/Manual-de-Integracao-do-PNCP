@@ -2457,5 +2457,170 @@ Consultar Partes envolvidas em Ata de Registro de Preço
 
 	Serviço que recupera a lista de partes envolvida em uma ata de registro de preço específica.
 
+Detalhes da Requisição
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 50 15
+   :header-rows: 1
+
+   * - Endpoint
+     - Método HTTP
+   * - /v1/orgaos/{cnpj}/compras/{anoCompra}/{sequencialCompra}/atas/{sequencialAta}/partesenvolvidas
+     - GET
 
 
+Exemplo Requisição (cURL)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+	:linenos:
+  	:emphasize-lines: 1,2
+
+	curl -X 'GET' '${BASE_URL}/v1/orgaos/00394460000141/compras/2021/1/atas/1/partesenvolvidas' \
+	-H 'accept: */*'
+
+
+Dados de entrada
+^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 20 25
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Obrigatório
+     - Descrição
+
+   * - :kbd:`1`
+     - :kbd:`cnpj`
+     - :kbd:`Texto (14)`
+     - :kbd:`Sim`
+     - :kbd:`CNPJ do órgão originário da contratação informado na inclusão (proprietário da contratação)`
+   * - :kbd:`2`
+     - :kbd:`anoCompra`
+     - :kbd:`Inteiro`
+     - :kbd:`Sim`
+     - :kbd:`Ano da contratação`
+   * - :kbd:`3`
+     - :kbd:`sequencialCompra`
+     - :kbd:`Inteiro`
+     - :kbd:`Sim`
+     - :kbd:`Sequencial da contratação no PNCP; número gerado no momento em que a contratação foi inserida`
+   * - :kbd:`4`
+     - :kbd:`sequencialAta`
+     - :kbd:`Inteiro`
+     - :kbd:`Sim`
+     - :kbd:`Sequencial da ata no PNCP; número gerado no momento em que a ata foi inserida`
+   * - :kbd:`5`
+     - :kbd:`pagina`
+     - :kbd:`Inteiro`
+     - :kbd:`Não`
+     - :kbd:`Número da página a ser retornada quando utilizada a paginação`
+   * - :kbd:`6`
+     - :kbd:`tamanhoPagina`
+     - :kbd:`Inteiro`
+     - :kbd:`Não`
+     - :kbd:`Quantidade de partes envolvidas a serem retornadas na paginação quando informado`
+
+Dados de retorno
+^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 25
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Descrição
+
+   * - :kbd:`1`
+     - :kbd:`data`
+     - :kbd:`Lista`
+     - :kbd:`Lista com os dados das partes envolvidas de uma ata de registro de preço`
+   * - :kbd:`1.1`
+     - :kbd:`dataInclusao`
+     - :kbd:`Data/Hora`
+     - :kbd:`Data e hora da inclusão da informação no PNCP`
+   * - :kbd:`1.2`
+     - :kbd:`tipoParteEnvolvida`
+     - 
+     - :kbd:`Tipo de parte envolvida`
+   * - :kbd:`1.2.1`
+     - :kbd:`id`
+     - :kbd:`Inteiro`
+     - :kbd:`Código do tipo de parte envolvida`
+   * - :kbd:`1.2.2`
+     - :kbd:`nome`
+     - :kbd:`Texto`
+     - :kbd:`Nome do tipo de parte envolvida`
+   * - :kbd:`1.2.3`
+     - :kbd:`descricao`
+     - :kbd:`Texto`
+     - :kbd:`Descrição do tipo de parte envolvida`
+   * - :kbd:`1.3`
+     - :kbd:`orgao`
+     - 
+     - :kbd:`Dados do órgão ou entidade`
+   * - :kbd:`1.3.1`
+     - :kbd:`cnpj`
+     - :kbd:`Texto`
+     - :kbd:`CNPJ do órgão ou entidade`
+   * - :kbd:`1.3.2`
+     - :kbd:`nome`
+     - :kbd:`Texto`
+     - :kbd:`Nome do órgão ou entidade`
+   * - :kbd:`1.4`
+     - :kbd:`unidade`
+     - 
+     - :kbd:`Dados da unidade administrativa`
+   * - :kbd:`1.4.1`
+     - :kbd:`codigo`
+     - :kbd:`Texto`
+     - :kbd:`Código da unidade administrativa`
+   * - :kbd:`1.4.2`
+     - :kbd:`nomeUnidade`
+     - :kbd:`Texto`
+     - :kbd:`Nome da unidade administrativa`
+   * - :kbd:`1.4.3`
+     - :kbd:`localidade`
+     - 
+     - :kbd:`Localidade da unidade administrativa`
+   * - :kbd:`1.4.3.1`
+     - :kbd:`uf`
+     - :kbd:`Texto`
+     - :kbd:`Unidade federativa do município`
+   * - :kbd:`1.4.3.2`
+     - :kbd:`codigoIbgeMunicipio`
+     - :kbd:`Texto`
+     - :kbd:`Código IBGE do município`
+   * - :kbd:`1.4.3.3`
+     - :kbd:`nomeMunicipio`
+     - :kbd:`Texto`
+     - :kbd:`Nome do município`
+   * - :kbd:`2`
+     - :kbd:`totalRegistros`
+     - :kbd:`Inteiro`
+     - :kbd:`Total de registros de partes envolvidas encontrados`
+   * - :kbd:`3`
+     - :kbd:`totalPaginas`
+     - :kbd:`Inteiro`
+     - :kbd:`Total de páginas`
+   * - :kbd:`4`
+     - :kbd:`numeroPagina`
+     - :kbd:`Inteiro`
+     - :kbd:`Número da página consultada`
+   * - :kbd:`5`
+     - :kbd:`paginasRestantes`
+     - :kbd:`Inteiro`
+     - :kbd:`Quantidade de páginas restantes`
+   * - :kbd:`6`
+     - :kbd:`empty`
+     - :kbd:`Booleano`
+     - :kbd:`Indicador se a lista está vazia`
