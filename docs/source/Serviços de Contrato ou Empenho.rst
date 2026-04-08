@@ -749,7 +749,959 @@ Exemplo de retorno
      - Unprocessable Entity
      - Erro
    * - 500
+
+Excluir Contrato ou Empenho
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Serviço que permite remover um contrato ou empenho. Este serviço será acionado por
+qualquer plataforma digital credenciada
+
+.. Attention::
+  
+   Não será possível excluir o Contrato com Termo ativo.
+
+Detalhes da Requisição
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 50 15
+   :header-rows: 1
+
+   * - Endpoint
+     - Método HTTP
+   * - /v1/orgaos/{cnpj}/contratos/{ano}/{sequencial}
+     - DELETE
+
+Exemplo de Payload
+^^^^^^^^^^^^^^^^^^
+
+.. code-block:: json
+  :linenos:
+
+   {
+      "justificativa": "motivo/justificativa para exclusão do contrato ou empenho"
+   }
+
+Exemplo Requisição (cURL)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+  :linenos:  
+
+   curl -k -X DELETE \
+   --header "Authorization: Bearer access_token" \
+   -H "accept: */*" \
+   "${BASE_URL}/v1/orgaos/10000000000003/contratos/2021/1"
+
+Dados de Entrada
+^^^^^^^^^^^^^^^^
+
+.. note::
+
+  Alimentar os parâmetros {cnpj}, {ano} e {sequencial} na URL. 
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 10 25
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Obrigatório
+     - Descrição
+   * - 1
+     - CNPJ
+     - Texto (14)
+     - Sim
+     - Cnpj do órgão do contrato ou empenho 
+   * - 2
+     - ano
+     - Inteiro
+     - Sim
+     - Ano do contrato ou empenho 
+   * - 3
+     - sequencial
+     - Inteiro
+     - Sim
+     - Número sequencial do contrato ou empenho (gerado pelo PNCP no momento da inclusão do mesmo) 
+   * - 4
+     - justificativa
+     - Texto (255) 
+     - Sim
+     - Motivo/justificativa para exclusão do contrato ou empenho.
+
+**Códigos de Retorno**
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 10 25 25
+   :header-rows: 1
+
+   * - Código HTTP
+     - Mensagem
+     - Tipo
+   * - 200
+     - OK
+     - Sucesso
+   * - 400
+     - BadRequest
+     - Erro
+   * - 422
+     - Unprocessable Entity
+     - Erro
+   * - 500
+     - Internal Server Error
+     - Erro
+   
+
+Inserir Documento a um Contrato ou Empenho
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Serviço que permite inserir um documento/arquivo a um contrato/empenho. O sistema
+permite o upload de arquivos com as extensões listadas na seção: Tabelas de domínio -
+Extensões de arquivos aceitos pelas APIs de Documento.
+
+Detalhes da Requisição
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 50 15
+   :header-rows: 1
+
+   * - Endpoint
+     - Método HTTP
+   * - /v1/orgaos/{cnpj}/contratos/{ano}/{sequencial}/arquivos
+     - POST
+
+Exemplo de Payload
+^^^^^^^^^^^^^^^^^^
+
+Não se aplica.
+
+Exemplo Requisição (cURL)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+  :linenos:
+
+   curl -k -X POST \
+     --header "Authorization: Bearer access_token" \
+     -H "accept: */*" \
+     -H "Content-Type: multipart/form-data" \
+     -H "Titulo-Documento: Contrato-2021-1" \
+     -H "Tipo-Documento-Id: 12" \
+     "${BASE_URL}/v1/orgaos/10000000000003/contratos/2021/1/arquivos" \
+     -F "arquivo=@Contrato-2021-1.pdf;type=application/pdf"
+
+Dados de Entrada
+^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 10 25
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Obrigatório
+     - Descrição
+   * - 1
+     - CNPJ
+     - Texto (14)
+     - Sim
+     - Cnpj do órgão do contrato ou empenho
+   * - 2
+     - ano
+     - Inteiro
+     - Sim
+     - Ano do contrato ou empenho
+   * - 3
+     - sequencial
+     - Inteiro
+     - Sim
+     - Sequencial do contrato ou empenhono PNCP; Número sequencialgerado no momento que o contratofoi inserido no PNCP;
+   * - 4
+     - Titulo-Documento
+     - Texto (50)
+     - Sim
+     - Título do documento
+   * - 5
+     - Tipo-Documento-Id
+     - Inteiro
+     - Sim
+     - Código da tabela de domínio Tipo de documento
+
+Dados de retorno
+^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 10 25
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Obrigatório
+     - Descrição
+   * - 1
+     - location
+     - Texto (255) 
+     - Sim
+     - Endereço http do recurso criado
+
+Exemplo de Retorno
+^^^^^^^^^^^^^^^^^^
+
+.. code-block:: http
+  :linenos:
+
+   Retorno:
+   access-control-allow-credentials: true
+   access-control-allow-headers: Content-Type, Authorization, X-Requested-With, Content-Length, Accept, Origin
+   access-control-allow-methods: GET, PUT, POST, DELETE, OPTIONS
+   access-control-allow-origin: *
+   cache-control: no-cache, no-store, max-age=0, must-revalidate
+   content-length: 0
+   date: ?
+   expires: 0
+   location: https://treina.pncp.gov.br/api/pncp/v1/orgaos/10000000000003/contratos/2021/1/arquivos/1
+   nome-bucket: ?
+   pragma: no-cache
+   strict-transport-security: max-age=?
+   x-content-type-options: nosniff
+   x-firefox-spdy: ?
+   x-frame-options: DENY
+   x-xss-protection: 1; mode=block
+
+**Códigos de Retorno**
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 10 25 25
+   :header-rows: 1
+
+   * - Código HTTP
+     - Mensagem
+     - Tipo
+   * - 201
+     - Created
+     - Sucesso
+   * - 400
+     - BadRequest
+     - Erro
+   * - 422
+     - Unprocessable Entity
+     - Erro
+   * - 500
      - Internal Server Error
      - Erro
 
+
+Excluir Documento do Contrato ou Empenho
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Serviço que permite remover um documento pertencente a um contrato ou empenho
+específico.
+
+Detalhes da Requisição
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 50 15
+   :header-rows: 1
+
+   * - Endpoint
+     - Método HTTP
+   * - /v1/orgaos/{cnpj}/contratos/{ano}/{sequencial}/arquivos/{sequencialDocumento}
+     - DELETE
+
+Exemplo de Payload
+^^^^^^^^^^^^^^^^^^
+
+.. code-block:: json
+  :linenos:
+  
+  {
+   "justificativa": "motivo/justificativa paraexclusão do documento do contrato ou empenho"
+  }
+
+Exemplo Requisição (cURL)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+  :linenos:
+
+   curl -k -X DELETE \
+     --header "Authorization: Bearer access_token" \
+     -H "accept: */*" \
+     "${BASE_URL}/v1/orgaos/10000000000003/contratos/2021/1/arquivos/1"
+
+Dados de Entrada
+^^^^^^^^^^^^^^^^
+
+.. note::
+
+  Alimentar os parâmetros {cnpj}, {ano}, {sequencial} e {sequencialDocumento} na URL. 
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 10 25
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Obrigatório
+     - Descrição
+   * - 1
+     - CNPJ
+     - Texto (14)
+     - Sim
+     - Cnpj do órgão do contrato ou empenho
+   * - 2
+     - ano
+     - Inteiro
+     - Sim
+     - Ano do contrato ou empenho 
+   * - 3
+     - sequencial
+     - Inteiro
+     - Sim
+     - Número sequencial docontrato ou empenho (gerado peloPNCP) 
+   * - 4
+     - sequencialDocumento
+     - Inteiro
+     - Sim
+     - Número sequencial do documentodo contrato ou empenho (gerado peloPNCP) 
+   * - 5
+     - justificativa
+     - Texto (255)
+     - Sim
+     - Motivo/justificativa para exclusão do documento do contrato ou empenho.
+
+**Códigos de Retorno**
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 10 25 25
+   :header-rows: 1
+
+   * - Código HTTP
+     - Mensagem
+     - Tipo
+   * - 201
+     - Created
+     - Sucesso
+   * - 400
+     - BadRequest
+     - Erro
+   * - 422
+     - Unprocessable Entity
+     - Erro
+   * - 500
+     - Internal Server Error
+     - Erro
+
+Consultar Todos os Documentos de um Contrato ou Empenho
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Serviço que permite consultar a lista de documentos pertencentes a um
+contrato ou empenho específico.
+
+Detalhes da Requisição
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 50 15
+   :header-rows: 1
+
+   * - Endpoint
+     - Método HTTP
+   * - /v1/orgaos/{cnpj}/contratos/{ano}/{sequencial}/arquivos
+     - GET
+
+Exemplo de Payload
+^^^^^^^^^^^^^^^^^^
+
+Não se aplica.
+
+Exemplo Requisição (cURL)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+  :linenos:
+
+   curl -k -X GET \
+     "${BASE_URL}/v1/orgaos/10000000000003/contratos/2021/1/arquivos" \
+     -H "accept: */*"
+
+Dados de Entrada
+^^^^^^^^^^^^^^^^
+
+.. note::
+
+  Alimentar o parâmetro {cnpj}, {ano}, {sequencial} na URL. 
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 10 25
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Obrigatório
+     - Descrição
+   * - 1
+     - cnpj
+     - Texto (14)
+     - Sim
+     - Cnpj do órgão do contrato ou empenho
+   * - 2
+     - ano
+     - Inteiro
+     - Sim
+     - Ano do contrato ou empenho
+   * - 3
+     - sequencial
+     - Inteiro
+     - Sim
+     - Sequencial do contrato ou empenho no PNCP; número sequencial gerado no momento que o contrato ou empenho foi inserido no PNCP
+
+**Dados de Retorno**
+^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+
+ * - Id
+   - Campo
+   - Tipo
+   - Descrição
+ * - 1
+   - Documentos
+   - Lista
+   - Lista de documentos
+ * - 1.1
+   - sequencialDocumento
+   - Inteiro
+   - Número sequencial atribuído ao arquivo
+ * - 1.2
+   - url
+   - Texto
+   - URL para download do arquivo
+ * - 1.3
+   - tipoDocumentoNome
+   - Texto
+   - Nome do tipo de documento conforme PNCP
+ * - 1.4
+   - titulo
+   - Texto
+   - Título referente ao arquivo
+ * - 1.5
+   - dataPublicacaoPncp
+   - Data
+   - Data de publicação do arquivo no portal PNCP
+ * - 1.6
+   - uri
+   - Texto
+   - URI para download do arquivo
+ * - 1.7
+   - cnpj
+   - Texto
+   - Cnpj do órgão contratante
+ * - 1.8
+   - anoCompra
+   - Inteiro
+   - Ano da contratação associada ao contrato
+ * - 1.9
+   - sequencialCompra
+   - Inteiro
+   - Sequencial da contratação no PNCP; número sequencial gerado no momento que a contratação foi inserida no PNCP
+
+**Códigos de Retorno**
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 10 25 25
+   :header-rows: 1
+
+   * - Código HTTP
+     - Mensagem
+     - Tipo
+   * - 200
+     - Created
+     - Sucesso
+   * - 400
+     - Unauthorized
+     - Erro
+   * - 422
+     - Unprocessable Entity
+     - Erro
+   * - 500
+     - Internal Server Error
+     - Erro
+
+Consultar Documento de um Contrato ou Empenho
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Serviço que permite consultar um documento específico pertencente a um contrato/empenho.
+
+Detalhes da Requisição
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 50 15
+   :header-rows: 1
+
+   * - Endpoint
+     - Método HTTP
+   * - /v1/orgaos/{cnpj}/contratos/{ano}/{sequencial}/arquivos/{sequencialDocumento}
+     - GET
+
+Exemplo de Payload
+^^^^^^^^^^^^^^^^^^
+
+Não se aplica.
+
+Exemplo Requisição (cURL)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+  :linenos:
+
+   curl -k -X GET \
+     "${BASE_URL}/v1/orgaos/10000000000003/contratos/2021/1/arquivos/1" \
+     -H "Accept: */*"
+
+Dados de Entrada
+^^^^^^^^^^^^^^^^
+
+.. note::
+
+  Alimentar o parâmetro {cnpj}, {ano}, {sequencial} e {sequencialDocumento} na URL. 
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 10 25
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Obrigatório
+     - Descrição
+   * - 1
+     - cnpj
+     - Texto (14)
+     - Sim
+     - Cnpj do órgão do contrato ou empenho
+   * - 2
+     - ano
+     - Inteiro
+     - Sim
+     - Ano do contrato ou empenho
+   * - 3
+     - sequencial
+     - Inteiro
+     - Sim
+     - Sequencial do contrato ou empenho no PNCP; número sequencial gerado no momento que o contrato ou empenho foi inserido no PNCP
+   * - 4
+     - sequencialDocumento
+     - Inteiro
+     - Sim
+     - Sequencial do documento no PNCP; Número sequencial gerado no momento que o documento foi inserido no PNCP;
+
+**Dados de Retorno**
+^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+
+ * - Id
+   - Campo
+   - Tipo
+   - Descrição
+ * - 1
+   - string
+   - String
+   - string do arquivo
+
+**Códigos de Retorno**
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 10 25 25
+   :header-rows: 1
+
+   * - Código HTTP
+     - Mensagem
+     - Tipo
+   * - 200
+     - Created
+     - Sucesso
+   * - 400
+     - BadRequest
+     - Erro
+   * - 422
+     - Unprocessable
+     - Erro
+   * - 500
+     - Internal Server Error
+     - Erro
+
+Consultar Contrato ou Empenho
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Serviço que permite consultar um contrato ou empenho específico.
+
+**Atualizações da versão 2.3.10**
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. versionadded:: 2.3.10
+
+.. list-table::
+   :widths: auto
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Descrição
+   * - 36
+     - frutoAdesao
+     - Booleano
+     - Indica se é fruto de adesão
+   * - 37
+     - numeroControlePncpAta
+     - String
+     - Número de controle da ata relacionada
+
+Detalhes da Requisição
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 50 15
+   :header-rows: 1
+
+   * - Endpoint
+     - Método HTTP
+   * - /v1/orgaos/{cnpj}/contratos/{ano}/{sequencial}
+     - GET
+
+Exemplo de Payload
+^^^^^^^^^^^^^^^^^^
+
+Não se aplica.
+
+Exemplo Requisição (cURL)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+  :linenos:
+
+   curl -k -X GET \
+     "${BASE_URL}/v1/orgaos/{cnpj}/contratos/{ano}/{sequencial}" \
+     -H "accept: */*"
+
+Dados de Entrada
+^^^^^^^^^^^^^^^^
+
+.. note::
+
+  Alimentar os parâmetros {cnpj}, {ano} e {sequencial} na URL. 
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 10 25
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Obrigatório
+     - Descrição
+   * - 1
+     - cnpj
+     - Texto (14)
+     - Sim
+     - Cnpj do órgão do contrato ou empenho
+   * - 2
+     - ano
+     - Inteiro
+     - Sim
+     - Ano do contrato ou empenho
+   * - 3
+     - sequencial
+     - Inteiro
+     - Sim
+     - Sequencial do contrato ou empenho no PNCP; número sequencial gerado no momento que o contrato ou empenho foi inserido no PNCP
+
+**Dados de Retorno**
+^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Descrição
+   * - 1
+     - numeroControlePNCP
+     - String
+     - Número de controle PNCP do contrato ou empenho (id contrato PNCP)
+   * - 2
+     - sequencialContrato
+     - Inteiro
+     - Número sequencial do contrato ou empenho (gerado pelo PNCP)
+   * - 3
+     - numeroControlePNCPCompra
+     - String
+     - Número de controle PNCP da contratação relacionada (id contratação PNCP)
+   * - 4
+     - numeroContratoEmpenho
+     - Texto (50)
+     - Número do contrato ou empenho com força de contrato ou empenho
+   * - 5
+     - anoContrato
+     - Inteiro
+     - Ano do contrato ou empenho
+   * - 6
+     - tipoContrato
+     - Objeto
+     - Agrupador com os dados do tipo de contrato ou empenho
+   * - 6.1
+     - id
+     - Inteiro
+     - Código da tabela de domínio Tipo de contrato
+   * - 6.2
+     - nome
+     - String
+     - Nome do tipo de contrato
+   * - 7
+     - processo
+     - Texto (50)
+     - Número do processo
+   * - 8
+     - categoriaProcesso
+     - Objeto
+     - Agrupador com os dados da categoria do processo
+   * - 8.1
+     - id
+     - Inteiro
+     - Código da tabela de domínio Categoria
+   * - 8.2
+     - nome
+     - String
+     - Nome da categoria do processo
+   * - 9
+     - receita
+     - Booleano
+     - Receita ou despesa: True - Receita; False - Despesa
+   * - 10
+     - objetoContrato
+     - Texto (5120)
+     - Descrição do objeto do contrato ou empenho
+   * - 11
+     - informacaoComplementar
+     - Texto (5120)
+     - Informações complementares, se existirem
+   * - 12
+     - orgaoEntidade
+     - Objeto
+     - Dados do órgão/entidade do contrato ou empenho
+   * - 12.1
+     - cnpj
+     - String
+     - CNPJ do órgão referente ao contrato ou empenho
+   * - 12.2
+     - razaosocial
+     - String
+     - Razão social do órgão
+   * - 12.3
+     - poderId
+     - String
+     - Código do poder (L, E, J)
+   * - 12.4
+     - esferaId
+     - String
+     - Código da esfera (F, E, M, D)
+   * - 13
+     - unidadeOrgao
+     - Objeto
+     - Dados da unidade executora do órgão
+   * - 13.1
+     - codigoUnidade
+     - String
+     - Código da unidade executora
+   * - 13.2
+     - nomeUnidade
+     - String
+     - Nome da unidade executora
+   * - 13.3
+     - municipioId
+     - Inteiro
+     - Código IBGE do município
+   * - 13.4
+     - municipioNome
+     - String
+     - Nome do município
+   * - 13.5
+     - ufSigla
+     - String
+     - Sigla da UF
+   * - 13.6
+     - ufNome
+     - String
+     - Nome da UF
+   * - 14
+     - orgaoSubRogado
+     - Objeto
+     - Dados do órgão sub-rogado
+   * - 14.1
+     - cnpj
+     - String
+     - CNPJ do órgão
+   * - 14.2
+     - razaosocial
+     - String
+     - Razão social do órgão
+   * - 14.3
+     - poderId
+     - String
+     - Código do poder (L, E, J)
+   * - 14.4
+     - esferaId
+     - String
+     - Código da esfera (F, E, M, D)
+   * - 15
+     - unidadeSubRogada
+     - Objeto
+     - Dados da unidade sub-rogada
+   * - 15.1
+     - codigoUnidade
+     - String
+     - Código da unidade
+   * - 15.2
+     - nomeUnidade
+     - String
+     - Nome da unidade
+   * - 16
+     - tipoPessoa
+     - Texto (2)
+     - PJ, PF ou PE
+   * - 17
+     - niFornecedor
+     - Texto (30)
+     - Identificação do fornecedor (CNPJ/CPF/estrangeiro)
+   * - 18
+     - nomeRazaoSocialFornecedor
+     - Texto (100)
+     - Nome/razão social do fornecedor
+   * - 22
+     - valorInicial
+     - Decimal
+     - Valor inicial do contrato
+   * - 23
+     - numeroParcelas
+     - Inteiro
+     - Número de parcelas
+   * - 24
+     - valorParcela
+     - Decimal
+     - Valor da parcela
+   * - 25
+     - valorGlobal
+     - Decimal
+     - Valor global do contrato
+   * - 26
+     - valorAcumulado
+     - Decimal
+     - Valor acumulado
+   * - 27
+     - dataAssinatura
+     - Data
+     - Data de assinatura
+   * - 28
+     - dataVigenciaInicio
+     - Data
+     - Início da vigência
+   * - 29
+     - dataVigenciaFim
+     - Data
+     - Fim da vigência
+   * - 30
+     - numeroRetificacao
+     - Inteiro
+     - Número de retificações
+   * - 31
+     - usuarioNome
+     - String
+     - Sistema que enviou o contrato
+   * - 32
+     - dataPublicacaoPncp
+     - Data/Hora
+     - Data de publicação no PNCP
+   * - 33
+     - dataAtualizacao
+     - Data/Hora
+     - Última atualização
+   * - 34
+     - identificadorCipi
+     - String
+     - Identificador no CIPI
+   * - 35
+     - urlCipi
+     - String
+     - URL do CIPI
+   * - :kbd:`36`
+     - :kbd:`frutoAdesao`
+     - :kbd:`Booleano`
+     - :kbd:`Indica se é fruto de adesão`
+   * - :kbd:`37`
+     - :kbd:`numeroControlePncpAta`
+     - :kbd:`String`
+     - :kbd:`Número de controle da ata relacionada`
+   * - :kbd:`38`
+     - :kbd:`temRemanejamento`
+     - :kbd:`Boleano`
+     - :kbd:`Indicador de Remanejamento (False-Não / True-Sim)`
+   * - :kbd:`39`
+     - :kbd:`emendaParlamentar`
+     - :kbd:`Boleano`
+     - :kbd:`Indicador de Emenda Parlamentar (False-Não / True-Sim)`
+
+**Códigos de Retorno**
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 10 25 25
+   :header-rows: 1
+
+   * - Código HTTP
+     - Mensagem
+     - Tipo
+   * - 400
+     - BadRequest
+     - Erro
+   * - 422
+     - Unprocessable Entity
+     - Erro
+   * - 500
+     - Internal Server Error
+     - Erro
 
