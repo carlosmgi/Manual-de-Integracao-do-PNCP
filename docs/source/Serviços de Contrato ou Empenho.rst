@@ -3243,6 +3243,10 @@ Fluxos de Inclusão de Contratos fruto de Ata de Registro de Preços (ARP) no PN
 Macroprocesso: 
 ^^^^^^^^^^^^^^
 
+.. figure:: ../../img/Macroprocesso - Sistema de Registro de Preços - v2.png
+   :width: 80%
+   :align: center
+   :alt: Capa do Manual de Intergração PNCP
 
 
 
