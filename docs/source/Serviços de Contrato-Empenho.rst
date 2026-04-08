@@ -13,7 +13,7 @@ Serviço que permite incluir um contrato ou empenho. Este serviço será acionad
 \
 .. Attention::
   
-  Conforme regra de conformidade, prevista no item 5.19, não é possível a inclusão ou retificação de contrato ou empenho que pertença à contratação realizada por Sistema de Registro de Preços (SRP), a qual não possua ao menos uma ata de registro de preços publicada no PNCP. 
+    Conforme regra de conformidade, prevista no item 5.19, não é possível a inclusão ou retificação de contrato ou empenho que pertença à contratação realizada por Sistema de Registro de Preços (SRP), a qual não possua ao menos uma ata de registro de preços publicada no PNCP. 
 
 **Atualizações da versão 2.3.10**
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
