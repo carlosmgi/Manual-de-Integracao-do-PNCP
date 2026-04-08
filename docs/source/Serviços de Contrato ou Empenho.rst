@@ -649,13 +649,13 @@ Dados de Entrada
    * - 29
      - dataVigenciaInicio
      - Data
-     - Sim
+     - :kbd:Sim
      - Data de início de vigência do contrato
    * - 30
      - dataVigenciaFim
      - Data
-     - Não
-     - Data do término da vigência do contrato. Opcional apenas para contrato do tipo igual a 1
+     - :kbd:Não
+     - :kbd:Data do término da vigência do contrato. Opcional apenas para contrato do tipo igual a 1
    * - 31
      - justificativa
      - Texto (255)
@@ -671,16 +671,21 @@ Dados de Entrada
      - String (8 a 14)
      - Não
      - Url com informações do contrato no sistema de Cadastro Integrado de Projetos de Investimento. Não se aplica a leilão
-   * - 34
-     - sequencialAta
-     - Inteiro
-     - Não
-     - Número sequencial da ata de registro de preço (gerado pelo PNCP no momento da inclusão da ata)
-   * - 35
-     - frutoAdesao
-     - Booleano
-     - Sim
-     - Indicador se o contrato/empenho é de um não participante, ou seja, fruto da adesão a uma ata de registro de preço (False-Não / True-Sim)
+   * - :kbd:34
+     - :kbd:sequencialAta
+     - :kbd:Inteiro
+     - :kbd:Não
+     - :kbd:Número sequencial da ata de registro de preço (gerado pelo PNCP no momento da inclusão da ata)
+   * - :kbd:35
+     - :kbd:frutoAdesao
+     - :kbd:Booleano
+     - :kbd:Sim
+     - :kbd:Indicador se o contrato/empenho é de um não participante, ou seja, fruto da adesão a uma ata de registro de preço (False-Não / True-Sim)
+   * - :kbd:36
+     - :kbd:temRemanejamento
+     - :kbd:Boleano
+     - :kbd:Sim
+     - :kbd:Indicador de Remanejamento (False-Não / True-Sim)
 
 Dados de retorno
 ^^^^^^^^^^^^^^^^
