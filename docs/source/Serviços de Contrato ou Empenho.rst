@@ -3260,6 +3260,8 @@ Publicação de contrato (não SRP):
    :align: center
    :alt: Publicação de contrato (não SRP)
 
+\
+
 .. list-table::
    :width: 100%
    :widths: 25 35 40
@@ -3287,6 +3289,8 @@ Publicação de contrato pela gerenciadora (SRP)
    :width: 80%
    :align: center
    :alt: Publicação de contrato pela gerenciadora (SRP)
+
+\
 
 Fluxo de Processo
 +++++++++++++++++
@@ -3365,6 +3369,8 @@ Publicação de contrato por ente participante (SRP):
    :width: 80%
    :align: center
    :alt: Publicação de contrato por ente participante (SRP)
+
+\
 
 Fluxo de Processo
 +++++++++++++++++
@@ -3446,6 +3452,8 @@ Publicação de contrato por ente não participante (SRP)
    :width: 80%
    :align: center
    :alt: Publicação de contrato por ente não participante (SRP)
+
+\
 
 Fluxo de Processo
 +++++++++++++++++
