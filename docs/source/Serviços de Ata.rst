@@ -2038,6 +2038,8 @@ Inserir Parte Envolvida na Ata de Registro de Preço
 
 	Serviço que permite inserir uma lista de partes envolvidas a uma ata de registro de preço.
 
+\
+
 Detalhes da Requisição
 ^^^^^^^^^^^^^^^^^^^^^^
 
@@ -2179,6 +2181,8 @@ Excluir Parte Envolvida em Ata de Registro de Preço
 
 	Serviço que recupera os dados de uma parte envolvida específica de uma ata de registro de preço.
 
+\
+
 Detalhes da Requisição
 ^^^^^^^^^^^^^^^^^^^^^^
 
@@ -2304,6 +2308,7 @@ Consultar Parte Envolvida em Ata de Registro de Preço
 
 	Serviço que recupera os dados de uma parte envolvida específica de uma ata de registro de preço.
 
+\
 
 Detalhes da Requisição
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -2458,6 +2463,8 @@ Consultar Partes envolvidas em Ata de Registro de Preço
 .. container:: destaque-amarelo
 
 	Serviço que recupera a lista de partes envolvida em uma ata de registro de preço específica.
+
+\
 
 Detalhes da Requisição
 ^^^^^^^^^^^^^^^^^^^^^^
