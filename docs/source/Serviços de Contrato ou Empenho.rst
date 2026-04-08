@@ -1705,3 +1705,631 @@ Dados de Entrada
      - Internal Server Error
      - Erro
 
+Consultar Contratos ou Empenhos de uma Contratação
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Serviço que permite recuperar os contratos/empenhos de uma contratação.
+
+**Atualizações da versão 2.3.10**
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. versionadded:: 2.3.10
+ 
+.. list-table::
+   :widths: auto
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Descrição
+   * - 36
+     - frutoAdesao
+     - Booleano
+     - Indicador se o contrato/empenho é de um não participante, ou seja, fruto da adesão a uma ata de registro de preço (False-Não / True-Sim)
+   * - 37
+     - numeroControlePncpAta
+     - String
+     - Número de controle PNCP da Ata de Registro de Preço relacionada (id ata PNCP)
+
+
+Detalhes da Requisição
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 50 15
+   :header-rows: 1
+
+   * - Endpoint
+     - Método HTTP
+   * - /v1/orgaos/{cnpj}/contratos/contratacao/{anoContratacao}/{sequencialContratacao}
+     - GET
+
+Exemplo de Payload
+^^^^^^^^^^^^^^^^^^
+
+Não se aplica.
+
+Exemplo Requisição (cURL)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+  :linenos:
+
+   curl -X 'GET' \
+     '${BASE_URL}/v1/orgaos/00394460000141/contratos/contratacao/2021/1' \
+     -H 'accept: */*'
+
+Dados de Entrada
+^^^^^^^^^^^^^^^^
+
+.. note::
+
+  Alimentar o parâmetro {cnpj}, {anoContratacao} e {sequencialContratacao} na URL.
+
+.. list-table::
+   
+  * - Id
+    - Campo
+    - Tipo
+    - Obrigatório
+    - Descrição
+  * - 1
+    - cnpj
+    - Texto (14)
+    - Sim
+    - Cnpj do órgão originário da contratação informado na inclusão (proprietário da contratação)
+  * - 2
+    - anoContratacao
+    - Inteiro
+    - Sim
+    - Ano da contratação
+  * - 3
+    - sequencialContratacao
+    - Inteiro
+    - Sim
+    - Sequencial da contratação no PNCP; número sequencial gerado no momento que a contratação foi inserida no PNCP
+
+Dados de retorno
+^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 5 30 20 45
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Descrição
+   * - 1
+     - numeroControlePNCP
+     - String
+     - Número de controle PNCP do contrato ou empenho (id contrato PNCP)
+   * - 2
+     - numeroControlePNCPCompra
+     - String
+     - Número de controle PNCP da contratação relacionada (id contratação PNCP)
+   * - 3
+     - numeroContratoEmpenho
+     - Texto (50)
+     - Número do contrato ou empenho com força de contrato
+   * - 4
+     - anoContrato
+     - Inteiro
+     - Ano do contrato ou empenho
+   * - 5
+     - sequencialContrato
+     - Inteiro
+     - Número sequencial do contrato ou empenho (gerado pelo PNCP)
+   * - 6
+     - processo
+     - Texto (50)
+     - Número do processo
+   * - 7
+     - tipoContrato
+     - Agrupador
+     - Dados do tipo de contrato ou empenho
+   * - 7.1
+     - Id
+     - Inteiro
+     - Código da tabela de domínio Tipo de contrato
+   * - 7.2
+     - Nome
+     - String
+     - Nome do Tipo de Contrato
+   * - 8
+     - categoriaProcesso
+     - Agrupador
+     - Dados da categoria do processo
+   * - 8.1
+     - Id
+     - Inteiro
+     - Código da tabela de domínio Categoria
+   * - 8.2
+     - Nome
+     - String
+     - Nome da Categoria do processo
+   * - 9
+     - receita
+     - Booleano
+     - Receita ou despesa: True - Receita; False - Despesa
+   * - 10
+     - objetoContrato
+     - Texto (5120)
+     - Descrição do objeto do contrato ou empenho
+   * - 11
+     - informacaoComplementar
+     - Texto (5120)
+     - Informações complementares; se existir
+   * - 12
+     - orgaoEntidade
+     - Agrupador
+     - Dados do órgão/entidade do contrato ou empenho
+   * - 12.1
+     - cnpj
+     - String
+     - CNPJ do órgão referente ao contrato ou empenho
+   * - 12.2
+     - razaosocial
+     - String
+     - Razão social do órgão
+   * - 12.3
+     - poderId
+     - String
+     - L - Legislativo; E - Executivo; J - Judiciário
+   * - 12.4
+     - esferaId
+     - String
+     - F - Federal; E - Estadual; M - Municipal; D - Distrital
+   * - 13
+     - unidadeOrgao
+     - Agrupador
+     - Dados da unidade executora do órgão
+   * - 13.1
+     - codigoUnidade
+     - String
+     - Código da unidade executora
+   * - 13.2
+     - nomeUnidade
+     - String
+     - Nome da unidade executora
+   * - 13.3
+     - municipioId
+     - Inteiro
+     - Código IBGE do município
+   * - 13.4
+     - municipioNome
+     - String
+     - Nome do município
+   * - 13.5
+     - ufSigla
+     - String
+     - Sigla da UF
+   * - 13.6
+     - ufNome
+     - String
+     - Nome da UF
+   * - 16
+     - tipoPessoa
+     - Texto (2)
+     - PJ, PF ou PE
+   * - 17
+     - niFornecedor
+     - Texto (30)
+     - Identificação do fornecedor (CNPJ/CPF/estrangeiro)
+   * - 18
+     - nomeRazaoSocialFornecedor
+     - Texto (100)
+     - Nome ou razão social do fornecedor
+   * - 22
+     - valorInicial
+     - Decimal
+     - Valor inicial (até 4 casas decimais)
+   * - 23
+     - numeroParcelas
+     - Inteiro
+     - Número de parcelas
+   * - 24
+     - valorParcela
+     - Decimal
+     - Valor da parcela
+   * - 25
+     - valorGlobal
+     - Decimal
+     - Valor global
+   * - 26
+     - valorAcumulado
+     - Decimal
+     - Valor acumulado
+   * - 27
+     - dataAssinatura
+     - Data
+     - Data de assinatura
+   * - 28
+     - dataVigenciaInicio
+     - Data
+     - Início da vigência
+   * - 29
+     - dataVigenciaFim
+     - Data
+     - Fim da vigência
+   * - 30
+     - numeroRetificacao
+     - Inteiro
+     - Número de retificações
+   * - 31
+     - usuarioNome
+     - String
+     - Nome do sistema que enviou
+   * - 32
+     - dataPublicacaoPncp
+     - Data/Hora
+     - Data de publicação no PNCP
+   * - 33
+     - dataAtualizacao
+     - Data/Hora
+     - Última atualização
+   * - 34
+     - identificadorCipi
+     - String
+     - Identificador no CIPI
+   * - 35
+     - urlCipi
+     - String
+     - URL do CIPI
+   * - :kbd:`36`
+     - :kbd:`frutoAdesao`
+     - :kbd:`Booleano`
+     - :kbd:`Indica se é fruto de adesão`
+   * - :kbd:`37`
+     - :kbd:`numeroControlePncpAta`
+     - :kbd:`String`
+     - :kbd:`Número de controle da ata relacionada`
+   * - :kbd:`38`
+     - :kbd:`numeroControlePncpAta`
+     - :kbd:`String`
+     - :kbd:`Número de controle da ata relacionada`
+   * - :kbd:`39`
+     - :kbd:`numeroControlePncpAta`
+     - :kbd:`String`
+     - :kbd:`Número de controle da ata relacionada`
+
+Consultar Histórico do Contrato ou Empenho
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Serviço que permite consultar todos os eventos de um Contrato/Empenho específico,
+eventos dos seus Termos e dos documentos/arquivos do Contrato/Empenho e seus
+Termos.
+
+Detalhes da Requisição
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 50 15
+   :header-rows: 1
+
+   * - Endpoint
+     - Método HTTP
+   * - /v1/orgaos/{cnpj}/contratos/{ano}/{sequencial}/historico
+     - GET
+
+Exemplo de Payload
+^^^^^^^^^^^^^^^^^^
+
+Não se aplica.
+
+Exemplo Requisição (cURL)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+   curl -k -X GET "${BASE_URL}/v1/orgaos/10000000000003/contratos/2021/1/historico" \
+     -H "accept: */*"
+
+Dados de Entrada
+^^^^^^^^^^^^^^^^
+
+.. note::
+
+  Alimentar o parâmetro {cnpj}, {ano} e {sequencial} na URL.
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 10 25
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Obrigatório
+     - Descrição
+   * - 1
+     - cnpj
+     - Texto (14)
+     - Sim
+     - Cnpj do órgão dono do contrato/empenho
+   * - 2
+     - ano
+     - Inteiro
+     - Sim
+     - Ano do contrato/empenho
+   * - 3
+     - sequencial
+     - Inteiro
+     - Sim
+     - Sequencial do contrato/empenho no PNCP
+   * - 4
+     - pagina
+     - Inteiro
+     - Não
+     - Utilizado para paginação dos itens. Número da página
+   * - 5
+     - tamanhoPagina
+     - Inteiro
+     - Não
+     - Utilizado para paginação dos itens. Quantidade de itens por página
+
+Dados de retorno
+^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 55
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Descrição
+   * - 1
+     - Lista de Eventos
+     - Lista
+     - Lista de eventos do contrato/empenho
+   * - 1.1
+     - contratoOrgaoCnpj
+     - String
+     - Cnpj do órgão dono do contrato/empenho
+   * - 1.2
+     - contratoAno
+     - Inteiro
+     - Ano do contrato/empenho
+   * - 1.3
+     - contratoSequencial
+     - Inteiro
+     - Sequencial do contrato/empenho no PNCP
+   * - 1.4
+     - logManutencaoDataInclusao
+     - Data/Hora
+     - Data e hora da operação de inclusão, retificação ou exclusão do recurso
+   * - 1.5
+     - tipoLogManutencao
+     - Inteiro
+     - Código do tipo de operação efetuada
+   * - 1.6
+     - tipoLogManutencaoNome
+     - String
+     - Nome da operação efetuada. Domínio: 0 - Inclusão; 1 - Retificação; 2 - Exclusão
+   * - 1.7
+     - categoriaLogManutencao
+     - Inteiro
+     - Código do tipo de recurso que sofreu a operação
+   * - 1.8
+     - categoriaLogManutencaoNome
+     - String
+     - Nome do recurso que sofreu a operação. Domínio: 1 - Contratação; 2 - Ata; 3 – Contrato/Empenho; 4 - Item de Contratação; 5 - Resultado de Item de Contratação; 6 - Documento de Contratação; 7 - Documento de Ata; 8 - Documento de Contrato/Empenho; 9 - Termo de Contrato; 10 - Documento de Termo de Contrato; 15 – Instrumento de Cobrança; :kbd:`17 - Empenho`
+   * - 1.9
+     - sequencialTermoContrato
+     - Inteiro
+     - Sequencial do termo do contrato no PNCP. Retornado caso categoriaLogManutencao = 9
+   * - 1.10
+     - numeroTermoContrato
+     - String
+     - Número do termo do contrato. Retornado caso categoriaLogManutencao = 9
+   * - 1.11
+     - sequencialDocumentoContrato
+     - Inteiro
+     - Sequencial do documento do contrato no PNCP. Retornado caso categoriaLogManutencao = 8
+   * - 1.12
+     - tituloDocumentoContrato
+     - String
+     - Título referente ao arquivo/documento do contrato. Retornado caso categoriaLogManutencao = 8
+   * - 1.13
+     - sequencialDocumentoTermoContrato
+     - Inteiro
+     - Sequencial do documento do termo do contrato no PNCP. Retornado caso categoriaLogManutencao = 10
+   * - 1.14
+     - tituloDocumentoTermoContrato
+     - String
+     - Título referente ao arquivo/documento do termo do contrato. Retornado caso categoriaLogManutencao = 10
+   * - 1.15
+     - usuarioNome
+     - String
+     - Nome do usuário/sistema que efetuou a operação
+   * - 1.16
+     - justificativa
+     - String
+     - Motivo/justificativa da operação de retificação ou exclusão do recurso
+   * - 1.17
+     - sequencialInstrumentoCobranca
+     - Inteiro
+     - Sequencial do instrumento de cobrança no PNCP.  Retornado caso categoriaLogManutencao = 15.
+   * - :kbd:`1.18`
+     - :kbd:`sequencialEmpenho`
+     - :kbd:`Inteiro`
+     - :kbd:`Sequencial do empenho no PNCP.  Retornado caso categoriaLogManutencao = 17.`
+
+**Códigos de Retorno**
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 10 25 25
+   :header-rows: 1
+
+   * - Código HTTP
+     - Mensagem
+     - Tipo
+   * - 200
+     - Ok
+     - Sucesso
+   * - 400
+     - BadRequest
+     - Erro
+   * - 422
+     - Unprocessable Entity
+     - Erro
+   * - 500
+     - Internal Server Error
+     - Erro
+
+Inserir Instrumento de Cobrança de um Contrato ou Empenho
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Serviço que permite incluir um instrumento de cobrança de um contrato ou empenho. Este
+serviço será acionado por qualquer plataforma digital credenciada.
+
+Detalhes da Requisição
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 50 15
+   :header-rows: 1
+
+   * - Endpoint
+     - Método HTTP
+   * - /v1/orgaos/{cnpj}/contratos/{ano}/{sequencialContrato}/instrumentocobranca
+     - POST
+
+Exemplo de Payload
+^^^^^^^^^^^^^^^^^^
+
+.. code-block:: json
+  :linenos:
+
+   {
+     "tipoInstrumentoCobrancaId": 1,
+     "numeroInstrumentoCobranca": "01",
+     "chaveNFe": "string",
+     "dataEmissaoDocumento": "2025-01-10",
+     "observacao": "Nota fiscal do empenho"
+   }
+
+Exemplo Requisição (cURL)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+  :linenos:
+
+   curl -k -X POST \
+     --header "Authorization: Bearer access_token" \
+     "${BASE_URL}/v1/orgaos/10000000000003/contratos/2025/1/instrumentocobranca" \
+     -H "accept: */*" \
+     -H "Content-Type: application/json" \
+     --data "@/home/objeto.json"
+
+Dados de Entrada
+^^^^^^^^^^^^^^^^
+
+.. note::
+
+   Alimentar os parâmetros {cnpj}, {ano} e {sequencialContrato} na URL.
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 10 25
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Obrigatório
+     - Descrição
+   * - 1
+     - cnpj
+     - Texto (14)
+     - Sim
+     - CNPJ do órgão do contrato ou empenho
+   * - 2
+     - ano
+     - Inteiro
+     - Sim
+     - Ano do contrato ou empenho
+   * - 3
+     - sequencialContrato
+     - Inteiro
+     - Sim
+     - Número sequencial do contrato ou empenho (gerado pelo PNCP no momento da inclusão do contrato ou empenho)
+   * - 4
+     - tipoInstrumentoCobrancaId
+     - Inteiro
+     - Sim
+     - Código da tabela de domínio Tipo de Instrumento de Cobrança
+   * - 5
+     - numeroInstrumentoCobranca
+     - Texto (50)
+     - Não
+     - Número do instrumento de cobrança do contrato ou empenho
+   * - 6
+     - chaveNFe
+     - Texto (50)
+     - Não
+     - Chave da Nota Fiscal quando o instrumento de cobrança for do tipo "Nota Fiscal"
+   * - 7
+     - dataEmissaoDocumento
+     - Data
+     - Não
+     - Data de emissão do instrumento de cobrança
+   * - 8
+     - observacao
+     - Texto (2048)
+     - Não
+     - Observação opcional sobre o instrumento de cobrança
+
+Dados de retorno
+^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 10 25
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Obrigatório
+     - Descrição
+   * - 1
+     - location
+     - Texto (255) 
+     - Sim
+     - Endereço http do recurso criado
+
+**Códigos de Retorno**
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 10 25 25
+   :header-rows: 1
+
+   * - Código HTTP
+     - Mensagem
+     - Tipo
+   * - 200
+     - Created
+     - Sucesso
+   * - 400
+     - BadRequest
+     - Erro
+   * - 422
+     - Unprocessable Entity
+     - Erro
+   * - 500
+     - Internal Server Error
+     - Erro
+
+
