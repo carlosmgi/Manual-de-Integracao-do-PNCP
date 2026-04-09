@@ -424,11 +424,11 @@ Dados de entrada
      - Texto (255)
      - Sim
      - Motivo/justificativa para a retificação dos atributos da ata
-   * - :kbd:`13`
-     - :kbd:`possibilidadeAdesao`
-     - :kbd:`Booleano`
-     - :kbd:`Sim`
-     - :kbd:`Indicador se a ata permite adesão de não participantes (false = não / true = sim)`
+   * - :destaque:`13`
+     - :destaque:`possibilidadeAdesao`
+     - :destaque:`Booleano`
+     - :destaque:`Sim`
+     - :destaque:`Indicador se a ata permite adesão de não participantes (false = não / true = sim)`
 
 Dados de retorno
 ^^^^^^^^^^^^^^^^
@@ -597,71 +597,71 @@ Dados de entrada
      - Tipo
      - Obrigatório
      - Descrição
-   * - :kbd:`1`
-     - :kbd:`cnpj`
-     - :kbd:`Texto (14)`
-     - :kbd:`Sim`
-     - :kbd:`CNPJ do órgão originário da contratação informado na inclusão (proprietário da contratação)`
-   * - :kbd:`2`
-     - :kbd:`anoCompra`
-     - :kbd:`Inteiro`
-     - :kbd:`Sim`
-     - :kbd:`Ano da contratação`
-   * - :kbd:`3`
-     - :kbd:`sequencialCompra`
-     - :kbd:`Inteiro`
-     - :kbd:`Sim`
-     - :kbd:`Sequencial da contratação no PNCP; número sequencial gerado no momento que a contratação foi inserida no PNCP`
-   * - :kbd:`4`
-     - :kbd:`sequencialAta`
-     - :kbd:`Inteiro`
-     - :kbd:`Sim`
-     - :kbd:`Sequencial da ata no PNCP; número sequencial gerado no momento que a ata foi inserida no PNCP`
-   * - :kbd:`5`
-     - :kbd:`numeroAtaRegistroPreco`
-     - :kbd:`Texto (50)`
-     - :kbd:`Não`
-     - :kbd:`Número da ata no sistema de origem`
-   * - :kbd:`6`
-     - :kbd:`anoAta`
-     - :kbd:`Inteiro`
-     - :kbd:`Não`
-     - :kbd:`Ano da ata`
-   * - :kbd:`7`
-     - :kbd:`dataAssinatura`
-     - :kbd:`Data`
-     - :kbd:`Não`
-     - :kbd:`Informar a data de assinatura da ata`
-   * - :kbd:`8`
-     - :kbd:`dataInicioVigencia`
-     - :kbd:`Data`
-     - :kbd:`Não`
-     - :kbd:`Informar a data de início de vigência da ata`
-   * - :kbd:`9`
-     - :kbd:`dataFimVigencia`
-     - :kbd:`Data`
-     - :kbd:`Não`
-     - :kbd:`Informar a data de fim de vigência da ata`
-   * - :kbd:`10`
-     - :kbd:`cancelado`
-     - :kbd:`Booleano`
-     - :kbd:`Não`
-     - :kbd:`Indicador de cancelamento da ata; se omitido, assume valor "false"`
-   * - :kbd:`11`
-     - :kbd:`dataCancelamento`
-     - :kbd:`Data e Hora`
-     - :kbd:`Não`
-     - :kbd:`Informar a data e hora de cancelamento da ata, caso o indicador de cancelamento seja verdadeiro`
-   * - :kbd:`12`
-     - :kbd:`possibilidadeAdesao`
-     - :kbd:`Booleano`
-     - :kbd:`Não`
-     - :kbd:`Indicador se a ata permite adesão de não participantes (false = não / true = sim)`
-   * - :kbd:`13`
-     - :kbd:`justificativa`
-     - :kbd:`Texto (255)`
-     - :kbd:`Sim`
-     - :kbd:`Motivo/justificativa para a retificação dos atributos da ata`
+   * - :destaque:`1`
+     - :destaque:`cnpj`
+     - :destaque:`Texto (14)`
+     - :destaque:`Sim`
+     - :destaque:`CNPJ do órgão originário da contratação informado na inclusão (proprietário da contratação)`
+   * - :destaque:`2`
+     - :destaque:`anoCompra`
+     - :destaque:`Inteiro`
+     - :destaque:`Sim`
+     - :destaque:`Ano da contratação`
+   * - :destaque:`3`
+     - :destaque:`sequencialCompra`
+     - :destaque:`Inteiro`
+     - :destaque:`Sim`
+     - :destaque:`Sequencial da contratação no PNCP; número sequencial gerado no momento que a contratação foi inserida no PNCP`
+   * - :destaque:`4`
+     - :destaque:`sequencialAta`
+     - :destaque:`Inteiro`
+     - :destaque:`Sim`
+     - :destaque:`Sequencial da ata no PNCP; número sequencial gerado no momento que a ata foi inserida no PNCP`
+   * - :destaque:`5`
+     - :destaque:`numeroAtaRegistroPreco`
+     - :destaque:`Texto (50)`
+     - :destaque:`Não`
+     - :destaque:`Número da ata no sistema de origem`
+   * - :destaque:`6`
+     - :destaque:`anoAta`
+     - :destaque:`Inteiro`
+     - :destaque:`Não`
+     - :destaque:`Ano da ata`
+   * - :destaque:`7`
+     - :destaque:`dataAssinatura`
+     - :destaque:`Data`
+     - :destaque:`Não`
+     - :destaque:`Informar a data de assinatura da ata`
+   * - :destaque:`8`
+     - :destaque:`dataInicioVigencia`
+     - :destaque:`Data`
+     - :destaque:`Não`
+     - :destaque:`Informar a data de início de vigência da ata`
+   * - :destaque:`9`
+     - :destaque:`dataFimVigencia`
+     - :destaque:`Data`
+     - :destaque:`Não`
+     - :destaque:`Informar a data de fim de vigência da ata`
+   * - :destaque:`10`
+     - :destaque:`cancelado`
+     - :destaque:`Booleano`
+     - :destaque:`Não`
+     - :destaque:`Indicador de cancelamento da ata; se omitido, assume valor "false"`
+   * - :destaque:`11`
+     - :destaque:`dataCancelamento`
+     - :destaque:`Data e Hora`
+     - :destaque:`Não`
+     - :destaque:`Informar a data e hora de cancelamento da ata, caso o indicador de cancelamento seja verdadeiro`
+   * - :destaque:`12`
+     - :destaque:`possibilidadeAdesao`
+     - :destaque:`Booleano`
+     - :destaque:`Não`
+     - :destaque:`Indicador se a ata permite adesão de não participantes (false = não / true = sim)`
+   * - :destaque:`13`
+     - :destaque:`justificativa`
+     - :destaque:`Texto (255)`
+     - :destaque:`Sim`
+     - :destaque:`Motivo/justificativa para a retificação dos atributos da ata`
 
 
 Dados de retorno
@@ -676,10 +676,10 @@ Dados de retorno
      - Campo
      - Tipo
      - Descrição
-   * - :kbd:`1`
-     - :kbd:`ataRegistroPreco`
-     - :kbd:`JSON`
-     - :kbd:`Dados da ata de registro de preço após alteração`
+   * - :destaque:`1`
+     - :destaque:`ataRegistroPreco`
+     - :destaque:`JSON`
+     - :destaque:`Dados da ata de registro de preço após alteração`
 
 Códigos de retorno
 ^^^^^^^^^^^^^^^^^^
@@ -692,24 +692,24 @@ Códigos de retorno
    * - Código HTTP
      - Mensagem
      - Tipo
-   * - :kbd:`200`
-     - :kbd:`OK`
-     - :kbd:`Sucesso`
-   * - :kbd:`400`
-     - :kbd:`BadRequest`
-     - :kbd:`Erro`
-   * - :kbd:`401`
-     - :kbd:`Unauthorized`
-     - :kbd:`Erro`
-   * - :kbd:`404`
-     - :kbd:`NotFound`
-     - :kbd:`Erro`
-   * - :kbd:`422`
-     - :kbd:`Unprocessable Entity`
-     - :kbd:`Erro`
-   * - :kbd:`500`
-     - :kbd:`Internal Server Error`
-     - :kbd:`Erro`
+   * - :destaque:`200`
+     - :destaque:`OK`
+     - :destaque:`Sucesso`
+   * - :destaque:`400`
+     - :destaque:`BadRequest`
+     - :destaque:`Erro`
+   * - :destaque:`401`
+     - :destaque:`Unauthorized`
+     - :destaque:`Erro`
+   * - :destaque:`404`
+     - :destaque:`NotFound`
+     - :destaque:`Erro`
+   * - :destaque:`422`
+     - :destaque:`Unprocessable Entity`
+     - :destaque:`Erro`
+   * - :destaque:`500`
+     - :destaque:`Internal Server Error`
+     - :destaque:`Erro`
 
 Excluir Ata de Registro de Preço
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -790,7 +790,7 @@ Dados de entrada
      - Motivo/justificativa para a exclusão da ata
 
 
-Segue o conteúdo em **RST**, sem `:kbd:`:
+Segue o conteúdo em **RST**, sem `:destaque:`:
 
 
 Códigos de retorno
@@ -1134,10 +1134,10 @@ Dados de retorno
      - usuarioNome
      - Texto
      - Nome da plataforma que publicou a ata no PNCP
-   * - :kbd:`21`
-     - :kbd:`possibilidadeAdesao`
-     - :kbd:`Booleano`
-     - :kbd:`Indicador se a ata permite adesão de não participantes (false = não / true = sim)`
+   * - :destaque:`21`
+     - :destaque:`possibilidadeAdesao`
+     - :destaque:`Booleano`
+     - :destaque:`Indicador se a ata permite adesão de não participantes (false = não / true = sim)`
 
 
 Inserir Documento de uma Ata
@@ -1857,30 +1857,30 @@ Dados de entrada
      - Tipo
      - Descrição
 
-   * - :kbd:`1`
-     - :kbd:`cnpj`
-     - :kbd:`Texto (14)`
-     - :kbd:`CNPJ do órgão originário da contratação informado na inclusão (proprietário da contratação)`
-   * - :kbd:`2`
-     - :kbd:`ano`
-     - :kbd:`Inteiro`
-     - :kbd:`Ano da contratação`
-   * - :kbd:`3`
-     - :kbd:`sequencial`
-     - :kbd:`Inteiro`
-     - :kbd:`Sequencial da contratação no PNCP`
-   * - :kbd:`4`
-     - :kbd:`sequencialAta`
-     - :kbd:`Inteiro`
-     - :kbd:`Sequencial da ata no PNCP`
-   * - :kbd:`5`
-     - :kbd:`pagina`
-     - :kbd:`Inteiro`
-     - :kbd:`Utilizado para paginação dos itens. Número da página`
-   * - :kbd:`6`
-     - :kbd:`tamanhoPagina`
-     - :kbd:`Inteiro`
-     - :kbd:`Utilizado para paginação dos itens. Quantidade de itens por página`
+   * - :destaque:`1`
+     - :destaque:`cnpj`
+     - :destaque:`Texto (14)`
+     - :destaque:`CNPJ do órgão originário da contratação informado na inclusão (proprietário da contratação)`
+   * - :destaque:`2`
+     - :destaque:`ano`
+     - :destaque:`Inteiro`
+     - :destaque:`Ano da contratação`
+   * - :destaque:`3`
+     - :destaque:`sequencial`
+     - :destaque:`Inteiro`
+     - :destaque:`Sequencial da contratação no PNCP`
+   * - :destaque:`4`
+     - :destaque:`sequencialAta`
+     - :destaque:`Inteiro`
+     - :destaque:`Sequencial da ata no PNCP`
+   * - :destaque:`5`
+     - :destaque:`pagina`
+     - :destaque:`Inteiro`
+     - :destaque:`Utilizado para paginação dos itens. Número da página`
+   * - :destaque:`6`
+     - :destaque:`tamanhoPagina`
+     - :destaque:`Inteiro`
+     - :destaque:`Utilizado para paginação dos itens. Quantidade de itens por página`
 
 Dados de retorno
 ^^^^^^^^^^^^^^^^
@@ -1895,118 +1895,118 @@ Dados de retorno
      - Tipo
      - Descrição
 
-   * - :kbd:`1`
-     - :kbd:`data`
-     - :kbd:``
-     - :kbd:`Dados retornados pela consulta`
-   * - :kbd:`1.1`
-     - :kbd:`numeroControle`
-     - :kbd:`Texto`
-     - :kbd:`Número de controle PNCP do contrato/empenho (id contrato PNCP)`
-   * - :kbd:`1.2`
-     - :kbd:`sequencialContrato`
-     - :kbd:`Inteiro`
-     - :kbd:`Sequencial do contrato/empenho no PNCP; número gerado no momento em que foi inserido`
-   * - :kbd:`1.3`
-     - :kbd:`frutoAdesao`
-     - :kbd:`Booleano`
-     - :kbd:`Indicador se o contrato/empenho é fruto de adesão a ata (False-Não / True-Sim)`
-   * - :kbd:`1.4`
-     - :kbd:`orgaoEntidade`
-     - :kbd:``
-     - :kbd:`Dados do órgão/entidade do contrato/empenho`
-   * - :kbd:`1.4.1`
-     - :kbd:`cnpj`
-     - :kbd:`Texto`
-     - :kbd:`CNPJ do órgão/entidade`
-   * - :kbd:`1.4.2`
-     - :kbd:`nome`
-     - :kbd:`Texto`
-     - :kbd:`Nome do órgão/entidade`
-   * - :kbd:`1.5`
-     - :kbd:`unidadeExecutora`
-     - :kbd:``
-     - :kbd:`Dados da unidade administrativa`
-   * - :kbd:`1.5.1`
-     - :kbd:`codigo`
-     - :kbd:`Texto`
-     - :kbd:`Código da unidade administrativa`
-   * - :kbd:`1.5.2`
-     - :kbd:`nomeUnidade`
-     - :kbd:`Texto`
-     - :kbd:`Nome da unidade administrativa`
-   * - :kbd:`1.5.3`
-     - :kbd:`localidade`
-     - :kbd:``
-     - :kbd:`Localidade da unidade administrativa`
-   * - :kbd:`1.5.3.1`
-     - :kbd:`uf`
-     - :kbd:`Texto`
-     - :kbd:`Unidade federativa`
-   * - :kbd:`1.5.3.2`
-     - :kbd:`codigoIbgeMunicipio`
-     - :kbd:`Texto`
-     - :kbd:`Código IBGE do município`
-   * - :kbd:`1.5.3.3`
-     - :kbd:`nomeMunicipio`
-     - :kbd:`Texto`
-     - :kbd:`Nome do município`
-   * - :kbd:`1.6`
-     - :kbd:`numeroContratoEmpenho`
-     - :kbd:`Texto`
-     - :kbd:`Número do contrato ou empenho`
-   * - :kbd:`1.7`
-     - :kbd:`anoContrato`
-     - :kbd:`Inteiro`
-     - :kbd:`Ano do contrato ou empenho`
-   * - :kbd:`1.8`
-     - :kbd:`objetoContrato`
-     - :kbd:`Texto`
-     - :kbd:`Descrição do objeto do contrato ou empenho`
-   * - :kbd:`1.9`
-     - :kbd:`dataAssinatura`
-     - :kbd:`Data`
-     - :kbd:`Data da assinatura`
-   * - :kbd:`1.10`
-     - :kbd:`dataVigenciaInicio`
-     - :kbd:`Data`
-     - :kbd:`Data inicial de vigência`
-   * - :kbd:`1.11`
-     - :kbd:`dataVigenciaFim`
-     - :kbd:`Data`
-     - :kbd:`Data final de vigência`
-   * - :kbd:`1.12`
-     - :kbd:`valorGlobal`
-     - :kbd:``
-     - :kbd:`Valor global do contrato ou empenho`
-   * - :kbd:`1.13`
-     - :kbd:`dataPublicacaoPncp`
-     - :kbd:`Data/Hora`
-     - :kbd:`Data e hora da inclusão no PNCP`
-   * - :kbd:`1.14`
-     - :kbd:`usuarioNome`
-     - :kbd:`String`
-     - :kbd:`Nome do usuário ou sistema que efetuou a operação`
-   * - :kbd:`2`
-     - :kbd:`totalRegistros`
-     - :kbd:`Inteiro`
-     - :kbd:`Total de registros encontrados`
-   * - :kbd:`3`
-     - :kbd:`totalPaginas`
-     - :kbd:`Inteiro`
-     - :kbd:`Total de páginas`
-   * - :kbd:`4`
-     - :kbd:`numeroPagina`
-     - :kbd:`Inteiro`
-     - :kbd:`Número da página consultada`
-   * - :kbd:`5`
-     - :kbd:`paginasRestantes`
-     - :kbd:`Inteiro`
-     - :kbd:`Quantidade de páginas restantes`
-   * - :kbd:`6`
-     - :kbd:`empty`
-     - :kbd:`Booleano`
-     - :kbd:`Indicador se a lista está vazia`
+   * - :destaque:`1`
+     - :destaque:`data`
+     - :destaque:``
+     - :destaque:`Dados retornados pela consulta`
+   * - :destaque:`1.1`
+     - :destaque:`numeroControle`
+     - :destaque:`Texto`
+     - :destaque:`Número de controle PNCP do contrato/empenho (id contrato PNCP)`
+   * - :destaque:`1.2`
+     - :destaque:`sequencialContrato`
+     - :destaque:`Inteiro`
+     - :destaque:`Sequencial do contrato/empenho no PNCP; número gerado no momento em que foi inserido`
+   * - :destaque:`1.3`
+     - :destaque:`frutoAdesao`
+     - :destaque:`Booleano`
+     - :destaque:`Indicador se o contrato/empenho é fruto de adesão a ata (False-Não / True-Sim)`
+   * - :destaque:`1.4`
+     - :destaque:`orgaoEntidade`
+     - :destaque:``
+     - :destaque:`Dados do órgão/entidade do contrato/empenho`
+   * - :destaque:`1.4.1`
+     - :destaque:`cnpj`
+     - :destaque:`Texto`
+     - :destaque:`CNPJ do órgão/entidade`
+   * - :destaque:`1.4.2`
+     - :destaque:`nome`
+     - :destaque:`Texto`
+     - :destaque:`Nome do órgão/entidade`
+   * - :destaque:`1.5`
+     - :destaque:`unidadeExecutora`
+     - :destaque:``
+     - :destaque:`Dados da unidade administrativa`
+   * - :destaque:`1.5.1`
+     - :destaque:`codigo`
+     - :destaque:`Texto`
+     - :destaque:`Código da unidade administrativa`
+   * - :destaque:`1.5.2`
+     - :destaque:`nomeUnidade`
+     - :destaque:`Texto`
+     - :destaque:`Nome da unidade administrativa`
+   * - :destaque:`1.5.3`
+     - :destaque:`localidade`
+     - :destaque:``
+     - :destaque:`Localidade da unidade administrativa`
+   * - :destaque:`1.5.3.1`
+     - :destaque:`uf`
+     - :destaque:`Texto`
+     - :destaque:`Unidade federativa`
+   * - :destaque:`1.5.3.2`
+     - :destaque:`codigoIbgeMunicipio`
+     - :destaque:`Texto`
+     - :destaque:`Código IBGE do município`
+   * - :destaque:`1.5.3.3`
+     - :destaque:`nomeMunicipio`
+     - :destaque:`Texto`
+     - :destaque:`Nome do município`
+   * - :destaque:`1.6`
+     - :destaque:`numeroContratoEmpenho`
+     - :destaque:`Texto`
+     - :destaque:`Número do contrato ou empenho`
+   * - :destaque:`1.7`
+     - :destaque:`anoContrato`
+     - :destaque:`Inteiro`
+     - :destaque:`Ano do contrato ou empenho`
+   * - :destaque:`1.8`
+     - :destaque:`objetoContrato`
+     - :destaque:`Texto`
+     - :destaque:`Descrição do objeto do contrato ou empenho`
+   * - :destaque:`1.9`
+     - :destaque:`dataAssinatura`
+     - :destaque:`Data`
+     - :destaque:`Data da assinatura`
+   * - :destaque:`1.10`
+     - :destaque:`dataVigenciaInicio`
+     - :destaque:`Data`
+     - :destaque:`Data inicial de vigência`
+   * - :destaque:`1.11`
+     - :destaque:`dataVigenciaFim`
+     - :destaque:`Data`
+     - :destaque:`Data final de vigência`
+   * - :destaque:`1.12`
+     - :destaque:`valorGlobal`
+     - :destaque:``
+     - :destaque:`Valor global do contrato ou empenho`
+   * - :destaque:`1.13`
+     - :destaque:`dataPublicacaoPncp`
+     - :destaque:`Data/Hora`
+     - :destaque:`Data e hora da inclusão no PNCP`
+   * - :destaque:`1.14`
+     - :destaque:`usuarioNome`
+     - :destaque:`String`
+     - :destaque:`Nome do usuário ou sistema que efetuou a operação`
+   * - :destaque:`2`
+     - :destaque:`totalRegistros`
+     - :destaque:`Inteiro`
+     - :destaque:`Total de registros encontrados`
+   * - :destaque:`3`
+     - :destaque:`totalPaginas`
+     - :destaque:`Inteiro`
+     - :destaque:`Total de páginas`
+   * - :destaque:`4`
+     - :destaque:`numeroPagina`
+     - :destaque:`Inteiro`
+     - :destaque:`Número da página consultada`
+   * - :destaque:`5`
+     - :destaque:`paginasRestantes`
+     - :destaque:`Inteiro`
+     - :destaque:`Quantidade de páginas restantes`
+   * - :destaque:`6`
+     - :destaque:`empty`
+     - :destaque:`Booleano`
+     - :destaque:`Indicador se a lista está vazia`
 
 Códigos de Retorno
 ^^^^^^^^^^^^^^^^^^
@@ -2019,18 +2019,18 @@ Códigos de Retorno
    * - Código HTTP
      - Mensagem
      - Tipo
-   * - :kbd:`200`
-     - :kbd:`OK`
-     - :kbd:`Sucesso`
-   * - :kbd:`400`
-     - :kbd:`BadRequest`
-     - :kbd:`Erro`
-   * - :kbd:`422`
-     - :kbd:`Unprocessable Entity`
-     - :kbd:`Erro`
-   * - :kbd:`500`
-     - :kbd:`Internal Server Error`
-     - :kbd:`Erro`
+   * - :destaque:`200`
+     - :destaque:`OK`
+     - :destaque:`Sucesso`
+   * - :destaque:`400`
+     - :destaque:`BadRequest`
+     - :destaque:`Erro`
+   * - :destaque:`422`
+     - :destaque:`Unprocessable Entity`
+     - :destaque:`Erro`
+   * - :destaque:`500`
+     - :destaque:`Internal Server Error`
+     - :destaque:`Erro`
 
 Inserir Parte Envolvida na Ata de Registro de Preço
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -2102,46 +2102,46 @@ Dados de entrada
      - Obrigatório
      - Descrição
 
-   * - :kbd:`1`
-     - :kbd:`cnpj`
-     - :kbd:`Texto (14)`
-     - :kbd:`Sim`
-     - :kbd:`CNPJ do órgão originário da contratação informado na inclusão (proprietário da contratação)`
-   * - :kbd:`2`
-     - :kbd:`anoCompra`
-     - :kbd:`Inteiro`
-     - :kbd:`Sim`
-     - :kbd:`Ano da contratação`
-   * - :kbd:`3`
-     - :kbd:`sequencialCompra`
-     - :kbd:`Inteiro`
-     - :kbd:`Sim`
-     - :kbd:`Sequencial da contratação no PNCP; número gerado no momento em que a contratação foi inserida`
-   * - :kbd:`4`
-     - :kbd:`sequencialAta`
-     - :kbd:`Inteiro`
-     - :kbd:`Sim`
-     - :kbd:`Sequencial da ata no PNCP; número gerado no momento em que a ata foi inserida`
-   * - :kbd:`5`
-     - :kbd:`partesEnvolvidas`
-     - :kbd:`Lista`
-     - :kbd:`Não`
-     - :kbd:`Lista de partes envolvidas`
-   * - :kbd:`5.1`
-     - :kbd:`tipoParteEnvolvidaId`
-     - :kbd:`Inteiro`
-     - :kbd:`Não`
-     - :kbd:`Código do tipo de parte envolvida: 1 - Gerenciadora; 2 - Participante; 3 - Não participante`
-   * - :kbd:`5.2`
-     - :kbd:`cnpj`
-     - :kbd:`Texto (14)`
-     - :kbd:`Não`
-     - :kbd:`CNPJ do órgão`
-   * - :kbd:`5.3`
-     - :kbd:`codigoUnidadeCompradora`
-     - :kbd:`Texto (30)`
-     - :kbd:`Não`
-     - :kbd:`Código da unidade administrativa`
+   * - :destaque:`1`
+     - :destaque:`cnpj`
+     - :destaque:`Texto (14)`
+     - :destaque:`Sim`
+     - :destaque:`CNPJ do órgão originário da contratação informado na inclusão (proprietário da contratação)`
+   * - :destaque:`2`
+     - :destaque:`anoCompra`
+     - :destaque:`Inteiro`
+     - :destaque:`Sim`
+     - :destaque:`Ano da contratação`
+   * - :destaque:`3`
+     - :destaque:`sequencialCompra`
+     - :destaque:`Inteiro`
+     - :destaque:`Sim`
+     - :destaque:`Sequencial da contratação no PNCP; número gerado no momento em que a contratação foi inserida`
+   * - :destaque:`4`
+     - :destaque:`sequencialAta`
+     - :destaque:`Inteiro`
+     - :destaque:`Sim`
+     - :destaque:`Sequencial da ata no PNCP; número gerado no momento em que a ata foi inserida`
+   * - :destaque:`5`
+     - :destaque:`partesEnvolvidas`
+     - :destaque:`Lista`
+     - :destaque:`Não`
+     - :destaque:`Lista de partes envolvidas`
+   * - :destaque:`5.1`
+     - :destaque:`tipoParteEnvolvidaId`
+     - :destaque:`Inteiro`
+     - :destaque:`Não`
+     - :destaque:`Código do tipo de parte envolvida: 1 - Gerenciadora; 2 - Participante; 3 - Não participante`
+   * - :destaque:`5.2`
+     - :destaque:`cnpj`
+     - :destaque:`Texto (14)`
+     - :destaque:`Não`
+     - :destaque:`CNPJ do órgão`
+   * - :destaque:`5.3`
+     - :destaque:`codigoUnidadeCompradora`
+     - :destaque:`Texto (30)`
+     - :destaque:`Não`
+     - :destaque:`Código da unidade administrativa`
 
 
 Códigos de Retorno
@@ -2155,24 +2155,24 @@ Códigos de Retorno
    * - Código HTTP
      - Mensagem
      - Tipo
-   * - :kbd:`201`
-     - :kbd:`Created`
-     - :kbd:`Sucesso`
-   * - :kbd:`400`
-     - :kbd:`BadRequest`
-     - :kbd:`Erro`
-   * - :kbd:`401`
-     - :kbd:`Unauthorized`
-     - :kbd:`Erro`
-   * - :kbd:`404`
-     - :kbd:`NotFound`
-     - :kbd:`Erro`
-   * - :kbd:`422`
-     - :kbd:`Unprocessable Entity`
-     - :kbd:`Erro`
-   * - :kbd:`500`
-     - :kbd:`Internal Server Error`
-     - :kbd:`Erro`
+   * - :destaque:`201`
+     - :destaque:`Created`
+     - :destaque:`Sucesso`
+   * - :destaque:`400`
+     - :destaque:`BadRequest`
+     - :destaque:`Erro`
+   * - :destaque:`401`
+     - :destaque:`Unauthorized`
+     - :destaque:`Erro`
+   * - :destaque:`404`
+     - :destaque:`NotFound`
+     - :destaque:`Erro`
+   * - :destaque:`422`
+     - :destaque:`Unprocessable Entity`
+     - :destaque:`Erro`
+   * - :destaque:`500`
+     - :destaque:`Internal Server Error`
+     - :destaque:`Erro`
 
 
 Excluir Parte Envolvida em Ata de Registro de Preço
@@ -2234,46 +2234,46 @@ Dados de entrada
      - Obrigatório
      - Descrição
 
-   * - :kbd:`1`
-     - :kbd:`cnpj`
-     - :kbd:`Texto (14)`
-     - :kbd:`Sim`
-     - :kbd:`CNPJ do órgão originário da contratação informado na inclusão (proprietário da contratação)`
-   * - :kbd:`2`
-     - :kbd:`anoCompra`
-     - :kbd:`Inteiro`
-     - :kbd:`Sim`
-     - :kbd:`Ano da contratação`
-   * - :kbd:`3`
-     - :kbd:`sequencialCompra`
-     - :kbd:`Inteiro`
-     - :kbd:`Sim`
-     - :kbd:`Sequencial da contratação no PNCP; número gerado no momento em que a contratação foi inserida`
-   * - :kbd:`4`
-     - :kbd:`sequencialAta`
-     - :kbd:`Inteiro`
-     - :kbd:`Sim`
-     - :kbd:`Sequencial da ata no PNCP; número gerado no momento em que a ata foi inserida`
-   * - :kbd:`5`
-     - :kbd:`cnpjOrgao`
-     - :kbd:`Texto (14)`
-     - :kbd:`Sim`
-     - :kbd:`CNPJ do órgão ou entidade da parte envolvida`
-   * - :kbd:`6`
-     - :kbd:`codUnidade`
-     - :kbd:`Texto (30)`
-     - :kbd:`Sim`
-     - :kbd:`Código da unidade administrativa da parte envolvida`
-   * - :kbd:`7`
-     - :kbd:`tipoParteEnvolvida`
-     - :kbd:`Inteiro`
-     - :kbd:`Sim`
-     - :kbd:`Código do tipo da parte envolvida`
-   * - :kbd:`8`
-     - :kbd:`justificativa`
-     - :kbd:`Texto (255)`
-     - :kbd:`Sim`
-     - :kbd:`Motivo ou justificativa para a exclusão da parte envolvida da ata`
+   * - :destaque:`1`
+     - :destaque:`cnpj`
+     - :destaque:`Texto (14)`
+     - :destaque:`Sim`
+     - :destaque:`CNPJ do órgão originário da contratação informado na inclusão (proprietário da contratação)`
+   * - :destaque:`2`
+     - :destaque:`anoCompra`
+     - :destaque:`Inteiro`
+     - :destaque:`Sim`
+     - :destaque:`Ano da contratação`
+   * - :destaque:`3`
+     - :destaque:`sequencialCompra`
+     - :destaque:`Inteiro`
+     - :destaque:`Sim`
+     - :destaque:`Sequencial da contratação no PNCP; número gerado no momento em que a contratação foi inserida`
+   * - :destaque:`4`
+     - :destaque:`sequencialAta`
+     - :destaque:`Inteiro`
+     - :destaque:`Sim`
+     - :destaque:`Sequencial da ata no PNCP; número gerado no momento em que a ata foi inserida`
+   * - :destaque:`5`
+     - :destaque:`cnpjOrgao`
+     - :destaque:`Texto (14)`
+     - :destaque:`Sim`
+     - :destaque:`CNPJ do órgão ou entidade da parte envolvida`
+   * - :destaque:`6`
+     - :destaque:`codUnidade`
+     - :destaque:`Texto (30)`
+     - :destaque:`Sim`
+     - :destaque:`Código da unidade administrativa da parte envolvida`
+   * - :destaque:`7`
+     - :destaque:`tipoParteEnvolvida`
+     - :destaque:`Inteiro`
+     - :destaque:`Sim`
+     - :destaque:`Código do tipo da parte envolvida`
+   * - :destaque:`8`
+     - :destaque:`justificativa`
+     - :destaque:`Texto (255)`
+     - :destaque:`Sim`
+     - :destaque:`Motivo ou justificativa para a exclusão da parte envolvida da ata`
 
 Códigos de Retorno
 ^^^^^^^^^^^^^^^^^^
@@ -2286,21 +2286,21 @@ Códigos de Retorno
    * - Código HTTP
      - Mensagem
      - Tipo
-   * - :kbd:`204`
-     - :kbd:`No Content`
-     - :kbd:`Sucesso`
-   * - :kbd:`401`
-     - :kbd:`Unauthorized`
-     - :kbd:`Erro`
-   * - :kbd:`404`
-     - :kbd:`NotFound`
-     - :kbd:`Erro`
-   * - :kbd:`422`
-     - :kbd:`Unprocessable Entity`
-     - :kbd:`Erro`
-   * - :kbd:`500`
-     - :kbd:`Internal Server Error`
-     - :kbd:`Erro`
+   * - :destaque:`204`
+     - :destaque:`No Content`
+     - :destaque:`Sucesso`
+   * - :destaque:`401`
+     - :destaque:`Unauthorized`
+     - :destaque:`Erro`
+   * - :destaque:`404`
+     - :destaque:`NotFound`
+     - :destaque:`Erro`
+   * - :destaque:`422`
+     - :destaque:`Unprocessable Entity`
+     - :destaque:`Erro`
+   * - :destaque:`500`
+     - :destaque:`Internal Server Error`
+     - :destaque:`Erro`
 
 Consultar Parte Envolvida em Ata de Registro de Preço
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -2348,41 +2348,41 @@ Dados de entrada
      - Obrigatório
      - Descrição
 
-   * - :kbd:`1`
-     - :kbd:`cnpj`
-     - :kbd:`Texto (14)`
-     - :kbd:`Sim`
-     - :kbd:`CNPJ do órgão originário da contratação informado na inclusão (proprietário da contratação)`
-   * - :kbd:`2`
-     - :kbd:`anoCompra`
-     - :kbd:`Inteiro`
-     - :kbd:`Sim`
-     - :kbd:`Ano da contratação`
-   * - :kbd:`3`
-     - :kbd:`sequencialCompra`
-     - :kbd:`Inteiro`
-     - :kbd:`Sim`
-     - :kbd:`Sequencial da contratação no PNCP; número gerado no momento em que a contratação foi inserida`
-   * - :kbd:`4`
-     - :kbd:`sequencialAta`
-     - :kbd:`Inteiro`
-     - :kbd:`Sim`
-     - :kbd:`Sequencial da ata no PNCP; número gerado no momento em que a ata foi inserida`
-   * - :kbd:`5`
-     - :kbd:`cnpjOrgao`
-     - :kbd:`Texto (14)`
-     - :kbd:`Sim`
-     - :kbd:`CNPJ do órgão ou entidade da parte envolvida`
-   * - :kbd:`6`
-     - :kbd:`codUnidade`
-     - :kbd:`Texto (30)`
-     - :kbd:`Sim`
-     - :kbd:`Código da unidade administrativa da parte envolvida`
-   * - :kbd:`7`
-     - :kbd:`tipoParteEnvolvida`
-     - :kbd:`Inteiro`
-     - :kbd:`Sim`
-     - :kbd:`Código do tipo da parte envolvida`
+   * - :destaque:`1`
+     - :destaque:`cnpj`
+     - :destaque:`Texto (14)`
+     - :destaque:`Sim`
+     - :destaque:`CNPJ do órgão originário da contratação informado na inclusão (proprietário da contratação)`
+   * - :destaque:`2`
+     - :destaque:`anoCompra`
+     - :destaque:`Inteiro`
+     - :destaque:`Sim`
+     - :destaque:`Ano da contratação`
+   * - :destaque:`3`
+     - :destaque:`sequencialCompra`
+     - :destaque:`Inteiro`
+     - :destaque:`Sim`
+     - :destaque:`Sequencial da contratação no PNCP; número gerado no momento em que a contratação foi inserida`
+   * - :destaque:`4`
+     - :destaque:`sequencialAta`
+     - :destaque:`Inteiro`
+     - :destaque:`Sim`
+     - :destaque:`Sequencial da ata no PNCP; número gerado no momento em que a ata foi inserida`
+   * - :destaque:`5`
+     - :destaque:`cnpjOrgao`
+     - :destaque:`Texto (14)`
+     - :destaque:`Sim`
+     - :destaque:`CNPJ do órgão ou entidade da parte envolvida`
+   * - :destaque:`6`
+     - :destaque:`codUnidade`
+     - :destaque:`Texto (30)`
+     - :destaque:`Sim`
+     - :destaque:`Código da unidade administrativa da parte envolvida`
+   * - :destaque:`7`
+     - :destaque:`tipoParteEnvolvida`
+     - :destaque:`Inteiro`
+     - :destaque:`Sim`
+     - :destaque:`Código do tipo da parte envolvida`
 
 Dados de retorno
 ^^^^^^^^^^^^^^^^
@@ -2397,66 +2397,66 @@ Dados de retorno
      - Tipo
      - Descrição
 
-   * - :kbd:`1`
-     - :kbd:`dataInclusao`
-     - :kbd:`Data/Hora`
-     - :kbd:`Data e hora da inclusão da informação no PNCP`
-   * - :kbd:`2`
-     - :kbd:`tipoParteEnvolvida`
+   * - :destaque:`1`
+     - :destaque:`dataInclusao`
+     - :destaque:`Data/Hora`
+     - :destaque:`Data e hora da inclusão da informação no PNCP`
+   * - :destaque:`2`
+     - :destaque:`tipoParteEnvolvida`
      - 
-     - :kbd:`Tipo de parte envolvida`
-   * - :kbd:`2.1`
-     - :kbd:`id`
-     - :kbd:`Inteiro`
-     - :kbd:`Código do tipo de parte envolvida`
-   * - :kbd:`2.2`
-     - :kbd:`nome`
-     - :kbd:`Texto`
-     - :kbd:`Nome do tipo de parte envolvida`
-   * - :kbd:`2.3`
-     - :kbd:`descricao`
-     - :kbd:`Texto`
-     - :kbd:`Descrição do tipo de parte envolvida`
-   * - :kbd:`3`
-     - :kbd:`orgao`
+     - :destaque:`Tipo de parte envolvida`
+   * - :destaque:`2.1`
+     - :destaque:`id`
+     - :destaque:`Inteiro`
+     - :destaque:`Código do tipo de parte envolvida`
+   * - :destaque:`2.2`
+     - :destaque:`nome`
+     - :destaque:`Texto`
+     - :destaque:`Nome do tipo de parte envolvida`
+   * - :destaque:`2.3`
+     - :destaque:`descricao`
+     - :destaque:`Texto`
+     - :destaque:`Descrição do tipo de parte envolvida`
+   * - :destaque:`3`
+     - :destaque:`orgao`
      - 
-     - :kbd:`Dados do órgão ou entidade`
-   * - :kbd:`3.1`
-     - :kbd:`cnpj`
-     - :kbd:`Texto`
-     - :kbd:`CNPJ do órgão ou entidade`
-   * - :kbd:`3.2`
-     - :kbd:`nome`
-     - :kbd:`Texto`
-     - :kbd:`Nome do órgão ou entidade`
-   * - :kbd:`4`
-     - :kbd:`unidade`
+     - :destaque:`Dados do órgão ou entidade`
+   * - :destaque:`3.1`
+     - :destaque:`cnpj`
+     - :destaque:`Texto`
+     - :destaque:`CNPJ do órgão ou entidade`
+   * - :destaque:`3.2`
+     - :destaque:`nome`
+     - :destaque:`Texto`
+     - :destaque:`Nome do órgão ou entidade`
+   * - :destaque:`4`
+     - :destaque:`unidade`
      - 
-     - :kbd:`Dados da unidade administrativa`
-   * - :kbd:`4.1`
-     - :kbd:`codigo`
-     - :kbd:`Texto`
-     - :kbd:`Código da unidade administrativa`
-   * - :kbd:`4.2`
-     - :kbd:`nomeUnidade`
-     - :kbd:`Texto`
-     - :kbd:`Nome da unidade administrativa`
-   * - :kbd:`4.3`
-     - :kbd:`localidade`
+     - :destaque:`Dados da unidade administrativa`
+   * - :destaque:`4.1`
+     - :destaque:`codigo`
+     - :destaque:`Texto`
+     - :destaque:`Código da unidade administrativa`
+   * - :destaque:`4.2`
+     - :destaque:`nomeUnidade`
+     - :destaque:`Texto`
+     - :destaque:`Nome da unidade administrativa`
+   * - :destaque:`4.3`
+     - :destaque:`localidade`
      - 
-     - :kbd:`Localidade da unidade administrativa`
-   * - :kbd:`4.3.1`
-     - :kbd:`uf`
-     - :kbd:`Texto`
-     - :kbd:`Unidade federativa do município`
-   * - :kbd:`4.3.2`
-     - :kbd:`codigoIbgeMunicipio`
-     - :kbd:`Texto`
-     - :kbd:`Código IBGE do município`
-   * - :kbd:`4.3.3`
-     - :kbd:`nomeMunicipio`
-     - :kbd:`Texto`
-     - :kbd:`Nome do município`
+     - :destaque:`Localidade da unidade administrativa`
+   * - :destaque:`4.3.1`
+     - :destaque:`uf`
+     - :destaque:`Texto`
+     - :destaque:`Unidade federativa do município`
+   * - :destaque:`4.3.2`
+     - :destaque:`codigoIbgeMunicipio`
+     - :destaque:`Texto`
+     - :destaque:`Código IBGE do município`
+   * - :destaque:`4.3.3`
+     - :destaque:`nomeMunicipio`
+     - :destaque:`Texto`
+     - :destaque:`Nome do município`
 
 Consultar Partes envolvidas em Ata de Registro de Preço
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -2506,36 +2506,36 @@ Dados de entrada
      - Obrigatório
      - Descrição
 
-   * - :kbd:`1`
-     - :kbd:`cnpj`
-     - :kbd:`Texto (14)`
-     - :kbd:`Sim`
-     - :kbd:`CNPJ do órgão originário da contratação informado na inclusão (proprietário da contratação)`
-   * - :kbd:`2`
-     - :kbd:`anoCompra`
-     - :kbd:`Inteiro`
-     - :kbd:`Sim`
-     - :kbd:`Ano da contratação`
-   * - :kbd:`3`
-     - :kbd:`sequencialCompra`
-     - :kbd:`Inteiro`
-     - :kbd:`Sim`
-     - :kbd:`Sequencial da contratação no PNCP; número gerado no momento em que a contratação foi inserida`
-   * - :kbd:`4`
-     - :kbd:`sequencialAta`
-     - :kbd:`Inteiro`
-     - :kbd:`Sim`
-     - :kbd:`Sequencial da ata no PNCP; número gerado no momento em que a ata foi inserida`
-   * - :kbd:`5`
-     - :kbd:`pagina`
-     - :kbd:`Inteiro`
-     - :kbd:`Não`
-     - :kbd:`Número da página a ser retornada quando utilizada a paginação`
-   * - :kbd:`6`
-     - :kbd:`tamanhoPagina`
-     - :kbd:`Inteiro`
-     - :kbd:`Não`
-     - :kbd:`Quantidade de partes envolvidas a serem retornadas na paginação quando informado`
+   * - :destaque:`1`
+     - :destaque:`cnpj`
+     - :destaque:`Texto (14)`
+     - :destaque:`Sim`
+     - :destaque:`CNPJ do órgão originário da contratação informado na inclusão (proprietário da contratação)`
+   * - :destaque:`2`
+     - :destaque:`anoCompra`
+     - :destaque:`Inteiro`
+     - :destaque:`Sim`
+     - :destaque:`Ano da contratação`
+   * - :destaque:`3`
+     - :destaque:`sequencialCompra`
+     - :destaque:`Inteiro`
+     - :destaque:`Sim`
+     - :destaque:`Sequencial da contratação no PNCP; número gerado no momento em que a contratação foi inserida`
+   * - :destaque:`4`
+     - :destaque:`sequencialAta`
+     - :destaque:`Inteiro`
+     - :destaque:`Sim`
+     - :destaque:`Sequencial da ata no PNCP; número gerado no momento em que a ata foi inserida`
+   * - :destaque:`5`
+     - :destaque:`pagina`
+     - :destaque:`Inteiro`
+     - :destaque:`Não`
+     - :destaque:`Número da página a ser retornada quando utilizada a paginação`
+   * - :destaque:`6`
+     - :destaque:`tamanhoPagina`
+     - :destaque:`Inteiro`
+     - :destaque:`Não`
+     - :destaque:`Quantidade de partes envolvidas a serem retornadas na paginação quando informado`
 
 Dados de retorno
 ^^^^^^^^^^^^^^^^
@@ -2550,87 +2550,87 @@ Dados de retorno
      - Tipo
      - Descrição
 
-   * - :kbd:`1`
-     - :kbd:`data`
-     - :kbd:`Lista`
-     - :kbd:`Lista com os dados das partes envolvidas de uma ata de registro de preço`
-   * - :kbd:`1.1`
-     - :kbd:`dataInclusao`
-     - :kbd:`Data/Hora`
-     - :kbd:`Data e hora da inclusão da informação no PNCP`
-   * - :kbd:`1.2`
-     - :kbd:`tipoParteEnvolvida`
+   * - :destaque:`1`
+     - :destaque:`data`
+     - :destaque:`Lista`
+     - :destaque:`Lista com os dados das partes envolvidas de uma ata de registro de preço`
+   * - :destaque:`1.1`
+     - :destaque:`dataInclusao`
+     - :destaque:`Data/Hora`
+     - :destaque:`Data e hora da inclusão da informação no PNCP`
+   * - :destaque:`1.2`
+     - :destaque:`tipoParteEnvolvida`
      - 
-     - :kbd:`Tipo de parte envolvida`
-   * - :kbd:`1.2.1`
-     - :kbd:`id`
-     - :kbd:`Inteiro`
-     - :kbd:`Código do tipo de parte envolvida`
-   * - :kbd:`1.2.2`
-     - :kbd:`nome`
-     - :kbd:`Texto`
-     - :kbd:`Nome do tipo de parte envolvida`
-   * - :kbd:`1.2.3`
-     - :kbd:`descricao`
-     - :kbd:`Texto`
-     - :kbd:`Descrição do tipo de parte envolvida`
-   * - :kbd:`1.3`
-     - :kbd:`orgao`
+     - :destaque:`Tipo de parte envolvida`
+   * - :destaque:`1.2.1`
+     - :destaque:`id`
+     - :destaque:`Inteiro`
+     - :destaque:`Código do tipo de parte envolvida`
+   * - :destaque:`1.2.2`
+     - :destaque:`nome`
+     - :destaque:`Texto`
+     - :destaque:`Nome do tipo de parte envolvida`
+   * - :destaque:`1.2.3`
+     - :destaque:`descricao`
+     - :destaque:`Texto`
+     - :destaque:`Descrição do tipo de parte envolvida`
+   * - :destaque:`1.3`
+     - :destaque:`orgao`
      - 
-     - :kbd:`Dados do órgão ou entidade`
-   * - :kbd:`1.3.1`
-     - :kbd:`cnpj`
-     - :kbd:`Texto`
-     - :kbd:`CNPJ do órgão ou entidade`
-   * - :kbd:`1.3.2`
-     - :kbd:`nome`
-     - :kbd:`Texto`
-     - :kbd:`Nome do órgão ou entidade`
-   * - :kbd:`1.4`
-     - :kbd:`unidade`
+     - :destaque:`Dados do órgão ou entidade`
+   * - :destaque:`1.3.1`
+     - :destaque:`cnpj`
+     - :destaque:`Texto`
+     - :destaque:`CNPJ do órgão ou entidade`
+   * - :destaque:`1.3.2`
+     - :destaque:`nome`
+     - :destaque:`Texto`
+     - :destaque:`Nome do órgão ou entidade`
+   * - :destaque:`1.4`
+     - :destaque:`unidade`
      - 
-     - :kbd:`Dados da unidade administrativa`
-   * - :kbd:`1.4.1`
-     - :kbd:`codigo`
-     - :kbd:`Texto`
-     - :kbd:`Código da unidade administrativa`
-   * - :kbd:`1.4.2`
-     - :kbd:`nomeUnidade`
-     - :kbd:`Texto`
-     - :kbd:`Nome da unidade administrativa`
-   * - :kbd:`1.4.3`
-     - :kbd:`localidade`
+     - :destaque:`Dados da unidade administrativa`
+   * - :destaque:`1.4.1`
+     - :destaque:`codigo`
+     - :destaque:`Texto`
+     - :destaque:`Código da unidade administrativa`
+   * - :destaque:`1.4.2`
+     - :destaque:`nomeUnidade`
+     - :destaque:`Texto`
+     - :destaque:`Nome da unidade administrativa`
+   * - :destaque:`1.4.3`
+     - :destaque:`localidade`
      - 
-     - :kbd:`Localidade da unidade administrativa`
-   * - :kbd:`1.4.3.1`
-     - :kbd:`uf`
-     - :kbd:`Texto`
-     - :kbd:`Unidade federativa do município`
-   * - :kbd:`1.4.3.2`
-     - :kbd:`codigoIbgeMunicipio`
-     - :kbd:`Texto`
-     - :kbd:`Código IBGE do município`
-   * - :kbd:`1.4.3.3`
-     - :kbd:`nomeMunicipio`
-     - :kbd:`Texto`
-     - :kbd:`Nome do município`
-   * - :kbd:`2`
-     - :kbd:`totalRegistros`
-     - :kbd:`Inteiro`
-     - :kbd:`Total de registros de partes envolvidas encontrados`
-   * - :kbd:`3`
-     - :kbd:`totalPaginas`
-     - :kbd:`Inteiro`
-     - :kbd:`Total de páginas`
-   * - :kbd:`4`
-     - :kbd:`numeroPagina`
-     - :kbd:`Inteiro`
-     - :kbd:`Número da página consultada`
-   * - :kbd:`5`
-     - :kbd:`paginasRestantes`
-     - :kbd:`Inteiro`
-     - :kbd:`Quantidade de páginas restantes`
-   * - :kbd:`6`
-     - :kbd:`empty`
-     - :kbd:`Booleano`
-     - :kbd:`Indicador se a lista está vazia`
+     - :destaque:`Localidade da unidade administrativa`
+   * - :destaque:`1.4.3.1`
+     - :destaque:`uf`
+     - :destaque:`Texto`
+     - :destaque:`Unidade federativa do município`
+   * - :destaque:`1.4.3.2`
+     - :destaque:`codigoIbgeMunicipio`
+     - :destaque:`Texto`
+     - :destaque:`Código IBGE do município`
+   * - :destaque:`1.4.3.3`
+     - :destaque:`nomeMunicipio`
+     - :destaque:`Texto`
+     - :destaque:`Nome do município`
+   * - :destaque:`2`
+     - :destaque:`totalRegistros`
+     - :destaque:`Inteiro`
+     - :destaque:`Total de registros de partes envolvidas encontrados`
+   * - :destaque:`3`
+     - :destaque:`totalPaginas`
+     - :destaque:`Inteiro`
+     - :destaque:`Total de páginas`
+   * - :destaque:`4`
+     - :destaque:`numeroPagina`
+     - :destaque:`Inteiro`
+     - :destaque:`Número da página consultada`
+   * - :destaque:`5`
+     - :destaque:`paginasRestantes`
+     - :destaque:`Inteiro`
+     - :destaque:`Quantidade de páginas restantes`
+   * - :destaque:`6`
+     - :destaque:`empty`
+     - :destaque:`Booleano`
+     - :destaque:`Indicador se a lista está vazia`
