@@ -1798,202 +1798,163 @@ Dados de retorno
    :widths: 5 30 20 45
    :header-rows: 1
 
-   * - Id
+  * - Id
      - Campo
      - Tipo
      - Descrição
-   * - 1
-     - numeroControlePNCP
-     - String
-     - Número de controle PNCP do contrato ou empenho (id contrato PNCP)
-   * - 2
-     - numeroControlePNCPCompra
-     - String
-     - Número de controle PNCP da contratação relacionada (id contratação PNCP)
-   * - 3
-     - numeroContratoEmpenho
-     - Texto (50)
-     - Número do contrato ou empenho com força de contrato
-   * - 4
-     - anoContrato
-     - Inteiro
-     - Ano do contrato ou empenho
-   * - 5
-     - sequencialContrato
-     - Inteiro
-     - Número sequencial do contrato ou empenho (gerado pelo PNCP)
-   * - 6
-     - processo
-     - Texto (50)
-     - Número do processo
-   * - 7
-     - tipoContrato
-     - Agrupador
-     - Dados do tipo de contrato ou empenho
-   * - 7.1
-     - Id
-     - Inteiro
-     - Código da tabela de domínio Tipo de contrato
-   * - 7.2
-     - Nome
-     - String
-     - Nome do Tipo de Contrato
-   * - 8
-     - categoriaProcesso
-     - Agrupador
-     - Dados da categoria do processo
-   * - 8.1
-     - Id
-     - Inteiro
-     - Código da tabela de domínio Categoria
-   * - 8.2
-     - Nome
-     - String
-     - Nome da Categoria do processo
-   * - 9
-     - receita
-     - Booleano
-     - Receita ou despesa: True - Receita; False - Despesa
-   * - 10
-     - objetoContrato
-     - Texto (5120)
-     - Descrição do objeto do contrato ou empenho
-   * - 11
-     - informacaoComplementar
-     - Texto (5120)
-     - Informações complementares; se existir
-   * - 12
-     - orgaoEntidade
-     - Agrupador
-     - Dados do órgão/entidade do contrato ou empenho
-   * - 12.1
-     - cnpj
-     - String
-     - CNPJ do órgão referente ao contrato ou empenho
-   * - 12.2
-     - razaosocial
-     - String
-     - Razão social do órgão
-   * - 12.3
-     - poderId
-     - String
-     - L - Legislativo; E - Executivo; J - Judiciário
-   * - 12.4
-     - esferaId
-     - String
-     - F - Federal; E - Estadual; M - Municipal; D - Distrital
-   * - 13
-     - unidadeOrgao
-     - Agrupador
-     - Dados da unidade executora do órgão
-   * - 13.1
-     - codigoUnidade
-     - String
-     - Código da unidade executora
-   * - 13.2
-     - nomeUnidade
-     - String
-     - Nome da unidade executora
-   * - 13.3
-     - municipioId
-     - Inteiro
-     - Código IBGE do município
-   * - 13.4
-     - municipioNome
-     - String
-     - Nome do município
-   * - 13.5
-     - ufSigla
-     - String
-     - Sigla da UF
-   * - 13.6
-     - ufNome
-     - String
-     - Nome da UF
-   * - 16
-     - tipoPessoa
-     - Texto (2)
-     - PJ, PF ou PE
-   * - 17
-     - niFornecedor
-     - Texto (30)
-     - Identificação do fornecedor (CNPJ/CPF/estrangeiro)
-   * - 18
-     - nomeRazaoSocialFornecedor
-     - Texto (100)
-     - Nome ou razão social do fornecedor
-   * - 22
-     - valorInicial
-     - Decimal
-     - Valor inicial (até 4 casas decimais)
-   * - 23
-     - numeroParcelas
-     - Inteiro
-     - Número de parcelas
-   * - 24
-     - valorParcela
-     - Decimal
-     - Valor da parcela
-   * - 25
-     - valorGlobal
-     - Decimal
-     - Valor global
-   * - 26
-     - valorAcumulado
-     - Decimal
-     - Valor acumulado
-   * - 27
-     - dataAssinatura
-     - Data
-     - Data de assinatura
-   * - 28
-     - dataVigenciaInicio
-     - Data
-     - Início da vigência
-   * - 29
-     - dataVigenciaFim
-     - Data
-     - Fim da vigência
-   * - 30
-     - numeroRetificacao
-     - Inteiro
-     - Número de retificações
-   * - 31
-     - usuarioNome
-     - String
-     - Nome do sistema que enviou
-   * - 32
-     - dataPublicacaoPncp
-     - Data/Hora
-     - Data de publicação no PNCP
-   * - 33
-     - dataAtualizacao
-     - Data/Hora
-     - Última atualização
-   * - 34
-     - identificadorCipi
-     - String
-     - Identificador no CIPI
-   * - 35
-     - urlCipi
-     - String
-     - URL do CIPI
+
+   * - :destaque:`1`
+     - :destaque:`numeroControlePNCP`
+     - :destaque:`String`
+     - :destaque:`Número de controle PNCP do contrato/empenho (id contrato PNCP)`
+
+   * - :destaque:`2`
+     - :destaque:`numeroControlePNCPCompra`
+     - :destaque:`String`
+     - :destaque:`Número de controle PNCP da contratação relacionada (id contratação PNCP)`
+
+   * - :destaque:`3`
+     - :destaque:`numeroContratoEmpenho`
+     - :destaque:`Texto (50)`
+     - :destaque:`Número do contrato ou empenho com força de contrato`
+
+   * - :destaque:`4`
+     - :destaque:`anoContrato`
+     - :destaque:`Inteiro`
+     - :destaque:`Ano do contrato/empenho`
+
+   * - :destaque:`5`
+     - :destaque:`sequencialContrato`
+     - :destaque:`Inteiro`
+     - :destaque:`Número sequencial do contrato/empenho (gerado pelo PNCP)`
+
+   * - :destaque:`6`
+     - :destaque:`processo`
+     - :destaque:`Texto (50)`
+     - :destaque:`Número do processo`
+
+   * - :destaque:`7`
+     - :destaque:`tipoContrato`
+     - :destaque:``
+     - :destaque:`Dados do tipo de contrato/empenho`
+
+   * - :destaque:`7.1`
+     - :destaque:`Id`
+     - :destaque:`Inteiro`
+     - :destaque:`Código da tabela de domínio Tipo de contrato`
+
+   * - :destaque:`7.2`
+     - :destaque:`Nome`
+     - :destaque:`String`
+     - :destaque:`Nome do Tipo de Contrato`
+
+   * - :destaque:`8`
+     - :destaque:`categoriaProcesso`
+     - :destaque:``
+     - :destaque:`Dados da categoria do processo`
+
+   * - :destaque:`8.1`
+     - :destaque:`Id`
+     - :destaque:`Inteiro`
+     - :destaque:`Código da tabela de domínio Categoria`
+
+   * - :destaque:`8.2`
+     - :destaque:`Nome`
+     - :destaque:`String`
+     - :destaque:`Nome da Categoria do processo`
+
+   * - :destaque:`9`
+     - :destaque:`receita`
+     - :destaque:`Booleano`
+     - :destaque:`Receita ou despesa: True - Receita; False - Despesa`
+
+   * - :destaque:`10`
+     - :destaque:`objetoContrato`
+     - :destaque:`Texto (5120)`
+     - :destaque:`Descrição do objeto do contrato/empenho`
+
+   * - :destaque:`11`
+     - :destaque:`informacaoComplementar`
+     - :destaque:`Texto (5120)`
+     - :destaque:`Informações complementares, se houver`
+
+   * - :destaque:`12`
+     - :destaque:`orgaoEntidade`
+     - :destaque:``
+     - :destaque:`Dados do Órgão/Entidade do Contrato/Empenho`
+
+   * - :destaque:`12.1`
+     - :destaque:`cnpj`
+     - :destaque:`String`
+     - :destaque:`CNPJ do Órgão`
+
+   * - :destaque:`12.2`
+     - :destaque:`razaosocial`
+     - :destaque:`String`
+     - :destaque:`Razão social do Órgão`
+
+   * - :destaque:`12.3`
+     - :destaque:`poderId`
+     - :destaque:`String`
+     - :destaque:`Código do poder: L - Legislativo; E - Executivo; J - Judiciário`
+
+   * - :destaque:`12.4`
+     - :destaque:`esferaId`
+     - :destaque:`String`
+     - :destaque:`Código da esfera: F - Federal; E - Estadual; M - Municipal; D - Distrital`
+
+   * - :destaque:`13`
+     - :destaque:`unidadeOrgao`
+     - :destaque:``
+     - :destaque:`Dados da Unidade executora do Órgão`
+
+   * - :destaque:`13.1`
+     - :destaque:`codigoUnidade`
+     - :destaque:`String`
+     - :destaque:`Código da Unidade Executora`
+
+   * - :destaque:`13.2`
+     - :destaque:`nomeUnidade`
+     - :destaque:`String`
+     - :destaque:`Nome da Unidade Executora`
+
+   * - :destaque:`13.3`
+     - :destaque:`municipioId`
+     - :destaque:`Inteiro`
+     - :destaque:`Código IBGE do município`
+
+   * - :destaque:`13.4`
+     - :destaque:`municipioNome`
+     - :destaque:`String`
+     - :destaque:`Nome do município`
+
+   * - :destaque:`13.5`
+     - :destaque:`ufSigla`
+     - :destaque:`String`
+     - :destaque:`Sigla da UF`
+
+   * - :destaque:`13.6`
+     - :destaque:`ufNome`
+     - :destaque:`String`
+     - :destaque:`Nome da UF`
+
    * - :destaque:`36`
      - :destaque:`frutoAdesao`
      - :destaque:`Booleano`
-     - :destaque:`Indica se é fruto de adesão`
-   * - :destaque:`37`
-     - :destaque:`numeroControlePncpAta`
-     - :destaque:`String`
-     - :destaque:`Número de controle da ata relacionada`
+     - :destaque:`Indicador se é adesão à ata (False-Não / True-Sim)`
+
    * - :destaque:`38`
-     - :destaque:`numeroControlePncpAta`
-     - :destaque:`String`
-     - :destaque:`Número de controle da ata relacionada`
+     - :destaque:`temRemanejamento`
+     - :destaque:`Booleano`
+     - :destaque:`O remanejamento de quantidade em atas de registro de preços (SRP) é a transferência de saldos |
+       de itens entre órgãos participantes ou não participantes (caronas), permitindo otimizar a compra. |
+       Deve ser autorizado pelo órgão gerenciador, respeitando limites legais e a anuência do fornecedor. |
+       Indicador de Remanejamento (False-Não / True-Sim)`
+
    * - :destaque:`39`
-     - :destaque:`numeroControlePncpAta`
-     - :destaque:`String`
-     - :destaque:`Número de controle da ata relacionada`
+     - :destaque:`emendaParlamentar`
+     - :destaque:`Booleano`
+     - :destaque:`Indicador de Emenda Parlamentar (False-Não / True-Sim)`
 
 Consultar Histórico do Contrato ou Empenho
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
