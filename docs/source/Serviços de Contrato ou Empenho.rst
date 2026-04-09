@@ -3555,6 +3555,8 @@ Retificar Parcialmente um Contrato/Empenho
 
 	Serviço que permite retificar parcialmente um contrato/empenho. Além da justificativa, pelo menos um dos campos relacionados ao empenho deve ser enviado para retificação. Este serviço será acionado por qualquer plataforma digital credenciada.
 
+\
+
 Detalhes da Requisição
 ^^^^^^^^^^^^^^^^^^^^^^
 		
@@ -3562,10 +3564,10 @@ Detalhes da Requisição
 		
 	Nota: alimentar os parâmetros {cnpj}, {ano} e {sequencial} na URL.
 		
-		.. list-table::
-		   :width: 100%
-		   :widths: 50 15
-		   :header-rows: 1
+.. list-table::
+	:width: 100%
+	:widths: 50 15
+	:header-rows: 1
 		
 		   * - Endpoint
 		     - Método HTTP
@@ -3578,7 +3580,7 @@ Exemplo de Payload
 		
 	.. code-block:: json
 		:linenos:
-		:emphasize-lines: 1,35
+		:emphasize-lines: 1-35
 		
 				{
 			  "cnpjCompra": "10000000000003",
@@ -3617,8 +3619,8 @@ Exemplo de Payload
 			}
 		
 		
-		Exemplo Requisição (cURL)
-		^^^^^^^^^^^^^^^^^^^^^^^^^
+Exemplo Requisição (cURL)
+^^^^^^^^^^^^^^^^^^^^^^^^^
 		
 .. code-block:: bash
 	:linenos:
@@ -3639,11 +3641,11 @@ Dados de entrada
    :widths: 5 25 15 10 25
    :header-rows: 1
 
-   * - :kbd:`Id`
-     - :kbd:`Campo`
-     - :kbd:`Tipo`
-     - :kbd:`Obrigatório`
-     - :kbd:`Descrição`
+   * - Id
+     - Campo
+     - Tipo
+     - Obrigatório
+     - Descrição
    * - :kbd:`1`
      - :kbd:`cnpj`
      - :kbd:`Texto (14)`
@@ -3835,11 +3837,11 @@ Dados de entrada
      - Tipo
      - Obrigatório
      - Descrição
-   * - 1
-     - location
-     - Texto (255)
-     - Sim
-     - Endereço http do recurso retificado
+   * - :kbd:`1`
+     - :kbd:`location`
+     - :kbd:`Texto (255)`
+     - :kbd:`Sim`
+     - :kbd:`Endereço http do recurso retificado`
 
 Códigos de Retorno
 ^^^^^^^^^^^^^^^^^^
@@ -3849,9 +3851,9 @@ Códigos de Retorno
    :widths: 10 25 20
    :header-rows: 1
 
-   * - :kbd:`Código HTTP`
-     - :kbd:`Mensagem`
-     - :kbd:`Tipo`
+   * - Código HTTP
+     - `Mensagem
+     - Tipo
    * - :kbd:`201`
      - :kbd:`Created`
      - :kbd:`Sucesso`
@@ -3933,11 +3935,11 @@ Dados de entrada
    :widths: 5 20 15 10 50
    :header-rows: 1
 
-   * - :kbd:`Id`
-     - :kbd:`Campo`
-     - :kbd:`Tipo`
-     - :kbd:`Obrigatório`
-     - :kbd:`Descrição`
+   * - Id
+     - Campo
+     - Tipo
+     - Obrigatório
+     - Descrição
    * - :kbd:`1`
      - :kbd:`cnpj`
      - :kbd:`Texto (14)`
@@ -3955,7 +3957,7 @@ Dados de entrada
      - :kbd:`Número sequencial do contrato/empenho (gerado pelo PNCP no momento da inclusão)`
    * - :kbd:`4`
      - :kbd:`empenhos`
-     - :kbd:``
+     - 
      - :kbd:`Sim`
      - :kbd:`Lista de metadados dos empenhos`
    * - :kbd:`4.1`
@@ -3986,7 +3988,7 @@ Dados de entrada
    * - :kbd:`4.6`
      - :kbd:`codigoNaturezaDespesa`
      - :kbd:`Texto (10)`
-     - :kbd:``
+     - 
      - :kbd:`Código da natureza de despesa`
    * - :kbd:`4.7`
      - :kbd:`dataEmissaoEmpenho`
@@ -4017,11 +4019,11 @@ Dados de retorno
    :widths: 10 25 20 15 30
    :header-rows: 1
 
-   * - :kbd:`Id`
-     - :kbd:`Campo`
-     - :kbd:`Tipo`
-     - :kbd:`Obrigatório`
-     - :kbd:`Descrição`
+   * - Id
+     - Campo
+     - Tipo
+     - Obrigatório
+     - Descrição
    * - :kbd:`1`
      - :kbd:`location`
      - :kbd:`Texto (255)`
@@ -4036,9 +4038,9 @@ Códigos de Retorno
    :widths: 10 25 20
    :header-rows: 1
 
-   * - :kbd:`Código HTTP`
-     - :kbd:`Mensagem`
-     - :kbd:`Tipo`
+   * - Código HTTP
+     - Mensagem
+     - Tipo
    * - :kbd:`200`
      - :kbd:`Created`
      - :kbd:`Sucesso`
