@@ -4058,3 +4058,209 @@ Códigos de Retorno
    * - :kbd:`500`
      - :kbd:`Internal Server Error`
      - :kbd:`Erro`
+
+Retificar Parcialmente Empenho
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. container:: destaque-amarelo
+
+	Serviço que permite retificar um empenho. Além da justificativa, pelo menos um dos campos relacionados ao empenho deve ser enviado para retificação. Este serviço será acionado por qualquer plataforma digital credenciada.
+
+\
+
+Detalhes da Requisição
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 50 15
+   :header-rows: 1
+
+   * - Endpoint
+     - Método HTTP
+   * - :kbd:`/v1/orgaos/{cnpj}/contratos/{ano}/{sequencialContra-to}/empenhos/{sequencialEmpenho}`
+     - :kbd:`PUT`
+	 
+
+Exemplo de Payload
+^^^^^^^^^^^^^^^^^^
+
+.. code-block:: json
+  :linenos:
+  :emphasize-lines: 1,15
+
+	{
+	  "numeroEmpenho": "string",
+	  "tipoPessoa": "PJ",
+	  "niCredorFornecedor": "string",
+	  "nomeCredorFornecedor": "string",
+	  "numeroPlanoInterno": "string",
+	  "codigoNaturezaDespesa": "string",
+	  "dataEmissaoEmpenho": "2026-01-01T12:00:00",
+	  "valorTotal": 1000.0000,
+	  "valorSubItem": 1000.0000,
+	  "codigoEmenda": "string"
+	  "situacaoEmpenhoId": 2,
+	  "dataSituacaoEmpenho": "2026-01-01T12:00:00",
+	  "justificativa": "motivo/justificativa para a retificação do empenho",
+	}
+
+  
+Exemplo Requisição (cURL)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+  :linenos:
+  :emphasize-lines: 1,2
+
+	curl -k -X  PUT --header "Authorization: Bearer access_token" "${BASE_URL}/v1/orgaos/10000000000003/contratos/2025/1/empenhos/1" -H "accept: */*" -H "Content-Type: application/json" --data "@/home/objeto.json"
+
+Dados de entrada
+^^^^^^^^^^^^^^^^
+
+.. Note::
+
+	Alimentar os parâmetros :kbd:`{cnpj}`, :kbd:`{ano}`, :kbd:`{sequencialContrato}` e :kbd:`{sequencialEmpenho}` na URL
+
+.. list-table::
+   :width: 100%
+   :widths: 5 20 15 10 50
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Obrigatório
+     - Descrição
+   * - :kbd:`1`
+     - :kbd:`cnpj`
+     - :kbd:`Texto (14)`
+     - :kbd:`Sim`
+     - :kbd:`CNPJ do órgão do contrato/empenho`
+   * - :kbd:`2`
+     - :kbd:`ano`
+     - :kbd:`Inteiro`
+     - :kbd:`Sim`
+     - :kbd:`Ano do contrato/empenho`
+   * - :kbd:`3`
+     - :kbd:`sequencial`
+     - :kbd:`Inteiro`
+     - :kbd:`Sim`
+     - :kbd:`Número sequencial do contrato/empenho (gerado pelo PNCP no momento da inclusão)`
+   * - :kbd:`4`
+     - :kbd:`sequencialEmpenho`
+     - :kbd:`Inteiro`
+     - :kbd:`Sim`
+     - :kbd:`Número sequencial do empenho (gerado pelo PNCP no momento da inclusão)`
+   * - :kbd:`5`
+     - :kbd:`justificativa`
+     - :kbd:`Texto (255)`
+     - :kbd:`Sim`
+     - :kbd:`Motivo/justificativa para a retificação do empenho`
+   * - :kbd:`6`
+     - :kbd:`numeroEmpenho`
+     - :kbd:`Texto (50)`
+     - :kbd:`Não`
+     - :kbd:`Número do empenho`
+   * - :kbd:`7`
+     - :kbd:`tipoPessoa`
+     - :kbd:`Texto (2)`
+     - :kbd:`Não`
+     - :kbd:`PJ - Pessoa jurídica; PF - Pessoa física; PE - Pessoa estrangeira`
+   * - :kbd:`8`
+     - :kbd:`niCredorFornecedor`
+     - :kbd:`Texto (30)`
+     - :kbd:`Não`
+     - :kbd:`CNPJ, CPF ou identificador de empresa estrangeira`
+   * - :kbd:`9`
+     - :kbd:`nomeCredorFornecedor`
+     - :kbd:`Texto (250)`
+     - :kbd:`Não`
+     - :kbd:`Nome do credor/fornecedor`
+   * - :kbd:`10`
+     - :kbd:`numeroPlanoInterno`
+     - :kbd:`Texto (50)`
+     - :kbd:`Não`
+     - :kbd:`Número do Plano Interno`
+   * - :kbd:`11`
+     - :kbd:`codigoNaturezaDespesa`
+     - :kbd:`Texto (10)`
+     - :kbd:`Não`
+     - :kbd:`Código da natureza de despesa`
+   * - :kbd:`12`
+     - :kbd:`dataEmissaoEmpenho`
+     - :kbd:`Data/Hora`
+     - :kbd:`Não`
+     - :kbd:`Data/Hora da emissão do empenho`
+   * - :kbd:`13`
+     - :kbd:`valorTotal`
+     - :kbd:`Decimal`
+     - :kbd:`Não`
+     - :kbd:`Valor total do empenho`
+   * - :kbd:`14`
+     - :kbd:`valorSubItem`
+     - :kbd:`Decimal`
+     - :kbd:`Não`
+     - :kbd:`Valor do subelemento ou subitem`
+   * - :kbd:`15`
+     - :kbd:`codigoEmenda`
+     - :kbd:`Texto (50)`
+     - :kbd:`Não`
+     - :kbd:`Código da Emenda Parlamentar`
+   * - :kbd:`16`
+     - :kbd:`situacaoEmpenhoId`
+     - :kbd:`Inteiro`
+     - :kbd:`Não`
+     - :kbd:`Identificador da situação do empenho (1 – Empenhado / 2 - Cancelado)`
+   * - :kbd:`17`
+     - :kbd:`dataSituacaoEmpenho`
+     - :kbd:`Data/Hora`
+     - :kbd:`Não`
+     - :kbd:`Data/Hora da situação do empenho`
+
+Dados de retorno
+^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 10 25 20 15 30
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Obrigatório
+     - Descrição
+   * - :kbd:`1`
+     - :kbd:`location`
+     - :kbd:`Texto (255)`
+     - :kbd:`Sim`
+     - :kbd:`Endereço HTTP do recurso criado`
+
+Códigos de Retorno
+^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 10 25 20
+   :header-rows: 1
+
+   * - Código HTTP
+     - Mensagem
+     - Tipo
+   * - :kbd:`200`
+     - :kbd:`Update`
+     - :kbd:`Sucesso`
+   * - :kbd:`400`
+     - :kbd:`BadRequest`
+     - :kbd:`Erro`
+   * - :kbd:`401`
+     - :kbd:`Unauthorized`
+     - :kbd:`Erro`
+   * - :kbd:`422`
+     - :kbd:`Unprocessable Entity`
+     - :kbd:`Erro`
+   * - :kbd:`500`
+     - :kbd:`Internal Server Error`
+     - :kbd:`Erro`
+
