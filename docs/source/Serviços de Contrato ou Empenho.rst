@@ -4264,3 +4264,12 @@ Códigos de Retorno
      - :kbd:`Internal Server Error`
      - :kbd:`Erro`
 
+Excluir Empenho
+~~~~~~~~~~~~~~~
+
+.. container:: destaque-amarelo
+
+	Serviço que permite remover um empenho. Este serviço será acionado por qualquer plataforma digital credenciada.
+
+
+
