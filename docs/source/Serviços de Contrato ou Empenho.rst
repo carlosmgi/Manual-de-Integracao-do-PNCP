@@ -34,16 +34,16 @@ Serviço que permite incluir um contrato ou empenho. Este serviço será acionad
     - Data
     - Não
     - Data do término da vigência do contrato. Opcional apenas para contrato do tipo igual a 1.
-  * - :kbd:`30`
-    - :kbd:`sequencialAta`
-    - :kbd:`Inteiro`
-    - :kbd:`Não`
-    - :kbd:`Número sequencial da ata de registro de preço (gerado pelo PNCP no momento da inclusão da ata).`
-  * - :kbd:`31`
-    - :kbd:`frutoAdesao`
-    - :kbd:`Booleano`
-    - :kbd:`Sim`
-    - :kbd:`Indicador se o contrato/empenho é de um não participante, ou seja, fruto da adesão a uma ata de registro de preço.`
+  * - :destaque:`30`
+    - :destaque:`sequencialAta`
+    - :destaque:`Inteiro`
+    - :destaque:`Não`
+    - :destaque:`Número sequencial da ata de registro de preço (gerado pelo PNCP no momento da inclusão da ata).`
+  * - :destaque:`31`
+    - :destaque:`frutoAdesao`
+    - :destaque:`Booleano`
+    - :destaque:`Sim`
+    - :destaque:`Indicador se o contrato/empenho é de um não participante, ou seja, fruto da adesão a uma ata de registro de preço.`
 
 .. versionchanged:: 2.3.10
 
@@ -290,21 +290,21 @@ Dados de entrada
      - String (8 a 14)
      - Não
      - URL com informações do contrato no sistema de Cadastro Integrado de Projetos de Investimento (não se aplica a leilão)
-   * - :kbd:`32`
-     - :kbd:`sequencialAta`
-     - :kbd:`Inteiro`
-     - :kbd:`Não`
-     - :kbd:`Número sequencial da ata de registro de preço (gerado pelo PNCP no momento da inclusão da ata)`
-   * - :kbd:`33`
-     - :kbd:`frutoAdesao`
-     - :kbd:`Booleano`
-     - :kbd:`Sim`
-     - :kbd:`Indicador se o contrato/empenho é fruto de adesão a ata de registro de preço (false = não / true = sim)`
-   * - :kbd:`34`
-     - :kbd:`temRemanejamento`
-     - :kbd:`Booleano`
-     - :kbd:`Sim`
-     - :kbd:`O remanejamento de quantidade em atas de registro de preços (SRP) é a transferência de saldos de itens entre órgãos participantes ou para não participantes (caronas), permitindo otimizar a compra. Deve ser autorizado pelo órgão gerenciador, respeitando limites legais e a anuência do fornecedor para garantir o equilíbrio econômico-financeiro. Indicador de Remanejamento (False-Não / True-Sim)`
+   * - :destaque:`32`
+     - :destaque:`sequencialAta`
+     - :destaque:`Inteiro`
+     - :destaque:`Não`
+     - :destaque:`Número sequencial da ata de registro de preço (gerado pelo PNCP no momento da inclusão da ata)`
+   * - :destaque:`33`
+     - :destaque:`frutoAdesao`
+     - :destaque:`Booleano`
+     - :destaque:`Sim`
+     - :destaque:`Indicador se o contrato/empenho é fruto de adesão a ata de registro de preço (false = não / true = sim)`
+   * - :destaque:`34`
+     - :destaque:`temRemanejamento`
+     - :destaque:`Booleano`
+     - :destaque:`Sim`
+     - :destaque:`O remanejamento de quantidade em atas de registro de preços (SRP) é a transferência de saldos de itens entre órgãos participantes ou para não participantes (caronas), permitindo otimizar a compra. Deve ser autorizado pelo órgão gerenciador, respeitando limites legais e a anuência do fornecedor para garantir o equilíbrio econômico-financeiro. Indicador de Remanejamento (False-Não / True-Sim)`
 
 Dados de retorno
 ^^^^^^^^^^^^^^^^
@@ -653,8 +653,8 @@ Dados de Entrada
    * - 30
      - dataVigenciaFim
      - Data
-     - :kbd:`Não`
-     - :kbd:`Data do término da vigência do contrato. Opcional apenas para contrato do tipo igual a 1`
+     - :destaque:`Não`
+     - :destaque:`Data do término da vigência do contrato. Opcional apenas para contrato do tipo igual a 1`
    * - 31
      - justificativa
      - Texto (255)
@@ -670,21 +670,21 @@ Dados de Entrada
      - String (8 a 14)
      - Não
      - Url com informações do contrato no sistema de Cadastro Integrado de Projetos de Investimento. Não se aplica a leilão
-   * - :kbd:`34`
-     - :kbd:`sequencialAta`
-     - :kbd:`Inteiro`
-     - :kbd:`Não`
-     - :kbd:`Número sequencial da ata de registro de preço (gerado pelo PNCP no momento da inclusão da ata)`
-   * - :kbd:`35`
-     - :kbd:`frutoAdesao`
-     - :kbd:`Booleano`
-     - :kbd:`Sim`
-     - :kbd:`Indicador se o contrato/empenho é de um não participante, ou seja, fruto da adesão a uma ata de registro de preço (False-Não / True-Sim)`
-   * - :kbd:`36`
-     - :kbd:`temRemanejamento`
-     - :kbd:`Boleano`
-     - :kbd:`Sim`
-     - :kbd:`O remanejamento de quantidade em atas de registro de preços (SRP) é a transferência de saldos de itens entre órgãos participantes ou para não participantes (caronas), permitindo otimizar a compra. Deve ser autorizado pelo órgão gerenciador, respeitando limites legais e a anuência do fornecedor para garantir o equilíbrio econômico-financeiro. Indicador de Remanejamento (False-Não / True-Sim)`
+   * - :destaque:`34`
+     - :destaque:`sequencialAta`
+     - :destaque:`Inteiro`
+     - :destaque:`Não`
+     - :destaque:`Número sequencial da ata de registro de preço (gerado pelo PNCP no momento da inclusão da ata)`
+   * - :destaque:`35`
+     - :destaque:`frutoAdesao`
+     - :destaque:`Booleano`
+     - :destaque:`Sim`
+     - :destaque:`Indicador se o contrato/empenho é de um não participante, ou seja, fruto da adesão a uma ata de registro de preço (False-Não / True-Sim)`
+   * - :destaque:`36`
+     - :destaque:`temRemanejamento`
+     - :destaque:`Boleano`
+     - :destaque:`Sim`
+     - :destaque:`O remanejamento de quantidade em atas de registro de preços (SRP) é a transferência de saldos de itens entre órgãos participantes ou para não participantes (caronas), permitindo otimizar a compra. Deve ser autorizado pelo órgão gerenciador, respeitando limites legais e a anuência do fornecedor para garantir o equilíbrio econômico-financeiro. Indicador de Remanejamento (False-Não / True-Sim)`
 
 Dados de retorno
 ^^^^^^^^^^^^^^^^
@@ -1666,22 +1666,22 @@ Dados de Entrada
      - urlCipi
      - String
      - URL do CIPI
-   * - :kbd:`36`
-     - :kbd:`frutoAdesao`
-     - :kbd:`Booleano`
-     - :kbd:`Indica se é fruto de adesão`
-   * - :kbd:`37`
-     - :kbd:`numeroControlePncpAta`
-     - :kbd:`String`
-     - :kbd:`Número de controle da ata relacionada`
-   * - :kbd:`38`
-     - :kbd:`temRemanejamento`
-     - :kbd:`Boleano`
-     - :kbd:`O remanejamento de quantidade em atas de registro de preços (SRP) é a transferência de saldos de itens entre órgãos participantes ou para não participantes (caronas), permitindo otimizar a compra. Deve ser autorizado pelo órgão gerenciador, respeitando limites legais e a anuência do fornecedor para garantir o equilíbrio econômico-financeiro. Indicador de Remanejamento (False-Não / True-Sim)`
-   * - :kbd:`39`
-     - :kbd:`emendaParlamentar`
-     - :kbd:`Boleano`
-     - :kbd:`Indicador de Emenda Parlamentar (False-Não / True-Sim)`
+   * - :destaque:`36`
+     - :destaque:`frutoAdesao`
+     - :destaque:`Booleano`
+     - :destaque:`Indica se é fruto de adesão`
+   * - :destaque:`37`
+     - :destaque:`numeroControlePncpAta`
+     - :destaque:`String`
+     - :destaque:`Número de controle da ata relacionada`
+   * - :destaque:`38`
+     - :destaque:`temRemanejamento`
+     - :destaque:`Boleano`
+     - :destaque:`O remanejamento de quantidade em atas de registro de preços (SRP) é a transferência de saldos de itens entre órgãos participantes ou para não participantes (caronas), permitindo otimizar a compra. Deve ser autorizado pelo órgão gerenciador, respeitando limites legais e a anuência do fornecedor para garantir o equilíbrio econômico-financeiro. Indicador de Remanejamento (False-Não / True-Sim)`
+   * - :destaque:`39`
+     - :destaque:`emendaParlamentar`
+     - :destaque:`Boleano`
+     - :destaque:`Indicador de Emenda Parlamentar (False-Não / True-Sim)`
 
 **Códigos de Retorno**
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -1978,22 +1978,22 @@ Dados de retorno
      - urlCipi
      - String
      - URL do CIPI
-   * - :kbd:`36`
-     - :kbd:`frutoAdesao`
-     - :kbd:`Booleano`
-     - :kbd:`Indica se é fruto de adesão`
-   * - :kbd:`37`
-     - :kbd:`numeroControlePncpAta`
-     - :kbd:`String`
-     - :kbd:`Número de controle da ata relacionada`
-   * - :kbd:`38`
-     - :kbd:`numeroControlePncpAta`
-     - :kbd:`String`
-     - :kbd:`Número de controle da ata relacionada`
-   * - :kbd:`39`
-     - :kbd:`numeroControlePncpAta`
-     - :kbd:`String`
-     - :kbd:`Número de controle da ata relacionada`
+   * - :destaque:`36`
+     - :destaque:`frutoAdesao`
+     - :destaque:`Booleano`
+     - :destaque:`Indica se é fruto de adesão`
+   * - :destaque:`37`
+     - :destaque:`numeroControlePncpAta`
+     - :destaque:`String`
+     - :destaque:`Número de controle da ata relacionada`
+   * - :destaque:`38`
+     - :destaque:`numeroControlePncpAta`
+     - :destaque:`String`
+     - :destaque:`Número de controle da ata relacionada`
+   * - :destaque:`39`
+     - :destaque:`numeroControlePncpAta`
+     - :destaque:`String`
+     - :destaque:`Número de controle da ata relacionada`
 
 Consultar Histórico do Contrato ou Empenho
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -2118,7 +2118,7 @@ Dados de retorno
    * - 1.8
      - categoriaLogManutencaoNome
      - String
-     - Nome do recurso que sofreu a operação. Domínio: 1 - Contratação; 2 - Ata; 3 – Contrato/Empenho; 4 - Item de Contratação; 5 - Resultado de Item de Contratação; 6 - Documento de Contratação; 7 - Documento de Ata; 8 - Documento de Contrato/Empenho; 9 - Termo de Contrato; 10 - Documento de Termo de Contrato; 15 – Instrumento de Cobrança; :kbd:`17 - Empenho`
+     - Nome do recurso que sofreu a operação. Domínio: 1 - Contratação; 2 - Ata; 3 – Contrato/Empenho; 4 - Item de Contratação; 5 - Resultado de Item de Contratação; 6 - Documento de Contratação; 7 - Documento de Ata; 8 - Documento de Contrato/Empenho; 9 - Termo de Contrato; 10 - Documento de Termo de Contrato; 15 – Instrumento de Cobrança; :destaque:`17 - Empenho`
    * - 1.9
      - sequencialTermoContrato
      - Inteiro
@@ -2155,10 +2155,10 @@ Dados de retorno
      - sequencialInstrumentoCobranca
      - Inteiro
      - Sequencial do instrumento de cobrança no PNCP.  Retornado caso categoriaLogManutencao = 15.
-   * - :kbd:`1.18`
-     - :kbd:`sequencialEmpenho`
-     - :kbd:`Inteiro`
-     - :kbd:`Sequencial do empenho no PNCP.  Retornado caso categoriaLogManutencao = 17.`
+   * - :destaque:`1.18`
+     - :destaque:`sequencialEmpenho`
+     - :destaque:`Inteiro`
+     - :destaque:`Sequencial do empenho no PNCP.  Retornado caso categoriaLogManutencao = 17.`
 
 **Códigos de Retorno**
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -3571,8 +3571,8 @@ Detalhes da Requisição
 		
 		   * - Endpoint
 		     - Método HTTP
-		   * - :kbd:`/v1/orgaos/{cnpj}/contratos/{ano}/{sequencial}`
-		     - :kbd:`PATCH`
+		   * - :destaque:`/v1/orgaos/{cnpj}/contratos/{ano}/{sequencial}`
+		     - :destaque:`PATCH`
 			 
 		
 Exemplo de Payload
@@ -3646,186 +3646,186 @@ Dados de entrada
      - Tipo
      - Obrigatório
      - Descrição
-   * - :kbd:`1`
-     - :kbd:`cnpj`
-     - :kbd:`Texto (14)`
-     - :kbd:`Sim`
-     - :kbd:`Cnpj do órgão do contrato/empenho`
-   * - :kbd:`2`
-     - :kbd:`ano`
-     - :kbd:`Inteiro`
-     - :kbd:`Sim`
-     - :kbd:`Ano do contrato/empenho`
-   * - :kbd:`3`
-     - :kbd:`sequencial`
-     - :kbd:`Inteiro`
-     - :kbd:`Sim`
-     - :kbd:`Número sequencial do contrato/empenho (gerado pelo PNCP no momento da inclusão do mesmo)`
-   * - :kbd:`4`
-     - :kbd:`cnpjCompra`
-     - :kbd:`Texto (14)`
-     - :kbd:`Não`
-     - :kbd:`Cnpj do órgão originário da contratação (proprietário da contratação ou alienação de bens)`
-   * - :kbd:`5`
-     - :kbd:`anoCompra`
-     - :kbd:`Inteiro`
-     - :kbd:`Não`
-     - :kbd:`Ano da contratação`
-   * - :kbd:`6`
-     - :kbd:`sequencialCompra`
-     - :kbd:`Inteiro`
-     - :kbd:`Não`
-     - :kbd:`Número sequencial da contratação (gerado pelo PNCP no momento da inclusão da contratação)`
-   * - :kbd:`7`
-     - :kbd:`tipoContratoId`
-     - :kbd:`Inteiro`
-     - :kbd:`Não`
-     - :kbd:`Código da tabela de domínio Tipo de contrato`
-   * - :kbd:`8`
-     - :kbd:`numeroContratoEmpenho`
-     - :kbd:`Texto (50)`
-     - :kbd:`Não`
-     - :kbd:`Número do contrato ou empenho com força de contrato`
-   * - :kbd:`9`
-     - :kbd:`processo`
-     - :kbd:`Texto (50)`
-     - :kbd:`Não`
-     - :kbd:`Número do processo`
-   * - :kbd:`10`
-     - :kbd:`categoriaProcessoId`
-     - :kbd:`Inteiro`
-     - :kbd:`Não`
-     - :kbd:`Código da tabela de domínio Categoria`
-   * - :kbd:`11`
-     - :kbd:`receita`
-     - :kbd:`Boleano`
-     - :kbd:`Não`
-     - :kbd:`Receita ou despesa: True - Receita; False - Despesa`
-   * - :kbd:`12`
-     - :kbd:`codigoUnidade`
-     - :kbd:`Texto (20)`
-     - :kbd:`Não`
-     - :kbd:`Código da unidade executora do órgão do contrato/empenho; a unidade deverá estar cadastrada para o órgão`
-   * - :kbd:`13`
-     - :kbd:`cnpjOrgaoSubRogado`
-     - :kbd:`Texto (14)`
-     - :kbd:`Não`
-     - :kbd:`Cnpj do órgão sub-rogado; somente em caso de sub-rogação`
-   * - :kbd:`14`
-     - :kbd:`codigoUnidadeSubRogada`
-     - :kbd:`Texto (20)`
-     - :kbd:`Não`
-     - :kbd:`Código da unidade executora do órgão sub-rogado do contrato/empenho; obrigatório caso ocorra sub-rogação do órgão`
-   * - :kbd:`15`
-     - :kbd:`niFornecedor`
-     - :kbd:`Texto (30)`
-     - :kbd:`Não`
-     - :kbd:`Número de identificação do fornecedor/arrematante; CNPJ, CPF ou identificador de empresa estrangeira`
-   * - :kbd:`16`
-     - :kbd:`tipoPessoaFornecedor`
-     - :kbd:`Texto (2)`
-     - :kbd:`Não`
-     - :kbd:`PJ - Pessoa jurídica; PF - Pessoa física; PE - Pessoa estrangeira`
-   * - :kbd:`17`
-     - :kbd:`nomeRazaoSocialFornecedor`
-     - :kbd:`Texto (100)`
-     - :kbd:`Não`
-     - :kbd:`Nome ou razão social do fornecedor/arrematante`
-   * - :kbd:`18`
-     - :kbd:`niFornecedorSubContratado`
-     - :kbd:`Texto (30)`
-     - :kbd:`Não`
-     - :kbd:`Número de identificação do fornecedor subcontratado; somente em caso de subcontratação; não se aplica a leilão`
-   * - :kbd:`19`
-     - :kbd:`tipoPessoaFornecedorSubContratado`
-     - :kbd:`Texto (2)`
-     - :kbd:`Não`
-     - :kbd:`PJ - Pessoa jurídica; PF - Pessoa física; PE - Pessoa estrangeira; somente em caso de subcontratação; não se aplica a leilão`
-   * - :kbd:`20`
-     - :kbd:`nomeRazaoSocialFornecedorSubContratado`
-     - :kbd:`Texto (100)`
-     - :kbd:`Não`
-     - :kbd:`Nome ou razão social do fornecedor subcontratado; somente em caso de subcontratação; não se aplica a leilão`
-   * - :kbd:`21`
-     - :kbd:`objetoContrato`
-     - :kbd:`Texto (5120)`
-     - :kbd:`Não`
-     - :kbd:`Descrição do objeto do contrato/empenho`
-   * - :kbd:`22`
-     - :kbd:`informacaoComplementar`
-     - :kbd:`Texto (5120)`
-     - :kbd:`Não`
-     - :kbd:`Informações complementares; se existir`
-   * - :kbd:`23`
-     - :kbd:`valorInicial`
-     - :kbd:`Decimal`
-     - :kbd:`Não`
-     - :kbd:`Valor inicial do contrato/empenho; precisão de 4 dígitos decimais; ex: 100.0000`
-   * - :kbd:`24`
-     - :kbd:`numeroParcelas`
-     - :kbd:`Inteiro`
-     - :kbd:`Não`
-     - :kbd:`Número de parcelas`
-   * - :kbd:`25`
-     - :kbd:`valorParcela`
-     - :kbd:`Decimal`
-     - :kbd:`Não`
-     - :kbd:`Valor da parcela; precisão de 4 dígitos decimais; ex: 100.0000`
-   * - :kbd:`26`
-     - :kbd:`valorGlobal`
-     - :kbd:`Decimal`
-     - :kbd:`Não`
-     - :kbd:`Valor global do contrato/empenho; precisão de 4 dígitos decimais; ex: 100.0000`
-   * - :kbd:`27`
-     - :kbd:`valorAcumulado`
-     - :kbd:`Decimal`
-     - :kbd:`Não`
-     - :kbd:`Valor acumulado do contrato/empenho; precisão de 4 dígitos decimais; ex: 100.0000`
-   * - :kbd:`28`
-     - :kbd:`dataAssinatura`
-     - :kbd:`Data`
-     - :kbd:`Não`
-     - :kbd:`Data de assinatura do contrato`
-   * - :kbd:`29`
-     - :kbd:`dataVigenciaInicio`
-     - :kbd:`Data`
-     - :kbd:`Não`
-     - :kbd:`Data de início de vigência do contrato`
-   * - :kbd:`30`
-     - :kbd:`dataVigenciaFim`
-     - :kbd:`Data`
-     - :kbd:`Não`
-     - :kbd:`Data do término da vigência do contrato`
-   * - :kbd:`31`
-     - :kbd:`justificativa`
-     - :kbd:`Texto (255)`
-     - :kbd:`Sim`
-     - :kbd:`Motivo/justificativa para a retificação dos atributos do contrato/empenho`
-   * - :kbd:`32`
-     - :kbd:`identificadorCipi`
-     - :kbd:`String (512)`
-     - :kbd:`Não`
-     - :kbd:`Identificador do contrato no Cadastro Integrado de Projetos de Investimento`
-   * - :kbd:`33`
-     - :kbd:`urlCipi`
-     - :kbd:`String (8 a 14)`
-     - :kbd:`Não`
-     - :kbd:`Url com informações do contrato no sistema de Cadastro Integrado de Projetos de Investimento`
-   * - :kbd:`34`
-     - :kbd:`sequencialAta`
-     - :kbd:`Inteiro`
-     - :kbd:`Não`
-     - :kbd:`Número sequencial da ata de registro de preço`
-   * - :kbd:`35`
-     - :kbd:`frutoAdesao`
-     - :kbd:`Booleano`
-     - :kbd:`Não`
-     - :kbd:`Indicador se o contrato/empenho é fruto de adesão a uma ata (False-Não / True-Sim)`
-   * - :kbd:`36`
-     - :kbd:`temRemanejamento`
-     - :kbd:`Boleano`
-     - :kbd:`Não`
-     - :kbd:`O remanejamento de quantidade em atas de registro de preços (SRP) é a transferência de saldos de itens entre órgãos participantes ou para não participantes (caronas), permitindo otimizar a compra. Deve ser autorizado pelo órgão gerenciador, respeitando limites legais e a anuência do fornecedor para garantir o equilíbrio econômico-financeiro. Indicador de Remanejamento (False-Não / True-Sim)`
+   * - :destaque:`1`
+     - :destaque:`cnpj`
+     - :destaque:`Texto (14)`
+     - :destaque:`Sim`
+     - :destaque:`Cnpj do órgão do contrato/empenho`
+   * - :destaque:`2`
+     - :destaque:`ano`
+     - :destaque:`Inteiro`
+     - :destaque:`Sim`
+     - :destaque:`Ano do contrato/empenho`
+   * - :destaque:`3`
+     - :destaque:`sequencial`
+     - :destaque:`Inteiro`
+     - :destaque:`Sim`
+     - :destaque:`Número sequencial do contrato/empenho (gerado pelo PNCP no momento da inclusão do mesmo)`
+   * - :destaque:`4`
+     - :destaque:`cnpjCompra`
+     - :destaque:`Texto (14)`
+     - :destaque:`Não`
+     - :destaque:`Cnpj do órgão originário da contratação (proprietário da contratação ou alienação de bens)`
+   * - :destaque:`5`
+     - :destaque:`anoCompra`
+     - :destaque:`Inteiro`
+     - :destaque:`Não`
+     - :destaque:`Ano da contratação`
+   * - :destaque:`6`
+     - :destaque:`sequencialCompra`
+     - :destaque:`Inteiro`
+     - :destaque:`Não`
+     - :destaque:`Número sequencial da contratação (gerado pelo PNCP no momento da inclusão da contratação)`
+   * - :destaque:`7`
+     - :destaque:`tipoContratoId`
+     - :destaque:`Inteiro`
+     - :destaque:`Não`
+     - :destaque:`Código da tabela de domínio Tipo de contrato`
+   * - :destaque:`8`
+     - :destaque:`numeroContratoEmpenho`
+     - :destaque:`Texto (50)`
+     - :destaque:`Não`
+     - :destaque:`Número do contrato ou empenho com força de contrato`
+   * - :destaque:`9`
+     - :destaque:`processo`
+     - :destaque:`Texto (50)`
+     - :destaque:`Não`
+     - :destaque:`Número do processo`
+   * - :destaque:`10`
+     - :destaque:`categoriaProcessoId`
+     - :destaque:`Inteiro`
+     - :destaque:`Não`
+     - :destaque:`Código da tabela de domínio Categoria`
+   * - :destaque:`11`
+     - :destaque:`receita`
+     - :destaque:`Boleano`
+     - :destaque:`Não`
+     - :destaque:`Receita ou despesa: True - Receita; False - Despesa`
+   * - :destaque:`12`
+     - :destaque:`codigoUnidade`
+     - :destaque:`Texto (20)`
+     - :destaque:`Não`
+     - :destaque:`Código da unidade executora do órgão do contrato/empenho; a unidade deverá estar cadastrada para o órgão`
+   * - :destaque:`13`
+     - :destaque:`cnpjOrgaoSubRogado`
+     - :destaque:`Texto (14)`
+     - :destaque:`Não`
+     - :destaque:`Cnpj do órgão sub-rogado; somente em caso de sub-rogação`
+   * - :destaque:`14`
+     - :destaque:`codigoUnidadeSubRogada`
+     - :destaque:`Texto (20)`
+     - :destaque:`Não`
+     - :destaque:`Código da unidade executora do órgão sub-rogado do contrato/empenho; obrigatório caso ocorra sub-rogação do órgão`
+   * - :destaque:`15`
+     - :destaque:`niFornecedor`
+     - :destaque:`Texto (30)`
+     - :destaque:`Não`
+     - :destaque:`Número de identificação do fornecedor/arrematante; CNPJ, CPF ou identificador de empresa estrangeira`
+   * - :destaque:`16`
+     - :destaque:`tipoPessoaFornecedor`
+     - :destaque:`Texto (2)`
+     - :destaque:`Não`
+     - :destaque:`PJ - Pessoa jurídica; PF - Pessoa física; PE - Pessoa estrangeira`
+   * - :destaque:`17`
+     - :destaque:`nomeRazaoSocialFornecedor`
+     - :destaque:`Texto (100)`
+     - :destaque:`Não`
+     - :destaque:`Nome ou razão social do fornecedor/arrematante`
+   * - :destaque:`18`
+     - :destaque:`niFornecedorSubContratado`
+     - :destaque:`Texto (30)`
+     - :destaque:`Não`
+     - :destaque:`Número de identificação do fornecedor subcontratado; somente em caso de subcontratação; não se aplica a leilão`
+   * - :destaque:`19`
+     - :destaque:`tipoPessoaFornecedorSubContratado`
+     - :destaque:`Texto (2)`
+     - :destaque:`Não`
+     - :destaque:`PJ - Pessoa jurídica; PF - Pessoa física; PE - Pessoa estrangeira; somente em caso de subcontratação; não se aplica a leilão`
+   * - :destaque:`20`
+     - :destaque:`nomeRazaoSocialFornecedorSubContratado`
+     - :destaque:`Texto (100)`
+     - :destaque:`Não`
+     - :destaque:`Nome ou razão social do fornecedor subcontratado; somente em caso de subcontratação; não se aplica a leilão`
+   * - :destaque:`21`
+     - :destaque:`objetoContrato`
+     - :destaque:`Texto (5120)`
+     - :destaque:`Não`
+     - :destaque:`Descrição do objeto do contrato/empenho`
+   * - :destaque:`22`
+     - :destaque:`informacaoComplementar`
+     - :destaque:`Texto (5120)`
+     - :destaque:`Não`
+     - :destaque:`Informações complementares; se existir`
+   * - :destaque:`23`
+     - :destaque:`valorInicial`
+     - :destaque:`Decimal`
+     - :destaque:`Não`
+     - :destaque:`Valor inicial do contrato/empenho; precisão de 4 dígitos decimais; ex: 100.0000`
+   * - :destaque:`24`
+     - :destaque:`numeroParcelas`
+     - :destaque:`Inteiro`
+     - :destaque:`Não`
+     - :destaque:`Número de parcelas`
+   * - :destaque:`25`
+     - :destaque:`valorParcela`
+     - :destaque:`Decimal`
+     - :destaque:`Não`
+     - :destaque:`Valor da parcela; precisão de 4 dígitos decimais; ex: 100.0000`
+   * - :destaque:`26`
+     - :destaque:`valorGlobal`
+     - :destaque:`Decimal`
+     - :destaque:`Não`
+     - :destaque:`Valor global do contrato/empenho; precisão de 4 dígitos decimais; ex: 100.0000`
+   * - :destaque:`27`
+     - :destaque:`valorAcumulado`
+     - :destaque:`Decimal`
+     - :destaque:`Não`
+     - :destaque:`Valor acumulado do contrato/empenho; precisão de 4 dígitos decimais; ex: 100.0000`
+   * - :destaque:`28`
+     - :destaque:`dataAssinatura`
+     - :destaque:`Data`
+     - :destaque:`Não`
+     - :destaque:`Data de assinatura do contrato`
+   * - :destaque:`29`
+     - :destaque:`dataVigenciaInicio`
+     - :destaque:`Data`
+     - :destaque:`Não`
+     - :destaque:`Data de início de vigência do contrato`
+   * - :destaque:`30`
+     - :destaque:`dataVigenciaFim`
+     - :destaque:`Data`
+     - :destaque:`Não`
+     - :destaque:`Data do término da vigência do contrato`
+   * - :destaque:`31`
+     - :destaque:`justificativa`
+     - :destaque:`Texto (255)`
+     - :destaque:`Sim`
+     - :destaque:`Motivo/justificativa para a retificação dos atributos do contrato/empenho`
+   * - :destaque:`32`
+     - :destaque:`identificadorCipi`
+     - :destaque:`String (512)`
+     - :destaque:`Não`
+     - :destaque:`Identificador do contrato no Cadastro Integrado de Projetos de Investimento`
+   * - :destaque:`33`
+     - :destaque:`urlCipi`
+     - :destaque:`String (8 a 14)`
+     - :destaque:`Não`
+     - :destaque:`Url com informações do contrato no sistema de Cadastro Integrado de Projetos de Investimento`
+   * - :destaque:`34`
+     - :destaque:`sequencialAta`
+     - :destaque:`Inteiro`
+     - :destaque:`Não`
+     - :destaque:`Número sequencial da ata de registro de preço`
+   * - :destaque:`35`
+     - :destaque:`frutoAdesao`
+     - :destaque:`Booleano`
+     - :destaque:`Não`
+     - :destaque:`Indicador se o contrato/empenho é fruto de adesão a uma ata (False-Não / True-Sim)`
+   * - :destaque:`36`
+     - :destaque:`temRemanejamento`
+     - :destaque:`Boleano`
+     - :destaque:`Não`
+     - :destaque:`O remanejamento de quantidade em atas de registro de preços (SRP) é a transferência de saldos de itens entre órgãos participantes ou para não participantes (caronas), permitindo otimizar a compra. Deve ser autorizado pelo órgão gerenciador, respeitando limites legais e a anuência do fornecedor para garantir o equilíbrio econômico-financeiro. Indicador de Remanejamento (False-Não / True-Sim)`
 
 .. list-table::
    :width: 100%
@@ -3837,11 +3837,11 @@ Dados de entrada
      - Tipo
      - Obrigatório
      - Descrição
-   * - :kbd:`1`
-     - :kbd:`location`
-     - :kbd:`Texto (255)`
-     - :kbd:`Sim`
-     - :kbd:`Endereço http do recurso retificado`
+   * - :destaque:`1`
+     - :destaque:`location`
+     - :destaque:`Texto (255)`
+     - :destaque:`Sim`
+     - :destaque:`Endereço http do recurso retificado`
 
 Códigos de Retorno
 ^^^^^^^^^^^^^^^^^^
@@ -3854,18 +3854,18 @@ Códigos de Retorno
    * - Código HTTP
      - `Mensagem
      - Tipo
-   * - :kbd:`201`
-     - :kbd:`Created`
-     - :kbd:`Sucesso`
-   * - :kbd:`400`
-     - :kbd:`BadRequest`
-     - :kbd:`Erro`
-   * - :kbd:`422`
-     - :kbd:`Unprocessable Entity`
-     - :kbd:`Erro`
-   * - :kbd:`500`
-     - :kbd:`Internal Server Error`
-     - :kbd:`Erro`
+   * - :destaque:`201`
+     - :destaque:`Created`
+     - :destaque:`Sucesso`
+   * - :destaque:`400`
+     - :destaque:`BadRequest`
+     - :destaque:`Erro`
+   * - :destaque:`422`
+     - :destaque:`Unprocessable Entity`
+     - :destaque:`Erro`
+   * - :destaque:`500`
+     - :destaque:`Internal Server Error`
+     - :destaque:`Erro`
 
 Inserir Empenho
 ~~~~~~~~~~~~~~~
@@ -3886,8 +3886,8 @@ Detalhes da Requisição
 
    * - Endpoint
      - Método HTTP
-   * - :kbd:`/v1/orgaos/{cnpj}/contratos/{ano}/{sequencialContrato}/empenhos`
-     - :kbd:`POST`
+   * - :destaque:`/v1/orgaos/{cnpj}/contratos/{ano}/{sequencialContrato}/empenhos`
+     - :destaque:`POST`
 	 
 
 Exemplo de Payload
@@ -3930,7 +3930,7 @@ Dados de entrada
 ^^^^^^^^^^^^^^^^
 
 .. note::
-   Nota: alimentar os parâmetros :kbd:`{cnpj}`, :kbd:`{ano}` e :kbd:`{sequencial}` na URL.
+   Nota: alimentar os parâmetros :destaque:`{cnpj}`, :destaque:`{ano}` e :destaque:`{sequencial}` na URL.
 
 .. list-table::
    :width: 100%
@@ -3942,76 +3942,76 @@ Dados de entrada
      - Tipo
      - Obrigatório
      - Descrição
-   * - :kbd:`1`
-     - :kbd:`cnpj`
-     - :kbd:`Texto (14)`
-     - :kbd:`Sim`
-     - :kbd:`CNPJ do órgão do contrato/empenho`
-   * - :kbd:`2`
-     - :kbd:`ano`
-     - :kbd:`Inteiro`
-     - :kbd:`Sim`
-     - :kbd:`Ano do contrato/empenho`
-   * - :kbd:`3`
-     - :kbd:`sequencialContrato`
-     - :kbd:`Inteiro`
-     - :kbd:`Sim`
-     - :kbd:`Número sequencial do contrato/empenho (gerado pelo PNCP no momento da inclusão)`
-   * - :kbd:`4`
-     - :kbd:`empenhos`
+   * - :destaque:`1`
+     - :destaque:`cnpj`
+     - :destaque:`Texto (14)`
+     - :destaque:`Sim`
+     - :destaque:`CNPJ do órgão do contrato/empenho`
+   * - :destaque:`2`
+     - :destaque:`ano`
+     - :destaque:`Inteiro`
+     - :destaque:`Sim`
+     - :destaque:`Ano do contrato/empenho`
+   * - :destaque:`3`
+     - :destaque:`sequencialContrato`
+     - :destaque:`Inteiro`
+     - :destaque:`Sim`
+     - :destaque:`Número sequencial do contrato/empenho (gerado pelo PNCP no momento da inclusão)`
+   * - :destaque:`4`
+     - :destaque:`empenhos`
      - 
-     - :kbd:`Sim`
-     - :kbd:`Lista de metadados dos empenhos`
-   * - :kbd:`4.1`
-     - :kbd:`numeroEmpenho`
-     - :kbd:`Texto (50)`
-     - :kbd:`Sim`
-     - :kbd:`Número do empenho`
-   * - :kbd:`4.2`
-     - :kbd:`tipoPessoa`
-     - :kbd:`Texto (2)`
-     - :kbd:`Sim`
-     - :kbd:`PJ - Pessoa jurídica; PF - Pessoa física; PE - Pessoa estrangeira`
-   * - :kbd:`4.3`
-     - :kbd:`niCredorFornecedor`
-     - :kbd:`Texto (30)`
-     - :kbd:`Sim`
-     - :kbd:`CNPJ, CPF ou identificador estrangeiro do credor/fornecedor`
-   * - :kbd:`4.4`
-     - :kbd:`nomeCredorFornecedor`
-     - :kbd:`Texto (250)`
-     - :kbd:`Sim`
-     - :kbd:`Nome do credor/fornecedor`
-   * - :kbd:`4.5`
-     - :kbd:`numeroPlanoInterno`
-     - :kbd:`Texto (50)`
-     - :kbd:`Não`
-     - :kbd:`Número do Plano Interno`
-   * - :kbd:`4.6`
-     - :kbd:`codigoNaturezaDespesa`
-     - :kbd:`Texto (10)`
+     - :destaque:`Sim`
+     - :destaque:`Lista de metadados dos empenhos`
+   * - :destaque:`4.1`
+     - :destaque:`numeroEmpenho`
+     - :destaque:`Texto (50)`
+     - :destaque:`Sim`
+     - :destaque:`Número do empenho`
+   * - :destaque:`4.2`
+     - :destaque:`tipoPessoa`
+     - :destaque:`Texto (2)`
+     - :destaque:`Sim`
+     - :destaque:`PJ - Pessoa jurídica; PF - Pessoa física; PE - Pessoa estrangeira`
+   * - :destaque:`4.3`
+     - :destaque:`niCredorFornecedor`
+     - :destaque:`Texto (30)`
+     - :destaque:`Sim`
+     - :destaque:`CNPJ, CPF ou identificador estrangeiro do credor/fornecedor`
+   * - :destaque:`4.4`
+     - :destaque:`nomeCredorFornecedor`
+     - :destaque:`Texto (250)`
+     - :destaque:`Sim`
+     - :destaque:`Nome do credor/fornecedor`
+   * - :destaque:`4.5`
+     - :destaque:`numeroPlanoInterno`
+     - :destaque:`Texto (50)`
+     - :destaque:`Não`
+     - :destaque:`Número do Plano Interno`
+   * - :destaque:`4.6`
+     - :destaque:`codigoNaturezaDespesa`
+     - :destaque:`Texto (10)`
      - 
-     - :kbd:`Código da natureza de despesa`
-   * - :kbd:`4.7`
-     - :kbd:`dataEmissaoEmpenho`
-     - :kbd:`Data/Hora`
-     - :kbd:`Sim`
-     - :kbd:`Data/Hora da emissão do empenho`
-   * - :kbd:`4.8`
-     - :kbd:`valorTotal`
-     - :kbd:`Decimal`
-     - :kbd:`Sim`
-     - :kbd:`Valor total do empenho`
-   * - :kbd:`4.9`
-     - :kbd:`valorSubItem`
-     - :kbd:`Decimal`
-     - :kbd:`Não`
-     - :kbd:`Valor do subelemento`
-   * - :kbd:`4.10`
-     - :kbd:`codigoEmenda`
-     - :kbd:`Texto (50)`
-     - :kbd:`Não`
-     - :kbd:`Código da Emenda Parlamentar`
+     - :destaque:`Código da natureza de despesa`
+   * - :destaque:`4.7`
+     - :destaque:`dataEmissaoEmpenho`
+     - :destaque:`Data/Hora`
+     - :destaque:`Sim`
+     - :destaque:`Data/Hora da emissão do empenho`
+   * - :destaque:`4.8`
+     - :destaque:`valorTotal`
+     - :destaque:`Decimal`
+     - :destaque:`Sim`
+     - :destaque:`Valor total do empenho`
+   * - :destaque:`4.9`
+     - :destaque:`valorSubItem`
+     - :destaque:`Decimal`
+     - :destaque:`Não`
+     - :destaque:`Valor do subelemento`
+   * - :destaque:`4.10`
+     - :destaque:`codigoEmenda`
+     - :destaque:`Texto (50)`
+     - :destaque:`Não`
+     - :destaque:`Código da Emenda Parlamentar`
 
 Dados de retorno
 ^^^^^^^^^^^^^^^^
@@ -4026,11 +4026,11 @@ Dados de retorno
      - Tipo
      - Obrigatório
      - Descrição
-   * - :kbd:`1`
-     - :kbd:`location`
-     - :kbd:`Texto (255)`
-     - :kbd:`Sim`
-     - :kbd:`Endereço HTTP do recurso criado`
+   * - :destaque:`1`
+     - :destaque:`location`
+     - :destaque:`Texto (255)`
+     - :destaque:`Sim`
+     - :destaque:`Endereço HTTP do recurso criado`
 
 Códigos de Retorno
 ^^^^^^^^^^^^^^^^^^
@@ -4043,21 +4043,21 @@ Códigos de Retorno
    * - Código HTTP
      - Mensagem
      - Tipo
-   * - :kbd:`200`
-     - :kbd:`Created`
-     - :kbd:`Sucesso`
-   * - :kbd:`400`
-     - :kbd:`BadRequest`
-     - :kbd:`Erro`
-   * - :kbd:`401`
-     - :kbd:`Unauthorized`
-     - :kbd:`Erro`
-   * - :kbd:`422`
-     - :kbd:`Unprocessable Entity`
-     - :kbd:`Erro`
-   * - :kbd:`500`
-     - :kbd:`Internal Server Error`
-     - :kbd:`Erro`
+   * - :destaque:`200`
+     - :destaque:`Created`
+     - :destaque:`Sucesso`
+   * - :destaque:`400`
+     - :destaque:`BadRequest`
+     - :destaque:`Erro`
+   * - :destaque:`401`
+     - :destaque:`Unauthorized`
+     - :destaque:`Erro`
+   * - :destaque:`422`
+     - :destaque:`Unprocessable Entity`
+     - :destaque:`Erro`
+   * - :destaque:`500`
+     - :destaque:`Internal Server Error`
+     - :destaque:`Erro`
 
 Retificar Parcialmente Empenho
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -4078,8 +4078,8 @@ Detalhes da Requisição
 
    * - Endpoint
      - Método HTTP
-   * - :kbd:`/v1/orgaos/{cnpj}/contratos/{ano}/{sequencialContra-to}/empenhos/{sequencialEmpenho}`
-     - :kbd:`PUT`
+   * - :destaque:`/v1/orgaos/{cnpj}/contratos/{ano}/{sequencialContra-to}/empenhos/{sequencialEmpenho}`
+     - :destaque:`PUT`
 	 
 
 Exemplo de Payload
@@ -4120,7 +4120,7 @@ Dados de entrada
 
 .. Note::
 
-	Alimentar os parâmetros :kbd:`{cnpj}`, :kbd:`{ano}`, :kbd:`{sequencialContrato}` e :kbd:`{sequencialEmpenho}` na URL
+	Alimentar os parâmetros :destaque:`{cnpj}`, :destaque:`{ano}`, :destaque:`{sequencialContrato}` e :destaque:`{sequencialEmpenho}` na URL
 
 .. list-table::
    :width: 100%
@@ -4132,91 +4132,91 @@ Dados de entrada
      - Tipo
      - Obrigatório
      - Descrição
-   * - :kbd:`1`
-     - :kbd:`cnpj`
-     - :kbd:`Texto (14)`
-     - :kbd:`Sim`
-     - :kbd:`CNPJ do órgão do contrato/empenho`
-   * - :kbd:`2`
-     - :kbd:`ano`
-     - :kbd:`Inteiro`
-     - :kbd:`Sim`
-     - :kbd:`Ano do contrato/empenho`
-   * - :kbd:`3`
-     - :kbd:`sequencial`
-     - :kbd:`Inteiro`
-     - :kbd:`Sim`
-     - :kbd:`Número sequencial do contrato/empenho (gerado pelo PNCP no momento da inclusão)`
-   * - :kbd:`4`
-     - :kbd:`sequencialEmpenho`
-     - :kbd:`Inteiro`
-     - :kbd:`Sim`
-     - :kbd:`Número sequencial do empenho (gerado pelo PNCP no momento da inclusão)`
-   * - :kbd:`5`
-     - :kbd:`justificativa`
-     - :kbd:`Texto (255)`
-     - :kbd:`Sim`
-     - :kbd:`Motivo/justificativa para a retificação do empenho`
-   * - :kbd:`6`
-     - :kbd:`numeroEmpenho`
-     - :kbd:`Texto (50)`
-     - :kbd:`Não`
-     - :kbd:`Número do empenho`
-   * - :kbd:`7`
-     - :kbd:`tipoPessoa`
-     - :kbd:`Texto (2)`
-     - :kbd:`Não`
-     - :kbd:`PJ - Pessoa jurídica; PF - Pessoa física; PE - Pessoa estrangeira`
-   * - :kbd:`8`
-     - :kbd:`niCredorFornecedor`
-     - :kbd:`Texto (30)`
-     - :kbd:`Não`
-     - :kbd:`CNPJ, CPF ou identificador de empresa estrangeira`
-   * - :kbd:`9`
-     - :kbd:`nomeCredorFornecedor`
-     - :kbd:`Texto (250)`
-     - :kbd:`Não`
-     - :kbd:`Nome do credor/fornecedor`
-   * - :kbd:`10`
-     - :kbd:`numeroPlanoInterno`
-     - :kbd:`Texto (50)`
-     - :kbd:`Não`
-     - :kbd:`Número do Plano Interno`
-   * - :kbd:`11`
-     - :kbd:`codigoNaturezaDespesa`
-     - :kbd:`Texto (10)`
-     - :kbd:`Não`
-     - :kbd:`Código da natureza de despesa`
-   * - :kbd:`12`
-     - :kbd:`dataEmissaoEmpenho`
-     - :kbd:`Data/Hora`
-     - :kbd:`Não`
-     - :kbd:`Data/Hora da emissão do empenho`
-   * - :kbd:`13`
-     - :kbd:`valorTotal`
-     - :kbd:`Decimal`
-     - :kbd:`Não`
-     - :kbd:`Valor total do empenho`
-   * - :kbd:`14`
-     - :kbd:`valorSubItem`
-     - :kbd:`Decimal`
-     - :kbd:`Não`
-     - :kbd:`Valor do subelemento ou subitem`
-   * - :kbd:`15`
-     - :kbd:`codigoEmenda`
-     - :kbd:`Texto (50)`
-     - :kbd:`Não`
-     - :kbd:`Código da Emenda Parlamentar`
-   * - :kbd:`16`
-     - :kbd:`situacaoEmpenhoId`
-     - :kbd:`Inteiro`
-     - :kbd:`Não`
-     - :kbd:`Identificador da situação do empenho (1 – Empenhado / 2 - Cancelado)`
-   * - :kbd:`17`
-     - :kbd:`dataSituacaoEmpenho`
-     - :kbd:`Data/Hora`
-     - :kbd:`Não`
-     - :kbd:`Data/Hora da situação do empenho`
+   * - :destaque:`1`
+     - :destaque:`cnpj`
+     - :destaque:`Texto (14)`
+     - :destaque:`Sim`
+     - :destaque:`CNPJ do órgão do contrato/empenho`
+   * - :destaque:`2`
+     - :destaque:`ano`
+     - :destaque:`Inteiro`
+     - :destaque:`Sim`
+     - :destaque:`Ano do contrato/empenho`
+   * - :destaque:`3`
+     - :destaque:`sequencial`
+     - :destaque:`Inteiro`
+     - :destaque:`Sim`
+     - :destaque:`Número sequencial do contrato/empenho (gerado pelo PNCP no momento da inclusão)`
+   * - :destaque:`4`
+     - :destaque:`sequencialEmpenho`
+     - :destaque:`Inteiro`
+     - :destaque:`Sim`
+     - :destaque:`Número sequencial do empenho (gerado pelo PNCP no momento da inclusão)`
+   * - :destaque:`5`
+     - :destaque:`justificativa`
+     - :destaque:`Texto (255)`
+     - :destaque:`Sim`
+     - :destaque:`Motivo/justificativa para a retificação do empenho`
+   * - :destaque:`6`
+     - :destaque:`numeroEmpenho`
+     - :destaque:`Texto (50)`
+     - :destaque:`Não`
+     - :destaque:`Número do empenho`
+   * - :destaque:`7`
+     - :destaque:`tipoPessoa`
+     - :destaque:`Texto (2)`
+     - :destaque:`Não`
+     - :destaque:`PJ - Pessoa jurídica; PF - Pessoa física; PE - Pessoa estrangeira`
+   * - :destaque:`8`
+     - :destaque:`niCredorFornecedor`
+     - :destaque:`Texto (30)`
+     - :destaque:`Não`
+     - :destaque:`CNPJ, CPF ou identificador de empresa estrangeira`
+   * - :destaque:`9`
+     - :destaque:`nomeCredorFornecedor`
+     - :destaque:`Texto (250)`
+     - :destaque:`Não`
+     - :destaque:`Nome do credor/fornecedor`
+   * - :destaque:`10`
+     - :destaque:`numeroPlanoInterno`
+     - :destaque:`Texto (50)`
+     - :destaque:`Não`
+     - :destaque:`Número do Plano Interno`
+   * - :destaque:`11`
+     - :destaque:`codigoNaturezaDespesa`
+     - :destaque:`Texto (10)`
+     - :destaque:`Não`
+     - :destaque:`Código da natureza de despesa`
+   * - :destaque:`12`
+     - :destaque:`dataEmissaoEmpenho`
+     - :destaque:`Data/Hora`
+     - :destaque:`Não`
+     - :destaque:`Data/Hora da emissão do empenho`
+   * - :destaque:`13`
+     - :destaque:`valorTotal`
+     - :destaque:`Decimal`
+     - :destaque:`Não`
+     - :destaque:`Valor total do empenho`
+   * - :destaque:`14`
+     - :destaque:`valorSubItem`
+     - :destaque:`Decimal`
+     - :destaque:`Não`
+     - :destaque:`Valor do subelemento ou subitem`
+   * - :destaque:`15`
+     - :destaque:`codigoEmenda`
+     - :destaque:`Texto (50)`
+     - :destaque:`Não`
+     - :destaque:`Código da Emenda Parlamentar`
+   * - :destaque:`16`
+     - :destaque:`situacaoEmpenhoId`
+     - :destaque:`Inteiro`
+     - :destaque:`Não`
+     - :destaque:`Identificador da situação do empenho (1 – Empenhado / 2 - Cancelado)`
+   * - :destaque:`17`
+     - :destaque:`dataSituacaoEmpenho`
+     - :destaque:`Data/Hora`
+     - :destaque:`Não`
+     - :destaque:`Data/Hora da situação do empenho`
 
 Dados de retorno
 ^^^^^^^^^^^^^^^^
@@ -4231,11 +4231,11 @@ Dados de retorno
      - Tipo
      - Obrigatório
      - Descrição
-   * - :kbd:`1`
-     - :kbd:`location`
-     - :kbd:`Texto (255)`
-     - :kbd:`Sim`
-     - :kbd:`Endereço HTTP do recurso criado`
+   * - :destaque:`1`
+     - :destaque:`location`
+     - :destaque:`Texto (255)`
+     - :destaque:`Sim`
+     - :destaque:`Endereço HTTP do recurso criado`
 
 Códigos de Retorno
 ^^^^^^^^^^^^^^^^^^
@@ -4248,21 +4248,21 @@ Códigos de Retorno
    * - Código HTTP
      - Mensagem
      - Tipo
-   * - :kbd:`200`
-     - :kbd:`Update`
-     - :kbd:`Sucesso`
-   * - :kbd:`400`
-     - :kbd:`BadRequest`
-     - :kbd:`Erro`
-   * - :kbd:`401`
-     - :kbd:`Unauthorized`
-     - :kbd:`Erro`
-   * - :kbd:`422`
-     - :kbd:`Unprocessable Entity`
-     - :kbd:`Erro`
-   * - :kbd:`500`
-     - :kbd:`Internal Server Error`
-     - :kbd:`Erro`
+   * - :destaque:`200`
+     - :destaque:`Update`
+     - :destaque:`Sucesso`
+   * - :destaque:`400`
+     - :destaque:`BadRequest`
+     - :destaque:`Erro`
+   * - :destaque:`401`
+     - :destaque:`Unauthorized`
+     - :destaque:`Erro`
+   * - :destaque:`422`
+     - :destaque:`Unprocessable Entity`
+     - :destaque:`Erro`
+   * - :destaque:`500`
+     - :destaque:`Internal Server Error`
+     - :destaque:`Erro`
 
 Excluir Empenho
 ~~~~~~~~~~~~~~~
