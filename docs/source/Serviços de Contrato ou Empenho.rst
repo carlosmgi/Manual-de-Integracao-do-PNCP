@@ -304,7 +304,7 @@ Dados de entrada
      - :kbd:`temRemanejamento`
      - :kbd:`Booleano`
      - :kbd:`Sim`
-     - :kbd:`Indicador de remanejamento (false = não / true = sim)`
+     - :kbd:`O remanejamento de quantidade em atas de registro de preços (SRP) é a transferência de saldos de itens entre órgãos participantes ou para não participantes (caronas), permitindo otimizar a compra. Deve ser autorizado pelo órgão gerenciador, respeitando limites legais e a anuência do fornecedor para garantir o equilíbrio econômico-financeiro. Indicador de Remanejamento (False-Não / True-Sim)`
 
 Dados de retorno
 ^^^^^^^^^^^^^^^^
@@ -684,7 +684,7 @@ Dados de Entrada
      - :kbd:`temRemanejamento`
      - :kbd:`Boleano`
      - :kbd:`Sim`
-     - :kbd:`Indicador de Remanejamento (False-Não / True-Sim)`
+     - :kbd:`O remanejamento de quantidade em atas de registro de preços (SRP) é a transferência de saldos de itens entre órgãos participantes ou para não participantes (caronas), permitindo otimizar a compra. Deve ser autorizado pelo órgão gerenciador, respeitando limites legais e a anuência do fornecedor para garantir o equilíbrio econômico-financeiro. Indicador de Remanejamento (False-Não / True-Sim)`
 
 Dados de retorno
 ^^^^^^^^^^^^^^^^
@@ -1677,7 +1677,7 @@ Dados de Entrada
    * - :kbd:`38`
      - :kbd:`temRemanejamento`
      - :kbd:`Boleano`
-     - :kbd:`Indicador de Remanejamento (False-Não / True-Sim)`
+     - :kbd:`O remanejamento de quantidade em atas de registro de preços (SRP) é a transferência de saldos de itens entre órgãos participantes ou para não participantes (caronas), permitindo otimizar a compra. Deve ser autorizado pelo órgão gerenciador, respeitando limites legais e a anuência do fornecedor para garantir o equilíbrio econômico-financeiro. Indicador de Remanejamento (False-Não / True-Sim)`
    * - :kbd:`39`
      - :kbd:`emendaParlamentar`
      - :kbd:`Boleano`
@@ -3825,7 +3825,7 @@ Dados de entrada
      - :kbd:`temRemanejamento`
      - :kbd:`Boleano`
      - :kbd:`Não`
-     - :kbd:`Indicador de remanejamento (False-Não / True-Sim)`
+     - :kbd:`O remanejamento de quantidade em atas de registro de preços (SRP) é a transferência de saldos de itens entre órgãos participantes ou para não participantes (caronas), permitindo otimizar a compra. Deve ser autorizado pelo órgão gerenciador, respeitando limites legais e a anuência do fornecedor para garantir o equilíbrio econômico-financeiro. Indicador de Remanejamento (False-Não / True-Sim)`
 
 .. list-table::
    :width: 100%
