@@ -4279,10 +4279,9 @@ Teste
    :widths: 10 25 20
    :header-rows: 1
 
-	* - Código HTTP
-	     - Mensagem
-	     - Tipo
-	   * - :destaque:`200`
-	     - :destaque:`Update`
-	     - :destaque:`Serviço que permite remover um empenho. Este serviço será acionado por qualquer plataforma digital credenciada.`
-
+   * - Código HTTP
+     - Mensagem
+     - Tipo
+   * - :destaque:`200`
+     - :destaque:`Update`
+     - :destaque:`Serviço que permite remover um empenho. Este serviço será acionado por qualquer plataforma digital credenciada.`
