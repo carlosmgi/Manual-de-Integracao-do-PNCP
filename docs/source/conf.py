@@ -38,6 +38,8 @@ intersphinx_disabled_domains = ['std']
 
 templates_path = ['_templates']
 
+# -- Permite destacar as linhas "kbd" das tabelas via .CSS
+
 html_static_path = ['_static']
 
 html_css_files = ['custom.css',]
