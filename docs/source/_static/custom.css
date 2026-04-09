@@ -14,7 +14,7 @@ kbd {
     background-color: #fff3cd;
     padding: 2px 4px;
     border-radius: 4px;
-    display: inline;
-    white-space: normal;   /* ESSENCIAL */
+    display: inline-block;
+    white-space: normal;
     text-align: justify;
 }
