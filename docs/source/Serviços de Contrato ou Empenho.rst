@@ -3569,15 +3569,16 @@ Detalhes da Requisição
 		
 		   * - Endpoint
 		     - Método HTTP
-		   * - /v1/orgaos/{cnpj}/contratos/{ano}/{sequencial}
-		     - PATCH
+		   * - :kbd:`/v1/orgaos/{cnpj}/contratos/{ano}/{sequencial}`
+		     - :kbd:`PATCH`
 			 
 		
-		Exemplo de Payload
-		^^^^^^^^^^^^^^^^^^
+Exemplo de Payload
+^^^^^^^^^^^^^^^^^^
 		
-		.. code-block:: json
-		  :linenos:
+	.. code-block:: json
+		:linenos:
+		:emphasize-lines: 1,35
 		
 				{
 			  "cnpjCompra": "10000000000003",
@@ -3615,15 +3616,441 @@ Detalhes da Requisição
 			  “urlCipi”: ” https://cipi.economia.gov.br/111.11-011”
 			}
 		
-		  
-		  
 		
 		Exemplo Requisição (cURL)
 		^^^^^^^^^^^^^^^^^^^^^^^^^
 		
-		.. code-block:: bash
+.. code-block:: bash
+	:linenos:
+	:emphasize-lines: 1,2
 		
 			curl -k -X  PATCH --header "Authorization: Bearer access_token" "${BASE_URL}/v1/orgaos/10000000000003/contratos/2021/1" -H "accept: */*" -H "Content-Type: application/json" --data "@/home/objeto.json"
 
 
+Dados de entrada
+^^^^^^^^^^^^^^^^
 
+.. note::
+
+   Alimentar os parâmetros {cnpj}, {ano} e {sequencial} na URL.
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 10 25
+   :header-rows: 1
+
+   * - :kbd:`Id`
+     - :kbd:`Campo`
+     - :kbd:`Tipo`
+     - :kbd:`Obrigatório`
+     - :kbd:`Descrição`
+   * - :kbd:`1`
+     - :kbd:`cnpj`
+     - :kbd:`Texto (14)`
+     - :kbd:`Sim`
+     - :kbd:`Cnpj do órgão do contrato/empenho`
+   * - :kbd:`2`
+     - :kbd:`ano`
+     - :kbd:`Inteiro`
+     - :kbd:`Sim`
+     - :kbd:`Ano do contrato/empenho`
+   * - :kbd:`3`
+     - :kbd:`sequencial`
+     - :kbd:`Inteiro`
+     - :kbd:`Sim`
+     - :kbd:`Número sequencial do contrato/empenho (gerado pelo PNCP no momento da inclusão do mesmo)`
+   * - :kbd:`4`
+     - :kbd:`cnpjCompra`
+     - :kbd:`Texto (14)`
+     - :kbd:`Não`
+     - :kbd:`Cnpj do órgão originário da contratação (proprietário da contratação ou alienação de bens)`
+   * - :kbd:`5`
+     - :kbd:`anoCompra`
+     - :kbd:`Inteiro`
+     - :kbd:`Não`
+     - :kbd:`Ano da contratação`
+   * - :kbd:`6`
+     - :kbd:`sequencialCompra`
+     - :kbd:`Inteiro`
+     - :kbd:`Não`
+     - :kbd:`Número sequencial da contratação (gerado pelo PNCP no momento da inclusão da contratação)`
+   * - :kbd:`7`
+     - :kbd:`tipoContratoId`
+     - :kbd:`Inteiro`
+     - :kbd:`Não`
+     - :kbd:`Código da tabela de domínio Tipo de contrato`
+   * - :kbd:`8`
+     - :kbd:`numeroContratoEmpenho`
+     - :kbd:`Texto (50)`
+     - :kbd:`Não`
+     - :kbd:`Número do contrato ou empenho com força de contrato`
+   * - :kbd:`9`
+     - :kbd:`processo`
+     - :kbd:`Texto (50)`
+     - :kbd:`Não`
+     - :kbd:`Número do processo`
+   * - :kbd:`10`
+     - :kbd:`categoriaProcessoId`
+     - :kbd:`Inteiro`
+     - :kbd:`Não`
+     - :kbd:`Código da tabela de domínio Categoria`
+   * - :kbd:`11`
+     - :kbd:`receita`
+     - :kbd:`Boleano`
+     - :kbd:`Não`
+     - :kbd:`Receita ou despesa: True - Receita; False - Despesa`
+   * - :kbd:`12`
+     - :kbd:`codigoUnidade`
+     - :kbd:`Texto (20)`
+     - :kbd:`Não`
+     - :kbd:`Código da unidade executora do órgão do contrato/empenho; a unidade deverá estar cadastrada para o órgão`
+   * - :kbd:`13`
+     - :kbd:`cnpjOrgaoSubRogado`
+     - :kbd:`Texto (14)`
+     - :kbd:`Não`
+     - :kbd:`Cnpj do órgão sub-rogado; somente em caso de sub-rogação`
+   * - :kbd:`14`
+     - :kbd:`codigoUnidadeSubRogada`
+     - :kbd:`Texto (20)`
+     - :kbd:`Não`
+     - :kbd:`Código da unidade executora do órgão sub-rogado do contrato/empenho; obrigatório caso ocorra sub-rogação do órgão`
+   * - :kbd:`15`
+     - :kbd:`niFornecedor`
+     - :kbd:`Texto (30)`
+     - :kbd:`Não`
+     - :kbd:`Número de identificação do fornecedor/arrematante; CNPJ, CPF ou identificador de empresa estrangeira`
+   * - :kbd:`16`
+     - :kbd:`tipoPessoaFornecedor`
+     - :kbd:`Texto (2)`
+     - :kbd:`Não`
+     - :kbd:`PJ - Pessoa jurídica; PF - Pessoa física; PE - Pessoa estrangeira`
+   * - :kbd:`17`
+     - :kbd:`nomeRazaoSocialFornecedor`
+     - :kbd:`Texto (100)`
+     - :kbd:`Não`
+     - :kbd:`Nome ou razão social do fornecedor/arrematante`
+   * - :kbd:`18`
+     - :kbd:`niFornecedorSubContratado`
+     - :kbd:`Texto (30)`
+     - :kbd:`Não`
+     - :kbd:`Número de identificação do fornecedor subcontratado; somente em caso de subcontratação; não se aplica a leilão`
+   * - :kbd:`19`
+     - :kbd:`tipoPessoaFornecedorSubContratado`
+     - :kbd:`Texto (2)`
+     - :kbd:`Não`
+     - :kbd:`PJ - Pessoa jurídica; PF - Pessoa física; PE - Pessoa estrangeira; somente em caso de subcontratação; não se aplica a leilão`
+   * - :kbd:`20`
+     - :kbd:`nomeRazaoSocialFornecedorSubContratado`
+     - :kbd:`Texto (100)`
+     - :kbd:`Não`
+     - :kbd:`Nome ou razão social do fornecedor subcontratado; somente em caso de subcontratação; não se aplica a leilão`
+   * - :kbd:`21`
+     - :kbd:`objetoContrato`
+     - :kbd:`Texto (5120)`
+     - :kbd:`Não`
+     - :kbd:`Descrição do objeto do contrato/empenho`
+   * - :kbd:`22`
+     - :kbd:`informacaoComplementar`
+     - :kbd:`Texto (5120)`
+     - :kbd:`Não`
+     - :kbd:`Informações complementares; se existir`
+   * - :kbd:`23`
+     - :kbd:`valorInicial`
+     - :kbd:`Decimal`
+     - :kbd:`Não`
+     - :kbd:`Valor inicial do contrato/empenho; precisão de 4 dígitos decimais; ex: 100.0000`
+   * - :kbd:`24`
+     - :kbd:`numeroParcelas`
+     - :kbd:`Inteiro`
+     - :kbd:`Não`
+     - :kbd:`Número de parcelas`
+   * - :kbd:`25`
+     - :kbd:`valorParcela`
+     - :kbd:`Decimal`
+     - :kbd:`Não`
+     - :kbd:`Valor da parcela; precisão de 4 dígitos decimais; ex: 100.0000`
+   * - :kbd:`26`
+     - :kbd:`valorGlobal`
+     - :kbd:`Decimal`
+     - :kbd:`Não`
+     - :kbd:`Valor global do contrato/empenho; precisão de 4 dígitos decimais; ex: 100.0000`
+   * - :kbd:`27`
+     - :kbd:`valorAcumulado`
+     - :kbd:`Decimal`
+     - :kbd:`Não`
+     - :kbd:`Valor acumulado do contrato/empenho; precisão de 4 dígitos decimais; ex: 100.0000`
+   * - :kbd:`28`
+     - :kbd:`dataAssinatura`
+     - :kbd:`Data`
+     - :kbd:`Não`
+     - :kbd:`Data de assinatura do contrato`
+   * - :kbd:`29`
+     - :kbd:`dataVigenciaInicio`
+     - :kbd:`Data`
+     - :kbd:`Não`
+     - :kbd:`Data de início de vigência do contrato`
+   * - :kbd:`30`
+     - :kbd:`dataVigenciaFim`
+     - :kbd:`Data`
+     - :kbd:`Não`
+     - :kbd:`Data do término da vigência do contrato`
+   * - :kbd:`31`
+     - :kbd:`justificativa`
+     - :kbd:`Texto (255)`
+     - :kbd:`Sim`
+     - :kbd:`Motivo/justificativa para a retificação dos atributos do contrato/empenho`
+   * - :kbd:`32`
+     - :kbd:`identificadorCipi`
+     - :kbd:`String (512)`
+     - :kbd:`Não`
+     - :kbd:`Identificador do contrato no Cadastro Integrado de Projetos de Investimento`
+   * - :kbd:`33`
+     - :kbd:`urlCipi`
+     - :kbd:`String (8 a 14)`
+     - :kbd:`Não`
+     - :kbd:`Url com informações do contrato no sistema de Cadastro Integrado de Projetos de Investimento`
+   * - :kbd:`34`
+     - :kbd:`sequencialAta`
+     - :kbd:`Inteiro`
+     - :kbd:`Não`
+     - :kbd:`Número sequencial da ata de registro de preço`
+   * - :kbd:`35`
+     - :kbd:`frutoAdesao`
+     - :kbd:`Booleano`
+     - :kbd:`Não`
+     - :kbd:`Indicador se o contrato/empenho é fruto de adesão a uma ata (False-Não / True-Sim)`
+   * - :kbd:`36`
+     - :kbd:`temRemanejamento`
+     - :kbd:`Boleano`
+     - :kbd:`Não`
+     - :kbd:`Indicador de remanejamento (False-Não / True-Sim)`
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 10 25
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Obrigatório
+     - Descrição
+   * - 1
+     - location
+     - Texto (255)
+     - Sim
+     - Endereço http do recurso retificado
+
+Códigos de Retorno
+^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 10 25 20
+   :header-rows: 1
+
+   * - :kbd:`Código HTTP`
+     - :kbd:`Mensagem`
+     - :kbd:`Tipo`
+   * - :kbd:`201`
+     - :kbd:`Created`
+     - :kbd:`Sucesso`
+   * - :kbd:`400`
+     - :kbd:`BadRequest`
+     - :kbd:`Erro`
+   * - :kbd:`422`
+     - :kbd:`Unprocessable Entity`
+     - :kbd:`Erro`
+   * - :kbd:`500`
+     - :kbd:`Internal Server Error`
+     - :kbd:`Erro`
+
+Inserir Empenho
+~~~~~~~~~~~~~~~
+
+.. container:: destaque-amarelo
+
+	Serviço que permite incluir um empenho para um respectivo Contrato. Este serviço será acionado por qualquer plataforma digital credenciada.
+
+Detalhes da Requisição
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 50 15
+   :header-rows: 1
+
+   * - Endpoint
+     - Método HTTP
+   * - :kbd:`/v1/orgaos/{cnpj}/contratos/{ano}/{sequencialContrato}/empenhos`
+     - :kbd:`POST`
+	 
+
+Exemplo de Payload
+^^^^^^^^^^^^^^^^^^
+
+.. code-block:: json
+  :linenos:
+  :emphasize-lines: 1-16
+
+		{
+		  "empenhos": [
+		    {
+		      "numeroEmpenho": "string",
+		      "tipoPessoa": "PJ",
+		      "niCredorFornecedor": "string",
+		      "nomeCredorFornecedor": "string",
+		      "numeroPlanoInterno": "string",
+		      "codigoNaturezaDespesa": "string",
+		      "dataEmissaoEmpenho": "2026-01-01T12:00:00",
+		      "valorTotal": 1000.0000,
+		      "valorSubItem": 1000.0000,
+		      "codigoEmenda": "string"
+		    }
+		  ]
+		}
+
+
+Exemplo Requisição (cURL)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+  :linenos:
+  :emphasize-lines: 1,2
+
+	   curl -X 'GET' '${BASE_URL}/v1/tipos-instrumentos-convocatorios 
+	   -H 'accept: */*'
+
+
+Dados de entrada
+^^^^^^^^^^^^^^^^
+
+.. note::
+   Nota: alimentar os parâmetros :kbd:`{cnpj}`, :kbd:`{ano}` e :kbd:`{sequencial}` na URL.
+
+.. list-table::
+   :width: 100%
+   :widths: 5 20 15 10 50
+   :header-rows: 1
+
+   * - :kbd:`Id`
+     - :kbd:`Campo`
+     - :kbd:`Tipo`
+     - :kbd:`Obrigatório`
+     - :kbd:`Descrição`
+   * - :kbd:`1`
+     - :kbd:`cnpj`
+     - :kbd:`Texto (14)`
+     - :kbd:`Sim`
+     - :kbd:`CNPJ do órgão do contrato/empenho`
+   * - :kbd:`2`
+     - :kbd:`ano`
+     - :kbd:`Inteiro`
+     - :kbd:`Sim`
+     - :kbd:`Ano do contrato/empenho`
+   * - :kbd:`3`
+     - :kbd:`sequencialContrato`
+     - :kbd:`Inteiro`
+     - :kbd:`Sim`
+     - :kbd:`Número sequencial do contrato/empenho (gerado pelo PNCP no momento da inclusão)`
+   * - :kbd:`4`
+     - :kbd:`empenhos`
+     - :kbd:``
+     - :kbd:`Sim`
+     - :kbd:`Lista de metadados dos empenhos`
+   * - :kbd:`4.1`
+     - :kbd:`numeroEmpenho`
+     - :kbd:`Texto (50)`
+     - :kbd:`Sim`
+     - :kbd:`Número do empenho`
+   * - :kbd:`4.2`
+     - :kbd:`tipoPessoa`
+     - :kbd:`Texto (2)`
+     - :kbd:`Sim`
+     - :kbd:`PJ - Pessoa jurídica; PF - Pessoa física; PE - Pessoa estrangeira`
+   * - :kbd:`4.3`
+     - :kbd:`niCredorFornecedor`
+     - :kbd:`Texto (30)`
+     - :kbd:`Sim`
+     - :kbd:`CNPJ, CPF ou identificador estrangeiro do credor/fornecedor`
+   * - :kbd:`4.4`
+     - :kbd:`nomeCredorFornecedor`
+     - :kbd:`Texto (250)`
+     - :kbd:`Sim`
+     - :kbd:`Nome do credor/fornecedor`
+   * - :kbd:`4.5`
+     - :kbd:`numeroPlanoInterno`
+     - :kbd:`Texto (50)`
+     - :kbd:`Não`
+     - :kbd:`Número do Plano Interno`
+   * - :kbd:`4.6`
+     - :kbd:`codigoNaturezaDespesa`
+     - :kbd:`Texto (10)`
+     - :kbd:``
+     - :kbd:`Código da natureza de despesa`
+   * - :kbd:`4.7`
+     - :kbd:`dataEmissaoEmpenho`
+     - :kbd:`Data/Hora`
+     - :kbd:`Sim`
+     - :kbd:`Data/Hora da emissão do empenho`
+   * - :kbd:`4.8`
+     - :kbd:`valorTotal`
+     - :kbd:`Decimal`
+     - :kbd:`Sim`
+     - :kbd:`Valor total do empenho`
+   * - :kbd:`4.9`
+     - :kbd:`valorSubItem`
+     - :kbd:`Decimal`
+     - :kbd:`Não`
+     - :kbd:`Valor do subelemento`
+   * - :kbd:`4.10`
+     - :kbd:`codigoEmenda`
+     - :kbd:`Texto (50)`
+     - :kbd:`Não`
+     - :kbd:`Código da Emenda Parlamentar`
+
+Dados de retorno
+^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 10 25 20 15 30
+   :header-rows: 1
+
+   * - :kbd:`Id`
+     - :kbd:`Campo`
+     - :kbd:`Tipo`
+     - :kbd:`Obrigatório`
+     - :kbd:`Descrição`
+   * - :kbd:`1`
+     - :kbd:`location`
+     - :kbd:`Texto (255)`
+     - :kbd:`Sim`
+     - :kbd:`Endereço HTTP do recurso criado`
+
+Códigos de Retorno
+^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 10 25 20
+   :header-rows: 1
+
+   * - :kbd:`Código HTTP`
+     - :kbd:`Mensagem`
+     - :kbd:`Tipo`
+   * - :kbd:`200`
+     - :kbd:`Created`
+     - :kbd:`Sucesso`
+   * - :kbd:`400`
+     - :kbd:`BadRequest`
+     - :kbd:`Erro`
+   * - :kbd:`401`
+     - :kbd:`Unauthorized`
+     - :kbd:`Erro`
+   * - :kbd:`422`
+     - :kbd:`Unprocessable Entity`
+     - :kbd:`Erro`
+   * - :kbd:`500`
+     - :kbd:`Internal Server Error`
+     - :kbd:`Erro`
