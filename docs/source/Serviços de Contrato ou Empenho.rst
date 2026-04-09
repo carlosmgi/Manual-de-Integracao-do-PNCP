@@ -3578,9 +3578,9 @@ Detalhes da Requisição
 Exemplo de Payload
 ^^^^^^^^^^^^^^^^^^
 		
-	.. code-block:: json
-		:linenos:
-		:emphasize-lines: 1-35
+.. code-block:: json
+	:linenos:
+	:emphasize-lines: 1-35
 		
 				{
 			  "cnpjCompra": "10000000000003",
@@ -4087,7 +4087,7 @@ Exemplo de Payload
 
 .. code-block:: json
   :linenos:
-  :emphasize-lines: 1,15
+  :emphasize-lines: 1-15
 
 	{
 	  "numeroEmpenho": "string",
