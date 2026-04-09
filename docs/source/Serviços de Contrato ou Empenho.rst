@@ -304,7 +304,7 @@ Dados de entrada
      - :kbd:`temRemanejamento`
      - :kbd:`Booleano`
      - :kbd:`Sim`
-     - :destaque:`O remanejamento de quantidade em atas de registro de preços (SRP) é a transferência de saldos de itens entre órgãos participantes ou para não participantes (caronas), permitindo otimizar a compra. Deve ser autorizado pelo órgão gerenciador, respeitando limites legais e a anuência do fornecedor para garantir o equilíbrio econômico-financeiro. Indicador de Remanejamento (False-Não / True-Sim)`
+     - :kbd:`O remanejamento de quantidade em atas de registro de preços (SRP) é a transferência de saldos de itens entre órgãos participantes ou para não participantes (caronas), permitindo otimizar a compra. Deve ser autorizado pelo órgão gerenciador, respeitando limites legais e a anuência do fornecedor para garantir o equilíbrio econômico-financeiro. Indicador de Remanejamento (False-Não / True-Sim)`
 
 Dados de retorno
 ^^^^^^^^^^^^^^^^
@@ -4271,5 +4271,18 @@ Excluir Empenho
 
 	Serviço que permite remover um empenho. Este serviço será acionado por qualquer plataforma digital credenciada.
 
+Teste
+^^^^^
 
+.. list-table::
+   :width: 100%
+   :widths: 10 25 20
+   :header-rows: 1
+
+	* - Código HTTP
+	     - Mensagem
+	     - Tipo
+	   * - :destaque:`200`
+	     - :destaque:`Update`
+	     - :destaque:`Serviço que permite remover um empenho. Este serviço será acionado por qualquer plataforma digital credenciada.`
 
