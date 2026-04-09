@@ -1,5 +1,14 @@
 # Configuration file for the Sphinx documentation builder.
 
+from docutils import nodes
+from docutils.parsers.rst import roles
+
+def destaque_role(name, rawtext, text, lineno, inliner, options={}, content=[]):
+    node = nodes.inline(text, text, classes=['linha-destaque'])
+    return [node], []
+
+roles.register_local_role('destaque', destaque_role)
+
 # -- Project information
 
 project = 'Manual de Integração do PNCP'
