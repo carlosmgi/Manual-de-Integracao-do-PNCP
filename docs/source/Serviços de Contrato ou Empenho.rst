@@ -3411,6 +3411,7 @@ Exemplos
 
 **Exemplo 1 - ARP contendo Gerenciadora e participante(s):**
 
+
 .. code-block:: json
   :linenos:
 
@@ -3545,6 +3546,84 @@ Exemplos
 .. Attention::
 
 	As partes envolvidas da ARP somente podem ser informadas ao PNCP pela gerenciadora. 
+
+
+Retificar Parcialmente um Contrato/Empenho
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. container:: destaque-amarelo
+
+	Serviço que permite retificar parcialmente um contrato/empenho. Além da justificativa, pelo menos um dos campos relacionados ao empenho deve ser enviado para retificação. Este serviço será acionado por qualquer plataforma digital credenciada.
+
+		Detalhes da Requisição
+		^^^^^^^^^^^^^^^^^^^^^^
+		
+		.. Note::
+		
+			Nota: alimentar os parâmetros {cnpj}, {ano} e {sequencial} na URL.
+		
+		.. list-table::
+		   :width: 100%
+		   :widths: 50 15
+		   :header-rows: 1
+		
+		   * - Endpoint
+		     - Método HTTP
+		   * - /v1/orgaos/{cnpj}/contratos/{ano}/{sequencial}
+		     - PATCH
+			 
+		
+		Exemplo de Payload
+		^^^^^^^^^^^^^^^^^^
+		
+		.. code-block:: json
+		  :linenos:
+		
+				{
+			  "cnpjCompra": "10000000000003",
+			  "anoCompra": 2021,
+			  "sequencialCompra": 1,
+			  "sequencialAta": 1,
+			  "frutoAdesao": true,
+			  "temRemanejamento": false,
+			  "tipoContratoId": 1,
+			  "numeroContratoEmpenho": "1",
+			  "processo": "1/2021",
+			  "categoriaProcessoId": 2,
+			  "receita": false,
+			  "codigoUnidade": "1",
+			  "cnpjOrgaoSubRogado": "",
+			  "codigoUnidadeSubRogada": "",
+			  "niFornecedor": "10000000000010",
+			  "tipoPessoaFornecedor": "PJ",
+			  "nomeRazaoSocialFornecedor": "Fornecedor do Teste I",
+			  "niFornecedorSubContratado": "",
+			  "tipoPessoaFornecedorSubContratado": "",
+			  "nomeRazaoSocialFornecedorSubContratado": "",
+			  "objetoContrato": "Contrato para exemplificar uso da API de retificação no PNCP.",
+			  "informacaoComplementar": "",
+			  "valorInicial": 10000.00,
+			  "numeroParcelas": 2,
+			  "valorParcela": 5000.00,
+			  "valorGlobal": 10000.00,
+			  "valorAcumulado": 10000.00,
+			  "dataAssinatura": "2021-07-21",
+			  "dataVigenciaInicio": "2021-07-22",
+			  "dataVigenciaFim": "2021-07-23",
+			  "justificativa": "motivo/justificativa para a retificação do contrato"
+			  “identificadorCipi”: “111.11-011”,
+			  “urlCipi”: ” https://cipi.economia.gov.br/111.11-011”
+			}
+		
+		  
+		  
+		
+		Exemplo Requisição (cURL)
+		^^^^^^^^^^^^^^^^^^^^^^^^^
+		
+		.. code-block:: bash
+		
+			curl -k -X  PATCH --header "Authorization: Bearer access_token" "${BASE_URL}/v1/orgaos/10000000000003/contratos/2021/1" -H "accept: */*" -H "Content-Type: application/json" --data "@/home/objeto.json"
 
 
 
