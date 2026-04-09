@@ -1,5 +1,7 @@
 # Configuration file for the Sphinx documentation builder.
 
+# -- Permite destacar as linhas das tabelas via .CSS
+
 from docutils import nodes
 from docutils.parsers.rst import roles
 
