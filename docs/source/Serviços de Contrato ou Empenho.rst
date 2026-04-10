@@ -4584,4 +4584,4 @@ Teste
    :widths: 95 5
 
    * - As alterações da versão |versao| estão em destaque:
-     - :destaque:`   `
+     - :legenda:`123`
