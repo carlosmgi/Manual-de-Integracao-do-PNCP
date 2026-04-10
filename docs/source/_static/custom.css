@@ -19,3 +19,14 @@ kbd {
     white-space: normal;
     text-align: justify;
 }
+
+.legenda-destaque::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: #fff3cd;
+    display: inline-block;
+    margin-right: 6px;
+    border-radius: 2px;
+    vertical-align: middle;
+}
