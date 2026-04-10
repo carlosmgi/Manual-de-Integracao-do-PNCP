@@ -13,8 +13,10 @@ roles.register_local_role('destaque', destaque_role)
 
 #-- Alterar a versão nas páginas
 
-rst_epilog = """
-.. |versao| replace:: x
+version = "1.2.3"
+
+rst_epilog = f"""
+.. |versao| replace:: {version}
 """
 
 # -- Project information
