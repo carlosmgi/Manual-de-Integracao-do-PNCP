@@ -2,6 +2,8 @@ Serviços de Ata
 ===============
 
 .. toctree::
-   :maxdepth: 1
+   :numbered:
+   :maxdepth: 2
+   :caption: Serviços de Ata
 
    Inserir Ata
