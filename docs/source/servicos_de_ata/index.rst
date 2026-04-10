@@ -6,6 +6,7 @@ Serviços de Ata
    :maxdepth: 2
 
    inserir_ata
+   consultar_ata
 
 O que é Lorem Ipsum?
 --------------------
