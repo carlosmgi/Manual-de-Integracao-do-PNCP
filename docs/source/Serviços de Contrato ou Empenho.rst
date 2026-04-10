@@ -10,22 +10,22 @@ Serviços de Contrato ou Empenho
    :widths: 5 25 15 25
    :header-rows: 1
 
-   * - Id
-     - Campo
-     - Tipo
-     - Descrição
-   * - 1
-     - cnpj
-     - Texto
-     - CNPJ do órgão do contrato/empenho
-   * - :destaque:`2`
-     - :destaque:`ano`
-     - :destaque:`Inteiro`
-     - :destaque:`Ano do contrato/empenho`
-   * - 3
-     - sequencialContrato
-     - Inteiro`
-     - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento que o contrato/empenho foi inserido no PNCP
+	   * - Id
+	     - Campo
+	     - Tipo
+	     - Descrição
+	   * - 1
+	     - cnpj
+	     - Texto
+	     - CNPJ do órgão do contrato/empenho
+	   * - :destaque:`2`
+	     - :destaque:`ano`
+	     - :destaque:`Inteiro`
+	     - :destaque:`Ano do contrato/empenho`
+	   * - 3
+	     - sequencialContrato
+	     - Inteiro`
+	     - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento que o contrato/empenho foi inserido no PNCP
 
 \
 
