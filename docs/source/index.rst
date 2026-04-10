@@ -17,8 +17,7 @@ Sumário
 
 .. toctree::
    :numbered:
-   :maxdepth: 2
-   :caption: Histórico de Versões
+   :caption: Sumário
 
    Histórico de Versões
    servicos_de_ata/index
