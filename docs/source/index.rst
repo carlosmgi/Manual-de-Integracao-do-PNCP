@@ -18,7 +18,6 @@ Sumário
 .. toctree::
    :numbered:
    :maxdepth: 2
-   :hidden:
    :caption: Histórico de Versões
 
    Histórico de Versões
@@ -27,7 +26,6 @@ Sumário
    :numbered:
    :maxdepth: 2
    :start-number: 2
-   :hidden:
    :caption: Introdução
 
    Objetivo
@@ -40,7 +38,6 @@ Sumário
    :numbered:
    :maxdepth: 2
    :start-number: 7
-   :hidden:
    :caption: Serviços
 
    Serviços de Usuário
