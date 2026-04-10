@@ -26,6 +26,7 @@ Sumário
 .. toctree::
    :numbered:
    :maxdepth: 2
+   :start-number: 2
    :hidden:
    :caption: Introdução
 
@@ -38,6 +39,7 @@ Sumário
 .. toctree::
    :numbered:
    :maxdepth: 2
+   :start-number: 7
    :hidden:
    :caption: Serviços
 
