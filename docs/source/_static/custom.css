@@ -22,11 +22,6 @@ kbd {
 
 .legenda-destaque {
     background-color: #F9B066;
-    padding: 2px 4px;
-    border-radius: 4px;
-    display: inline-block;
-    white-space: normal;
-    text-align: justify; 
     color: #F9B066 !important;
 }
 
