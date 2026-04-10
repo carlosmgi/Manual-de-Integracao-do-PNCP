@@ -1,5 +1,5 @@
-Serviços de Ata
-===============
+Serviços de Atas
+================
 
 .. toctree::
    :numbered:
