@@ -27,5 +27,5 @@ kbd {
     display: inline-block;
     white-space: normal;
     text-align: justify; 
-    color: #F9B066;
+    color: #F9B066 !important;
 }
