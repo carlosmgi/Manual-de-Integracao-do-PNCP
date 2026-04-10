@@ -4582,6 +4582,7 @@ Teste
 .. list-table::
    :width: 100%
    :widths: 95 5
+   :class: tabela-branca
 
    * - As alterações da versão |versao| estão em destaque:
      - :legenda:`123`
