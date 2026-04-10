@@ -4577,3 +4577,13 @@ Consultar Empenhos
 
 \
 
+Teste
+
+.. |versao| replace:: x
+
+.. raw:: html
+
+   <div class="legenda-destaque">
+       As alterações da versão <strong>|versao|</strong> estão em destaque.
+   </div>
+
