@@ -11,6 +11,12 @@ def destaque_role(name, rawtext, text, lineno, inliner, options={}, content=[]):
 
 roles.register_local_role('destaque', destaque_role)
 
+#-- Alterar a versão nas páginas
+
+rst_epilog = """
+.. |versao| replace:: x
+"""
+
 # -- Project information
 
 project = 'Manual de Integração do PNCP'
