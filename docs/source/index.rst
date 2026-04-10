@@ -21,6 +21,7 @@ Sumário
    :caption: Histórico de Versões
 
    Histórico de Versões
+   servicos_de_ata/index
    Objetivo
    Protocolo de Comunicação
    Acesso ao PNCP
