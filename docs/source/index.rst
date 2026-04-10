@@ -17,6 +17,7 @@ Sumário
 
 .. toctree::
    :numbered:
+   :maxdepth: 1
 
    Histórico de Versões
    Objetivo
