@@ -1,7 +1,7 @@
 Serviços de Contrato ou Empenho
 ============================
 
-Consultas
+Inserções
 ---------
 
 .. Attention::
@@ -1140,6 +1140,9 @@ Dados de Entrada
    * - 500
      - Internal Server Error
      - Erro
+
+Consultas
+---------
 
 Consultar Todos os Documentos de um Contrato ou Empenho
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
