@@ -11,18 +11,10 @@ def destaque_role(name, rawtext, text, lineno, inliner, options={}, content=[]):
 
 roles.register_local_role('destaque', destaque_role)
 
-# -- Permite criar a legenda via .CSS
 
-def legenda_role(name, rawtext, text, lineno, inliner, options={}, content=[]):
-    node = nodes.inline(text, text, classes=['linha-destaque'])
-    return [node], []
+#-- Alterar a versão do manual em todas as páginas
 
-roles.register_local_role('legenda', legenda_role)
-
-
-#-- Alterar a versão nas páginas
-
-version = "1.2.3"
+version = "2.4"
 
 rst_epilog = f"""
 .. |versao| replace:: {version}
