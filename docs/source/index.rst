@@ -25,7 +25,6 @@ Sumário
 .. toctree::
    :numbered:
    :maxdepth: 2
-   :start-number: 2
    :caption: Introdução
 
    Objetivo
@@ -37,7 +36,6 @@ Sumário
 .. toctree::
    :numbered:
    :maxdepth: 2
-   :start-number: 7
    :caption: Serviços
 
    Serviços de Usuário
