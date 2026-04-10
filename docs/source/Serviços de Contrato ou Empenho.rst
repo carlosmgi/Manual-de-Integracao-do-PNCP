@@ -4579,5 +4579,7 @@ Consultar Empenhos
 
 Teste
 
-As alterações da versão |versao| estão em destaque.
+.. class:: legenda-destaque
+
+   As alterações da versão |versao| estão em destaque.
 
