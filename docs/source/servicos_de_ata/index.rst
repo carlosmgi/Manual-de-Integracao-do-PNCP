@@ -8,7 +8,6 @@ Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica 
 
 .. toctree::
    :numbered:
-   :maxdepth: 2
 
    inserir_ata
    consultar_ata
