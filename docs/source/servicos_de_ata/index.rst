@@ -6,4 +6,4 @@ Serviços de Ata
    :maxdepth: 2
    :caption: Serviços de Ata
 
-   Inserir Ata
+   inserir_ata
