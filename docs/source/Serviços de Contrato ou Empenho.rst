@@ -4579,7 +4579,11 @@ Consultar Empenhos
 
 Teste
 
-.. class:: legenda-destaque
+.. list-table::
+   :width: 100%
+   :widths: 35 3
+   :header-rows: 1
 
-   As alterações da versão |versao| estão em destaque.
+  * - :destaque:`As alterações da versão |versao| estão em destaque:`
+     - :destaque:`   `
 
