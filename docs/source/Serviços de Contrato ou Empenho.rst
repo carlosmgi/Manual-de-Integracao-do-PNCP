@@ -26,6 +26,7 @@ Serviços de Contrato ou Empenho
         - sequencialContrato
         - Inteiro
         - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
+\
 
 \
 
