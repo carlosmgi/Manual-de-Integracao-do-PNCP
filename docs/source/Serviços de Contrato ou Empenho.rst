@@ -4581,9 +4581,7 @@ Teste
 
 .. list-table::
    :width: 100%
-   :widths: 35 3
-   :header-rows: 1
+   :widths: 95 5
 
-  * - :destaque:`As alterações da versão |versao| estão em destaque:`
+   * - As alterações da versão |versao| estão em destaque:
      - :destaque:`   `
-
