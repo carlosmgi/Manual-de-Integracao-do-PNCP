@@ -20,7 +20,7 @@ kbd {
     text-align: justify;
 }
 
-.legenda-destaque::before {
+.legenda-destaque {
     content: "";
     width: 12px;
     height: 12px;
