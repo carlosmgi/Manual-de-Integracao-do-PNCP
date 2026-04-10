@@ -17,14 +17,30 @@ Sumário
 
 .. toctree::
    :numbered:
-   :maxdepth: 1
+   :maxdepth: 2
+   :hidden:
+   :caption: Histórico de Versões
 
    Histórico de Versões
+
+.. toctree::
+   :numbered:
+   :maxdepth: 2
+   :hidden:
+   :caption: Introdução
+
    Objetivo
    Protocolo de Comunicação
    Acesso ao PNCP
    Recomendações Iniciais
    Tabelas de Domínio
+
+.. toctree::
+   :numbered:
+   :maxdepth: 2
+   :hidden:
+   :caption: Serviços
+
    Serviços de Usuário
    Serviços de Órgão e Entidade
    Serviços de Contratação (Editais, Avisos e Atos) 
