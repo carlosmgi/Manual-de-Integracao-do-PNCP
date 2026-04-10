@@ -19,13 +19,3 @@ kbd {
     white-space: normal;
     text-align: justify;    
 }
-
-.legenda-destaque {
-    background-color: #F9B066;
-    color: #F9B066 !important;
-}
-
-.tabela-branca {
-    background-color: #F9B066 !important;
-    color: #F9B066 !important;
-}
