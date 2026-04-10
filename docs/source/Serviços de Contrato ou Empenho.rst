@@ -1,6 +1,9 @@
 Serviços de Contrato ou Empenho
 ============================
 
+Consultas
+=========
+
 .. Attention::
 
    As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
