@@ -4334,3 +4334,62 @@ Códigos de Retorno
 
 Consultar Empenho pelo Número Sequencial
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. container:: destaque-amarelo
+
+	Serviço que permite consultar um empenho específico pertencente a um contra-to/empenho.
+
+\
+
+Detalhes da Requisição
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. list-table::
+   :width: 100%
+   :widths: 50 15
+   :header-rows: 1
+
+   * - Endpoint
+     - Método HTTP
+   * - :destaque:`/v1/orgaos/{cnpj}/contratos/{ano}/{sequencialContra-to}/empenhos/{sequencialEmpenho}`
+     - :destaque:`GET`	 
+
+Exemplo de Payload
+^^^^^^^^^^^^^^^^^^
+
+.. code-block:: json
+  :linenos:
+  :emphasize-lines: 1
+
+	Não se aplica  
+
+Exemplo Requisição (cURL)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+  :linenos:
+  :emphasize-lines: 1
+
+	curl -k -X GET "${BA-SE_URL}/v1/orgaos/10000000000003/contratos/2025/1/empenhos/1" -H "Accept: */*”
+
+Dados de entrada
+^^^^^^^^^^^^^^^^
+
+.. note::
+   Alimentar os parâmetros {cnpj}, {ano}, {sequencial} na URL.
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 10 25
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Obrigatório
+     - Descrição
+   * - 1
+     - :destaque:`cnpj`
+     - :destaque:`Texto (14)`
+     - :destaque:`Sim`
+     - :destaque:`CNPJ do órgão`
