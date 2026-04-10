@@ -28,6 +28,7 @@ Sumário
    Serviços de Órgão e Entidade
    Serviços de Contratação (Editais, Avisos e Atos) 
    Serviços de Ata
+   Serviços de Ata - Changes
    Serviços de Contrato ou Empenho
    Inserir Contratos ou Empenhos
    Retificar Contrato ou Empenho 
