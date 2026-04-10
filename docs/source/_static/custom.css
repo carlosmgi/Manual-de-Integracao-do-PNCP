@@ -8,8 +8,7 @@ kbd {
     padding: 10px;
     border-left: 5px solid #ffc107;
     border-radius: 4px;
-    text-align: justify;
-    color: #fff3cd;
+    text-align: justify;    
 }
 
 .linha-destaque {
@@ -18,16 +17,15 @@ kbd {
     border-radius: 4px;
     display: inline-block;
     white-space: normal;
-    text-align: justify;
+    text-align: justify;    
 }
 
 .legenda-destaque {
-    content: "";
-    width: 12px;
-    height: 12px;
     background-color: #F9B066;
+    padding: 2px 4px;
+    border-radius: 4px;
     display: inline-block;
-    margin-right: 6px;
-    border-radius: 2px;
-    vertical-align: middle;
+    white-space: normal;
+    text-align: justify; 
+    color: #F9B066;
 }
