@@ -19,3 +19,4 @@ Contratos/Empenhos
    Excluir Instrumento de Cobrança de Contrato ou Empenho
    Consultar Instrumento de Cobrança de um Contrato ou Empenho
    Consultar Instrumentos de Cobrança de um Contrato ou Empenho
+   Fluxos de Inclusão de Contratos fruto de Ata de Registro de Preços (ARP) no PNCP
