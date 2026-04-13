@@ -13,3 +13,4 @@ Contratos/Empenhos
    Consultar Documento de um Contrato ou Empenho
    Consultar Contrato ou Empenho
    Consultar Contratos ou Empenhos de uma Contratação
+   Consultar Histórico do Contrato ou Empenho
