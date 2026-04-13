@@ -14,7 +14,7 @@ roles.register_local_role('destaque', destaque_role)
 
 #-- Alterar a versão do manual em todas as páginas
 
-version = "2.4"
+version = "2.5"
 
 rst_epilog = f"""
 .. |versao| replace:: {version}
