@@ -1,3 +1,6 @@
+Inserir Contratos ou Empenhos
+=============================
+
 .. Attention::
 
    As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
@@ -26,9 +29,6 @@
 
 \
 
-Inserir Contratos ou Empenhos
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 Serviço que permite incluir um contrato ou empenho. Este serviço será acionado por qualquer plataforma digital credenciada. 
 
 .. container:: destaque-amarelo
@@ -41,7 +41,7 @@ Serviço que permite incluir um contrato ou empenho. Este serviço será acionad
     Conforme regra de conformidade, prevista no item 5.19, não é possível a inclusão ou retificação de contrato ou empenho que pertença à contratação realizada por Sistema de Registro de Preços (SRP), a qual não possua ao menos uma ata de registro de preços publicada no PNCP. 
 
 **Atualizações da versão 2.3.10**
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. versionadded:: 2.3.10
  
@@ -79,7 +79,7 @@ Serviço que permite incluir um contrato ou empenho. Este serviço será acionad
   não houve alterações.
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -92,7 +92,7 @@ Detalhes da Requisição
      - POST
 
 Exemplo de Payload
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. code-block:: json
   :linenos:
@@ -131,7 +131,7 @@ Exemplo de Payload
     }
 
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
   :linenos:
@@ -145,7 +145,7 @@ Exemplo Requisição (cURL)
      "$BASE_URL/v1/orgaos/100000000000003/contratos"
 
 Dados de entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. note::
    Alimentar o parâmetro {cnpj} na URL.
@@ -332,7 +332,7 @@ Dados de entrada
      - :destaque:`O remanejamento de quantidade em atas de registro de preços (SRP) é a transferência de saldos de itens entre órgãos participantes ou para não participantes (caronas), permitindo otimizar a compra. Deve ser autorizado pelo órgão gerenciador, respeitando limites legais e a anuência do fornecedor para garantir o equilíbrio econômico-financeiro. Indicador de Remanejamento (False-Não / True-Sim)`
 
 Dados de retorno
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -351,7 +351,7 @@ Dados de retorno
      - Endereço http do recurso criado
 
 Exemplo de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. code-block:: http
    :linenos:
@@ -373,7 +373,7 @@ Exemplo de Retorno
    x-xss-protection: 1; mode=block
 
 **Códigos de Retorno**
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
