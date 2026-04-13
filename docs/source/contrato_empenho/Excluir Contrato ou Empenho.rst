@@ -1,5 +1,5 @@
-Excluir Contrato ou Empenho
-===========================
+Excluir Contrato/Empenho
+========================
 
 .. Attention::
 
