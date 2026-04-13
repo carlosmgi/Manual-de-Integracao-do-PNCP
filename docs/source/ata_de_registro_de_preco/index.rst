@@ -1,8 +1,7 @@
 Atas de Registro de Preço
 =========================
 
-Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a uma contratação. O sistema exige o upload de um arquivo anexo à ata de registro de preço enviada. As extensões permitidas para o arquivo anexo são listadas na seção Tabelas de domínio - Envio de arquivos pelas APIs de Documento e os tipos de documento/arquivo aceitos pelo PNCP podem ser consultados na seção Tabelas de domínio - Tipo de Documento, deste manual.
-
+Serviço que disponibiliza o conjunto de operações relacionadas às Atas de Registro de Preço no PNCP. A seguir são listados tópicos que orientam sobre como realizar a inserção, retificação (total ou parcial) e exclusão de atas, bem como consultar dados detalhados por diferentes critérios, como ata por compra ou por ata específica. Também descreve os endpoints relacionados à documentos vinculados, incluindo inclusão, exclusão e consulta, além do acesso ao histórico de alterações e aos contratos associados à ata. Adicionalmente, permite administrar as partes envolvidas, possibilitando sua inclusão, exclusão e consulta.
 
 .. toctree::
    :maxdepth: 3
