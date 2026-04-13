@@ -11,13 +11,13 @@ Retificar Contrato/Empenho
    :header-rows: 1
 
    * - Id
-   - Campo
-   - Tipo
-   - Descrição
+     - Campo
+     - Tipo
+     - Descrição
    * - 1
-   - cnpj
-   - Texto
-   - CNPJ do órgão do contrato/empenho
+     - cnpj
+     - Texto
+     - CNPJ do órgão do contrato/empenho
    * - :destaque:`2`
      - :destaque:`ano`
      - :destaque:`Inteiro`
