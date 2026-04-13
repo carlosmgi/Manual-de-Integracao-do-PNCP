@@ -7,5 +7,5 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
 .. toctree::
    :maxdepth: 3
 
-   inserir_ata_de_registro_de_preços
-   consultar_ata_de_registro_de_preços
+   inserir_ata_de_registro_de_precos
+   consultar_ata_de_registro_de_precos
