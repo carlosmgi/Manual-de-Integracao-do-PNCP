@@ -9,5 +9,5 @@ Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica 
 .. toctree::
    :numbered:
 
-   inserir_contrato_empenho
-   consultar_contrato_empenho
+   inserir_contrato_empenho2
+   consultar_contrato_empenho2
