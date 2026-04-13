@@ -1,5 +1,5 @@
-Retificar Contrato ou Empenho
-=============================
+Retificar Contrato/Empenho
+==========================
 
 .. Attention::
 
