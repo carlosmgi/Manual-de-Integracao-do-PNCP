@@ -22,3 +22,8 @@ Serviços que disponibilizam conjunto de operações relacionadas às Atas de Re
    excluir_parte_envolvida_em_ata_de_registro_de_preco
    consultar_parte_envolvida_em_ata_de_registro_de_preco
    consultar_partes_envolvidas_em_ata_de_registro_de_preco
+   consultar_dados_de_todos_os_documentos_de_uma_ata_de_registro_de_preco
+   consultar_quantidade_de_historico_de_ata_de_registro_de_preco
+   baixar_arquivo_documento_de_ata_de_registro_de_preco
+   consultar_quantidade_de_documentos_de_ata_de_registro_de_precos
+   baixar_arquivo_documento_excluido_de_ata_de_registro_de_preco
