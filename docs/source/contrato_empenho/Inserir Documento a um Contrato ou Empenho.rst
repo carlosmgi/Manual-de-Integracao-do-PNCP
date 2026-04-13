@@ -1,5 +1,5 @@
-Inserir Documento a um Contrato ou Empenho
-==========================================
+Inserir Documento a um Contrato/Empenho
+=======================================
 
 .. Attention::
 
