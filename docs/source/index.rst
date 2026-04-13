@@ -20,8 +20,8 @@ Sumário
    :maxdepth: 3
 
    Histórico de Versões
-   atas_de_registro_de_precos/index
-   contratos_empenhos/index
+   ata_de_registro_de_preco/index
+   contrato_empenho/index
    Objetivo
    Protocolo de Comunicação
    Acesso ao PNCP
