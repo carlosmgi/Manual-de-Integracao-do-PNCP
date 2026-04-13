@@ -23,3 +23,4 @@ Contratos/Empenhos
    Retificar Parcialmente um Contrato ou Empenho
    Inserir Empenho
    Retificar Parcialmente Empenho
+   Excluir Empenho
