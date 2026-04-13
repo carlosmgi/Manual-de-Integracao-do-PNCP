@@ -24,3 +24,5 @@ Contratos/Empenhos
    Inserir Empenho
    Retificar Parcialmente Empenho
    Excluir Empenho
+   Consultar Empenho pelo Número Sequencial
+   Consultar Empenhos
