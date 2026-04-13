@@ -1,13 +1,11 @@
-Serviços de Ata
-===============
+Atas de Registro de Preços
+==========================
 
-O que é Lorem Ipsum?
---------------------
+Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a uma contratação. O sistema exige o upload de um arquivo anexo à ata de registro de preço enviada. As extensões permitidas para o arquivo anexo são listadas na seção Tabelas de domínio - Envio de arquivos pelas APIs de Documento e os tipos de documento/arquivo aceitos pelo PNCP podem ser consultados na seção Tabelas de domínio - Tipo de Documento, deste manual.
 
-Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.
 
 .. toctree::
    :maxdepth: 3
 
-   inserir_ata2
-   consultar_ata2
+   inserir_ata_de_registro_de_preços
+   consultar_ata_de_registro_de_preços
