@@ -18,3 +18,4 @@ Contratos/Empenhos
    Retificar Parcialmente Instrumento de Cobrança de Contrato ou Empenho
    Excluir Instrumento de Cobrança de Contrato ou Empenho
    Consultar Instrumento de Cobrança de um Contrato ou Empenho
+   Consultar Instrumentos de Cobrança de um Contrato ou Empenho
