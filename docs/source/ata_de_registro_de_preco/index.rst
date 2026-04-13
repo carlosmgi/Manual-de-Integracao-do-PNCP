@@ -1,5 +1,5 @@
-Atas de Registro de Preços
-==========================
+Atas de Registro de Preço
+=========================
 
 Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a uma contratação. O sistema exige o upload de um arquivo anexo à ata de registro de preço enviada. As extensões permitidas para o arquivo anexo são listadas na seção Tabelas de domínio - Envio de arquivos pelas APIs de Documento e os tipos de documento/arquivo aceitos pelo PNCP podem ser consultados na seção Tabelas de domínio - Tipo de Documento, deste manual.
 
@@ -7,5 +7,5 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
 .. toctree::
    :maxdepth: 3
 
-   inserir_ata_de_registro_de_precos
-   consultar_ata_de_registro_de_precos
+   inserir_ata_de_registro_de_preco
+   consultar_ata_de_registro_de_preco
