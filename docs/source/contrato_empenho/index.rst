@@ -4,5 +4,5 @@ Contratos/Empenhos
 .. toctree::
    :maxdepth: 3
 
-   inserir_contrato_empenho2
+   Inserir Contratos ou Empenhos
    consultar_contrato_empenho2
