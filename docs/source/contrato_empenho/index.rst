@@ -22,3 +22,4 @@ Contratos/Empenhos
    Fluxos de Inclusão de Contratos fruto de Ata de Registro de Preços (ARP) no PNCP
    Retificar Parcialmente um Contrato ou Empenho
    Inserir Empenho
+   Retificar Parcialmente Empenho
