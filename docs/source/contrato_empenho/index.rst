@@ -14,3 +14,4 @@ Contratos/Empenhos
    Consultar Contrato ou Empenho
    Consultar Contratos ou Empenhos de uma Contratação
    Consultar Histórico do Contrato ou Empenho
+   Inserir Instrumento de Cobrança de um Contrato ou Empenho
