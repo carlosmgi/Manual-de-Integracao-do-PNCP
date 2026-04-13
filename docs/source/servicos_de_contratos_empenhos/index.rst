@@ -10,3 +10,4 @@ Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica 
    :numbered:
 
    inserir_contrato_empenho
+   consultar_contrato_empenho
