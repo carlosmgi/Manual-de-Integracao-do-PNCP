@@ -3,9 +3,8 @@ Serviços de Contratos / Empenhos
 
 .. toctree::
    :numbered:
-   :maxdepth: 2
 
-   inserir_contrato_emepnho
+   inserir_contrato_empenho
 
 O que é Lorem Ipsum?
 --------------------
