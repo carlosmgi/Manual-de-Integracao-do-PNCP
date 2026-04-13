@@ -1,6 +1,6 @@
 
-Inserir Contratos ou Empenhos
-=============================
+Inserir Contratos/Empenhos
+==========================
 
 .. Attention::
 
