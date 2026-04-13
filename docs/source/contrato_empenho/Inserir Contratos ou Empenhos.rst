@@ -23,10 +23,10 @@ Inserir Contratos/Empenhos
      - :destaque:`ano`
      - :destaque:`Inteiro`
      - :destaque:`Ano do contrato/empenho`
-    * - 3
-      - sequencialContrato
-      - Inteiro
-      - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
+   * - 3
+     - sequencialContrato
+     - Inteiro
+     - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
 
 \
 
