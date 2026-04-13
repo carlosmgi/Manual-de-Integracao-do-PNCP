@@ -21,3 +21,4 @@ Contratos/Empenhos
    Consultar Instrumentos de Cobrança de um Contrato ou Empenho
    Fluxos de Inclusão de Contratos fruto de Ata de Registro de Preços (ARP) no PNCP
    Retificar Parcialmente um Contrato ou Empenho
+   Inserir Empenho
