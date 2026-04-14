@@ -1,5 +1,5 @@
 Incluir Órgão
-~~~~~~~~~~~~~
+=============
 
 .. Attention::
 
@@ -37,7 +37,7 @@ A partir de 25/08/2023 este serviço está integrado com o sistema CNPJ bastando
 **Observação:** não está disponível para plataformas públicas e privadas a desde 18/08/2025.
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -50,7 +50,7 @@ Detalhes da Requisição
      - POST
 	 
 Exemplo de Payload
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. code-block:: json
   :linenos:
@@ -60,7 +60,7 @@ Exemplo de Payload
 	} 
   
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -69,7 +69,7 @@ Exemplo Requisição (cURL)
 	--data "@/home/objeto.json" 
 
 Dados de entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -89,7 +89,7 @@ Dados de entrada
      - CNPJ do órgão
 
 Dados de retorno
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -109,7 +109,7 @@ Dados de retorno
      - Endereço HTTP do recurso criado
 
 Exemplo de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -131,7 +131,7 @@ Exemplo de Retorno
 	x-xss-protection: 1; mode=block
 
 Códigos de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
