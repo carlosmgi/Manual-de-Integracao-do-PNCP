@@ -20,6 +20,7 @@ Sumário
    :maxdepth: 3
 
    Histórico de Versões
+   usuario/index
    ata_de_registro_de_preco/index
    contrato_empenho/index
    empenho/index
