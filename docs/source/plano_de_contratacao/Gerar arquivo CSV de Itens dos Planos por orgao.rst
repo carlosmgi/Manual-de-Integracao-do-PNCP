@@ -34,15 +34,15 @@ Serviço que gera arquivo CSV contendo as informações de itens dos Planos de C
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
 
-.. list~table::
+.. list-table::
    :width: 100%
    :widths: 50 15
-   :header~rows: 1
+   :header-rows: 1
 
-   * ~ Endpoint
-     ~ Método HTTP
-   * ~ /v1/orgaos/{cnpj}/pca/{ano}/csv
-     ~ GET
+   * - Endpoint
+     - Método HTTP
+   * - /v1/orgaos/{cnpj}/pca/{ano}/csv
+     - GET
 
 Exemplo de Payload
 ~~~~~~~~~~~~~~~~~~
@@ -50,13 +50,13 @@ Exemplo de Payload
 Não se aplica.
 
 Exemplo Requisição (cURL)
-~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------
 
-.. code~block:: bash
+.. code-block:: bash
 
-   curl ~X GET \
+   curl -X GET \
      "https://treina.pncp.gov.br/api/pncp/v1/orgaos/00394460000141/pca/2022/csv" \
-     ~H "accept: */*"
+     -H "accept: */*"
 
 Dados de Entrada
 ~~~~~~~~~~~~~~~~
@@ -65,68 +65,68 @@ Dados de Entrada
 
   Alimentar o parâmetro {cnpj} e {ano} na URL.
 
-.. list~table::
+.. list-table::
    :width: 100%
    :widths: 5 25 15 10 45
-   :header~rows: 1
+   :header-rows: 1
 
-   * ~ Id
-     ~ Campo
-     ~ Tipo
-     ~ Obrigatório
-     ~ Descrição
-   * ~ 1
-     ~ cnpj
-     ~ Texto (14)
-     ~ Sim
-     ~ Cnpj do órgão a que a unidade
+   * - Id
+     - Campo
+     - Tipo
+     - Obrigatório
+     - Descrição
+   * - 1
+     - cnpj
+     - Texto (14)
+     - Sim
+     - Cnpj do órgão a que a unidade
        administrativa do PCA está
        vinculada
-   * ~ 2
-     ~ ano
-     ~ Inteiro
-     ~ Sim
-     ~ Ano do PCA
+   * - 2
+     - ano
+     - Inteiro
+     - Sim
+     - Ano do PCA
 
 Dados de retorno
 ~~~~~~~~~~~~~~~~
 
-.. list~table::
+.. list-table::
    :width: 100%
    :widths: 5 25 15 55
-   :header~rows: 1
+   :header-rows: 1
 
-   * ~ Id
-     ~ Campo
-     ~ Tipo
-     ~ Descrição
-   * ~ 1
-     ~ 
-     ~ Texto
-     ~ Arquivo texto em formato csv
+   * - Id
+     - Campo
+     - Tipo
+     - Descrição
+   * - 1
+     - 
+     - Texto
+     - Arquivo texto em formato csv
 
 **Códigos de Retorno**
 ~~~~~~~~~~~~~~~~~~~~~~
 
-.. list~table::
+.. list-table::
    :width: 100%
    :widths: 10 25 25
-   :header~rows: 1
+   :header-rows: 1
 
-   * ~ Código HTTP
-     ~ Mensagem
-     ~ Tipo
-   * ~ 201
-     ~ Created
-     ~ Sucesso
-   * ~ 400
-     ~ BadRequest
-     ~ Erro
-   * ~ 422
-     ~ Unprocessable Entity
-     ~ Erro
-   * ~ 500
-     ~ Internal Server Error
-     ~ Erro
+   * - Código HTTP
+     - Mensagem
+     - Tipo
+   * - 201
+     - Created
+     - Sucesso
+   * - 400
+     - BadRequest
+     - Erro
+   * - 422
+     - Unprocessable Entity
+     - Erro
+   * - 500
+     - Internal Server Error
+     - Erro
 
 \
