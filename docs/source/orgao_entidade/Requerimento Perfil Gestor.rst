@@ -1,6 +1,34 @@
 Requerimento Perfil Gestor
 ==========================
 
+.. Attention::
+
+   As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 25
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Descrição
+   * - 1
+     - cnpj
+     - Texto
+     - CNPJ do órgão do contrato/empenho
+   * - :destaque:`2`
+     - :destaque:`ano`
+     - :destaque:`Inteiro`
+     - :destaque:`Ano do contrato/empenho`
+   * - 3
+     - sequencialContrato
+     - Inteiro
+     - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
+
+\
+
 A funcionalidade **“Requerimento Perfil Gestor”**, disponível na **Área de Trabalho do PNCP**,  é utilizada para o cadastro do primeiro Gestor do órgão ou entidade no PNCP. 
 O acesso à funcionalidade é realizado pelo endereço: `https://pncp.gov.br/app/area-de-trabalho. <https://pncp.gov.br/app/area-de-trabalho>`_  
 O responsável pelo órgão acessa o PNCP, realiza a autenticação com login gov.br (nível prata) e preenche o requerimento.
