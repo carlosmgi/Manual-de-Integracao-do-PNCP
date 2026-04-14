@@ -40,7 +40,7 @@ Fluxos de Inclusão de Contratos fruto de Ata de Registro de Preços (ARP) no PN
 Macroprocesso: 
 ~~~~~~~~~~~~~~
 
-.. figure:: ../../img/Macroprocesso.png
+.. figure:: ../../img/contrato_empenho/Macroprocesso.png
    :width: 80%
    :align: center
    :alt: Macroprocesso
