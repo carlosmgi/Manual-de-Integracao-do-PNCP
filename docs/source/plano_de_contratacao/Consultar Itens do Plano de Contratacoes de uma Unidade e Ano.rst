@@ -38,7 +38,6 @@ Detalhes da Requisição
    :width: 100%
    :widths: 50 15
    :header-rows: 1
-
    * - Endpoint
      - Método HTTP
    * - /v1/orgaos/{cnpj}/pca/{ano}/{sequencial}/itens
@@ -50,7 +49,8 @@ Exemplo de Payload
 
 .. code-block:: json
   :linenos:
-    Não se aplica
+    
+	Não se aplica
   
 Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -59,8 +59,8 @@ Exemplo Requisição (cURL)
   :linenos:
   :emphasize-lines: 1
 
-  curl -X 'GET' 'https://treina.pncp.gov.br/api/pncp/v1/orgaos/00394460000141/pca/2022/1/itens' \
-   -H 'accept: */*'
+	  curl -X 'GET' 'https://treina.pncp.gov.br/api/pncp/v1/orgaos/00394460000141/pca/2022/1/itens' \
+	   -H 'accept: */*'
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
