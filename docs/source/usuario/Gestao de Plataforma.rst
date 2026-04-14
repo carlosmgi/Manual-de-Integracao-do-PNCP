@@ -36,3 +36,7 @@ Gestão de Plataforma
   Ao utilizar essa opção, o sistema realizará as validações necessárias e encaminhará as instruções para o e-mail cadastrado do usuário.
 
 
+.. figure:: ../../_static/img/Redefinicao_login_senha.jpg
+	:width: 80%
+	:align: center
+	:alt: Redefinição de login e senha
