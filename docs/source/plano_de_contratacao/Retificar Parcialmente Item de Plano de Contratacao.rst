@@ -92,6 +92,7 @@ Dados de entrada
    :width: 100%
    :widths: 5 25 15 10 45
    :header-rows: 1
+
    * - Id
      - Campo
      - Tipo
@@ -213,13 +214,14 @@ Dados de entrada
      - Sim
      - Motivo/justificativa para retificação do item do plano
 
-  Códigos de Retorno
+Códigos de Retorno
 ~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
    :widths: 10 25 20
    :header-rows: 1
+
    * - Código HTTP
      - Mensagem
      - Tipo
