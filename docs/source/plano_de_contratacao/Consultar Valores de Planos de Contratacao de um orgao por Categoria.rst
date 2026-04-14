@@ -135,6 +135,7 @@ Códigos de Retorno
    :width: 100%
    :widths: 10 25 20
    :header-rows: 1
+
    * - Código HTTP
      - Mensagem
      - Tipo
