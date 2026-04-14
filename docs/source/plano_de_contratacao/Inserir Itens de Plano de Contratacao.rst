@@ -111,6 +111,7 @@ Dados de entrada
    :width: 100%
    :widths: 5 25 15 10 45
    :header-rows: 1
+
    * - Id
      - Campo
      - Tipo
@@ -232,7 +233,7 @@ Dados de entrada
      - Não
      - Nome da contratação futura
 
-     Dados de retorno
+Dados de retorno
 ~~~~~~~~~~~~~~~~
 
 .. note::
@@ -242,6 +243,7 @@ Dados de entrada
    :width: 100%
    :widths: 5 25 15 10 45
    :header-rows: 1
+
    * - Id
      - Campo
      - Tipo
@@ -253,13 +255,13 @@ Dados de entrada
      - Sim
      - Endereço HTTP do recurso criado
 
-     Exemplo de Retorno
+Exemplo de Retorno
 ^^^^^^^^^^^^^^^^^^
 
 .. code-block:: bash
 
-Retorno:
-[ https://treina.pncp.gov.br/api/pncp/v1/orgaos/10000000000003/pca/2021/1/itens/1 ]
+	Retorno:
+	[ https://treina.pncp.gov.br/api/pncp/v1/orgaos/10000000000003/pca/2021/1/itens/1 ]
 
 Códigos de Retorno
 ~~~~~~~~~~~~~~~~~~
@@ -268,6 +270,7 @@ Códigos de Retorno
    :width: 100%
    :widths: 10 25 20
    :header-rows: 1
+
    * - Código HTTP
      - Mensagem
      - Tipo
@@ -284,4 +287,4 @@ Códigos de Retorno
      - Internal Server Error
      - Erro
 
-     \
+\
