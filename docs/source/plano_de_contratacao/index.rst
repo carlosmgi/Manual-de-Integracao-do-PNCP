@@ -17,4 +17,7 @@ Plano de Contratação
   Retificar Parcialmente Itens de um Plano de Contratacao
   Excluir Item de Plano de Contratacao
   Excluir Itens de um Plano de Contratacao
+  Recuperar Itens de Plano de Contratação por Numero da Contratacao
+  Excluir Itens de Plano de Contratação por Numero da Contratacao
+  Gerar arquivo CSV de Itens dos Planos por orgao
 
