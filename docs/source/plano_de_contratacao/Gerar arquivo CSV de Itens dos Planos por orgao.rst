@@ -50,7 +50,7 @@ Exemplo de Payload
 Não se aplica.
 
 Exemplo Requisição (cURL)
--------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
