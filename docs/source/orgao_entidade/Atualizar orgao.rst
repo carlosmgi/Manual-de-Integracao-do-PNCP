@@ -5,27 +5,29 @@ Atualizar Órgão
 
    As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
 
-   .. list-table::
-      :width: 100%
-      :widths: 5 25 15 25
-      :header-rows: 1
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 25
+   :header-rows: 1
 
-      * - Id
-        - Campo
-        - Tipo
-        - Descrição
-      * - 1
-        - cnpj
-        - Texto
-        - CNPJ do órgão do contrato/empenho
-      * - :destaque:`2`
-        - :destaque:`ano`
-        - :destaque:`Inteiro`
-        - :destaque:`Ano do contrato/empenho`
-      * - 3
-        - sequencialContrato
-        - Inteiro
-        - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
+   * - Id
+     - Campo
+     - Tipo
+     - Descrição
+   * - 1
+     - cnpj
+     - Texto
+     - CNPJ do órgão do contrato/empenho
+   * - :destaque:`2`
+     - :destaque:`ano`
+     - :destaque:`Inteiro`
+     - :destaque:`Ano do contrato/empenho`
+   * - 3
+     - sequencialContrato
+     - Inteiro
+     - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
+
+\
 
 Serviço **destinado exclusivamente aos administradores do PNCP** que permite atualizar os dados de um órgão/entidade no repositório do PNCP que eventualmente esteja desatualizado.
 
@@ -68,8 +70,9 @@ Dados de entrada
 
 .. list-table::
    :width: 100%
-   :widths: 5 25 15 25
+   :widths: 5 25 15 20 25
    :header-rows: 1
+
    * - Id
      - Campo
      - Tipo
@@ -86,8 +89,9 @@ Dados de retorno
 
 .. list-table::
    :width: 100%
-   :widths: 5 25 15 25
+   :widths: 5 25 15 20 25
    :header-rows: 1
+
    * - Id
      - Campo
      - Tipo
