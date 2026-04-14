@@ -38,7 +38,7 @@ município “Exterior” e UF “EX”.
 
 	Disponível apenas no ambiente de treinamento/homologação. No ambiente de produção, utilize o procedimento do item 6.2.9 – Gestão de Órgão e Entidade. 
 
-.. figure:: ../../img/Editar_unidade_administrativa.jpg
+.. figure:: ../../_static/img/Editar_unidade_administrativa.jpg
 	:width: 80%
 	:align: center
 	:alt: Editar Unidade Administrativa
