@@ -22,6 +22,7 @@ Sumário
    Histórico de Versões
    usuario/index
    plano_de_contratacao/index
+   contratacao/index
    orgao_entidade/index
    ata_de_registro_de_preco/index
    contrato_empenho/index
