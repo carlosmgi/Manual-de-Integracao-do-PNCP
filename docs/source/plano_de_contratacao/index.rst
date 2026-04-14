@@ -15,4 +15,6 @@ Plano de Contratação
   Consultar Itens do Plano de Contratacoes de uma Unidade e Ano
   Retificar Parcialmente Item de Plano de Contratacao
   Retificar Parcialmente Itens de um Plano de Contratacao
+  Excluir Item de Plano de Contratacao
+  Excluir Itens de um Plano de Contratacao
 
