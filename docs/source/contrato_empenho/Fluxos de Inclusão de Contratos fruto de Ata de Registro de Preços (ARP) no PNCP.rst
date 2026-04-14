@@ -53,7 +53,7 @@ Fluxos Específicos:
 Publicação de contrato (não SRP):
 """""""""""""""""""""""""""""""""
 
-.. figure:: ../../img/Publicacao_nao_srp.png
+.. figure:: ../../_static/img/Publicacao_nao_srp.png
    :width: 80%
    :align: center
    :alt: Publicação de contrato (não SRP)
@@ -83,7 +83,7 @@ Publicação de contrato (não SRP):
 Publicação de contrato pela gerenciadora (SRP)
 """"""""""""""""""""""""""""""""""""""""""""""
 
-.. figure:: ../../img/Publicacao_gerenciadora.png
+.. figure:: ../../_static/img/Publicacao_gerenciadora.png
    :width: 80%
    :align: center
    :alt: Publicação de contrato pela gerenciadora (SRP)
@@ -165,7 +165,7 @@ Exemplos
 Publicação de contrato por ente participante (SRP):
 """""""""""""""""""""""""""""""""""""""""""""""""""
 
-.. figure:: ../../img/Publicacao_participante.png
+.. figure:: ../../_static/img/Publicacao_participante.png
    :width: 80%
    :align: center
    :alt: Publicação de contrato por ente participante (SRP)
@@ -251,7 +251,7 @@ Exemplos
 Publicação de contrato por ente não participante (SRP) 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 
-.. figure:: ../../img/Publicacao_nao_participante.png
+.. figure:: ../../_static/img/Publicacao_nao_participante.png
    :width: 80%
    :align: center
    :alt: Publicação de contrato por ente não participante (SRP)
