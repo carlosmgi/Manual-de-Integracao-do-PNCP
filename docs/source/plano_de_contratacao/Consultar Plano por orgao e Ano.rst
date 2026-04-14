@@ -50,7 +50,8 @@ Exemplo de Payload
 
 .. code-block:: json
   :linenos:
-  Não se aplica 
+  
+	Não se aplica 
   
 
 Exemplo Requisição (cURL)
@@ -58,7 +59,6 @@ Exemplo Requisição (cURL)
 
 .. code-block:: bash
   :linenos:
-  :emphasize-lines: 1
 
   curl -X 'GET' 'https://treina.pncp.gov.br/api/pncp/v1/orgaos/00394460000141/pca/2022/consolidado' \ -H 'accept: */*'
 
