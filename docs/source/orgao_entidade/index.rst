@@ -1,4 +1,4 @@
-Órção/Entidade
+Órgão/Entidade
 ==============
 
 .. toctree::
@@ -12,3 +12,4 @@
   Consultar Unidade
   Consultar Unidades de um orgao
   Requerimento Perfil Gestor
+  Gestao de orgao e Entidade
