@@ -1,5 +1,5 @@
-Órgão/Entidade
-==============
+Plano de Contratação
+====================
 
 .. toctree::
   :maxdepth: 3
@@ -10,4 +10,9 @@
   Consultar Plano das Unidades por orgao e Ano
   Consultar Valores de Planos de Contratacao de um orgao por Categoria
   Consultar Plano de Contratacao Consolidado (Plano de Contratacoes de uma Unidade e Ano)
+  Consultar Valores de um Plano de Contratacao por Categoria
+  Inserir Itens de Plano de Contratacao
+  Consultar Itens do Plano de Contratacoes de uma Unidade e Ano
+  Retificar Parcialmente Item de Plano de Contratacao
+  Retificar Parcialmente Itens de um Plano de Contratacao
 
