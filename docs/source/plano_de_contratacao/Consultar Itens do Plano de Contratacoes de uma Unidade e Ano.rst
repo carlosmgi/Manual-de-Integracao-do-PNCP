@@ -38,6 +38,7 @@ Detalhes da Requisição
    :width: 100%
    :widths: 50 15
    :header-rows: 1
+
    * - Endpoint
      - Método HTTP
    * - /v1/orgaos/{cnpj}/pca/{ano}/{sequencial}/itens
@@ -72,6 +73,7 @@ Dados de entrada
    :width: 100%
    :widths: 5 25 15 10 45
    :header-rows: 1
+
    * - Id
      - Campo
      - Tipo
@@ -115,6 +117,7 @@ Dados de retorno
    :width: 100%
    :widths: 5 25 15 55
    :header-rows: 1
+
    * - Id
      - Campo
      - Tipo
@@ -251,6 +254,7 @@ Códigos de Retorno
    :width: 100%
    :widths: 10 25 20
    :header-rows: 1
+
    * - Código HTTP
      - Mensagem
      - Tipo
