@@ -1,6 +1,8 @@
 Excluir Documento do Contrato/Empenho
 =====================================
 
+Serviço que permite remover um documento pertencente a um contrato ou empenho específico.
+
 .. Attention::
 
    As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
@@ -29,8 +31,6 @@ Excluir Documento do Contrato/Empenho
 
 \
 
-Serviço que permite remover um documento pertencente a um contrato ou empenho
-específico.
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
