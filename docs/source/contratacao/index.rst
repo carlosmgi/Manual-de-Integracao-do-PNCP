@@ -4,26 +4,27 @@ Contratação
 .. toctree::
    :maxdepth: 3
 
-   Inserir Contratacao
-   Retificar Contratacao
-   Retificar Parcialmente uma Contratacao
-   Excluir Contratacao
-   Consultar uma Contratacao
-   Inserir Documento a uma Contratacao
-   Excluir Documento de uma Contratacao
-   Consultar Todos Documentos de uma Contratacao
-   Baixar Documento de uma Contratacao
-   Inserir Itens a uma Contratacao
-   Retificar Item de uma Contratacao
-   Retificar parcialmente um Item de uma Contratacao
-   Consultar Itens de uma Contratacao
-   Consultar Item de uma Contratacao
-   Inserir Resultado do Item de uma Contratacao
-   Retificar Resultado do Item de uma Contratacao
-   Consultar Resultados de Item de uma Contratacao
-   Consultar um Resultado específico de Item de uma Contratacao
-   Consultar Histórico da Contratacao
-   Inserir Imagem de um Item de uma Contratacao
-   Excluir Imagem de um Item de uma Contratacao
-   Consultar Imagens de um Item de Contratacao
-   Consultar Imagem de um Item de Contratacao
+   inserir_contratacao
+   retificar_contratacao
+   retificar_parcialmente_uma_contratacao
+   excluir_contratacao
+   consultar_uma_contratacao
+   inserir_documento_a_uma_contratacao
+   excluir_documento_de_uma_contratacao
+   consultar_todos_documentos_de_uma_contratacao
+   baixar_documento_de_uma_contratacao
+   inserir_itens_a_uma_contratacao
+   retificar_item_de_uma_contratacao
+   retificar_parcialmente_um_item_de_uma_contratacao
+   consultar_itens_de_uma_contratacao
+   consultar_item_de_uma_contratacao
+   inserir_resultado_do_item_de_uma_contratacao
+   retificar_resultado_do_item_de_uma_contratacao
+   consultar_resultados_de_item_de_uma_contratacao
+   consultar_um_resultado_especifico_de_item_de_uma_contratacao
+   consultar_historico_da_contratacao
+   inserir_imagem_de_um_item_de_uma_contratacao
+   excluir_imagem_de_um_item_de_uma_contratacao
+   consultar_imagens_de_um_item_de_contratacao
+   consultar_imagem_de_um_item_de_contratacao
+
