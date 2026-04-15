@@ -27,6 +27,7 @@ Sumário
    ata_de_registro_de_preco/index
    partes_envolvidas/index
    contrato_empenho/index
+   instrumento_de_Cobranca_de_contrato_empenho/index
    empenho/index
    orgao_entidade/index
    Objetivo
