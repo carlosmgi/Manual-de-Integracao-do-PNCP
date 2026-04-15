@@ -1,6 +1,13 @@
 Incluir Órgão
 =============
 
+Serviço **destinado exclusivamente aos administradores do PNCP** que permite inserir um órgão/entidade que eventualmente não se encontre nos repositórios do PNCP, ou seja, o portal possui uma base de dados com as informações dos Órgãos ou Entes da Federação. No entanto, caso o Órgão ou Ente não esteja incluso nessa base de dados o usuário pode utilizar este serviço com vistas a inclusão. 
+
+**Observação:** Este serviço não pode ser confundido com o serviço 6.1.1., que cadastra a lista de CNPJs dos entes autorizados (órgão) o qual o usuário estar-se-á apto a divulgar informações. 
+
+A partir de 25/08/2023 este serviço está integrado com o sistema CNPJ bastando informar apenas o número de CNPJ do órgão. 
+**Observação:** não está disponível para plataformas públicas e privadas a desde 18/08/2025.
+
 .. Attention::
 
    As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
@@ -28,13 +35,6 @@ Incluir Órgão
      - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
 
 \
-
-Serviço **destinado exclusivamente aos administradores do PNCP** que permite inserir um órgão/entidade que eventualmente não se encontre nos repositórios do PNCP, ou seja, o portal possui uma base de dados com as informações dos Órgãos ou Entes da Federação. No entanto, caso o Órgão ou Ente não esteja incluso nessa base de dados o usuário pode utilizar este serviço com vistas a inclusão. 
-
-**Observação:** Este serviço não pode ser confundido com o serviço 6.1.1., que cadastra a lista de CNPJs dos entes autorizados (órgão) o qual o usuário estar-se-á apto a divulgar informações. 
-
-A partir de 25/08/2023 este serviço está integrado com o sistema CNPJ bastando informar apenas o número de CNPJ do órgão. 
-**Observação:** não está disponível para plataformas públicas e privadas a desde 18/08/2025.
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
