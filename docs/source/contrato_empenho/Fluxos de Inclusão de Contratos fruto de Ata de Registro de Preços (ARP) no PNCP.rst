@@ -1,6 +1,14 @@
 Fluxos de Inclusão de Contratos fruto de Ata de Registro de Preços (ARP) no PNCP
 ================================================================================
 
+.. Container:: destaque-amarelo
+
+    A inclusão de contratos decorrentes de ata de registro de preços (ARP) no PNCP depende, primeiramente, do cadastro prévio da ata, com todas as partes envolvidas corretamente identificadas. No caso de adesão (Não participante), é necessário que a ARP permita adesões e que o órgão contratante esteja registrado na ata.
+    O envio do contrato deve conter dados consistentes, como objeto, valor, vigência, fornecedor e a vinculação à ARP correspondente. Além disso, o órgão e suas unidades precisam estar devidamente cadastrados no sistema.
+    Esse fluxo assegura a padronização das informações, transparência e conformidade nas contratações públicas.
+
+\
+
 .. Attention::
 
    As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
@@ -29,13 +37,6 @@ Fluxos de Inclusão de Contratos fruto de Ata de Registro de Preços (ARP) no PN
 
 \
 
-.. Container:: destaque-amarelo
-
-    A inclusão de contratos decorrentes de ata de registro de preços (ARP) no PNCP depende, primeiramente, do cadastro prévio da ata, com todas as partes envolvidas corretamente identificadas. No caso de adesão (Não participante), é necessário que a ARP permita adesões e que o órgão contratante esteja registrado na ata.
-    O envio do contrato deve conter dados consistentes, como objeto, valor, vigência, fornecedor e a vinculação à ARP correspondente. Além disso, o órgão e suas unidades precisam estar devidamente cadastrados no sistema.
-    Esse fluxo assegura a padronização das informações, transparência e conformidade nas contratações públicas.
-
-\
 
 Macroprocesso: 
 ~~~~~~~~~~~~~~
