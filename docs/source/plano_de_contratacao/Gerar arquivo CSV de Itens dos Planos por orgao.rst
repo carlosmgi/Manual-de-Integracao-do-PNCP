@@ -1,6 +1,8 @@
 Gerar arquivo CSV de Itens dos Planos por Órgão
 ===============================================
 
+Serviço que gera arquivo CSV contendo as informações de itens dos Planos de Contratações Anuais das Unidades associadas ao Órgão e Ano recebidos.
+
 .. Attention::
 
    As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
@@ -28,8 +30,6 @@ Gerar arquivo CSV de Itens dos Planos por Órgão
      - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
 
 \
-
-Serviço que gera arquivo CSV contendo as informações de itens dos Planos de Contratações Anuais das Unidades associadas ao Órgão e Ano recebidos.
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
