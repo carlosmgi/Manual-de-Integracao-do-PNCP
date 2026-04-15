@@ -1,6 +1,8 @@
 Consultar Todos os Documentos de um Contrato/Empenho
 ====================================================
 
+Serviço que permite consultar a lista de documentos pertencentes a um contrato ou empenho específico.
+
 .. Attention::
 
    As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
@@ -29,8 +31,6 @@ Consultar Todos os Documentos de um Contrato/Empenho
 
 \
 
-Serviço que permite consultar a lista de documentos pertencentes a um
-contrato ou empenho específico.
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
