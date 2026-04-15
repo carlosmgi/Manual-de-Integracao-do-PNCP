@@ -1,6 +1,9 @@
 Consultar Plano de Contratação Consolidado (Plano de Contratações de uma Unidade e Ano)
 =======================================================================================
 
+
+Serviço que permite consultar um plano de contratações específico de uma unidade em determinado ano.
+
 .. Attention::
 
    As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
@@ -28,8 +31,6 @@ Consultar Plano de Contratação Consolidado (Plano de Contratações de uma Uni
      - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
 
 \
-
-Serviço que permite consultar um plano de contratações específico de uma unidade em determinado ano.
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
