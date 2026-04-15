@@ -1,6 +1,10 @@
 Consultar Instrumento de Cobrança de um Contrato/Empenho
 ===========================================================
 
+
+Serviço que permite consultar um instrumento de cobrança específico pertencente a um contrato/empenho.
+
+
 .. Attention::
 
    As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
@@ -28,8 +32,6 @@ Consultar Instrumento de Cobrança de um Contrato/Empenho
      - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
 
 \
-
-Serviço que permite consultar um instrumento de cobrança específico pertencente a um contrato/empenho.
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
