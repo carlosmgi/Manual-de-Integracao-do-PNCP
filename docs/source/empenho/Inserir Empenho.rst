@@ -2,6 +2,12 @@
 Inserir Empenho
 ===============
 
+.. container:: destaque-amarelo
+
+	Serviço que permite incluir um empenho para um respectivo Contrato. Este serviço será acionado por qualquer plataforma digital credenciada.
+
+\
+
 .. Attention::
 
    As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
@@ -27,12 +33,6 @@ Inserir Empenho
      - sequencialContrato
      - Inteiro
      - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
-
-\
-
-.. container:: destaque-amarelo
-
-	Serviço que permite incluir um empenho para um respectivo Contrato. Este serviço será acionado por qualquer plataforma digital credenciada.
 
 \
 
