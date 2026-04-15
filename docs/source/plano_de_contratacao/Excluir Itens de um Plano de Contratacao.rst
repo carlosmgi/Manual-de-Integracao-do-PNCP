@@ -1,6 +1,8 @@
 Excluir Itens de um Plano de Contratação
 ========================================
 
+Serviço que permite excluir itens de um plano de contratação no PNCP. Este serviço requer autenticação para ser acionado.
+
 .. Attention::
 
    As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
@@ -28,8 +30,6 @@ Excluir Itens de um Plano de Contratação
      - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
 
 \
-
-Serviço que permite excluir itens de um plano de contratação no PNCP. Este serviço requer autenticação para ser acionado.
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
