@@ -1,6 +1,8 @@
 Consultar Documento de um Contrato/Empenho
 ==========================================
 
+Serviço que permite consultar um documento específico pertencente a um contrato/empenho.
+
 .. Attention::
 
    As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
@@ -29,7 +31,6 @@ Consultar Documento de um Contrato/Empenho
 
 \
 
-Serviço que permite consultar um documento específico pertencente a um contrato/empenho.
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
