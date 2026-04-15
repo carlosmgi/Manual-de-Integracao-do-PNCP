@@ -1,5 +1,20 @@
 Incluir Unidade
 ===============
+
+Serviço que permite inserir uma unidade em um órgão/entidade.
+As unidades são divisões administrativas que realizam as contratações e celebram os contratos. Todo órgão/entidade deverá ter cadastrado ao menos uma unidade no PNCP.
+Para a inclusão de nova unidade, a plataforma deve ter o órgão/entidade habilitado como ente autorizado.
+
+**Exemplo:**
+- Órgão: Município de Itapuranga
+- Unidade Administrativa: Fundo Municipal de Assistência Social
+Para unidades localizadas fora do território brasileiro, foi incluído o código genérico ``9097071`` para ser cadastrado no campo ``codigoIBGE``.
+Será retornado nome do município ``Exterior`` e UF ``EX``.
+
+.. warning::
+
+   Disponível apenas no ambiente de treinamento/homologação.
+   No ambiente de produção, utilize o procedimento do item 6.2.9 – Gestão de Órgão e Entidade.
   
 .. Attention::
 
@@ -28,21 +43,6 @@ Incluir Unidade
      - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
 
 \
-
-Serviço que permite inserir uma unidade em um órgão/entidade.
-As unidades são divisões administrativas que realizam as contratações e celebram os contratos. Todo órgão/entidade deverá ter cadastrado ao menos uma unidade no PNCP.
-Para a inclusão de nova unidade, a plataforma deve ter o órgão/entidade habilitado como ente autorizado.
-
-**Exemplo:**
-- Órgão: Município de Itapuranga
-- Unidade Administrativa: Fundo Municipal de Assistência Social
-Para unidades localizadas fora do território brasileiro, foi incluído o código genérico ``9097071`` para ser cadastrado no campo ``codigoIBGE``.
-Será retornado nome do município ``Exterior`` e UF ``EX``.
-
-.. warning::
-
-   Disponível apenas no ambiente de treinamento/homologação.
-   No ambiente de produção, utilize o procedimento do item 6.2.9 – Gestão de Órgão e Entidade.
 
 .. figure:: ../../_static/img/Incluir_unidade_administrativa.jpg
 	:width: 80%
