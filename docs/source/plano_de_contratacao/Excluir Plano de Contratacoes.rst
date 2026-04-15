@@ -1,6 +1,8 @@
 Excluir Plano de Contratações
 =============================
 
+Serviço que permite excluir um plano de contratações específico de uma unidade. Este serviço requer autenticação para ser acionado.
+
 .. Attention::
 
    As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
@@ -28,8 +30,6 @@ Excluir Plano de Contratações
      - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
 
 \
-
-Serviço que permite excluir um plano de contratações específico de uma unidade. Este serviço requer autenticação para ser acionado.
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
