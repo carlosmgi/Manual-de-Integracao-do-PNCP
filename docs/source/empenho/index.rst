@@ -4,8 +4,9 @@ Empenho
 .. toctree::
    :maxdepth: 3
 
-   Inserir Empenho
-   Retificar Parcialmente Empenho
-   Excluir Empenho
-   Consultar Empenho pelo Número Sequencial
-   Consultar Empenhos
+   inserir_empenho
+   retificar_parcialmente_empenho
+   excluir_empenho
+   consultar_empenho_pelo_numero_sequencial
+   consultar_empenhos
+
