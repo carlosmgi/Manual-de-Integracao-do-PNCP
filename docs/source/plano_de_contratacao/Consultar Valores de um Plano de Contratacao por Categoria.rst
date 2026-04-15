@@ -1,6 +1,8 @@
 Consultar Valores de um Plano de Contratação por Categoria
 ==========================================================
 
+Serviço que permite consultar a quantidade de itens e o valor total dos itens por categoria de item dos planos de contratações de uma Unidade específica em determinado ano, opcionalmente filtrando por uma dada Categoria de Item.
+
 .. Attention::
 
    As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
@@ -29,7 +31,6 @@ Consultar Valores de um Plano de Contratação por Categoria
 
 \
 
-Serviço que permite consultar a quantidade de itens e o valor total dos itens por categoria de item dos planos de contratações de uma Unidade específica em determinado ano, opcionalmente filtrando por uma dada Categoria de Item.
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
