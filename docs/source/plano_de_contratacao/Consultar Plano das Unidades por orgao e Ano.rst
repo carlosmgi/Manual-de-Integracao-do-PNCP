@@ -1,6 +1,9 @@
 Consultar Plano das Unidades por Órgão e Ano
 ============================================
 
+
+Serviço que permite consultar os dados dos planos de contratações das unidades de um órgão específico em determinado ano.
+
 .. Attention::
 
    As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
@@ -28,8 +31,6 @@ Consultar Plano das Unidades por Órgão e Ano
      - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
 
 \
-
-Serviço que permite consultar os dados dos planos de contratações das unidades de um órgão específico em determinado ano.
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
