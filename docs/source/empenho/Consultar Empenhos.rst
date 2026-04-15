@@ -1,6 +1,12 @@
 Consultar Empenhos
 ==================
 
+.. container:: destaque-amarelo
+
+	Serviço que permite consultar empenhos pertencentes a um contrato/empenho.
+
+\
+
 .. Attention::
 
    As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
@@ -29,9 +35,6 @@ Consultar Empenhos
 
 \
 
-.. container:: destaque-amarelo
-
-	Serviço que permite consultar empenhos pertencentes a um contrato/empenho.
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
