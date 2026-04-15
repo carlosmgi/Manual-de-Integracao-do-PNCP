@@ -2,7 +2,7 @@ Serviços de Contratação (Editais, Avisos e Atos)
 ================================================
 
 Inserir Contratação
-~~~~~~~~~~~~~~~~~~~
+===================
 
 Serviço que permite inserir uma contratação pública (módulo contratação/edital/aviso) no PNCP. O sistema exige o upload de um arquivo anexo à contratação enviada. O serviço requer que seja enviado pelo menos um item e o limite máximo de recebimento é de 2000 itens por requisição. 
 As extensões permitidas para o arquivo anexo são listadas na seção: Tabelas de domínio - Extensões de arquivo aceitos pelas APIs de Documento. 
@@ -12,7 +12,7 @@ As extensões permitidas para o arquivo anexo são listadas na seção: Tabelas 
     Deve-se observar as regras de conformidade implementadas entre Instrumento Convocatório, Modalidade e Amparo Legal e Instrumento Convocatório e Modo de Disputa     descritas na seção 5 deste Manual. O PNCP não receberá novas contratações ou permitirá a retificação se os campos informados não estiverem em conformidade.
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -26,7 +26,7 @@ Detalhes da Requisição
 	 
 
 Exemplo de Payload
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. code-block:: json
   :linenos:
@@ -107,7 +107,7 @@ Exemplo de Payload
   
 
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -139,7 +139,7 @@ Exemplo Requisição (cURL)
 
 
 Exemplo Requisição (Java, usando Spring/RestTemplate) 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -162,7 +162,7 @@ Exemplo Requisição (Java, usando Spring/RestTemplate)
     /10000000000003/compras", requestEntity, String.class);
 
 Dados de Entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. note::
 
@@ -427,7 +427,7 @@ Dados de Entrada
 
 
 Dados de Retorno
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -448,7 +448,7 @@ Dados de Retorno
      - Endereço HTTP do documento anexo à contratação
 
 Exemplo de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
  
@@ -477,7 +477,7 @@ Exemplo de Retorno
     }
 
 Códigos de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -501,7 +501,7 @@ Códigos de Retorno
      - Erro
 
 Retificar Contratação
-~~~~~~~~~~~~~~~~~~~~~
+=====================
 
 Serviço que permite retificar os dados de uma contratação. Este serviço será acionado por qualquer plataforma digital credenciada. **Importante lembrar que na Retificação todas as informações terão que ser enviadas novamente, não apenas as que sofreram alteração.**
 
@@ -510,7 +510,7 @@ Serviço que permite retificar os dados de uma contratação. Este serviço ser�
 	Fica impedida a retificação da contratação caso a mesma não possua documento/arquivo ativo vinculado a ela no PNCP. Deve-se observar as regras de conformidade implementadas entre Instrumento Convocatório, Modalidade e Amparo Legal e Instrumento Convocatório e Modo de Disputa descritas na seção 5 deste Manual. O PNCP não receberá novas contratações ou permitirá a retificação se os campos informados não estiverem em conformidade.
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -524,7 +524,7 @@ Detalhes da Requisição
 	 
 
 Exemplo de Payload
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. code-block:: json
   :linenos:
@@ -552,7 +552,7 @@ Exemplo de Payload
     
 
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -560,7 +560,7 @@ Exemplo Requisição (cURL)
 	"${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1" -H "accept: */*" -H "Content-Type: application/json" 
 
 Dados de Entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. note::
 
@@ -704,7 +704,7 @@ Dados de Entrada
      - URL do processo eletrônico
 
 Códigos de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -728,7 +728,7 @@ Códigos de Retorno
      - Erro
 
 Retificar Parcialmente uma Contratação
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+======================================
 
 Serviço que permite retificar parcialmente os dados de uma contratação. Este serviço será acionado por qualquer plataforma digital credenciada. **Na retificação parcial, podem se enviados apenas as informações que sofrerão alteração. Por exemplo, se desejar apenas atualizar a situação de uma contratação, deve informar apenas o atributo situacaoCompraId e ignorar todos os demais atributos.** 
 
@@ -737,7 +737,7 @@ Serviço que permite retificar parcialmente os dados de uma contratação. Este 
 	Fica impedida a retificação da contratação caso a mesma não possua documento/arquivo ativo vinculado a ela no PNCP. Deve-se observar as regras de conformidade implementadas entre Instrumento Convocatório, Modalidade e Amparo Legal e Instrumento Convocatório e Modo de Disputa descritas na seção 5 deste Manual. O PNCP não receberá novas contratações ou permitirá a retificação se os campos informados não estiverem em conformidade.
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -751,7 +751,7 @@ Detalhes da Requisição
 	 
 
 Exemplo de Payload
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. code-block:: json
   :linenos:
@@ -779,7 +779,7 @@ Exemplo de Payload
   
 
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -787,7 +787,7 @@ Exemplo Requisição (cURL)
 	"${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1" -H "accept: */*" -H "Content-Type: application/json" 
 
 Dados de Entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. note::
 
@@ -931,7 +931,7 @@ Dados de Entrada
      - URL do processo eletrônico
 
 Códigos de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -955,7 +955,7 @@ Códigos de Retorno
      - Erro
 	 
 Excluir Contratação
-~~~~~~~~~~~~~~~~~~~
+===================
 
 Serviço que permite excluir uma contratação. Este serviço será acionado por qualquer plataforma digital credenciada. 
 
@@ -964,7 +964,7 @@ Serviço que permite excluir uma contratação. Este serviço será acionado por
 	Não será possível excluir Contratação com Ata de Registro de Preços ou Contrato ativo. 
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -978,7 +978,7 @@ Detalhes da Requisição
 	 
 
 Exemplo de Payload
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. code-block:: json
   :linenos:
@@ -989,7 +989,7 @@ Exemplo de Payload
 
 
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -997,7 +997,7 @@ Exemplo Requisição (cURL)
 	"${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1" -H "accept: */*" -H "Content-Type: application/json"
 
 	 Dados de Entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. note::
 
@@ -1035,7 +1035,7 @@ Exemplo Requisição (cURL)
      - Motivo/justificativa para exclusão da contratação
 
 Códigos de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -1059,12 +1059,12 @@ Códigos de Retorno
      - Erro
 	 
 Consultar uma Contratação 
-~~~~~~~~~~~~~~~~~~~~~~~~~
+=========================
 
 Serviço que permite consultar uma contratação. 
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -1078,14 +1078,14 @@ Detalhes da Requisição
 	 
 
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
 	curl -X ‘GET’ "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1" -H "accept: */*" 
 
 Dados de Entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. note::
 
@@ -1118,7 +1118,7 @@ Dados de Entrada
      - Sequencial da contratação no PNCP
 
 Dados de Retorno
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -1408,13 +1408,13 @@ Dados de Retorno
      - Data de inclusão
 
 Inserir Documento a uma Contratação
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+===================================
 
 Serviço que permite inserir/anexar um documento/arquivo a uma Contratação. O sistema permite o upload de arquivos com as extensões listadas na seção: Tabelas de domínio - Extensões de arquivo aceitos pelas APIs de Documento.
 
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -1428,7 +1428,7 @@ Detalhes da Requisição
 
 
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -1437,7 +1437,7 @@ Exemplo Requisição (cURL)
 	"Content-Type: multipart/form-data" -H "Titulo-Documento: Edital-2021-1" -H "Tipo-Documento-Id: 2" -F "arquivo=@Edital-2021-1.pdf;type=application/pdf" 
 
 Dados de Entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. note::
 
@@ -1491,7 +1491,7 @@ Dados de Entrada
      - Conteúdo do arquivo em formato binário
 
 Dados de Retorno
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -1509,7 +1509,7 @@ Dados de Retorno
 
 
 Exemplo de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -1534,7 +1534,7 @@ Exemplo de Retorno
 
 
 Códigos de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -1558,12 +1558,12 @@ Códigos de Retorno
      - Erro
 
 Excluir Documento de uma Contratação
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+====================================
 
 Serviço que permite remover documento pertencente a uma Contratação. 
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -1577,7 +1577,7 @@ Detalhes da Requisição
 	 
 
 Exemplo de Payload
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. code-block:: json
   :linenos:
@@ -1588,7 +1588,7 @@ Exemplo de Payload
   
 
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -1597,7 +1597,7 @@ Exemplo Requisição (cURL)
 	"Content-Type: application/pdf" -H Content-Disposition: filename="nome_arquivo" 
 
 Dados de Entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. note::
 
@@ -1645,7 +1645,7 @@ Dados de Entrada
      - Motivo/justificativa para exclusão do documento da contratação
 
 Códigos de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -1670,12 +1670,12 @@ Códigos de Retorno
 
 
 Consultar Todos Documentos de uma Contratação 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=============================================
 
 Serviço que permite consultar a lista de documentos pertencentes a uma contratação. 
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -1689,7 +1689,7 @@ Detalhes da Requisição
 
 
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -1697,7 +1697,7 @@ Exemplo Requisição (cURL)
 	"Accept: */*”
 
 Dados de Entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. note::
 
@@ -1733,7 +1733,7 @@ Dados de Entrada
      - Sequencial da contratação no PNCP
 
 Dados de Retorno
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -1781,7 +1781,7 @@ Dados de Retorno
      - Data de publicação do arquivo no portal PNCP
 
 Códigos de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -1805,12 +1805,12 @@ Códigos de Retorno
      - Erro
 
 Baixar Documento de uma Contratação 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+===================================
 
 Serviço que permite baixar um documento específico pertencente a uma contratação.
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -1824,7 +1824,7 @@ Detalhes da Requisição
 
 
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -1832,7 +1832,7 @@ Exemplo Requisição (cURL)
 	"Accept: */*”
 
 Dados de Entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. note::
 
@@ -1874,7 +1874,7 @@ Dados de Entrada
      - Sequencial do documento no PNCP
 
 Dados de Retorno
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -1892,7 +1892,7 @@ Dados de Retorno
      - String do arquivo
 
 Códigos de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -1916,7 +1916,7 @@ Códigos de Retorno
      - Erro
 
 Inserir Itens a uma Contratação 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+===============================
 
 Serviço para inserir um ou vários itens a uma contratação. Os itens podem ser inseridos de duas formas: ao inserir uma contratação, pode já informar a lista de itens a ser inserida. Alternativamente pode usar o presente serviço para adicionar um ou vários itens a uma contratação existente. 
 
@@ -1924,7 +1924,7 @@ Serviço para inserir um ou vários itens a uma contratação. Os itens podem se
 	Fica impedida a inclusão de itens caso a contratação não possua documento/arquivo ativo vinculado a ela no PNCP.
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -1938,7 +1938,7 @@ Detalhes da Requisição
 	 
 
 Exemplo de Payload
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. code-block:: json
   :linenos:
@@ -1976,7 +1976,7 @@ Exemplo de Payload
   
 
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -1986,7 +1986,7 @@ Exemplo Requisição (cURL)
 
 
 Dados de Entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. note::
 
@@ -2178,7 +2178,7 @@ Dados de Entrada
      - Indica exigência de conteúdo nacional
 
 Dados de Retorno
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -2198,7 +2198,7 @@ Dados de Retorno
      - Endereço HTTP do recurso criado
 
 Exemplo de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
  
@@ -2206,7 +2206,7 @@ Exemplo de Retorno
 	["https://treina.pncp.gov.br/api/pncp/v1/orgaos/10000000000003/compras/2021/1/itens/1"]
 
 Códigos de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -2230,7 +2230,7 @@ Códigos de Retorno
      - Erro
 
 Retificar Item de uma Contratação 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=================================
 
 Serviço para retificar um item de uma contratação. Ou utilizado para alterar a situação do item conforme tabela de domínio de situação do item da contratação. **Importante lembrar que na Retificação todas as informações terão que ser enviadas novamente, não apenas as que sofreram alteração.**
 
@@ -2239,7 +2239,7 @@ Serviço para retificar um item de uma contratação. Ou utilizado para alterar 
 	Fica impedida a retificação do item caso a contratação não possua documento/arquivo ativo vinculado a ela no PNCP.
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -2253,7 +2253,7 @@ Detalhes da Requisição
 	 
 
 Exemplo de Payload
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. code-block:: json
   :linenos:
@@ -2289,7 +2289,7 @@ Exemplo de Payload
   
 
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -2297,7 +2297,7 @@ Exemplo Requisição (cURL)
 	/10000000000003/compras/2021/1/itens/1" -H "accept: */*" -H "Content-Type: application/json" --data "@/home/objeto.json" 
 
 Dados de Entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. note::
 
@@ -2501,7 +2501,7 @@ Dados de Entrada
      - Indica exigência de conteúdo nacional
 
 Códigos de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -2526,7 +2526,7 @@ Códigos de Retorno
 
 
 Retificar parcialmente um Item de uma Contratação
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=================================================
 
 Serviço para retificar parcialmente um item de uma contratação. Pode ser utilizado para alterar a situação do item conforme tabela de domínio de situação do item da contratação. Na retificação parcial, deverão ser enviadas apenas as informações que sofrerão alteração. Por exemplo, se desejar apenas atualizar a situação de um item, você deve informar apenas o atributo situacaoCompraItemId e ignorar todos os demais atributos. 
 
@@ -2535,7 +2535,7 @@ Serviço para retificar parcialmente um item de uma contratação. Pode ser util
 	Fica impedida a retificação do item caso a contratação não possua documento/arquivo ativo vinculado a ela no PNCP.
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -2549,7 +2549,7 @@ Detalhes da Requisição
 	 
 
 Exemplo de Payload
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. code-block:: json
   :linenos:
@@ -2582,7 +2582,7 @@ Exemplo de Payload
 	
   
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -2590,7 +2590,7 @@ Exemplo Requisição (cURL)
 	/10000000000003/compras/2021/1/itens/1" -H "accept: */*" -H "Content-Type: application/json" --data "@/home/objeto.json" 
 
 Dados de Entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. note::
 
@@ -2794,7 +2794,7 @@ Dados de Entrada
      - Indica exigência de conteúdo nacional
 
 Códigos de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -2818,12 +2818,12 @@ Códigos de Retorno
      - Erro
 
 Consultar Itens de uma Contratação
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==================================
 
 Serviço para recuperar os itens de uma contratação.
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -2837,14 +2837,14 @@ Detalhes da Requisição
 	 
 
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
 	curl -k -X GET "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/itens" -H "accept: */*" '
 
 Dados de Entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. note::
 
@@ -2886,7 +2886,7 @@ Dados de Entrada
      - Quantidade de itens por página
 
 Dados de Retorno
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -3154,7 +3154,7 @@ Dados de Retorno
      - Indica exigência de conteúdo nacional
 
 Códigos de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -3178,12 +3178,12 @@ Códigos de Retorno
      - Erro
 
 Consultar Item de uma Contratação
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=================================
 
 Serviço para consultar um item específico de uma contratação.
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -3197,14 +3197,14 @@ Detalhes da Requisição
 	 
 
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
 curl -k -X GET "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/itens/1" -H "accept: */*"
 
 Dados de Entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. note::
 
@@ -3246,7 +3246,7 @@ Dados de Entrada
      - Número do item na contratação
 
 Dados de Retorno
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -3509,7 +3509,7 @@ Dados de Retorno
      - Indica exigência de conteúdo nacional
 
 Códigos de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -3534,7 +3534,7 @@ Códigos de Retorno
 
 
 Inserir Resultado do Item de uma Contratação 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+============================================
 
 Serviço para inserir o resultado do item de uma contratação. O resultado possui as informações do fornecedor/arrematador vencedor e valores dos itens. 
  
@@ -3544,7 +3544,7 @@ Serviço para inserir o resultado do item de uma contratação. O resultado poss
 	Ao receber requisição para inclusão de resultado do item da Contratação, o PNCP verifica se entre os resultados, com situação "Informado", existe algum outro registro com valor idêntico à combinação dos parâmetros recebidos: "tipoPessoaId", "niFornecedor" e "ordemClassificacaoSrp". Se houver qualquer registro, a requisição para inclusão do resultado do item da Contratação será recusada. Neste caso, o requisitante será alertado. 
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -3558,7 +3558,7 @@ Detalhes da Requisição
 	 
 
 Exemplo de Payload
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. code-block:: json
   :linenos:
@@ -3591,7 +3591,7 @@ Exemplo de Payload
   
 
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -3599,7 +3599,7 @@ Exemplo Requisição (cURL)
 	"${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/itens/1/resultados" -H "accept: */*" -H "Content-Type: application/json" --data "@/home/objeto.json" 
 
 Dados de Entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. note::
 
@@ -3779,7 +3779,7 @@ Dados de Entrada
      - Valor da moeda estrangeira em BRL
 
 Dados de Retorno
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -3797,7 +3797,7 @@ Dados de Retorno
      - Endereço HTTP do recurso criado
 
 Exemplo de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -3820,7 +3820,7 @@ x-frame-options: DENY
 x-xss-protection: ?; mode=block
 
 Códigos de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -3844,7 +3844,7 @@ Códigos de Retorno
      - Erro
 
 Retificar Resultado do Item de uma Contratação 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==============================================
 
 Serviço para retificar um resultado do item de uma contratação, ou para alterar a situação de um resultado do item conforme tabela de domínio de situação do Resultado do item de uma contratação. **Importante lembrar que na Retificação todas as informações terão que ser enviadas novamente, não apenas as que sofreram alteração.**
 
@@ -3854,7 +3854,7 @@ Serviço para retificar um resultado do item de uma contratação, ou para alter
 	Ao receber requisição para inclusão de resultado do item da Contratação, o PNCP verifica se entre os resultados, com situação "Informado", existe algum outro registro com valor idêntico à combinação dos parâmetros recebidos: "tipoPessoaId", "niFornecedor" e "ordemClassificacaoSrp". Se houver qualquer registro, a requisição para inclusão do resultado do item da Contratação será recusada. Neste caso, o requisitante será alertado.
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -3868,7 +3868,7 @@ Detalhes da Requisição
 	 
 
 Exemplo de Payload
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. code-block:: json
   :linenos:
@@ -3905,7 +3905,7 @@ Exemplo de Payload
     
 
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -3915,7 +3915,7 @@ Exemplo Requisição (cURL)
 
 
 Dados de Entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. note::
    Alimentar os parâmetros {cnpj}, {ano}, {sequencial}, {numeroItem} e {sequencialResultado} na URL.
@@ -4126,7 +4126,7 @@ Dados de Entrada
 ** Para cancelamento do Resultado informar situação do resultado igual a 2, data e motivo do cancelamento junto com os outros dados do resultado.
 
 Códigos de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -4150,12 +4150,12 @@ Códigos de Retorno
      - Erro
 
 Consultar Resultados de Item de uma Contratação 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+===============================================
 
 Serviço para recuperar os resultados cadastrados para um item de uma contratação.
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -4169,14 +4169,14 @@ Detalhes da Requisição
 	 
 
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
 	curl -k -X GET "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/itens/1/resultados" -H "accept: */*" 
 
 Dados de Entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. note::
    Alimentar os parâmetros {cnpj}, {ano}, {sequencial} e {numeroItem} na URL.
@@ -4217,7 +4217,7 @@ Dados de Entrada
      - Número do item na contratação (único e sequencial crescente).
 
 Dados de Retorno
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. note::
    A resposta apresenta a lista de resultados dos itens da contratação, incluindo dados do fornecedor, valores homologados e informações complementares.
@@ -4468,7 +4468,7 @@ Dados de Retorno
      - Nome da moeda estrangeira.
 
 Códigos de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -4492,12 +4492,12 @@ Códigos de Retorno
      - Erro
 
 Consultar um Resultado específico de Item de uma Contratação
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+============================================================
 
 Serviço para consultar os dados de um resultado específico de um item da contratação. 
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -4510,7 +4510,7 @@ Detalhes da Requisição
      - GET
 	 
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -4518,7 +4518,7 @@ Exemplo Requisição (cURL)
 	"${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/itens/1/resultados/1" -H "accept: */*" 
 
 Dados de Entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. note::
    Alimentar os parâmetros {cnpj}, {ano}, {sequencial}, {numeroItem} e {sequencialResultado} na URL.
@@ -4565,7 +4565,7 @@ Dados de Entrada
      - Sequencial do resultado no PNCP; número gerado no momento da inclusão do resultado.
 
 Dados de Retorno
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -4809,7 +4809,7 @@ Dados de Retorno
 
 
 Códigos de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -4833,12 +4833,12 @@ Códigos de Retorno
      - Erro
 
 Consultar Histórico da Contratação
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==================================
 
 Serviço que permite consultar todos os eventos de uma contratação específica, dos Itens, dos Resultados e de seus documentos/arquivos.
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -4852,14 +4852,14 @@ Detalhes da Requisição
 	 
 
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
 	curl -k -X GET "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/historico" -H "accept: */*"
 
 Dados de entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. note::
    Informar os parâmetros ``{cnpj}``, ``{ano}`` e ``{sequencial}`` na URL da requisição.
@@ -4895,7 +4895,7 @@ Dados de entrada
      - Quantidade de itens por página na paginação dos resultados.
 
 Dados de retorno
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -4977,7 +4977,7 @@ Dados de retorno
 
 
 Códigos de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -5002,12 +5002,12 @@ Códigos de Retorno
 
 
 Inserir Imagem de um Item de uma Contratação
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+============================================
 
 Serviço que permite inserir uma imagem de um item de Contratação. O sistema permite o upload de imagem com as extensões listadas na seção: Tabelas de domínio - Extensões de imagem aceitas.
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -5021,7 +5021,7 @@ Detalhes da Requisição
 	 
 
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -5029,7 +5029,7 @@ Exemplo Requisição (cURL)
 	"${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/itens/1/imagem" -H "accept: */*" -H "Content-Type: multipart/form-data" -H "Titulo-Imagem: Casa" -H "Legenda-Imagem: Casa em condomínio fechado" -H "Texto-Alternativo-Imagem: Texto Alternativo Imagem" -F "arquivo=@lote1_imagem1.jpeg;type=image/jpeg"
 
 Dados de entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. note::
    Informar os parâmetros ``{cnpj}``, ``{ano}``, ``{sequencial}`` e ``{numeroItem}`` na URL da requisição.
@@ -5077,12 +5077,12 @@ Dados de entrada
      - Conteúdo binário do arquivo da imagem.
 
 Excluir Imagem de um Item de uma Contratação
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+============================================
 
 Serviço que permite remover imagem pertencente a um item de uma Contratação.
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -5096,7 +5096,7 @@ Detalhes da Requisição
 	 
 
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -5105,7 +5105,7 @@ Exemplo Requisição (cURL)
 
 
 Dados de entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -5143,7 +5143,7 @@ Dados de entrada
 
 
 Códigos de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -5167,12 +5167,12 @@ Códigos de Retorno
      - Erro
 
 Consultar Imagens de um Item de Contratação
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+===========================================
 
 Serviço que permite consultar a lista de imagens de um item de contratação.
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -5185,14 +5185,14 @@ Detalhes da Requisição
      - GET
 
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
 	curl -k -X GET "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/itens/1/imagem" -H "Accept: */*”
 
 Dados de entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -5221,7 +5221,7 @@ Dados de entrada
      - Número do item da contratação.
 
 Dados de retorno
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -5270,7 +5270,7 @@ Dados de retorno
      - Data de publicação da imagem no portal PNCP.
 
 Códigos de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -5294,12 +5294,12 @@ Códigos de Retorno
      - Erro
 	 
 Consultar Imagem de um Item de Contratação
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==========================================
 
 Serviço que permite consultar uma imagem de um item de contratação.
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -5313,7 +5313,7 @@ Detalhes da Requisição
 	 
 
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -5321,7 +5321,7 @@ Exemplo Requisição (cURL)
 
 
 Dados de entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -5354,7 +5354,7 @@ Dados de entrada
      - Número sequencial da imagem a ser recuperada, gerado no momento da sua inclusão no PNCP.
 
 Dados de retorno
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -5371,7 +5371,7 @@ Dados de retorno
      - Conteúdo binário do arquivo da imagem.
 
 Códigos de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -5395,12 +5395,12 @@ Códigos de Retorno
      - Erro
 	 
 Inserir Fonte Orçamentária da Contratação
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=========================================
 
 Serviço que permite inserir uma ou mais fontes orçamentárias a uma Contratação. Tabelas de domínio - item 5.25 Fonte Orçamentária.
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -5414,14 +5414,14 @@ Detalhes da Requisição
 	 
 
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
 	curl -X 'POST' -H 'Authorization: Bearer access_token'   "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/fonte-orcamentaria" -H "accept: */*" -H "Content-Type: application/json" -d "{ "listaFonteOrcamentariaId": [ 1, 2 ] }"
 
 Dados de entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -5450,7 +5450,7 @@ Dados de entrada
      - Lista de códigos de fontes orçamentárias da contratação.
 
 Códigos de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -5474,12 +5474,12 @@ Códigos de Retorno
      - Erro
 	 
 Excluir Fonte Orçamentária da Contratação
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=========================================
 
 Serviço que permite remover uma ou mais fontes orçamentárias de uma Contratação.
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -5493,7 +5493,7 @@ Detalhes da Requisição
 	 
 
 Exemplo de Payload
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. code-block:: json
   :linenos:
@@ -5505,7 +5505,7 @@ Exemplo de Payload
 
 
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -5515,7 +5515,7 @@ Exemplo Requisição (cURL)
 	-d '{ "listaFonteOrcamentariaId": [ 2 ], "justificativaAtualizacao": "Justificativa da exclusão" }'
 
 Dados de entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -5548,7 +5548,7 @@ Dados de entrada
      - Motivo/justificativa para exclusão da fonte orçamentária da contratação.
 
 Códigos de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -5572,12 +5572,12 @@ Códigos de Retorno
      - Erro
 	 
 Consultar Fonte Orçamentária da Contratação
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+===========================================
 
 Serviço que permite consultar fonte orçamentária da contratação pelo seu código.
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -5590,7 +5590,7 @@ Detalhes da Requisição
      - GET
 
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -5598,7 +5598,7 @@ Exemplo Requisição (cURL)
 	 -H "Accept: */*”
 
 Dados de entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. note::
    Alimentar o parâmetro {cnpj}, {ano} e {sequencial} na URL.
@@ -5636,7 +5636,7 @@ Dados de entrada
 
 
 Dados de retorno
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -5677,7 +5677,7 @@ Dados de retorno
      - Data de inclusão da fonte orçamentária na Contratação
 
 Códigos de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -5701,12 +5701,12 @@ Códigos de Retorno
      - Erro
 	 
 Consultar Todas as Fontes Orçamentárias da Contratação
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+======================================================
 
 Serviço que permite consultar a lista de fontes orçamentárias de uma contratação.
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -5719,7 +5719,7 @@ Detalhes da Requisição
      - GET
 	 
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -5728,7 +5728,7 @@ Exemplo Requisição (cURL)
 
 
 Dados de entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -5757,7 +5757,7 @@ Dados de entrada
      - Sequencial da Contratação no PNCP; número sequencial gerado no momento que a contratação foi inserida no PNCP
 
 Dados de retorno
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -5798,7 +5798,7 @@ Dados de retorno
      - Data de publicação do arquivo no portal PNCP
 
 Códigos de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
