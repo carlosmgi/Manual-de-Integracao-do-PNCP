@@ -1,6 +1,9 @@
 Inserir Documento a um Contrato/Empenho
 =======================================
 
+
+Serviço que permite inserir um documento/arquivo a um contrato/empenho. O sistema permite o upload de arquivos com as extensões listadas na seção: Tabelas de domínio - Extensões de arquivos aceitos pelas APIs de Documento.
+
 .. Attention::
 
    As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
@@ -29,9 +32,6 @@ Inserir Documento a um Contrato/Empenho
 
 \
 
-Serviço que permite inserir um documento/arquivo a um contrato/empenho. O sistema
-permite o upload de arquivos com as extensões listadas na seção: Tabelas de domínio -
-Extensões de arquivos aceitos pelas APIs de Documento.
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
