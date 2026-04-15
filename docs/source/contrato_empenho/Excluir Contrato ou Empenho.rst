@@ -1,6 +1,8 @@
 Excluir Contrato/Empenho
 ========================
 
+Serviço que permite remover um contrato ou empenho. Este serviço será acionado por qualquer plataforma digital credenciada
+
 .. Attention::
 
    As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
@@ -29,8 +31,6 @@ Excluir Contrato/Empenho
 
 \
 
-Serviço que permite remover um contrato ou empenho. Este serviço será acionado por
-qualquer plataforma digital credenciada
 
 .. Attention::
   
