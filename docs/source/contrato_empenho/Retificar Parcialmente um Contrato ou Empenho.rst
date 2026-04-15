@@ -1,6 +1,12 @@
 Retificar Parcialmente um Contrato/Empenho
 ==========================================
 
+.. container:: destaque-amarelo
+
+	Serviço que permite retificar parcialmente um contrato/empenho. Além da justificativa, pelo menos um dos campos relacionados ao empenho deve ser enviado para retificação. Este serviço será acionado por qualquer plataforma digital credenciada.
+
+\
+
   .. Attention::
 
    As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
@@ -26,12 +32,6 @@ Retificar Parcialmente um Contrato/Empenho
      - sequencialContrato
      - Inteiro
      - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
-
-\
-
-  .. container:: destaque-amarelo
-
-	Serviço que permite retificar parcialmente um contrato/empenho. Além da justificativa, pelo menos um dos campos relacionados ao empenho deve ser enviado para retificação. Este serviço será acionado por qualquer plataforma digital credenciada.
 
 \
 
