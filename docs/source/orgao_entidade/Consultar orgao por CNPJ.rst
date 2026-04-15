@@ -1,6 +1,8 @@
 Consultar Órgão por CNPJ
 ========================
 
+Serviço que permite consultar um órgão pelo seu CNPJ.
+
 .. Attention::
 
    As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
@@ -28,8 +30,6 @@ Consultar Órgão por CNPJ
      - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
 
 \
-
-Serviço que permite consultar um órgão pelo seu CNPJ.
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
