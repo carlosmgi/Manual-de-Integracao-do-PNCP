@@ -1,6 +1,8 @@
 Consultar Contrato/Empenho
 ==========================
-  
+
+Serviço que permite consultar um contrato ou empenho específico.
+
 .. Attention::
 
    As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
@@ -29,7 +31,6 @@ Consultar Contrato/Empenho
 
 \
 
-Serviço que permite consultar um contrato ou empenho específico.
 
 **Atualizações da versão 2.3.10**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
