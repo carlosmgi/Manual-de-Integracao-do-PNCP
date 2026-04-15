@@ -1,6 +1,10 @@
 Atualizar Órgão
 ===============
 
+Serviço **destinado exclusivamente aos administradores do PNCP** que permite atualizar os dados de um órgão/entidade no repositório do PNCP que eventualmente esteja desatualizado.
+
+**Observação:** não está disponível para plataformas privadas a partir de 18/08/2025.
+
 .. Attention::
 
    As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
@@ -28,10 +32,6 @@ Atualizar Órgão
      - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
 
 \
-
-Serviço **destinado exclusivamente aos administradores do PNCP** que permite atualizar os dados de um órgão/entidade no repositório do PNCP que eventualmente esteja desatualizado.
-
-**Observação:** não está disponível para plataformas privadas a partir de 18/08/2025.
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
