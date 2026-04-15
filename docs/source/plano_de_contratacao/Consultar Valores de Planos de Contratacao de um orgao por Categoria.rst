@@ -1,6 +1,8 @@
 Consultar Valores de Planos de Contratação de um Órgão por Categoria
 ====================================================================
 
+Serviço que permite consultar a quantidade de itens e o valor total dos itens por categoria de item dos planos de contratações de um órgão específico em determinado ano, opcionalmente filtrando por uma dada Categoria de Item.
+
 .. Attention::
 
    As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
@@ -29,7 +31,6 @@ Consultar Valores de Planos de Contratação de um Órgão por Categoria
 
 \
 
-Serviço que permite consultar a quantidade de itens e o valor total dos itens por categoria de item dos planos de contratações de um órgão específico em determinado ano, opcionalmente filtrando por uma dada Categoria de Item.
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
