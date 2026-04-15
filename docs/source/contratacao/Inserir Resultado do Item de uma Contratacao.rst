@@ -293,24 +293,23 @@ Exemplo de Retorno
 ~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
-
  
-Retorno: 
-access-control-allow-credentials: true 
-access-control-allow-headers: Content-Type,Authorization,X-Requested-With,Content-Length,Accept,Origin, 
-access-control-allow-methods: GET,PUT,POST,DELETE,OPTIONS 
-access-control-allow-origin: * 
-cache-control: no-cache,no-store,max-age=0,must-revalidate 
-content-length: 0 
-date: ? 
-expires: ? 
-location: https://treina.pncp.gov.br/api/pncp/v1/orgaos/10000000000003/compras/2021/1/itens/1/resultados/1 
-pragma: no-cache 
-strict-transport-security: max-age=? 
-x-content-type-options: nosniff 
-x-firefox-spdy: ? 
-x-frame-options: DENY 
-x-xss-protection: ?; mode=block
+	Retorno: 
+	access-control-allow-credentials: true 
+	access-control-allow-headers: Content-Type,Authorization,X-Requested-With,Content-Length,Accept,Origin, 
+	access-control-allow-methods: GET,PUT,POST,DELETE,OPTIONS 
+	access-control-allow-origin: * 
+	cache-control: no-cache,no-store,max-age=0,must-revalidate 
+	content-length: 0 
+	date: ? 
+	expires: ? 
+	location: https://treina.pncp.gov.br/api/pncp/v1/orgaos/10000000000003/compras/2021/1/itens/1/resultados/1 
+	pragma: no-cache 
+	strict-transport-security: max-age=? 
+	x-content-type-options: nosniff 
+	x-firefox-spdy: ? 
+	x-frame-options: DENY 
+	x-xss-protection: ?; mode=block
 
 Códigos de Retorno
 ~~~~~~~~~~~~~~~~~~
