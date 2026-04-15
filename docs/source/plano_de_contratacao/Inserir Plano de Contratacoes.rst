@@ -1,6 +1,8 @@
 Inserir Plano de Contratações
 =============================
 
+Serviço que permite inserir um plano de contratações de um ano de uma respectiva unidade no PNCP.
+
 .. Attention::
 
    As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
@@ -29,8 +31,6 @@ Inserir Plano de Contratações
 
 \
 
-
-Serviço que permite inserir um plano de contratações de um ano de uma respectiva unidade no PNCP.
 
 .. Attention::
   
