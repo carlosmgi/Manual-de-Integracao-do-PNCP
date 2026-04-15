@@ -27,10 +27,3 @@ Contratação
    Excluir Imagem de um Item de uma Contratacao
    Consultar Imagens de um Item de Contratacao
    Consultar Imagem de um Item de Contratacao
-   Inserir Fonte Orcamentaria da Contratacao
-   Excluir Fonte Orcamentaria da Contratacao
-   Consultar Fonte Orcamentaria da Contratacao
-   Consultar Todas as Fontes Orcamentarias da Contratacao
-
-
-
