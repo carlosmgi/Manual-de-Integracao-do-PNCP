@@ -1,6 +1,8 @@
 Retificar Contrato/Empenho
 ==========================
 
+Serviço que permite retificar um contrato ou empenho. Este serviço será acionado por qualquer plataforma digital credenciada. 
+
 .. Attention::
 
    As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
@@ -28,9 +30,6 @@ Retificar Contrato/Empenho
      - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
 
 \
-
-Serviço que permite retificar um contrato ou empenho. Este serviço será acionado por
-qualquer plataforma digital credenciada. 
 
 .. Attention::
   
