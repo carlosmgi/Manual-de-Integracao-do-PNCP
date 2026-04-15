@@ -1,6 +1,8 @@
 Retificar Parcialmente Itens de um Plano de Contratação
 =======================================================
 
+Serviço que permite retificar itens de um plano de contratação no PNCP. Este serviço requer autenticação para ser acionado. **Na retificação parcial, você precisa enviar apenas as informações que sofreram alteração. Por exemplo, se você desejar apenas atualizar a categoria de um item, você deve informar apenas o atributo categoriaItemPca e ignorar todos os demais atributos.**
+
 .. Attention::
 
    As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
@@ -28,8 +30,6 @@ Retificar Parcialmente Itens de um Plano de Contratação
      - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
 
 \
-
-Serviço que permite retificar itens de um plano de contratação no PNCP. Este serviço requer autenticação para ser acionado. **Na retificação parcial, você precisa enviar apenas as informações que sofreram alteração. Por exemplo, se você desejar apenas atualizar a categoria de um item, você deve informar apenas o atributo categoriaItemPca e ignorar todos os demais atributos.**
 
 
 Detalhes da Requisição
