@@ -1,6 +1,9 @@
 Excluir Instrumento de Cobrança de Contrato/Empenho
 ======================================================
 
+Serviço que permite remover um instrumento de cobrança de um contrato ou empenho.
+Este serviço será acionado por qualquer plataforma digital credenciada.
+
 .. Attention::
 
    As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
@@ -29,8 +32,6 @@ Excluir Instrumento de Cobrança de Contrato/Empenho
 
 \
 
-Serviço que permite remover um instrumento de cobrança de um contrato ou empenho.
-Este serviço será acionado por qualquer plataforma digital credenciada.
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
