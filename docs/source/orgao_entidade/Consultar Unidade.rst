@@ -1,6 +1,8 @@
 Consultar Unidade
 =================
 
+Serviço que permite consultar uma unidade pertencente a um órgão/entidade a partir de seu código. 
+
 .. Attention::
 
    As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
@@ -28,8 +30,6 @@ Consultar Unidade
      - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
 
 \
-
-Serviço que permite consultar uma unidade pertencente a um órgão/entidade a partir de seu código. 
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
