@@ -1,6 +1,8 @@
 Consultar Usuário por Id
 ========================
 
+Serviço que permite consultar os dados de um usuário pelo id. Disponível para o próprio usuário logado ou um usuário administrador. 
+
 .. Attention::
 
    As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
@@ -28,8 +30,6 @@ Consultar Usuário por Id
      - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
 
 \
-
-Serviço que permite consultar os dados de um usuário pelo id. Disponível para o próprio usuário logado ou um usuário administrador. 
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
