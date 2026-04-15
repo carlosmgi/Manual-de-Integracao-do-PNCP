@@ -1,6 +1,8 @@
 Recuperar Itens de Plano de Contratação por Número da Contratação
 =================================================================
 
+Serviço que permite recuperar a lista de itens pertencentes a um determinado Plano de Contratações Anual (PCA) de uma unidade em determinado ano, opcionalmente filtrando via Categoria do Item.
+
 .. Attention::
 
    As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
@@ -28,8 +30,6 @@ Recuperar Itens de Plano de Contratação por Número da Contratação
      - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
 
 \
-
-Serviço que permite recuperar a lista de itens pertencentes a um determinado Plano de Contratações Anual (PCA) de uma unidade em determinado ano, opcionalmente filtrando via Categoria do Item.
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
