@@ -1,6 +1,12 @@
 Excluir Empenho
 ===============
 
+.. container:: destaque-amarelo
+
+	Serviço que permite remover um empenho. Este serviço será acionado por qualquer plataforma digital credenciada.
+
+\
+
 .. Attention::
 
    As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
@@ -29,11 +35,6 @@ Excluir Empenho
 
 \
 
-.. container:: destaque-amarelo
-
-	Serviço que permite remover um empenho. Este serviço será acionado por qualquer plataforma digital credenciada.
-
-\
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
