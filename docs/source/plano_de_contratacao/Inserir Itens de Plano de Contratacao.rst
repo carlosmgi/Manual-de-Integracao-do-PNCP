@@ -1,6 +1,8 @@
 Inserir Itens de Plano de Contratação
 =====================================
 
+Serviço que permite inserir itens em um plano de contratação de um ano de uma respectiva unidade no PNCP. **O serviço requer que seja enviado pelo menos um item e o limite máximo de recebimento é de 1000 itens.** Este serviço requer autenticação para ser acionado.
+
 .. Attention::
 
    As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
@@ -28,8 +30,6 @@ Inserir Itens de Plano de Contratação
      - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
 
 \
-
-Serviço que permite inserir itens em um plano de contratação de um ano de uma respectiva unidade no PNCP. **O serviço requer que seja enviado pelo menos um item e o limite máximo de recebimento é de 1000 itens.** Este serviço requer autenticação para ser acionado.
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
