@@ -1,6 +1,8 @@
 Consultar Plano por Órgão e Ano
 ===============================
 
+Serviço que permite consultar o plano de contratações anual específico de um determinado órgão.
+
 .. Attention::
 
    As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
@@ -28,8 +30,6 @@ Consultar Plano por Órgão e Ano
      - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
 
 \
-
-Serviço que permite consultar o plano de contratações anual específico de um determinado órgão.
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
