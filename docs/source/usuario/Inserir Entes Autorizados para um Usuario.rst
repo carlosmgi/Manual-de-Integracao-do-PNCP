@@ -1,6 +1,14 @@
 Inserir Entes Autorizados para um Usuário 
 =========================================
 
+Serviço que permite inserir um ou mais CNPJs de entes autorizados para um usuário. Serviço destinado exclusivamente às plataformas públicas e aos administradores do PNCP. 
+Para plataformas privadas, a inclusão de novos entes autorizados requer contato prévio com a central de atendimento e apresentação de comprovação de vínculo com o ente público. 
+
+.. warning::
+   Disponível apenas no ambiente de treinamento/homologação. No ambiente de produção, utilize o procedimento do item Gestão de Órgão e Entidade.
+
+\
+
 .. Attention::
 
    As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
@@ -28,12 +36,6 @@ Inserir Entes Autorizados para um Usuário
      - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
 
 \
-
-Serviço que permite inserir um ou mais CNPJs de entes autorizados para um usuário. Serviço destinado exclusivamente às plataformas públicas e aos administradores do PNCP. 
-Para plataformas privadas, a inclusão de novos entes autorizados requer contato prévio com a central de atendimento e apresentação de comprovação de vínculo com o ente público. 
-
-.. warning::
-   Disponível apenas no ambiente de treinamento/homologação. No ambiente de produção, utilize o procedimento do item Gestão de Órgão e Entidade.
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
