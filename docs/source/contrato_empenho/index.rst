@@ -4,20 +4,15 @@ Contratos/Empenhos
 .. toctree::
    :maxdepth: 3
 
-   Inserir Contratos ou Empenhos
-   Retificar Contrato ou Empenho
-   Excluir Contrato ou Empenho
-   Inserir Documento a um Contrato ou Empenho
-   Excluir Documento do Contrato ou Empenho
-   Consultar Todos os Documentos de um Contrato ou Empenho
-   Consultar Documento de um Contrato ou Empenho
-   Consultar Contrato ou Empenho
-   Consultar Contratos ou Empenhos de uma Contratação
-   Consultar Histórico do Contrato ou Empenho
-   Inserir Instrumento de Cobrança de um Contrato ou Empenho
-   Retificar Parcialmente Instrumento de Cobrança de Contrato ou Empenho
-   Excluir Instrumento de Cobrança de Contrato ou Empenho
-   Consultar Instrumento de Cobrança de um Contrato ou Empenho
-   Consultar Instrumentos de Cobrança de um Contrato ou Empenho
-   Fluxos de Inclusão de Contratos fruto de Ata de Registro de Preços (ARP) no PNCP
-   Retificar Parcialmente um Contrato ou Empenho
+   inserir_contratos_ou_empenhos
+   retificar_contrato_ou_empenho
+   excluir_contrato_ou_empenho
+   inserir_documento_a_um_contrato_ou_empenho
+   excluir_documento_do_contrato_ou_empenho
+   consultar_todos_os_documentos_de_um_contrato_ou_empenho
+   consultar_documento_de_um_contrato_ou_empenho
+   consultar_contrato_ou_empenho
+   consultar_contratos_ou_empenhos_de_uma_contratacao
+   consultar_historico_do_contrato_ou_empenho
+   fluxos_de_inclusao_de_contratos_fruto_de_ata_de_registro_de_precos_(arp)_no_pncp
+   retificar_parcialmente_um_contrato_ou_empenho
