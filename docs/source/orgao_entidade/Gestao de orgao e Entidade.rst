@@ -1,6 +1,12 @@
 Gestão de Órgão e Entidade 
 ==========================
 
+A funcionalidade “Gestão de Órgão/Entidade”, disponível na Área de Trabalho do PNCP, é utilizada pelo Gestor habilitado para realizar a gestão de acessos, a gestão de plataformas e a gestão de unidades. 
+O acesso à funcionalidade se dá pelo endereço: `https://pncp.gov.br/app/area-de-trabalho. <https://pncp.gov.br/app/area-de-trabalho.>`_  
+Cabe ao gestor órgão autorizar plataforma publicadora, seja ela pública ou privada, que passe a representar um novo órgão perante o PNCP.
+
+\
+
 .. Attention::
 
    As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
@@ -26,12 +32,6 @@ Gestão de Órgão e Entidade
      - sequencialContrato
      - Inteiro
      - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
-
-\
-
-A funcionalidade “Gestão de Órgão/Entidade”, disponível na Área de Trabalho do PNCP, é utilizada pelo Gestor habilitado para realizar a gestão de acessos, a gestão de plataformas e a gestão de unidades. 
-O acesso à funcionalidade se dá pelo endereço: `https://pncp.gov.br/app/area-de-trabalho. <https://pncp.gov.br/app/area-de-trabalho.>`_  
-Cabe ao gestor órgão autorizar plataforma publicadora, seja ela pública ou privada, que passe a representar um novo órgão perante o PNCP.
 
 \
 
