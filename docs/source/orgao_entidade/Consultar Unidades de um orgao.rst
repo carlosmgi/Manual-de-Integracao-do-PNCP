@@ -1,6 +1,8 @@
 Consultar Unidades de um Órgão
 ==============================
 
+Serviço que permite consultar unidades pertencentes a um órgão/entidade.
+
 .. Attention::
 
    As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
@@ -26,8 +28,6 @@ Consultar Unidades de um Órgão
         - sequencialContrato
         - Inteiro
         - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
-
-Serviço que permite consultar unidades pertencentes a um órgão/entidade.
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
