@@ -25,6 +25,7 @@ Sumário
    contratacao/index
    Fonte_orcamentaria_da_contratacao/index
    ata_de_registro_de_preco/index
+   partes_envolvidas/index
    orgao_entidade/index
    contrato_empenho/index
    empenho/index
