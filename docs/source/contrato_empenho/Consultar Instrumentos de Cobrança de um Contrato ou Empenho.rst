@@ -1,6 +1,8 @@
 Consultar Instrumentos de Cobrança de um Contrato/Empenho
 ============================================================
 
+Serviço que permite consultar os instrumentos de cobrança vinculados a um contra-to/empenho.
+
 .. Attention::
 
    As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
@@ -29,7 +31,6 @@ Consultar Instrumentos de Cobrança de um Contrato/Empenho
 
 \
 
-Serviço que permite consultar os instrumentos de cobrança vinculados a um contra-to/empenho.
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
