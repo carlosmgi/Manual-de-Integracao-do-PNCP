@@ -29,6 +29,7 @@ Sumário
    contrato_empenho/index
    instrumento_de_Cobranca_de_contrato_empenho/index
    empenho/index
+   termo_de_contrato/index
    orgao_entidade/index
    Objetivo
    Protocolo de Comunicação
