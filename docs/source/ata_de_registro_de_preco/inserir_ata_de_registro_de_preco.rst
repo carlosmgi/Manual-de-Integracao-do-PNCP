@@ -1,4 +1,135 @@
 Inserir Ata de Registro de Preço
 ================================
 
-De onde ele vem? Ao contrário do que se acredita, Lorem Ipsum não é simplesmente um texto randômico. Com mais de 2000 anos, suas raízes podem ser encontradas em uma obra de literatura latina clássica datada de 45 AC. Richard McClintock, um professor de latim do Hampden-Sydney College na Virginia, pesquisou uma das mais obscuras palavras em latim, consectetur, oriunda de uma passagem de Lorem Ipsum, e, procurando por entre citações da palavra na literatura clássica, descobriu a sua indubitável origem. Lorem Ipsum vem das seções 1.10.32 e 1.10.33 do "de Finibus Bonorum et Malorum" (Os Extremos do Bem e do Mal), de Cícero, escrito em 45 AC. Este livro é um tratado de teoria da ética muito popular na época da Renascença. A primeira linha de Lorem Ipsum, "Lorem Ipsum dolor sit amet..." vem de uma linha na seção 1.10.32.
+Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a uma contratação.
+
+.. container:: destaque-amarelo
+
+   O sistema exige o upload de um arquivo anexo à ata de registro de preço enviada. As extensões permitidas para o arquivo anexo são listadas na seção Tabelas de domínio - Envio de arquivos pelas APIs de Documento e os tipos de documento/arquivo aceitos pelo PNCP podem ser consultados na seção Tabelas de domínio - Tipo de Documento, deste manual.
+
+.. Attention::
+
+   As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 25
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Descrição
+   * - 1
+     - cnpj
+     - Texto
+     - CNPJ do órgão do contrato/empenho
+   * - :destaque:`2`
+     - :destaque:`ano`
+     - :destaque:`Inteiro`
+     - :destaque:`Ano do contrato/empenho`
+   * - 3
+     - sequencialContrato
+     - Inteiro
+     - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
+
+**Atualizações da versão 2.3.10**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. versionadded:: 2.3.10
+ 
+.. list-table::
+   :widths: auto
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Obrigatório
+     - Descrição
+
+   * - :destaque:`4`
+     - :destaque:`Titulo-Documento`
+     - :destaque:`Texto(255)`
+     - :destaque:`Sim`
+     - :destaque:`Título do documento`
+
+   * - :destaque:`5`
+     - :destaque:`Tipo-Documento-Id`
+     - :destaque:`Inteiro`
+     - :destaque:`Sim`
+     - :destaque:`Código da tabela de domínio Tipo de documento .`
+
+.. versionchanged:: 2.3.10
+
+   não houve alterações.
+
+.. deprecated:: 2.3.10
+
+   não houve alterações.
+
+Detalhes da Requisição
+~~~~~~~~~~~~~~~~~~~~~~
+
+.. list-table::
+   :width: 100%
+   :widths: 50 15
+   :header-rows: 1
+
+   * - Endpoint
+     - Método HTTP
+   * - /v1/orgaos/{cnpj}/compras/{anoCompra}/{sequencialCompra}/atas
+     - POST
+
+Exemplo de Payload
+~~~~~~~~~~~~~~~~~~
+
+.. code-block:: json
+  :linenos:
+  :emphasize-lines: 1,8-15
+
+    Arquivo JSON:
+      {
+      "cnpjCompra": "10000000000003",
+      "anoCompra": 2021,
+      "sequencialCompra": 1,
+      "sequencialAta": 1,
+      "frutoAdesao": true,
+      "temRemanejamento": false,
+      "tipoContratoId": 1,
+      "numeroContratoEmpenho": "1",
+      "anoContrato": 2021,
+      "processo": "1/2021",
+      "categoriaProcessoId": 2,
+      "receita": false,
+      "codigoUnidade": "1",
+      "niFornecedor": "10000000000010",
+      "tipoPessoaFornecedor": "PJ",
+      "nomeRazaoSocialFornecedor": "Fornecedor do Teste I",
+      "objetoContrato": "Contrato para exemplificar uso da API PNCP",
+      "informacaoComplementar": "",
+      "valorInicial": 10000.0000,
+      "numeroParcelas": 2,
+      "valorParcela": 5000.0000,
+      "valorGlobal": 10000.0000,
+      "valorAcumulado": 10000.0000,
+      "dataAssinatura": "2021-07-27",
+      "dataVigenciaInicio": "2021-07-28",
+      "dataVigenciaFim": "2021-07-29",
+      "identificadorCipi": "111.11-011",
+      "urlCipi": "https://cipi.economia.gov.br/111.11-011"
+    }
+
+Exemplo Requisição (cURL)
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: bash
+  :linenos:
+  :emphasize-lines: 1-6
+
+   curl -X POST \
+     --header "Authorization: Bearer access_token" \
+     --header "accept: */*" \
+     --header "Content-Type: application/json" \
+     --data "@home/objeto.json" \
+     "$BASE_URL/v1/orgaos/100000000000003/contratos"
