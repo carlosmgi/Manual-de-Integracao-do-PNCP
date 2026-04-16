@@ -3,7 +3,7 @@ kbd {
   color: #000 !important;
 }
 
-/*destaque laranja*/
+/* destaque laranja */
 .destaque-amarelo {
     background-color: #F9B066;
     padding: 10px;
@@ -13,12 +13,13 @@ kbd {
 }
 
 .destaque-amarelo-claro {
-    background-color: #ffde59;
+    background-color: #fff3cd; 
     padding: 10px;
-    border-left: 5px solid #ffde59;
+    border-left: 5px solid #ffec99; 
     border-radius: 4px;
     text-align: justify;
 }
+
 
 .linha-destaque {
     background-color: #F9B066;
