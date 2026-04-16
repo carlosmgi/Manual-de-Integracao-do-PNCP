@@ -3,12 +3,21 @@ kbd {
   color: #000 !important;
 }
 
+/*destaque laranja*/
 .destaque-amarelo {
     background-color: #F9B066;
     padding: 10px;
     border-left: 5px solid #ffc107;
     border-radius: 4px;
     text-align: justify;    
+}
+
+.destaque-amarelo-claro {
+    background-color: #fff3cd;
+    padding: 10px;
+    border-left: 5px solid #ffec99;
+    border-radius: 4px;
+    text-align: justify;
 }
 
 .linha-destaque {
