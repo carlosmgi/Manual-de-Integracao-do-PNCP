@@ -13,6 +13,7 @@ def linha_destaque_amarelo_role(name, rawtext, text, lineno, inliner, options={}
     return [node], []
 
 roles.register_local_role('destaque', destaque_role)
+roles.register_local_role('linha-destaque-amarelo', linha_destaque_amarelo_role)
 
 #-- Alterar a versão do manual em todas as páginas
 version = "2.5"
