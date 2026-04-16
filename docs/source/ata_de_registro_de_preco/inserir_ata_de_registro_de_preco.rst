@@ -7,6 +7,8 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
 
    O sistema exige o upload de um arquivo anexo à ata de registro de preço enviada. As extensões permitidas para o arquivo anexo são listadas na seção Tabelas de domínio - Envio de arquivos pelas APIs de Documento e os tipos de documento/arquivo aceitos pelo PNCP podem ser consultados na seção Tabelas de domínio - Tipo de Documento, deste manual.
 
+\
+
 .. Attention::
 
    As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
@@ -59,6 +61,36 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
      - :destaque:`Inteiro`
      - :destaque:`Sim`
      - :destaque:`Código da tabela de domínio Tipo de documento .`
+  
+   * - :linha-destaque-amarelo:`11`
+     - :linha-destaque-amarelo:`possibilidadeAdesao`
+     - :linha-destaque-amarelo:`Booleano`
+     - :linha-destaque-amarelo:`Sim`
+     - :linha-destaque-amarelo:`Indicador se a Ata permite adesão de não participantes (False=Não / True=Sim)`
+
+   * - :linha-destaque-amarelo:`12`
+     - :linha-destaque-amarelo:`Lista de Partes Envolvidas`
+     - :linha-destaque-amarelo:`List`
+     - :linha-destaque-amarelo:`Sim`
+     - :linha-destaque-amarelo:`Lista de partes envolvidas. É permitido somente os códigos 1 e 2 ao inserir a ARP.`
+
+   * - :linha-destaque-amarelo:`12.1`
+     - :linha-destaque-amarelo:`tipoParteEnvolvidaId`
+     - :linha-destaque-amarelo:`Inteiro`
+     - :linha-destaque-amarelo:`Sim`
+     - :linha-destaque-amarelo:`Código do Tipo de Parte Envolvida. Código 1 - Gerenciadora Código 2 - Participante Código 3 - Não Participante`
+
+   * - :linha-destaque-amarelo:`12.2`
+     - :linha-destaque-amarelo:`cnpj`
+     - :linha-destaque-amarelo:`Texto (14)`
+     - :linha-destaque-amarelo:`Sim`
+     - :linha-destaque-amarelo:`CNPJ do órgão`
+
+   * - :linha-destaque-amarelo:`12.3`
+     - :linha-destaque-amarelo:`codigoUnidadeCompradora`
+     - :linha-destaque-amarelo:`Texto (30)`
+     - :linha-destaque-amarelo:`Sim`
+     - :linha-destaque-amarelo:`Código da Unidade Administrativa`
 
 .. versionchanged:: 2.3.10
 
