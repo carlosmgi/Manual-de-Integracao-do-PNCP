@@ -8,6 +8,10 @@ def destaque_role(name, rawtext, text, lineno, inliner, options={}, content=[]):
     node = nodes.inline(text, text, classes=['linha-destaque'])
     return [node], []
 
+def linha_destaque_amarelo_role(name, rawtext, text, lineno, inliner, options={}, content=[]):
+    node = nodes.inline(rawtext, text, classes=['linha-destaque-amarelo'])
+    return [node], []
+
 roles.register_local_role('destaque', destaque_role)
 
 #-- Alterar a versão do manual em todas as páginas
