@@ -62,35 +62,35 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
      - :destaque:`Sim`
      - :destaque:`Código da tabela de domínio Tipo de documento .`
   
-   * - :linha-destaque-amarelo:`11`
-     - :linha-destaque-amarelo:`possibilidadeAdesao`
-     - :linha-destaque-amarelo:`Booleano`
-     - :linha-destaque-amarelo:`Sim`
-     - :linha-destaque-amarelo:`Indicador se a Ata permite adesão de não participantes (False=Não / True=Sim)`
+   * - :destaque-amarelo-claro:`11`
+     - :destaque-amarelo-claro:`possibilidadeAdesao`
+     - :destaque-amarelo-claro:`Booleano`
+     - :destaque-amarelo-claro:`Sim`
+     - :destaque-amarelo-claro:`Indicador se a Ata permite adesão de não participantes (False=Não / True=Sim)`
 
-   * - :linha-destaque-amarelo:`12`
-     - :linha-destaque-amarelo:`Lista de Partes Envolvidas`
-     - :linha-destaque-amarelo:`List`
-     - :linha-destaque-amarelo:`Sim`
-     - :linha-destaque-amarelo:`Lista de partes envolvidas. É permitido somente os códigos 1 e 2 ao inserir a ARP.`
+   * - :destaque-amarelo-claro:`12`
+     - :destaque-amarelo-claro:`Lista de Partes Envolvidas`
+     - :destaque-amarelo-claro:`List`
+     - :destaque-amarelo-claro:`Sim`
+     - :destaque-amarelo-claro:`Lista de partes envolvidas. É permitido somente os códigos 1 e 2 ao inserir a ARP.`
 
-   * - :linha-destaque-amarelo:`12.1`
-     - :linha-destaque-amarelo:`tipoParteEnvolvidaId`
-     - :linha-destaque-amarelo:`Inteiro`
-     - :linha-destaque-amarelo:`Sim`
-     - :linha-destaque-amarelo:`Código do Tipo de Parte Envolvida. Código 1 - Gerenciadora Código 2 - Participante Código 3 - Não Participante`
+   * - :destaque-amarelo-claro:`12.1`
+     - :destaque-amarelo-claro:`tipoParteEnvolvidaId`
+     - :destaque-amarelo-claro:`Inteiro`
+     - :destaque-amarelo-claro:`Sim`
+     - :destaque-amarelo-claro:`Código do Tipo de Parte Envolvida. Código 1 - Gerenciadora Código 2 - Participante Código 3 - Não Participante`
 
-   * - :linha-destaque-amarelo:`12.2`
-     - :linha-destaque-amarelo:`cnpj`
-     - :linha-destaque-amarelo:`Texto (14)`
-     - :linha-destaque-amarelo:`Sim`
-     - :linha-destaque-amarelo:`CNPJ do órgão`
+   * - :destaque-amarelo-claro:`12.2`
+     - :destaque-amarelo-claro:`cnpj`
+     - :destaque-amarelo-claro:`Texto (14)`
+     - :destaque-amarelo-claro:`Sim`
+     - :destaque-amarelo-claro:`CNPJ do órgão`
 
-   * - :linha-destaque-amarelo:`12.3`
-     - :linha-destaque-amarelo:`codigoUnidadeCompradora`
-     - :linha-destaque-amarelo:`Texto (30)`
-     - :linha-destaque-amarelo:`Sim`
-     - :linha-destaque-amarelo:`Código da Unidade Administrativa`
+   * - :destaque-amarelo-claro:`12.3`
+     - :destaque-amarelo-claro:`codigoUnidadeCompradora`
+     - :destaque-amarelo-claro:`Texto (30)`
+     - :destaque-amarelo-claro:`Sim`
+     - :destaque-amarelo-claro:`Código da Unidade Administrativa`
 
 .. versionchanged:: 2.3.10
 
