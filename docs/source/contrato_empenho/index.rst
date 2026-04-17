@@ -1,6 +1,8 @@
 Contratos/Empenhos
 ==================
 
+Serviços que disponibilizam conjunto de operações relacionadas aos contratos/empenhos no PNCP.
+
 .. toctree::
    :maxdepth: 3
 
