@@ -1,6 +1,8 @@
 Partes Envolvidas
 =================
 
+Serviços que disponibilizam conjunto de operações relacionadas às partes envolvidas em atas de registro de preços no PNCP.
+
 .. toctree::
    :maxdepth: 3
 
