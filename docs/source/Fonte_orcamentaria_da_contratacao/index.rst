@@ -1,6 +1,8 @@
 Fonte orçamentária da contratação
 =================================
 
+Serviços que disponibilizam conjunto de operações relacionadas às fontes orçamentárias no PNCP.
+
 .. toctree::
    :maxdepth: 3
 
