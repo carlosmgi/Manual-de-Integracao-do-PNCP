@@ -1,5 +1,6 @@
 Contratação
 ===========
+Serviços que disponibilizam conjunto de operações relacionadas às contratações no PNCP.
 
 .. toctree::
    :maxdepth: 3
