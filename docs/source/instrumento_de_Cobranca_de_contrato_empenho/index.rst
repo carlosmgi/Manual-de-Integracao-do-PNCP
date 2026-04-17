@@ -1,6 +1,8 @@
 Instrumento de Cobrança de Contrato/Empenho
 ===========================================
 
+Serviços que disponibilizam conjunto de operações relacionadas aos instrumentos de cobrança no PNCP.
+
 .. toctree::
    :maxdepth: 3
 
