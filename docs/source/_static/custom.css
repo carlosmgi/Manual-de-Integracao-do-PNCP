@@ -14,7 +14,7 @@ kbd {
 
 .destaque-amarelo-claro {
     background-color: #fff3cd; 
-    border-left: 5px solid #ffec99; 
+    border-left: 2px solid; 
     border-radius: 4px;
     text-align: justify;
     padding: 2px 6px; 
