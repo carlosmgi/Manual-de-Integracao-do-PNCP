@@ -94,8 +94,8 @@ Dados de entrada
      - Sim
      - Número sequencial do contrato (gerado pelo PNCP)
 
-Código HTTP
-~~~~~~~~~~~
+Códigos de Retorno
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -119,7 +119,7 @@ Código HTTP
      - Erro
      
 Exemplo de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -138,8 +138,8 @@ Exemplo de Retorno
         "unidadeSubrogada": { dados da unidade subrogada },
         "dataVigenciaInicio": "yyyy-mm-dd",
         "orgaoEntidade": { dados do órgão do contrato },
-    "dataInclusao": "yyyy-mm-ddThh:mm:ss",
-    "excluido": boolean,
+    	"dataInclusao": "yyyy-mm-ddThh:mm:ss",
+    	"excluido": boolean,
         "compra": { dados da compra },
         "informativoObservacao": "string",
         "prazoAditadoDias": 0,
