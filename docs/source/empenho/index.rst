@@ -1,6 +1,8 @@
 Empenho
 =======
 
+Serviços que disponibilizam conjunto de operações relacionadas aos empenhos no PNCP.
+
 .. toctree::
    :maxdepth: 3
 
