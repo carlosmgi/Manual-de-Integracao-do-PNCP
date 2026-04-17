@@ -1,6 +1,8 @@
 Órgão/Entidade
 ==============
 
+Serviços que disponibilizam conjunto de operações relacionadas aos Órgão/entidades no PNCP.
+
 .. toctree::
   :maxdepth: 3
 
