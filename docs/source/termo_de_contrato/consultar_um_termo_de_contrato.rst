@@ -99,8 +99,8 @@ Dados de entrada
      - Sim
      - Número sequencial do termo de contrato (gerado pelo PNCP)
 
-Código HTTP
-~~~~~~~~~~~
+Códigos de Retorno
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -124,7 +124,7 @@ Código HTTP
      - Erro
 
 Exemplo de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
