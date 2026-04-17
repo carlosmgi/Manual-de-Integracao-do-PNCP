@@ -40,7 +40,7 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
 
 .. versionadded:: 2.3.10
 
-*Destaque em amarelo destinado à identificação das atualizações relativas às entregas de ARP por adesão (“caronas”).*
+*Destaque em amarelo destinado à identificação das atualizações relativas às entregas de ARP Caronas.*
 
 .. list-table::
    :widths: auto
