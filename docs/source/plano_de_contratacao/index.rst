@@ -1,6 +1,8 @@
 Plano de Contratação
 ====================
 
+Serviços que disponibilizam conjunto de operações relacionadas aos planos de contratação no PNCP.
+
 .. toctree::
   :maxdepth: 3
 
