@@ -300,8 +300,6 @@ Dados de retorno
 Exemplo de Retorno
 ~~~~~~~~~~~~~~~~~~
 
-**Retorno:**
-
 .. code-block:: http
    :linenos:
 
