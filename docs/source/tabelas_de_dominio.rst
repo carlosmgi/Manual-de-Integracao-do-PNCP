@@ -2,831 +2,24 @@ Tabelas de Domínio
 ==================
 
 
-Consultar Instrumentos Convocatórios 
-====================================
-Serviço que permite consultar os instrumentos convocatórios cadastrados no PNCP. 
 
-Detalhes da Requisição
-~~~~~~~~~~~~~~~~~~~~~~
 
-.. list-table::
-   :width: 100%
-   :widths: 50 15
-   :header-rows: 1
 
-   * - Endpoint
-     - Método HTTP
-   * - /v1/tipos-instrumentos-convocatorios
-     - GET
 
-Exemplo Requisição (cURL)
-~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. code-block:: bash
 
-   curl -X 'GET' 
-   '${BASE_URL}/v1/tipos-instrumentos-convocatorios -H 'accept: */*'
-   ou
-   curl -X 'GET' '${BASE_URL}/v1/tipos-instrumentos-convocatorios?statusAtivo=true' -H 'accept: */*'
-   
-Dados de Entrada
-~~~~~~~~~~~~~~~~
 
-.. note:: 
 
-Alimentar o query parâmetro `statusAtivo`.  
 
-.. list-table::
-   :width: 100%
-   :widths: 5 25 15 25
-   :header-rows: 1
 
-   * - Campo
-     - Tipo
-     - Obrigatório
-     - Descrição
-   * - statusAtivo
-     - Boolean
-     - Não
-     - Indicador de status do instrumento convocatório. True = Ativo / False = Inativo
 
-Dados de retorno
-~~~~~~~~~~~~~~~~
 
-.. list-table:: 
-   :width: 100%
-   :header-rows: 1
-   :widths: 5 25 15 25
 
-   * - Id
-     - Campo
-     - Tipo
-     - Descrição
-   * - 1
-     - id
-     - Inteiro
-     - Código de identificação do instrumento convocatório
-   * - 2
-     - nome
-     - Texto
-     - Nome do instrumento convocatório
-   * - 3
-     - descricao
-     - Texto
-     - Descrição do instrumento convocatório
-   * - 4
-     - obrigatoriedadeDataAberturaPropostaNome
-     - Texto
-     - Indica se é obrigatório ou não o envio da data de início do recebimento de proposta/lances para o instrumento convocatório
-   * - 5
-     - obrigatoriedadeDataEncerramentoPropostaNome
-     - Texto
-     - Indica se é obrigatório ou não o envio da data de encerramento do recebimento de proposta/lances para o instrumento convocatório
-   * - 6
-     - dataInclusao
-     - Data/Hora
-     - Data e hora da inclusão do registro
-   * - 7
-     - dataAtualizacao
-     - Data/Hora
-     - Data e hora da última atualização do registro
-   * - 8
-     - statusAtivo
-     - Booleano
-     - Indicador de status do instrumento convocatório. True = Ativo / False = Inativo
 
-Códigos de Retorno
-~~~~~~~~~~~~~~~~~~
 
-.. list-table::
-   :width: 100%
-   :widths: 10 25 20
-   :header-rows: 1
-
-   * - Código HTTP
-     - Mensagem
-     - Tipo
-   * - 200
-     - OK
-     - Sucesso
-   * - 400
-     - BadRequest
-     - Erro
-   * - 404
-     - Instrumento convocatório não encontrado
-     - NotFound
-   * - 422
-     - Unprocessable Entity
-     - Erro
-   * - 500
-     - Internal Server Error
-     - Erro
-
-Modalidade de Contratação
--------------------------
-Para consulta às modalidades de contratação acessar a página no Portal PNCP pelo endereço `https://pncp.gov.br/app/entidades-dominio <https://pncp.gov.br/app/entidades-dominio>`_. Para ajudar na integração com o PNCP foram disponibilizados os serviços para consulta de modalidade/es de contratação a seguir. 
-
-Consultar Modalidade de Contratação por Código
-==============================================
-Serviço que permite consultar uma modalidade de contratação pelo seu código. 
-
-Detalhes da Requisição
-~~~~~~~~~~~~~~~~~~~~~~
-
-.. list-table::
-   :width: 100%
-   :widths: 50 15
-   :header-rows: 1
-
-   * - Endpoint
-     - Método HTTP
-   * - /v1/modalidades/{id} 
-     - GET
-
-Exemplo Requisição (cURL)
-~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. code-block:: bash
-
-   curl -X 'GET' 
-   '${BASE_URL}/v1/modalidades/{id}' -H 'accept: */*
-
-Dados de Entrada
-~~~~~~~~~~~~~~~~
-
-.. note:: 
-
-Alimentar o path parâmetro `{id}` na URL.
-
-.. list-table::
-   :width: 100%
-   :widths: 5 25 15 25
-   :header-rows: 1
-
-   * - Campo
-     - Tipo
-     - Obrigatório
-     - Descrição
-   * - id
-     - Inteiro
-     - Sim
-     - Código de identificação da modalidade de contratação
-
-Dados de retorno
-~~~~~~~~~~~~~~~~
-
-.. list-table:: 
-   :width: 100%
-   :header-rows: 1
-   :widths: 5 25 15 25
-
-   * - Id
-     - Campo
-     - Tipo
-     - Descrição
-   * - 1
-     - id
-     - Inteiro
-     - Código de identificação da modalidade de contratação
-   * - 2
-     - nome
-     - Texto
-     - Nome da modalidade de contratação
-   * - 3
-     - descricao
-     - Texto
-     - Descrição da modalidade de contratação
-   * - 4
-     - dataInclusao
-     - Data/Hora
-     - Data e hora da inclusão do registro
-   * - 5
-     - dataAtualizacao
-     - Data/Hora
-     - Data e hora da última atualização do registro
-   * - 6
-     - statusAtivo
-     - Booleano
-     - Indicador de status da modalidade de contratação. True = Ativo / False = Inativo
-
-Códigos de Retorno
-~~~~~~~~~~~~~~~~~~
-
-.. list-table::
-   :width: 100%
-   :widths: 10 25 20
-   :header-rows: 1
-
-   * - Código HTTP
-     - Mensagem
-     - Tipo
-   * - 200
-     - OK
-     - Sucesso
-   * - 400
-     - BadRequest
-     - Erro
-   * - 404
-     - Modalidade de contratação não encontrada
-     - NotFound
-   * - 422
-     - Unprocessable Entity
-     - Erro
-   * - 500
-     - Internal Server Error
-     - Erro
-
-Consultar Modalidades de Contratação 
-====================================
-Serviço que permite consultar as modalidades de contratação cadastradas no PNCP. 
-
-Detalhes da Requisição
-~~~~~~~~~~~~~~~~~~~~~~
-
-.. list-table::
-   :width: 100%
-   :widths: 50 15
-   :header-rows: 1
-
-   * - Endpoint
-     - Método HTTP
-   * - /v1/modalidades
-     - GET
-
-Exemplo Requisição (cURL)
-~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. code-block:: bash
-
-   curl -X 'GET' 
-   '${BASE_URL}/v1/modalidades' -H 'accept: */*' -H 'accept: */*'
-   ou
-   curl -X 'GET' '${BASE_URL}/v1/modalidades?statusAtivo=true' -H 'accept: */* 
-
-Dados de Entrada
-~~~~~~~~~~~~~~~~
-
-.. note:: 
-
-Alimentar o query parâmetro `statusAtivo`.
-
-.. list-table::
-   :width: 100%
-   :widths: 5 25 15 25
-   :header-rows: 1
-
-   * - Campo
-     - Tipo
-     - Obrigatório
-     - Descrição
-   * - statusAtivo
-     - Boolean
-     - Não
-     - Indicador de status da modalidade de contratação. True = Ativa / False = Inativa
-
-Dados de retorno
-~~~~~~~~~~~~~~~~
-
-.. list-table:: 
-   :width: 100%
-   :header-rows: 1
-   :widths: 5 25 15 25
-
-   * - Id
-     - Campo
-     - Tipo
-     - Descrição
-   * - 1
-     - id
-     - Inteiro
-     - Código de identificação da modalidade de contratação
-   * - 2
-     - nome
-     - Texto
-     - Nome da modalidade de contratação
-   * - 3
-     - descricao
-     - Texto
-     - Descrição da modalidade de contratação
-   * - 4
-     - dataInclusao
-     - Data/Hora
-     - Data e hora da inclusão do registro
-   * - 5
-     - dataAtualizacao
-     - Data/Hora
-     - Data e hora da última atualização do registro
-   * - 6
-     - statusAtivo
-     - Booleano
-     - Indicador de status da modalidade de contratação. True = Ativa / False = Inativa
-
-Códigos de Retorno
-~~~~~~~~~~~~~~~~~~
-
-.. list-table::
-   :width: 100%
-   :widths: 10 25 20
-   :header-rows: 1
-
-   * - Código HTTP
-     - Mensagem
-     - Tipo
-   * - 200
-     - OK
-     - Sucesso
-   * - 400
-     - BadRequest
-     - Erro
-   * - 404
-     - Modalidade de contratação não encontrada
-     - NotFound
-   * - 422
-     - Unprocessable Entity
-     - Erro
-   * - 500
-     - Internal Server Error
-     - Erro
-
-Modo de Disputa
----------------
-Para consulta aos modos de disputa acessar a página no Portal PNCP pelo endereço `https://pncp.gov.br/app/entidades-dominio <https://pncp.gov.br/app/entidades-dominio>`_. Para ajudar na integração com o PNCP foram disponibilizados os serviços para consulta de modo/os de disputa a seguir. 
-
-Consultar Modo de Disputa por Código 
-====================================
-Serviço que permite consultar um modo de disputa pelo seu código. 
-
-Detalhes da Requisição
-~~~~~~~~~~~~~~~~~~~~~~
-
-.. list-table::
-   :width: 100%
-   :widths: 50 15
-   :header-rows: 1
-
-   * - Endpoint
-     - Método HTTP
-   * - /v1/modos-disputas/{id}
-     - GET
-
-Exemplo Requisição (cURL)
-~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. code-block:: bash
-
-   curl -X 'GET' 
-  '${BASE_URL}/v1/modos-disputas/{id} -H 'accept: */*'
-
-Dados de Entrada
-~~~~~~~~~~~~~~~~
-
-.. note:: 
-
-Alimentar o path parâmetro `{id}` na URL.
-
-.. list-table::
-   :width: 100%
-   :widths: 5 25 15 25
-   :header-rows: 1
-
-   * - Campo
-     - Tipo
-     - Obrigatório
-     - Descrição
-   * - id
-     - Inteiro
-     - Sim
-     - Código de identificação do modo de disputa
-
-Dados de retorno
-~~~~~~~~~~~~~~~~
-
-.. list-table:: 
-   :width: 100%
-   :header-rows: 1
-   :widths: 5 25 15 25
-
-   * - Id
-     - Campo
-     - Tipo
-     - Descrição
-   * - 1
-     - id
-     - Inteiro
-     - Código de identificação do modo de disputa
-   * - 2
-     - nome
-     - Texto
-     - Nome do modo de disputa
-   * - 3
-     - descricao
-     - Texto
-     - Descrição do modo de disputa
-   * - 4
-     - dataInclusao
-     - Data/Hora
-     - Data e hora da inclusão do registro
-   * - 5
-     - dataAtualizacao
-     - Data/Hora
-     - Data e hora da última atualização do registro
-   * - 6
-     - statusAtivo
-     - Booleano
-     - Indicador de status do modo de disputa. True = Ativo / False = Inativo
-
-Códigos de Retorno
-~~~~~~~~~~~~~~~~~~
-
-.. list-table::
-   :width: 100%
-   :widths: 10 25 20
-   :header-rows: 1
-
-   * - Código HTTP
-     - Mensagem
-     - Tipo
-   * - 200
-     - OK
-     - Sucesso
-   * - 400
-     - BadRequest
-     - Erro
-   * - 404
-     - Modalidade de contratação não encontrada
-     - NotFound
-   * - 422
-     - Unprocessable Entity
-     - Erro
-   * - 500
-     - Internal Server Error
-     - Erro
-
-Consultar Modos de Disputa
-==========================
-Serviço que permite consultar os modos de disputa cadastrados no PNCP.
-
-Detalhes da Requisição
-~~~~~~~~~~~~~~~~~~~~~~
-
-.. list-table::
-   :width: 100%
-   :widths: 50 15
-   :header-rows: 1
-
-   * - Endpoint
-     - Método HTTP
-   * - /v1/tipos-instrumentos-convocatorios
-     - GET
-
-Exemplo Requisição (cURL)
-~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. code-block:: bash
-
-   curl -X 'GET' 
-   '${BASE_URL}/v1/modos-disputas' -H 'accept: */*'
-   ou
-   curl -X 'GET' 
-   '${BASE_URL}/v1/modos-disputas?statusAtivo=true' -H 'accept: */*'
-
-
-Dados de Entrada
-~~~~~~~~~~~~~~~~
-
-.. note:: 
-
-Alimentar o query parâmetro `statusAtivo`.
-
-.. list-table::
-   :width: 100%
-   :widths: 5 25 15 25
-   :header-rows: 1
-
-   * - Campo
-     - Tipo
-     - Obrigatório
-     - Descrição
-   * - statusAtivo
-     - Boolean
-     - Não
-     - Indicador de status do modo de disputa. True = Ativo / False = Inativo
-
-Dados de retorno
-~~~~~~~~~~~~~~~~
-
-.. list-table:: 
-   :width: 100%
-   :header-rows: 1
-   :widths: 5 25 15 25
-
-   * - Id
-     - Campo
-     - Tipo
-     - Descrição
-   * - 1
-     - id
-     - Inteiro
-     - Código de identificação do modo de disputa
-   * - 2
-     - nome
-     - Texto
-     - Nome do modo de disputa
-   * - 3
-     - descricao
-     - Texto
-     - Descrição do modo de disputa
-   * - 4
-     - dataInclusao
-     - Data/Hora
-     - Data e hora da inclusão do registro
-   * - 5
-     - dataAtualizacao
-     - Data/Hora
-     - Data e hora da última atualização do registro
-   * - 6
-     - statusAtivo
-     - Booleano
-     - Indicador de status do modo de disputa. True = Ativo / False = Inativo
-
-Códigos de Retorno
-~~~~~~~~~~~~~~~~~~
-
-.. list-table::
-   :width: 100%
-   :widths: 10 25 20
-   :header-rows: 1
-
-   * - Código HTTP
-     - Mensagem
-     - Tipo
-   * - 200
-     - OK
-     - Sucesso
-   * - 400
-     - BadRequest
-     - Erro
-   * - 404
-     - Modo de disputa não encontrado
-     - NotFound
-   * - 422
-     - Unprocessable Entity
-     - Erro
-   * - 500
-     - Internal Server Error
-     - Erro
-
-Critério de Julgamento
-----------------------
-Para consulta aos critérios de julgamento acessar a página no Portal PNCP pelo endereço `https://pncp.gov.br/app/entidades-dominio <https://pncp.gov.br/app/entidades-dominio>`_. Para ajudar na integração com o PNCP foram disponibilizados os serviços para consulta de critério/os de julgamento a seguir.
-
-Consultar Critério de Julgamento por Código 
-==========================================~
-Serviço que permite consultar um critério de julgamento pelo seu código.
-
-Detalhes da Requisição
-~~~~~~~~~~~~~~~~~~~~~~
-
-.. list-table::
-   :width: 100%
-   :widths: 50 15
-   :header-rows: 1
-
-   * - Endpoint
-     - Método HTTP
-   * - /v1/criterios-julgamentos/{id}
-     - GET
-
-Exemplo Requisição (cURL)
-~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. code-block:: bash
-
-   curl -X 'GET' 
-   '${BASE_URL}/v1/criterios-julgamentos/{id}' -H 'accept: */*'
-
-Dados de Entrada
-~~~~~~~~~~~~~~~~
-
-.. note:: 
-
-Alimentar o path parâmetro {id} na URL.
-
-.. list-table::
-   :width: 100%
-   :widths: 5 25 15 25
-   :header-rows: 1
-
-   * - Campo
-     - Tipo
-     - Obrigatório
-     - Descrição
-   * - statusAtivo
-     - Boolean
-     - Não
-     - Indicador de status do modo de disputa. True = Ativo / False = Inativo
-
-Dados de retorno
-~~~~~~~~~~~~~~~~
-
-.. list-table:: 
-   :width: 100%
-   :header-rows: 1
-   :widths: 5 25 15 25
-
-   * - Id
-     - Campo
-     - Tipo
-     - Descrição
-   * - 1
-     - id
-     - Inteiro
-     - Código de identificação do modo de disputa
-   * - 2
-     - nome
-     - Texto
-     - Nome do modo de disputa
-   * - 3
-     - descricao
-     - Texto
-     - Descrição do modo de disputa
-   * - 4
-     - dataInclusao
-     - Data/Hora
-     - Data e hora da inclusão do registro
-   * - 5
-     - dataAtualizacao
-     - Data/Hora
-     - Data e hora da última atualização do registro
-   * - 6
-     - statusAtivo
-     - Booleano
-     - Indicador de status do modo de disputa. True = Ativo / False = Inativo
-
-Códigos de Retorno
-~~~~~~~~~~~~~~~~~~
-
-.. list-table::
-   :width: 100%
-   :widths: 10 25 20
-   :header-rows: 1
-
-   * - Código HTTP
-     - Mensagem
-     - Tipo
-   * - 200
-     - OK
-     - Sucesso
-   * - 400
-     - BadRequest
-     - Erro
-   * - 404
-     - Modo de disputa não encontrado
-     - NotFound
-   * - 422
-     - Unprocessable Entity
-     - Erro
-   * - 500
-     - Internal Server Error
-     - Erro
-
-Consultar Critérios de Julgamento 
-================================~
-Serviço que permite consultar os critérios de julgamento cadastrados no PNCP.
-
-Detalhes da Requisição
-~~~~~~~~~~~~~~~~~~~~~~
-
-.. list-table::
-   :width: 100%
-   :widths: 50 15
-   :header-rows: 1
-
-   * - Endpoint
-     - Método HTTP
-   * - /v1/criterios-julgamentos
-     - GET
-
-Exemplo Requisição (cURL)
-~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. code-block:: bash
-
-   curl -X 'GET' 
-   '${BASE_URL}/v1/criterios-julgamentos' -H 'accept: */*'
-   ou
-   curl -X 'GET' 
-   '${BASE_URL}/v1/criterios-julgamentos?statusAtivo=true' -H 'accept: */*'
-
-Dados de Entrada
-~~~~~~~~~~~~~~~~
-
-.. note:: 
-
-Alimentar o query parâmetro {statusAtivo}. 
-
-.. list-table::
-   :width: 100%
-   :widths: 5 25 15 25
-   :header-rows: 1
-
-   * - Campo
-     - Tipo
-     - Obrigatório
-     - Descrição
-   * - statusAtivo
-     - Boolean
-     - Não
-     - Indicador de status do modo de disputa. True = Ativo / False = Inativo
-
-Dados de retorno
-~~~~~~~~~~~~~~~~
-
-.. list-table:: 
-   :width: 100%
-   :header-rows: 1
-   :widths: 5 25 15 25
-
-   * - Id
-     - Campo
-     - Tipo
-     - Descrição
-   * - 1
-     - id
-     - Inteiro
-     - Código de identificação do modo de disputa
-   * - 2
-     - nome
-     - Texto
-     - Nome do modo de disputa
-   * - 3
-     - descricao
-     - Texto
-     - Descrição do modo de disputa
-   * - 4
-     - dataInclusao
-     - Data/Hora
-     - Data e hora da inclusão do registro
-   * - 5
-     - dataAtualizacao
-     - Data/Hora
-     - Data e hora da última atualização do registro
-   * - 6
-     - statusAtivo
-     - Booleano
-     - Indicador de status do modo de disputa. True = Ativo / False = Inativo
-
-Códigos de Retorno
-~~~~~~~~~~~~~~~~~~
-
-.. list-table::
-   :width: 100%
-   :widths: 10 25 20
-   :header-rows: 1
-
-   * - Código HTTP
-     - Mensagem
-     - Tipo
-   * - 200
-     - OK
-     - Sucesso
-   * - 400
-     - BadRequest
-     - Erro
-   * - 404
-     - Modo de disputa não encontrado
-     - NotFound
-   * - 422
-     - Unprocessable Entity
-     - Erro
-   * - 500
-     - Internal Server Error
-     - Erro
-
-Situação da Contratação 
------------------------
-- (código = 1) **Divulgada no PNCP:** Contratação divulgada no PNCP. Situação atribuída na inclusão da contratação.
-
-- (código = 2) **Revogada:** Contratação revogada conforme justificativa.
-
-- (código = 3) **Anulada:** Contratação anulada conforme justificativa.
-
-- (código = 4) **Suspensa:** Contratação suspensa conforme justificativa.
-
-Situação do Item da Contratação
--------------------------------
-- (código = 1) **Em Andamento:** Item com disputa/seleção do fornecedor/arrematante não finalizada. Situação atribuída na inclusão do item da contratação.
-
-- (código = 2) **Homologado:** Item com resultado (fornecedor/arrematante informado).
-
-- (código = 3) **Anulado/Revogado/Cancelado:** Item cancelado conforme justificativa.
-
-- (código = 4) **Deserto:** Item sem resultado (sem fornecedores/arrematantes interessados).
-
-- (código = 5) **Fracassado:** Item sem resultado (fornecedores/arrematantes desclassificados ou inabilitados).
 
 Tipo de Benefício
------------------
+================-
 - (código = 1) **Participação exclusiva para ME/EPP**
 
 - (código = 2) **Subcontratação para ME/EPP**
@@ -838,13 +31,13 @@ Tipo de Benefício
 - (código = 5) **Não se aplica**
 
 Situação do Resultado do Item da Contratação
---------------------------------------------
+============================================
 - (código = 1) **Informado:** Possui valor, fornecedor e marca oriundos do resultado da contratação. Situação atribuída na inclusão do resultado do item da contratação.
 
 - (código = 2) **Cancelado:** Resultado do item cancelado conforme justificativa.
 
 Tipo de Contrato
-----------------
+================
 - (código = 1) **Contrato (termo inicial):** Acordo formal recíproco de vontades firmado entre as partes.
 
 - (código = 2) **Comodato:** Contrato de concessão de uso gratuito de bem móvel ou imóvel.
@@ -885,7 +78,7 @@ Tipo de Contrato
 - (código = 12) **Carta Contrato:** Documento que formaliza e ratifica acordo entre duas ou mais partes nas hipóteses em que a lei dispensa a celebração de contrato.
 
 Tipo de Termo de Contrato
--------------------------
+========================-
 - (código = 1) **Termo de Rescisão:** Encerramento é antes da data final do contrato. 
 
 - (código = 2) **Termo Aditivo:** Atualiza o contrato como um todo, podendo prorrogar, reajustar, acrescer, suprimir, alterar cláusulas e reajustar. 
@@ -893,7 +86,7 @@ Tipo de Termo de Contrato
 - (código = 3) **Termo de Apostilamento:** Atualiza o valor do contrato. 
 
 Categoria do Processo
----------------------
+====================-
 - (código = 1) **Cessão** 
 
 - (código = 2) **Compras**
@@ -917,7 +110,7 @@ Categoria do Processo
 - (código = 11) Alienação de bens móveis/imóveis**
 
 Tipo de Documento 
------------------
+================-
 Tipos de documentos da contratação: 
 
 - (código = 1) **Aviso de Contratação Direta**
@@ -961,7 +154,7 @@ Tipos de documentos de contrato:
 ** Para outros documentos do processo, usar o código 16.
 
 Natureza Jurídica
------------------
+================-
 
 Código – Natureza Jurídica
 
@@ -1058,7 +251,7 @@ Código – Natureza Jurídica
 - **8885** – Natureza Jurídica não informada
 
 Porte da Empresa 
-----------------
+================
 - (código = 1) **ME:** Microempresa
 - (código = 2) **EPP:** Empresa de pequeno porte
 - (código = 3) **Demais:** Demais empresas
@@ -1066,7 +259,7 @@ Porte da Empresa
 - (código = 5) **Não informado:** Quando não possuir o porte da empresa.
 
 Amparo Legal 
-------------
+============
 Para consulta aos amparos legais acessar a página no Portal PNCP pelo endereço 
 `https://pncp.gov.br/app/entidades-dominio <https://pncp.gov.br/app/entidades-dominio>`_. Para ajudar na integração com o PNCP 
 foram disponibilizados os serviços para consulta de amparo/os legal/is a seguir. 
@@ -1352,7 +545,7 @@ Domínio do tipo de amparo legal:
   fundamentação legal da aplicação do critério de desempate no resultado do item.
 
 Envio de arquivos pelas APIs de Documento 
------------------------------------------
+========================================-
 
 Ao anexar um documento digital, complementando os metadados enviados, as seguintes extensões de arquivo serão aceitas para upload:
 
@@ -1363,7 +556,7 @@ Ao anexar um documento digital, complementando os metadados enviados, as seguint
    O tamanho máximo aceito, por arquivo enviado, é de 30 MB (Megabytes). 
 
 Categoria de Item (Plano de Contratações e Contratações)
---------------------------------------------------------
+========================================================
 
 Para consulta às categorias de item acessar a página no Portal PNCP pelo endereço `https://pncp.gov.br/app/entidades-dominio <https://pncp.gov.br/app/entidades-dominio>`_. Para ajudar na integração com o PNCP foram disponibilizados os serviços para consulta de categorias de item a seguir. 
 
@@ -1595,7 +788,7 @@ Códigos de Retorno
      - Erro
 
 Regra de conformidade entre Instrumento Convocatório, Modalidade de Contratação e Amparo Legal 
-----------------------------------------------------------------------------------------------
+==============================================================================================
 
 Para consulta às combinações de conformidade entre instrumento convocatório, modalidade de contratação e amparo legal acessar a página no Portal PNCP pelo endereço `https://pncp.gov.br/app/entidades-dominio <https://pncp.gov.br/app/entidades-dominio>`_. Para ajudar na integração com o PNCP foram disponibilizados os serviços para consulta das combinações de conformidade entre instrumento convocatório, modalidade de contratação e amparo legal a seguir.
 
@@ -1923,7 +1116,7 @@ Códigos de Retorno
      - Erro
 
 Regra de conformidade entre Instrumento Convocatório e Modo de Disputa 
-----------------------------------------------------------------------
+======================================================================
 
 Para consulta às combinações de conformidade entre instrumento convocatório e modo de disputa acessar a página no Portal PNCP pelo endereço 
 `https://pncp.gov.br/app/entidades-dominio <https://pncp.gov.br/app/entidades-dominio>`_. Para ajudar na integração com o PNCP foram disponibilizados os serviços para consulta de combinações de conformidade entre instrumento convocatório e modo de disputa a seguir. 
@@ -2205,12 +1398,12 @@ Códigos de Retorno
      - Erro
 
 Regra para permissão de inclusão ou retificação de contrato oriundos de contratações no Sistema de Registro de Preços (SRP)
----------------------------------------------------------------------------------------------------------------------------
+==========================================================================================================================-
 
 O sistema não permitirá a inclusão ou retificação de Contrato oriundos de Contratação no Sistema de Registro de Preços (SRP) que não possua pelo menos uma Ata de Registro de Preço publicada no Portal PNCP para esta Contratação. 
 
 Envio de imagens pelas APIs de Imagens de Item
-----------------------------------------------
+==============================================
 
 Ao enviar uma imagem digital, complementando os metadados enviados, as seguintes extensões de arquivo serão aceitas para upload: 
 
@@ -2221,7 +1414,7 @@ Ao enviar uma imagem digital, complementando os metadados enviados, as seguintes
    Cada item de contratação poderá ter até 5 imagens sendo o tamanho máximo aceito, por arquivo de imagem enviado, é de 3 MB (Megabytes). Serviço disponível atualmente para modalidade leilão, saiba mais no item 6.3.20. 
 
 Regra de conformidade entre Modalidade de Contratação e Critério de Julgamento 
-------------------------------------------------------------------------------
+==============================================================================
 
 Para consulta às combinações de conformidade entre modalidades de contratação e critérios de julgamento acessar a página no Portal PNCP pelo endereço  `https://pncp.gov.br/app/entidades-dominio <https://pncp.gov.br/app/entidades-dominio>`_. Para ajudar na integração com o PNCP foram disponibilizados os serviços para consulta de combinações de conformidade entre modalidades de contratação e critérios de julgamento a seguir. 
 
@@ -2506,7 +1699,7 @@ Códigos de Retorno
      - Erro
 
 Catálogos (Itens de Plano de Contratações e Contratações) 
----------------------------------------------------------
+========================================================-
 
 Para consulta aos catálogos acessar a página no Portal PNCP pelo endereço ``https://pncp.gov.br/app/entidades-dominio <https://pncp.gov.br/app/entidades-dominio>`_. Para ajudar na integração com o PNCP foram disponibilizados os serviços para consulta de catálogos a seguir. 
 
@@ -2741,7 +1934,7 @@ Códigos de Retorno
      - Erro
 
 Tipo de Instrumento de Cobrança 
--------------------------------
+==============================-
 
 Para consulta aos tipos de instrumentos de cobrança cadastrados acessar a página no Portal PNCP pelo endereço `https://pncp.gov.br/app/entidades-dominio <https://pncp.gov.br/app/entidades-dominio>`_. Para ajudar na integração com o PNCP foram disponibilizados os serviços para consulta de tipos de instrumentos de cobrança a seguir. 
 
@@ -2971,7 +2164,7 @@ Códigos de Retorno
      - Erro
 
 Fonte Orçamentária
-------------------
+==================
 
 Para consulta às fontes orçamentárias cadastradas acessar a página no Portal PNCP pelo endereço `https://pncp.gov.br/app/entidades-dominio <https://pncp.gov.br/app/entidades-dominio>`_. Para ajudar na integração com o PNCP foram disponibilizados os serviços para consulta de fontes orçamentárias a seguir.
 
@@ -3201,7 +2394,7 @@ Códigos de Retorno
      - Erro
 
 Regra de conformidade entre Modalidade de Contratação e Fonte Orçamentária 
---------------------------------------------------------------------------
+==========================================================================
 
 Para consulta às combinações de conformidade entre modalidades de contratação e fontes orçamentárias acessar a página no Portal PNCP pelo endereço `https://pncp.gov.br/app/entidades-dominio <https://pncp.gov.br/app/entidades-dominio>`_. Para ajudar na integração com o PNCP foram disponibilizados os serviços para consulta de combinações de conformidade entre modalidades de contratação e fontes orçamentárias a seguir.
 
