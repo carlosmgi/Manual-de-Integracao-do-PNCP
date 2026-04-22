@@ -1,135 +1,13 @@
 Tabelas de Domínio
 ==================
 
-Instrumento Convocatório
-------------------------
-Para consulta aos instrumentos convocatórios cadastrados acessar a página no Portal PNCP pelo endereço `https://pncp.gov.br/app/entidades-dominio <https://pncp.gov.br/app/entidades-dominio>`_. Para ajudar na integração com o PNCP foram disponibilizados os serviços para consulta de instrumento/os convocatório/os a seguir.
-
-Consultar Instrumento Convocatório por Código
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Serviço que permite consultar um instrumento convocatório pelo seu código. 
-
-Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
-
-.. list-table::
-   :width: 100%
-   :widths: 50 15
-   :header-rows: 1
-
-   * - Endpoint
-     - Método HTTP
-   * - /v1/tipos-instrumentos-convocatorios/{id}
-     - GET
-
-Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. code-block:: bash
-
-   curl -X GET 
-   "${BASE_URL}/v1/tipos-instrumentos-convocatorios/{id}" -H 'accept: */*' 
-   
-Dados de Entrada
-^^^^^^^^^^^^^^^^
-
-.. note:: 
-
-Alimentar o path parâmetro {id} na URL.  
-
-.. list-table::
-   :width: 100%
-   :widths: 5 25 15 25
-   :header-rows: 1
-
-   * - Campo
-     - Tipo
-     - Obrigatório
-     - Descrição
-   * - id
-     - Inteiro
-     - Sim
-     - Código de identificação do instrumento convocatório. 
-
-
-Dados de retorno
-^^^^^^^^^^^^^^^^
-
-.. list-table:: 
-   :width: 100%
-   :header-rows: 1
-   :widths: 5 25 15 25
-
-   * - Id
-     - Campo
-     - Tipo
-     - Descrição
-   * - 1
-     - id
-     - Inteiro
-     - Código de identificação do instrumento convocatório
-   * - 2
-     - nome
-     - Texto
-     - Nome do instrumento convocatório
-   * - 3
-     - descricao
-     - Texto
-     - Descrição do instrumento convocatório
-   * - 4
-     - obrigatoriedadeDataAberturaPropostaNome
-     - Texto
-     - Indica se é obrigatório ou não o envio da data de início do recebimento de proposta/lances para o instrumento convocatório
-   * - 5
-     - obrigatoriedadeDataEncerramentoPropostaNome
-     - Texto
-     - Indica se é obrigatório ou não o envio da data de encerramento do recebimento de proposta/lances para o instrumento convocatório
-   * - 6
-     - dataInclusao
-     - Data/Hora
-     - Data e hora da inclusão do registro
-   * - 7
-     - dataAtualizacao
-     - Data/Hora
-     - Data e hora da última atualização do registro
-   * - 8
-     - statusAtivo
-     - Booleano
-     - Indicador de status do instrumento convocatório. True = Ativo / False = Inativo
-
-Códigos de Retorno
-^^^^^^^^^^^^^^^^^^
-
-.. list-table::
-   :width: 100%
-   :widths: 10 25 20
-   :header-rows: 1
-
-   * - Código HTTP
-     - Mensagem
-     - Tipo
-   * - 200
-     - OK
-     - Sucesso
-   * - 400
-     - BadRequest
-     - Erro
-   * - 404
-     - Instrumento convocatório não encontrado
-     - NotFound
-   * - 422
-     - Unprocessable Entity
-     - Erro
-   * - 500
-     - Internal Server Error
-     - Erro
 
 Consultar Instrumentos Convocatórios 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+====================================
 Serviço que permite consultar os instrumentos convocatórios cadastrados no PNCP. 
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -142,7 +20,7 @@ Detalhes da Requisição
      - GET
 
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -152,7 +30,7 @@ Exemplo Requisição (cURL)
    curl -X 'GET' '${BASE_URL}/v1/tipos-instrumentos-convocatorios?statusAtivo=true' -H 'accept: */*'
    
 Dados de Entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. note:: 
 
@@ -173,7 +51,7 @@ Alimentar o query parâmetro `statusAtivo`.
      - Indicador de status do instrumento convocatório. True = Ativo / False = Inativo
 
 Dados de retorno
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. list-table:: 
    :width: 100%
@@ -218,7 +96,7 @@ Dados de retorno
      - Indicador de status do instrumento convocatório. True = Ativo / False = Inativo
 
 Códigos de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -249,11 +127,11 @@ Modalidade de Contratação
 Para consulta às modalidades de contratação acessar a página no Portal PNCP pelo endereço `https://pncp.gov.br/app/entidades-dominio <https://pncp.gov.br/app/entidades-dominio>`_. Para ajudar na integração com o PNCP foram disponibilizados os serviços para consulta de modalidade/es de contratação a seguir. 
 
 Consultar Modalidade de Contratação por Código
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==============================================
 Serviço que permite consultar uma modalidade de contratação pelo seu código. 
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -266,7 +144,7 @@ Detalhes da Requisição
      - GET
 
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -274,7 +152,7 @@ Exemplo Requisição (cURL)
    '${BASE_URL}/v1/modalidades/{id}' -H 'accept: */*
 
 Dados de Entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. note:: 
 
@@ -295,7 +173,7 @@ Alimentar o path parâmetro `{id}` na URL.
      - Código de identificação da modalidade de contratação
 
 Dados de retorno
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. list-table:: 
    :width: 100%
@@ -332,7 +210,7 @@ Dados de retorno
      - Indicador de status da modalidade de contratação. True = Ativo / False = Inativo
 
 Códigos de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -359,11 +237,11 @@ Códigos de Retorno
      - Erro
 
 Consultar Modalidades de Contratação 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+====================================
 Serviço que permite consultar as modalidades de contratação cadastradas no PNCP. 
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -376,7 +254,7 @@ Detalhes da Requisição
      - GET
 
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -386,7 +264,7 @@ Exemplo Requisição (cURL)
    curl -X 'GET' '${BASE_URL}/v1/modalidades?statusAtivo=true' -H 'accept: */* 
 
 Dados de Entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. note:: 
 
@@ -407,7 +285,7 @@ Alimentar o query parâmetro `statusAtivo`.
      - Indicador de status da modalidade de contratação. True = Ativa / False = Inativa
 
 Dados de retorno
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. list-table:: 
    :width: 100%
@@ -444,7 +322,7 @@ Dados de retorno
      - Indicador de status da modalidade de contratação. True = Ativa / False = Inativa
 
 Códigos de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -475,11 +353,11 @@ Modo de Disputa
 Para consulta aos modos de disputa acessar a página no Portal PNCP pelo endereço `https://pncp.gov.br/app/entidades-dominio <https://pncp.gov.br/app/entidades-dominio>`_. Para ajudar na integração com o PNCP foram disponibilizados os serviços para consulta de modo/os de disputa a seguir. 
 
 Consultar Modo de Disputa por Código 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+====================================
 Serviço que permite consultar um modo de disputa pelo seu código. 
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -492,7 +370,7 @@ Detalhes da Requisição
      - GET
 
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -500,7 +378,7 @@ Exemplo Requisição (cURL)
   '${BASE_URL}/v1/modos-disputas/{id} -H 'accept: */*'
 
 Dados de Entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. note:: 
 
@@ -521,7 +399,7 @@ Alimentar o path parâmetro `{id}` na URL.
      - Código de identificação do modo de disputa
 
 Dados de retorno
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. list-table:: 
    :width: 100%
@@ -558,7 +436,7 @@ Dados de retorno
      - Indicador de status do modo de disputa. True = Ativo / False = Inativo
 
 Códigos de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -585,11 +463,11 @@ Códigos de Retorno
      - Erro
 
 Consultar Modos de Disputa
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+==========================
 Serviço que permite consultar os modos de disputa cadastrados no PNCP.
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -602,7 +480,7 @@ Detalhes da Requisição
      - GET
 
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -614,7 +492,7 @@ Exemplo Requisição (cURL)
 
 
 Dados de Entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. note:: 
 
@@ -635,7 +513,7 @@ Alimentar o query parâmetro `statusAtivo`.
      - Indicador de status do modo de disputa. True = Ativo / False = Inativo
 
 Dados de retorno
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. list-table:: 
    :width: 100%
@@ -672,7 +550,7 @@ Dados de retorno
      - Indicador de status do modo de disputa. True = Ativo / False = Inativo
 
 Códigos de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -703,11 +581,11 @@ Critério de Julgamento
 Para consulta aos critérios de julgamento acessar a página no Portal PNCP pelo endereço `https://pncp.gov.br/app/entidades-dominio <https://pncp.gov.br/app/entidades-dominio>`_. Para ajudar na integração com o PNCP foram disponibilizados os serviços para consulta de critério/os de julgamento a seguir.
 
 Consultar Critério de Julgamento por Código 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==========================================~
 Serviço que permite consultar um critério de julgamento pelo seu código.
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -720,7 +598,7 @@ Detalhes da Requisição
      - GET
 
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -728,7 +606,7 @@ Exemplo Requisição (cURL)
    '${BASE_URL}/v1/criterios-julgamentos/{id}' -H 'accept: */*'
 
 Dados de Entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. note:: 
 
@@ -749,7 +627,7 @@ Alimentar o path parâmetro {id} na URL.
      - Indicador de status do modo de disputa. True = Ativo / False = Inativo
 
 Dados de retorno
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. list-table:: 
    :width: 100%
@@ -786,7 +664,7 @@ Dados de retorno
      - Indicador de status do modo de disputa. True = Ativo / False = Inativo
 
 Códigos de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -813,11 +691,11 @@ Códigos de Retorno
      - Erro
 
 Consultar Critérios de Julgamento 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+================================~
 Serviço que permite consultar os critérios de julgamento cadastrados no PNCP.
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -830,7 +708,7 @@ Detalhes da Requisição
      - GET
 
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -841,7 +719,7 @@ Exemplo Requisição (cURL)
    '${BASE_URL}/v1/criterios-julgamentos?statusAtivo=true' -H 'accept: */*'
 
 Dados de Entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. note:: 
 
@@ -862,7 +740,7 @@ Alimentar o query parâmetro {statusAtivo}.
      - Indicador de status do modo de disputa. True = Ativo / False = Inativo
 
 Dados de retorno
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. list-table:: 
    :width: 100%
@@ -899,7 +777,7 @@ Dados de retorno
      - Indicador de status do modo de disputa. True = Ativo / False = Inativo
 
 Códigos de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -1194,11 +1072,11 @@ Para consulta aos amparos legais acessar a página no Portal PNCP pelo endereço
 foram disponibilizados os serviços para consulta de amparo/os legal/is a seguir. 
 
 Consultar Amparo Legal por Código 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+================================~
 Serviço que permite consultar um amparo legal pelo seu código.
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -1211,7 +1089,7 @@ Detalhes da Requisição
      - GET
 
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -1219,7 +1097,7 @@ Exemplo Requisição (cURL)
    '${BASE_URL}/v1/amparos-legais/{id}' -H 'accept: */*'
 
 Dados de Entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. note:: 
 
@@ -1240,7 +1118,7 @@ Alimentar o path parâmetro {id} na URL.
      - Código de identificação do amparo legal 
 
 Dados de retorno
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. list-table:: 
    :width: 100%
@@ -1297,7 +1175,7 @@ Dados de retorno
      - Indicador de status do amparo legal. True = Ativo / False = Inativo.
 
 Códigos de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -1324,12 +1202,12 @@ Códigos de Retorno
      - Erro
 
 Consultar Amparos Legais 
-~~~~~~~~~~~~~~~~~~~~~~~~
+========================
 
 Serviço que permite consultar os amparos legais cadastrados no PNCP. 
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -1342,7 +1220,7 @@ Detalhes da Requisição
      - GET
 
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -1356,7 +1234,7 @@ Exemplo Requisição (cURL)
    '${BASE_URL}/v1/amparos-legais?tipoAmparoLegalId=1&statusAtivo=true' -H 'accept: */*'
 
 Dados de Entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. note:: 
 
@@ -1376,7 +1254,7 @@ Alimentar o path parâmetro {id} na URL.
      - Indicador de status do critério de julgamento. True-Ativa / False-Inativa
 
 Dados de retorno
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. list-table:: 
    :width: 100%
@@ -1433,7 +1311,7 @@ Dados de retorno
      - Indicador de status do amparo legal. True = Ativo / False = Inativo.
 
 Códigos de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -1460,7 +1338,7 @@ Códigos de Retorno
      - Erro
 
 Tipos de Amparos Legais
-~~~~~~~~~~~~~~~~~~~~~~~
+======================~
 
 Domínio do tipo de amparo legal:
 
@@ -1490,12 +1368,12 @@ Categoria de Item (Plano de Contratações e Contratações)
 Para consulta às categorias de item acessar a página no Portal PNCP pelo endereço `https://pncp.gov.br/app/entidades-dominio <https://pncp.gov.br/app/entidades-dominio>`_. Para ajudar na integração com o PNCP foram disponibilizados os serviços para consulta de categorias de item a seguir. 
 
 Consultar Categoria de Item por Código
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+======================================
 
 Serviço que permite consultar uma categoria de item pelo seu código. 
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -1508,7 +1386,7 @@ Detalhes da Requisição
      - GET
 
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -1517,7 +1395,7 @@ Exemplo Requisição (cURL)
  
 
 Dados de Entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. note:: 
 
@@ -1538,7 +1416,7 @@ Alimentar o path parâmetro {id} na URL.
      - Código de identificação da categoria de item.
 
 Dados de retorno
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. list-table:: 
    :width: 100%
@@ -1575,7 +1453,7 @@ Dados de retorno
      - Indicador de status da categoria de item. True = Ativo / False = Inativo.
 
 Códigos de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -1602,12 +1480,12 @@ Códigos de Retorno
      - Erro
 
 Consultar Categorias de Item
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+============================
 
 Serviço que permite consultar as categorias de item cadastradas no PNCP.
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -1620,7 +1498,7 @@ Detalhes da Requisição
      - GET
 
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -1631,7 +1509,7 @@ Exemplo Requisição (cURL)
    '${BASE_URL}/v1/categoriaItemPcas?statusAtivo=true' -H 'accept: */*'   
 
 Dados de Entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. note:: 
 
@@ -1653,7 +1531,7 @@ Alimentar o query parâmetro {statusAtivo}.
      - Indicador de status da categoria de item. True = Ativa / False = Inativa.
 
 Dados de retorno
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. list-table:: 
    :width: 100%
@@ -1690,7 +1568,7 @@ Dados de retorno
      - Indicador de status da categoria de item. True = Ativa / False = Inativa.
 
 Códigos de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -1722,13 +1600,13 @@ Regra de conformidade entre Instrumento Convocatório, Modalidade de Contrataç�
 Para consulta às combinações de conformidade entre instrumento convocatório, modalidade de contratação e amparo legal acessar a página no Portal PNCP pelo endereço `https://pncp.gov.br/app/entidades-dominio <https://pncp.gov.br/app/entidades-dominio>`_. Para ajudar na integração com o PNCP foram disponibilizados os serviços para consulta das combinações de conformidade entre instrumento convocatório, modalidade de contratação e amparo legal a seguir.
 
 Consultar conformidade entre Instrumento Convocatório, Modalidade de Contratação e Amparo Legal por Código
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==========================================================================================================
 
 Serviço que permite consultar a combinação de conformidade pelo código do instrumento convocatório, código da modalidade de contratação e código do amparo 
 legal. 
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -1741,7 +1619,7 @@ Detalhes da Requisição
      - GET
 
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -1749,7 +1627,7 @@ Exemplo Requisição (cURL)
    '${BASE_URL}/v1/instrumento-convocatorio-modalidade-amparo-legal/1/6/1' -H 'accept: */*'
 
 Dados de Entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. note:: 
 
@@ -1778,7 +1656,7 @@ Alimentar o path parâmetro {amparoLegalId} e {modalidadeId} e {tipoInstrumentoC
      - Código de identificação do instrumento convocatório.
 
 Dados de retorno
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. list-table:: 
    :width: 100%
@@ -1855,7 +1733,7 @@ Dados de retorno
      - Data e hora da inclusão do registro
 
 Códigos de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -1882,12 +1760,12 @@ Códigos de Retorno
      - Erro
 
 Consultar conformidade entre Instrumento Convocatório, Modalidade de Contratação e Amparo Legal
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==============================================================================================~
 
 Serviço que permite consultar as combinações de conformidade entre instrumento convocatório, modalidade de contratação e amparo legal cadastradas no PNCP. 
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -1900,7 +1778,7 @@ Detalhes da Requisição
      - GET
 
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -1912,7 +1790,7 @@ Exemplo Requisição (cURL)
 
 
 Dados de Entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. note:: 
 
@@ -1941,7 +1819,7 @@ Alimentar o query parâmetro {amparoLegalId} ou {modalidadeId} ou {tipoInstrumen
      - Código de identificação do instrumento convocatório.
 
 Dados de retorno (lista de combinações) 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table:: 
    :width: 100%
@@ -2018,7 +1896,7 @@ Dados de retorno (lista de combinações)
      - Data e hora da inclusão do registro.
 
 Códigos de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -2051,12 +1929,12 @@ Para consulta às combinações de conformidade entre instrumento convocatório 
 `https://pncp.gov.br/app/entidades-dominio <https://pncp.gov.br/app/entidades-dominio>`_. Para ajudar na integração com o PNCP foram disponibilizados os serviços para consulta de combinações de conformidade entre instrumento convocatório e modo de disputa a seguir. 
 
 Consultar conformidade entre Instrumentos Convocatórios e Modos de Disputa por Código 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+====================================================================================~
 
 Serviço que permite consultar a combinação de conformidade pelo código do instrumento convocatório e pelo código do modo de disputa.
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -2069,7 +1947,7 @@ Detalhes da Requisição
      - GET
 
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -2077,7 +1955,7 @@ Exemplo Requisição (cURL)
    '${BASE_URL}/v1/tipo-instrumento-convocatorio-modo-disputa/1/1' -H 'accept: */*'
 
 Dados de Entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. note:: 
 
@@ -2102,7 +1980,7 @@ Dados de Entrada
      - Código de identificação do modo de disputa
 
 Dados de Retorno
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -2159,7 +2037,7 @@ Dados de Retorno
      - Data e hora da inclusão do registro
 
 Códigos de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -2186,12 +2064,12 @@ Códigos de Retorno
      - Erro
 
 Consultar conformidade entre Instrumentos Convocatórios e Modos de Disputa
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==========================================================================
 
 Serviço que permite consultar as combinações de conformidade de instrumento convocatório e/ou modo de disputa ou todas as combinações cadastradas no PNCP. 
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -2204,7 +2082,7 @@ Detalhes da Requisição
      - GET
 
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -2218,7 +2096,7 @@ Exemplo Requisição (cURL)
    '${BASE_URL}/v1/tipo-instrumento-convocatorio-modo-disputa?tipoInstrumentoConvocatorioId=1&modoDisputaId=1' -H 'accept: */*' 
 
 Dados de Entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. note::
 
@@ -2243,7 +2121,7 @@ Dados de Entrada
      - Código de identificação do modo de disputa
 
 Dados de Retorno (lista de combinações)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -2300,7 +2178,7 @@ Dados de Retorno (lista de combinações)
      - Data e hora da inclusão do registro
 
 Códigos de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -2348,12 +2226,12 @@ Regra de conformidade entre Modalidade de Contratação e Critério de Julgament
 Para consulta às combinações de conformidade entre modalidades de contratação e critérios de julgamento acessar a página no Portal PNCP pelo endereço  `https://pncp.gov.br/app/entidades-dominio <https://pncp.gov.br/app/entidades-dominio>`_. Para ajudar na integração com o PNCP foram disponibilizados os serviços para consulta de combinações de conformidade entre modalidades de contratação e critérios de julgamento a seguir. 
 
 Consultar conformidade entre Modalidade de Contratação e Critério de Julgamento por Código
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==========================================================================================
 
 Serviço que permite consultar a combinação de conformidade pelo código da modalidade de contratação e pelo código do critério de julgamento. 
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -2366,7 +2244,7 @@ Detalhes da Requisição
      - GET
 
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -2374,7 +2252,7 @@ Exemplo Requisição (cURL)
    '${BASE_URL}/v1/modalidade-criterio-julgamento/6/1' -H 'accept: */*'
 
 Dados de Entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. note::
 
@@ -2399,7 +2277,7 @@ Dados de Entrada
      - Código de identificação do critério de julgamento
 
 Dados de Retorno
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -2456,7 +2334,7 @@ Dados de Retorno
      - Data e hora da inclusão do registro
 
 Códigos de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -2483,12 +2361,12 @@ Códigos de Retorno
      - Erro
 
 Consultar conformidade entre Modalidade de Contratação e Critério de Julgamento 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==============================================================================~
 
 Serviço que permite consultar as combinações de conformidade entre modalidade de contratação e/ou critério de julgamento ou todas as combinações cadastradas no PNCP.
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -2501,7 +2379,7 @@ Detalhes da Requisição
      - GET
 
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -2517,7 +2395,7 @@ Exemplo Requisição (cURL)
    '${BASE_URL}/v1/modalidade-criterio-julgamento?modalidadeId=6&criterioJulgamentoId=1' -H 'accept: */*' 
 
 Dados de entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. Note:: 
    Informar um dos parâmetros de consulta: ``modalidadeId`` ou ``criterioJulgamentoId``.
@@ -2541,7 +2419,7 @@ Dados de entrada
      - Código de identificação do critério de julgamento
 
 Dados de retorno (lista de combinações)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -2601,7 +2479,7 @@ Dados de retorno (lista de combinações)
      - Data e hora da inclusão do registro
 
 Códigos de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -2633,12 +2511,12 @@ Catálogos (Itens de Plano de Contratações e Contratações)
 Para consulta aos catálogos acessar a página no Portal PNCP pelo endereço ``https://pncp.gov.br/app/entidades-dominio <https://pncp.gov.br/app/entidades-dominio>`_. Para ajudar na integração com o PNCP foram disponibilizados os serviços para consulta de catálogos a seguir. 
 
 Consultar Catálogo por Código 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+============================~
 
 Serviço que permite consultar um catálogo pelo seu código. 
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -2651,7 +2529,7 @@ Detalhes da Requisição
      - GET
 
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -2659,7 +2537,7 @@ Exemplo Requisição (cURL)
    '${BASE_URL}/v1/catalogos/{id}' -H 'accept: */*'
 
 Dados de entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. note::
    Informar o parâmetro de path ``id`` na URL.
@@ -2679,7 +2557,7 @@ Dados de entrada
      - Código de identificação do catálogo
 
 Dados de retorno
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -2721,7 +2599,7 @@ Dados de retorno
      - URL para o catálogo
 
 Códigos de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -2748,12 +2626,12 @@ Códigos de Retorno
      - Erro
 
 Consultar Catálogos 
-~~~~~~~~~~~~~~~~~~~
+==================~
 
 Serviço que permite consultar os catálogos cadastrados no PNCP. 
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -2766,7 +2644,7 @@ Detalhes da Requisição
      - GET
 
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -2777,7 +2655,7 @@ Exemplo Requisição (cURL)
    '${BASE_URL}/v1/catalogos?statusAtivo=true' -H 'accept: */*'
 
 Dados de entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. note::
 
@@ -2798,7 +2676,7 @@ Dados de entrada
      - Indicador de status do catálogo. True-Ativo / False-Inativo
 
 Dados de retorno
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -2836,7 +2714,7 @@ Dados de retorno
      - Indicador de status do catálogo. True-Ativo / False-Inativo
 
 Códigos de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -2868,12 +2746,12 @@ Tipo de Instrumento de Cobrança
 Para consulta aos tipos de instrumentos de cobrança cadastrados acessar a página no Portal PNCP pelo endereço `https://pncp.gov.br/app/entidades-dominio <https://pncp.gov.br/app/entidades-dominio>`_. Para ajudar na integração com o PNCP foram disponibilizados os serviços para consulta de tipos de instrumentos de cobrança a seguir. 
 
 Consultar Tipo de Instrumento de Cobrança por Código 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+====================================================
 
 Serviço que permite consultar um tipo de instrumento de cobrança pelo seu código.
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -2886,7 +2764,7 @@ Detalhes da Requisição
      - GET
 
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -2894,7 +2772,7 @@ Exemplo Requisição (cURL)
    '${BASE_URL}/v1/tipos-instrumentos-cobranca/{id}' -H 'accept: */*'
 
 Dados de entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. note::
    Informar o parâmetro de path ``id`` na URL.
@@ -2914,7 +2792,7 @@ Dados de entrada
      - Código de identificação do instrumento convocatório
 
 Dados de retorno
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -2952,7 +2830,7 @@ Dados de retorno
      - Indicador de status do tipo de instrumento de cobrança. True-Ativo / False-Inativo
 
 Códigos de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -2979,12 +2857,12 @@ Códigos de Retorno
      - Erro
 
 Consultar Tipo de Instrumento de Cobrança 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+========================================~
 
 Serviço que permite consultar os tipos de instrumentos de cobrança cadastrados no PNCP. 
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -2997,7 +2875,7 @@ Detalhes da Requisição
      - GET
 
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -3008,7 +2886,7 @@ Exemplo Requisição (cURL)
    '${BASE_URL}/v1/tipos-instrumentos-cobranca?statusAtivo=true' -H 'accept: */*'
 
 Dados de entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. note::
    Informar o parâmetro de query ``statusAtivo``.
@@ -3028,7 +2906,7 @@ Dados de entrada
      - Indicador de status do instrumento convocatório. True-Ativo / False-Inativo
 
 Dados de retorno
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -3066,7 +2944,7 @@ Dados de retorno
      - Indicador de status do tipo de instrumento de cobrança. True-Ativo / False-Inativo
 
 Códigos de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -3098,12 +2976,12 @@ Fonte Orçamentária
 Para consulta às fontes orçamentárias cadastradas acessar a página no Portal PNCP pelo endereço `https://pncp.gov.br/app/entidades-dominio <https://pncp.gov.br/app/entidades-dominio>`_. Para ajudar na integração com o PNCP foram disponibilizados os serviços para consulta de fontes orçamentárias a seguir.
 
 Consultar Fonte Orçamentária por Código 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+======================================~
 
 Serviço que permite consultar uma fonte orçamentária pelo seu código. 
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -3116,7 +2994,7 @@ Detalhes da Requisição
      - GET
 
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -3124,7 +3002,7 @@ Exemplo Requisição (cURL)
    '${BASE_URL}/v1/fontes-orcamentarias/1' -H 'accept: */*'
 
 Dados de entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. note::
    Informar o parâmetro de path ``id`` na URL.
@@ -3144,7 +3022,7 @@ Dados de entrada
      - Código de identificação da fonte orçamentária
 
 Dados de retorno
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -3182,7 +3060,7 @@ Dados de retorno
      - Indicador de status da fonte orçamentária. True-Ativo / False-Inativo
 
 Códigos de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -3209,12 +3087,12 @@ Códigos de Retorno
      - Erro
 
 Consultar Fontes Orçamentárias 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==============================
 
 Serviço que permite consultar as fontes orçamentárias cadastradas no PNCP.
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -3227,7 +3105,7 @@ Detalhes da Requisição
      - GET
 
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -3238,7 +3116,7 @@ Exemplo Requisição (cURL)
    '${BASE_URL}/v1/fontes-orcamentarias?statusAtivo=true' -H 'accept: */*' 
 
 Dados de entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. note::
    Informar o parâmetro de query ``statusAtivo``.
@@ -3258,7 +3136,7 @@ Dados de entrada
      - Indicador de status da fonte orçamentária. True-Ativo / False-Inativo
 
 Dados de retorno
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -3296,7 +3174,7 @@ Dados de retorno
      - Indicador de status da fonte orçamentária. True-Ativo / False-Inativo
 
 Códigos de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -3328,12 +3206,12 @@ Regra de conformidade entre Modalidade de Contratação e Fonte Orçamentária
 Para consulta às combinações de conformidade entre modalidades de contratação e fontes orçamentárias acessar a página no Portal PNCP pelo endereço `https://pncp.gov.br/app/entidades-dominio <https://pncp.gov.br/app/entidades-dominio>`_. Para ajudar na integração com o PNCP foram disponibilizados os serviços para consulta de combinações de conformidade entre modalidades de contratação e fontes orçamentárias a seguir.
 
 Consultar conformidade entre Modalidade de Contratação e Fonte Orçamentária por Código 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+======================================================================================
 
 Serviço que permite consultar a combinação de conformidade pelo código da modalidade de contratação e pelo código da fonte orçamentária. 
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -3346,7 +3224,7 @@ Detalhes da Requisição
      - GET
 
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -3354,7 +3232,7 @@ Exemplo Requisição (cURL)
    '${BASE_URL}/v1/modalidade-fonte-orcamentaria/6/1' -H 'accept: */*'
 
 Dados de entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. note::
    Informar os parâmetros de path ``modalidadeId`` e ``fonteOrcamentariaId`` na URL.
@@ -3378,7 +3256,7 @@ Dados de entrada
      - Código de identificação da fonte orçamentária
 
 Dados de retorno
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -3438,7 +3316,7 @@ Dados de retorno
      - Data e hora da inclusão do registro
 
 Códigos de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -3465,12 +3343,12 @@ Códigos de Retorno
      - Erro
 
 Consultar conformidade entre Modalidade de Contratação e Fonte Orçamentaria
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==========================================================================~
 
 Serviço que permite consultar as combinações de conformidade entre modalidade de contratação e/ou fonte orçamentária ou todas as combinações cadastradas no PNCP. 
 
 Detalhes da Requisição
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -3483,7 +3361,7 @@ Detalhes da Requisição
      - GET
 
 Exemplo Requisição (cURL)
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
@@ -3500,7 +3378,7 @@ Exemplo Requisição (cURL)
    '${BASE_URL}/v1/modalidade-fonte-orcamentaria?modalidadeId=6&fonteOrcamentariaId=1' -H 'accept: */*'
 
 Dados de entrada
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 .. note::
    Informar um dos parâmetros de query: ``modalidadeId`` ou ``fonteOrcamentariaId``.
@@ -3524,7 +3402,7 @@ Dados de entrada
      - Código de identificação da fonte orçamentária
 
 Dados de retorno (lista de combinações)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -3584,7 +3462,7 @@ Dados de retorno (lista de combinações)
      - Data e hora da inclusão do registro
 
 Códigos de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
