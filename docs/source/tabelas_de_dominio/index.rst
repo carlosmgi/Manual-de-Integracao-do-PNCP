@@ -13,6 +13,28 @@ Benefícios das Tabelas de Domínio e Regras de Conformidade no PNCP:
   - Envio de Publicações de Contratações Públicas ao PNCP: Ao enviar publicações de contratações públicas ao PNCP, as plataformas devem seguir as tabelas de domínio definidas nesta página. Isso garante que as informações sejam enviadas de maneira padronizada e consistente, permitindo que o PNCP processe e publique os dados de forma eficiente.
 
 .. toctree::
-   :maxdepth: 3
+  :maxdepth: 3
 
-   instrumento_convocatorio
+    instrumento_convocatorio
+    consultar_instrumento_convocatorio_por_codigo
+    consultarinstrumentosconvocatorios
+    modalidade_de_contratacao
+    consultar_modalidade_de_Contratacao_por_codigo
+    consultar_modalidade_de_Contratacao
+    modo_de_disputa
+    consultar_modo_de_disputa_por_codigo
+    consultar_modo_de_disputa
+    criterio_de_julgamento
+    consultar_criterio_de_julgamento_por_codigo
+    consultar_criterios_de_julgamento
+    situacao_da_contratacao
+    situacao_do_item_da_contratacao
+    tipo_de_beneficio
+    situacao_do_resultado_do_item_da_contratacao
+    tipo_de_contrato
+    tipo_de_termo_de_contrato
+    categoria_do_processo
+    tipo_de_documento
+
+
+  
