@@ -19,8 +19,8 @@ Sumário
    :numbered:
    :maxdepth: 3
 
-   Histórico de Versões
-   Objetivo
+   historico_de_versoes/index
+   objetivo/index
    Protocolo de Comunicação
    Acesso ao PNCP
    Recomendações Iniciais
