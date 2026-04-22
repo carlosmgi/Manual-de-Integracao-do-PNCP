@@ -25,7 +25,6 @@ Sumário
    acesso_ao_pncp/index
    recomendacoes_iniciais/index
    tabelas_de_dominio/index
-   modalidade_de_contratacao/index
    usuario/index
    plano_de_contratacao/index
    contratacao/index
