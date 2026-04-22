@@ -154,7 +154,7 @@
      - :destaque-amarelo-claro:`Sim`
      - :destaque-amarelo-claro:`Motivo/justificativa para a retificação dos atributos da ata`
 
-Dados de retorno
+:destaque-amarelo-claro:`Dados de retorno`
 ~~~~~~~~~~~~~~~~
 
 .. list-table::
@@ -172,7 +172,7 @@ Dados de retorno
      - :destaque-amarelo-claro:`JSON`
      - :destaque-amarelo-claro:`Dados da Ata de Registro de Preço após alteração`
 
-**Códigos de Retorno**
+:destaque-amarelo-claro:`Códigos de Retorno`
 ~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
