@@ -21,11 +21,11 @@ Sumário
 
    historico_de_versoes/index
    objetivo/index
-   Protocolo de Comunicação
-   Acesso ao PNCP
-   Recomendações Iniciais
+   protocolo_de_comunicacao/index
+   acesso_ao_pncp/index
+   recomendacoes_iniciais/index
    tabelas_de_dominio/index
-   Modalidade de Contratação
+   modalidade_de_contratacao/index
    usuario/index
    plano_de_contratacao/index
    contratacao/index
