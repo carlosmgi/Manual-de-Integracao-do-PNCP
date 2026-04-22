@@ -7,6 +7,35 @@ Serviço que permite retificar parcialmente os dados de uma ata de Registro de P
 
    Não será permitida a retificação do atributo "possibilidadeAdesao" de “true” para “false” da Ata quando a mesma possuir órgãos não participantes e/ou contratos de não participantes vinculados
 
+**Atualizações da versão 2.3.10**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. versionadded:: 2.3.10
+
+.. list-table::
+   :widths: auto
+   :header-rows: 1
+
+   * - Id
+     - Campo
+     - Tipo
+     - Obrigatório
+     - Descrição
+
+   * - :destaque-amarelo-claro:`12`
+     - :destaque-amarelo-claro:`possibilidadeAdesao`
+     - :destaque-amarelo-claro:`Booleano`
+     - :destaque-amarelo-claro:`Não`
+     - :destaque-amarelo-claro:`Indicador se a Ata permite adesão de não participantes (False = Não / True = Sim)`
+
+.. versionchanged:: 2.3.10
+
+  não houve alterações.
+
+.. deprecated:: 2.3.10
+
+  não houve alterações.
+
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
 
