@@ -36,4 +36,4 @@ Sumário
    empenho/index
    termo_de_contrato/index
    orgao_entidade/index
-   Suporte
+   suporte/index
