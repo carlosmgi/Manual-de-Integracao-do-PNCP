@@ -58,6 +58,16 @@ Benefícios das Tabelas de Domínio e Regras de Conformidade no PNCP:
     catalogos_itens_de_plano_de_contratacoes_e_contratacoes
     consultar_catalogo_por_codigo
     consultar_catalogos
+    tipo_de_instrumento_de_cobranca
+    consultar_tipo_de_instrumento_de_cobranca_por_codigo
+    consultar_tipo_de_instrumento_de_cobranca
+    fonte_orcamentaria
+    consultar_fonte_orcamentaria_por_codigo
+    consultar_fontes_orcamentarias
+    regra_de_conformidade_entre_modalidade_de_contratacao_e_fonte_orcamentaria
+    consultar_conformidade_entre_modalidade_de_contratacao_e_fonte_orcamentaria_por_codigo
+    consultar_conformidade_entre_modalidade_de_contratacao_e_fonte_orcamentaria
+
 
 
 
