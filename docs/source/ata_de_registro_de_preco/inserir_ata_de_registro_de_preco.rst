@@ -266,11 +266,11 @@ Dados de entrada
        Código 2 Participante
        Código 3 Não Participante`
 
-   * - :destaque-amarelo-claro:`12.2
-     - :destaque-amarelo-claro:`cnpj
-     - :destaque-amarelo-claro:`Texto (14)
-     - :destaque-amarelo-claro:`Sim
-     - :destaque-amarelo-claro:`CNPJ do órgão
+   * - :destaque-amarelo-claro:`12.2`
+     - :destaque-amarelo-claro:`cnpj`
+     - :destaque-amarelo-claro:`Texto (14)`
+     - :destaque-amarelo-claro:`Sim`
+     - :destaque-amarelo-claro:`CNPJ do órgão`
 
    * - :destaque-amarelo-claro:`12.3`
      - :destaque-amarelo-claro:`codigoUnidadeCompradora`
