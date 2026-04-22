@@ -36,6 +36,32 @@ Benefícios das Tabelas de Domínio e Regras de Conformidade no PNCP:
     categoria_do_processo
     tipo_de_documento
     natureza_juridica
+    amparo_legal
+    consultar_amparo_legal_por_codigo
+    consultar_amparos_legais
+    tipos_de_amparos_legais
+    envio_de_arquivos_pelas_apis_de_documento
+    categoria_de_item_plano_de_contratacoes_e_contratacoes
+    consultar_categoria_de_item_por_codigo
+    consultar_categorias_de_item
+    regra_de_conformidade_entre_instrumento_convocatorio_modalidade_de_contratacao_e_amparo_legal
+    consultar_conformidade_entre_instrumento_convocatorio_modalidade_de_contratacao_e_amparo_legal_por_codigo
+    consultar_conformidade_entre_instrumento_convocatorio_modalidade_de_contratacao_e_amparo_legal
+    regra_de_conformidade_entre_instrumento_convocatorio_e_modo_de_disputa
+    consultar_conformidade_entre_instrumentos_convocatorios_e_modos_de_disputa_por_codigo
+    consultar_conformidade_entre_instrumentos_convocatorios_e_modos_de_disputa
+    regra_para_permissao_de_inclusao_ou_retificacao_de_contrato_oriundos_de_contratacoes_no_sistema_de_registro_de_precos_srp
+    envio_de_imagens_pelas_apis_de_imagens_de_item
+    regra_de_conformidade_entre_modalidade_de_contratacao_e_criterio_de_julgamento
+    consultar_conformidade_entre_modalidade_de_contratacao_e_criterio_de_julgamento_por_codigo
+    consultar_conformidade_entre_modalidade_de_contratacao_e_criterio_de_julgamento
+    catalogos_itens_de_plano_de_contratacoes_e_contratacoes
+    consultar_catalogo_por_codigo
+    consultar_catalogos
+
+
+
+
 
 
 
