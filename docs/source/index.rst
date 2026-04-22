@@ -24,8 +24,8 @@ Sumário
    Protocolo de Comunicação
    Acesso ao PNCP
    Recomendações Iniciais
-   Tabelas de Domínio
-   Modalidade de Contratação*
+   tabelas_de_dominio/index
+   Modalidade de Contratação
    usuario/index
    plano_de_contratacao/index
    contratacao/index
