@@ -63,7 +63,7 @@
 ~~~~~~~~~~~~~~~~
 
 .. note::
-   Alimentar o parâmetro {cnpj} na URL.
+   Alimentar o parâmetro {cnpj}, {anoCompra}, {sequencialCompra} e {sequencialAta} na URL.
 
 .. list-table::
    :width: 100%
@@ -154,4 +154,56 @@
      - :destaque-amarelo-claro:`Sim`
      - :destaque-amarelo-claro:`Motivo/justificativa para a retificação dos atributos da ata`
 
+Dados de retorno
+~~~~~~~~~~~~~~~~
 
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 55
+   :header-rows: 1
+
+   * - :destaque-amarelo-claro:`Id`
+     - :destaque-amarelo-claro:`Campo`
+     - :destaque-amarelo-claro:`Tipo`
+     - :destaque-amarelo-claro:`Descrição`
+
+   * - :destaque-amarelo-claro:`1`
+     - :destaque-amarelo-claro:`-`
+     - :destaque-amarelo-claro:`JSON`
+     - :destaque-amarelo-claro:`Dados da Ata de Registro de Preço após alteração`
+
+**Códigos de Retorno**
+~~~~~~~~~~~~~~~~~~~~~~
+
+.. list-table::
+   :width: 100%
+   :widths: 10 25 25
+   :header-rows: 1
+
+   * - :destaque-amarelo-claro:`Código HTTP`
+     - :destaque-amarelo-claro:`Mensagem`
+     - :destaque-amarelo-claro:`Tipo`
+
+   * - :destaque-amarelo-claro:`201`
+     - :destaque-amarelo-claro:`Created`
+     - :destaque-amarelo-claro:`Sucesso`
+
+   * - :destaque-amarelo-claro:`400`
+     - :destaque-amarelo-claro:`BadRequest`
+     - :destaque-amarelo-claro:`Erro`
+
+   * - :destaque-amarelo-claro:`401`
+     - :destaque-amarelo-claro:`Unauthorized`
+     - :destaque-amarelo-claro:`Erro`
+
+   * - :destaque-amarelo-claro:`404`
+     - :destaque-amarelo-claro:`NotFound`
+     - :destaque-amarelo-claro:`Erro`
+
+   * - :destaque-amarelo-claro:`422`
+     - :destaque-amarelo-claro:`Unprocessable Entity`
+     - :destaque-amarelo-claro:`Erro`
+
+   * - :destaque-amarelo-claro:`500`
+     - :destaque-amarelo-claro:`Internal Server Error`
+     - :destaque-amarelo-claro:`Erro`
