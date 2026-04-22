@@ -85,7 +85,6 @@ Exemplo de Payload
 
 .. code-block:: json
    :linenos:
-   :emphasize-lines: 1,6-8
 
    {
      "numeroAtaRegistroPreco": "1/2021",
@@ -119,7 +118,6 @@ Exemplo Requisição (cURL)
 
 .. code-block:: bash
    :linenos:
-   :emphasize-lines: 1-6
 
    curl -X 'PUT' '${BASE_URL}/v1/orgaos/00394460000141/compras/2021/1/atas/1' \
      -H 'accept: */*' \
