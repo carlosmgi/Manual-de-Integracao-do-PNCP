@@ -85,32 +85,34 @@ Exemplo de Payload
 
 .. code-block:: json
    :linenos:
+   :emphasize-lines: 6
 
    {
-     "numeroAtaRegistroPreco": "1/2021",
-     "anoAta": 2021,
-     "dataAssinatura": "2021-07-01",
-     "dataInicioVigencia": "2021-07-01",
-     "dataFimVigencia": "2022-07-01",
-     :destaque-amarelo-claro:`"possibilidadeAdesao": true,`
-     "justificativa": "motivo/justificativa para retificacao da ata"
+      "numeroAtaRegistroPreco": "1/2021",
+      "anoAta": 2021,
+      "dataAssinatura": "2021-07-01",
+      "dataInicioVigencia": "2021-07-01",
+      "dataFimVigencia": "2022-07-01",
+      "possibilidadeAdesao": true,
+      "justificativa": "motivo/justificativa para retificacao da ata"
    }
 
 **Para o cancelamento da ata:**
 
 .. code-block:: json
    :linenos:
+   :emphasize-lines: 7
 
    {
-     "numeroAtaRegistroPreco": "1/2021",
-     "anoAta": 2021,
-     "dataAssinatura": "2021-07-01",
-     "dataInicioVigencia": "2021-07-01",
-     "dataFimVigencia": "2022-07-01",
-     :destaque-amarelo-claro:`"possibilidadeAdesao": true,`
-     "cancelado": true,
-     "dataCancelamento": "2023-01-01T12:00:00",
-     "justificativa": "motivo/justificativa para cancelamento da ata"
+      "numeroAtaRegistroPreco": "1/2021",
+      "anoAta": 2021,
+      "dataAssinatura": "2021-07-01",
+      "dataInicioVigencia": "2021-07-01",
+      "dataFimVigencia": "2022-07-01",
+      "possibilidadeAdesao": true,
+      "cancelado": true,
+      "dataCancelamento": "2023-01-01T12:00:00",
+      "justificativa": "motivo/justificativa para cancelamento da ata"
    }
 
 Exemplo Requisição (cURL)
