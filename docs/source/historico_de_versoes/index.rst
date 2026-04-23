@@ -16,8 +16,7 @@ Data: 24/02/2026
 `Inserir Ata de Registro de Preço <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/inserir_ata_de_registro_de_preco
 .html>`_ 
 
-`Retificar Ata de Registro de Preço <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/retificar_ata_de_registro_de_preco
-.html>`_ 
+`Retificar Ata de Registro de Preço <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/retificar_ata_de_registro_de_preco.html>`_ 
 
 `Retificar Parcialmente Ata de Registro de Preço <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/ata_de_registro_de_preco/retificar_parcialmente_ata_de_registro_de_preco.html>`_
 
@@ -29,14 +28,13 @@ Data: 24/02/2026
 
 `Consultar Contratos de Ata de Registro de Preço     <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/consultar_contratos_de_ata_de_registro_de_preco.html>`_
 
-Inserir Parte Envolvida na Ata de Registro de Preço 
+`Inserir Parte Envolvida na Ata de Registro de Preço      <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/inserir_parte_envolvida_na_ata_de_registro_de_preco.html>`_
 
-Excluir Parte Envolvida em Ata de Registro de Preço 
+`Excluir Parte Envolvida em Ata de Registro de Preço       <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/excluir_parte_envolvida_em_ata_de_registro_de_preco.html>`_
 
-Consultar Parte Envolvida em Ata de Registro de Preço 
+`Consultar Parte Envolvida em Ata de Registro de Preço        <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/consultar_parte_envolvida_em_ata_de_registro_de_preco.html>`_
 
-Consultar Partes envolvidas em Ata de Registro de Preço 
-
+`Consultar Partes envolvidas em Ata de Registro de Preço         <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/consultar_partes_envolvidas_em_ata_de_registro_de_preco.html>`_
 **Serviços de Contrato/Empenho**
 
 Inserir Contrato/Empenho 
