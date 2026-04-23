@@ -34,6 +34,8 @@ Serviço que permite recuperar as atas de Registro de Preço de uma contrataçã
 
 .. versionadded:: 2.3.10
 
+Destaque em amarelo destinado à identificação das atualizações relativas às entregas de ARP Caronas.
+
 .. list-table::
    :widths: auto
    :header-rows: 1
