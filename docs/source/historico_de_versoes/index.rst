@@ -17,7 +17,7 @@ Data: 24/02/2026
 
 `Retificar Ata de Registro de Preço <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/Retificar%20Ata%20de%20Registro%20de%20Pre%C3%A7o.html>`_ 
 
-`Retificar Parcialmente Ata de Registro de Preço <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/ata_de_registro_de_preco/retificar_parcialmente_ata_de_registro_de_preco.html>`_ 
+`Retificar Parcialmente Ata de Registro de Preço <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/ata_de_registro_de_preco/retificar_parcialmente_ata_de_registro_de_preco.html>`_
 
 Excluir Ata de Registro de Preço 
 
