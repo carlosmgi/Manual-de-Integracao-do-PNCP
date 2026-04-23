@@ -31,10 +31,6 @@ Serviço que permite retificar os dados de uma ata de Registro de Preço.
      - Inteiro
      - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
 
-.. Attention::
-  
-    Conforme regra de conformidade, prevista no item 5.19, não é possível a inclusão ou retificação de contrato ou empenho que pertença à contratação realizada por Sistema de Registro de Preços (SRP), a qual não possua ao menos uma ata de registro de preços publicada no PNCP. 
-
 **Atualizações da versão 2.3.10**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
