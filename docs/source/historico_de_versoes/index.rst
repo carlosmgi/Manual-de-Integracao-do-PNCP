@@ -13,19 +13,21 @@ Data: 24/02/2026
    :numbered:
    :maxdepth: 3
 
-`Inserir Ata de Registro de Preço <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/Inserir%20Ata%20de%20Registro%20de%20Pre%C3%A7o.html>`_ 
+`Inserir Ata de Registro de Preço <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/inserir_ata_de_registro_de_preco
+.html>`_ 
 
-`Retificar Ata de Registro de Preço <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/Retificar%20Ata%20de%20Registro%20de%20Pre%C3%A7o.html>`_ 
+`Retificar Ata de Registro de Preço <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/retificar_ata_de_registro_de_preco
+.html>`_ 
 
 `Retificar Parcialmente Ata de Registro de Preço <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/ata_de_registro_de_preco/retificar_parcialmente_ata_de_registro_de_preco.html>`_
 
-Excluir Ata de Registro de Preço 
+`Excluir Ata de Registro de Preço  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/ata_de_registro_de_preco/excluir_ata_de_registro_de_preco.html>`_
 
-Consultar Atas de Registro de Preço por Compra 
+`Consultar Atas de Registro de Preço por Compra   <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/consultar_atas_de_registro_de_preco_por_compra.html>`_
 
-Consultar Ata de Registro de Preço 
+`Consultar Ata de Registro de Preço    <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/consultar_atas_de_registro_de_preco.html>`_
 
-Consultar Contratos de Ata de Registro de Preço 
+`Consultar Contratos de Ata de Registro de Preço     <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/consultar_contratos_de_ata_de_registro_de_preco.html>`_
 
 Inserir Parte Envolvida na Ata de Registro de Preço 
 
