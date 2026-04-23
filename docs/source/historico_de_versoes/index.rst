@@ -38,7 +38,7 @@ Data: 24/02/2026
 
 **Serviços de Contrato/Empenho**
 
-Inserir Contrato/Empenho 
+`Inserir Contrato/Empenho       <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contrato_empenho/inserir_contratos_ou_empenhos.html>`_
 
 Retificar Contrato/Empenho 
 
