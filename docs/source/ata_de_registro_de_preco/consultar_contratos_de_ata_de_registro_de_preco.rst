@@ -76,26 +76,37 @@ Dados de entrada
    * - 1
      - cnpj
      - Texto (14)
+     - Sim
      - CNPJ do órgão originário da contratação informado na inclusão (proprietário da contratação)
+
    * - 2
      - ano
      - Inteiro
+     - Sim
      - Ano da contratação
+
    * - 3
      - sequencial
      - Inteiro
+     - Sim
      - Sequencial da contratação no PNCP
+
    * - 4
      - sequencialAta
      - Inteiro
+     - Sim
      - Sequencial da Ata no PNCP
+
    * - 5
      - pagina
      - Inteiro
+     - Não
      - Utilizado para paginação dos itens. Número da página
+
    * - 6
      - tamanhoPagina
      - Inteiro
+     - Não
      - Utilizado para paginação dos itens. Quantidade de itens por página
 
 Dados de retorno
@@ -254,13 +265,12 @@ Dados de retorno
    * - 7
      - temRemanejamento
      - Booleano
-     - Indicador de remanejamento (False = Não / True = Sim). O remanejamento permite a transferência de saldos de itens entre órgãos participantes ou não participantes (caronas), mediante autorização do órgão gerenciador e anuência do fornecedor
+     - Indicador de remanejamento (False = Não / True = Sim). O remanejamento permite a transferência de saldos entre órgãos participantes ou não participantes (caronas), mediante autorização do órgão gerenciador e anuência do fornecedor
 
    * - 8
      - empty
      - Booleano
      - Indica se o retorno está vazio
-
 
 Códigos de Retorno
 ~~~~~~~~~~~~~~~~~~
