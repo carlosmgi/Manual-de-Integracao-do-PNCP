@@ -102,8 +102,7 @@ Dados de entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-   Alimentar o parâmetro {cnpj}, {anoCompra}, {sequencialCompra} e {sequencialAta}
-na URL.
+   Alimentar o parâmetro {cnpj}, {anoCompra}, {sequencialCompra} e {sequencialAta} na URL.
 
 .. list-table::
    :width: 100%
