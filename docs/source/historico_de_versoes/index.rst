@@ -44,7 +44,7 @@ Data: 24/02/2026
 
 `Consultar Contrato/Empenho       <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contrato_empenho/consultar_contrato_ou_empenho.html>`_
 
-`Consultar Contratos/Empenhos de uma Contratação       <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contrato_empenho/inserir_contratos_ou_empenhos.html>`_
+`Consultar Contratos/Empenhos de uma Contratação       <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contrato_empenho/consultar_contratos_ou_empenhos_de_uma_contratacao.html>`_
 
 Versão: 2.3.9
 ++++++++++++++
