@@ -45,8 +45,6 @@ Detalhes da Requisição
 Exemplo de Payload
 ~~~~~~~~~~~~~~~~~~
 
-Arquivo JSON:
-
 .. code-block:: json
    :linenos:
 
