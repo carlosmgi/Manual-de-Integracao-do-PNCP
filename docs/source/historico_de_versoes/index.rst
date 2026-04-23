@@ -40,11 +40,11 @@ Data: 24/02/2026
 
 `Inserir Contrato/Empenho       <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contrato_empenho/inserir_contratos_ou_empenhos.html>`_
 
-Retificar Contrato/Empenho 
+`Retificar Contrato/Empenho       <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contrato_empenho/retificar_contrato_ou_empenho.html>`_
 
-Consultar Contrato/Empenho 
+`Consultar Contrato/Empenho       <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contrato_empenho/consultar_contrato_ou_empenho.html>`_
 
-Consultar Contratos/Empenhos de uma Contratação 
+`Consultar Contratos/Empenhos de uma Contratação       <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contrato_empenho/inserir_contratos_ou_empenhos.html>`_
 
 Versão: 2.3.9
 ++++++++++++++
