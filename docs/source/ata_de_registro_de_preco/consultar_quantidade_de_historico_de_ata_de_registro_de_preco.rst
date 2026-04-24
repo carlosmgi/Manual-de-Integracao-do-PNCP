@@ -1,7 +1,7 @@
-Consultar Quantidade de Registros de uma Ata de Registro de Preço  
-=================================================================
+Consultar quantidade de histórico de Ata de Registro de Preço
+============================================================
 
-Serviço que permite consultar a quantidade de registros vinculados a uma ata de registro de preço.
+Serviço que permite consultar a quantidade de registros de histórico vinculados a uma ata de registro de preço.
 
 .. Attention::
 
@@ -53,7 +53,7 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
    :linenos:
 
-   curl -k -X GET "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/atas/1/quantidade" \
+   curl -k -X GET "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/atas/1/historico/quantidade" \
      -H "accept: */*"
 
 Dados de entrada
@@ -77,7 +77,7 @@ Dados de entrada
      - cnpj
      - Texto (14)
      - Sim
-     - Cnpj do órgão originário dacontratação informado na inclusão(proprietário da contratação)
+     - CNPJ do órgão originário da contratação informado na inclusão (proprietário da contratação)
 
    * - 2
      - ano
@@ -95,7 +95,7 @@ Dados de entrada
      - sequencialAta
      - Inteiro
      - Sim
-     - Sequencial da ata no PNCP; Número sequencial gerado no momento que a ata foi inserida no PNCP;
+     - Sequencial da ata no PNCP; número sequencial gerado no momento que a ata foi inserida no PNCP
 
 Dados de retorno
 ~~~~~~~~~~~~~~~~
@@ -113,7 +113,7 @@ Dados de retorno
    * - 1
      - quantidade
      - Inteiro
-     - Quantidade de registros vinculados à ata
+     - Quantidade de registros de histórico vinculados à ata
 
 Códigos de Retorno
 ~~~~~~~~~~~~~~~~~~
@@ -150,4 +150,3 @@ Códigos de Retorno
    * - 500
      - Internal Server Error
      - Erro
-
