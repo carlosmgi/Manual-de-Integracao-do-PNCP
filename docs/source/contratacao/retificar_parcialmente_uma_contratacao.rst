@@ -7,40 +7,12 @@ Serviço que permite retificar parcialmente os dados de uma contratação. Este 
 
 	Fica impedida a retificação da contratação caso a mesma não possua documento/arquivo ativo vinculado a ela no PNCP. Deve-se observar as regras de conformidade implementadas entre Instrumento Convocatório, Modalidade e Amparo Legal e Instrumento Convocatório e Modo de Disputa descritas na seção 5 deste Manual. O PNCP não receberá novas contratações ou permitirá a retificação se os campos informados não estiverem em conformidade.
 
-.. Attention::
-
-   As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
-
-.. list-table::
-   :width: 100%
-   :widths: 5 25 15 25
-   :header-rows: 1
-
-   * - Id
-     - Campo
-     - Tipo
-     - Descrição
-   * - 1
-     - cnpj
-     - Texto
-     - CNPJ do órgão do contrato/empenho
-   * - :destaque:`2`
-     - :destaque:`ano`
-     - :destaque:`Inteiro`
-     - :destaque:`Ano do contrato/empenho`
-   * - 3
-     - sequencialContrato
-     - Inteiro
-     - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
-
-\
-
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
-   :widths: 50 15
+   :widths: auto
    :header-rows: 1
 
    * - Endpoint
@@ -94,7 +66,7 @@ Dados de Entrada
 
 .. list-table::
    :width: 100%
-   :widths: 5 25 15 10 45
+   :widths: auto
    :header-rows: 1
 
    * - Id
@@ -234,7 +206,7 @@ Códigos de Retorno
 
 .. list-table::
    :width: 100%
-   :widths: 15 25 20
+   :widths: auto
    :header-rows: 1
 
    * - Código HTTP
