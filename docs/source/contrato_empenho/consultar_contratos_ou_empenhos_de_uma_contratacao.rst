@@ -3,34 +3,6 @@ Consultar Contratos/Empenhos de uma Contratação
 
 Serviço que permite recuperar os contratos/empenhos de uma contratação.
 
-.. Attention::
-
-   As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
-
-.. list-table::
-   :width: 100%
-   :widths: 5 25 15 25
-   :header-rows: 1
-
-   * - Id
-     - Campo
-     - Tipo
-     - Descrição
-   * - 1
-     - cnpj
-     - Texto
-     - CNPJ do órgão do contrato/empenho
-   * - :destaque:`2`
-     - :destaque:`ano`
-     - :destaque:`Inteiro`
-     - :destaque:`Ano do contrato/empenho`
-   * - 3
-     - sequencialContrato
-     - Inteiro
-     - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
-
-\
-
 **Atualizações da versão 2.3.10**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -59,7 +31,7 @@ Detalhes da Requisição
 
 .. list-table::
    :width: 100%
-   :widths: 50 15
+   :widths: auto
    :header-rows: 1
 
    * - Endpoint
@@ -90,6 +62,9 @@ Dados de Entrada
   Alimentar o parâmetro {cnpj}, {anoContratacao} e {sequencialContratacao} na URL.
 
 .. list-table::
+   :width: 100%
+   :widths: auto
+   :header-rows: 1
    
   * - Id
     - Campo
@@ -117,7 +92,7 @@ Dados de retorno
 
 .. list-table::
    :width: 100%
-   :widths: 5 30 20 45
+   :widths: auto
    :header-rows: 1
 
   * - Id
@@ -277,3 +252,5 @@ Dados de retorno
      - :destaque:`emendaParlamentar`
      - :destaque:`Booleano`
      - :destaque:`Indicador de Emenda Parlamentar (False-Não / True-Sim)`
+
+\
