@@ -3,41 +3,12 @@ Consultar Todos os Documentos de um Contrato/Empenho
 
 Serviço que permite consultar a lista de documentos pertencentes a um contrato ou empenho específico.
 
-.. Attention::
-
-   As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
-
-.. list-table::
-   :width: 100%
-   :widths: 5 25 15 25
-   :header-rows: 1
-
-   * - Id
-     - Campo
-     - Tipo
-     - Descrição
-   * - 1
-     - cnpj
-     - Texto
-     - CNPJ do órgão do contrato/empenho
-   * - :destaque:`2`
-     - :destaque:`ano`
-     - :destaque:`Inteiro`
-     - :destaque:`Ano do contrato/empenho`
-   * - 3
-     - sequencialContrato
-     - Inteiro
-     - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
-
-\
-
-
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
-   :widths: 50 15
+   :widths: auto
    :header-rows: 1
 
    * - Endpoint
@@ -69,7 +40,7 @@ Dados de Entrada
 
 .. list-table::
    :width: 100%
-   :widths: 5 25 15 10 25
+   :widths: auto
    :header-rows: 1
 
    * - Id
@@ -97,58 +68,61 @@ Dados de Entrada
 ~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
+   :width: 100%
+   :widths: auto
+   :header-rows: 1
 
- * - Id
-   - Campo
-   - Tipo
-   - Descrição
- * - 1
-   - Documentos
-   - Lista
-   - Lista de documentos
- * - 1.1
-   - sequencialDocumento
-   - Inteiro
-   - Número sequencial atribuído ao arquivo
- * - 1.2
-   - url
-   - Texto
-   - URL para download do arquivo
- * - 1.3
-   - tipoDocumentoNome
-   - Texto
-   - Nome do tipo de documento conforme PNCP
- * - 1.4
-   - titulo
-   - Texto
-   - Título referente ao arquivo
- * - 1.5
-   - dataPublicacaoPncp
-   - Data
-   - Data de publicação do arquivo no portal PNCP
- * - 1.6
-   - uri
-   - Texto
-   - URI para download do arquivo
- * - 1.7
-   - cnpj
-   - Texto
-   - Cnpj do órgão contratante
- * - 1.8
-   - anoCompra
-   - Inteiro
-   - Ano da contratação associada ao contrato
- * - 1.9
-   - sequencialCompra
-   - Inteiro
-   - Sequencial da contratação no PNCP; número sequencial gerado no momento que a contratação foi inserida no PNCP
+    * - Id
+      - Campo
+      - Tipo
+      - Descrição
+    * - 1
+      - Documentos
+      - Lista
+      - Lista de documentos
+    * - 1.1
+      - sequencialDocumento
+      - Inteiro
+      - Número sequencial atribuído ao arquivo
+    * - 1.2
+      - url
+      - Texto
+      - URL para download do arquivo
+    * - 1.3
+      - tipoDocumentoNome
+      - Texto
+      - Nome do tipo de documento conforme PNCP
+    * - 1.4
+      - titulo
+      - Texto
+      - Título referente ao arquivo
+    * - 1.5
+      - dataPublicacaoPncp
+      - Data
+      - Data de publicação do arquivo no portal PNCP
+    * - 1.6
+      - uri
+      - Texto
+      - URI para download do arquivo
+    * - 1.7
+      - cnpj
+      - Texto
+      - Cnpj do órgão contratante
+    * - 1.8
+      - anoCompra
+      - Inteiro
+      - Ano da contratação associada ao contrato
+    * - 1.9
+      - sequencialCompra
+      - Inteiro
+      - Sequencial da contratação no PNCP; número sequencial gerado no momento que a contratação foi inserida no PNCP
 
 **Códigos de Retorno**
 ~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
-   :widths: 10 25 25
+   :widths: auto
    :header-rows: 1
 
    * - Código HTTP
@@ -166,3 +140,5 @@ Dados de Entrada
    * - 500
      - Internal Server Error
      - Erro
+
+\
