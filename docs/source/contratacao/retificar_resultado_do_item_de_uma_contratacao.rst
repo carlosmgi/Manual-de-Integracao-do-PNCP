@@ -8,40 +8,12 @@ Serviço para retificar um resultado do item de uma contratação, ou para alter
 	Fica impedida a retificação do resultado, caso a contratação não possua documento/arquivo ativo vinculado a ela no PNCP. 
 	Ao receber requisição para inclusão de resultado do item da Contratação, o PNCP verifica se entre os resultados, com situação "Informado", existe algum outro registro com valor idêntico à combinação dos parâmetros recebidos: "tipoPessoaId", "niFornecedor" e "ordemClassificacaoSrp". Se houver qualquer registro, a requisição para inclusão do resultado do item da Contratação será recusada. Neste caso, o requisitante será alertado.
 
-.. Attention::
-
-   As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
-
-.. list-table::
-   :width: 100%
-   :widths: 5 25 15 25
-   :header-rows: 1
-
-   * - Id
-     - Campo
-     - Tipo
-     - Descrição
-   * - 1
-     - cnpj
-     - Texto
-     - CNPJ do órgão do contrato/empenho
-   * - :destaque:`2`
-     - :destaque:`ano`
-     - :destaque:`Inteiro`
-     - :destaque:`Ano do contrato/empenho`
-   * - 3
-     - sequencialContrato
-     - Inteiro
-     - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
-
-\
-
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
-   :widths: 50 15
+   :widths: auto
    :header-rows: 1
 
    * - Endpoint
@@ -105,7 +77,7 @@ Dados de Entrada
 
 .. list-table::
    :width: 100%
-   :widths: 5 25 15 10 45
+   :widths: auto
    :header-rows: 1
 
    * - Id
@@ -313,7 +285,7 @@ Códigos de Retorno
 
 .. list-table::
    :width: 100%
-   :widths: 10 25 20
+   :widths: auto
    :header-rows: 1
 
    * - Código HTTP
