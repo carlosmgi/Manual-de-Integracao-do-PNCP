@@ -8,37 +8,6 @@ Serviço que permite incluir um contrato ou empenho. Este serviço será acionad
 
     O sistema exige o upload de um arquivo anexo ao contrato enviado. As extensões permitidas para o arquivo anexo são listadas na seção Tabelas de domínio - Envio de arquivos pelas APIs de Documento e os tipos de documento/arquivo aceitos pelo PNCP podem ser consultados na seção Tabelas de domínio - Tipo de Documento, deste manual.
 
-\
-
-.. Attention::
-
-   As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
-
-.. list-table::
-   :width: 100%
-   :widths: 5 25 15 25
-   :header-rows: 1
-
-   * - Id
-     - Campo
-     - Tipo
-     - Descrição
-   * - 1
-     - cnpj
-     - Texto
-     - CNPJ do órgão do contrato/empenho
-   * - :destaque:`2`
-     - :destaque:`ano`
-     - :destaque:`Inteiro`
-     - :destaque:`Ano do contrato/empenho`
-   * - 3
-     - sequencialContrato
-     - Inteiro
-     - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
-
-\
-
-
 .. Attention::
   
     Conforme regra de conformidade, prevista no item 5.19, não é possível a inclusão ou retificação de contrato ou empenho que pertença à contratação realizada por Sistema de Registro de Preços (SRP), a qual não possua ao menos uma ata de registro de preços publicada no PNCP. 
@@ -86,7 +55,7 @@ Detalhes da Requisição
 
 .. list-table::
    :width: 100%
-   :widths: 50 15
+   :widths: auto
    :header-rows: 1
 
    * - Endpoint
@@ -155,7 +124,7 @@ Dados de entrada
 
 .. list-table::
    :width: 100%
-   :widths: 5 25 15 25
+   :widths: auto
    :header-rows: 1
 
    * - Id
@@ -339,7 +308,7 @@ Dados de retorno
 
 .. list-table::
    :width: 100%
-   :widths: 5 25 15 10 25
+   :widths: auto
    :header-rows: 1
 
    * - Id
@@ -380,7 +349,7 @@ Exemplo de Retorno
 
 .. list-table::
    :width: 100%
-   :widths: 10 25 25
+   :widths: auto
    :header-rows: 1
 
    * - Código HTTP
@@ -398,3 +367,5 @@ Exemplo de Retorno
    * - 500
      - Internal Server Error
      - Erro
+
+\
