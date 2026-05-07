@@ -1,5 +1,5 @@
 Consultar Catálogos 
-==================~
+===================
 
 Serviço que permite consultar os catálogos cadastrados no PNCP. 
 
