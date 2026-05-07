@@ -6,7 +6,7 @@ Serviços que disponibilizam conjunto de operações relacionadas às partes env
 .. toctree::
    :maxdepth: 3
 
-   Inserir Parte Envolvida na Ata de Registro de Preco
-   Excluir Parte Envolvida em Ata de Registro de Preco
-   Consultar Parte Envolvida em Ata de Registro de Preco
-   Consultar Partes envolvidas em Ata de Registro de Preco
+   inserir_parte_envolvida_na_ata_de_registro_de_preco
+   excluir_parte_envolvida_em_ata_de_registro_de_preco
+   consultar_parte_envolvida_em_ata_de_registro_de_preco
+   consultar_partes_envolvidas_em_ata_de_registro_de_preco
