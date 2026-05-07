@@ -7,35 +7,6 @@ Serviço que permite inserir uma lista de partes envolvidas a uma ata de registr
 
   A parte envolvida poderá assumir mais de um papel, sendo participante e não participante, conforme apresentado a seguir:
 
-\
-
-.. Attention::
-
-   As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
-
-.. list-table::
-   :width: 100%
-   :widths: 5 25 15 25
-   :header-rows: 1
-
-   * - Id
-     - Campo
-     - Tipo
-     - Descrição
-   * - 1
-     - cnpj
-     - Texto
-     - CNPJ do órgão do contrato/empenho
-   * - :destaque:`2`
-     - :destaque:`ano`
-     - :destaque:`Inteiro`
-     - :destaque:`Ano do contrato/empenho`
-   * - 3
-     - sequencialContrato
-     - Inteiro
-     - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
-
-\
 
 .. code-block:: json
   :linenos:
@@ -59,7 +30,7 @@ Detalhes da Requisição
 
 .. list-table::
    :width: 100%
-   :widths: 50 15
+   :widths: auto
    :header-rows: 1
 
    * - Endpoint
@@ -109,7 +80,7 @@ Dados de entrada
 
 .. list-table::
    :width: 100%
-   :widths: 5 25 15 10 45
+   :widths: auto
    :header-rows: 1
    * - Id
      - Campo
@@ -162,7 +133,7 @@ Códigos de Retorno
 
 .. list-table::
    :width: 100%
-   :widths: 10 25 20
+   :widths: auto
    :header-rows: 1
    * - Código HTTP
      - Mensagem
