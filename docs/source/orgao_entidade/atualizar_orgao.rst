@@ -5,34 +5,6 @@ Serviço **destinado exclusivamente aos administradores do PNCP** que permite at
 
 **Observação:** não está disponível para plataformas privadas a partir de 18/08/2025.
 
-.. Attention::
-
-   As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
-
-.. list-table::
-   :width: 100%
-   :widths: auto
-   :header-rows: 1
-
-   * - Id
-     - Campo
-     - Tipo
-     - Descrição
-   * - 1
-     - cnpj
-     - Texto
-     - CNPJ do órgão do contrato/empenho
-   * - :destaque:`2`
-     - :destaque:`ano`
-     - :destaque:`Inteiro`
-     - :destaque:`Ano do contrato/empenho`
-   * - 3
-     - sequencialContrato
-     - Inteiro
-     - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
-
-\
-
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
 
