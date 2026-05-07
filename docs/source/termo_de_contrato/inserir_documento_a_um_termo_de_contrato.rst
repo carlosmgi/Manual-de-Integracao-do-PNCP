@@ -8,7 +8,7 @@ Detalhes da Requisição
 
 .. list-table::
    :width: 100%
-   :widths: 50 15
+   :widths: auto
    :header-rows: 1
 
    * - Endpoint
@@ -38,7 +38,7 @@ Dados de entrada
 
 .. list-table::
    :width: 100%
-   :widths: 5 25 15 10 25
+   :widths: auto
    :header-rows: 1
 
    * - Id
@@ -82,7 +82,7 @@ Dados de retorno
 
 .. list-table::
    :width: 100%
-   :widths: 5 25 15 10 25
+   :widths: auto
    :header-rows: 1
 
    * - Id
@@ -101,7 +101,7 @@ Códigos de Retorno
 
 .. list-table::
    :width: 100%
-   :widths: 15 35 20
+   :widths: auto
    :header-rows: 1
 
    * - Código HTTP
