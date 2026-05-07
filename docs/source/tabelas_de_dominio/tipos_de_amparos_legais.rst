@@ -1,5 +1,5 @@
 Tipos de Amparos Legais
-======================~
+=======================
 
 Domínio do tipo de amparo legal:
 
