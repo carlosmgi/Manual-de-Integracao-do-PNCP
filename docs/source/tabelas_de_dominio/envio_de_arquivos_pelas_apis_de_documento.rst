@@ -1,5 +1,5 @@
 Envio de arquivos pelas APIs de Documento 
-========================================-
+=========================================
 
 Ao anexar um documento digital, complementando os metadados enviados, as seguintes extensões de arquivo serão aceitas para upload:
 
