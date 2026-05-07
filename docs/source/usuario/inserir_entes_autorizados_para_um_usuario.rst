@@ -125,11 +125,11 @@ Códigos de Retorno
    * - 400
      - BadRequest
      - Erro
-
-\
    * - 422
      - Unprocessable Entity
      - NotFound
    * - 500
      - Internal Server Error
      - Erro
+
+\
