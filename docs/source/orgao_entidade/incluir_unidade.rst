@@ -22,7 +22,7 @@ Será retornado nome do município ``Exterior`` e UF ``EX``.
 
 .. list-table::
    :width: 100%
-   :widths: 5 25 15 25
+   :widths: auto
    :header-rows: 1
 
    * - Id
@@ -54,7 +54,7 @@ Detalhes da Requisição
 
 .. list-table::
    :width: 100%
-   :widths: 50 15
+   :widths: auto
    :header-rows: 1
 
    * - Endpoint
@@ -93,7 +93,7 @@ Dados de entrada
 
 .. list-table::
    :width: 100%
-   :widths: 5 25 15 25
+   :widths: auto
    :header-rows: 1
 
    * - Id
@@ -128,7 +128,7 @@ Dados de retorno
 
 .. list-table::
    :width: 100%
-   :widths: 5 25 15 25
+   :widths: auto
    :header-rows: 1
 
    * - Id
@@ -170,7 +170,7 @@ Códigos de Retorno
 
 .. list-table::
    :width: 100%
-   :widths: 10 25 20
+   :widths: auto
    :header-rows: 1
 
    * - Código HTTP
@@ -188,3 +188,5 @@ Códigos de Retorno
    * - 500
      - Internal Server Error
      - Erro
+
+\
