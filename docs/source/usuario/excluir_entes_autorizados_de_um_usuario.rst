@@ -53,6 +53,7 @@ Dados de retorno
    :width: 100%
    :widths: auto
    :header-rows: 1
+
    * - Id
      - Campo
      - Tipo
@@ -73,11 +74,6 @@ Dados de retorno
      - Vetor
      - Sim
      - Vetor com a lista de CNPJs de órgãos que o usuário possui acesso
-
-Dados de retorno
-~~~~~~~~~~~~~~~~
-
-Não se aplica. 
 
 Exemplo de Retorno
 ~~~~~~~~~~~~~~~~~~
