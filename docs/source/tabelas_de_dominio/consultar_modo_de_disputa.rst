@@ -3,40 +3,12 @@ Consultar Modos de Disputa
 
 Serviço que permite consultar os modos de disputa cadastrados no PNCP.
 
-.. Attention::
-
-   As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
-
-.. list-table::
-   :width: 100%
-   :widths: 5 25 15 25
-   :header-rows: 1
-
-   * - Id
-     - Campo
-     - Tipo
-     - Descrição
-   * - 1
-     - cnpj
-     - Texto
-     - CNPJ do órgão do contrato/empenho
-   * - :destaque:`2`
-     - :destaque:`ano`
-     - :destaque:`Inteiro`
-     - :destaque:`Ano do contrato/empenho`
-   * - 3
-     - sequencialContrato
-     - Inteiro
-     - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
-
-\
-
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
-   :widths: 50 15
+   :widths: auto
    :header-rows: 1
 
    * - Endpoint
@@ -65,7 +37,7 @@ Alimentar o query parâmetro `statusAtivo`.
 
 .. list-table::
    :width: 100%
-   :widths: 5 25 15 25
+   :widths: auto
    :header-rows: 1
 
    * - Campo
@@ -83,7 +55,7 @@ Dados de retorno
 .. list-table:: 
    :width: 100%
    :header-rows: 1
-   :widths: 5 25 15 25
+   :widths: auto
 
    * - Id
      - Campo
@@ -119,7 +91,7 @@ Códigos de Retorno
 
 .. list-table::
    :width: 100%
-   :widths: 10 25 20
+   :widths: auto
    :header-rows: 1
 
    * - Código HTTP
