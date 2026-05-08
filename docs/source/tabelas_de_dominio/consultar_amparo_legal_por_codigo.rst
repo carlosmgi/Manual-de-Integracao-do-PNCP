@@ -16,20 +16,27 @@ Detalhes da Requisição
    * - /v1/amparos-legais/{id}  
      - GET
 
+Exemplo de Payload
+~~~~~~~~~~~~~~~~~~
+
+.. code-block:: json
+  :linenos:
+
+    Não se aplica
+
 Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
-   curl -X 'GET' 
-   '${BASE_URL}/v1/amparos-legais/{id}' -H 'accept: */*'
+   curl -X 'GET' '${BASE_URL}/v1/amparos-legais/{id}' -H 'accept: */*'
 
 Dados de Entrada
 ~~~~~~~~~~~~~~~~
 
 .. note:: 
 
-Alimentar o path parâmetro {id} na URL.   
+   Alimentar o path parâmetro {id} na URL.   
 
 .. list-table::
    :width: 100%
