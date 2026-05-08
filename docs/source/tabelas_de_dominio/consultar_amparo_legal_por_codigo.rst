@@ -47,7 +47,7 @@ Dados de Entrada
      - Tipo
      - Obrigatório
      - Descrição
-   * - statusAtivo
+   * - id
      - Inteiro
      - Sim
      - Código de identificação do amparo legal 
@@ -127,7 +127,7 @@ Códigos de Retorno
      - BadRequest
      - Erro
    * - 404
-     - Modo de disputa não encontrado
+     - Amparo legal não encontrado.
      - NotFound
    * - 422
      - Unprocessable Entity
