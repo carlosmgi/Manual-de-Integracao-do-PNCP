@@ -21,4 +21,4 @@ Categoria do Processo
 
 - (código = 10) **Serviços de Saúde**
 
-- (código = 11) Alienação de bens móveis/imóveis**
+- (código = 11) **Alienação de bens móveis/imóveis**
