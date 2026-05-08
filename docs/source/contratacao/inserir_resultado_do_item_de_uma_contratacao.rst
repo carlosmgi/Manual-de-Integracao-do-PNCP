@@ -63,6 +63,7 @@ Exemplo Requisição (cURL)
 	curl -k -X POST --header "Authorization: Bearer access_token" 
 	"${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/itens/1/resultados" -H "accept: */*" -H "Content-Type: application/json" --data "@/home/objeto.json" 
 
+
 Dados de Entrada
 ~~~~~~~~~~~~~~~~
 
@@ -72,7 +73,7 @@ Dados de Entrada
 
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 5 20 15 10 50
    :header-rows: 1
 
    * - Id
@@ -236,12 +237,25 @@ Dados de Entrada
      - Texto (8)
      - Não
      - Time Zone no momento da cotação da moeda estrangeira. Offset no formato 'UTC±[hh][mm]' ou somente 'UTC±[hh]', onde:
-	
-  * - 27
-    - valorNominalMoedaEstrangeira
-	- Decimal
-	- Não
-	- Valor nominal da moeda nacional (BRL) em relação uma unidade da moeda estrangeira no momento da cotação. Ex: 1 USD = 5,450 BRL, então enviar 5.450
+       
+         - 'hh' representa as horas de diferença em relação ao UTC;
+         - 'mm' representa os minutos de diferença em relação ao UTC;
+         - '+' indica que o fuso horário está adiantado em relação ao UTC;
+         - '-' indica que o fuso horário está atrasado em relação ao UTC.
+       
+        Exemplos de Offsets:
+       
+         - 'UTC+0000' é o próprio horário UTC (também conhecido como GMT);
+         - 'UTC+0100' é uma hora adiantada em relação ao UTC (horário da Europa Central durante o horário padrão);
+         - 'UTC-0500' é cinco horas atrasado em relação ao UTC (horário da Costa Leste dos Estados Unidos durante o horário padrão);
+         - 'UTC+0930' é nove horas e trinta minutos adiantado em relação ao UTC (horário de Adelaide, Austrália).
+
+   * - 27
+     - valorNominalMoedaEstrangeira
+     - Decimal
+     - Não
+     - Valor nominal da moeda nacional (BRL) em relação a uma unidade da moeda estrangeira (ex: 1 USD = 5,450 BRL → 5.450)
+
 
 Dados de Retorno
 ~~~~~~~~~~~~~~~~
