@@ -16,24 +16,31 @@ Detalhes da Requisição
    * - /v1/instrumento-convocatorio-modalidade-amparo-legal
      - GET
 
+Exemplo de Payload
+~~~~~~~~~~~~~~~~~~
+
+.. code-block:: json
+  :linenos:
+
+    Não se aplica
+
 Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
-   curl -X 'GET' 
-   '${BASE_URL}/v1/instrumento-convocatorio-modalidade-amparo-legal' -H 'accept: */*' 
-   ou 
-   curl -X 'GET' 
-   '${BASE_URL}/v1/instrumento-convocatorio-modalidade-amparo-legal?tipoInstrumentoConvocatorioId=1&modalidadeId=6' -H 'accept: */*' 
-
-
+   curl -X 'GET' '${BASE_URL}/v1/instrumento-convocatorio-modalidade-amparo-legal' -H 'accept: */*'
+   ou
+   curl -X 'GET' '${BASE_URL}/v1/instrumento-convocatorio-modalidade-amparo-legal?tipoInstrumentoConvocatorioId=1' -H 'accept: */*'
+   ou
+   curl -X 'GET' '${BASE_URL}/v1/instrumento-convocatorio-modalidade-amparo-legal?tipoInstrumentoConvocatorioId=1&modalidadeId=6' -H 'accept: */*'
+ 
 Dados de Entrada
 ~~~~~~~~~~~~~~~~
 
 .. note:: 
 
-Alimentar o query parâmetro {amparoLegalId} ou {modalidadeId} ou {tipoInstrumentoConvocatorioId}.
+   Alimentar o query parâmetro {amparoLegalId} ou {modalidadeId} ou {tipoInstrumentoConvocatorioId}.
 
 .. list-table::
    :width: 100%
@@ -152,7 +159,7 @@ Códigos de Retorno
      - BadRequest
      - Erro
    * - 404
-     - Modo de disputa não encontrado
+     - Registro não encontrado
      - NotFound
    * - 422
      - Unprocessable Entity
