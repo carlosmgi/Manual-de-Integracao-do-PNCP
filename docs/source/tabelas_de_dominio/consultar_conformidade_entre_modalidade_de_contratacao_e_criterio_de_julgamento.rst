@@ -16,26 +16,32 @@ Detalhes da Requisição
    * - /v1/modalidade-criterio-julgamento
      - GET
 
+Exemplo de Payload
+~~~~~~~~~~~~~~~~~~
+
+.. code-block:: json
+  :linenos:
+
+    Não se aplica
+
 Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
-   curl -X 'GET' 
-   '${BASE_URL}/v1/modalidade-criterio-julgamento' -H 'accept: */*'
+   curl -X 'GET' '${BASE_URL}/v1/modalidade-criterio-julgamento' -H 'accept: */*'
    ou
    curl -X 'GET' '${BASE_URL}/v1/modalidade-criterio-julgamento?modalidadeId=6' -H 'accept: */*' 
    ou 
-   curl 
-   'GET' '${BASE_URL}/v1/modalidade-criterio-julgamento?criterioJulgamentoId=1' -H 'accept: */*' 
+   curl 'GET' '${BASE_URL}/v1/modalidade-criterio-julgamento?criterioJulgamentoId=1' -H 'accept: */*' 
    ou 
-   curl -X 'GET' 
-   '${BASE_URL}/v1/modalidade-criterio-julgamento?modalidadeId=6&criterioJulgamentoId=1' -H 'accept: */*' 
+   curl -X 'GET' '${BASE_URL}/v1/modalidade-criterio-julgamento?modalidadeId=6&criterioJulgamentoId=1' -H 'accept: */*' 
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
 
 .. Note:: 
+
    Informar um dos parâmetros de consulta: ``modalidadeId`` ou ``criterioJulgamentoId``.
 
 .. list-table::
@@ -134,7 +140,7 @@ Códigos de Retorno
      - BadRequest
      - Erro
    * - 404
-     - Modo de disputa não encontrado
+     - Registro não encontrado
      - NotFound
    * - 422
      - Unprocessable Entity
