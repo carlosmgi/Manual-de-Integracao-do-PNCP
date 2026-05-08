@@ -13,5 +13,4 @@ Gestão de Plataforma
 	:width: 80%
 	:align: center
 	:alt: Redefinição de login e senha
-
 \
