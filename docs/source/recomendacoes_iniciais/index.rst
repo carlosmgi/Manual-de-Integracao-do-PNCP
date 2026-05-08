@@ -2,11 +2,10 @@ Recomendações Iniciais
 ======================
 
 .. container:: destaque-amarelo
+
    Cadastro Inicial dos Órgãos/Entidades e suas Unidades
    -----------------------------------------------------
-   
-   .. note::
-   
+      
       Disponível apenas no ambiente de treinamento/homologação.  
       No ambiente de produção, utilize o procedimento do item `Gestão de Órgão e Entidade. <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/orgao_entidade/gestao_de_orgao_e_entidade.html>`_ 
 
