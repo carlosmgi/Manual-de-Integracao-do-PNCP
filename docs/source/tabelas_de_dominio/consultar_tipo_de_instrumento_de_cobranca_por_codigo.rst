@@ -16,19 +16,27 @@ Detalhes da Requisição
    * - /v1/tipos-instrumentos-cobranca/{id} 
      - GET
 
+Exemplo de Payload
+~~~~~~~~~~~~~~~~~~
+
+.. code-block:: json
+  :linenos:
+
+    Não se aplica
+
 Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
-   curl -X 'GET' 
-   '${BASE_URL}/v1/tipos-instrumentos-cobranca/{id}' -H 'accept: */*'
+   curl -X 'GET' '${BASE_URL}/v1/tipos-instrumentos-cobranca/{id}' -H 'accept: */*'
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-   Informar o parâmetro de path ``id`` na URL.
+
+   Alimentar o path parâmetro ``id`` na URL.
 
 .. list-table::
    :width: 100%
@@ -100,7 +108,7 @@ Códigos de Retorno
      - BadRequest
      - Erro
    * - 404
-     - Modo de disputa não encontrado
+     - Tipo de instrumento cobrança não encontrado
      - NotFound
    * - 422
      - Unprocessable Entity
