@@ -43,15 +43,14 @@ Exemplo Requisição (cURL)
 
 .. code-block:: bash
 
-  	 curl -k -X POST --header "Authorization: Bearer access_token" 
-	"${BASE_URL}/v1/usuarios/5/orgaos" -H "accept: */*" -H "Content-Type: application/json" 
-	--data "@/home/objeto.json" 
+  	 curl -k -X POST --header "Authorization: Bearer access_token" "${BASE_URL}/v1/usuarios/5/orgaos" -H "accept: */*" -H "Content-Type: application/json" --data "@/home/objeto.json" 
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-   Informar o parâmetro ``id`` na URL.
+
+   Alimentar o parâmetro ``id`` na URL.
 
 .. list-table::
    :width: 100%
@@ -69,13 +68,11 @@ Dados de entrada
      - Inteiro
      - Sim
      - Identificador do usuário
-
    * - 2
-     - entesAutorizados
-     - Lista
-     - Sim
+     - Lista de EntesAutorizados
+     - 
+     - 
      - Lista de CNPJs
-
    * - 2.1
      - entesAutorizados
      - Vetor
