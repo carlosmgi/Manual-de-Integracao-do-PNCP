@@ -109,7 +109,6 @@ Cada contrato receberá um número de controle composto por:
 
 
 .. note::
-Nota:
 
    O número PNCP será gerado sequencialmente com 6 dígitos e reiniciado a cada mudança de ano.
 
