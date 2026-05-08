@@ -15,14 +15,21 @@ Detalhes da Requisição
      - Método HTTP
    * - /v1/usuarios 
      - GET
-	 
+
+Exemplo de Payload
+~~~~~~~~~~~~~~~~~~
+
+.. code-block:: json
+  :linenos:
+
+    Não se aplica
+
 Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
-   curl -k -X GET --header "Authorization: Bearer access_token" 
-   "${BASE_URL}/v1/usuarios" -H "accept: */*" 
+   curl -k -X GET --header "Authorization: Bearer access_token" "${BASE_URL}/v1/usuarios" -H "accept: */*" 
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
@@ -64,12 +71,10 @@ Dados de retorno
      - Campo
      - Tipo
      - Descrição
-
    * - 1
-     - usuarios
-     - Lista
      - Lista de usuários
-
+     - 
+     - 
    * - 1.1
      - id
      - Inteiro
@@ -102,7 +107,6 @@ Dados de retorno
      - gestaoEnteAutorizado
      - Booleano
      - Indica se o usuário tem permissão para fazer a gestão de seus entes autorizados
-
    * - 1.9
      - entesAutorizados
      - Lista
