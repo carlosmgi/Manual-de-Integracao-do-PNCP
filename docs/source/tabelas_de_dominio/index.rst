@@ -36,6 +36,7 @@ Benefícios das Tabelas de Domínio e Regras de Conformidade no PNCP:
   tipo_de_termo_de_contrato
   categoria_do_processo
   tipo_de_documento
+  consultar_tipo_documento_por_codigo
   natureza_juridica
   amparo_legal
   consultar_amparo_legal_por_codigo
