@@ -125,9 +125,9 @@ Códigos de Retorno
    * - :destaque:`400`
      - :destaque:`BadRequest`
      - :destaque:`Erro`
-   * - :destaque:`401`
-     - :destaque:`Unauthorized`
-     - :destaque:`Erro`
+   * - :destaque:`404`
+     - :destaque:`Tipo de documento/arquivo não encontrado.`
+     - :destaque:`NotFound`
    * - :destaque:`422`
      - :destaque:`Unprocessable Entity`
      - :destaque:`Erro`
