@@ -16,22 +16,29 @@ Detalhes da Requisição
    * - /v1/tipos-instrumentos-cobranca
      - GET
 
+Exemplo de Payload
+~~~~~~~~~~~~~~~~~~
+
+.. code-block:: json
+  :linenos:
+
+    Não se aplica
+
 Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
-   curl -X 'GET' 
-   '${BASE_URL}/v1/tipos-instrumentos-cobranca' -H 'accept: */*' 
+   curl -X 'GET' '${BASE_URL}/v1/tipos-instrumentos-cobranca' -H 'accept: */*' 
    ou 
-   curl -X 'GET' 
-   '${BASE_URL}/v1/tipos-instrumentos-cobranca?statusAtivo=true' -H 'accept: */*'
+   curl -X 'GET' '${BASE_URL}/v1/tipos-instrumentos-cobranca?statusAtivo=true' -H 'accept: */*'
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-   Informar o parâmetro de query ``statusAtivo``.
+
+   Alimentar o query parâmetro ``statusAtivo``.
 
 .. list-table::
    :width: 100%
@@ -102,9 +109,6 @@ Códigos de Retorno
    * - 400
      - BadRequest
      - Erro
-   * - 404
-     - Modo de disputa não encontrado
-     - NotFound
    * - 422
      - Unprocessable Entity
      - Erro
