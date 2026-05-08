@@ -16,24 +16,29 @@ Detalhes da Requisição
    * - /v1/categoriaItemPcas
      - GET
 
+Exemplo de Payload
+~~~~~~~~~~~~~~~~~~
+
+.. code-block:: json
+  :linenos:
+
+    Não se aplica
+
 Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
-   curl -X 'GET' 
    curl -X 'GET' '${BASE_URL}/v1/categoriaItemPcas' -H 'accept: */*'
    ou
-   curl -X 'GET' 
-   '${BASE_URL}/v1/categoriaItemPcas?statusAtivo=true' -H 'accept: */*'   
+   curl -X 'GET' '${BASE_URL}/v1/categoriaItemPcas?statusAtivo=true' -H 'accept: */*'   
 
 Dados de Entrada
 ~~~~~~~~~~~~~~~~
 
 .. note:: 
 
-Alimentar o query parâmetro {statusAtivo}.
-
+   Alimentar o query parâmetro {statusAtivo}.
 
 .. list-table::
    :width: 100%
@@ -104,7 +109,7 @@ Códigos de Retorno
      - BadRequest
      - Erro
    * - 404
-     - Modo de disputa não encontrado
+     - Categoria de item não encontrado.
      - NotFound
    * - 422
      - Unprocessable Entity
