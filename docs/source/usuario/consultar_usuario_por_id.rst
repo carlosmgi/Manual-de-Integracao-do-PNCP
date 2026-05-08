@@ -15,14 +15,21 @@ Detalhes da Requisição
      - Método HTTP
    * - /v1/usuarios/{id} 
      - GET
-	 
+
+Exemplo de Payload
+~~~~~~~~~~~~~~~~~~
+
+.. code-block:: json
+  :linenos:
+
+    Não se aplica
+
 Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
  
-   curl -k -X GET --header "Authorization: Bearer access_token" 
-   "${BASE_URL}/v1/usuarios/5" -H "accept: */*" 
+   curl -k -X GET --header "Authorization: Bearer access_token" "${BASE_URL}/v1/usuarios/5" -H "accept: */*" 
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
@@ -156,3 +163,4 @@ Códigos de Retorno
    * - 500
      - Internal Server Error
      - Erro
+\
