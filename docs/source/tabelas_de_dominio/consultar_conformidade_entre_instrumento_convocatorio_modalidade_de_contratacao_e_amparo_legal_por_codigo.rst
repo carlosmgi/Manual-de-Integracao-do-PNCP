@@ -17,6 +17,14 @@ Detalhes da Requisição
    * - /v1/tipos-instrumentos-convocatoriosmodalidade-amparo-legal/{amparoLegalId}/{modalidadeId}/{tipoInstrumentoConvocatorioId}
      - GET
 
+Exemplo de Payload
+~~~~~~~~~~~~~~~~~~
+
+.. code-block:: json
+  :linenos:
+
+    Não se aplica
+
 Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -30,7 +38,7 @@ Dados de Entrada
 
 .. note:: 
 
-Alimentar o path parâmetro {amparoLegalId} e {modalidadeId} e {tipoInstrumentoConvocatorioId} na URL. 
+   Alimentar o path parâmetro {amparoLegalId} e {modalidadeId} e {tipoInstrumentoConvocatorioId} na URL. 
 
 .. list-table::
    :width: 100%
@@ -149,7 +157,7 @@ Códigos de Retorno
      - BadRequest
      - Erro
    * - 404
-     - Modo de disputa não encontrado
+     - Registro não encontrado.
      - NotFound
    * - 422
      - Unprocessable Entity
