@@ -135,7 +135,7 @@ Códigos de Retorno
      - BadRequest
      - Erro
    * - 404
-     - Modo de disputa não encontrado
+     - Registro não encontrado
      - NotFound
    * - 422
      - Unprocessable Entity
