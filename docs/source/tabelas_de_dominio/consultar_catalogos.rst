@@ -16,23 +16,29 @@ Detalhes da Requisição
    * - /v1/catalogos
      - GET
 
+Exemplo de Payload
+~~~~~~~~~~~~~~~~~~
+
+.. code-block:: json
+  :linenos:
+
+    Não se aplica
+
 Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
-   curl -X 'GET' 
-   '${BASE_URL}/v1/catalogos' -H 'accept: */*'
+   curl -X 'GET' '${BASE_URL}/v1/catalogos' -H 'accept: */*'
    ou
-   curl -X 'GET' 
-   '${BASE_URL}/v1/catalogos?statusAtivo=true' -H 'accept: */*'
+   curl -X 'GET' '${BASE_URL}/v1/catalogos?statusAtivo=true' -H 'accept: */*'
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
 
-   Informar o parâmetro de query ``statusAtivo``.
+   Alimentar o query parâmetro ``statusAtivo``.
 
 .. list-table::
    :width: 100%
@@ -104,7 +110,7 @@ Códigos de Retorno
      - BadRequest
      - Erro
    * - 404
-     - Modo de disputa não encontrado
+     - Catálogo não encontrado
      - NotFound
    * - 422
      - Unprocessable Entity
