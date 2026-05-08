@@ -391,31 +391,56 @@ Dados de Entrada
      - Texto (15)
      - Não
      - Código NCM ou NBS
-
    * - 18.20
      - ncmNbsDescricao
      - Texto (2048)
      - Não
      - Descrição NCM/NBS
-
+   * - 18.21
+     - categoriaItemCatalogoId
+     - Inteiro
+     - Não
+     - Código da categoria do item conforme catálogo
+   * - 18.22
+     - catalogoId
+     - Inteiro
+     - Não
+     - Código do catálogo de referência
+   * - 18.23
+     - catalogoCodigoItem
+     - Texto (20)
+     - Não
+     - Código do item no catálogo
+   * - 18.24
+     - informacaoComplementar
+     - Texto (4096)
+     - Não
+     - Descrição complementar do item
+   * - 18.25
+     - codigoTipoMargemPreferencia
+     - Inteiro
+     - Não
+     - Código do tipo de margem de preferência (1 – CIIA-PAC; 2 – CICS)
+   * - 18.26
+     - inConteudoNacional
+     - Booleano
+     - Não
+     - Indicador de exigência de conteúdo nacional (False/Não; True/Sim)
    * - 19
      - linkSistemaOrigem
      - Texto (512)
      - Não
      - URL do sistema de origem
-
    * - 20
      - justificativaPresencial
      - Texto (5120)
      - Condicional
      - Obrigatório para modalidade presencial
-
    * - 21
      - linkProcessoEletronico
      - Texto (512)
      - Não
      - URL do processo eletrônico
-
    * - 22
      - fontesOrcamentarias
      - Lista (Inteiro)
