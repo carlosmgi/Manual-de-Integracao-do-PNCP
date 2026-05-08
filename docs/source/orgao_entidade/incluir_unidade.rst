@@ -14,7 +14,7 @@ Será retornado nome do município ``Exterior`` e UF ``EX``.
 .. warning::
 
    Disponível apenas no ambiente de treinamento/homologação.
-   No ambiente de produção, utilize o procedimento do item 6.2.9 – Gestão de Órgão e Entidade.
+   No ambiente de produção, utilize o procedimento do item `Gestão de Órgão e Entidade. <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/orgao_entidade/gestao_de_orgao_e_entidade.html>`_
   
 .. figure:: ../../_static/img/Incluir_unidade_administrativa.jpg
 	:width: 80%
