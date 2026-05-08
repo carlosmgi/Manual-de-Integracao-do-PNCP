@@ -16,19 +16,27 @@ Detalhes da Requisição
    * - /v1/modalidade-fonte-orcamentaria/{modalidadeId}/{fonteOrcamentariaId} 
      - GET
 
+Exemplo de Payload
+~~~~~~~~~~~~~~~~~~
+
+.. code-block:: json
+  :linenos:
+
+    Não se aplica
+
 Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
-   curl -X 'GET' 
-   '${BASE_URL}/v1/modalidade-fonte-orcamentaria/6/1' -H 'accept: */*'
+   curl -X 'GET' '${BASE_URL}/v1/modalidade-fonte-orcamentaria/6/1' -H 'accept: */*'
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-   Informar os parâmetros de path ``modalidadeId`` e ``fonteOrcamentariaId`` na URL.
+   
+   Alimentar o path parâmetro ``modalidadeId`` e ``fonteOrcamentariaId`` na URL.
 
 .. list-table::
    :width: 100%
@@ -84,7 +92,7 @@ Dados de retorno
 
    * - 2
      - fonteOrcamentaria
-     - Objeto
+     - 
      - Dados da Fonte Orçamentária
    * - 2.1
      - id
@@ -126,7 +134,7 @@ Códigos de Retorno
      - BadRequest
      - Erro
    * - 404
-     - Modo de disputa não encontrado
+     - Registro não encontrado
      - NotFound
    * - 422
      - Unprocessable Entity
