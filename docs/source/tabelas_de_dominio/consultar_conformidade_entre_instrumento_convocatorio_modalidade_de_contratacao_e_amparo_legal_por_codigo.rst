@@ -25,13 +25,20 @@ Exemplo de Payload
 
     Não se aplica
 
+Exemplo de Payload
+~~~~~~~~~~~~~~~~~~
+
+.. code-block:: json
+  :linenos:
+
+    Não se aplica
+
 Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
-   curl -X 'GET' 
-   '${BASE_URL}/v1/instrumento-convocatorio-modalidade-amparo-legal/1/6/1' -H 'accept: */*'
+   curl -X 'GET' '${BASE_URL}/v1/instrumento-convocatorio-modalidade-amparo-legal/1/6/1' -H 'accept: */*'
 
 Dados de Entrada
 ~~~~~~~~~~~~~~~~
