@@ -15,6 +15,14 @@ Detalhes da Requisição
    * - /v1/modalidades/{id} 
      - GET
 
+Exemplo de Payload
+~~~~~~~~~~~~~~~~~~
+
+.. code-block:: json
+   :linenos:
+
+   Não se aplica
+
 Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
