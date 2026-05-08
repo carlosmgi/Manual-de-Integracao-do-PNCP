@@ -71,7 +71,7 @@ Dados de retorno
 
    * - 1
      - modalidadeContratacao
-     - Objeto
+     - 
      - Dados da Modalidade de Contratação
    * - 1.1
      - id
