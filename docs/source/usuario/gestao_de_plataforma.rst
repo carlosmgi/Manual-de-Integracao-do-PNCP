@@ -7,6 +7,8 @@ Gestão de Plataforma
   O acesso se dá pela opção Gestão de Plataforma, disponível na Área de Trabalho do PNCP, disponível no endereço https://pncp.gov.br/app/area-de-trabalho
   Ao utilizar essa opção, o sistema realizará as validações necessárias e encaminhará as instruções para o e-mail cadastrado do usuário.
 
+\
+
 .. figure:: ../../_static/img/Redefinicao_login_senha.jpg
 	:width: 80%
 	:align: center
