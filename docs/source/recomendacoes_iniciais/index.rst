@@ -9,6 +9,8 @@ Recomendações Iniciais
       Disponível apenas no ambiente de treinamento/homologação.  
       No ambiente de produção, utilize o procedimento do item `Gestão de Órgão e Entidade. <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/orgao_entidade/gestao_de_orgao_e_entidade.html>`_ 
 
+\
+
 **Plataforma pública:** operada por órgãos ou entidades da Administração Pública.  
 
 **Plataforma privada:** operada por empresas privadas para prestar serviço à Administração Pública.
