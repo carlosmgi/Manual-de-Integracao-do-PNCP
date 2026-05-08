@@ -16,16 +16,22 @@ Detalhes da Requisição
    * - /v1/tipos-instrumentos-convocatorios
      - GET
 
+Exemplo de Payload
+~~~~~~~~~~~~~~~~~~
+
+.. code-block:: json
+   :linenos:
+
+   Não se aplica
+
 Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
-   curl -X 'GET' 
-   '${BASE_URL}/v1/modos-disputas' -H 'accept: */*'
+   curl -X 'GET' '${BASE_URL}/v1/modos-disputas' -H 'accept: */*'
    ou
-   curl -X 'GET' 
-   '${BASE_URL}/v1/modos-disputas?statusAtivo=true' -H 'accept: */*'
+   curl -X 'GET' '${BASE_URL}/v1/modos-disputas?statusAtivo=true' -H 'accept: */*'
 
 
 Dados de Entrada
