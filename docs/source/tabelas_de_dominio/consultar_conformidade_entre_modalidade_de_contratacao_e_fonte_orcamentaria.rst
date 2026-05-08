@@ -16,28 +16,33 @@ Detalhes da Requisição
    * - /v1/modalidade-fonte-orcamentaria 
      - GET
 
+Exemplo de Payload
+~~~~~~~~~~~~~~~~~~
+
+.. code-block:: json
+  :linenos:
+
+    Não se aplica
+
 Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
-   curl -X 'GET' 
-   '${BASE_URL}/v1/modalidade-fonte-orcamentaria' -H 'accept: */*' 
+   curl -X 'GET' '${BASE_URL}/v1/modalidade-fonte-orcamentaria' -H 'accept: */*' 
    ou 
-   curl -X 'GET' 
-   '${BASE_URL}/v1/modalidade-fonte-orcamentaria?modalidadeId=6' -H 'accept: */*' 
+   curl -X 'GET' '${BASE_URL}/v1/modalidade-fonte-orcamentaria?modalidadeId=6' -H 'accept: */*' 
    ou 
-   curl 'GET' 
-   '${BASE_URL}/v1/modalidade-fonte-orcamentaria?fonteOrcamentariaId=1' -H 'accept: */*' 
+   curl 'GET' '${BASE_URL}/v1/modalidade-fonte-orcamentaria?fonteOrcamentariaId=1' -H 'accept: */*' 
    ou 
-   curl -X 'GET' 
-   '${BASE_URL}/v1/modalidade-fonte-orcamentaria?modalidadeId=6&fonteOrcamentariaId=1' -H 'accept: */*'
+   curl -X 'GET' '${BASE_URL}/v1/modalidade-fonte-orcamentaria?modalidadeId=6&fonteOrcamentariaId=1' -H 'accept: */*'
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-   Informar um dos parâmetros de query: ``modalidadeId`` ou ``fonteOrcamentariaId``.
+   
+   Alimentar o query parâmetro ``modalidadeId`` ou ``fonteOrcamentariaId``.
 
 .. list-table::
    :width: 100%
@@ -72,7 +77,7 @@ Dados de retorno (lista de combinações)
 
    * - 1
      - modalidadeContratacao
-     - Objeto
+     - 
      - Dados da Modalidade de Contratação
    * - 1.1
      - id
@@ -93,7 +98,7 @@ Dados de retorno (lista de combinações)
 
    * - 2
      - fonteOrcamentaria
-     - Objeto
+     - 
      - Dados da Fonte Orçamentária
    * - 2.1
      - id
@@ -135,7 +140,7 @@ Códigos de Retorno
      - BadRequest
      - Erro
    * - 404
-     - Modo de disputa não encontrado
+     - Registro não encontrado
      - NotFound
    * - 422
      - Unprocessable Entity
