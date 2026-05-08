@@ -16,13 +16,20 @@ Detalhes da Requisição
    * - /v1/criterios-julgamentos/{id}
      - GET
 
+Exemplo de Payload
+~~~~~~~~~~~~~~~~~~
+
+.. code-block:: json
+   :linenos:
+
+   Não se aplica
+
 Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
-   curl -X 'GET' 
-   '${BASE_URL}/v1/criterios-julgamentos/{id}' -H 'accept: */*'
+   curl -X 'GET' '${BASE_URL}/v1/criterios-julgamentos/{id}' -H 'accept: */*'
 
 Dados de Entrada
 ~~~~~~~~~~~~~~~~
