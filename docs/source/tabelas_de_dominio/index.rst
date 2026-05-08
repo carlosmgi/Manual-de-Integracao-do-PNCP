@@ -17,7 +17,7 @@ Benefícios das Tabelas de Domínio e Regras de Conformidade no PNCP:
 
   instrumento_convocatorio
   consultar_instrumento_convocatorio_por_codigo
-  consultarinstrumentosconvocatorios
+  consultar_instrumentos_convocatorios
   modalidade_de_contratacao
   consultar_modalidade_de_Contratacao_por_codigo
   consultar_modalidade_de_Contratacao
