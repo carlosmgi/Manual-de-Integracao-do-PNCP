@@ -236,15 +236,15 @@ Dados de Entrada
      - Texto (8)
      - Não
      - Time Zone no momento da cotação da moeda estrangeira. Offset no formato 'UTC±[hh][mm]' ou somente 'UTC±[hh]', onde:
-			•	'hh' representa as horas de diferença em relação ao UTC;
-			•	'mm' representa os minutos de diferença em relação ao UTC;
-			•	'+' indica que o fuso horário está adiantado em relação ao UTC;
-			•	'-' indica que o fuso horário está atrasado em relação ao UTC.
+			• 'hh' representa as horas de diferença em relação ao UTC;
+			• 'mm' representa os minutos de diferença em relação ao UTC;
+			• '+' indica que o fuso horário está adiantado em relação ao UTC;
+			• '-' indica que o fuso horário está atrasado em relação ao UTC.
 		Exemplos de Offsets:
-		'UTC+0000' é o próprio horário UTC (também conhecido como GMT).
-		'UTC+0100' é uma hora adiantada em relação ao UTC (horário da Europa Central durante o horário padrão).
-		'UTC-0500' é cinco horas atrasado em relação ao UTC (horário da Costa Leste dos Estados Unidos durante o horário padrão).
-		'UTC+0930' é nove horas e trinta minutos adiantado em relação ao UTC (horário de Adelaide, Austrália).
+			• 'UTC+0000' é o próprio horário UTC (também conhecido como GMT).
+			• 'UTC+0100' é uma hora adiantada em relação ao UTC (horário da Europa Central durante o horário padrão).
+			• 'UTC-0500' é cinco horas atrasado em relação ao UTC (horário da Costa Leste dos Estados Unidos durante o horário padrão).
+			• 'UTC+0930' é nove horas e trinta minutos adiantado em relação ao UTC (horário de Adelaide, Austrália).
    * - 27
      - valorNominalMoedaEstrangeira
      - Decimal
