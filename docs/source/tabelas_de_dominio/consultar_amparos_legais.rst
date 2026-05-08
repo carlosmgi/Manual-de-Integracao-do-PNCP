@@ -16,26 +16,31 @@ Detalhes da Requisição
    * - /v1/amparos-legais
      - GET
 
+Exemplo de Payload
+~~~~~~~~~~~~~~~~~~
+
+.. code-block:: json
+  :linenos:
+
+    Não se aplica
+
 Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
-   curl -X 'GET' 
-   '${BASE_URL}/v1/amparos-legais' -H 'accept: */*'
+   curl -X 'GET' '${BASE_URL}/v1/amparos-legais' -H 'accept: */*'
    ou
-   curl -X 'GET' 
-   '${BASE_URL}/v1/amparos-legais?statusAtivo=true' -H 'accept: */*'
+   curl -X 'GET' '${BASE_URL}/v1/amparos-legais?statusAtivo=true' -H 'accept: */*'
    ou
-   curl -X 'GET' 
-   '${BASE_URL}/v1/amparos-legais?tipoAmparoLegalId=1&statusAtivo=true' -H 'accept: */*'
+   curl -X 'GET' '${BASE_URL}/v1/amparos-legais?tipoAmparoLegalId=1&statusAtivo=true' -H 'accept: */*'
 
 Dados de Entrada
 ~~~~~~~~~~~~~~~~
 
 .. note:: 
 
-Alimentar o path parâmetro {id} na URL.  
+   Alimentar o query parâmetro {statusAtivo} ou {tipoAmparoLegalId}.  
 
    * - Campo
      - Tipo
@@ -50,8 +55,8 @@ Alimentar o path parâmetro {id} na URL.
      - Não
      - Indicador de status do critério de julgamento. True-Ativa / False-Inativa
 
-Dados de retorno
-~~~~~~~~~~~~~~~~
+Dados de retorno (lista de Amparos Legais)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. list-table:: 
    :width: 100%
@@ -125,7 +130,7 @@ Códigos de Retorno
      - BadRequest
      - Erro
    * - 404
-     - Modo de disputa não encontrado
+     - Amparo legal não encontrado.
      - NotFound
    * - 422
      - Unprocessable Entity
