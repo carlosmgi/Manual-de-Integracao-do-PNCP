@@ -30,19 +30,14 @@ Exemplo Requisição (cURL)
 
 .. code-block:: bash
 
-   curl -k -X DELETE \
-     --header "Authorization: Bearer access_token" \
-     "${BASE_URL}/v1/orgaos/10000000000003/pca/2022/1/itens/contratacao" \
-     -H "accept: */*" \
-     -H "Content-Type: application/json" \
-     --data "@/home/objeto.json"
+   curl -k -X DELETE --header "Authorization: Bearer access_token" "${BASE_URL}/v1/orgaos/10000000000003/pca/2022/1/itens/contratacao" -H "accept: */*" -H "Content-Type: application/json"      --data "@/home/objeto.json"
 
 Dados de Entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
 
-   Alimentar o parâmetro {cnpj}, {ano} e {sequencial} na URL.
+   Alimentar os parâmetros ``{cnpj}``, ``{ano}`` e ``{sequencial}`` na URL.
 
 .. list-table::
    :width: 100%
@@ -58,9 +53,7 @@ Dados de Entrada
      - cnpj
      - Texto (14)
      - Sim
-     - Cnpj do órgão a que a unidade
-       administrativa do PCA está
-       vinculada
+     - Cnpj do órgão a que a unidade administrativa do PCA está vinculada
    * - 2
      - ano
      - Inteiro
@@ -70,23 +63,20 @@ Dados de Entrada
      - sequencial
      - Inteiro
      - Sim
-     - Número sequencial gerado
-       pelo PNCP para o plano
-       incluído
+     - Número sequencial gerado pelo PNCP para o plano incluído
    * - 4
      - numeroContratacao
-     - Texto (XXX)
+     - Texto (14)
      - Sim
-     - 
+     - Número ou Código da Contratação Futura
    * - 5
      - justificativa
      - Texto (255)
      - Sim
-     - Motivo/justificativa para
-       exclusão dos itens do plano
+     - Motivo/justificativa para exclusão dos itens do plano
 
-**Códigos de Retorno**
-~~~~~~~~~~~~~~~~~~~~~~
+Códigos de Retorno
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -96,7 +86,7 @@ Dados de Entrada
    * - Código HTTP
      - Mensagem
      - Tipo
-   * - 201
+   * - 200
      - Created
      - Sucesso
    * - 400
