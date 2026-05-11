@@ -41,7 +41,7 @@ Dados de entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-   Informar os parâmetros necessários para exclusão de múltiplos itens do PCA.
+   Alimentar oa parâmetroa ``{cnpj}``, ``{ano}`` e ``{sequencial}`` na URL.
 
 .. list-table::
    :width: 100%
