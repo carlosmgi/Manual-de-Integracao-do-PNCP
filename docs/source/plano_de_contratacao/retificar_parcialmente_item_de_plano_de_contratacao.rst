@@ -93,27 +93,27 @@ Dados de entrada
      - categoriaItemPca
      - Inteiro
      - Não
-     - Código da categoria do item (consultar domínio correspondente)
+     - Código da categoria do item. Consultar item Categoria de Item para mais informações
    * - 6
      - catalogo
      - Inteiro
      - Não
-     - Código do catálogo de itens utilizado como referência
+     - Código do Catálogo de itens utilizado como referência. Consultar item 5.23 Catálogos para mais informações
    * - 7
      - classificacaoCatalogo
      - Inteiro
      - Não
-     - Indica se é material ou serviço (1 - Material; 2 - Serviço)
+     - Indica se é Material ou Serviço. Domínio: 1 - Material; 2 - Serviço;
    * - 8
      - classificacaoSuperiorCodigo
      - Texto (100)
      - Não
-     - Código da classe do material ou grupo do serviço conforme catálogo
+     - Código da Classe do material ou Grupo do serviço conforme catálogo
    * - 9
      - classificacaoSuperiorNome
      - Texto (255)
      - Não
-     - Descrição da classe do material ou grupo do serviço conforme catálogo
+     - Descrição da Classe do material ou Grupo do serviço conforme catálogo
    * - 10
      - pdmCodigo
      - Texto (100)
@@ -128,7 +128,7 @@ Dados de entrada
      - codigoItem
      - Texto (100)
      - Não
-     - Código do material ou serviço conforme o catálogo utilizado
+     - Código do Material ou Serviço conforme o catálogo utilizado
    * - 13
      - descricao
      - Texto (2048)
@@ -143,22 +143,22 @@ Dados de entrada
      - quantidade
      - Decimal (17,4)
      - Não
-     - Quantidade do item (≥ 0), com precisão de 4 casas decimais (ex: 100.0000)
+     - Quantidade do item do plano (maior ou igual a zero). Precisão de 4 dígitos decimais; Ex: 100.0000;
    * - 16
      - valorUnitario
      - Decimal (17,4)
      - Não
-     - Valor unitário do item (≥ 0), com precisão de 4 casas decimais (ex: 100.0000)
+     - Valor unitário do item (maior ou igual a zero). Precisão de 4 dígitos decimais; Ex: 100.0000;
    * - 17
      - valorTotal
      - Decimal (17,4)
      - Não
-     - Valor total do item (≥ 0), com precisão de 4 casas decimais (ex: 100.0000)
+     - Valor total do item (maior ou igual a zero). Precisão de 4 dígitos decimais; Ex: 100.0000;
    * - 18
      - valorOrcamentoExercicio
      - Decimal (17,4)
      - Não
-     - Valor orçamentário estimado para o exercício (≥ 0), com precisão de 4 casas decimais
+     - Valor orçamentário estimado para o exercício (maior ou igual a zero). Precisão de 4 dígitos decimais; Ex: 100.0000;
    * - 19
      - dataDesejada
      - Date
