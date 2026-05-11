@@ -41,7 +41,7 @@ Dados de entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-   Alimentar oa parâmetroa ``{cnpj}``, ``{ano}`` e ``{sequencial}`` na URL.
+   Alimentar os parâmetros ``{cnpj}``, ``{ano}`` e ``{sequencial}`` na URL.
 
 .. list-table::
    :width: 100%
