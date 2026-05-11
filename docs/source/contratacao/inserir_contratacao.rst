@@ -191,196 +191,235 @@ Dados de Entrada
      - Texto (50)
      - Sim
      - Número da contratação no sistema de origem sem o ano. Esse número é gerado pelo usuário no seu sistema de origem (ex. Pregão 14)
+
    * - 9
      - anoCompra
      - Inteiro
      - Sim
      - Ano da contratação. Esse é o ano relacionado ao número da contratação. (Ex: 2021)
+
    * - 10
      - numeroProcesso
      - Texto (50)
      - Sim
      - Número do processo no sistema de origem
+
    * - 11
      - objetoCompra
      - Texto (5120)
      - Sim
      - Objeto da contratação
+
    * - 12
      - informacaoComplementar
      - Texto (5120)
      - Não
      - Informações complementares; Se existir;
+
    * - 13
      - srp
      - Booleano
      - Sim
      - Identifica se a compra trata-se de um SRP (Sistema de registro de preços). Contratações na modalidade leilão informar false.
+
    * - 14
      - dataAberturaProposta
      - Data/Hora
      - Obrigatório para Tipo de Instrumento Convocatório 1 ou 2. Tipo 3 será desprezado.
      - Informar a data e hora de início do recebimento das propostas (pelo horário de Brasília)
+
    * - 15
      - dataEncerramentoProposta
      - Data/Hora
      - Obrigatório para Tipo de Instrumento Convocatório 1 ou 2. Tipo 3 será desprezado.
      - Informar a data e hora de encerramento do recebimento das propostas (pelo horário de Brasília)
+
    * - 16
      - amparoLegalId
      - Inteiro
      - Sim
      - Código da tabela de domínio Amparo Legal
+
    * - 17
      - itensCompra
      - Lista
      - Sim
      - Lista de itens da contratação
+
    * - 17.1
      - numeroItem
      - Inteiro
      - Sim
      - Número do item na contratação (único e sequencial crescente)
+
    * - 17.2
      - materialOuServico
      - Texto (1)
      - Sim
      - Domínio: M - Material; S - Serviço; Contratações na modalidade leilão informar M.
+
    * - 17.3
      - tipoBeneficioId
      - Inteiro
      - Sim
      - Código da tabela de domínio Tipo de benefício. Contratações na modalidade leilão informar opção “Não se aplica”.
+
    * - 17.4
      - incentivoProdutivoBasico
      - Booleano
      - Sim
     - Incentivo fiscal PPB (Processo Produtivo Básico); true - Possui o incentivo; false - Não possui o incentivo; Contratações na modalidade leilão informar false.
+
    * - 17.5
      - descricao
      - Texto (2048)
      - Sim
      - Descrição para o produto ou serviço;
+
    * - 17.6
      - quantidade
      - Decimal
      - Sim
      - Quantidade do item da contratação. Precisão de 4 dígitos decimais; Ex: 100.0000;
+
    * - 17.7
      - unidadeMedida
      - Texto (30)
      - Sim
      - Unidade de medida do item da contratação
+
    * - 17.8
      - valorUnitarioEstimado
      - Decimal
      - Sim
      - Valor unitário estimado para o item da contratação. Maior ou igual a 0 (zero). Precisão de 4 dígitos decimais; Ex: 100.0000;
+
    * - 17.9
      - valorTotal
      - Decimal
      - Sim
      - Valor total para contratação tradicional. Maior ou igual a 0 (zero). Precisão de 4 dígitos decimais; Ex: 100.0000;
+
    * - 17.10
      - criterioJulgamentoId
      - Inteiro
      - Sim
      - Código da tabela de domínio Critério de julgamento
+
    * - 17.11
      - orcamentoSigiloso
      - Booleano
      - Sim
      - Identifica se o orçamento do item é sigiloso; true - Sigiloso; false - Não sigiloso; Contratações na modalidade leilão informar false.
+
    * - 17.12
      - itemCategoriaId
      - Inteiro
      - Não
      - Categoria do item. Domínios 1 ou 2 aplicados à modalidade leilão. Outras modalidades de contratação utilizar o domínio 3.Domínio: 1 – Bens Imóveis; 2 – Bens Móveis; 3 - Não se aplica
+
    * - 17.13
      - patrimonio
      - Texto (255)
      - Condicional
      - Código de Patrimonio do Item de bens móveis quando existir.
+
    * - 17.14
      - codigoRegistroImobiliario
      - Texto (255)
      - Obrigatório para contratação na modalidade leilão cuja categoria do item seja bens imóveis.
      - Código de Registro Imobiliário.
+
    * - 17.15
      - aplicabilidadeMargemPreferenciaNormal
      - Booleano
      - Sim
      - Indicador da aplicabilidade de Margem de Preferência Normal para o item. (False/Não; True/Sim)
+
    * - 17.16
      - aplicabilidadeMargemPreferenciaAdicional
      - Booleano
      - Sim
      - Indicador da aplicabilidade de Margem de Preferência Adicional para o item. (False/Não; True/Sim)
+
    * - 17.17
      - percentualMargemPreferenciaNormal
      - Decimal
      - Obrigatório quando indicador de aplicabilidade de Margem de Preferência Normal for “True/Sim”.
      - Percentual de Margem de Preferência Normal. Maior ou igual a 0 (zero) e menor que 100. Ex: 10.0000; Se indicador de aplicabilidade de Margem de Preferência Normal for “false/Não” enviar NULO.
+
    * - 17.18
      - percentualMargemPreferenciaAdicional
      - Decimal
      - Obrigatório quando indicador de aplicabilidade de Margem de Preferência Adicional for “True/Sim”.
      - Percentual de Margem de Preferência Adicional. Maior ou igual a 0 (zero) e menor que 100. Ex: 10.0000; Se indicador de aplicabilidade de Margem de Preferência Adicional for “false/Não” enviar NULO.
+
    * - 17.19
      - ncmNbsCodigo
      - Texto (15)
      - Não
      - Código NCM do material ou Código NBS do serviço com ou sem a formatação da máscara.
+
    * - 17.20
      - ncmNbsDescricao
      - Texto (2048)
      - Não
      - Descrição respectiva ao NCM para material ou NBS para serviço.
+
    * - 17.21
      - categoriaItemCatalogoId
      - Inteiro
      - Não
      - Código da categoria do item. Consultar item 5.17 Categoria de Item para mais informações
+
    * - 17.22
      - catalogoId
      - Inteiro
      - Não
      - Código do Catálogo de itens utilizado como referência. Consultar item 5.23 Catálogos para mais informações
+
    * - 17.23
      - catalogoCodigoItem
      - Texto (20)
      - Não
      - Código do item conforme consta no Catálogo utilizado como referência.
+
    * - 17.24
      - informacaoComplementar
      - Texto (4096)
      - Não
      - Descrição complementar para o produto ou serviço
+
    * - 17.25
      - codigoTipoMargemPreferencia
      - Inteiro
      - Não
      - Código do tipo de margem de preferência. Domínio: 1 – Resolução CIIA-PAC; 2 – Resolução CICS;
+
    * - 17.26
      - inConteudoNacional
      - Booleano
      - Não
      - Indicador de Exigência de Conteúdo Nacional (False/Não; True/Sim)
+
    * - 18
      - linkSistemaOrigem
      - Texto (512)
      - Não
      - URL para página/portal do sistema de origem da contratação para recebimento de proposta/lance. Esta url será exibida no Portal PNCP no detalhamento da Contratação.
+
    * - 19
      - justificativaPresencial
      - Texto (5120)
      - Obrigatório para as modalidades de contratação presencial
      - Justificativa pela escolha da modalidade presencial.
+
    * - 20
      - linkProcessoEletronico
      - Texto (512)
      - Não
      - URL para página do sistema de controle de processos eletrônicos com os dados do processo desta contratação. Esta url será exibida no Portal PNCP
+
    * - 21
      - fontesOrcamentarias
      - Lista (Inteiro)
