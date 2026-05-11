@@ -130,13 +130,13 @@ Dados de Entrada
 
    * - 10
      - objetoCompra
-     - Texto (5120)
+     - Texto (512)
      - Sim
      - Objeto da contratação
 
    * - 11
      - informacaoComplementar
-     - Texto (5120)
+     - Texto (512)
      - Não
      - Informações complementares; Se existir;
 
@@ -190,7 +190,7 @@ Dados de Entrada
 
    * - 20
      - justificativaPresencial
-     - Texto (5120)
+     - Texto (512)
      - Obrigatório para as modalidades de contratação presencial
      - Justificativa pela escolha da modalidade presencial.
 
