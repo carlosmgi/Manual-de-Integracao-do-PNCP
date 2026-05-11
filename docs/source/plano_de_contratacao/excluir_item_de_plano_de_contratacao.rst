@@ -39,7 +39,7 @@ Dados de entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-   Informar os parâmetros necessários para exclusão de item do PCA.
+   Alimentar os parâmetros ``{cnpj}``, ``{ano}``, ``{sequencial}`` e ``{numeroItem}`` na URL.
 
 .. list-table::
    :width: 100%
