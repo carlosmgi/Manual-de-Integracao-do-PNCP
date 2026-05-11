@@ -32,13 +32,13 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
   :linenos:
 
-    curl -X 'GET' 'https://treina.pncp.gov.br/api/pncp/v1/orgaos/00394460000141/pca/2022/ valorcategoriaitem' \ -H 'accept: */*'
+    curl -X 'GET' 'https://treina.pncp.gov.br/api/pncp/v1/orgaos/00394460000141/pca/2022/ valorcategoriaitem' -H 'accept: */*'
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-   Informar os parâmetros necessários para consulta do PCA por categoria de item.
+   Alimentar o parâmetro {cnpj} e {ano} na URL.
 
 .. list-table::
    :width: 100%
