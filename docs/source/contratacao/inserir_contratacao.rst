@@ -4,7 +4,7 @@ Inserir Contratação
 Serviço que permite inserir uma contratação pública (módulo contratação/edital/aviso) no PNCP. O sistema exige o upload de um arquivo anexo à contratação enviada. O serviço requer que seja enviado pelo menos um item e o limite máximo de recebimento é de 2000 itens por requisição. 
 As extensões permitidas para o arquivo anexo são listadas na seção: Tabelas de domínio - Extensões de arquivo aceitos pelas APIs de Documento. 
 
-.. warning::
+.. Atention::
 
     Deve-se observar as regras de conformidade implementadas entre Instrumento Convocatório, Modalidade e Amparo Legal e Instrumento Convocatório e Modo de Disputa     descritas na seção 5 deste Manual. O PNCP não receberá novas contratações ou permitirá a retificação se os campos informados não estiverem em conformidade.
 
@@ -45,10 +45,7 @@ Exemplo de Payload
     	"linkSistemaOrigem": "url do sistema de origem para envio de proposta / lance",
     	"linkProcessoEletronico": "url para página do sistema de controle de processos eletrônicos com os dados do processo desta contratação",
     	"justificativaPresencial": "texto de justificativa pela escolha da modalidade presencial",
-    	"fontesOrcamentarias": [
-    		1,
-    		2
-    	],
+    	"fontesOrcamentarias": [1,2],
     	"itensCompra": [
     		{
     			"numeroItem": 1,
@@ -109,30 +106,10 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
 
        Enviando como arquivo: 
-    curl -k -X POST --header "Authorization: Beareraccess_token" "${BASE_URL}/v1/orgaos
-    /10000000000003/compras" -H "accept: */*" -H "Content-Type: multipart/form-data" -H 'Titulo
-    Documento: nome_do_arquivo' -H 'Tipo-Documento-Id: 1' --form 
-    ‘compra=@”/home/objeto.json";type=application/json ’ --form ‘documento=@”arquivo.pdf” ’ 
+    curl -k -X POST --header "Authorization: Beareraccess_token" "${BASE_URL}/v1/orgaos/10000000000003/compras" -H "accept: */*" -H "Content-Type: multipart/form-data" -H 'Titulo Documento: nome_do_arquivo' -H 'Tipo-Documento-Id: 1' --form ‘compra=@”/home/objeto.json";type=application/json ’ --form ‘documento=@”arquivo.pdf” ’ 
      
     Enviando como JSON: 
-    curl -k -X POST --header "Authorization: Beareraccess_token" "${BASE_URL}/v1/orgaos
-    /10000000000003/compras" -H "accept: */*" -H "Content-Type: multipart/form-data" -H 'Titulo
-    Documento: nome_do_arquivo' -H 'Tipo-Documento-Id: 1' --form ‘compra=@” { \"anoCompra\": 2021, 
-      \"itensCompra\": [ { \"numeroItem\": 1, \"materialOuServico\": \"M\",  \"tipoBeneficioId\": \"1\", 
-    \"incentivoProdutivoBasico\": false,  \"descricao\": \"string\", \"quantidade\": 1, \"unidadeMedida\": 
-    \"string\", \"orcamentoSigiloso\": false, \"valorUnitarioEstimado\": 1, \"valorTotal\": 1, 
-    \"criterioJulgamentoId\": \"1\", \"itemCategoriaId\": \"1\", \"patrimonio\": \"string\", 
-    \"codigoRegistroImobiliario\": \"string\", \"aplicabilidadeMargemPreferenciaNormal\": true, 
-    \"aplicabilidadeMargemPreferenciaAdicional\": true, \"percentualMargemPreferenciaNormal\": 
-    10.0000 , \"percentualMargemPreferenciaAdicional\": 10.0000, \"catalogoId\": 1, 
-    \"categoriaItemCatalogoId\": 1, \"catalogoCodigoItem\": \"string\", \"informacaoComplementar\": 
-    \"string\"  } ], \"tipoInstrumentoConvocatorioId\": \"1\", \"modalidadeId\": \"6\", \"modoDisputaId\": 
-    \"1\", \"numeroCompra\": \"1\", \"numeroProcesso\": \"1\", \"objetoCompra\": \"string\", 
-    \"informacaoComplementar\": \"string\", \"amparoLegalId\": 1, \"srp\": true, 
-    \"dataAberturaProposta\": \"2022-01-18T14:30:01\", \"dataEncerramentoProposta\": \"2022-01
-    31T14:30:01\", \"codigoUnidadeCompradora\": \"1\", \"linkSistemaOrigem\": \"string\", 
-    \"linkProcessoEletronico\": \"string\", \"justificativaPresencial\": \"string\" }";type=application/json ’ -
-    form ‘documento=@”arquivo.pdf” ’ 
+    curl -k -X POST --header "Authorization: Beareraccess_token" "${BASE_URL}/v1/orgaos/10000000000003/compras" -H "accept: */*" -H "Content-Type: multipart/form-data" -H 'Titulo Documento: nome_do_arquivo' -H 'Tipo-Documento-Id: 1' --form ‘compra=@” { \"anoCompra\": 2021, \"itensCompra\": [ { \"numeroItem\": 1, \"materialOuServico\": \"M\",  \"tipoBeneficioId\": \"1\", \"incentivoProdutivoBasico\": false,  \"descricao\": \"string\", \"quantidade\": 1, \"unidadeMedida\": \"string\", \"orcamentoSigiloso\": false, \"valorUnitarioEstimado\": 1, \"valorTotal\": 1,     \"criterioJulgamentoId\": \"1\", \"itemCategoriaId\": \"1\", \"patrimonio\": \"string\",     \"codigoRegistroImobiliario\": \"string\", \"aplicabilidadeMargemPreferenciaNormal\": true,     \"aplicabilidadeMargemPreferenciaAdicional\": true, \"percentualMargemPreferenciaNormal\": 10.0000 , \"percentualMargemPreferenciaAdicional\": 10.0000, \"catalogoId\": 1, \"categoriaItemCatalogoId\": 1, \"catalogoCodigoItem\": \"string\", \"informacaoComplementar\":     \"string\"  } ], \"tipoInstrumentoConvocatorioId\": \"1\", \"modalidadeId\": \"6\", \"modoDisputaId\": \"1\", \"numeroCompra\": \"1\", \"numeroProcesso\": \"1\", \"objetoCompra\": \"string\", \"informacaoComplementar\": \"string\", \"amparoLegalId\": 1, \"srp\": true, \"dataAberturaProposta\": \"2022-01-18T14:30:01\", \"dataEncerramentoProposta\": \"2022-01 31T14:30:01\", \"codigoUnidadeCompradora\": \"1\", \"linkSistemaOrigem\": \"string\", \"linkProcessoEletronico\": \"string\", \"justificativaPresencial\": \"string\" }";type=application/json ’ -form ‘documento=@”arquivo.pdf” ’ 
 
 
 Exemplo Requisição (Java, usando Spring/RestTemplate) 
@@ -162,7 +139,6 @@ Dados de Entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-
    Alimentar os parâmetros ``cnpj``, ``Titulo-Documento`` e ``Tipo-Documento-Id`` na URL.
 
 .. list-table::
@@ -175,277 +151,242 @@ Dados de Entrada
      - Tipo
      - Obrigatório
      - Descrição
-
    * - 1
      - cnpj
      - Texto (14)
      - Sim
-     - CNPJ do órgão originário da contratação
-
+     - Cnpj do órgão originário da contratação (proprietário da contratação ou alienação de bens)
    * - 2
      - tituloDocumento
      - Texto (255)
      - Sim
      - Título do documento
-
    * - 3
      - tipoDocumentoId
      - Inteiro
      - Sim
      - Código da tabela de domínio Tipo de documento
-
    * - 4
      - codigoUnidadeCompradora
      - Texto (20)
      - Sim
-     - Código da unidade administrativa cadastrada para o órgão
-
+     - Código da unidade; A unidade deverá estar cadastrada para o órgão originário da contratação (proprietário da contratação ou alienação de bens)
    * - 5
      - tipoInstrumentoConvocatorioId
      - Inteiro
      - Sim
      - Código da tabela de domínio Tipo de instrumento convocatório
-
    * - 6
      - modalidadeId
      - Inteiro
      - Sim
      - Código da tabela de domínio Modalidade
-
    * - 7
      - modoDisputaId
      - Inteiro
      - Sim
      - Código da tabela de domínio Modo de disputa
-
    * - 8
      - numeroCompra
      - Texto (50)
      - Sim
-     - Número da contratação no sistema de origem
-
+     - Número da contratação no sistema de origem sem o ano. Esse número é gerado pelo usuário no seu sistema de origem (ex. Pregão 14)
    * - 9
      - anoCompra
      - Inteiro
      - Sim
-     - Ano da contratação
-
+     - Ano da contratação. Esse é o ano relacionado ao número da contratação. (Ex: 2021)
    * - 10
      - numeroProcesso
      - Texto (50)
      - Sim
      - Número do processo no sistema de origem
-
    * - 11
      - objetoCompra
      - Texto (5120)
      - Sim
      - Objeto da contratação
-
    * - 12
      - informacaoComplementar
      - Texto (5120)
      - Não
-     - Informações complementares
-
+     - Informações complementares; Se existir;
    * - 13
      - srp
      - Booleano
      - Sim
-     - Indica se é Sistema de Registro de Preços (SRP)
-
-   * - 15
+     - Identifica se a compra trata-se de um SRP (Sistema de registro de preços). Contratações na modalidade leilão informar false.
+   * - 14
      - dataAberturaProposta
      - Data/Hora
-     - Condicional
-     - Obrigatório para tipos 1 ou 2; informar data de início das propostas
-
-   * - 16
+     - Obrigatório para Tipo de Instrumento Convocatório 1 ou 2. Tipo 3 será desprezado.
+     - Informar a data e hora de início do recebimento das propostas (pelo horário de Brasília)
+   * - 15
      - dataEncerramentoProposta
      - Data/Hora
-     - Condicional
-     - Obrigatório para tipos 1 ou 2; informar data de encerramento
-
-   * - 17
+     - Obrigatório para Tipo de Instrumento Convocatório 1 ou 2. Tipo 3 será desprezado.
+     - Informar a data e hora de encerramento do recebimento das propostas (pelo horário de Brasília)
+   * - 16
      - amparoLegalId
      - Inteiro
      - Sim
      - Código da tabela de domínio Amparo Legal
-
-   * - 18
+   * - 17
      - itensCompra
      - Lista
      - Sim
      - Lista de itens da contratação
-
-   * - 18.1
+   * - 17.1
      - numeroItem
      - Inteiro
      - Sim
-     - Número sequencial do item
-
-   * - 18.2
+     - Número do item na contratação (único e sequencial crescente)
+   * - 17.2
      - materialOuServico
      - Texto (1)
      - Sim
-     - M = Material; S = Serviço
-
-   * - 18.3
+     - Domínio: M - Material; S - Serviço; Contratações na modalidade leilão informar M.
+   * - 17.3
      - tipoBeneficioId
      - Inteiro
      - Sim
-     - Código da tabela Tipo de benefício
-
+     - Código da tabela de domínio Tipo de benefício. Contratações na modalidade leilão informar opção “Não se aplica”.
    * - 18.4
      - incentivoProdutivoBasico
      - Booleano
      - Sim
-     - Indica incentivo PPB
-
-   * - 18.5
+    - Incentivo fiscal PPB (Processo Produtivo Básico); true - Possui o incentivo; false - Não possui o incentivo; Contratações na modalidade leilão informar false.
+   * - 17.5
      - descricao
      - Texto (2048)
      - Sim
-     - Descrição do item
-
-   * - 18.6
+     - Descrição para o produto ou serviço;
+   * - 17.6
      - quantidade
      - Decimal
      - Sim
-     - Quantidade com até 4 casas decimais
-
-   * - 18.7
+     - Quantidade do item da contratação. Precisão de 4 dígitos decimais; Ex: 100.0000;
+   * - 17.7
      - unidadeMedida
      - Texto (30)
      - Sim
-     - Unidade de medida
-
-   * - 18.8
+     - Unidade de medida do item da contratação
+   * - 17.8
      - valorUnitarioEstimado
      - Decimal
      - Sim
-     - Valor unitário estimado
-
-   * - 18.9
+     - Valor unitário estimado para o item da contratação. Maior ou igual a 0 (zero). Precisão de 4 dígitos decimais; Ex: 100.0000;
+   * - 17.9
      - valorTotal
      - Decimal
      - Sim
-     - Valor total do item
-
+     - Valor total para contratação tradicional. Maior ou igual a 0 (zero). Precisão de 4 dígitos decimais; Ex: 100.0000;
    * - 18.10
      - criterioJulgamentoId
      - Inteiro
      - Sim
-     - Código do critério de julgamento
-
-   * - 18.11
+     - Código da tabela de domínio Critério de julgamento
+   * - 17.11
      - orcamentoSigiloso
      - Booleano
      - Sim
-     - Indica se o orçamento é sigiloso
-
-   * - 18.12
+     - Identifica se o orçamento do item é sigiloso; true - Sigiloso; false - Não sigiloso; Contratações na modalidade leilão informar false.
+   * - 17.12
      - itemCategoriaId
      - Inteiro
      - Não
-     - Categoria do item (domínios 1, 2 ou 3)
-
-   * - 18.13
+     - Categoria do item. Domínios 1 ou 2 aplicados à modalidade leilão. Outras modalidades de contratação utilizar o domínio 3.
+Domínio: 1 – Bens Imóveis; 2 – Bens Móveis; 3 - Não se aplica
+   * - 17.13
      - patrimonio
      - Texto (255)
      - Condicional
-     - Obrigatório para leilão com bens móveis
-
-   * - 18.14
+     - Código de Patrimonio do Item de bens móveis quando existir.
+   * - 17.14
      - codigoRegistroImobiliario
      - Texto (255)
-     - Condicional
-     - Obrigatório para leilão com bens imóveis
-
-   * - 18.15
+     - Obrigatório para contratação na modalidade leilão cuja categoria do item seja bens imóveis.
+     - Código de Registro Imobiliário.
+   * - 17.15
      - aplicabilidadeMargemPreferenciaNormal
      - Booleano
      - Sim
-     - Indica margem de preferência normal
-
-   * - 18.16
+     - Indicador da aplicabilidade de Margem de Preferência Normal para o item. (False/Não; True/Sim)
+   * - 17.16
      - aplicabilidadeMargemPreferenciaAdicional
      - Booleano
      - Sim
-     - Indica margem de preferência adicional
-
-   * - 18.17
+     - Indicador da aplicabilidade de Margem de Preferência Adicional para o item. (False/Não; True/Sim)
+   * - 17.17
      - percentualMargemPreferenciaNormal
      - Decimal
-     - Condicional
-     - Obrigatório se margem normal for verdadeira
-
-   * - 18.18
+     - Obrigatório quando indicador de aplicabilidade de Margem de Preferência Normal for “True/Sim”.
+     - Percentual de Margem de Preferência Normal. Maior ou igual a 0 (zero) e menor que 100. Ex: 10.0000; Se indicador de aplicabilidade de Margem de Preferência Normal for “false/Não” enviar NULO.
+   * - 17.18
      - percentualMargemPreferenciaAdicional
      - Decimal
-     - Condicional
-     - Obrigatório se margem adicional for verdadeira
-
-   * - 18.19
+     - Obrigatório quando indicador de aplicabilidade de Margem de Preferência Adicional for “True/Sim”.
+     - Percentual de Margem de Preferência Adicional. Maior ou igual a 0 (zero) e menor que 100. Ex: 10.0000; Se indicador de aplicabilidade de Margem de Preferência Adicional for “false/Não” enviar NULO.
+   * - 17.19
      - ncmNbsCodigo
      - Texto (15)
      - Não
-     - Código NCM ou NBS
-   * - 18.20
+     - Código NCM do material ou Código NBS do serviço com ou sem a formatação da máscara.
+   * - 17.20
      - ncmNbsDescricao
      - Texto (2048)
      - Não
-     - Descrição NCM/NBS
-   * - 18.21
+     - Descrição respectiva ao NCM para material ou NBS para serviço.
+   * - 17.21
      - categoriaItemCatalogoId
      - Inteiro
      - Não
-     - Código da categoria do item conforme catálogo
-   * - 18.22
+     - Código da categoria do item. Consultar item 5.17 Categoria de Item para mais informações
+   * - 17.22
      - catalogoId
      - Inteiro
      - Não
-     - Código do catálogo de referência
-   * - 18.23
+     - Código do Catálogo de itens utilizado como referência. Consultar item 5.23 Catálogos para mais informações
+   * - 17.23
      - catalogoCodigoItem
      - Texto (20)
      - Não
-     - Código do item no catálogo
-   * - 18.24
+     - Código do item conforme consta no Catálogo utilizado como referência.
+   * - 17.24
      - informacaoComplementar
      - Texto (4096)
      - Não
-     - Descrição complementar do item
-   * - 18.25
+     - Descrição complementar para o produto ou serviço
+   * - 17.25
      - codigoTipoMargemPreferencia
      - Inteiro
      - Não
-     - Código do tipo de margem de preferência (1 – CIIA-PAC; 2 – CICS)
-   * - 18.26
+     - Código do tipo de margem de preferência. Domínio: 1 – Resolução CIIA-PAC; 2 – Resolução CICS;
+   * - 17.26
      - inConteudoNacional
      - Booleano
      - Não
-     - Indicador de exigência de conteúdo nacional (False/Não; True/Sim)
-   * - 19
+     - Indicador de Exigência de Conteúdo Nacional (False/Não; True/Sim)
+   * - 18
      - linkSistemaOrigem
      - Texto (512)
      - Não
-     - URL do sistema de origem
-   * - 20
+     - URL para página/portal do sistema de origem da contratação para recebimento de proposta/lance. Esta url será exibida no Portal PNCP no detalhamento da Contratação.
+   * - 19
      - justificativaPresencial
      - Texto (5120)
-     - Condicional
-     - Obrigatório para modalidade presencial
-   * - 21
+     - Obrigatório para as modalidades de contratação presencial
+     - Justificativa pela escolha da modalidade presencial.
+   * - 20
      - linkProcessoEletronico
      - Texto (512)
      - Não
-     - URL do processo eletrônico
-   * - 22
+     - URL para página do sistema de controle de processos eletrônicos com os dados do processo desta contratação. Esta url será exibida no Portal PNCP
+   * - 21
      - fontesOrcamentarias
      - Lista (Inteiro)
      - Não
-     - Lista de fontes orçamentárias
+     - Lista de fontes orçamentárias da contratação. Código da fonte orçamentária. Consultar itens 5.25. Fonte Orçamentária e 5.26. Regra de conformidade entre Modalidade de Contratação e Fonte Orçamentária para mais informações
 
 
 Dados de Retorno
