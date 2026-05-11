@@ -295,8 +295,7 @@ Dados de Entrada
      - itemCategoriaId
      - Inteiro
      - Não
-     - Categoria do item. Domínios 1 ou 2 aplicados à modalidade leilão. Outras modalidades de contratação utilizar o domínio 3.
-Domínio: 1 – Bens Imóveis; 2 – Bens Móveis; 3 - Não se aplica
+     - Categoria do item. Domínios 1 ou 2 aplicados à modalidade leilão. Outras modalidades de contratação utilizar o domínio 3.Domínio: 1 – Bens Imóveis; 2 – Bens Móveis; 3 - Não se aplica
    * - 17.13
      - patrimonio
      - Texto (255)
