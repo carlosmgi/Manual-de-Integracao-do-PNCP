@@ -143,7 +143,7 @@ Dados de Entrada
 
 .. list-table::
    :width: 100%
-   :widths: 5 23 15 20 45
+   :widths: 5 25 15 20 45
    :header-rows: 1
    :class: quebra-linha
 
