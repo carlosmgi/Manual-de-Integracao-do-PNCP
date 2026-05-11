@@ -227,7 +227,7 @@ Dados de Entrada
      - Data/Hora
      - Obrigatório para Tipo de Instrumento Convocatório 1 ou 2.
 
-	   Tipo 3 será desprezado.
+Tipo 3 será desprezado.
      - Informar a data e hora de início do recebimento das propostas (pelo horário de Brasília)
 
    * - 15
@@ -235,7 +235,7 @@ Dados de Entrada
      - Data/Hora
      - Obrigatório para Tipo de Instrumento Convocatório 1 ou 2.
 	   
-	   Tipo 3 será desprezado.
+Tipo 3 será desprezado.
      - Informar a data e hora de encerramento do recebimento das propostas (pelo horário de Brasília)
 
    * - 16
