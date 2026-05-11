@@ -29,3 +29,10 @@ kbd {
     white-space: normal;
     text-align: justify;    
 }
+
+table.quebra-linha td,
+table.quebra-linha th {
+  white-space: normal !important;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
