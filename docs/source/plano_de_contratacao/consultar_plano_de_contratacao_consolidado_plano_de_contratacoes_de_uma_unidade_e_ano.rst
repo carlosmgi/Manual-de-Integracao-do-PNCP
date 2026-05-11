@@ -33,14 +33,14 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
   :linenos:
 
-    curl -X 'GET' \ 'https://treina.pncp.gov.br/api/pncp/v1/orgaos/00394460000141/pca/2022/1/consolidado' \ -H 'accept: */*'
+    curl -X 'GET' \ 'https://treina.pncp.gov.br/api/pncp/v1/orgaos/00394460000141/pca/2022/1/consolidado' -H 'accept: */*'
 
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-   Informar os parâmetros necessários para consulta do PCA por identificador sequencial.
+   Alimentar o parâmetro {cnpj}, {ano} e {sequencial} na URL.
 
 .. list-table::
    :width: 100%
@@ -66,13 +66,10 @@ Dados de entrada
      - sequencial
      - Inteiro
      - Sim
-     - Sequencial do PCA no PNCP; número sequencial gerado no momento da inclusão
+     - Sequencial do PCA no PNCP; Número sequencial gerado no momento que o plano da unidade foi inserido no PNCP
 
 Dados de retorno
 ~~~~~~~~~~~~~~~~
-
-.. note::
-   Estrutura de dados detalhada do PCA por unidade administrativa.
 
 .. list-table::
    :width: 100%
