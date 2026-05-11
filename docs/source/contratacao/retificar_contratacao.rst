@@ -200,6 +200,7 @@ Dados de Entrada
      - Não
      - URL para página do sistema de controle de processos eletrônicos com os dados do processo desta contratação. Esta url será exibida no Portal PNCP no detalhamento da Contratação.
 
+
 Códigos de Retorno
 ~~~~~~~~~~~~~~~~~~
 
@@ -208,8 +209,8 @@ Códigos de Retorno
    :widths: auto
    :header-rows: 1
 
-    * - Código HTTP
-     - Mensagem
+   * - Código HTTP
+	 - Mensagem
      - Tipo
    * - 200
      - OK
