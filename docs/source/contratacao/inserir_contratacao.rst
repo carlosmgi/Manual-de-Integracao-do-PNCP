@@ -251,7 +251,7 @@ Dados de Entrada
      - Inteiro
      - Sim
      - Código da tabela de domínio Tipo de benefício. Contratações na modalidade leilão informar opção “Não se aplica”.
-   * - 18.4
+   * - 17.4
      - incentivoProdutivoBasico
      - Booleano
      - Sim
@@ -281,7 +281,7 @@ Dados de Entrada
      - Decimal
      - Sim
      - Valor total para contratação tradicional. Maior ou igual a 0 (zero). Precisão de 4 dígitos decimais; Ex: 100.0000;
-   * - 18.10
+   * - 17.10
      - criterioJulgamentoId
      - Inteiro
      - Sim
