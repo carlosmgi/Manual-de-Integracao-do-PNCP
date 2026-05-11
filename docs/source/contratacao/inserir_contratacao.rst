@@ -225,13 +225,13 @@ Dados de Entrada
    * - 14
      - dataAberturaProposta
      - Data/Hora
-     - Obrigatório para Tipo de Instrumento Convocatório 1 ou 2. Tipo 3 será desprezado.
+     - Obrigatório para Tipo de Instrumento Convocatório 1 ou 2.\ Tipo 3 será desprezado.
      - Informar a data e hora de início do recebimento das propostas (pelo horário de Brasília)
 
    * - 15
      - dataEncerramentoProposta
      - Data/Hora
-     - Obrigatório para Tipo de Instrumento Convocatório 1 ou 2. Tipo 3 será desprezado.
+     - Obrigatório para Tipo de Instrumento Convocatório 1 ou 2.\ Tipo 3 será desprezado.
      - Informar a data e hora de encerramento do recebimento das propostas (pelo horário de Brasília)
 
    * - 16
@@ -327,7 +327,7 @@ Dados de Entrada
    * - 17.14
      - codigoRegistroImobiliario
      - Texto (255)
-     - Obrigatório para contratação na modalidade leilão cuja categoria do item seja bens imóveis.
+     - Obrigatório para contratação\ na modalidade leilão\ cuja categoria do item\ seja bens imóveis.
      - Código de Registro Imobiliário.
 
    * - 17.15
