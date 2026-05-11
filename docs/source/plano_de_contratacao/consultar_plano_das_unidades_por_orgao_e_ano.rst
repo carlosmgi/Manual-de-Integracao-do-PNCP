@@ -38,7 +38,7 @@ Dados de entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-   Informar os parâmetros necessários para consulta paginada do PCA.
+   Alimentar o parâmetro {cnpj}, {ano} e {sequencial} na URL.
 
 .. list-table::
    :width: 100%
@@ -73,9 +73,6 @@ Dados de entrada
 
 Dados de retorno
 ~~~~~~~~~~~~~~~~
-
-.. note::
-   Lista de PCAs por unidade administrativa do órgão.
 
 .. list-table::
    :width: 100%
