@@ -26,16 +26,13 @@ Exemplo Requisição (cURL)
 
 .. code-block:: bash
 
-   curl -X GET \
-     "https://treina.pncp.gov.br/api/pncp/v1/orgaos/00394460000141/pca/2022/csv" \
-     -H "accept: */*"
+   curl -X GET "https://treina.pncp.gov.br/api/pncp/v1/orgaos/00394460000141/pca/2022/csv" -H "accept: */*"
 
 Dados de Entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-
-  Alimentar o parâmetro {cnpj} e {ano} na URL.
+  Alimentar os parâmetros ``{cnpj}`` e ``{ano}`` na URL.
 
 .. list-table::
    :width: 100%
@@ -51,9 +48,7 @@ Dados de Entrada
      - cnpj
      - Texto (14)
      - Sim
-     - Cnpj do órgão a que a unidade
-       administrativa do PCA está
-       vinculada
+     - Cnpj do órgão a que a unidade administrativa do PCA está vinculada
    * - 2
      - ano
      - Inteiro
@@ -77,8 +72,8 @@ Dados de retorno
      - Texto
      - Arquivo texto em formato csv
 
-**Códigos de Retorno**
-~~~~~~~~~~~~~~~~~~~~~~
+Códigos de Retorno
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -88,7 +83,7 @@ Dados de retorno
    * - Código HTTP
      - Mensagem
      - Tipo
-   * - 201
+   * - 200
      - Created
      - Sucesso
    * - 400
