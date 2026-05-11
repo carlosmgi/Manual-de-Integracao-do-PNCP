@@ -210,7 +210,7 @@ Códigos de Retorno
    :header-rows: 1
 
    * - Código HTTP
-	 - Mensagem
+     - Mensagem
      - Tipo
    * - 200
      - OK
@@ -220,7 +220,7 @@ Códigos de Retorno
      - Erro
    * - 422
      - Unprocessable Entity
-     - NotFound
+     - Erro
    * - 500
      - Internal Server Error
      - Erro
