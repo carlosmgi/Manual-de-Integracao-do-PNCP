@@ -143,7 +143,7 @@ Dados de Entrada
 
 .. list-table::
    :width: 100%
-   :widths: 5 15 5 5 25
+   :widths: 5 10 5 5 45
    :header-rows: 1
 
    * - Id
