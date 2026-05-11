@@ -3,7 +3,7 @@ Retificar Parcialmente uma Contratação
 
 Serviço que permite retificar parcialmente os dados de uma contratação. Este serviço será acionado por qualquer plataforma digital credenciada. **Na retificação parcial, podem se enviados apenas as informações que sofrerão alteração. Por exemplo, se desejar apenas atualizar a situação de uma contratação, deve informar apenas o atributo situacaoCompraId e ignorar todos os demais atributos.** 
 
-.. warning::
+.. Attention::
 
 	Fica impedida a retificação da contratação caso a mesma não possua documento/arquivo ativo vinculado a ela no PNCP. Deve-se observar as regras de conformidade implementadas entre Instrumento Convocatório, Modalidade e Amparo Legal e Instrumento Convocatório e Modo de Disputa descritas na seção 5 deste Manual. O PNCP não receberá novas contratações ou permitirá a retificação se os campos informados não estiverem em conformidade.
 
@@ -26,27 +26,30 @@ Exemplo de Payload
 
 .. code-block:: json
   :linenos:
+  :emphasize-lines: 19
 
 	{
-		"tipoInstrumentoConvocatorioId": "1",
-		"modalidadeId": "1",
-		"modoDisputaId": "1",
-		"numeroCompra": "1",
-		"numeroProcesso": "1/2021",
-		"situacaoCompraId": "1",
-		"objetoCompra": "Objeto da contratação",
-		"informacaoComplementar": "",
-		"cnpjOrgaoSubRogado": "",
-		"codigoUnidadeSubRogada": "",
-		"srp": true,
-		"dataAberturaProposta": "2021-07-21T08:00:00",
-		"dataEncerramentoProposta": "2021-07-22T17:00:00",
-		"amparoLegalId": "1",
-		"linkSistemaOrigem": "url do sistema de origem para envio de proposta / lance",
-		"linkProcessoEletronico": "url para página do sistema de controle de processos eletrônicos com os dados do processo desta  contratação",
-		"justificativaPresencial": "justificativa pela escolha da modalidade presencial",
-		"justificativa": "motivo/justificativa para a retificação da contratação"
+		  "tipoInstrumentoConvocatorioId": "1",
+		  "modalidadeId": "1",
+		  "modoDisputaId": "1",
+		  "numeroCompra": "1",
+		  "numeroProcesso": "1/2021",
+		  "situacaoCompraId": "1",
+		  "objetoCompra": "Objeto da contratação",
+		  "informacaoComplementar": "",
+		  "cnpjOrgaoSubRogado": "",
+		  "codigoUnidadeSubRogada": "",
+		  "srp": true,
+		  "dataAberturaProposta": "2021-07-21T08:00:00",
+		  "dataEncerramentoProposta": "2021-07-22T17:00:00",
+		  "amparoLegalId": "1",
+		  "linkSistemaOrigem": "url do sistema de origem para envio de proposta / lance",
+		  "linkProcessoEletronico": "url para página do sistema de controle de processos eletrônicos com os dados do processo desta contratação",
+		  "justificativaPresencial": "justificativa pela escolha da modalidade presencial",
+		  "emendaParlamentar": false,
+		  "justificativa": "motivo/justificativa para a retificação da contratação"
 	}
+
   
 
 Exemplo Requisição (cURL)
@@ -54,8 +57,7 @@ Exemplo Requisição (cURL)
 
 .. code-block:: bash
 
-	curl -k -X  PATCH --header "Authorization: Bearer access_token" 
-	"${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1" -H "accept: */*" -H "Content-Type: application/json" 
+	curl -k -X  PATCH --header "Authorization: Bearer access_token" "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1" -H "accept: */*" -H "Content-Type: application/json" 
 
 Dados de Entrada
 ~~~~~~~~~~~~~~~~
@@ -66,8 +68,9 @@ Dados de Entrada
 
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 10 25 18 20 45
    :header-rows: 1
+   :class: quebra-linha
 
    * - Id
      - Campo
@@ -79,8 +82,7 @@ Dados de Entrada
      - cnpj
      - Texto (14)
      - Sim
-     - CNPJ do órgão originário da contratação
-
+     - Cnpj do órgão originário da contratação informado na inclusão (proprietário da contratação ou alienação de bens)
    * - 2
      - ano
      - Inteiro
@@ -91,7 +93,7 @@ Dados de Entrada
      - sequencial
      - Inteiro
      - Sim
-     - Sequencial da contratação no PNCP
+     - Sequencial da contratação no PNCP; Número sequencial gerado no momento que a contratação foi inserida no PNCP;
 
    * - 4
      - tipoInstrumentoConvocatorioId
@@ -115,13 +117,13 @@ Dados de Entrada
      - numeroCompra
      - Texto (50)
      - Não
-     - Número da contratação no sistema de origem
+     - Número da Contratação no sistema de origem sem o ano
 
    * - 8
      - numeroProcesso
      - Texto (50)
      - Não
-     - Número do processo no sistema de origem
+     - Número do processo de Contratação no sistema de origem
 
    * - 9
      - situacaoCompraId
@@ -131,7 +133,7 @@ Dados de Entrada
 
    * - 10
      - objetoCompra
-     - Texto (5120)
+     - Texto (512)
      - Não
      - Objeto da contratação
 
@@ -139,67 +141,72 @@ Dados de Entrada
      - informacaoComplementar
      - Texto (5120)
      - Não
-     - Informações complementares
+     - Informações complementares; Se existir;
 
    * - 12
      - cnpjOrgaoSubRogado
      - Texto (14)
      - Não
-     - CNPJ do órgão sub-rogado
+     - CNPJ do órgão subrogado.
 
    * - 13
      - codigoUnidadeSubRogada
      - Texto (30)
      - Não
-     - Código da unidade sub-rogada
+     - Código da unidade subrogada
 
    * - 14
      - srp
      - Booleano
      - Não
-     - Indica se a contratação é SRP; para leilão informar false
+     - Identifica se a compra trata-se de um SRP (Sistema de registro de preços) Contratações na modalidade leilão informar false.
 
-   * - 16
+   * - 15
      - dataAberturaProposta
      - Data/Hora
-     - Condicional
-     - Obrigatório para tipo de instrumento 1 ou 2
+     - Obrigatório para Tipo de Instrumento Convocatório 1 ou 2. Tipo 3 será desprezado.
+     - Informar a data e hora de início do recebimento das propostas (pelo horário de Brasília)
 
-   * - 17
+   * - 16
      - dataEncerramentoProposta
      - Data/Hora
-     - Condicional
-     - Obrigatório para tipo de instrumento 1 ou 2
+     - Obrigatório para Tipo de Instrumento Convocatório 1 ou 2. Tipo 3 será desprezado.
+     - Informar a data e hora de encerramento do recebimento das propostas (pelo horário de Brasília)
 
-   * - 18
+   * - 17
      - amparoLegalId
      - Inteiro
      - Não
      - Código da tabela de domínio Amparo Legal
 
-   * - 19
+   * - 18
      - linkSistemaOrigem
      - Texto (512)
      - Não
-     - URL do sistema de origem
+     - URL para página/portal do sistema de origem da contratação para recebimento de proposta/lance. Esta url será exibida no Portal PNCP no detalhamento da Contratação.
 
-   * - 20
+   * - 19
      - justificativa
      - Texto (255)
      - Sim
-     - Justificativa para retificação da contratação
+     - Motivo/justificativa para a retificação dos atributos da contratação.
+
+   * - 20
+     - justificativaPresencial
+     - Texto (512)
+     - Obrigatório para as modalidades de contratação presencial
+     - Justificativa pela escolha da modalidade presencial.
 
    * - 21
-     - justificativaPresencial
-     - Texto (5120)
-     - Condicional
-     - Obrigatório para modalidade presencial
-
-   * - 22
      - linkProcessoEletronico
      - Texto (512)
      - Não
-     - URL do processo eletrônico
+     - URL para página do sistema de controle de processos eletrônicos com os dados do processo desta contratação. Esta url será exibida no Portal PNCP no detalhamento da Contratação.
+   * - :destaque:`22`
+     - :destaque:`emendaParlamentar`
+     - :destaque:`Boleano`
+     - :destaque:`Não`
+     - :destaque:`Marcador de emenda parlamentar na Contratação.`
 
 Códigos de Retorno
 ~~~~~~~~~~~~~~~~~~
