@@ -268,7 +268,7 @@ Dados de Entrada
      - incentivoProdutivoBasico
      - Booleano
      - Sim
-    - Incentivo fiscal PPB (Processo Produtivo Básico); true - Possui o incentivo; false - Não possui o incentivo; Contratações na modalidade leilão informar false.
+     - Incentivo fiscal PPB (Processo Produtivo Básico); true - Possui o incentivo; false - Não possui o incentivo; Contratações na modalidade leilão informar false.
 
    * - 17.5
      - descricao
