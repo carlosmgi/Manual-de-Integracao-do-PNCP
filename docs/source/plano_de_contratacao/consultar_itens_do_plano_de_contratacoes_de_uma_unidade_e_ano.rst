@@ -32,16 +32,14 @@ Exemplo Requisição (cURL)
 
 .. code-block:: bash
   :linenos:
-  :emphasize-lines: 1
 
-	  curl -X 'GET' 'https://treina.pncp.gov.br/api/pncp/v1/orgaos/00394460000141/pca/2022/1/itens' \
-	   -H 'accept: */*'
+	  curl -X 'GET' 'https://treina.pncp.gov.br/api/pncp/v1/orgaos/00394460000141/pca/2022/1/itens' -H 'accept: */*'
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-   Informar os parâmetros necessários para consulta do PCA com filtro por categoria e paginação.
+   alimentar o parâmetro ``{cnpj}``, ``{ano}`` e ``{sequencial}`` na URL.
 
 .. list-table::
    :width: 100%
@@ -67,7 +65,7 @@ Dados de entrada
      - sequencial
      - Inteiro
      - Sim
-     - Sequencial do PCA no PNCP; número sequencial gerado no momento da inclusão
+     - Sequencial do PCA no PNCP; Número sequencial gerado no momento que o plano da unidade foi inserido no PNCP
    * - 4
      - categoria
      - Inteiro
@@ -127,15 +125,15 @@ Dados de retorno
    * - 1.7
      - categoriaItemPcaId
      - Inteiro
-     - Código da categoria do item (consultar domínio correspondente)
+     - Código da categoria do item. Consultar item Categoria de Item para mais informações
    * - 1.8
      - nomeClassificacao
      - Texto
-     - Indica se o item é material ou serviço (1 - Material; 2 - Serviço)
+     - Nome da Indicação se Item é Material ou Serviço. Domínio: 1 - Material; 2 - Serviço;
    * - 1.9
      - nomeCatalogo
      - Texto
-     - Nome do catálogo de itens utilizado como referência
+     - Nome do Catálogo de itens utilizado como referência. Consultar item 5.23 Catálogos para mais informações
    * - 1.10
      - classificacaoSuperiorCodigo
      - Texto (100)
@@ -167,19 +165,19 @@ Dados de retorno
    * - 1.17
      - quantidade
      - Decimal
-     - Quantidade do item (≥ 0), com até 4 casas decimais (ex: 10.0001)
+     - Quantidade do item do plano de contratação (maior ou igual a zero). Precisão de até 4 dígitos decimais; Ex: 10.0001;
    * - 1.18
      - valorUnitario
      - Decimal
-     - Valor unitário do item (≥ 0), com até 4 casas decimais (ex: 100.0001)
+     - Valor unitário do item (maior ou igual a zero). Precisão de até 4 dígitos decimais; Ex: 100.0001;
    * - 1.19
      - valorTotal
      - Decimal
-     - Valor total do item (≥ 0), com até 4 casas decimais (ex: 100.0001)
+     - Valor total do item (maior ou igual a zero). Precisão de até 4 dígitos decimais; Ex: 100.0001;
    * - 1.20
      - valorOrcamentoExercicio
      - Decimal
-     - Valor orçamentário estimado para o exercício (≥ 0), com até 4 casas decimais
+     - Valor orçamentário estimado para o exercício (maior ou igual a zero). Precisão de até 4 dígitos decimais; Ex: 100.0001;
    * - 1.21
      - dataDesejada
      - Data
@@ -199,27 +197,27 @@ Dados de retorno
    * - 1.25
      - dataPublicacaoPncp
      - Data
-     - Data de publicação do item no PNCP
+     - Data da publicação do item do plano no PNCP
    * - 1.26
      - dataInclusao
      - Data
-     - Data de inclusão do registro no PNCP
+     - Data da inclusão do registro do item do plano no PNCP
    * - 1.27
      - dataAtualizacao
      - Data
-     - Data da última atualização do registro
+     - Data da última atualização do registro do item do plano
    * - 1.28
      - catalogoId
      - Inteiro
-     - Código do catálogo utilizado (1 - CNBS; 2 - Outros)
+     - Código do catálogo de materiais e/ ou serviços utilizado. Domínio: 1 - CNBS (Catálogo Nacional de Bens e Serviços); 2 - Outros;
    * - 1.29
      - categoriaItemPcaNome
      - Texto
-     - Nome da categoria do item conforme domínio
+     - Nome da categoria do item conforme tabela de domínio Categoria do Item do Plano de Contratações
    * - 1.30
      - classificacaoCatalogoId
      - Texto
-     - Código da classificação (1 - Material; 2 - Serviço)
+     - Código da Indicação se Item é Material ou Serviço. Domínio: 1 - Material; 2 - Serviço;
 
 Códigos de Retorno
 ~~~~~~~~~~~~~~~~~~
