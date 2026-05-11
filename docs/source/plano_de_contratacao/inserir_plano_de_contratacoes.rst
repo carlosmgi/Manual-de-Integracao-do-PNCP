@@ -80,12 +80,7 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
    :linenos:
 
-   curl -k -X POST \
-     --header "Authorization: Bearer access_token" \
-     "${BASE_URL}/v1/orgaos/10000000000003/pca" \
-     -H "accept: */*" \
-     -H "Content-Type: application/json" \
-     --data "@/home/objeto.json"
+   curl -k -X POST --header "Authorization: Bearer access_token" "${BASE_URL}/v1/orgaos/10000000000003/pca" -H "accept: */*" -H "Content-Type: application/json" --data "@/home/objeto.json"
 
 Dados de Entrada
 ~~~~~~~~~~~~~~~~
@@ -104,52 +99,37 @@ Dados de Entrada
      - Tipo
      - Obrigatório
      - Descrição
-
    * - 1
      - cnpj
      - Texto (14)
      - Sim
-     - Cnpj do órgão a que a
-       unidade administrativa do
-       PCA está vinculada
-
+     - Cnpj do órgão a que a unidade administrativa do PCA está vinculada
    * - 2
      - codigoUnidade
      - Texto (20)
      - Sim
-     - Código da unidade
-       administrativa; Unidade
-       deverá estar cadastrada
-       para o órgão;
-
+     - Código da unidade administrativa; Unidade deverá estar cadastrada para o órgão;
    * - 3
      - anoPca
      - Inteiro
      - Sim
      - Ano do PCA
-
    * - 4
      - itensPlano
      - Lista
      - Sim
      - Lista de itens do Plano
-
    * - 4.1
      - numeroItem
      - Inteiro
      - Sim
-     - Número do item no Plano
-       (único e sequencial
-       crescente)
-
+     - Número do item no Plano (único e sequencial crescente)
    * - 4.2
      - categoriaItemPca
      - Inteiro
      - Sim
      - Código da categoria do
-       item. Consultar item 5.17 Categoria de Item para mais 
-       informações.
-
+       item. Consultar item 5.17 Categoria de Item para mais informações.
    * - 4.3
      - catalogo
      - Inteiro
@@ -157,133 +137,87 @@ Dados de Entrada
      - Código do Catálogo de itens
        utilizado como referência.
        Consultar item 5.23
-       Catálogos para mais
-       informações
-
+       Catálogos para mais informações
    * - 4.4
      - classificacaoCatalogo
      - Inteiro
      - Sim
-     - Indica se é Material ou
-       Serviço. Domínio: 1 -
-       Material; 2 - Serviço;
-
+     - Indica se é Material ou Serviço. Domínio: 1 - Material; 2 - Serviço;
    * - 4.5
      - classificacaoSuperiorCodigo
      - Texto (100)
      - Sim
-     - Código da Classe do
-       material ou Grupo do
-       serviço conforme catálogo
-
+     - Código da Classe do material ou Grupo do serviço conforme catálogo
    * - 4.6
      - classificacaoSuperiorNome
      - Texto (255)
      - Sim
-     - Descrição da Classe do
-       material ou Grupo do
-       serviço conforme catálogo
-
+     - Descrição da Classe do material ou Grupo do serviço conforme catálogo
    * - 4.7
      - pdmCodigo
      - Texto (100)
      - Não
-     - Código PDM referente ao
-       material conforme o CNBS
-
+     - Código PDM referente ao material conforme o CNBS
    * - 4.8
      - pdmDescricao
      - Texto (255)
      - Não
-     - Descrição PDM referente ao
-       material conforme o CNBS
-
+     - Descrição PDM referente ao material conforme o CNBS
    * - 4.9
      - codigoItem
      - Texto (100)
      - Não
-     - Código do Material ou
-       Serviço conforme o
-       catálogo utilizado
-
+     - Código do Material ou Serviço conforme o catálogo utilizado
    * - 4.10
      - descricao
      - Texto (2048)
      - Não
-     - Descrição do material ou
-       serviço conforme catálogo
-       utilizado
-
+     - Descrição do material ou serviço conforme catálogo utilizado
    * - 4.11
      - unidadeFornecimento
      - Texto (255)
      - Não
      - Unidade de fornecimento
-
    * - 4.12
      - quantidade
      - Decimal (17,4)
      - Sim
-     - Quantidade de itens do
-       plano (maior ou igual a zero).
-       Precisão de 4 dígitos
-       decimais; Ex: 100.0000;
-
+     - Quantidade de itens do plano (maior ou igual a zero). Precisão de 4 dígitos decimais; Ex: 100.0000;
    * - 4.13
      - valorUnitario
      - Decimal (17,4)
      - Sim
-     - Valor unitário do item (maior
-       ou igual a zero). Precisão de
-       4 dígitos decimais; Ex:
-       100.0000;
-
+     - Valor unitário do item (maior ou igual a zero). Precisão de 4 dígitos decimais; Ex: 100.0000;
    * - 4.14
      - valorTotal
      - Decimal (17,4)
      - Sim
-     - Valor total do item (maior ou
-       igual a zero). Precisão de 4
-       dígitos decimais; Ex:
-       100.0000;
-
+     - Valor total do item (maior ou igual a zero). Precisão de 4 dígitos decimais; Ex: 100.0000;
    * - 4.15
      - valorOrcamentoExercicio
      - Decimal (17,4)
      - Sim
-     - Valor orçamentário
-       estimado para o exercício
-       (maior ou igual a zero).
-       Precisão de 4 dígitos
-       decimais; Ex: 100.0000;
-
+     - Valor orçamentário estimado para o exercício (maior ou igual a zero). Precisão de 4 dígitos decimais; Ex: 100.0000;
    * - 4.16
      - dataDesejada
      - Date
      - Sim
-     - Data desejada para a
-       contratação
-
+     - Data desejada para a contratação
    * - 4.17
      - unidadeRequisitante
      - Texto (255)
      - Não
-     - Nome da unidade
-       requisitante
-
+     - Nome da unidade requisitante
    * - 4.18
      - grupoContratacaoCodigo
      - Texto (100)
      - Não
-     - Código da Contratação
-       Futura
-
+     - Código da Contratação Futura
    * - 4.19
      - grupoContratacaoNome
      - Texto (255)
      - Não
-     - Nome da Contratação
-       Futura
+     - Nome da Contratação Futura
 
 Dados de Retorno
 ~~~~~~~~~~~~~~~~
@@ -298,15 +232,14 @@ Dados de Retorno
      - Tipo
      - Obrigatório
      - Descrição
-
    * - 1
      - location
      - Texto (255)
      - Sim
      - Endereço http do recurso criado
 
-**Códigos de Retorno**
-~~~~~~~~~~~~~~~~~~~~~~
+Códigos de Retorno
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -316,7 +249,7 @@ Dados de Retorno
    * - Código HTTP
      - Mensagem
      - Tipo
-   * - 201
+   * - 200
      - Created
      - Sucesso
    * - 400
