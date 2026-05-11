@@ -68,7 +68,7 @@ Dados de Entrada
 
 .. list-table::
    :width: 100%
-   :widths: 10 25 18 20 45
+   :widths: 12 25 18 20 45
    :header-rows: 1
    :class: quebra-linha
 
