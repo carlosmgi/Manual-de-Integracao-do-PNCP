@@ -69,7 +69,6 @@ Exemplo Requisição (cURL)
 
 .. code-block:: bash
   :linenos:
-  :emphasize-lines: 1
 
 	curl -k -X POST --header "Authorization: Bearer access_token" "${BASE_URL}/v1/orgaos/10000000000003/pca/2022/1/itens " -H "accept: */*" -H "Content-Type: application/json" --data "@/home/objeto.json"
 
@@ -208,9 +207,6 @@ Dados de entrada
 Dados de retorno
 ~~~~~~~~~~~~~~~~
 
-.. note::
-   Endereço do recurso criado após o processamento da requisição.
-
 .. list-table::
    :width: 100%
    :widths: auto
@@ -228,7 +224,7 @@ Dados de retorno
      - Endereço HTTP do recurso criado
 
 Exemplo de Retorno
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
 
