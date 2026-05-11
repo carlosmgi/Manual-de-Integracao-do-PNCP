@@ -327,10 +327,7 @@ Dados de Entrada
    * - 17.14
      - codigoRegistroImobiliario
      - Texto (255)
-     - Obrigatório para contratação
-		na modalidade leilão
-		cuja categoria do item
-		seja bens imóveis.
+     - Obrigatório para contratação na modalidade leilão cuja categoria do item seja bens imóveis.
      - Código de Registro Imobiliário.
 
    * - 17.15
