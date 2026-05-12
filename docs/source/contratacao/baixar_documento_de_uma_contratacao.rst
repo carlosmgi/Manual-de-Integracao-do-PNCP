@@ -22,20 +22,27 @@ Exemplo Requisição (cURL)
 
 .. code-block:: bash
 
-	curl -k -X GET "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/arquivos/1" -H 
-	"Accept: */*”
+	curl -k -X GET "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/arquivos/1" -H "Accept: */*”
+
+Exemplo de Payload
+------------------
+
+.. code-block:: json
+  :linenos:
+
+	Não se aplica
 
 Dados de Entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-
    Alimentar os parâmetros ``cnpj``, ``ano``, ``sequencial`` e ``sequencialDocumento`` na URL.
 
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 5 10 10 15 55
    :header-rows: 1
+   :class: quebra-ultima-coluna
 
    * - Id
      - Campo
@@ -47,7 +54,7 @@ Dados de Entrada
      - cnpj
      - Texto (14)
      - Sim
-     - CNPJ do órgão originário da contratação
+     - Cnpj do órgão originário da contratação informado na inclusão (proprietário da contratação ou alienação de bens)
 
    * - 2
      - ano
@@ -59,13 +66,13 @@ Dados de Entrada
      - sequencial
      - Inteiro
      - Sim
-     - Sequencial da contratação no PNCP
+     - Sequencial da Contratação no PNCP; Número sequencial gerado no momento que a contratação foi inserida no PNCP;
 
    * - 4
      - sequencialDocumento
      - Inteiro
      - Sim
-     - Sequencial do documento no PNCP
+     - Sequencial do documento no PNCP; Número sequencial gerado no momento que o documento foi inserido no PNCP;
 
 Dados de Retorno
 ~~~~~~~~~~~~~~~~
@@ -104,7 +111,7 @@ Códigos de Retorno
      - Erro
    * - 422
      - Unprocessable Entity
-     - NotFound
+     - Erro
    * - 500
      - Internal Server Error
      - Erro
