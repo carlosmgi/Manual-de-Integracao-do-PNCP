@@ -30,16 +30,16 @@ kbd {
     text-align: justify;    
 }
 
-table.quebra-linha :is(td, th):nth-child(2),
-table.quebra-linha :is(td, th):nth-child(4),
-table.quebra-linha :is(td, th):nth-child(5) {
+table.quebra-coluna :is(td, th):nth-child(2),
+table.quebra-coluna :is(td, th):nth-child(4),
+table.quebra-coluna :is(td, th):nth-child(5) {
   white-space: normal !important;
   word-break: break-word;
   overflow-wrap: anywhere;
 }
 
-table.quebra-ultima-linha td:nth-last-child(-n+1),
-table.quebra-ultima-linha th:nth-last-child(-n+1) {
+table.quebra-ultima-coluna td:nth-last-child(-n+1),
+table.quebra-ultima-coluna th:nth-last-child(-n+1) {
   white-space: normal !important;
   word-break: break-word;
   overflow-wrap: anywhere;
