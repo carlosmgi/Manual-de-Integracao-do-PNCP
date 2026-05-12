@@ -16,6 +16,14 @@ Detalhes da Requisição
    * - /v1/orgaos/{cnpj}/compras/{ano}/{sequencial}/arquivos 
      - POST
 
+Exemplo de Payload
+------------------
+
+.. code-block:: json
+  :linenos:
+
+	Não de aplica
+
 
 Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -23,20 +31,20 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
 
 	curl -k -X POST --header "Authorization: Bearer access_token" 
-	"${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/arquivos" -H "accept: */*" -H 
-	"Content-Type: multipart/form-data" -H "Titulo-Documento: Edital-2021-1" -H "Tipo-Documento-Id: 2" -F "arquivo=@Edital-2021-1.pdf;type=application/pdf" 
+	"${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/arquivos" -H "accept: */*" -H "Content-Type: multipart/form-data" 
+	-H "Titulo-Documento: Edital-2021-1" -H "Tipo-Documento-Id: 2" -F "arquivo=@Edital-2021-1.pdf;type=application/pdf" 
 
 Dados de Entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-
    Alimentar os parâmetros ``cnpj``, ``ano`` e ``sequencial`` na URL.
 
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 5 15 10 25 55
    :header-rows: 1
+   :class: quebra-ultima-coluna
 
    * - Id
      - Campo
@@ -48,7 +56,7 @@ Dados de Entrada
      - cnpj
      - Texto (14)
      - Sim
-     - CNPJ do órgão originário da contratação
+     - Cnpj do órgão originário da contratação informado na inclusão (proprietário da contratação ou alienação de bens)
 
    * - 2
      - ano
@@ -60,7 +68,7 @@ Dados de Entrada
      - sequencial
      - Inteiro
      - Sim
-     - Sequencial da contratação no PNCP
+     - Sequencial da Contratação no PNCP; Número sequencial gerado no momento que a contratação foi inserida no PNCP;
 
    * - 4
      - tituloDocumento
@@ -78,7 +86,7 @@ Dados de Entrada
      - arquivo
      - Binário
      - Sim
-     - Conteúdo do arquivo em formato binário
+     - String binária do arquivo
 
 Dados de Retorno
 ~~~~~~~~~~~~~~~~
@@ -142,7 +150,7 @@ Códigos de Retorno
      - Erro
    * - 422
      - Unprocessable Entity
-     - NotFound
+     - Erro
    * - 500
      - Internal Server Error
      - Erro
