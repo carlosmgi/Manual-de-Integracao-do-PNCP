@@ -32,7 +32,7 @@ Dados de Entrada
 
 .. list-table::
    :width: 100%
-   :widths: 5 15 10 25 55
+   :widths: 5 10 10 15 55
    :header-rows: 1
    :class: quebra-ultima-coluna
 
@@ -62,7 +62,7 @@ Dados de Retorno
 
 .. list-table::
    :width: 100%
-   :widths: 5 15 25 55
+   :widths: 5 10 15 55
    :header-rows: 1
    :class: quebra-ultima-coluna
 
