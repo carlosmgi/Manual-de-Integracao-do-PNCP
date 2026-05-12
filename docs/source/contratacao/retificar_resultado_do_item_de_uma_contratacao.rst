@@ -3,7 +3,7 @@ Retificar Resultado do Item de uma Contratação
 
 Serviço para retificar um resultado do item de uma contratação, ou para alterar a situação de um resultado do item conforme tabela de domínio de situação do Resultado do item de uma contratação. **Importante lembrar que na Retificação todas as informações terão que ser enviadas novamente, não apenas as que sofreram alteração.**
 
-.. warning::
+.. Attention::
 
 	Fica impedida a retificação do resultado, caso a contratação não possua documento/arquivo ativo vinculado a ela no PNCP. 
 	Ao receber requisição para inclusão de resultado do item da Contratação, o PNCP verifica se entre os resultados, com situação "Informado", existe algum outro registro com valor idêntico à combinação dos parâmetros recebidos: "tipoPessoaId", "niFornecedor" e "ordemClassificacaoSrp". Se houver qualquer registro, a requisição para inclusão do resultado do item da Contratação será recusada. Neste caso, o requisitante será alertado.
@@ -64,9 +64,8 @@ Exemplo Requisição (cURL)
 
 .. code-block:: bash
 
-	curl -k -X PUT --header "Authorization: Bearer access_token" "${BASE_URL}/v1/orgaos
-	/10000000000003/compras/2021/1/itens/1/resultados" -H "accept: */*" -H "Content-Type: 
-	application/json" --data "@/home/objeto.json" 
+	curl -k -X PUT --header "Authorization: Bearer access_token" "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/itens/1/resultados" 
+	-H "accept: */*" -H "Content-Type: application/json" --data "@/home/objeto.json" 
 
 
 Dados de Entrada
@@ -75,208 +74,165 @@ Dados de Entrada
 .. note::
    Alimentar os parâmetros {cnpj}, {ano}, {sequencial}, {numeroItem} e {sequencialResultado} na URL.
 
+
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 5 25 10 30 55
    :header-rows: 1
+   :class: quebra-coluna
 
    * - Id
      - Campo
      - Tipo
      - Obrigatório
      - Descrição
-
    * - 1
      - cnpj
      - Texto (14)
      - Sim
-     - CNPJ do órgão originário da contratação informado na inclusão (proprietário da contratação ou alienação de bens).
-
+     - Cnpj do órgão originário da contratação informado na inclusão (proprietário da contratação ou alienação de bens)
    * - 2
      - ano
      - Inteiro
      - Sim
-     - Ano da contratação.
-
+     - Ano da contratação
    * - 3
      - sequencial
      - Inteiro
      - Sim
-     - Sequencial da contratação no PNCP, gerado no momento da inclusão.
-
+     - Sequencial da contratação no PNCP; Número sequencial gerado no momento que a contratação foi inserida no PNCP;
    * - 4
      - numeroItem
      - Inteiro
      - Sim
-     - Número do item na contratação (único e sequencial crescente).
-
+     - Número do item na contratação
    * - 5
-     - sequencialResultado
-     - Inteiro
-     - Sim
-     - Sequencial do resultado do item no PNCP, gerado no momento da inclusão do resultado.
-
-   * - 6
      - quantidadeHomologada
      - Decimal
      - Sim
-     - Quantidade do item homologada.
-
-   * - 7
+     - Quantidade do item homologada. Precisão de 4 dígitos decimais; Ex: 1.0000;
+   * - 6
      - valorUnitarioHomologado
      - Decimal
      - Sim
-     - Valor unitário do item homologado. Maior ou igual a 0 (zero). Precisão de 4 casas decimais (ex: 100.0000).
-
-   * - 8
+     - Valor unitário do item homologado. Maior ou igual a 0 (zero). Precisão de 4 dígitos decimais; Ex: 100.0000;
+   * - 7
      - valorTotalHomologado
      - Decimal
      - Sim
-     - Valor total do item homologado. Maior ou igual a 0 (zero). Precisão de 4 casas decimais (ex: 1000.0000).
-
-   * - 9
+     - Valor total do item homologado. Maior ou igual a 0 (zero). Precisão de 4 dígitos decimais; Ex: 1000.0000;
+   * - 8
      - percentualDesconto
      - Decimal
      - Não
-     - Percentual de desconto quando o critério for maior desconto. Precisão de 4 casas decimais (ex: 10.0000).
-
-   * - 10
+     - Percentual de desconto aplicado quando o critério de julgamento for Maior Desconto. Precisão de 4 dígitos decimais; Ex: 10.0000;
+   * - 9
      - tipoPessoaId
      - Texto (2)
      - Sim
-     - Tipo de pessoa: PJ (jurídica), PF (física), PE (estrangeira).
-
-   * - 11
+     - PJ - Pessoa jurídica; PF - Pessoa física; PE - Pessoa estrangeira;
+   * - 10
      - niFornecedor
      - Texto (30)
      - Sim
-     - Identificação do fornecedor (CNPJ, CPF ou identificador estrangeiro).
-
-   * - 12
+     - Número de identificação do fornecedor/arrematante; CNPJ, CPF ou identificador de empresa estrangeira;
+   * - 11
      - nomeRazaoSocialFornecedor
      - Texto (100)
      - Sim
-     - Nome ou razão social do fornecedor.
-
-   * - 13
+     - Nome ou razão social do fornecedor/arrematante
+   * - 12
      - porteFornecedorId
      - Inteiro
      - Sim
-     - Porte: 1-ME; 2-EPP; 3-Demais; 4-Não se aplica; 5-Não informado.
-
-   * - 14
+     - Porte do fornecedor: 1 - ME; 2 - EPP; 3 - Demais; 4 - Não se aplica; 5 - Não Informado;
+   * - 13
      - naturezaJuridicaId
      - Inteiro
      - Não
-     - Código da natureza jurídica conforme tabela de domínio.
-
-   * - 15
+     - Código da tabela de domínio Natureza jurídica
+   * - 14
      - codigoPais
      - Texto (3)
      - Sim
-     - Código ISO Alpha-3 do país (ex: BRA).
-
-   * - 16
+     - Código ISO para o país do fornecedor que deve ser informado no padrão ISO Alpha-3. Ex: BRA - para fornecedores/arrematantes do Brasil.
+   * - 15
      - indicadorSubcontratacao
      - Booleano
      - Sim
-     - Indica subcontratação (false: não; true: sim). Para leilão, informar false.
-
-   * - 17
+     - Indicador de sub-contratação do item; false - Não haverá subcontratação; true - Haverá subcontratação de fornecedor; Contratações na modalidade leilão informar false.
+   * - 16
      - ordemClassificacaoSrp
      - Inteiro
      - Não
-     - Ordem de classificação do fornecedor.
-
-   * - 18
+     - Ordem de classificação do fornecedor/arrematante na contratação
+   * - 17
      - dataResultado
      - Data
      - Sim
-     - Data de homologação do resultado do item.
-
-   * - 19
-     - dataCancelamento
-     - Data e Hora
-     - Não
-     - Data de cancelamento do resultado.
-
-   * - 20
-     - motivoCancelamento
-     - Texto (200)
-     - Não
-     - Motivo do cancelamento do resultado.
-
-   * - 21
-     - situacaoCompraItemResultadoId
-     - Inteiro
-     - Sim
-     - Código da situação do resultado do item.
-
-   * - 22
+     - Data do resultado da homologação do item
+   * - 18
      - aplicacaoMargemPreferencia
      - Booleano
      - Sim
-     - Indica aplicação de margem de preferência.
-
-   * - 23
+     - Indicador da aplicação da Margem de Preferência para o item. (False/Não; True/Sim)
+   * - 19
      - amparoLegalMargemPreferenciaId
      - Inteiro
-     - Condicional
-     - Obrigatório quando houver aplicação de margem de preferência.
-
-   * - 24
+     - Opcional.Porém obrigatório quando indicador de aplicação da margem de preferência for “True/Sim”.
+     - Código da fundamentação legal da aplicação da margem de preferência.
+   * - 20
      - paisOrigemProdutoId
      - Texto (3)
-     - Condicional
-     - Código ISO Alpha-3 do país de origem do produto.
-
-   * - 25
+     - Opcional. Porém obrigatório quando indicador de aplicação da margem de preferência for “True/Sim”.
+     - Símbolo do País de origem do produto ou serviço que deve ser informado no padrão ISO Alpha-3. Ex: BRA, ARG etc.
+   * - 21
      - aplicacaoBeneficioMeEpp
      - Booleano
      - Sim
-     - Indica aplicação de benefício ME/EPP.
-
-   * - 26
+     - Indicador da aplicação do benefício ME/EPP para o item. (False/Não; True/Sim)
+   * - 22
      - aplicacaoCriterioDesempate
      - Booleano
      - Sim
-     - Indica aplicação de critério de desempate (Art. 60).
-
-   * - 27
+     - Indicador da aplicação de critério de desempate conforme Art. 60 para o item. (False/Não; True/Sim)
+   * - 23
      - amparoLegalCriterioDesempateId
      - Inteiro
-     - Condicional
-     - Obrigatório quando houver critério de desempate.
-
-   * - 28
+     - Opcional. Porém obrigatório quando indicador de aplicação de critério de desempate for “True/Sim”.
+     - Código da fundamentação legal da aplicação de critério de desempate conforme o Art. 60.
+   * - 24
      - simboloMoedaEstrangeira
      - Texto (3)
      - Não
-     - Código ISO Alpha-3 da moeda (ex: USD, EUR).
-
-   * - 29
+     - Símbolo da moeda que deve ser informado no padrão ISO Alpha-3. Ex: USD, EUR, GBP etc.
+   * - 25
      - dataCotacaoMoedaEstrangeira
      - Data
      - Não
-     - Data/hora da cotação (timestamp sem timezone).
-
-   * - 30
+     - Data/Hora da cotação da moeda estrangeira no formato timestampwithout zone.
+   * - 26
      - timezoneCotacaoMoedaEstrangeira
      - Texto (8)
      - Não
-     - Fuso horário no formato UTC±hhmm (ex: UTC-0300, UTC+0100).
-
-   * - 31
+     - Time Zone no momento da cotação da moeda estrangeira. Offset no formato 'UTC±[hh][mm]' ou somente 'UTC±[hh]', onde:
+       
+         - **'hh'** representa as horas de diferença em relação ao UTC;
+         - **'mm'** representa os minutos de diferença em relação ao UTC;
+         - **'+'** indica que o fuso horário está adiantado em relação ao UTC;
+         - **'-'** indica que o fuso horário está atrasado em relação ao UTC.
+       
+        Exemplos de Offsets:
+       
+         - **'UTC+0000'** é o próprio horário UTC (também conhecido como GMT);
+         - **'UTC+0100'** é uma hora adiantada em relação ao UTC (horário da Europa Central durante o horário padrão);
+         - **'UTC-0500'** é cinco horas atrasado em relação ao UTC (horário da Costa Leste dos Estados Unidos durante o horário padrão);
+         - **'UTC+0930'** é nove horas e trinta minutos adiantado em relação ao UTC (horário de Adelaide, Austrália).
+   * - 27
      - valorNominalMoedaEstrangeira
      - Decimal
      - Não
-     - Valor em BRL para 1 unidade da moeda estrangeira (ex: 5.450).
-
-   * - 32
-     - justificativa
-     - Texto (255)
-     - Sim
-     - Justificativa da retificação.
+     - Valor nominal da moeda nacional (BRL) em relação uma unidade da moeda estrangeira no momento da cotação. Ex: 1 USD = 5,450 BRL, então enviar 5.450
 
 ** Para cancelamento do Resultado informar situação do resultado igual a 2, data e motivo do cancelamento junto com os outros dados do resultado.
 
@@ -299,7 +255,7 @@ Códigos de Retorno
      - Erro
    * - 422
      - Unprocessable Entity
-     - NotFound
+     - Erro
    * - 500
      - Internal Server Error
      - Erro
