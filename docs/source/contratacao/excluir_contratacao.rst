@@ -47,7 +47,7 @@ Dados de Entrada
 
 .. list-table::
    :width: 100%
-   :widths: 5 25 10 30 55
+   :widths: 5 20 10 25 55
    :header-rows: 1
    :class: quebra-ultima-linha
 
