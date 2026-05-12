@@ -31,10 +31,10 @@ Dados de Entrada
    Alimentar os parâmetros ``cnpj``, ``ano`` e ``sequencial`` na URL.
 
 .. list-table::
-	:width: 100%
-	:widths: 5 20 10 25 55
-	:header-rows: 1
-	:class: quebra-ultima-coluna
+   :width: 100%
+   :widths: 5 20 10 25 55
+   :header-rows: 1
+   :class: quebra-ultima-coluna
 
    * - Id
      - Campo
@@ -61,10 +61,10 @@ Dados de Retorno
 ~~~~~~~~~~~~~~~~
 
 .. list-table::
-	:width: 100%
-	:widths: 5 20 10 25 55
-	:header-rows: 1
-	:class: quebra-ultima-coluna
+   :width: 100%
+   :widths: 5 20 10 25 55
+   :header-rows: 1
+   :class: quebra-ultima-coluna
 
    * - Id
      - Campo
