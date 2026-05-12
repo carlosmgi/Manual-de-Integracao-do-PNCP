@@ -88,7 +88,7 @@ Dados de Retorno
      - Campo
      - Tipo
      - Descrição
-     * - 1
+   * - 1
      - numeroItem
      - Inteiro
      - Número do item na contratação (único e sequencial crescente) a que está relacionado o Resultado
