@@ -41,6 +41,6 @@ table.quebra-coluna :is(td, th):nth-child(5) {
 table.quebra-ultima-coluna td:last-child,
 table.quebra-ultima-coluna th:last-child {
   white-space: normal !important;
-  word-break: break-word;
-  overflow-wrap: anywhere;
+  word-break: break-word !important;
+  overflow-wrap: anywhere !important;
 }
