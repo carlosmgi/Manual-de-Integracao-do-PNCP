@@ -30,6 +30,7 @@ kbd {
     text-align: justify;    
 }
 
+table.quebra-linha :is(td, th):nth-child(2),
 table.quebra-linha :is(td, th):nth-child(4),
 table.quebra-linha :is(td, th):nth-child(5) {
   white-space: normal !important;
