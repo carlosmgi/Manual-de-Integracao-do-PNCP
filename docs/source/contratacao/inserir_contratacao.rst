@@ -419,7 +419,7 @@ Dados de Entrada
 
    * - 19
      - justificativaPresencial
-     - Texto (5120)
+     - Texto (512)
      - Obrigatório para as modalidades de contratação presencial
      - Justificativa pela escolha da modalidade presencial.
 
