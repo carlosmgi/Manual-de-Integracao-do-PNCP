@@ -3,7 +3,7 @@ Inserir Itens a uma Contratação
 
 Serviço para inserir um ou vários itens a uma contratação. Os itens podem ser inseridos de duas formas: ao inserir uma contratação, pode já informar a lista de itens a ser inserida. Alternativamente pode usar o presente serviço para adicionar um ou vários itens a uma contratação existente. 
 
-.. warning::
+.. Attention::
 	Fica impedida a inclusão de itens caso a contratação não possua documento/arquivo ativo vinculado a ela no PNCP.
 
 Detalhes da Requisição
@@ -64,21 +64,21 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
 
 	curl -k -X POST --header "Authorization: Bearer access_token" "${BASE_URL}/v1/orgaos
-	/10000000000003/compras/2021/1/itens" -H "accept: */*" -H "Content-Type: application/json" -
-	data "@/home/objeto.json" 
+	/10000000000003/compras/2021/1/itens" -H "accept: */*" -H "Content-Type: application/json" 
+	-data "@/home/objeto.json" 
 
 
 Dados de Entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-
    Alimentar os parâmetros ``cnpj``, ``ano`` e ``sequencial`` na URL.
 
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 10 25 18 20 45
    :header-rows: 1
+   :class: quebra-ultima-coluna
 
    * - Id
      - Campo
@@ -90,7 +90,7 @@ Dados de Entrada
      - cnpj
      - Texto (14)
      - Sim
-     - CNPJ do órgão originário da contratação
+     - Cnpj do órgão originário da contratação informado na inclusão (proprietário da contratação ou alienação de bens)
 
    * - 2
      - ano
@@ -102,163 +102,164 @@ Dados de Entrada
      - sequencial
      - Inteiro
      - Sim
-     - Sequencial da contratação no PNCP
+     - Sequencial da contratação no PNCP; Número sequencial gerado no momento que a contratação foi inserida no PNCP;
 
    * - 4
      - numeroItem
      - Inteiro
      - Sim
-     - Número do item na contratação
+     - Número do item na contratação (único e sequencial crescente)
 
    * - 5
      - materialOuServico
      - Texto (1)
      - Sim
-     - M - Material; S - Serviço
+     - Domínio: M - Material; S - Serviço; Contratações na modalidade leilão informar M.
 
    * - 6
      - tipoBeneficioId
      - Inteiro
      - Sim
-     - Código do tipo de benefício
+     - Código da tabela de domínio Tipo de benefício. Contratações na modalidade leilão informar opção “Não se aplica”.
 
    * - 7
      - incentivoProdutivoBasico
      - Booleano
      - Sim
-     - Indica incentivo PPB
+     - Incentivo fiscal PPB (Processo Produtivo Básico); true - Possui o incentivo; false - Não possui o incentivo; Contratações na modalidade leilão informar false.
 
    * - 8
      - descricao
      - Texto (2048)
      - Sim
-     - Descrição do item
+     - Descrição para o produto ou serviço;
 
    * - 9
      - quantidade
      - Decimal
      - Sim
-     - Quantidade (4 casas decimais)
+     - Quantidade do item. Precisão de 4 dígitos decimais; Ex: 100.0000;
 
    * - 10
      - unidadeMedida
      - Texto (30)
      - Sim
-     - Unidade de medida
+     - Unidade de medida do item
 
    * - 11
      - valorUnitarioEstimado
      - Decimal
      - Sim
-     - Valor unitário estimado
+     - Valor unitário estimado/avaliado. Maior ou igual a 0 (zero). Precisão de 4 dígitos decimais; Ex: 100.0000;
 
    * - 12
      - valorTotal
      - Decimal
      - Sim
-     - Valor total do item
+     - Valor total do item. Maior ou igual a 0 (zero). Precisão de 4 dígitos decimais; Ex: 100.0000;
 
    * - 13
      - criterioJulgamentoId
      - Inteiro
      - Sim
-     - Código do critério de julgamento
+     - Código da tabela de domínio Critério de julgamento
 
    * - 14
      - orcamentoSigiloso
      - Booleano
      - Sim
-     - Indica se o orçamento é sigiloso
+     - Identifica se o orçamento é sigiloso; true - Sigiloso; false - Não sigiloso; Contratações na modalidade leilão informar false.
 
    * - 15
      - itemCategoriaId
      - Inteiro
      - Não
-     - Categoria do item (1, 2 ou 3)
+     - Categoria do item. Domínios 1 ou 2 aplicados à modalidade leilão. Outras modalidades de contratação utilizar o domínio 3. Domínio: 1 – Bens Imóveis; 2 – Bens Móveis; 3 - Não se aplica
+
 
    * - 16
      - patrimonio
      - Texto (255)
      - Não
-     - Código de patrimônio
+     - Código de Patrimonio do Item de bens móveis quando existir.
 
    * - 17
      - codigoRegistroImobiliario
      - Texto (255)
      - Condicional
-     - Obrigatório para bens imóveis em leilão
+     - Código de Registro Imobiliário. Obrigatório para contratação na modalidade leilão cuja categoria do item seja bens imóveis.
 
    * - 18
      - aplicabilidadeMargemPreferenciaNormal
      - Booleano
      - Sim
-     - Indica margem de preferência normal
+     - Indicador da aplicabilidade de Margem de Preferência Normal para o item. (False/Não; True/Sim)
 
    * - 19
      - aplicabilidadeMargemPreferenciaAdicional
      - Booleano
      - Sim
-     - Indica margem de preferência adicional
+     - Indicador da aplicabilidade de Margem de Preferência Adicional para o item. (False/Não; True/Sim)
 
    * - 20
      - percentualMargemPreferenciaNormal
      - Decimal
-     - Condicional
-     - Obrigatório se margem normal = true
+     - Obrigatório quando indicador de aplicabilidade de Margem de Preferência Normal for “True/Sim”.
+     - Percentual de Margem de Preferência Normal. Maior ou igual a 0 (zero) e menor que 100. Ex: 10.0000; Se indicador de aplicabilidade de Margem de Preferência Normal for “false/Não” enviar NULO.
 
    * - 21
      - percentualMargemPreferenciaAdicional
      - Decimal
-     - Condicional
-     - Obrigatório se margem adicional = true
+     - Obrigatório quando indicador de aplicabilidade de Margem de Preferência Adicional for “True/Sim”.
+     - Percentual de Margem de Preferência Adicional. Maior ou igual a 0 (zero) e menor que 100. Ex: 10.0000; Se indicador de aplicabilidade de Margem de Preferência Adicional for “false/Não” enviar NULO.
 
    * - 22
      - ncmNbsCodigo
      - Texto (15)
      - Não
-     - Código NCM/NBS
+     - Código NCM do material ou Código NBS do serviço com ou sem a formatação da máscara.
 
    * - 23
      - ncmNbsDescricao
      - Texto (2048)
      - Não
-     - Descrição NCM/NBS
+     - Descrição respectiva ao NCM para material ou NBS para serviço.
 
    * - 24
      - categoriaItemCatalogoId
      - Inteiro
      - Não
-     - Categoria do item no catálogo
+     - Código da categoria do item. Consultar item Categoria de Item para mais informações
 
    * - 25
      - catalogoId
      - Inteiro
      - Não
-     - Código do catálogo
+     - Código do Catálogo de itens utilizado como referência. Consultar item Catálogos para mais informações
 
    * - 26
      - catalogoCodigoItem
      - Texto (20)
      - Não
-     - Código do item no catálogo
+     - Código do item conforme consta no Catálogo utilizado como referência.
 
    * - 27
      - informacaoComplementar
      - Texto (4096)
      - Não
-     - Informação complementar
+     - Descrição complementar para o produto ou serviço
 
    * - 28
      - codigoTipoMargemPreferencia
      - Inteiro
      - Não
-     - Tipo de margem (1 ou 2)
+     - Código do tipo de margem de preferência. Domínio: 1 – Resolução CIIA-PAC; 2 – Resolução CICS;
 
    * - 29
      - inConteudoNacional
      - Booleano
      - Não
-     - Indica exigência de conteúdo nacional
+     - Indicador de Exigência de Conteúdo Nacional (False/Não; True/Sim)
 
 Dados de Retorno
 ~~~~~~~~~~~~~~~~
@@ -307,7 +308,7 @@ Códigos de Retorno
      - Erro
    * - 422
      - Unprocessable Entity
-     - NotFound
+     - Erro
    * - 500
      - Internal Server Error
      - Erro
