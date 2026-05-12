@@ -350,6 +350,10 @@ Dados de Retorno
      - dataInclusao
      - Data/Hora
      - Data/hora da inclusão da fonte orçamentária na contratação
+   * - :destaque:`37`
+     - :destaque:`emendaParlamentar`
+     - :destaque:`Boleano`
+     - :destaque:`Marcador de existência de emenda parlamentar na contratação (False – Não / True – Sim )`
 
 
 \
