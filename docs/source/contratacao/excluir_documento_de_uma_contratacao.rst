@@ -46,8 +46,9 @@ Dados de Entrada
 
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 5 15 10 25 55
    :header-rows: 1
+   :class: quebra-ultima-coluna
 
    * - Id
      - Campo
@@ -59,7 +60,7 @@ Dados de Entrada
      - cnpj
      - Texto (14)
      - Sim
-     - CNPJ do órgão originário da contratação
+     - Cnpj do órgão originário da contratação informado na inclusão (proprietário da contratação ou alienação de bens)
 
    * - 2
      - ano
@@ -71,19 +72,19 @@ Dados de Entrada
      - sequencial
      - Inteiro
      - Sim
-     - Sequencial da contratação no PNCP
+     - Sequencial da Contratação no PNCP; Número sequencial gerado no momento que a contratação foi inserida no PNCP;
 
    * - 4
      - sequencialDocumento
      - Inteiro
      - Sim
-     - Sequencial do documento no PNCP
+     - Sequencial do documento no PNCP; Número sequencial gerado no momento que o documento foi inserido no PNCP;
 
    * - 5
      - justificativa
      - Texto (255)
      - Sim
-     - Motivo/justificativa para exclusão do documento da contratação
+     - Motivo/justificativa para exclusão do documento da contratação.
 
 Códigos de Retorno
 ~~~~~~~~~~~~~~~~~~
@@ -97,7 +98,7 @@ Códigos de Retorno
      - Mensagem
      - Tipo
    * - 200
-     - OK
+     - Delete
      - Sucesso
    * - 400
      - Bad Request
