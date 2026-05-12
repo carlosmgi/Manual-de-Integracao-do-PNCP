@@ -37,3 +37,10 @@ table.quebra-linha :is(td, th):nth-child(5) {
   word-break: break-word;
   overflow-wrap: anywhere;
 }
+
+table.quebra-ultima-linha td:nth-last-child(-n+1),
+table.quebra-ultima-linha th:nth-last-child(-n+1) {
+  white-space: normal !important;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
