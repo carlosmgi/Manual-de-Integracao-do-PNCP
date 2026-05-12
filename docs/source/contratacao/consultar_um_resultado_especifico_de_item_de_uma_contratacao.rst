@@ -88,179 +88,175 @@ Dados de Retorno
      - Campo
      - Tipo
      - Descrição
-   * - 1
-     - listaResultados
-     - Lista
-     - Resultados de um item da contratação.
-   * - 1.1
+     * - 1
      - numeroItem
      - Inteiro
      - Número do item na contratação (único e sequencial crescente) a que está relacionado o Resultado
-   * - 1.2
+   * - 2
      - sequencialResultado
      - Inteiro
      - Sequencial do resultado do item da contratação no PNCP; Número sequencial gerado no momento que o resultado do item foi inserido no PNCP
-   * - 1.3
+   * - 3
      - quantidadeHomologada
      - Decimal
      - Quantidade do item homologada. Precisão de até 4 dígitos decimais; Ex: 1.0001;
-   * - 1.4
+   * - 4
      - valorUnitarioHomologado
      - Decimal
      - Valor unitário do item homologado. Precisão de até 4 dígitos decimais; Ex: 100.0001;
-   * - 1.5
+   * - 5
      - percentualDesconto
      - Decimal
      - Percentual de desconto aplicado quando o critério de julgamento for Maior Desconto. Precisão de 4 dígitos decimais; Ex: 10.0000;
-   * - 1.6
+   * - 6
      - tipoPessoa
      - Texto (2)
      - PJ - Pessoa jurídica; PF - Pessoa física; PE - Pessoa estrangeira;
-   * - 1.7
+   * - 7
      - niFornecedor
      - Texto (30)
      - Número de identificação do fornecedor/arrematante; CNPJ, CPF ou identificador de empresa estrangeira;
-   * - 1.8
+   * - 8
      - nomeRazaoSocialFornecedor
      - Texto (100)
      - Nome ou razão social do fornecedor/arrematante
-   * - 1.9
+   * - 9
      - porteFornecedorId
      - Inteiro
      - Porte do fornecedor: 1 - ME; 2 - EPP; 3 - Demais; 4 - Não se aplica; 5 - Não Informado;
-   * - 1.10
+   * - 10
      - porteFornecedorNome
      - Texto (30)
      - Nome do porte do fornecedor.
-   * - 1.11
+   * - 11
      - naturezaJuridicaId
      - Inteiro
      - Código da Natureza Jurídica do fornecedor
-   * - 1.12
+   * - 12
      - naturezaJuridicaNome
      - Texto (100)
      - Natureza Jurídica do fornecedor
-   * - 1.13
+   * - 13
      - codigoPais
      - Texto (3)
      - Código ISO para o país dofornecedor/arrematante;Ex: BRA - para fornecedores do Brasil;
-   * - 1.14
+   * - 14
      - indicadorSubcontratacao
      - Booleano
      - Indicador de sub-contratação do item; false - Não haverá subcontratação; true - Haverá subcontratação de fornecedor;
-   * - 1.15
+   * - 15
      - ordemClassificacaoSrp
      - Inteiro
      - Ordem de classificação do fornecedor/arrematante na contratação
-   * - 1.16
+   * - 16
      - dataResultado
      - Data
      - Data do resultado da homologação do item
-   * - 1.17
+   * - 17
      - dataCancelamento
      - Data e Hora
      - Data de cancelamento do resultado item
-   * - 1.18
+   * - 18
      - motivoCancelamento
      - Texto (200)
      - Observação com o motivo do cancelamento do resultado item
-   * - 1.19
+   * - 19
      - situacaoCompraItemResultadoId
      - Inteiro
      - Código conforme tabela Situação do Resultado do Item
-   * - 1.20
+   * - 20
      - situacaoCompraItemResultadoNome
      - Texto (30)
      - Texto situação conforme tabela Situação do Resultado do Item
-   * - 1.21
+   * - 21
      - dataInclusao
      - Data e Hora
      - Data da inclusão do registro do resultado do item no PNCP
-   * - 1.22
+   * - 22
      - dataAtualizacao
      - Data e Hora
      - Data da última atualização do registro do resultado do item no PNCP
-   * - 1.23
+   * - 23
      - numeroControlePNCPCompra
      - Texto (30)
      - Número de Controle PNCP da contratação
-   * - 1.24
+   * - 24
      - aplicacaoMargemPreferencia
      - Booleano
      - Indicador da aplicação da Margem de Preferência para o item. (False/Não; True/Sim)
-   * - 1.25
+   * - 25
      - amparoLegalMargemPreferencia
      - 
      - Dados da fundamentação legal da aplicação da margem de preferência.
-   * - 1.25.1
+   * - 25.1
      - id
      - Inteiro
      - Código da fundamentação legal da aplicação da margem de preferência.
-   * - 1.25.2
+   * - 25.2
      - nome
      - Texto
      - Nome da fundamentação legal da aplicação da margem de preferência.
-   * - 1.25.3
+   * - 25.3
      - descricao
      - Texto
      - Descrição da fundamentação legal da aplicação da margem de preferência.
-   * - 1.25.4
+   * - 25.4
      - statusAtivo
      - Booleano
      - Status da fundamentação legal no PNCP. (False/Inativo; True/Ativo)
-   * - 1.26
+   * - 26
      - paisOrigemProdutoServico
      - 
      - Dados do País de origem do produto ou serviço
-   * - 1.26.1
+   * - 26.1
      - id
      - Texto
      - Símbolo do País de origem do produto ou serviço no padrão ISO Alpha-3. Ex: BRA, ARG etc.
-   * - 1.26.2
+   * - 26.2
      - nome
      - Texto
      - Nome do País de origem do produto ou serviço.
-   * - 1.27
+   * - 27
      - aplicacaoBeneficioMeEpp
      - Booleano
      - Indicador da aplicação do benefício ME/EPP para o item. (False/Não; True/Sim)
-   * - 1.28
+   * - 28
      - aplicacaoCriterioDesempate
      - Booleano
      - Indicador da aplicação de critério de desempate conforme Art. 60 para o item. (False/Não; True/Sim)
-   * - 1.29
+   * - 29
      - amparoLegalCriterioDesempate
      - 
      - Dados da fundamentação legal da aplicação de critério de desempate conforme o Art. 60.
-   * - 1.29.1
+   * - 29.1
      - id
      - Inteiro
      - Código da fundamentação legal da aplicação de critério de desempate
-   * - 1.29.2
+   * - 29.2
      - nome
      - Texto
      - Nome da fundamentação legal da aplicação de critério de desempate
-   * - 1.29.3
+   * - 29.3
      - descricao
      - Texto
      - Descrição da fundamentação legal da aplicação de critério de desempate
-   * - 1.29.4
+   * - 29.4
      - statusAtivo
      - Booleano
      - Status da fundamentação legal no PNCP. (False/Inativo; True/Ativo)
-   * - 1.30
+   * - 30
      - dataCotacaoMoedaEstrangeira
      - Data
      - Data/Hora da cotação da moeda estrangeira no formato timestampwithout zone.
-   * - 1.31
+   * - 31
      - timezoneCotacaoMoedaEstrangeira
      - Texto
      - Time Zone no momento da cotação da moeda estrangeira. Offset no formato 'UTC±[hh][mm]' ou somente 'UTC±[hh]'.
-   * - 1.32
+   * - 32
      - valorNominalMoedaEstrangeira
      - Decimal
      - Valor nominal da moeda nacional (BRL) em relação uma unidade da moeda estrangeira no momento da cotação.
-   * - 1.33
+   * - 33
      - moedaEstrangeira
      - Objeto
      - Dados da moeda estrangeira
@@ -268,11 +264,11 @@ Dados de Retorno
      - id
      - Inteiro
      - Código da moeda estrangeira.
-   * - 1.33.2
+   * - 33.2
      - simbolo
      - Texto
      - Símbolo da moeda estrangeira no padrão ISO Alpha-3. Ex: USD, EUR, GBP etc.
-   * - 1.33.3
+   * - 33.3
      - nome
      - Texto
      - Nome da moeda estrangeira.
