@@ -3,7 +3,7 @@ Excluir Contratação
 
 Serviço que permite excluir uma contratação. Este serviço será acionado por qualquer plataforma digital credenciada. 
 
-.. warning::
+.. Attention::
 
 	Não será possível excluir Contratação com Ata de Registro de Preços ou Contrato ativo. 
 
@@ -37,20 +37,19 @@ Exemplo Requisição (cURL)
 
 .. code-block:: bash
 
-	curl -k -X  DELETE --header "Authorization: Bearer access_token" 
-	"${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1" -H "accept: */*" -H "Content-Type: application/json"
+	curl -k -X  DELETE --header "Authorization: Bearer access_token" "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1" -H "accept: */*" -H "Content-Type: application/json"
 
 Dados de Entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-
    Alimentar os parâmetros ``cnpj``, ``ano`` e ``sequencial`` na URL.
 
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 5 25 10 30 55
    :header-rows: 1
+   :class: quebra-linha
 
    * - Id
      - Campo
@@ -61,7 +60,7 @@ Dados de Entrada
      - cnpj
      - Texto (14)
      - Sim
-     - CNPJ do órgão originário da contratação
+     - Cnpj do órgão originário da contratação informado na inclusão (proprietário da contratação ou alienação de bens)
    * - 2
      - ano
      - Inteiro
@@ -71,7 +70,7 @@ Dados de Entrada
      - sequencial
      - Inteiro
      - Sim
-     - Sequencial da contratação no PNCP
+     - Sequencial da contratação no PNCP; Número sequencial gerado no momento que a contratação foi inserida no PNCP;
    * - 4
      - justificativa
      - Texto (255)
