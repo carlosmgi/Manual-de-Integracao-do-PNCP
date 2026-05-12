@@ -74,6 +74,10 @@ Dados de Entrada
      - Sim
      - Sequencial do resultado no PNCP; Número sequencial gerado no momento que o resultado do item foi inserido no PNCP
 
+
+Dados de Retorno
+~~~~~~~~~~~~~~~~
+
 .. list-table::
    :width: 100%
    :widths: 5 10 15 55
