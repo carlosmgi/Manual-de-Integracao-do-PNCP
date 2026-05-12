@@ -38,8 +38,8 @@ table.quebra-coluna :is(td, th):nth-child(5) {
   overflow-wrap: anywhere;
 }
 
-table.quebra-ultima-coluna td:nth-last-child(-n+1),
-table.quebra-ultima-coluna th:nth-last-child(-n+1) {
+table.quebra-ultima-coluna td:last-child,
+table.quebra-ultima-coluna th:last-child {
   white-space: normal !important;
   word-break: break-word;
   overflow-wrap: anywhere;
