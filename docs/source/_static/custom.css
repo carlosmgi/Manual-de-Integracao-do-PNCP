@@ -30,8 +30,8 @@ kbd {
     text-align: justify;    
 }
 
-table.quebra-linha td:nth-last-child(-n+2),
-table.quebra-linha th:nth-last-child(-n+2) {
+table.quebra-linha td:nth-child(5),
+table.quebra-linha th:nth-child(5) {
   white-space: normal !important;
   word-break: break-word;
   overflow-wrap: anywhere;
