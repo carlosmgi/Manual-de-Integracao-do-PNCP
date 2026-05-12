@@ -66,7 +66,7 @@ Dados de Entrada
    :width: 100%
    :widths: 5 25 10 30 55
    :header-rows: 1
-   :class: quebra-linha
+   :class: quebra-coluna
 
    * - Id
      - Campo
