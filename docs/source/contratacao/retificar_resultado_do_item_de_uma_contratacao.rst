@@ -72,7 +72,7 @@ Dados de Entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-   Alimentar os parâmetros {cnpj}, {ano}, {sequencial}, {numeroItem} e {sequencialResultado} na URL.
+   Alimentar os parâmetros ``{cnpj}``, ``{ano}``, ``{sequencial}``, ``{numeroItem}`` e ``{sequencialResultado}`` na URL.
 
 
 .. list-table::
