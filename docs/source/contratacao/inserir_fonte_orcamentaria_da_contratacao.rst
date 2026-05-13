@@ -1,7 +1,7 @@
 Inserir Fonte Orçamentária da Contratação
 =========================================
 
-Serviço que permite inserir uma ou mais fontes orçamentárias a uma Contratação. Tabelas de domínio - item 5.25 Fonte Orçamentária.
+Serviço que permite inserir uma ou mais fontes orçamentárias a uma Contratação. Tabelas de domínio - item Fonte Orçamentária.
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -37,6 +37,9 @@ Exemplo Requisição (cURL)
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
+
+.. note::
+	Alimentar o parâmetro ``{cnpj}``, ``{ano}`` e ``{sequencial}`` na URL.
 
 .. list-table::
    :width: 100%
