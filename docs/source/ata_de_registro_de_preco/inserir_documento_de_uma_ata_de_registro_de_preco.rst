@@ -3,32 +3,6 @@ Inserir Documento de uma Ata de Registro de Preço
 
 Serviço que permite inserir/anexar documento/arquivo a uma Ata. O sistema permite o upload de arquivos com as extensões listadas na seção: Tabelas de domínio - Extensões de arquivos aceitos pelas APIs de Documento.
 
-.. Attention::
-
-   As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
-
-.. list-table::
-   :width: 100%
-   :widths: 5 25 15 25
-   :header-rows: 1
-
-   * - Id
-     - Campo
-     - Tipo
-     - Descrição
-   * - 1
-     - cnpj
-     - Texto
-     - CNPJ do órgão do contrato/empenho
-   * - :destaque:`2`
-     - :destaque:`ano`
-     - :destaque:`Inteiro`
-     - :destaque:`Ano do contrato/empenho`
-   * - 3
-     - sequencialContrato
-     - Inteiro
-     - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
-
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
 
@@ -45,7 +19,10 @@ Detalhes da Requisição
 Exemplo de Payload
 ~~~~~~~~~~~~~~~~~~
 
-Não se aplica.
+.. code-block:: json
+  :linenos:
+  
+	Não se aplica
 
 Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -53,24 +30,21 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
    :linenos:
 
-   curl -X 'POST' '${BASE_URL}/v1/orgaos/00394460000141/compras/2021/1/atas/1/arquivos' \
-     -H 'accept: */*' \
-     -H 'Titulo-Documento: teste doc' \
-     -H 'Tipo-Documento: 1' \
-     -H 'Authorization: Bearer <TOKEN_AUTORIZACAO>' \
-     -H 'Content-Type: multipart/form-data' \
-     -F 'arquivo=@10_coisas_que_todo_programador_Java_deve_saber.pdf;type=application/pdf'
+   curl -X 'POST' '${BASE_URL}/v1/orgaos/00394460000141/compras/2021/1/atas/1/arquivos' -H 'accept: */*' 
+   -H 'Titulo-Documento: teste doc' -H 'Tipo-Documento: 1' -H 'Authorization: Bearer <TOKEN_AUTORIZACAO>' 
+   -H 'Content-Type: multipart/form-data' -F 'arquivo=@10_coisas_que_todo_programador_Java_deve_saber.pdf;type=application/pdf'
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-   Alimentar o parâmetro {cnpj}, {anoCompra}, {sequencialCompra} e {sequencialAta} na URL.
+   Alimentar o parâmetro ``{cnpj}``, ``{anoCompra}``, ``{sequencialCompra}`` e ``{sequencialAta}`` na URL.
 
 .. list-table::
    :width: 100%
-   :widths: 5 25 15 15 40
+   :widths: 5 10 10 15 55
    :header-rows: 1
+   :class: quebra-linha-ultima-coluna
 
    * - Id
      - Campo
@@ -192,3 +166,4 @@ Códigos de Retorno
    * - 500
      - Internal Server Error
      - Erro
+\
