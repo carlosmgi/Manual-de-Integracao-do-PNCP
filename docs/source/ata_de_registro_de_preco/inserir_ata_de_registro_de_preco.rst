@@ -152,10 +152,7 @@ Dados de entrada
      - :destaque-amarelo-claro:`tipoParteEnvolvidaId`
      - :destaque-amarelo-claro:`Inteiro`
      - :destaque-amarelo-claro:`Sim`
-     - :destaque-amarelo-claro:`Código do Tipo de Parte Envolvida.
-       :destaque-amarelo-claro:`Código 1 Gerenciadora
-       Código 2 Participante
-       Código 3 Não Participante`
+     - :destaque-amarelo-claro:`Código do Tipo de Parte Envolvida. Código 1: Gerenciadora; Código 2: Participante; Código 3: Não Participante`
 
    * - :destaque-amarelo-claro:`12.2`
      - :destaque-amarelo-claro:`cnpj`
