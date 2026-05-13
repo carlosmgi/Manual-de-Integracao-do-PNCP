@@ -41,6 +41,9 @@ Exemplo Requisição (cURL)
 Dados de entrada
 ~~~~~~~~~~~~~~~~
 
+.. note::
+	Alimentar o parâmetro ``{cnpj}``, ``{ano}``, ``{sequencial}`` e ``{sequencialDocumento}`` na URL.
+
 .. list-table::
    :width: 100%
    :widths: 5 10 10 15 55
@@ -50,26 +53,32 @@ Dados de entrada
    * - Id
      - Campo
      - Tipo
+     - Obrigatório
      - Descrição
    * - 1
      - cnpj
      - Texto (14)
+     - Sim
      - CNPJ do órgão originário da contratação informado na inclusão (proprietário da contratação ou alienação de bens).
    * - 2
      - ano
      - Inteiro
+     - Sim
      - Ano da contratação.
    * - 3
      - sequencial
      - Inteiro
+     - Sim
      - Sequencial da contratação no PNCP; Número gerado no momento que a contratação foi inserida no PNCP.
    * - 4
      - listaFonteOrcamentariaId
      - Inteiro
+     - Sim
      - Código de identificação da fonte orçamentária. Permite o envio de múltiplos códigos separados por vírgula.
    * - 5
      - justificativaAtualizacao
      - Texto (255)
+     - Sim
      - Motivo/justificativa para exclusão da fonte orçamentária da contratação.
 
 Códigos de Retorno
