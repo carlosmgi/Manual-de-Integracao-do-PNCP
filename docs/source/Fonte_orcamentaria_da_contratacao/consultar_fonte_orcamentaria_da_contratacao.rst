@@ -21,19 +21,19 @@ Exemplo Requisição (cURL)
 
 .. code-block:: bash
 
-	curl -k -X GET "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/fonte-orcamentaria/1" \
-	 -H "Accept: */*”
+	curl -k -X GET "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/fonte-orcamentaria/1" -H "Accept: */*”
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-   Alimentar o parâmetro {cnpj}, {ano} e {sequencial} na URL.
+   Alimentar o parâmetro ``{cnpj}``, ``{ano}`` e ``{sequencial}`` na URL.
 
-.. list-table:: 
+.. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 5 10 10 15 55
    :header-rows: 1
+   :class: quebra-linha-ultima-coluna
 
    * - Id
      - Campo
@@ -122,7 +122,7 @@ Códigos de Retorno
      - Erro
    * - 422
      - Unprocessable Entity
-     - NotFound
+     - Erro
    * - 500
      - Internal Server Error
      - Erro
