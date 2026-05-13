@@ -109,7 +109,8 @@ Enviando como arquivo:
    
     curl -k -X POST --header "Authorization: Beareraccess_token" "${BASE_URL}/v1/orgaos/10000000000003/compras" 
 	-H "accept: */*" -H "Content-Type: multipart/form-data" -H 'Titulo Documento: nome_do_arquivo' 
-	-H 'Tipo-Documento-Id: 1' --form ‘compra=@”/home/objeto.json";type=application/json ’ --form ‘documento=@”arquivo.pdf” ’ 
+	-H 'Tipo-Documento-Id: 1' --form ‘compra=@”/home/objeto.json";type=application/json ’ 
+	--form ‘documento=@”arquivo.pdf” ’ 
 
 Enviando como JSON:
 
@@ -117,7 +118,8 @@ Enviando como JSON:
      
     curl -k -X POST --header "Authorization: Beareraccess_token" 
 	"${BASE_URL}/v1/orgaos/10000000000003/compras" 
-	-H "accept: */*" -H "Content-Type: multipart/form-data" -H 'Titulo Documento: nome_do_arquivo' -H 'Tipo-Documento-Id: 1' --form 
+	-H "accept: */*" -H "Content-Type: multipart/form-data" -H 'Titulo Documento: nome_do_arquivo' 
+	-H 'Tipo-Documento-Id: 1' --form 
 	‘compra=@” {
 		"anoCompra": 2021,
 		"itensCompra": [
