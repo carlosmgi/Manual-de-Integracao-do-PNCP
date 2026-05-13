@@ -7,101 +7,6 @@ Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a u
 
    O sistema exige o upload de um arquivo anexo à ata de registro de preço enviada. As extensões permitidas para o arquivo anexo são listadas na seção Tabelas de domínio - Envio de arquivos pelas APIs de Documento e os tipos de documento/arquivo aceitos pelo PNCP podem ser consultados na seção Tabelas de domínio - Tipo de Documento, deste manual.
 
-\
-
-.. Attention::
-
-   As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
-
-.. list-table::
-   :width: 100%
-   :widths: 5 25 15 25
-   :header-rows: 1
-
-   * - Id
-     - Campo
-     - Tipo
-     - Descrição
-   * - 1
-     - cnpj
-     - Texto
-     - CNPJ do órgão do contrato/empenho
-   * - :destaque:`2`
-     - :destaque:`ano`
-     - :destaque:`Inteiro`
-     - :destaque:`Ano do contrato/empenho`
-   * - 3
-     - sequencialContrato
-     - Inteiro
-     - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
-
-**Atualizações da versão 2.3.10**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. versionadded:: 2.3.10
-
-*Destaque em amarelo destinado à identificação das atualizações relativas às entregas de ARP Caronas.*
-
-.. list-table::
-   :widths: auto
-   :header-rows: 1
-
-   * - Id
-     - Campo
-     - Tipo
-     - Obrigatório
-     - Descrição
-
-   * - :destaque:`4`
-     - :destaque:`Titulo-Documento`
-     - :destaque:`Texto(255)`
-     - :destaque:`Sim`
-     - :destaque:`Título do documento`
-
-   * - :destaque:`5`
-     - :destaque:`Tipo-Documento-Id`
-     - :destaque:`Inteiro`
-     - :destaque:`Sim`
-     - :destaque:`Código da tabela de domínio Tipo de documento .`
-
-   * - :destaque-amarelo-claro:`11`
-     - :destaque-amarelo-claro:`possibilidadeAdesao`
-     - :destaque-amarelo-claro:`Booleano`
-     - :destaque-amarelo-claro:`Sim`
-     - :destaque-amarelo-claro:`Indicador se a Ata permite adesão de não participantes (False=Não / True=Sim)`
-
-   * - :destaque-amarelo-claro:`12`
-     - :destaque-amarelo-claro:`Lista de Partes Envolvidas`
-     - :destaque-amarelo-claro:`List`
-     - :destaque-amarelo-claro:`Sim`
-     - :destaque-amarelo-claro:`Lista de partes envolvidas. É permitido somente os códigos 1 e 2 ao inserir a ARP.`
-
-   * - :destaque-amarelo-claro:`12.1`
-     - :destaque-amarelo-claro:`tipoParteEnvolvidaId`
-     - :destaque-amarelo-claro:`Inteiro`
-     - :destaque-amarelo-claro:`Sim`
-     - :destaque-amarelo-claro:`Código do Tipo de Parte Envolvida. Código 1 - Gerenciadora Código 2 - Participante Código 3 - Não Participante`
-
-   * - :destaque-amarelo-claro:`12.2`
-     - :destaque-amarelo-claro:`cnpj`
-     - :destaque-amarelo-claro:`Texto (14)`
-     - :destaque-amarelo-claro:`Sim`
-     - :destaque-amarelo-claro:`CNPJ do órgão`
-
-   * - :destaque-amarelo-claro:`12.3`
-     - :destaque-amarelo-claro:`codigoUnidadeCompradora`
-     - :destaque-amarelo-claro:`Texto (30)`
-     - :destaque-amarelo-claro:`Sim`
-     - :destaque-amarelo-claro:`Código da Unidade Administrativa`
-
-.. versionchanged:: 2.3.10
-
-   não houve alterações.
-
-.. deprecated:: 2.3.10
-
-   não houve alterações.
-
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
 
@@ -120,39 +25,24 @@ Exemplo de Payload
 
 .. code-block:: json
    :linenos:
-   :emphasize-lines: 1,8-15
+   :emphasize-lines: 1,8-16
 
    Arquivo JSON:
      {
-     "cnpjCompra": "10000000000003",
-     "anoCompra": 2021,
-     "sequencialCompra": 1,
-     "sequencialAta": 1,
-     "frutoAdesao": true,
-     "temRemanejamento": false,
-     "tipoContratoId": 1,
-     "numeroContratoEmpenho": "1",
-     "anoContrato": 2021,
-     "processo": "1/2021",
-     "categoriaProcessoId": 2,
-     "receita": false,
-     "codigoUnidade": "1",
-     "niFornecedor": "10000000000010",
-     "tipoPessoaFornecedor": "PJ",
-     "nomeRazaoSocialFornecedor": "Fornecedor do Teste I",
-     "objetoContrato": "Contrato para exemplificar uso da API PNCP",
-     "informacaoComplementar": "",
-     "valorInicial": 10000.0000,
-     "numeroParcelas": 2,
-     "valorParcela": 5000.0000,
-     "valorGlobal": 10000.0000,
-     "valorAcumulado": 10000.0000,
-     "dataAssinatura": "2021-07-27",
-     "dataVigenciaInicio": "2021-07-28",
-     "dataVigenciaFim": "2021-07-29",
-     "identificadorCipi": "111.11-011",
-     "urlCipi": "https://cipi.economia.gov.br/111.11-011"
-     }
+        "numeroAtaRegistroPreco": "00001",
+        "anoAta": 2021,
+        "dataAssinatura": “2021-07-21",
+        "dataVigenciaInicio": “2021-07-21",
+        "dataVigenciaFim": “2022-07-21",
+        "possibilidadeAdesao": true,
+        "partesEnvolvidas": [
+          {
+            "tipoParteEnvolvidaId": 1,
+            "cnpj": "10000000000003",
+            "codigoUnidadeCompradora": "1"
+          }
+        ]
+      }
 
 Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -161,23 +51,24 @@ Exemplo Requisição (cURL)
    :linenos:
    :emphasize-lines: 1-6
 
-   curl -X POST \
-     --header "Authorization: Bearer access_token" \
-     --header "accept: */*" \
-     --header "Content-Type: application/json" \
-     --data "@home/objeto.json" \
-     "$BASE_URL/v1/orgaos/100000000000003/contratos"
+   Enviando como arquivo:
+   curl -k -X POST --header "Authorization: Bearer access_token"
+   "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/atas" -H "accept: */*” -H “Content-Type: multipart/form-data” 
+   -H 'Titulo-Documento: nome_do_arquivo' -H 'Tipo-Documento-Id: 11' --form ‘ata=@”/home/atametadados.json";type=application/json’ 
+   --form ‘documento=@”ataarquivo.pdf”'
+
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-   Alimentar o parâmetro {cnpj}, {anoCompra} e {sequencialCompra} na URL.
+   Alimentar o parâmetro ``{cnpj}``, ``{anoCompra}`` e ``{sequencialCompra}`` na URL.
 
 .. list-table::
    :width: 100%
-   :widths: 5 25 15 25 30
+   :widths: 5 10 10 15 55
    :header-rows: 1
+   :class: quebra-linha-ultima-coluna
 
    * - Id
      - Campo
@@ -319,8 +210,8 @@ Exemplo de Retorno
    x-frame-options: DENY
    x-xss-protection: ?; mode=block
 
-**Códigos de Retorno**
-~~~~~~~~~~~~~~~~~~~~~~
+Códigos de Retorno
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -330,11 +221,14 @@ Exemplo de Retorno
    * - Código HTTP
      - Mensagem
      - Tipo
-   * - 201
+   * - 200
      - Created
      - Sucesso
    * - 400
      - BadRequest
+     - Erro
+   * - 401
+     - Unauthorized
      - Erro
    * - 422
      - Unprocessable Entity
@@ -342,3 +236,5 @@ Exemplo de Retorno
    * - 500
      - Internal Server Error
      - Erro
+
+\
