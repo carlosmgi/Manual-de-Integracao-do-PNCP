@@ -39,7 +39,12 @@ table.quebra-linha :is(td, th):nth-child(5) {
   overflow-wrap: anywhere !important;
 }
 
-/*Quebra a linha da última coluna*/
+/* Quebra a linha da última coluna */
+table.quebra-linha-ultima-coluna {
+  table-layout: fixed;
+  width: 100%;
+}
+
 table.quebra-linha-ultima-coluna td:last-child,
 table.quebra-linha-ultima-coluna th:last-child {
   white-space: normal !important;
