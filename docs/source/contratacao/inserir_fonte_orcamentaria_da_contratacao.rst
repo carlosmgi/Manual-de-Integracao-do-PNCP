@@ -23,8 +23,8 @@ Exemplo de Payload
   :linenos:
   
 	{
-    "listaFonteOrcamentariaId": [ 1, 2 ]
-  }
+    	"listaFonteOrcamentariaId": [ 1, 2 ]
+  	}
 
 
 Exemplo Requisição (cURL)
@@ -33,7 +33,7 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
 
 	curl -X 'POST' -H 'Authorization: Bearer access_token' "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/fonte-orcamentaria" 
-  -H "accept: */*" -H "Content-Type: application/json" -d "{ "listaFonteOrcamentariaId": [ 1, 2 ] }"
+  	-H "accept: */*" -H "Content-Type: application/json" -d "{ "listaFonteOrcamentariaId": [ 1, 2 ] }"
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
@@ -47,22 +47,27 @@ Dados de entrada
    * - Id
      - Campo
      - Tipo
+     - Obrigatório
      - Descrição
    * - 1
      - cnpj
      - Texto (14)
+     - Sim
      - CNPJ do órgão originário da contratação informado na inclusão (proprietário da contratação ou alienação de bens).
    * - 2
      - ano
      - Inteiro
+     - Sim
      - Ano da contratação.
    * - 3
      - sequencial
      - Inteiro
+     - Sim
      - Sequencial da contratação no PNCP; Número gerado no momento que a contratação foi inserida no PNCP.
    * - 4
      - listaFonteOrcamentariaId
      - Lista de Inteiros
+     - Sim
      - Lista de códigos de fontes orçamentárias da contratação.
 
 Códigos de Retorno
