@@ -16,6 +16,16 @@ Detalhes da Requisição
    * - /v1/orgaos/{cnpj}/compras/{ano}/{sequencial}/{numeroItem}/imagens/{sequencialImagem}
      - DELETE
 	 
+Exemplo de Payload
+~~~~~~~~~~~~~~~~~~
+
+.. code-block:: json
+  :linenos:
+  
+	{
+  		"justificativa": " Motivo/justificativa para exclusão da imagem do item da contratação"
+	}
+
 
 Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -23,44 +33,57 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
 
 	curl -k -X DELETE --header "Authorization: Bearer access_token"
-	"${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/1/imagens/1" -H "accept: */* -H "Content-Type: application/pdf" -H Content-Disposition: filename="nome_arquivo"
+	"${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/1/imagens/1" -H "accept: */* -H "Content-Type: application/pdf" 
+	-H Content-Disposition: filename="nome_arquivo"
+
 
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
 
+.. note::
+	Alimentar o parâmetro ``{cnpj}``, ``{ano}``, ``{sequencial}``, ``{numeroItem}`` e ``{sequencialImagem}`` na URL.
+
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 5 10 10 15 55
    :header-rows: 1
+   :class: quebra-linha-ultima-coluna
 
    * - Id
      - Campo
      - Tipo
+     - Obrigatório
      - Descrição
    * - 1
      - cnpj
      - Texto (14)
+     - Sim
      - CNPJ do órgão originário da contratação informado na inclusão (proprietário da contratação ou alienação de bens).
    * - 2
      - ano
      - Inteiro
+     - Sim
      - Ano da contratação.
    * - 3
      - sequencial
      - Inteiro
-     - Sequencial da contratação no PNCP; número gerado no momento que a contratação foi inserida no PNCP.
+     - Sim
+     - Sequencial da contratação no PNCP; Número gerado no momento que a contratação foi inserida no PNCP.
    * - 4
      - numeroItem
      - Inteiro
+     - Sim
      - Número do item na contratação.
    * - 5
      - sequencialImagem
      - Inteiro
+     - Sim
      - Sequencial da imagem no PNCP; número gerado no momento que a imagem foi inserida no PNCP.
    * - 6
      - justificativa
      - Texto (255)
+     - Sim
      - Motivo/justificativa para exclusão da imagem do item da contratação.
 
 
@@ -83,7 +106,7 @@ Códigos de Retorno
      - Erro
    * - 422
      - Unprocessable Entity
-     - NotFound
+     - Erro
    * - 500
      - Internal Server Error
      - Erro
