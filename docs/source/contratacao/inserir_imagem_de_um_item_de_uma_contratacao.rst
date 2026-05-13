@@ -50,48 +50,48 @@ Dados de entrada
    * - Id
      - Campo
      - Tipo
-	 - Obrigatório
+     - Obrigatório
      - Descrição
    * - 1
      - cnpj
      - Texto (14)
-	 - Sim
+     - Sim
      - CNPJ do órgão originário da contratação informado na inclusão (proprietário da contratação ou alienação de bens).
    * - 2
      - ano
      - Inteiro
-	 - Sim
+     - Sim
      - Ano da contratação.
    * - 3
      - sequencial
      - Inteiro
-	 - Sim
+     - Sim
      - Sequencial da Contratação no PNCP; Número sequencial gerado no momento que a contratação foi inserida no PNCP;
    * - 4
      - numeroItem
      - Inteiro
-	 - Sim
+     - Sim
      - Número do item da contratação.
    * - 5
      - Titulo-Imagem
      - Texto (500)
-	 - Não
+     - Não
      - Título da imagem a ser exibido no Portal PNCP.
    * - 6
      - Legenda-Imagem
      - Texto (500)
-	 - Não
+     - Não
      - Legenda da imagem a ser exibida no Portal PNCP.
    * - 7
      - Texto-Alternativo-Imagem
      - Texto (500)
-	 - Sim
+     - Sim
      - Texto alternativo da imagem a ser exibido no Portal PNCP.
    * - 8
      - arquivo
      - String Binária
-	 - Sim
-     - Conteúdo binário do arquivo da imagem.
+     - Sim
+     - String binária 
 
 Códigos de Retorno
 ~~~~~~~~~~~~~~~~~~
