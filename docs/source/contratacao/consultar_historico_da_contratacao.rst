@@ -16,6 +16,14 @@ Detalhes da Requisição
    * - /v1/orgaos/{cnpj}/compras/{ano}/{sequencial}/historico
      - GET
 	 
+Exemplo de Payload
+------------------
+
+.. code-block:: json
+  :linenos:
+  
+	Não se aplica
+
 
 Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -32,8 +40,10 @@ Dados de entrada
 
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 5 10 10 15 55
    :header-rows: 1
+   :class: quebra-ultima-coluna
+   
 
    * - Id
      - Campo
@@ -50,23 +60,24 @@ Dados de entrada
    * - 3
      - sequencial
      - Inteiro
-     - Número sequencial da contratação no PNCP, gerado no momento da sua inclusão.
+     - Sequencial da contratação no PNCP; Número sequencial gerado no momento que a contratação foi inserida no PNCP
    * - 4
      - pagina
      - Inteiro
-     - Número da página para fins de paginação dos itens.
+     - Utilizado para paginação dos itens. Número da página.
    * - 5
      - tamanhoPagina
      - Inteiro
-     - Quantidade de itens por página na paginação dos resultados.
+     - Utilizado para paginação dos itens. Quantidade itens por página.
 
 Dados de retorno
 ~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 5 10 15 55
    :header-rows: 1
+   :class: quebra-ultima-coluna
 
    * - Id
      - Campo
@@ -87,7 +98,7 @@ Dados de retorno
    * - 1.3
      - compraSequencial
      - Inteiro
-     - Sequencial da contratação no PNCP; número gerado no momento da inclusão.
+     - Sequencial da contratação no PNCP; Número sequencial gerado no momento que a contratação foi inserida no PNCP;
    * - 1.4
      - logManutencaoDataInclusao
      - Data/Hora
@@ -99,7 +110,7 @@ Dados de retorno
    * - 1.6
      - tipoLogManutencaoNome
      - String
-     - Nome da operação efetuada. Domínio: 0 - Inclusão; 1 - Retificação; 2 - Exclusão.
+     - Nome da operação efetuada. Domínio: 0 - Inclusão; 1 - Retificação; 2 - Exclusão;
    * - 1.7
      - categoriaLogManutencao
      - Inteiro
@@ -161,7 +172,7 @@ Códigos de Retorno
      - Erro
    * - 422
      - Unprocessable Entity
-     - NotFound
+     - Erro
    * - 500
      - Internal Server Error
      - Erro
