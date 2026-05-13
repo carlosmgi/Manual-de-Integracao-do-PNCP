@@ -136,38 +136,38 @@ Dados de entrada
      - Sim
      - Informar a data de fim de vigência da ata
 
-   * - :destaque-amarelo:`11`
-     - :destaque-amarelo:`possibilidadeAdesao`
-     - :destaque-amarelo:`Booleano`
-     - :destaque-amarelo:`Sim`
-     - :destaque-amarelo:`Indicador se a Ata permite adesão de não participantes (False = Não / True = Sim)`
+   * - :destaque-amarelo-claro:`11`
+     - :destaque-amarelo-claro:`possibilidadeAdesao`
+     - :destaque-amarelo-claro:`Booleano`
+     - :destaque-amarelo-claro:`Sim`
+     - :destaque-amarelo-claro:`Indicador se a Ata permite adesão de não participantes (False = Não / True = Sim)`
 
-   * - :destaque-amarelo:`12`
-     - :destaque-amarelo:`Lista de Partes Envolvidas`
-     - :destaque-amarelo:`Lista`
-     - :destaque-amarelo:`Sim`
-     - :destaque-amarelo:`Lista de partes envolvidas. É permitido somente os códigos 1 e 2 ao inserir a ARP.`
+   * - :destaque-amarelo-claro:`12`
+     - :destaque-amarelo-claro:`Lista de Partes Envolvidas`
+     - :destaque-amarelo-claro:`Lista`
+     - :destaque-amarelo-claro:`Sim`
+     - :destaque-amarelo-claro:`Lista de partes envolvidas. É permitido somente os códigos 1 e 2 ao inserir a ARP.`
 
-   * - :destaque-amarelo:`12.1`
-     - :destaque-amarelo:`tipoParteEnvolvidaId`
-     - :destaque-amarelo:`Inteiro`
-     - :destaque-amarelo:`Sim`
-     - :destaque-amarelo:`Código do Tipo de Parte Envolvida.
-       :destaque-amarelo:`Código 1 Gerenciadora
+   * - :destaque-amarelo-claro:`12.1`
+     - :destaque-amarelo-claro:`tipoParteEnvolvidaId`
+     - :destaque-amarelo-claro:`Inteiro`
+     - :destaque-amarelo-claro:`Sim`
+     - :destaque-amarelo-claro:`Código do Tipo de Parte Envolvida.
+       :destaque-amarelo-claro:`Código 1 Gerenciadora
        Código 2 Participante
        Código 3 Não Participante`
 
-   * - :destaque-amarelo:`12.2`
-     - :destaque-amarelo:`cnpj`
-     - :destaque-amarelo:`Texto (14)`
-     - :destaque-amarelo:`Sim`
-     - :destaque-amarelo:`CNPJ do órgão`
+   * - :destaque-amarelo-claro:`12.2`
+     - :destaque-amarelo-claro:`cnpj`
+     - :destaque-amarelo-claro:`Texto (14)`
+     - :destaque-amarelo-claro:`Sim`
+     - :destaque-amarelo-claro:`CNPJ do órgão`
 
-   * - :destaque-amarelo:`12.3`
-     - :destaque-amarelo:`codigoUnidadeCompradora`
-     - :destaque-amarelo:`Texto (30)`
-     - :destaque-amarelo:`Sim`
-     - :destaque-amarelo:`Código da Unidade Administrativa`
+   * - :destaque-amarelo-claro:`12.3`
+     - :destaque-amarelo-claro:`codigoUnidadeCompradora`
+     - :destaque-amarelo-claro:`Texto (30)`
+     - :destaque-amarelo-claro:`Sim`
+     - :destaque-amarelo-claro:`Código da Unidade Administrativa`
 
 Dados de retorno
 ~~~~~~~~~~~~~~~~
