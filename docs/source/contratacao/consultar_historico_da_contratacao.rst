@@ -42,7 +42,7 @@ Dados de entrada
    :width: 100%
    :widths: 5 10 10 15 55
    :header-rows: 1
-   :class: quebra-ultima-coluna
+   :class: quebra-linha-ultima-coluna
    
 
    * - Id
@@ -77,7 +77,7 @@ Dados de retorno
    :width: 100%
    :widths: 5 10 15 55
    :header-rows: 1
-   :class: quebra-ultima-coluna
+   :class: quebra-linha-ultima-coluna
 
    * - Id
      - Campo
