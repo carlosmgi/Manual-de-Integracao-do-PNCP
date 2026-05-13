@@ -16,6 +16,14 @@ Detalhes da Requisição
    * - /v1/orgaos/{cnpj}/compras/{ano}/{sequencial}/itens/{numeroItem}/imagem
      - GET
 
+Exemplo de Payload
+------------------
+
+.. code-block:: json
+  :linenos:
+  
+	Não se aplica
+
 Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -28,28 +36,34 @@ Dados de entrada
 
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 5 10 10 15 55
    :header-rows: 1
+   :class: quebra-linha-ultima-coluna
 
    * - Id
      - Campo
      - Tipo
+     - Obrigatório
      - Descrição
    * - 1
      - cnpj
      - Texto (14)
+     - Sim
      - CNPJ do órgão originário da contratação informado na inclusão (proprietário da contratação ou alienação de bens).
    * - 2
      - ano
      - Inteiro
+     - Sim
      - Ano da contratação.
    * - 3
      - sequencial
      - Inteiro
-     - Sequencial da contratação no PNCP; número gerado no momento que a contratação foi inserida no PNCP.
+     - Sim
+     - Sequencial da Contratação no PNCP; Número sequencial gerado no momento que a contratação foi inserida no PNCP;
    * - 4
      - numeroItem
      - Inteiro
+     - Sim
      - Número do item da contratação.
 
 Dados de retorno
@@ -57,8 +71,9 @@ Dados de retorno
 
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 5 10 15 55
    :header-rows: 1
+   :class: quebra-linha-ultima-coluna
 
    * - Id
      - Campo
@@ -71,23 +86,23 @@ Dados de retorno
    * - 2
      - numeroItem
      - Inteiro
-     - Número do item da contratação.
+     - Número do Item
    * - 3
      - Imagens
      - Lista
-     - Lista de dados das imagens associadas ao item.
+     - Lista de Dados das Imagens
    * - 3.1
      - sequencialImagem
      - Inteiro
-     - Número sequencial atribuído à imagem.
+     - Número sequencial atribuído à imagem
    * - 3.2
      - titulo
      - Texto
-     - Título da imagem.
+     - Título referente à imagem
    * - 3.3
      - legenda
      - Texto
-     - Legenda da imagem.
+     - Legenda referente à imagem
    * - 3.4
      - textoAlternativo
      - Texto
@@ -95,7 +110,7 @@ Dados de retorno
    * - 3.5
      - url
      - Texto
-     - URL de acesso à imagem.
+     - URL da imagem
    * - 3.6
      - dataPublicacaoPncp
      - Data
@@ -120,7 +135,7 @@ Códigos de Retorno
      - Erro
    * - 422
      - Unprocessable Entity
-     - NotFound
+     - Erro
    * - 500
      - Internal Server Error
      - Erro
