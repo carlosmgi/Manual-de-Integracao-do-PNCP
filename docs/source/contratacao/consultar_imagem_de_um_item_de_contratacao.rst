@@ -16,6 +16,13 @@ Detalhes da Requisição
    * - /v1/orgaos/{cnpj}/compras/{ano}/{sequencial}/itens/{numeroItem}/imagem/{sequencialImagem}
      - GET
 	 
+Exemplo de Payload
+~~~~~~~~~~~~~~~~~~
+
+.. code-block:: json
+  :linenos:
+  
+	Não se aplica
 
 Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -30,33 +37,40 @@ Dados de entrada
 
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 5 10 10 15 55
    :header-rows: 1
+   :class: quebra-linha-ultima-coluna
 
    * - Id
      - Campo
      - Tipo
+     - Sim
      - Descrição
    * - 1
      - cnpj
      - Texto (14)
+     - Sim
      - CNPJ do órgão originário da contratação informado na inclusão (proprietário da contratação ou alienação de bens).
    * - 2
      - ano
      - Inteiro
+     - Sim
      - Ano da contratação.
    * - 3
      - sequencial
      - Inteiro
-     - Sequencial da contratação no PNCP; número gerado no momento que a contratação foi inserida no PNCP.
+     - Sim
+     - Sequencial da Contratação no PNCP; Número sequencial gerado no momento que a contratação foi inserida no PNCP;
    * - 4
      - numeroItem
      - Inteiro
+     - Sim
      - Número do item da contratação.
    * - 5
      - sequencialImagem
      - Inteiro
-     - Número sequencial da imagem a ser recuperada, gerado no momento da sua inclusão no PNCP.
+     - Sim
+     - Número Sequencial da Imagem a ser recuperada. Número sequencial gerado no momento que a imagem foi inserida no PNCP
 
 Dados de retorno
 ~~~~~~~~~~~~~~~~
@@ -73,7 +87,8 @@ Dados de retorno
    * - 1
      - string
      - String
-     - Conteúdo binário do arquivo da imagem.
+     - string do arquivo da imagem
+
 
 Códigos de Retorno
 ~~~~~~~~~~~~~~~~~~
@@ -94,7 +109,7 @@ Códigos de Retorno
      - Erro
    * - 422
      - Unprocessable Entity
-     - NotFound
+     - Erro
    * - 500
      - Internal Server Error
      - Erro
