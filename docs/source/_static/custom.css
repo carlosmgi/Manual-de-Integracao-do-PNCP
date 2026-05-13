@@ -30,16 +30,20 @@ kbd {
     text-align: justify;    
 }
 
-table.quebra-coluna :is(td, th):nth-child(2),
-table.quebra-coluna :is(td, th):nth-child(4),
-table.quebra-coluna :is(td, th):nth-child(5) {
+/*Quebra a linha das colunas 2, 4 e 5*/
+
+table.quebra-linha :is(td, th):nth-child(2),
+table.quebra-linha :is(td, th):nth-child(4),
+table.quebra-linha :is(td, th):nth-child(5) {
   white-space: normal !important;
   word-break: break-word !important;
   overflow-wrap: anywhere !important;
 }
 
-table.quebra-ultima-coluna td:last-child,
-table.quebra-ultima-coluna th:last-child {
+/*Quebra a linha da última coluna*/
+
+table.quebra-linha-ultima-coluna td:last-child,
+table.quebra-linha-ultima-coluna th:last-child {
   white-space: normal !important;
   word-break: break-word !important;
   overflow-wrap: anywhere !important;
