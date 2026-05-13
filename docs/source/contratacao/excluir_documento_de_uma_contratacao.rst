@@ -40,14 +40,13 @@ Dados de Entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-
    Alimentar os parâmetros ``cnpj``, ``ano``, ``sequencial`` e ``sequencialDocumento`` na URL.
 
 .. list-table::
    :width: 100%
    :widths: 5 10 10 15 55
    :header-rows: 1
-   :class: quebra-ultima-coluna
+   :class: quebra-linha-ultima-coluna
 
    * - Id
      - Campo
