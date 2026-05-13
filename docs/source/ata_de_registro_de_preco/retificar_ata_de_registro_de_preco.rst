@@ -3,63 +3,8 @@ Retificar Ata de Registro de Preço
 
 Serviço que permite retificar os dados de uma ata de Registro de Preço. 
 
-  **Importante lembrar que na Retificação todas as informações terão que ser enviadas novamente, não apenas as que sofreram alteração.**
+**Importante lembrar que na Retificação todas as informações terão que ser enviadas novamente, não apenas as que sofreram alteração.**
 
-.. Attention::
-
-   As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
-
-.. list-table::
-   :width: 100%
-   :widths: 5 25 15 25
-   :header-rows: 1
-
-   * - Id
-     - Campo
-     - Tipo
-     - Descrição
-   * - 1
-     - cnpj
-     - Texto
-     - CNPJ do órgão do contrato/empenho
-   * - :destaque:`2`
-     - :destaque:`ano`
-     - :destaque:`Inteiro`
-     - :destaque:`Ano do contrato/empenho`
-   * - 3
-     - sequencialContrato
-     - Inteiro
-     - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
-
-**Atualizações da versão 2.3.10**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. versionadded:: 2.3.10
-
-*Destaque em amarelo destinado à identificação das atualizações relativas às entregas de ARP Caronas.*
- 
-.. list-table::
-  :widths: auto
-  :header-rows: 1
-
-  * - Id
-    - Campo
-    - Tipo
-    - Obrigatório
-    - Descrição
-  * - :destaque-amarelo-claro:`13`
-    - :destaque-amarelo-claro:`possibilidadeAdesao`
-    - :destaque-amarelo-claro:`Booleano`
-    - :destaque-amarelo-claro:`Sim`
-    - :destaque-amarelo-claro:`Indicador se a Ata permite adesão de não participantes (False=Não /True=Sim)`
-
-.. versionchanged:: 2.3.10
-
-  não houve alterações.
-
-.. deprecated:: 2.3.10
-
-  não houve alterações.
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -81,7 +26,7 @@ Exemplo de Payload
 
 .. code-block:: json
    :linenos:
-   :emphasize-lines: 6
+   :emphasize-lines: 7
 
    {
       "numeroAtaRegistroPreco": "1/2021",
@@ -118,21 +63,19 @@ Exemplo Requisição (cURL)
    :linenos:
 
    curl -X 'PUT' '${BASE_URL}/v1/orgaos/00394460000141/compras/2021/1/atas/1' \
-     -H 'accept: */*' \
-     -H 'Authorization: Bearer <TOKEN_AUTORIZACAO>' \
-     -H 'Content-Type: application/json' \
-     -d '@/home/objeto.json'
+   -H 'accept: */*' -H 'Authorization: Bearer <TOKEN_AUTORIZACAO>' -H 'Content-Type: application/json' -d '@/home/objeto.json'
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-   Alimentar o parâmetro {cnpj}, {anoCompra}, {sequencialCompra} e {sequencialAta} na URL.
+   Alimentar o parâmetro ``{cnpj}``, ``{anoCompra}``, ``{sequencialCompra}`` e ``{sequencialAta}`` na URL.
 
 .. list-table::
    :width: 100%
-   :widths: 5 25 15 15 40
+   :widths: 5 10 10 15 55
    :header-rows: 1
+   :class: quebra-linha-ultima-coluna
 
    * - Id
      - Campo
@@ -306,7 +249,7 @@ Exemplo de Retorno
    * - Código HTTP
      - Mensagem
      - Tipo
-   * - 201
+   * - 200
      - Created
      - Sucesso
    * - 400
@@ -325,3 +268,4 @@ Exemplo de Retorno
      - Internal Server Error
      - Erro
 
+\
