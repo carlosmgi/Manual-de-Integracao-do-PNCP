@@ -28,4 +28,8 @@ Serviços que disponibilizam conjunto de operações relacionadas às contrataç
    excluir_imagem_de_um_item_de_uma_contratacao
    consultar_imagens_de_um_item_de_contratacao
    consultar_imagem_de_um_item_de_contratacao
+   inserir_fonte_orcamentaria_da_contratacao
+   excluir_fonte_orcamentaria_da_contrataca
+   consultar_fonte_orcamentaria_da_contratacao
+   consultar_todas_as_fontes_orcamentarias_da_contratacao
 
