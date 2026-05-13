@@ -28,6 +28,9 @@ Exemplo Requisição (cURL)
 Dados de entrada
 ~~~~~~~~~~~~~~~~
 
+.. note::
+	Alimentar o parâmetro ``{cnpj}``, ``{ano}`` e ``{sequencial}`` na URL.
+
 .. list-table::
    :width: 100%
    :widths: 5 10 10 15 55
