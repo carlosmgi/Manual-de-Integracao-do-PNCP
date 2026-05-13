@@ -54,7 +54,8 @@ Exemplo Requisição (cURL)
 
 .. code-block:: bash
 
-	curl -k -X  PUT --header "Authorization: Bearer access_token" "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1" -H "accept: */*" -H "Content-Type: application/json" 
+	curl -k -X  PUT --header "Authorization: Bearer access_token" 
+	"${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1" -H "accept: */*" -H "Content-Type: application/json" 
 
 Dados de Entrada
 ~~~~~~~~~~~~~~~~
@@ -66,7 +67,7 @@ Dados de Entrada
    :width: 100%
    :widths: 5 25 10 30 55
    :header-rows: 1
-   :class: quebra-coluna
+   :class: quebra-linha
 
    * - Id
      - Campo
