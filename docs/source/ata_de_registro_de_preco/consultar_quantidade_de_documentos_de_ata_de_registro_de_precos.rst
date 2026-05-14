@@ -53,19 +53,19 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
    :linenos:
 
-   curl -k -X GET "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/atas/1/arquivos/quantidade" \
-     -H "accept: */*"
+   curl -k -X GET "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/atas/1/arquivos/quantidade" -H "accept: */*"
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-   Alimentar o parâmetro {cnpj}, {anoCompra}, {sequencialCompra} e {sequencialAta} na URL.
+   Alimentar os parâmetros ``{cnpj}``, ``{anoCompra}``, ``{sequencialCompra}`` e ``{sequencialAta}`` na URL.
 
 .. list-table::
    :width: 100%
-   :widths: 5 25 15 15 40
+   :widths: 5 10 10 15 55
    :header-rows: 1
+   :class: quebra-linha-ultima-coluna
 
    * - Id
      - Campo
