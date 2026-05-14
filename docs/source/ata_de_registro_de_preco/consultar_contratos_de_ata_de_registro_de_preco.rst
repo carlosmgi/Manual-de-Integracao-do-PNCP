@@ -104,7 +104,7 @@ Dados de retorno
 
    * - :destaque-amarelo-claro:`1`
      - :destaque-amarelo-claro:`data`
-     - -
+     - 
      - :destaque-amarelo-claro:`Dados retornados pela consulta`
 
    * - :destaque-amarelo-claro:`1.1`
@@ -124,7 +124,7 @@ Dados de retorno
 
    * - :destaque-amarelo-claro:`1.4`
      - :destaque-amarelo-claro:`orgaoEntidade`
-     - -
+     - 
      - :destaque-amarelo-claro:`Dados do órgão/entidade do contrato/empenho`
 
    * - :destaque-amarelo-claro:`1.4.1`
@@ -139,7 +139,7 @@ Dados de retorno
 
    * - :destaque-amarelo-claro:`1.5`
      - :destaque-amarelo-claro:`unidadeExecutora`
-     - -
+     - 
      - :destaque-amarelo-claro:`Dados da Unidade Administrativa`
 
    * - :destaque-amarelo-claro:`1.5.1`
@@ -154,7 +154,7 @@ Dados de retorno
 
    * - :destaque-amarelo-claro:`1.5.3`
      - :destaque-amarelo-claro:`localidade`
-     - -
+     - 
      - :destaque-amarelo-claro:`Localidade da Unidade Administrativa`
 
    * - :destaque-amarelo-claro:`1.5.3.1`
@@ -204,7 +204,7 @@ Dados de retorno
 
    * - :destaque-amarelo-claro:`1.12`
      - :destaque-amarelo-claro:`valorGlobal`
-     - -
+     - 
      - :destaque-amarelo-claro:`Valor global do contrato/empenho`
 
    * - :destaque-amarelo-claro:`1.13`
