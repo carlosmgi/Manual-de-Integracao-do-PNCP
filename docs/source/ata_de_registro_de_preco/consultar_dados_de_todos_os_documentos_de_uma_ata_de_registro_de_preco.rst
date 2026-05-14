@@ -3,32 +3,6 @@ Consultar dados de todos os documentos de uma Ata de Registro de Preço
 
 Serviço que permite consultar todos os documentos pertencentes a uma ata.
 
-.. Attention::
-
-   As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
-
-.. list-table::
-   :width: 100%
-   :widths: 5 25 15 25
-   :header-rows: 1
-
-   * - Id
-     - Campo
-     - Tipo
-     - Descrição
-   * - 1
-     - cnpj
-     - Texto
-     - CNPJ do órgão do contrato/empenho
-   * - :destaque:`2`
-     - :destaque:`anoCompra`
-     - :destaque:`Inteiro`
-     - :destaque:`Ano da contratação`
-   * - 3
-     - sequencialCompra
-     - Inteiro
-     - Sequencial da contratação no PNCP; número sequencial gerado no momento da inclusão
-
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
 
@@ -45,7 +19,10 @@ Detalhes da Requisição
 Exemplo de Payload
 ~~~~~~~~~~~~~~~~~~
 
-Não se aplica.
+.. code-block:: json
+  :linenos:
+  
+	Não se aplica
 
 Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -53,19 +30,19 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
    :linenos:
 
-   curl -k -X GET "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/atas/1/arquivos/1" \
-     -H "Accept: */*"
+   curl -k -X GET "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/atas/1/arquivos/1" -H "Accept: */*"
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-   Alimentar o parâmetro {cnpj}, {anoCompra}, {sequencialCompra} e {sequencialAta} na URL.
+   Alimentar o parâmetro ``{cnpj}``, ``{anoCompra}``, ``{sequencialCompra}`` e ``{sequencialAta}`` na URL.
 
 .. list-table::
    :width: 100%
-   :widths: 5 25 15 15 40
+   :widths: 5 10 10 15 55
    :header-rows: 1
+   :class: quebra-linha-ultima-coluna
 
    * - Id
      - Campo
@@ -78,7 +55,6 @@ Dados de entrada
      - Texto (14)
      - Sim
      - Cnpj do órgão originário da contratação informado na inclusão (proprietário da contratação).
-
 
    * - 2
      - anoCompra
