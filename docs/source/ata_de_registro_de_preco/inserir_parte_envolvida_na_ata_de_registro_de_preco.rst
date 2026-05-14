@@ -149,20 +149,23 @@ Códigos de Retorno
    * - :destaque-amarelo-claro:`201`
      - :destaque-amarelo-claro:`Created`
      - :destaque-amarelo-claro:`Sucesso`
+
    * - :destaque-amarelo-claro:`400`
      - :destaque-amarelo-claro:`BadRequest`
      - :destaque-amarelo-claro:`Erro`
+
    * - :destaque-amarelo-claro:`401`
      - :destaque-amarelo-claro:`Unauthorized`
      - :destaque-amarelo-claro:`Erro`
+
    * - :destaque-amarelo-claro:`404`
      - :destaque-amarelo-claro:`NotFound`
      - :destaque-amarelo-claro:`Erro`
+
    * - :destaque-amarelo-claro:`422`
-     - :destaque-amarelo-claro:``
-     - :destaque-amarelo-claro:``
-     - Unprocessable Entity
-     - Erro
-   * - 500
-     - Internal Server Error
-     - Erro
+     - :destaque-amarelo-claro:`Unprocessable Entity`
+     - :destaque-amarelo-claro:`Erro`
+
+   * - :destaque-amarelo-claro:`500`
+     - :destaque-amarelo-claro:`Internal Server Error`
+     - :destaque-amarelo-claro:`Erro`
