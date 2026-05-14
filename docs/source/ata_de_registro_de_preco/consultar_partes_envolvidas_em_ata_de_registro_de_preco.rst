@@ -39,7 +39,7 @@ Dados de entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-   :destaque-amarelo-claro:`Alimentar o parâmetro {cnpj}, {anoCompra}, {sequencialCompra}, {sequencialAta} e {sequencialDocumento} na URL.`
+   :destaque-amarelo-claro:`Alimentar os parâmetros {cnpj}, {anoCompra}, {sequencialCompra}, {sequencialAta} e {sequencialDocumento} na URL.`
 
 .. list-table::
    :width: 100%
