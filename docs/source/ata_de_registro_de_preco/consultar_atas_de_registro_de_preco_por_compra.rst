@@ -34,7 +34,7 @@ Dados de entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-   Alimentar o parâmetro ``{cnpj}``, ``{anoCompra}`` e ``{sequencialCompra}`` na URL.
+   Alimentar os parâmetros ``{cnpj}``, ``{anoCompra}`` e ``{sequencialCompra}`` na URL.
 
 .. list-table::
    :width: 100%
