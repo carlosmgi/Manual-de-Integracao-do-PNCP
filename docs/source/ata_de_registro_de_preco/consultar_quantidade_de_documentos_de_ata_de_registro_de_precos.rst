@@ -3,32 +3,6 @@ Consultar quantidade de documentos de Ata de Registro de Preços
 
 Serviço que permite consultar a quantidade de documentos vinculados a uma ata de registro de preço.
 
-.. Attention::
-
-   As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
-
-.. list-table::
-   :width: 100%
-   :widths: 5 25 15 25
-   :header-rows: 1
-
-   * - Id
-     - Campo
-     - Tipo
-     - Descrição
-   * - 1
-     - cnpj
-     - Texto
-     - CNPJ do órgão do contrato/empenho
-   * - :destaque:`2`
-     - :destaque:`anoCompra`
-     - :destaque:`Inteiro`
-     - :destaque:`Ano da contratação`
-   * - 3
-     - sequencialCompra
-     - Inteiro
-     - Sequencial da contratação no PNCP; número sequencial gerado no momento da inclusão
-
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
 
