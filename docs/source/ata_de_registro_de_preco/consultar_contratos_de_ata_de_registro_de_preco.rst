@@ -3,32 +3,6 @@ Consultar Contratos de Ata de Registro de Preço
 
 Serviço que permite consultar todos os contratos/empenhos vinculados a uma ata de registro de preço específica.
 
-.. Attention::
-
-   As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
-
-.. list-table::
-   :width: 100%
-   :widths: 5 25 15 25
-   :header-rows: 1
-
-   * - Id
-     - Campo
-     - Tipo
-     - Descrição
-   * - 1
-     - cnpj
-     - Texto
-     - CNPJ do órgão do contrato/empenho
-   * - :destaque:`2`
-     - :destaque:`ano`
-     - :destaque:`Inteiro`
-     - :destaque:`Ano do contrato/empenho`
-   * - 3
-     - sequencialContrato
-     - Inteiro
-     - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
-
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
 
@@ -39,33 +13,38 @@ Detalhes da Requisição
 
    * - Endpoint
      - Método HTTP
-   * - /v1/orgaos/{cnpj}/compras/{ano}/{sequencial}/atas/{sequencialAta}/contratos
-     - GET
+   * - :destaque-amarelo-claro:`/v1/orgaos/{cnpj}/compras/{ano}/{sequencial}/atas/{sequencialAta}/contratos`
+     - :destaque-amarelo-claro:`GET`
 
 Exemplo de Payload
 ~~~~~~~~~~~~~~~~~~
 
-Não se aplica.
+.. code-block:: json
+  :linenos:
+  :emphasize-lines: 1   
+  
+	Não se aplica
 
 Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
    :linenos:
+   :emphasize-lines: 1
 
-   curl -k -X GET "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/atas/1/contratos" \
-     -H "accept: */*"
+      curl -k -X GET "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/atas/1/contratos" -H "accept: */*"
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-   Alimentar o parâmetro {cnpj}, {ano}, {sequencial} e {sequencialAta} na URL.
+   :destaque-amarelo-claro:`Alimentar o parâmetro ``{cnpj}``, ``{ano}``, ``{sequencial}`` e ``{sequencialAta}`` na URL.`
 
 .. list-table::
    :width: 100%
-   :widths: 5 25 15 15 40
+   :widths: 5 10 10 15 55
    :header-rows: 1
+   :class: quebra-linha-ultima-coluna
 
    * - Id
      - Campo
@@ -73,204 +52,205 @@ Dados de entrada
      - Obrigatório
      - Descrição
 
-   * - 1
-     - cnpj
-     - Texto (14)
-     - Sim
-     - CNPJ do órgão originário da contratação informado na inclusão (proprietário da contratação)
+   * - :destaque-amarelo-claro:`1`
+     - :destaque-amarelo-claro:`cnpj`
+     - :destaque-amarelo-claro:`Texto (14)`
+     - :destaque-amarelo-claro:`Sim`
+     - :destaque-amarelo-claro:`CNPJ do órgão originário da contratação informado na inclusão (proprietário da contratação)`
 
-   * - 2
-     - ano
-     - Inteiro
-     - Sim
-     - Ano da contratação
+   * - :destaque-amarelo-claro:`2`
+     - :destaque-amarelo-claro:`ano`
+     - :destaque-amarelo-claro:`Inteiro`
+     - :destaque-amarelo-claro:`Sim`
+     - :destaque-amarelo-claro:`Ano da contratação`
 
-   * - 3
-     - sequencial
-     - Inteiro
-     - Sim
-     - Sequencial da contratação no PNCP
+   * - :destaque-amarelo-claro:`3`
+     - :destaque-amarelo-claro:`sequencial`
+     - :destaque-amarelo-claro:`Inteiro`
+     - :destaque-amarelo-claro:`Sim`
+     - :destaque-amarelo-claro:`Sequencial da contratação no PNCP`
 
-   * - 4
-     - sequencialAta
-     - Inteiro
-     - Sim
-     - Sequencial da Ata no PNCP
+   * - :destaque-amarelo-claro:`4`
+     - :destaque-amarelo-claro:`sequencialAta`
+     - :destaque-amarelo-claro:`Inteiro`
+     - :destaque-amarelo-claro:`Sim`
+     - :destaque-amarelo-claro:`Sequencial da Ata no PNCP`
 
-   * - 5
-     - pagina
-     - Inteiro
-     - Não
-     - Utilizado para paginação dos itens. Número da página
+   * - :destaque-amarelo-claro:`5`
+     - :destaque-amarelo-claro:`pagina`
+     - :destaque-amarelo-claro:`Inteiro`
+     - :destaque-amarelo-claro:`Não`
+     - :destaque-amarelo-claro:`Utilizado para paginação dos itens. Número da página`
 
-   * - 6
-     - tamanhoPagina
-     - Inteiro
-     - Não
-     - Utilizado para paginação dos itens. Quantidade de itens por página
+   * - :destaque-amarelo-claro:`6`
+     - :destaque-amarelo-claro:`tamanhoPagina`
+     - :destaque-amarelo-claro:`Inteiro`
+     - :destaque-amarelo-claro:`Não`
+     - :destaque-amarelo-claro:`Utilizado para paginação dos itens. Quantidade de itens por página`
 
 Dados de retorno
 ~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
-   :widths: 5 25 15 55
+   :widths: 5 10 15 55
    :header-rows: 1
+   :class: quebra-linha-ultima-coluna
 
    * - Id
      - Campo
      - Tipo
      - Descrição
 
-   * - 1
-     - data
+   * - :destaque-amarelo-claro:`1`
+     - :destaque-amarelo-claro:`data`
      - -
-     - Dados retornados pela consulta
+     - :destaque-amarelo-claro:`Dados retornados pela consulta`
 
-   * - 1.1
-     - numeroControle
-     - Texto
-     - Número de controle PNCP do contrato/empenho (id contrato PNCP)
+   * - :destaque-amarelo-claro:`1.1`
+     - :destaque-amarelo-claro:`numeroControle`
+     - :destaque-amarelo-claro:`Texto`
+     - :destaque-amarelo-claro:`Número de controle PNCP do contrato/empenho (id contrato PNCP)`
 
-   * - 1.2
-     - sequencialContrato
-     - Inteiro
-     - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento que o contrato/empenho foi inserido no PNCP
+   * - :destaque-amarelo-claro:`1.2`
+     - :destaque-amarelo-claro:`sequencialContrato`
+     - :destaque-amarelo-claro:`Inteiro`
+     - :destaque-amarelo-claro:`Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento que o contrato/empenho foi inserido no PNCP`
 
-   * - 1.3
-     - frutoAdesao
-     - Booleano
-     - Indicador se o contrato/empenho é de um não participante, ou seja, fruto da adesão a uma ata de registro de preço (False = Não / True = Sim)
+   * - :destaque-amarelo-claro:`1.3`
+     - :destaque-amarelo-claro:`frutoAdesao`
+     - :destaque-amarelo-claro:`Booleano`
+     - :destaque-amarelo-claro:`Indicador se o contrato/empenho é de um não participante, ou seja, fruto da adesão a uma ata de registro de preço (False = Não / True = Sim)`
 
-   * - 1.4
-     - orgaoEntidade
+   * - :destaque-amarelo-claro:`1.4`
+     - :destaque-amarelo-claro:`orgaoEntidade`
      - -
-     - Dados do órgão/entidade do contrato/empenho
+     - :destaque-amarelo-claro:`Dados do órgão/entidade do contrato/empenho`
 
-   * - 1.4.1
-     - cnpj
-     - Texto
-     - CNPJ do órgão/entidade
+   * - :destaque-amarelo-claro:`1.4.1`
+     - :destaque-amarelo-claro:`cnpj`
+     - :destaque-amarelo-claro:`Texto`
+     - :destaque-amarelo-claro:`CNPJ do órgão/entidade`
 
-   * - 1.4.2
-     - nome
-     - Texto
-     - Nome do órgão/entidade
+   * - :destaque-amarelo-claro:`1.4.2`
+     - :destaque-amarelo-claro:`nome`
+     - :destaque-amarelo-claro:`Texto`
+     - :destaque-amarelo-claro:`Nome do órgão/entidade`
 
-   * - 1.5
-     - unidadeExecutora
+   * - :destaque-amarelo-claro:`1.5`
+     - :destaque-amarelo-claro:`unidadeExecutora`
      - -
-     - Dados da Unidade Administrativa
+     - :destaque-amarelo-claro:`Dados da Unidade Administrativa`
 
-   * - 1.5.1
-     - codigo
-     - Texto
-     - Código da Unidade Administrativa
+   * - :destaque-amarelo-claro:`1.5.1`
+     - :destaque-amarelo-claro:`codigo`
+     - :destaque-amarelo-claro:`Texto`
+     - :destaque-amarelo-claro:`Código da Unidade Administrativa`
 
-   * - 1.5.2
-     - nomeUnidade
-     - Texto
-     - Nome da Unidade Administrativa
+   * - :destaque-amarelo-claro:`1.5.2`
+     - :destaque-amarelo-claro:`nomeUnidade`
+     - :destaque-amarelo-claro:`Texto`
+     - :destaque-amarelo-claro:`Nome da Unidade Administrativa`
 
-   * - 1.5.3
-     - localidade
+   * - :destaque-amarelo-claro:`1.5.3`
+     - :destaque-amarelo-claro:`localidade`
      - -
-     - Localidade da Unidade Administrativa
+     - :destaque-amarelo-claro:`Localidade da Unidade Administrativa`
 
-   * - 1.5.3.1
-     - uf
-     - Texto
-     - Unidade Federativa
+   * - :destaque-amarelo-claro:`1.5.3.1`
+     - :destaque-amarelo-claro:`uf`
+     - :destaque-amarelo-claro:`Texto`
+     - :destaque-amarelo-claro:`Unidade Federativa`
 
-   * - 1.5.3.2
-     - codigoIbgeMunicipio
-     - Texto
-     - Código IBGE do Município
+   * - :destaque-amarelo-claro:`1.5.3.2`
+     - :destaque-amarelo-claro:`codigoIbgeMunicipio`
+     - :destaque-amarelo-claro:`Texto`
+     - :destaque-amarelo-claro:`Código IBGE do Município`
 
-   * - 1.5.3.3
-     - nomeMunicipio
-     - Texto
-     - Nome do Município
+   * - :destaque-amarelo-claro:`1.5.3.3`
+     - :destaque-amarelo-claro:`nomeMunicipio`
+     - :destaque-amarelo-claro:`Texto`
+     - :destaque-amarelo-claro:`Nome do Município`
 
-   * - 1.6
-     - numeroContratoEmpenho
-     - Texto
-     - Número do contrato/empenho
+   * - :destaque-amarelo-claro:`1.6`
+     - :destaque-amarelo-claro:`numeroContratoEmpenho`
+     - :destaque-amarelo-claro:`Texto`
+     - :destaque-amarelo-claro:`Número do contrato/empenho`
 
-   * - 1.7
-     - anoContrato
-     - Inteiro
-     - Ano do contrato/empenho
+   * - :destaque-amarelo-claro:`1.7`
+     - :destaque-amarelo-claro:`anoContrato`
+     - :destaque-amarelo-claro:`Inteiro`
+     - :destaque-amarelo-claro:`Ano do contrato/empenho`
 
-   * - 1.8
-     - objetoContrato
-     - Texto
-     - Descrição do objeto do contrato/empenho
+   * - :destaque-amarelo-claro:`1.8`
+     - :destaque-amarelo-claro:`objetoContrato`
+     - :destaque-amarelo-claro:`Texto`
+     - :destaque-amarelo-claro:`Descrição do objeto do contrato/empenho`
 
-   * - 1.9
-     - dataAssinatura
-     - Data
-     - Data da assinatura
+   * - :destaque-amarelo-claro:`1.9`
+     - :destaque-amarelo-claro:`dataAssinatura`
+     - :destaque-amarelo-claro:`Data`
+     - :destaque-amarelo-claro:`Data da assinatura`
 
-   * - 1.10
-     - dataVigenciaInicio
-     - Data
-     - Data inicial de vigência
+   * - :destaque-amarelo-claro:`1.10`
+     - :destaque-amarelo-claro:`dataVigenciaInicio`
+     - :destaque-amarelo-claro:`Data`
+     - :destaque-amarelo-claro:`Data inicial de vigência`
 
-   * - 1.11
-     - dataVigenciaFim
-     - Data
-     - Data final de vigência
+   * - :destaque-amarelo-claro:`1.11`
+     - :destaque-amarelo-claro:`dataVigenciaFim`
+     - :destaque-amarelo-claro:`Data`
+     - :destaque-amarelo-claro:`Data final de vigência`
 
-   * - 1.12
-     - valorGlobal
+   * - :destaque-amarelo-claro:`1.12`
+     - :destaque-amarelo-claro:`valorGlobal`
      - -
-     - Valor global do contrato/empenho
+     - :destaque-amarelo-claro:`Valor global do contrato/empenho`
 
-   * - 1.13
-     - dataPublicacaoPncp
-     - Data/Hora
-     - Data e hora da inclusão no PNCP
+   * - :destaque-amarelo-claro:`1.13`
+     - :destaque-amarelo-claro:`dataPublicacaoPncp`
+     - :destaque-amarelo-claro:`Data/Hora`
+     - :destaque-amarelo-claro:`Data e hora da inclusão no PNCP`
 
-   * - 1.14
-     - usuarioNome
-     - String
-     - Nome do usuário/sistema que efetuou a operação
+   * - :destaque-amarelo-claro:`1.14`
+     - :destaque-amarelo-claro:`usuarioNome`
+     - :destaque-amarelo-claro:`String`
+     - :destaque-amarelo-claro:`Nome do usuário/sistema que efetuou a operação`
 
-   * - 2
-     - totalRegistros
-     - Inteiro
-     - Total de registros de contratos/empenhos encontrados
+   * - :destaque-amarelo-claro:`2`
+     - :destaque-amarelo-claro:`totalRegistros`
+     - :destaque-amarelo-claro:`Inteiro`
+     - :destaque-amarelo-claro:`Total de registros de contratos/empenhos encontrados`
 
-   * - 3
-     - totalPaginas
-     - Inteiro
-     - Total de páginas
+   * - :destaque-amarelo-claro:`3`
+     - :destaque-amarelo-claro:`totalPaginas`
+     - :destaque-amarelo-claro:`Inteiro`
+     - :destaque-amarelo-claro:`Total de páginas`
 
-   * - 4
-     - numeroPagina
-     - Inteiro
-     - Número da página consultada
+   * - :destaque-amarelo-claro:`4`
+     - :destaque-amarelo-claro:`numeroPagina`
+     - :destaque-amarelo-claro:`Inteiro`
+     - :destaque-amarelo-claro:`Número da página consultada`
 
-   * - 5
-     - paginasRestantes
-     - Inteiro
-     - Quantidade de páginas restantes
+   * - :destaque-amarelo-claro:`5`
+     - :destaque-amarelo-claro:`paginasRestantes`
+     - :destaque-amarelo-claro:`Inteiro`
+     - :destaque-amarelo-claro:`Quantidade de páginas restantes`
 
-   * - 6
-     - emendaParlamentar
-     - Booleano
-     - Marcador de emenda parlamentar na contratação
+   * - :destaque-amarelo-claro:`6`
+     - :destaque-amarelo-claro:`emendaParlamentar`
+     - :destaque-amarelo-claro:`Booleano`
+     - :destaque-amarelo-claro:`Marcador de emenda parlamentar na contratação`
 
-   * - 7
-     - temRemanejamento
-     - Booleano
-     - Indicador de remanejamento (False = Não / True = Sim). O remanejamento permite a transferência de saldos entre órgãos participantes ou não participantes (caronas), mediante autorização do órgão gerenciador e anuência do fornecedor
+   * - :destaque-amarelo-claro:`7`
+     - :destaque-amarelo-claro:`temRemanejamento`
+     - :destaque-amarelo-claro:`Booleano`
+     - :destaque-amarelo-claro:`Indicador de remanejamento (False = Não / True = Sim). O remanejamento permite a transferência de saldos entre órgãos participantes ou não participantes (caronas), mediante autorização do órgão gerenciador e anuência do fornecedor`
 
-   * - 8
-     - empty
-     - Booleano
-     - Indica se o retorno está vazio
+   * - :destaque-amarelo-claro:`8`
+     - :destaque-amarelo-claro:`empty`
+     - :destaque-amarelo-claro:`Booleano`
+     - :destaque-amarelo-claro:`Indica se o retorno está vazio`
 
 Códigos de Retorno
 ~~~~~~~~~~~~~~~~~~
@@ -284,15 +264,15 @@ Códigos de Retorno
      - Mensagem
      - Tipo
 
-   * - 201
-     - Created
-     - Sucesso
-   * - 400
-     - BadRequest
-     - Erro
-   * - 422
-     - Unprocessable Entity
-     - Erro
-   * - 500
-     - Internal Server Error
-     - Erro
+   * - :destaque-amarelo-claro:`200`
+     - :destaque-amarelo-claro:`Ok`
+     - :destaque-amarelo-claro:`Sucesso`
+   * - :destaque-amarelo-claro:`400`
+     - :destaque-amarelo-claro:`BadRequest`
+     - :destaque-amarelo-claro:`Erro`
+   * - :destaque-amarelo-claro:`422`
+     - :destaque-amarelo-claro:`Unprocessable Entity`
+     - :destaque-amarelo-claro:`Erro`
+   * - :destaque-amarelo-claro:`500`
+     - Internal Server Error`
+     - :destaque-amarelo-claro:`Erro`
