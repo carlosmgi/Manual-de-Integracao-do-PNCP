@@ -1,33 +1,7 @@
 Consultar Partes Envolvidas em Ata de Registro de Preço
 =======================================================
 
-Serviço que recupera a lista de partes envolvida em uma ata de registro de preço específica.
-
-.. Attention::
-
-   As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
-
-.. list-table::
-   :width: 100%
-   :widths: 5 25 15 25
-   :header-rows: 1
-
-   * - Id
-     - Campo
-     - Tipo
-     - Descrição
-   * - 1
-     - cnpj
-     - Texto
-     - CNPJ do órgão do contrato/empenho
-   * - :destaque:`2`
-     - :destaque:`ano`
-     - :destaque:`Inteiro`
-     - :destaque:`Ano do contrato/empenho`
-   * - 3
-     - sequencialContrato
-     - Inteiro
-     - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
+:destaque-amarelo-claro:`Serviço que recupera a lista de partes envolvida em uma ata de registro de preço específica.`
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -39,34 +13,39 @@ Detalhes da Requisição
 
    * - Endpoint
      - Método HTTP
-   * - /v1/orgaos/{cnpj}/compras/{anoCompra}/{sequencialCompra}/atas/{sequencialAta}/partesenvolvidas
-     - GET
+   * - :destaque-amarelo-claro:`/v1/orgaos/{cnpj}/compras/{anoCompra}/{sequencialCompra}/atas/{sequencialAta}/partesenvolvidas`
+     - :destaque-amarelo-claro:`GET`
 
 Exemplo de Payload
 ~~~~~~~~~~~~~~~~~~
 
-Não se aplica.
+.. code-block:: json
+  :linenos:
+  :emphasize-lines: 1
 
+	Não se aplica
+	
+	
 Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
    :linenos:
+   :emphasize-lines: 1
 
-   curl -X 'GET' \
-     '${BASE_URL}/v1/orgaos/00394460000141/compras/2021/1/atas/1/partesenvolvidas' \
-     -H 'accept: */*'
+      curl -X 'GET' '${BASE_URL}/v1/orgaos/00394460000141/compras/2021/1/atas/1/partesenvolvidas' -H 'accept: */*'
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-   Alimentar o parâmetro {cnpj}, {anoCompra}, {sequencialCompra}, {sequencialAta} e {sequencialDocumento} na URL.
+   :destaque-amarelo-claro:`Alimentar o parâmetro {cnpj}, {anoCompra}, {sequencialCompra}, {sequencialAta} e {sequencialDocumento} na URL.`
 
 .. list-table::
    :width: 100%
-   :widths: 5 25 15 15 40
+   :widths: 5 10 10 15 55
    :header-rows: 1
+   :class: quebra-linha-ultima-coluna
 
    * - Id
      - Campo
@@ -74,156 +53,159 @@ Dados de entrada
      - Obrigatório
      - Descrição
 
-   * - 1
-     - cnpj
-     - Texto (14)
-     - Sim
-     - Cnpj do órgão originário da contratação informado na inclusão (proprietário da contratação)
+   * - :destaque-amarelo-claro:`1`
+     - :destaque-amarelo-claro:`cnpj`
+     - :destaque-amarelo-claro:`Texto (14)`
+     - :destaque-amarelo-claro:`Sim`
+     - :destaque-amarelo-claro:`Cnpj do órgão originário da contratação informado na inclusão (proprietário da contratação)`
 
-   * - 2
-     - anoCompra
-     - Inteiro
-     - Sim
-     - Ano da contratação
+   * - :destaque-amarelo-claro:`2`
+     - :destaque-amarelo-claro:`anoCompra`
+     - :destaque-amarelo-claro:`Inteiro`
+     - :destaque-amarelo-claro:`Sim`
+     - :destaque-amarelo-claro:`Ano da contratação`
 
-   * - 3
-     - sequencialCompra
-     - Inteiro
-     - Sim
-     - Sequencial da contratação no PNCP; Número sequencial gerado no momento que a contratação foi inserida no PNCP;
+   * - :destaque-amarelo-claro:`3`
+     - :destaque-amarelo-claro:`sequencialCompra`
+     - :destaque-amarelo-claro:`Inteiro`
+     - :destaque-amarelo-claro:`Sim`
+     - :destaque-amarelo-claro:`Sequencial da contratação no PNCP; Número sequencial gerado no momento que a contratação foi inserida no PNCP;`
 
-   * - 4
-     - sequencialAta
-     - Inteiro
-     - Sim
-     - Sequencial da ata no PNCP; Número sequencial gerado no momento que a ata foi inserida no PNCP;
+   * - :destaque-amarelo-claro:`4`
+     - :destaque-amarelo-claro:`sequencialAta`
+     - :destaque-amarelo-claro:`Inteiro`
+     - :destaque-amarelo-claro:`Sim`
+     - :destaque-amarelo-claro:`Sequencial da ata no PNCP; Número sequencial gerado no momento que a ata foi inserida no PNCP;`
 
-   * - 5
-     - pagina
-     - Inteiro
-     - Não
-     - Número da página a ser retornada quando utilizada a paginação
+   * - :destaque-amarelo-claro:`5`
+     - :destaque-amarelo-claro:`pagina`
+     - :destaque-amarelo-claro:`Inteiro`
+     - :destaque-amarelo-claro:`Não`
+     - :destaque-amarelo-claro:`Número da página a ser retornada quando utilizada a paginação`
 
-   * - 6
-     - tamanhoPagina
-     - Inteiro
-     - Não
-     - Quantidade de partes envolvidas a serem retornadas na paginação quando informado.
+   * - :destaque-amarelo-claro:`6`
+     - :destaque-amarelo-claro:`tamanhoPagina`
+     - :destaque-amarelo-claro:`Inteiro`
+     - :destaque-amarelo-claro:`Não`
+     - :destaque-amarelo-claro:`Quantidade de partes envolvidas a serem retornadas na paginação quando informado.`
 
 Dados de retorno
 ~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
-   :widths: 5 25 15 55
+   :widths: 5 10 15 55
    :header-rows: 1
+   :class: quebra-linha-ultima-coluna
 
    * - Id
      - Campo
      - Tipo
      - Descrição
 
-   * - 1
-     - data
-     - Lista
-     - Lista com os dados das Partes Envolvidas de uma Ata de Registro de Preço
+   * - :destaque-amarelo-claro:`1`
+     - :destaque-amarelo-claro:`data`
+     - :destaque-amarelo-claro:`Lista`
+     - :destaque-amarelo-claro:`Lista com os dados das Partes Envolvidas de uma Ata de Registro de Preço`
 
-   * - 1.1
-     - dataInclusao
-     - Data/Hora
-     - Data/Hora da inclusão da informação no PNCP
+   * - :destaque-amarelo-claro:`1.1`
+     - :destaque-amarelo-claro:`dataInclusao`
+     - :destaque-amarelo-claro:`Data/Hora`
+     - :destaque-amarelo-claro:`Data/Hora da inclusão da informação no PNCP`
 
-   * - 1.2
-     - tipoParteEnvolvida
+   * - :destaque-amarelo-claro:`1.2`
+     - :destaque-amarelo-claro:`tipoParteEnvolvida`
+     - :destaque-amarelo-claro:``
+     - :destaque-amarelo-claro:`Tipo de Parte Envolvida`
+
+   * - :destaque-amarelo-claro:`1.2.1`
+     - :destaque-amarelo-claro:`id`
+     - :destaque-amarelo-claro:`Inteiro`
+     - :destaque-amarelo-claro:`Código do Tipo de Parte Envolvida`
+
+   * - :destaque-amarelo-claro:`1.2.2`
+     - :destaque-amarelo-claro:`nome`
+     - :destaque-amarelo-claro:`Texto`
+     - :destaque-amarelo-claro:`Nome do Tipo de Parte Envolvida`
+
+   * - :destaque-amarelo-claro:`1.2.3`
+     - :destaque-amarelo-claro:`descricao`
+     - :destaque-amarelo-claro:`Texto`
+     - :destaque-amarelo-claro:`Descrição do Tipo de Parte Envolvida`
+
+   * - :destaque-amarelo-claro:`1.3`
+     - :destaque-amarelo-claro:`orgao`
+     - :destaque-amarelo-claro:``
+     - :destaque-amarelo-claro:`Dados do Órgão/Entidade`
+
+   * - :destaque-amarelo-claro:`1.3.1`
+     - :destaque-amarelo-claro:`cnpj`
+     - :destaque-amarelo-claro:`Texto`
+     - :destaque-amarelo-claro:`CNPJ do Órgão/Entidade`
+
+   * - :destaque-amarelo-claro:`1.3.2`
+     - :destaque-amarelo-claro:`nome`
+     - :destaque-amarelo-claro:`Texto`
+     - :destaque-amarelo-claro:`Nome do Órgão/Entidade`
+
+   * - :destaque-amarelo-claro:`1.4`
+     - :destaque-amarelo-claro:`unidade`
+     - :destaque-amarelo-claro:``
+     - :destaque-amarelo-claro:`Dados da Unidade Administrativa`
+
+   * - :destaque-amarelo-claro:`1.4.1`
+     - :destaque-amarelo-claro:`codigo`
+     - :destaque-amarelo-claro:`Texto`
+     - :destaque-amarelo-claro:`Código da Unidade Administrativa`
+
+   * - :destaque-amarelo-claro:`1.4.2`
+     - :destaque-amarelo-claro:`nomeUnidade`
+     - :destaque-amarelo-claro:`Texto`
+     - :destaque-amarelo-claro:`Nome da Unidade Administrativa`
+
+   * - :destaque-amarelo-claro:`1.4.3`
+     - :destaque-amarelo-claro:`localidade`
+     - :destaque-amarelo-claro:``
+     - :destaque-amarelo-claro:`Localidade da Unidade Administrativa`
+
+   * - :destaque-amarelo-claro:`1.4.3.1`
+     - :destaque-amarelo-claro:`uf`
+     - :destaque-amarelo-claro:`Texto`
+     - :destaque-amarelo-claro:`Unidade Federativa do Município`
+
+   * - :destaque-amarelo-claro:`1.4.3.2`
+     - :destaque-amarelo-claro:`codigoIbgeMunicipio`
+     - :destaque-amarelo-claro:`Texto`
+     - :destaque-amarelo-claro:`Código IBGE do Município`
+
+   * - :destaque-amarelo-claro:`1.4.3.3`
+     - :destaque-amarelo-claro:`nomeMunicipio`
+     - :destaque-amarelo-claro:`Texto`
+     - :destaque-amarelo-claro:`Nome do Município`
+
+   * - :destaque-amarelo-claro:`2`
+     - :destaque-amarelo-claro:`totalRegistros`
+     - :destaque-amarelo-claro:`Inteiro`
+     - :destaque-amarelo-claro:`Total de registros de partes envolvidas encontrados`
+
+   * - :destaque-amarelo-claro:`3`
+     - :destaque-amarelo-claro:`totalPaginas`
+     - :destaque-amarelo-claro:`Inteiro`
+     - :destaque-amarelo-claro:`Total de páginas`
+
+   * - :destaque-amarelo-claro:`4`
+     - :destaque-amarelo-claro:`numeroPagina`
+     - :destaque-amarelo-claro:`Inteiro`
+     - :destaque-amarelo-claro:`Número da página consultado`
+
+   * - :destaque-amarelo-claro:`5`
+     - :destaque-amarelo-claro:`paginasRestantes`
+     - :destaque-amarelo-claro:`Inteiro`
+     - :destaque-amarelo-claro:`Quantidade de páginas restantes`
+
+   * - :destaque-amarelo-claro:`6`
+     - :destaque-amarelo-claro:`empty`
+     - :destaque-amarelo-claro:`Booleano`
      - 
-     - Tipo de Parte Envolvida
 
-   * - 1.2.1
-     - id
-     - Inteiro
-     - Código do Tipo de Parte Envolvida
-
-   * - 1.2.2
-     - nome
-     - Texto
-     - Nome do Tipo de Parte Envolvida
-
-   * - 1.2.3
-     - descricao
-     - Texto
-     - Descrição do Tipo de Parte Envolvida
-
-   * - 1.3
-     - orgao
-     - 
-     - Dados do Órgão/Entidade
-
-   * - 1.3.1
-     - cnpj
-     - Texto
-     - CNPJ do Órgão/Entidade
-
-   * - 1.3.2
-     - nome
-     - Texto
-     - Nome do Órgão/Entidade
-
-   * - 1.4
-     - unidade
-     - 
-     - Dados da Unidade Administrativa
-
-   * - 1.4.1
-     - codigo
-     - Texto
-     - Código da Unidade Administrativa
-
-   * - 1.4.2
-     - nomeUnidade
-     - Texto
-     - Nome da Unidade Administrativa
-
-   * - 1.4.3
-     - localidade
-     - 
-     - Localidade da Unidade Administrativa
-
-   * - 1.4.3.1
-     - uf
-     - Texto
-     - Unidade Federativa do Município
-
-   * - 1.4.3.2
-     - codigoIbgeMunicipio
-     - Texto
-     - Código IBGE do Município
-
-   * - 1.4.3.3
-     - nomeMunicipio
-     - Texto
-     - Nome do Município
-
-   * - 2
-     - totalRegistros
-     - Inteiro
-     - Total de registros de partes envolvidas encontrados
-
-   * - 3
-     - totalPaginas
-     - Inteiro
-     - Total de páginas
-
-   * - 4
-     - numeroPagina
-     - Inteiro
-     - Número da página consultado
-
-   * - 5
-     - paginasRestantes
-     - Inteiro
-     - Quantidade de páginas restantes
-
-   * - 6
-     - empty
-     - Booleano
-     - 
+\
