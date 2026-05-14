@@ -1,33 +1,7 @@
 Consultar Parte Envolvida em Ata de Registro de Preço
 =====================================================
 
-Serviço que recupera os dados de uma parte envolvida específica de uma ata de registro de preço.
-
-.. Attention::
-
-   As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
-
-.. list-table::
-   :width: 100%
-   :widths: 5 25 15 25
-   :header-rows: 1
-
-   * - Id
-     - Campo
-     - Tipo
-     - Descrição
-   * - 1
-     - cnpj
-     - Texto
-     - CNPJ do órgão do contrato/empenho
-   * - :destaque:`2`
-     - :destaque:`ano`
-     - :destaque:`Inteiro`
-     - :destaque:`Ano do contrato/empenho`
-   * - 3
-     - sequencialContrato
-     - Inteiro
-     - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
+:destaque-amarelo-claro:`Serviço que recupera os dados de uma parte envolvida específica de uma ata de registro de preço.`
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -39,34 +13,38 @@ Detalhes da Requisição
 
    * - Endpoint
      - Método HTTP
-   * - /v1/orgaos/{cnpj}/compras/{anoCompra}/{sequencialCompra}/atas/{sequencialAta}/partesenvolvidas/{cnpjOrgao}/{codUnidade}/{tipoParteEnvolvida}
-     - GET
+   * - :destaque-amarelo-claro:`/v1/orgaos/{cnpj}/compras/{anoCompra}/{sequencialCompra}/atas/{sequencialAta}/partesenvolvidas/{cnpjOrgao}/{codUnidade}/{tipoParteEnvolvida}`
+     - :destaque-amarelo-claro:`GET`
 
 Exemplo de Payload
 ~~~~~~~~~~~~~~~~~~
 
-Não se aplica.
+.. code-block:: json
+  :linenos:
+  :emphasize-lines: 1
+
+	Não se aplica
 
 Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
    :linenos:
+  :emphasize-lines: 1
 
-   curl -X 'GET' \
-     '${BASE_URL}/v1/orgaos/00394460000141/compras/2021/1/atas/1/partesenvolvidas/00394460000141/1/1' \
-     -H 'accept: */*'
+   curl -X 'GET' '${BASE_URL}/v1/orgaos/00394460000141/compras/2021/1/atas/1/partesenvolvidas/00394460000141/1/1' -H 'accept: */*'
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-   Alimentar o parâmetro {cnpj}, {anoCompra}, {sequencialCompra}, {sequencialAta} na URL.
+   :destaque-amarelo-claro:`Alimentar o parâmetro {cnpj}, {anoCompra}, {sequencialCompra}, {sequencialAta} na URL.`
 
 .. list-table::
    :width: 100%
-   :widths: 5 25 15 15 40
+   :widths: 5 10 10 15 55
    :header-rows: 1
+   :class: quebra-linha-ultima-coluna
 
    * - Id
      - Campo
@@ -74,132 +52,134 @@ Dados de entrada
      - Obrigatório
      - Descrição
 
-   * - 1
-     - cnpj
-     - Texto (14)
-     - Sim
-     - Cnpj do órgão originário da contratação informado na inclusão (proprietário da contratação)
+   * - :destaque-amarelo-claro:`1`
+     - :destaque-amarelo-claro:`cnpj`
+     - :destaque-amarelo-claro:`Texto (14)`
+     - :destaque-amarelo-claro:`Sim`
+     - :destaque-amarelo-claro:`Cnpj do órgão originário da contratação informado na inclusão (proprietário da contratação)`
 
-   * - 2
-     - anoCompra
-     - Inteiro
-     - Sim
-     - Ano da contratação
+   * - :destaque-amarelo-claro:`2`
+     - :destaque-amarelo-claro:`anoCompra`
+     - :destaque-amarelo-claro:`Inteiro`
+     - :destaque-amarelo-claro:`Sim`
+     - :destaque-amarelo-claro:`Ano da contratação`
 
-   * - 3
-     - sequencialCompra
-     - Inteiro
-     - Sim
-     - Sequencial da contratação no PNCP; Número sequencial gerado no momento que a contratação foi inserida no PNCP;
+   * - :destaque-amarelo-claro:`3`
+     - :destaque-amarelo-claro:`sequencialCompra`
+     - :destaque-amarelo-claro:`Inteiro`
+     - :destaque-amarelo-claro:`Sim`
+     - :destaque-amarelo-claro:`Sequencial da contratação no PNCP; Número sequencial gerado no momento que a contratação foi inserida no PNCP;`
 
-   * - 4
-     - sequencialAta
-     - Inteiro
-     - Sim
-     - Sequencial da ata no PNCP; Número sequencial gerado no momento que a ata foi inserida no PNCP;
+   * - :destaque-amarelo-claro:`4`
+     - :destaque-amarelo-claro:`sequencialAta`
+     - :destaque-amarelo-claro:`Inteiro`
+     - :destaque-amarelo-claro:`Sim`
+     - :destaque-amarelo-claro:`Sequencial da ata no PNCP; Número sequencial gerado no momento que a ata foi inserida no PNCP;`
 
-   * - 5
-     - cnpjOrgao
-     - Texto (14)
-     - Sim
-     - CNPJ do órgão/entidade da parte envolvida
+   * - :destaque-amarelo-claro:`5`
+     - :destaque-amarelo-claro:`cnpjOrgao`
+     - :destaque-amarelo-claro:`Texto (14)`
+     - :destaque-amarelo-claro:`Sim`
+     - :destaque-amarelo-claro:`CNPJ do órgão/entidade da parte envolvida`
 
-   * - 6
-     - codUnidade
-     - Texto (30)
-     - Sim
-     - Código da unidade administrativa da parte envolvida
+   * - :destaque-amarelo-claro:`6`
+     - :destaque-amarelo-claro:`codUnidade`
+     - :destaque-amarelo-claro:`Texto (30)`
+     - :destaque-amarelo-claro:`Sim`
+     - :destaque-amarelo-claro:`Código da unidade administrativa da parte envolvida`
 
-   * - 7
-     - tipoParteEnvolvida
-     - Inteiro
-     - Sim
-     - Código do tipo da parte envolvida
+   * - :destaque-amarelo-claro:`7`
+     - :destaque-amarelo-claro:`tipoParteEnvolvida`
+     - :destaque-amarelo-claro:`Inteiro`
+     - :destaque-amarelo-claro:`Sim`
+     - :destaque-amarelo-claro:`Código do tipo da parte envolvida`
 
 Dados de retorno
 ~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
-   :widths: 5 25 15 55
+   :widths: 5 10 15 55
    :header-rows: 1
+   :class: quebra-linha-ultima-coluna
 
    * - Id
      - Campo
      - Tipo
      - Descrição
 
-   * - 1
-     - dataInclusao
-     - Data/Hora
-     - Data/Hora da inclusão da informação no PNCP
+   * - :destaque-amarelo-claro:`1`
+     - :destaque-amarelo-claro:`dataInclusao`
+     - :destaque-amarelo-claro:`Data/Hora`
+     - :destaque-amarelo-claro:`Data/Hora da inclusão da informação no PNCP`
 
-   * - 2
-     - tipoParteEnvolvida
-     - Lista
-     - Tipo de Parte Envolvida
+   * - :destaque-amarelo-claro:`2`
+     - :destaque-amarelo-claro:`tipoParteEnvolvida`
+     - :destaque-amarelo-claro:`Lista`
+     - :destaque-amarelo-claro:`Tipo de Parte Envolvida`
 
-   * - 2.1
-     - id
-     - Inteiro
-     - Código do Tipo de Parte Envolvida
+   * - :destaque-amarelo-claro:`2.1`
+     - :destaque-amarelo-claro:`id`
+     - :destaque-amarelo-claro:`Inteiro`
+     - :destaque-amarelo-claro:`Código do Tipo de Parte Envolvida`
 
-   * - 2.2
-     - nome
-     - Texto
-     - Nome do Tipo de Parte Envolvida
+   * - :destaque-amarelo-claro:`2.2`
+     - :destaque-amarelo-claro:`nome`
+     - :destaque-amarelo-claro:`Texto`
+     - :destaque-amarelo-claro:`Nome do Tipo de Parte Envolvida`
 
-   * - 2.3
-     - descricao
-     - Texto
-     - Descrição do Tipo de Parte Envolvida
+   * - :destaque-amarelo-claro:`2.3`
+     - :destaque-amarelo-claro:`descricao`
+     - :destaque-amarelo-claro:`Texto`
+     - :destaque-amarelo-claro:`Descrição do Tipo de Parte Envolvida`
 
-   * - 3
-     - orgao
-     - Lista
-     - Dados do Órgão/Entidade
+   * - :destaque-amarelo-claro:`3`
+     - :destaque-amarelo-claro:`orgao`
+     - :destaque-amarelo-claro:`Lista`
+     - :destaque-amarelo-claro:`Dados do Órgão/Entidade`
 
-   * - 3.1
-     - cnpj
-     - Texto
-     - CNPJ do Órgão/Entidade
+   * - :destaque-amarelo-claro:`3.1`
+     - :destaque-amarelo-claro:`cnpj`
+     - :destaque-amarelo-claro:`Texto`
+     - :destaque-amarelo-claro:`CNPJ do Órgão/Entidade`
 
-   * - 3.2
-     - nome
-     - Texto
-     - Nome do Órgão/Entidade
+   * - :destaque-amarelo-claro:`3.2`
+     - :destaque-amarelo-claro:`nome`
+     - :destaque-amarelo-claro:`Texto`
+     - :destaque-amarelo-claro:`Nome do Órgão/Entidade`
 
-   * - 4
-     - unidade
-     - Lista
-     - Dados da Unidade Administrativa
+   * - :destaque-amarelo-claro:`4`
+     - :destaque-amarelo-claro:`unidade`
+     - :destaque-amarelo-claro:`Lista`
+     - :destaque-amarelo-claro:`Dados da Unidade Administrativa`
 
-   * - 4.1
-     - codigo
-     - Texto
-     - Código da Unidade Administrativa
+   * - :destaque-amarelo-claro:`4.1`
+     - :destaque-amarelo-claro:`codigo`
+     - :destaque-amarelo-claro:`Texto`
+     - :destaque-amarelo-claro:`Código da Unidade Administrativa`
 
-   * - 4.2
-     - nomeUnidade
-     - Texto
-     - Nome da Unidade Administrativa
+   * - :destaque-amarelo-claro:`4.2`
+     - :destaque-amarelo-claro:`nomeUnidade`
+     - :destaque-amarelo-claro:`Texto`
+     - :destaque-amarelo-claro:`Nome da Unidade Administrativa`
 
-   * - 4.3
-     - localidade
-     - Lista
-     - Localidade da Unidade Administrativa
+   * - :destaque-amarelo-claro:`4.3`
+     - :destaque-amarelo-claro:`localidade`
+     - :destaque-amarelo-claro:`Lista`
+     - :destaque-amarelo-claro:`Localidade da Unidade Administrativa`
 
-   * - 4.4.1
-     - uf
-     - Texto
-     - Unidade Federativa do Município
+   * - :destaque-amarelo-claro:`4.4.1`
+     - :destaque-amarelo-claro:`uf`
+     - :destaque-amarelo-claro:`Texto`
+     - :destaque-amarelo-claro:`Unidade Federativa do Município`
 
-   * - 4.4.2
-     - codigoIbgeMunicipio
-     - Texto
-     - Código IBGE do Município
+   * - :destaque-amarelo-claro:`4.4.2`
+     - :destaque-amarelo-claro:`codigoIbgeMunicipio`
+     - :destaque-amarelo-claro:`Texto`
+     - :destaque-amarelo-claro:`Código IBGE do Município`
 
-   * - 4.4.3
-     - nomeMunicipio
-     - Texto
-     - Nome do Município
+   * - :destaque-amarelo-claro:`4.4.3`
+     - :destaque-amarelo-claro:`nomeMunicipio`
+     - :destaque-amarelo-claro:`Texto`
+     - :destaque-amarelo-claro:`Nome do Município`
+\
