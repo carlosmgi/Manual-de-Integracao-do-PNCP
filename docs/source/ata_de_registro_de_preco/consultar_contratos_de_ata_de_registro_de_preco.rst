@@ -274,5 +274,5 @@ Códigos de Retorno
      - :destaque-amarelo-claro:`Unprocessable Entity`
      - :destaque-amarelo-claro:`Erro`
    * - :destaque-amarelo-claro:`500`
-     - Internal Server Error`
+     - :destaque-amarelo-claro:`Internal Server Error`
      - :destaque-amarelo-claro:`Erro`
