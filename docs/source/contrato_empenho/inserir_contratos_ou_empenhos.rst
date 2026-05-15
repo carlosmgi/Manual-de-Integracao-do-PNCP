@@ -73,18 +73,15 @@ Exemplo Requisição (cURL)
   :linenos:
   :emphasize-lines: 1-6
 
-   curl -X POST \
-     --header "Authorization: Bearer access_token" \
-     --header "accept: */*" \
-     --header "Content-Type: application/json" \
-     --data "@home/objeto.json" \
-     "$BASE_URL/v1/orgaos/100000000000003/contratos"
+   curl -X POST --header "Authorization: Bearer access_token" 
+     --header "accept: */*" --header "Content-Type: application/json" 
+     --data "@home/objeto.json" "$BASE_URL/v1/orgaos/100000000000003/contratos"
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-   Alimentar o parâmetro {cnpj} na URL.
+   Alimentar o parâmetro ``{cnpj}`` na URL.
 
 .. list-table::
    :width: 100%
