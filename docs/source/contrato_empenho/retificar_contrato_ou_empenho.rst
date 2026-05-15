@@ -7,44 +7,6 @@ Serviço que permite retificar um contrato ou empenho. Este serviço será acion
   
   Na Retificação todas as informações terão que ser enviadas novamente, não apenas as que sofreram alteração. Conforme regra de conformidade, prevista no item 5.19, não é possível a inclusão ou retificação de contrato ou empenho que pertença à contratação realizada por Sistema de Registro de Preços (SRP), a qual não possua ao menos uma ata de registro de preços publicada no PNCP.
 
-**Atualizações da versão 2.3.10**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. versionadded:: 2.3.10
- 
-.. list-table::
-  :widths: auto
-  :header-rows: 1
-
-  * - Id
-    - Campo
-    - Tipo
-    - Obrigatório
-    - Descrição
-  * - 30
-    - dataVigenciaFim
-    - Data
-    - Não
-    - Data do término da vigência do contrato. Opcional apenas para contrato do tipo igual a 1.
-  * - 34
-    - sequencialAta
-    - Inteiro
-    - Não
-    - Número sequencial da ata de registro de preço (gerado pelo PNCP no momento da inclusão da ata).
-  * - 35
-    - frutoAdesao
-    - Booleano
-    - Sim
-    - Indicador se o contrato/empenho é de um não participante, ou seja, fruto da adesão a uma ata de registro de preço.
-
-.. versionchanged:: 2.3.10
-
-  não houve alterações.
-
-.. deprecated:: 2.3.10
-
-  não houve alterações.
-
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
 
@@ -63,42 +25,42 @@ Exemplo de Payload
 
 .. code-block:: json
    :linenos:
-   :emphasize-lines: 5-7
+   :emphasize-lines: 5-6
 
        {
-      "cnpjCompra": "10000000000003",
-      "anoCompra": 2021,
-      "sequencialCompra": 1,
-      "sequencialAta": 1,
-      "frutoAdesao": true,
-      "temRemanejamento": false,
-      "tipoContratoId": 1,
-      "numeroContratoEmpenho": "1",
-      "processo": "1/2021",
-      "categoriaProcessoId": 2,
-      "receita": false,
-      "codigoUnidade": "1",
-      "cnpjOrgaoSubRogado": "",
-      "codigoUnidadeSubRogada": "",
-      "niFornecedor": "10000000000010",
-      "tipoPessoaFornecedor": "PJ",
-      "nomeRazaoSocialFornecedor": "Fornecedor do Teste I",
-      "niFornecedorSubContratado": "",
-      "tipoPessoaFornecedorSubContratado": "",
-      "nomeRazaoSocialFornecedorSubContratado": "",
-      "objetoContrato": "Contrato para exemplificar uso da API de retificação no PNCP.",
-      "informacaoComplementar": "",
-      "valorInicial": 10000.00,
-      "numeroParcelas": 2,
-      "valorParcela": 5000.00,
-      "valorGlobal": 10000.00,
-      "valorAcumulado": 10000.00,
-      "dataAssinatura": "2021-07-21",
-      "dataVigenciaInicio": "2021-07-22",
-      "dataVigenciaFim": "2021-07-23",
-      "justificativa": "motivo/justificativa para a retificação do contrato"
-      “identificadorCipi”: “111.11-011”,
-      “urlCipi”: ” https://cipi.economia.gov.br/111.11-011”
+        "cnpjCompra": "10000000000003",
+        "anoCompra": 2021,
+        "sequencialCompra": 1,
+        "sequencialAta": 1,
+        "frutoAdesao": true,
+        :destaque`"temRemanejamento": false,`
+        "tipoContratoId": 1,
+        "numeroContratoEmpenho": "1",
+        "processo": "1/2021",
+        "categoriaProcessoId": 2,
+        "receita": false,
+        "codigoUnidade": "1",
+        "cnpjOrgaoSubRogado": "",
+        "codigoUnidadeSubRogada": "",
+        "niFornecedor": "10000000000010",
+        "tipoPessoaFornecedor": "PJ",
+        "nomeRazaoSocialFornecedor": "Fornecedor do Teste I",
+        "niFornecedorSubContratado": "",
+        "tipoPessoaFornecedorSubContratado": "",
+        "nomeRazaoSocialFornecedorSubContratado": "",
+        "objetoContrato": "Contrato para exemplificar uso da API de retificação no PNCP.",
+        "informacaoComplementar": "",
+        "valorInicial": 10000.00,
+        "numeroParcelas": 2,
+        "valorParcela": 5000.00,
+        "valorGlobal": 10000.00,
+        "valorAcumulado": 10000.00,
+        "dataAssinatura": "2021-07-21",
+        "dataVigenciaInicio": "2021-07-22",
+        "dataVigenciaFim": "2021-07-23",
+        "justificativa": "motivo/justificativa para a retificação do contrato"
+        “identificadorCipi”: “111.11-011”,
+        “urlCipi”: ” https://cipi.economia.gov.br/111.11-011”
     }
 
 Exemplo Requisição (cURL)
@@ -107,24 +69,21 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
   :linenos:
 
-   curl -k -X PUT \
-     --header "Authorization: Bearer access_token" \
-     -H "accept: */*" \
-     -H "Content-Type: application/json" \
-     "${BASE_URL}/v1/orgaos/10000000000003/contratos/2021/1" \
-     --data "@/home/objeto.json"
+   curl -k -X PUT --header "Authorization: Bearer access_token" -H "accept: */*" 
+   -H "Content-Type: application/json" "${BASE_URL}/v1/orgaos/10000000000003/contratos/2021/1" 
+   --data "@/home/objeto.json"
 
 Dados de Entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-
-  Alimentar os parâmetros {cnpj}, {ano} e {sequencial} na URL.
+  Alimentar os parâmetros ``{cnpj}``, ``{ano}`` e ``{sequencial}`` na URL.
 
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 5 10 10 15 55
    :header-rows: 1
+   :class: quebra-linha-ultima-coluna
 
    * - Id
      - Campo
@@ -279,8 +238,8 @@ Dados de Entrada
    * - 30
      - dataVigenciaFim
      - Data
-     - :destaque:`Não`
-     - :destaque:`Data do término da vigência do contrato. Opcional apenas para contrato do tipo igual a 1`
+     - :destaque-amarelo-claro:`Não`
+     - :destaque-amarelo-claro:`Data do término da vigência do contrato. Opcional apenas para contrato do tipo igual a 1`
    * - 31
      - justificativa
      - Texto (255)
@@ -296,21 +255,21 @@ Dados de Entrada
      - String (8 a 14)
      - Não
      - Url com informações do contrato no sistema de Cadastro Integrado de Projetos de Investimento. Não se aplica a leilão
-   * - :destaque:`34`
-     - :destaque:`sequencialAta`
-     - :destaque:`Inteiro`
-     - :destaque:`Não`
-     - :destaque:`Número sequencial da ata de registro de preço (gerado pelo PNCP no momento da inclusão da ata)`
-   * - :destaque:`35`
-     - :destaque:`frutoAdesao`
-     - :destaque:`Booleano`
-     - :destaque:`Sim`
-     - :destaque:`Indicador se o contrato/empenho é de um não participante, ou seja, fruto da adesão a uma ata de registro de preço (False-Não / True-Sim)`
-   * - :destaque:`36`
-     - :destaque:`temRemanejamento`
-     - :destaque:`Boleano`
-     - :destaque:`Sim`
-     - :destaque:`O remanejamento de quantidade em atas de registro de preços (SRP) é a transferência de saldos de itens entre órgãos participantes ou para não participantes (caronas), permitindo otimizar a compra. Deve ser autorizado pelo órgão gerenciador, respeitando limites legais e a anuência do fornecedor para garantir o equilíbrio econômico-financeiro. Indicador de Remanejamento (False-Não / True-Sim)`
+   * - ::destaque-amarelo-claro:`:`34`
+     - ::destaque-amarelo-claro:`:`sequencialAta`
+     - ::destaque-amarelo-claro:`:`Inteiro`
+     - ::destaque-amarelo-claro:`:`Não`
+     - ::destaque-amarelo-claro:`:`Número sequencial da ata de registro de preço (gerado pelo PNCP no momento da inclusão da ata)`
+   * - ::destaque-amarelo-claro:`:`35`
+     - ::destaque-amarelo-claro:`:`frutoAdesao`
+     - ::destaque-amarelo-claro:`:`Booleano`
+     - ::destaque-amarelo-claro:`:`Sim`
+     - ::destaque-amarelo-claro:`:`Indicador se o contrato/empenho é de um não participante, ou seja, fruto da adesão a uma ata de registro de preço (False-Não / True-Sim)`
+   * - ::destaque:`:`36`
+     - ::destaque:`:`temRemanejamento`
+     - ::destaque:`:`Boleano`
+     - ::destaque:`:`Sim`
+     - ::destaque:`:`O remanejamento de quantidade em atas de registro de preços (SRP) é a transferência de saldos de itens entre órgãos participantes ou para não participantes (caronas), permitindo otimizar a compra. Deve ser autorizado pelo órgão gerenciador, respeitando limites legais e a anuência do fornecedor para garantir o equilíbrio econômico-financeiro. Indicador de Remanejamento (False-Não / True-Sim)`
 
 Dados de retorno
 ~~~~~~~~~~~~~~~~
