@@ -102,16 +102,16 @@ Dados de entrada
      - Texto (14)
      - Sim
      - CNPJ do órgão do contrato/empenho
-   * - :destaque-amarelo:`2`
-     - :destaque-amarelo:`tituloDocumento`
-     - :destaque-amarelo:`Texto (255)`
-     - :destaque-amarelo:`Sim`
-     - :destaque-amarelo:`Título do documento`
-   * - :destaque-amarelo:`3`
-     - :destaque-amarelo:`tipoDocumentoId`
-     - :destaque-amarelo:`Inteiro`
-     - :destaque-amarelo:`Sim`
-     - :destaque-amarelo:`Código da tabela de domínio tipo de documento`
+   * - :destaque:`2`
+     - :destaque:`tituloDocumento`
+     - :destaque:`Texto (255)`
+     - :destaque:`Sim`
+     - :destaque:`Título do documento`
+   * - :destaque:`3`
+     - :destaque:`tipoDocumentoId`
+     - :destaque:`Inteiro`
+     - :destaque:`Sim`
+     - :destaque:`Código da tabela de domínio tipo de documento`
    * - 4
      - cnpjCompra
      - Texto (14)
@@ -263,11 +263,11 @@ Dados de entrada
      - :destaque-amarelo-claro:`Booleano`
      - :destaque-amarelo-claro:`Sim`
      - :destaque-amarelo-claro:`Indicador se o contrato/empenho é fruto de adesão a ata de registro de preço (false = não / true = sim)`
-   * - :destaque-amarelo:`34`
-     - :destaque-amarelo:`temRemanejamento`
-     - :destaque-amarelo:`Booleano`
-     - :destaque-amarelo:`Sim`
-     - :destaque-amarelo:`O remanejamento de quantidade em atas de registro de preços (SRP) é a transferência de saldos de itens entre órgãos participantes ou para não participantes (caronas), permitindo otimizar a compra. Deve ser autorizado pelo órgão gerenciador, respeitando limites legais e a anuência do fornecedor para garantir o equilíbrio econômico-financeiro. Indicador de Remanejamento (False-Não / True-Sim)`
+   * - :destaque:`34`
+     - :destaque:`temRemanejamento`
+     - :destaque:`Booleano`
+     - :destaque:`Sim`
+     - :destaque:`O remanejamento de quantidade em atas de registro de preços (SRP) é a transferência de saldos de itens entre órgãos participantes ou para não participantes (caronas), permitindo otimizar a compra. Deve ser autorizado pelo órgão gerenciador, respeitando limites legais e a anuência do fornecedor para garantir o equilíbrio econômico-financeiro. Indicador de Remanejamento (False-Não / True-Sim)`
 
 Dados de retorno
 ~~~~~~~~~~~~~~~~
