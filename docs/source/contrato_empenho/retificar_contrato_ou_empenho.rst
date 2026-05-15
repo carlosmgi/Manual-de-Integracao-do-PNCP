@@ -33,7 +33,7 @@ Exemplo de Payload
         "sequencialCompra": 1,
         "sequencialAta": 1,
         "frutoAdesao": true,
-        :destaque`"temRemanejamento": false,`
+        :destaque:`"temRemanejamento": false,`
         "tipoContratoId": 1,
         "numeroContratoEmpenho": "1",
         "processo": "1/2021",
@@ -296,7 +296,8 @@ Exemplo de retorno
 .. code-block:: http
    :linenos:
 
-   HTTP/1.1 204 No Content
+   Retorno
+
    Access-Control-Allow-Credentials: true
    Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With, Content-Length, Accept, Origin
    Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS
