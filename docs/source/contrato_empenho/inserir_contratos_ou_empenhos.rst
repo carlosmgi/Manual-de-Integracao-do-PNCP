@@ -102,7 +102,7 @@ Dados de entrada
      - Texto (14)
      - Sim
      - CNPJ do órgão do contrato/empenho
-   * - 2
+   * - :destaque-amarelo:`2`
      - :destaque-amarelo:`tituloDocumento`
      - :destaque-amarelo:`Texto (255)`
      - :destaque-amarelo:`Sim`
