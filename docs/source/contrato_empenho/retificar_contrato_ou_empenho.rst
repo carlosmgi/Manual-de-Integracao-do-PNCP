@@ -25,7 +25,7 @@ Exemplo de Payload
 
 .. code-block:: json
    :linenos:
-   :emphasize-lines: 5-6
+   :emphasize-lines: 5-7
 
        {
         "cnpjCompra": "10000000000003",
@@ -33,7 +33,7 @@ Exemplo de Payload
         "sequencialCompra": 1,
         "sequencialAta": 1,
         "frutoAdesao": true,
-        :destaque:`"temRemanejamento": false,`
+        "temRemanejamento": false,
         "tipoContratoId": 1,
         "numeroContratoEmpenho": "1",
         "processo": "1/2021",
