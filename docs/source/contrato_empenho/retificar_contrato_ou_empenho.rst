@@ -255,21 +255,21 @@ Dados de Entrada
      - String (8 a 14)
      - Não
      - Url com informações do contrato no sistema de Cadastro Integrado de Projetos de Investimento. Não se aplica a leilão
-   * - ::destaque-amarelo-claro:`:`34`
-     - ::destaque-amarelo-claro:`:`sequencialAta`
-     - ::destaque-amarelo-claro:`:`Inteiro`
-     - ::destaque-amarelo-claro:`:`Não`
-     - ::destaque-amarelo-claro:`:`Número sequencial da ata de registro de preço (gerado pelo PNCP no momento da inclusão da ata)`
-   * - ::destaque-amarelo-claro:`:`35`
-     - ::destaque-amarelo-claro:`:`frutoAdesao`
-     - ::destaque-amarelo-claro:`:`Booleano`
-     - ::destaque-amarelo-claro:`:`Sim`
-     - ::destaque-amarelo-claro:`:`Indicador se o contrato/empenho é de um não participante, ou seja, fruto da adesão a uma ata de registro de preço (False-Não / True-Sim)`
-   * - ::destaque:`:`36`
-     - ::destaque:`:`temRemanejamento`
-     - ::destaque:`:`Boleano`
-     - ::destaque:`:`Sim`
-     - ::destaque:`:`O remanejamento de quantidade em atas de registro de preços (SRP) é a transferência de saldos de itens entre órgãos participantes ou para não participantes (caronas), permitindo otimizar a compra. Deve ser autorizado pelo órgão gerenciador, respeitando limites legais e a anuência do fornecedor para garantir o equilíbrio econômico-financeiro. Indicador de Remanejamento (False-Não / True-Sim)`
+   * - :destaque-amarelo-claro:`34`
+     - :destaque-amarelo-claro:`sequencialAta`
+     - :destaque-amarelo-claro:`Inteiro`
+     - :destaque-amarelo-claro:`Não`
+     - :destaque-amarelo-claro:`Número sequencial da ata de registro de preço (gerado pelo PNCP no momento da inclusão da ata)`
+   * - :destaque-amarelo-claro:`35`
+     - :destaque-amarelo-claro:`frutoAdesao`
+     - :destaque-amarelo-claro:`Booleano`
+     - :destaque-amarelo-claro:`Sim`
+     - :destaque-amarelo-claro:`Indicador se o contrato/empenho é de um não participante, ou seja, fruto da adesão a uma ata de registro de preço (False-Não / True-Sim)`
+   * - :destaque:`36`
+     - :destaque:`temRemanejamento`
+     - :destaque:`Boleano`
+     - :destaque:`Sim`
+     - :destaque:`O remanejamento de quantidade em atas de registro de preços (SRP) é a transferência de saldos de itens entre órgãos participantes ou para não participantes (caronas), permitindo otimizar a compra. Deve ser autorizado pelo órgão gerenciador, respeitando limites legais e a anuência do fornecedor para garantir o equilíbrio econômico-financeiro. Indicador de Remanejamento (False-Não / True-Sim)`
 
 Dados de retorno
 ~~~~~~~~~~~~~~~~
