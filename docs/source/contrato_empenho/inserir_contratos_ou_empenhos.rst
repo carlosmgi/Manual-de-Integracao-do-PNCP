@@ -8,47 +8,11 @@ Serviço que permite incluir um contrato ou empenho. Este serviço será acionad
 
     O sistema exige o upload de um arquivo anexo ao contrato enviado. As extensões permitidas para o arquivo anexo são listadas na seção Tabelas de domínio - Envio de arquivos pelas APIs de Documento e os tipos de documento/arquivo aceitos pelo PNCP podem ser consultados na seção Tabelas de domínio - Tipo de Documento, deste manual.
 
+\
+
 .. Attention::
   
     Conforme regra de conformidade, prevista no item 5.19, não é possível a inclusão ou retificação de contrato ou empenho que pertença à contratação realizada por Sistema de Registro de Preços (SRP), a qual não possua ao menos uma ata de registro de preços publicada no PNCP. 
-
-**Atualizações da versão 2.3.10**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. versionadded:: 2.3.10
- 
-.. list-table::
-  :widths: auto
-  :header-rows: 1
-
-  * - Id
-    - Campo
-    - Tipo
-    - Obrigatório
-    - Descrição
-  * - 27
-    - dataVigenciaFim
-    - Data
-    - Não
-    - Data do término da vigência do contrato. Opcional apenas para contrato do tipo igual a 1.
-  * - :destaque:`30`
-    - :destaque:`sequencialAta`
-    - :destaque:`Inteiro`
-    - :destaque:`Não`
-    - :destaque:`Número sequencial da ata de registro de preço (gerado pelo PNCP no momento da inclusão da ata).`
-  * - :destaque:`31`
-    - :destaque:`frutoAdesao`
-    - :destaque:`Booleano`
-    - :destaque:`Sim`
-    - :destaque:`Indicador se o contrato/empenho é de um não participante, ou seja, fruto da adesão a uma ata de registro de preço.`
-
-.. versionchanged:: 2.3.10
-
-  não houve alterações.
-
-.. deprecated:: 2.3.10
-
-  não houve alterações.
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -124,8 +88,9 @@ Dados de entrada
 
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 5 10 10 15 55
    :header-rows: 1
+   :class: quebra-linha-ultima-coluna
 
    * - Id
      - Campo
@@ -138,15 +103,15 @@ Dados de entrada
      - Sim
      - CNPJ do órgão do contrato/empenho
    * - 2
-     - tituloDocumento
-     - Texto (255)
-     - Sim
-     - Título do documento
-   * - 3
-     - tipoDocumentoId
-     - Inteiro
-     - Sim
-     - Código da tabela de domínio tipo de documento
+     - :destaque-amarelo:`tituloDocumento`
+     - :destaque-amarelo:`Texto (255)`
+     - :destaque-amarelo:`Sim`
+     - :destaque-amarelo:`Título do documento`
+   * - :destaque-amarelo:`3`
+     - :destaque-amarelo:`tipoDocumentoId`
+     - :destaque-amarelo:`Inteiro`
+     - :destaque-amarelo:`Sim`
+     - :destaque-amarelo:`Código da tabela de domínio tipo de documento`
    * - 4
      - cnpjCompra
      - Texto (14)
@@ -272,11 +237,11 @@ Dados de entrada
      - Data
      - Sim
      - Data de início de vigência do contrato
-   * - 29
-     - dataVigenciaFim
-     - Data
-     - Não
-     - Data de término da vigência do contrato (opcional apenas para contrato do tipo igual a 1)
+   * - :destaque-amarelo-claro:`29`
+     - :destaque-amarelo-claro:`dataVigenciaFim`
+     - :destaque-amarelo-claro:`Data`
+     - :destaque-amarelo-claro:`Não`
+     - :destaque-amarelo-claro:`Data de término da vigência do contrato (opcional apenas para contrato do tipo igual a 1)`
    * - 30
      - identificadorCipi
      - String (512)
@@ -287,21 +252,22 @@ Dados de entrada
      - String (8 a 14)
      - Não
      - URL com informações do contrato no sistema de Cadastro Integrado de Projetos de Investimento (não se aplica a leilão)
-   * - :destaque:`32`
-     - :destaque:`sequencialAta`
-     - :destaque:`Inteiro`
-     - :destaque:`Não`
-     - :destaque:`Número sequencial da ata de registro de preço (gerado pelo PNCP no momento da inclusão da ata)`
-   * - :destaque:`33`
-     - :destaque:`frutoAdesao`
-     - :destaque:`Booleano`
-     - :destaque:`Sim`
-     - :destaque:`Indicador se o contrato/empenho é fruto de adesão a ata de registro de preço (false = não / true = sim)`
-   * - :destaque:`34`
-     - :destaque:`temRemanejamento`
-     - :destaque:`Booleano`
-     - :destaque:`Sim`
-     - :destaque:`O remanejamento de quantidade em atas de registro de preços (SRP) é a transferência de saldos de itens entre órgãos participantes ou para não participantes (caronas), permitindo otimizar a compra. Deve ser autorizado pelo órgão gerenciador, respeitando limites legais e a anuência do fornecedor para garantir o equilíbrio econômico-financeiro. Indicador de Remanejamento (False-Não / True-Sim)`
+
+   * - :destaque-amarelo-claro:`32`
+     - :destaque-amarelo-claro:`sequencialAta`
+     - :destaque-amarelo-claro:`Inteiro`
+     - :destaque-amarelo-claro:`Não`
+     - :destaque-amarelo-claro:`Número sequencial da ata de registro de preço (gerado pelo PNCP no momento da inclusão da ata)`
+   * - :destaque-amarelo-claro:`33`
+     - :destaque-amarelo-claro:`frutoAdesao`
+     - :destaque-amarelo-claro:`Booleano`
+     - :destaque-amarelo-claro:`Sim`
+     - :destaque-amarelo-claro:`Indicador se o contrato/empenho é fruto de adesão a ata de registro de preço (false = não / true = sim)`
+   * - :destaque-amarelo:`34`
+     - :destaque-amarelo:`temRemanejamento`
+     - :destaque-amarelo:`Booleano`
+     - :destaque-amarelo:`Sim`
+     - :destaque-amarelo:`O remanejamento de quantidade em atas de registro de preços (SRP) é a transferência de saldos de itens entre órgãos participantes ou para não participantes (caronas), permitindo otimizar a compra. Deve ser autorizado pelo órgão gerenciador, respeitando limites legais e a anuência do fornecedor para garantir o equilíbrio econômico-financeiro. Indicador de Remanejamento (False-Não / True-Sim)`
 
 Dados de retorno
 ~~~~~~~~~~~~~~~~
