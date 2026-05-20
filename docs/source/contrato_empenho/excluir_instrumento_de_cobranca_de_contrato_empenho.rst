@@ -51,26 +51,31 @@ Dados de entrada
      - Tipo
      - Obrigatório
      - Descrição
+
    * - 1
      - cnpj
      - Texto (14)
      - Sim
      - CNPJ do órgão do contrato/empenho
+
    * - 2
      - ano
      - Inteiro
      - Sim
      - Ano do contrato/empenho
+
    * - 3
      - sequencialContrato
      - Inteiro
      - Sim
      - Número sequencial do contrato/empenho (gerado pelo PNCP no momento da inclusão)
+
    * - 4
      - sequencialInstrumentoCobranca
      - Inteiro
      - Sim
      - Número sequencial do instrumento de cobrança do contrato/empenho (gerado pelo PNCP no momento da inclusão)
+
    * - 5
      - justificativa
      - Texto (255)
@@ -83,27 +88,31 @@ Códigos de Retorno
 
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 15 35 20
    :header-rows: 1
 
    * - Código HTTP
      - Mensagem
      - Tipo
+
    * - 200
      - Ok
      - Sucesso
+
    * - 400
      - BadRequest
      - Erro
+
    * - 401
      - Unauthorized
      - Erro
+
    * - 422
      - Unprocessable Entity
      - Erro
+
    * - 500
      - Internal Server Error
      - Erro
-
   \
 
