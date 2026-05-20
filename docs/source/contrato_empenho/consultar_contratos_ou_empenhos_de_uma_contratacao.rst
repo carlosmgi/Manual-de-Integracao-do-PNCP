@@ -250,5 +250,4 @@ Dados de retorno
 	  - :destaque:`emendaParlamentar`
 	  - :destaque:`Booleano`
 	  - :destaque:`Indicador de Emenda Parlamentar (False-Não / True-Sim)`
-
 \
