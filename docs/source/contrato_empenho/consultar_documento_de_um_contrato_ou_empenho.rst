@@ -19,7 +19,10 @@ Detalhes da Requisição
 Exemplo de Payload
 ~~~~~~~~~~~~~~~~~~
 
-Não se aplica.
+.. code-block:: json
+  :linenos:
+  
+	Não se aplica
 
 Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -27,21 +30,19 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
   :linenos:
 
-   curl -k -X GET \
-     "${BASE_URL}/v1/orgaos/10000000000003/contratos/2021/1/arquivos/1" \
-     -H "Accept: */*"
+   curl -k -X GET "${BASE_URL}/v1/orgaos/10000000000003/contratos/2021/1/arquivos/1" -H "Accept: */*"
 
 Dados de Entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-
-  Alimentar o parâmetro {cnpj}, {ano}, {sequencial} e {sequencialDocumento} na URL. 
+  Alimentar o parâmetro ``{cnpj}``, ``{ano}``, ``{sequencial}`` e ``{sequencialDocumento}`` na URL. 
 
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 5 10 10 15 55
    :header-rows: 1
+   :class: quebra-linha-ultima-coluna
 
    * - Id
      - Campo
@@ -69,8 +70,8 @@ Dados de Entrada
      - Sim
      - Sequencial do documento no PNCP; Número sequencial gerado no momento que o documento foi inserido no PNCP;
 
-**Dados de Retorno**
-~~~~~~~~~~~~~~~~~~~~
+Dados de Retorno
+~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -86,8 +87,8 @@ Dados de Entrada
       - String
       - string do arquivo
 
-**Códigos de Retorno**
-~~~~~~~~~~~~~~~~~~~~~~
+Códigos de Retorno
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
