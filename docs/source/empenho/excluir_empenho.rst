@@ -40,12 +40,14 @@ Exemplo Requisição (cURL)
 	:linenos:
     :emphasize-lines: 1
 
-		curl -k -X  DELETE --header "Authorization: Bearer access_token" "${BASE_URL}/v1/orgaos/10000000000003/contratos/2025/1/empenhos/1" -H "accept: */*"
+		curl -k -X  DELETE --header "Authorization: Bearer access_token" 
+		"${BASE_URL}/v1/orgaos/10000000000003/contratos/2025/1/empenhos/1" -H "accept: */*"
 
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 5 10 10 15 55
    :header-rows: 1
+   :class: quebra-linha-ultima-coluna
 
    * - Id
      - Campo
