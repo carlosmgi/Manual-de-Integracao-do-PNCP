@@ -94,25 +94,21 @@ Códigos de Retorno
    * - Código HTTP
      - Mensagem
      - Tipo
-
    * - 200
      - Ok
      - Sucesso
-
    * - 400
      - BadRequest
      - Erro
-
    * - 401
      - Unauthorized
      - Erro
-
    * - 422
      - Unprocessable Entity
      - Erro
-
    * - 500
      - Internal Server Error
      - Erro
-  \
+
+\
 
