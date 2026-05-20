@@ -313,12 +313,12 @@ Exemplo de retorno
    X-Frame-Options: DENY
    X-XSS-Protection: 1; mode=block
 
-**Códigos de Retorno**
-~~~~~~~~~~~~~~~~~~~~~~
+Códigos de Retorno
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 15 35 20
    :header-rows: 1
 
    * - Código HTTP
