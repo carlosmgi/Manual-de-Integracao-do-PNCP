@@ -36,22 +36,20 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
   :linenos:  
 
-   curl -k -X DELETE \
-   --header "Authorization: Bearer access_token" \
-   -H "accept: */*" \
-   "${BASE_URL}/v1/orgaos/10000000000003/contratos/2021/1"
+   curl -k -X DELETE --header "Authorization: Bearer access_token" -H "accept: */*" 
+    "${BASE_URL}/v1/orgaos/10000000000003/contratos/2021/1"
 
 Dados de Entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-
-  Alimentar os parâmetros {cnpj}, {ano} e {sequencial} na URL. 
+  Alimentar os parâmetros ``{cnpj}``, ``{ano}`` e ``{sequencial}`` na URL. 
 
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 5 10 10 15 55
    :header-rows: 1
+   :class: quebra-linha-ultima-coluna
 
    * - Id
      - Campo
