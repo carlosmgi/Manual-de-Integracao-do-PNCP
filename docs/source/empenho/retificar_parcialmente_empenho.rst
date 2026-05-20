@@ -53,7 +53,8 @@ Exemplo Requisição (cURL)
   :emphasize-lines: 1,2
 
 	curl -k -X  PUT --header "Authorization: Bearer access_token" 
-	"${BASE_URL}/v1/orgaos/10000000000003/contratos/2025/1/empenhos/1" -H "accept: */*" -H "Content-Type: application/json" --data "@/home/objeto.json"
+	"${BASE_URL}/v1/orgaos/10000000000003/contratos/2025/1/empenhos/1" -H "accept: */*" 
+	-H "Content-Type: application/json" --data "@/home/objeto.json"
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
