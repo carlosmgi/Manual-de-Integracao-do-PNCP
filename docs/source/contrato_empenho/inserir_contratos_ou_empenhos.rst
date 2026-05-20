@@ -81,7 +81,7 @@ Dados de entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-   Alimentar os parâmetros ``{cnpj}`` na URL.
+   Alimentar o parâmetro ``{cnpj}`` na URL.
 
 .. list-table::
    :width: 100%
