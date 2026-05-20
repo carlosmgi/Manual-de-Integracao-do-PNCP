@@ -34,7 +34,7 @@ Publicação de contrato (não SRP):
 
 .. list-table::
    :width: 100%
-   :widths: 10 15 55
+   :widths: 10 25 55
    :header-rows: 1
    :class: quebra-linha-colunas-dois-tres
 
@@ -68,7 +68,7 @@ Fluxo de Processo
 
 .. list-table::
    :width: 100%
-   :widths: 10 15 55
+   :widths: 10 25 55
    :header-rows: 1
    :class: quebra-linha-colunas-dois-tres
 
@@ -151,7 +151,7 @@ Fluxo de Processo
 
 .. list-table::
    :width: 100%
-   :widths: 10 15 55
+   :widths: 10 25 55
    :header-rows: 1
    :class: quebra-linha-colunas-dois-tres
 
@@ -238,7 +238,7 @@ Fluxo de Processo
 
 .. list-table::
    :width: 100%
-   :widths: 10 15 55
+   :widths: 10 25 55
    :header-rows: 1
    :class: quebra-linha-colunas-dois-tres
 
