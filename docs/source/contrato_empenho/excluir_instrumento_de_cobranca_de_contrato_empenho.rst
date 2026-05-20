@@ -88,7 +88,7 @@ Códigos de Retorno
 
 .. list-table::
    :width: 100%
-   :widths: 15 35 20
+   :widths: auto
    :header-rows: 1
 
    * - Código HTTP
