@@ -254,8 +254,8 @@ Exemplo de retorno
    x-frame-options: DENY
    x-xss-protection: 1; mode=block
 
-**Códigos de Retorno**
-~~~~~~~~~~~~~~~~~~~~~~
+Códigos de Retorno
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
