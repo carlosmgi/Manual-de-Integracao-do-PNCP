@@ -20,7 +20,10 @@ Detalhes da Requisição
 Exemplo de Payload
 ~~~~~~~~~~~~~~~~~~
 
-Não se aplica.
+.. code-block:: json
+  :linenos:
+  
+	Não se aplica
 
 Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -28,13 +31,9 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
   :linenos:
 
-   curl -k -X POST \
-     --header "Authorization: Bearer access_token" \
-     -H "accept: */*" \
-     -H "Content-Type: multipart/form-data" \
-     -H "Titulo-Documento: Contrato-2021-1" \
-     -H "Tipo-Documento-Id: 12" \
-     "${BASE_URL}/v1/orgaos/10000000000003/contratos/2021/1/arquivos" \
+   curl -k -X POST --header "Authorization: Bearer access_token" -H "accept: */*" 
+     -H "Content-Type: multipart/form-data" -H "Titulo-Documento: Contrato-2021-1" 
+     -H "Tipo-Documento-Id: 12" "${BASE_URL}/v1/orgaos/10000000000003/contratos/2021/1/arquivos" 
      -F "arquivo=@Contrato-2021-1.pdf;type=application/pdf"
 
 Dados de Entrada
@@ -42,8 +41,9 @@ Dados de Entrada
 
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 5 10 10 15 55
    :header-rows: 1
+   :class: quebra-linha-ultima-coluna
 
    * - Id
      - Campo
@@ -119,8 +119,8 @@ Exemplo de Retorno
    x-frame-options: DENY
    x-xss-protection: 1; mode=block
 
-**Códigos de Retorno**
-~~~~~~~~~~~~~~~~~~~~~~
+Códigos de Retorno
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
