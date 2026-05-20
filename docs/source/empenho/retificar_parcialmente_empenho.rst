@@ -18,7 +18,7 @@ Detalhes da Requisição
    * - Endpoint
      - Método HTTP
    * - :destaque:`/v1/orgaos/{cnpj}/contratos/{ano}/{sequencialContra-to}/empenhos/{sequencialEmpenho}`
-     - :destaque:`PUT`
+     - :destaque:`PATCH`
 	 
 
 Exemplo de Payload
@@ -52,13 +52,13 @@ Exemplo Requisição (cURL)
   :linenos:
   :emphasize-lines: 1,2
 
-	curl -k -X  PUT --header "Authorization: Bearer access_token" "${BASE_URL}/v1/orgaos/10000000000003/contratos/2025/1/empenhos/1" -H "accept: */*" -H "Content-Type: application/json" --data "@/home/objeto.json"
+	curl -k -X  PUT --header "Authorization: Bearer access_token" 
+	"${BASE_URL}/v1/orgaos/10000000000003/contratos/2025/1/empenhos/1" -H "accept: */*" -H "Content-Type: application/json" --data "@/home/objeto.json"
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
 
 .. Note::
-
 	Alimentar os parâmetros :destaque:`{cnpj}`, :destaque:`{ano}`, :destaque:`{sequencialContrato}` e :destaque:`{sequencialEmpenho}` na URL
 
 .. list-table::
