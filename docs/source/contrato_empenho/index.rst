@@ -8,6 +8,7 @@ Serviços que disponibilizam conjunto de operações relacionadas aos contratos/
 
    inserir_contratos_ou_empenhos
    retificar_contrato_ou_empenho
+   retificar_parcialmente_um_contrato_ou_empenho
    excluir_contrato_ou_empenho
    inserir_documento_a_um_contrato_ou_empenho
    excluir_documento_do_contrato_ou_empenho
@@ -16,5 +17,10 @@ Serviços que disponibilizam conjunto de operações relacionadas aos contratos/
    consultar_contrato_ou_empenho
    consultar_contratos_ou_empenhos_de_uma_contratacao
    consultar_historico_do_contrato_ou_empenho
+   inserir_instrumento_de_cobranca_de_um_contrato_empenho
+   retificar_parcialmente_instrumento_de_cobranca_de_contrato_empenho
+   excluir_instrumento_de_cobranca_de_contrato_empenho
+   consultar_instrumento_de_cobranca_de_um_contrato_empenho
+   consultar_instrumentos_de_cobranca_de_um_contrato_ou_empenho
    fluxos_de_inclusao_de_contratos_fruto_de_ata_de_registro_de_precos_(arp)_no_pncp
-   retificar_parcialmente_um_contrato_ou_empenho
+   
