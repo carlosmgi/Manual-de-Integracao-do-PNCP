@@ -70,144 +70,118 @@ Dados de retorno
 
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 5 10 15 55
    :header-rows: 1
+   :class: quebra-linha-ultima-coluna
 
    * - Id
       - Campo
       - Tipo
-      - Descrição
- 
+      - Descrição 
     * - 1
       - numeroControlePNCP
       - String
-      - Número de controle PNCP do contrato/empenho (id contrato PNCP)
- 
+      - Número de controle PNCP do contrato/empenho (id contrato PNCP) 
     * - 2
       - numeroControlePNCPCompra
       - String
-      - Número de controle PNCP da contratação relacionada (id contratação PNCP)
- 
+      - Número de controle PNCP da contratação relacionada (id contratação PNCP) 
     * - 3
       - numeroContratoEmpenho
       - Texto (50)
       - Número do contrato ou empenho com força de contrato
-
     * - 4
       - anoContrato
       - Inteiro`
-      - Ano do contrato/empenho
- 
+      - Ano do contrato/empenho 
     * - 5
       - sequencialContrato
       - Inteiro
-      - Número sequencial do contrato/empenho (gerado pelo PNCP)
- 
+      - Número sequencial do contrato/empenho (gerado pelo PNCP) 
     * - 6
       - processo
       - Texto (50)
-      - Número do processo
- 
+      - Número do processo 
     * - 7
       - tipoContrato
       - 
-      - Dados do tipo de contrato/empenho
- 
+      - Dados do tipo de contrato/empenho 
     * - 7.1
       - Id
       - Inteiro
-      - Código da tabela de domínio Tipo de contrato
- 
+      - Código da tabela de domínio Tipo de contrato 
     * - 7.2
       - Nome
       - String
-      - Nome do Tipo de Contrato
- 
+      - Nome do Tipo de Contrato 
     * - 8
       - categoriaProcesso
       - 
-      - Dados da categoria do processo
- 
+      - Dados da categoria do processo 
     * - 8.1
       - Id
       - Inteiro
-      - Código da tabela de domínio Categoria
- 
+      - Código da tabela de domínio Categoria 
     * - 8.2
       - Nome
       - String
-      - Nome da Categoria do processo
- 
+      - Nome da Categoria do processo 
     * - 9
       - receita
       - Booleano
-      - Receita ou despesa: True - Receita; False - Despesa
- 
+      - Receita ou despesa: True - Receita; False - Despesa 
     * - 10
       - objetoContrato
       - Texto (5120)
-      - Descrição do objeto do contrato/empenho
- 
+      - Descrição do objeto do contrato/empenho 
     * - 11
       - informacaoComplementar
       - Texto (5120)
-      - Informações complementares, se houver
- 
+      - Informações complementares, se houver 
     * - 12
       - orgaoEntidade
       - 
-      - Dados do Órgão/Entidade do Contrato/Empenho
- 
+      - Dados do Órgão/Entidade do Contrato/Empenho 
     * - 12.1
       - cnpj
       - String
-      - CNPJ do Órgão
- 
+      - CNPJ do Órgão 
     * - 12.2
       - razaosocial
       - String
-      - Razão social do Órgão
- 
+      - Razão social do Órgão 
     * - 12.3
       - poderId
       - String
-      - Código do poder: L - Legislativo; E - Executivo; J - Judiciário`
- 
+      - Código do poder: L - Legislativo; E - Executivo; J - Judiciário 
     * - 12.4
       - esferaId
       - String
-      - Código da esfera: F - Federal; E - Estadual; M - Municipal; D - Distrital
- 
+      - Código da esfera: F - Federal; E - Estadual; M - Municipal; D - Distrital 
     * - 13
       - unidadeOrgao
       - 
-      - Dados da Unidade executora do Órgão
- 
+      - Dados da Unidade executora do Órgão 
     * - 13.1
       - codigoUnidade
       - String
-      - Código da Unidade Executora
- 
+      - Código da Unidade Executora 
     * - 13.2
       - nomeUnidade
       - String
-      - Nome da Unidade Executora
- 
+      - Nome da Unidade Executora 
     * - 13.3
       - municipioId
       - Inteiro
-      - Código IBGE do município
- 
+      - Código IBGE do município 
     * - 13.4
       - municipioNome
       - String
-      - Nome do município
- 
+      - Nome do município 
     * - 13.5
       - ufSigla
       - String
-      - Sigla da UF
- 
+      - Sigla da UF 
     * - 13.6
       - ufNome
       - String
@@ -232,7 +206,6 @@ Dados de retorno
       - esferaId
       - String
       - Código da esfera a que pertence o Órgão. F - Federal; E - Estadual; M - Municipal; D - Distrital
-
     * - 15
       - unidadeSubRogada
       - 
@@ -261,7 +234,6 @@ Dados de retorno
       - ufNome
       - String
       - Nome da unidade federativa do município
-
     * - :destaque-amarelo-claro:`36`
       - :destaque-amarelo-claro:`frutoAdesao`
       - :destaque-amarelo-claro:`Booleano`
@@ -269,13 +241,11 @@ Dados de retorno
     * - :destaque-amarelo-claro:`37`
       - :destaque-amarelo-claro:`numeroControlePncpAta`
       - :destaque-amarelo-claro:`String`
-      - :destaque-amarelo-claro:`Número de controle PNCP da Ata de Registro de Preço relacionada (id ata PNCP)`
- 
+      - :destaque-amarelo-claro:`Número de controle PNCP da Ata de Registro de Preço relacionada (id ata PNCP)` 
     * - :destaque:`38`
       - :destaque:`temRemanejamento`
       - :destaque:`Booleano`
-      - :destaque:`O remanejamento de quantidade em atas de registro de preços (SRP) é a transferência de saldos de itens entre órgãos participantes ou não participantes (caronas), permitindo otimizar a compra. Deve ser autorizado pelo órgão gerenciador, respeitando limites legais e a anuência do fornecedor. Indicador de Remanejamento (False-Não / True-Sim)`
- 
+      - :destaque:`O remanejamento de quantidade em atas de registro de preços (SRP) é a transferência de saldos de itens entre órgãos participantes ou não participantes (caronas), permitindo otimizar a compra. Deve ser autorizado pelo órgão gerenciador, respeitando limites legais e a anuência do fornecedor. Indicador de Remanejamento (False-Não / True-Sim)` 
     * - :destaque:`39`
       - :destaque:`emendaParlamentar`
       - :destaque:`Booleano`
