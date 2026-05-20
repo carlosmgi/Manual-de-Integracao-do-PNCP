@@ -118,8 +118,8 @@ Dados de Retorno
       - Inteiro
       - Sequencial da contratação no PNCP; número sequencial gerado no momento que a contratação foi inserida no PNCP
 
-**Códigos de Retorno**
-~~~~~~~~~~~~~~~~~~~~~~
+Códigos de Retorno
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
