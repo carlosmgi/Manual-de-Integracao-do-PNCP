@@ -41,10 +41,10 @@ Publicação de contrato (não SRP):
      - Ação
      - Informações relevantes
    * - Órgão Entidade/Pública
-     - Inserir Contratação (item 6.3.1. Inserir Contratação)
+     - Inserir Contratação
      - • informar campo "srp": false
    * - Órgão Entidade/Pública
-     - Inserir Contrato (item 6.5.1. Inserir Contrato/Empenho)
+     - Inserir Contrato
      - • informar campo "frutoAdesao": false
        • não informar o campo "sequencialAta"
 
@@ -74,16 +74,16 @@ Fluxo de Processo
      - Ação
      - Informações relevantes
    * - Gerenciadora
-     - Inserir Contratação (item 6.3.1. Inserir Contratação)
+     - Inserir Contratação
      - | • informar campo "srp": true
    * - Gerenciadora
-     - Inserir Ata de Registro de Preços (item 6.4.1 Inserir Ata de Registro de Preço)
+     - Inserir Ata de Registro de Preços
      - | • informar campo "possibilidadeAdesao": true/false
        | • informar partes envolvidas:
        |   - TipoParteEnvolvidaId: 1 (Gerenciadora)
        |   - TipoParteEnvolvidaId: 2 (Participante)
    * - Gerenciadora
-     - Inserir Contrato (item 6.5.1. Inserir Contrato/Empenho)
+     - Inserir Contrato
      - | • informar campo cnpj do contratante (/v1/orgaos/{cnpj}/contratos)
        | • informar campo "cnpjCompra" da gerenciadora
        | • informar o campo "codigoUnidade" do contratante
@@ -156,20 +156,20 @@ Fluxo de Processo
      - Ação
      - Informações relevantes
    * - Gerenciadora
-     - Inserir Contratação (item 6.3.1. Inserir Contratação)
+     - Inserir Contratação
      - | • informar campo "srp": true
    * - Gerenciadora
-     - Inserir Ata de Registro de Preços (item 6.4.1 Inserir Ata de Registro de Preço)
+     - Inserir Ata de Registro de Preços
      - | • informar campo "possibilidadeAdesao": true/false
        | • informar partes envolvidas:
        |   - TipoParteEnvolvidaId: 1 (Gerenciadora)
        |   - TipoParteEnvolvidaId: 2 (Participante)
    * - Gerenciadora
-     - Inserir Parte Envolvida na Ata de Registro de Preço (item 6.4.13. Inserir Parte Envolvida na Ata de Registro de Preço)
+     - Inserir Parte Envolvida na Ata de Registro de Preço
      - | • informar partes envolvidas:
        |   - TipoParteEnvolvidaId: 2 (Participante)
    * - Gerenciadora
-     - Inserir Contrato (item 6.5.1. Inserir Contrato/Empenho)
+     - Inserir Contrato
      - | • informar campo cnpj do contratante (/v1/orgaos/{cnpj}/contratos)
        | • informar campo "cnpjCompra" da gerenciadora
        | • informar o campo "codigoUnidade" do contratante
@@ -242,21 +242,21 @@ Fluxo de Processo
      - Ação
      - Informações relevantes
    * - Gerenciadora
-     - Inserir Contratação (item 6.3.1. Inserir Contratação)
+     - Inserir Contratação
      - | • informar campo "srp": true
    * - Gerenciadora
-     - Inserir Ata de Registro de Preços (item 6.4.1 Inserir Ata de Registro de Preço)
+     - Inserir Ata de Registro de Preços
      - | • informar campo "possibilidadeAdesao": true
        | • informar partes envolvidas:
        |   - TipoParteEnvolvidaId: 1 (Gerenciadora)
        |   - TipoParteEnvolvidaId: 2 (Participante)
    * - Gerenciadora
-     - Inserir Parte Envolvida na Ata de Registro de Preço (item 6.4.13. Inserir Parte Envolvida na Ata de Registro de Preço)
+     - Inserir Parte Envolvida na Ata de Registro de Preço
      - | • informar partes envolvidas:
        |   - TipoParteEnvolvidaId: 2 (Participante)
        |   - TipoParteEnvolvidaId: 3 (Não Participante)
    * - Gerenciadora
-     - Inserir Contrato (item 6.5.1. Inserir Contrato/Empenho)
+     - Inserir Contrato
      - | • informar campo cnpj do contratante (/v1/orgaos/{cnpj}/contratos)
        | • informar campo "cnpjCompra" da gerenciadora
        | • informar o campo "codigoUnidade" do contratante
