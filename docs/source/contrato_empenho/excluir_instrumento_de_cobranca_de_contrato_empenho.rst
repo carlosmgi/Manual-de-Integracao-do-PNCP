@@ -77,6 +77,7 @@ Dados de entrada
      - Sim
      - Motivo/justificativa da exclusão do instrumento de cobrança do contrato/empenho
 
+
 Códigos de Retorno
 ~~~~~~~~~~~~~~~~~~
 
@@ -88,23 +89,18 @@ Códigos de Retorno
    * - Código HTTP
      - Mensagem
      - Tipo
-
    * - 200
      - Delete
      - Sucesso
-
    * - 400
      - BadRequest
      - Erro
-
    * - 401
      - Unauthorized
      - Erro
-
    * - 422
      - Unprocessable Entity
      - Erro
-
    * - 500
      - Internal Server Error
      - Erro
