@@ -36,10 +36,14 @@ Exemplo Requisição (cURL)
 Dados de entrada
 ~~~~~~~~~~~~~~~~
 
+.. Note::
+	Alimentar os parâmetros ``{cnpj}``, ``{ano}`` e ``{sequencialContrato}`` na URL.
+
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 5 10 10 15 55
    :header-rows: 1
+   :class: quebra-linha-ultima-coluna
    
    * - Id
      - Campo
