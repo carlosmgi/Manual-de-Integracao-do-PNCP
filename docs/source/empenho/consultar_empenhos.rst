@@ -42,14 +42,14 @@ Dados de entrada
 ~~~~~~~~~~~~~~~~
 
 .. Note::
-
-Alimentar o parâmetro {cnpj}, {ano} e {sequencialContrato} na URL.
+	Alimentar os parâmetros ``{cnpj}``, ``{ano}`` e ``{sequencialContrato}`` na URL.
 
 
 .. list-table::
    :width: 100%
    :widths: auto
    :header-rows: 1
+
    * - Id
      - Campo
      - Tipo
@@ -88,6 +88,7 @@ Dados de retorno
    :width: 100%
    :widths: auto
    :header-rows: 1
+
    * - Id
      - Campo
      - Tipo
@@ -204,6 +205,62 @@ Dados de retorno
      - :destaque:`tipoEmenda`
      - :destaque:`Texto`
      - :destaque:`Tipo da emenda parlamentar`
+   * - :destaque:`1.24.4`
+     - :destaque:`autor`
+     - :destaque:`Texto`
+     - :destaque:`Autor`
+   * - :destaque:`1.24.5`
+     - :destaque:`nomeAutor`
+     - :destaque:`Texto`
+     - :destaque:`Nome do autor`
+   * - :destaque:`1.24.6`
+     - :destaque:`numeroEmenda`
+     - :destaque:`Texto`
+     - :destaque:`Número da emenda parlamentar`
+   * - :destaque:`1.24.7`
+     - :destaque:`localidadeDoGasto`
+     - :destaque:`Texto`
+     - :destaque:`Localidade do gasto`
+   * - :destaque:`1.24.8`
+     - :destaque:`funcao`
+     - :destaque:`Texto`
+     - :destaque:`Função`
+   * - :destaque:`1.24.9`
+     - :destaque:`subFuncao`
+     - :destaque:`Inteiro`
+     - :destaque:`Subfunção`
+   * - :destaque:`1.24.10`
+     - :destaque:`valorEmpenhado`
+     - :destaque:`Texto`
+     - :destaque:`Valor empenhado`
+   * - :destaque:`1.24.11`
+     - :destaque:`valorLiquidado`
+     - :destaque:`Texto`
+     - :destaque:`Valor liquidado`
+   * - :destaque:`1.24.12`
+     - :destaque:`valorPago`
+     - :destaque:`Texto`
+     - :destaque:`Valor pago`
+   * - :destaque:`1.24.13`
+     - :destaque:`valorRestoInscrito`
+     - :destaque:`Texto`
+     - :destaque:`Valor resto inscrito`
+   * - :destaque:`1.24.14`
+     - :destaque:`valorRestoCancelado`
+     - :destaque:`Texto`
+     - :destaque:`Valor resto cancelado`
+   * - :destaque:`1.24.15`
+     - :destaque:`valorRestoPago`
+     - :destaque:`Texto`
+     - :destaque:`Valor resto pago`
+   * - :destaque:`1.24.16`
+     - :destaque:`dataInclusao`
+     - :destaque:`Data/Hora`
+     - :destaque:`Data/hora da gravação dos dados da nota fiscal eletrônica no PNCP`
+   * - :destaque:`1.24.17`
+     - :destaque:`dataAtualizacao`
+     - :destaque:`Data/Hora`
+     - :destaque:`Data/hora da atualização dos dados da nota fiscal eletrônica no PNCP`
    * - :destaque:`2`
      - :destaque:`totalRegistros`
      - :destaque:`Inteiro`
