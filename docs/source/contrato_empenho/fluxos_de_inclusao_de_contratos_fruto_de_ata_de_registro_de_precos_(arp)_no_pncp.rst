@@ -34,8 +34,9 @@ Publicação de contrato (não SRP):
 
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 10 15 55
    :header-rows: 1
+   :class: quebra-linha-colunas-dois-tres
 
    * - Ator
      - Ação
@@ -67,8 +68,9 @@ Fluxo de Processo
 
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 10 15 55
    :header-rows: 1
+   :class: quebra-linha-colunas-dois-tres
 
    * - Ator
      - Ação
@@ -149,8 +151,9 @@ Fluxo de Processo
 
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 10 15 55
    :header-rows: 1
+   :class: quebra-linha-colunas-dois-tres
 
    * - Ator
      - Ação
@@ -235,8 +238,9 @@ Fluxo de Processo
 
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 10 15 55
    :header-rows: 1
+   :class: quebra-linha-colunas-dois-tres
 
    * - Ator
      - Ação
