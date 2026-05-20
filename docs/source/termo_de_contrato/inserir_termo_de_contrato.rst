@@ -1,8 +1,7 @@
 Inserir Termo de Contrato
 =========================
 
-Serviço que permite inserir um termo de contrato a um contrato. O termo pode ser um
-termo aditivo, um termo de rescisão ou um termo de apostilamento.
+Serviço que permite inserir um termo de contrato a um contrato. O termo pode ser um termo aditivo, um termo de rescisão ou um termo de apostilamento.
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -56,24 +55,21 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
   :linenos:
 
-   curl -k -X POST \
-     ~~header "Authorization: Bearer access_token" \
-     "${BASE_URL}/v1/orgaos/10000000000003/contratos/2021/1/termos" \
-     -H "accept: */*" \
-     -H "Content-Type: application/json" \
-     ~~data "@/home/objeto.json"
+   curl -k -X POST --header "Authorization: Bearer access_token" 
+   "${BASE_URL}/v1/orgaos/10000000000003/contratos/2021/1/termos"
+   -H "accept: */*" -H "Content-Type: application/json" --data "@/home/objeto.json"
 
 Dados de Entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-
-   A URL possui os parâmetros {cnpj}, {ano} e {sequencial}
+   Alimentar os parâmetros ``{cnpj}``, ``{ano}`` e ``{sequencial}``
 
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 5 10 10 15 55
    :header-rows: 1
+   :class: quebra-linha-ultima-coluna
 
    * - Id
      - Campo
