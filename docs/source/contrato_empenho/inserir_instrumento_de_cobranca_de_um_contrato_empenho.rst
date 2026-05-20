@@ -24,11 +24,11 @@ Exemplo de Payload
   :linenos:
 
     {
-      " tipoInstrumentoCobrancaId ": 1,
-      "numeroInstrumentoCobranca": "01",
-      "chaveNFe": "string",
-      "dataEmissaoDocumento": "2025-01-10",
-      "observacao": "Nota fiscal do empenho"
+	      "tipoInstrumentoCobrancaId": 1,
+	      "numeroInstrumentoCobranca": "01",
+	      "chaveNFe": "string",
+	      "dataEmissaoDocumento": "2025-01-10",
+	      "observacao": "Nota fiscal do empenho"
     }
 
   
