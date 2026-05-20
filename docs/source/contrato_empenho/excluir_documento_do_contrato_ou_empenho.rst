@@ -24,7 +24,7 @@ Exemplo de Payload
   :linenos:
   
   {
-   "justificativa": "motivo/justificativa paraexclusão do documento do contrato ou empenho"
+      "justificativa": "motivo/justificativa paraexclusão do documento do contrato ou empenho"
   }
 
 Exemplo Requisição (cURL)
@@ -33,17 +33,14 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
   :linenos:
 
-   curl -k -X DELETE \
-     --header "Authorization: Bearer access_token" \
-     -H "accept: */*" \
-     "${BASE_URL}/v1/orgaos/10000000000003/contratos/2021/1/arquivos/1"
+   curl -k -X DELETE --header "Authorization: Bearer access_token" 
+     -H "accept: */*" "${BASE_URL}/v1/orgaos/10000000000003/contratos/2021/1/arquivos/1"
 
 Dados de Entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-
-  Alimentar os parâmetros {cnpj}, {ano}, {sequencial} e {sequencialDocumento} na URL. 
+  Alimentar os parâmetros ``{cnpj}``, ``{ano}``, ``{sequencial}`` e ``{sequencialDocumento}`` na URL. 
 
 .. list-table::
    :width: 100%
@@ -81,8 +78,8 @@ Dados de Entrada
      - Sim
      - Motivo/justificativa para exclusão do documento do contrato ou empenho.
 
-**Códigos de Retorno**
-~~~~~~~~~~~~~~~~~~~~~~
+Códigos de Retorno
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -92,7 +89,7 @@ Dados de Entrada
    * - Código HTTP
      - Mensagem
      - Tipo
-   * - 201
+   * - 200
      - Created
      - Sucesso
    * - 400
