@@ -74,50 +74,60 @@ Dados de Retorno
    :header-rows: 1
    :class: quebra-linha-ultima-coluna
 
-    * - Id
-      - Campo
-      - Tipo
-      - Descrição
-    * - 1
-      - Documentos
-      - Lista
-      - Lista de documentos
-    * - 1.1
-      - sequencialDocumento
-      - Inteiro
-      - Número sequencial atribuído ao arquivo
-    * - 1.2
-      - url
-      - Texto
-      - URL para download do arquivo
-    * - 1.3
-      - tipoDocumentoNome
-      - Texto
-      - Nome do tipo de documento conforme PNCP
-    * - 1.4
-      - titulo
-      - Texto
-      - Título referente ao arquivo
-    * - 1.5
-      - dataPublicacaoPncp
-      - Data
-      - Data de publicação do arquivo no portal PNCP
-    * - 1.6
-      - uri
-      - Texto
-      - URI para download do arquivo
-    * - 1.7
-      - cnpj
-      - Texto
-      - Cnpj do órgão contratante
-    * - 1.8
-      - anoCompra
-      - Inteiro
-      - Ano da contratação associada ao contrato
-    * - 1.9
-      - sequencialCompra
-      - Inteiro
-      - Sequencial da contratação no PNCP; número sequencial gerado no momento que a contratação foi inserida no PNCP
+   * - Id
+     - Campo
+     - Tipo
+     - Descrição
+
+   * - 1
+     - documentos
+     - Lista
+     - Lista de documentos
+
+   * - 1.1
+     - sequencialDocumento
+     - Inteiro
+     - Número sequencial atribuído ao arquivo
+
+   * - 1.2
+     - url
+     - Texto
+     - URL para download do arquivo
+
+   * - 1.3
+     - tipoDocumentoNome
+     - Texto
+     - Nome do tipo de documento conforme PNCP
+
+   * - 1.4
+     - titulo
+     - Texto
+     - Título referente ao arquivo
+
+   * - 1.5
+     - dataPublicacaoPncp
+     - Data
+     - Data de publicação do arquivo no portal PNCP
+
+   * - 1.6
+     - uri
+     - Texto
+     - URI para download do arquivo
+
+   * - 1.7
+     - cnpj
+     - Texto
+     - CNPJ do órgão contratante
+
+   * - 1.8
+     - anoCompra
+     - Inteiro
+     - Ano da contratação associada ao contrato
+
+   * - 1.9
+     - sequencialCompra
+     - Inteiro
+     - Sequencial da contratação no PNCP; número sequencial gerado no momento que a contratação foi inserida no PNCP
 
 Códigos de Retorno
 ~~~~~~~~~~~~~~~~~~
