@@ -3,28 +3,6 @@ Consultar Contrato/Empenho
 
 Serviço que permite consultar um contrato ou empenho específico.
 
-**Atualizações da versão 2.3.10**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. versionadded:: 2.3.10
-
-.. list-table::
-   :widths: auto
-   :header-rows: 1
-
-   * - Id
-     - Campo
-     - Tipo
-     - Descrição
-   * - 36
-     - frutoAdesao
-     - Booleano
-     - Indica se é fruto de adesão
-   * - 37
-     - numeroControlePncpAta
-     - String
-     - Número de controle da ata relacionada
-
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
 
@@ -41,7 +19,10 @@ Detalhes da Requisição
 Exemplo de Payload
 ~~~~~~~~~~~~~~~~~~
 
-Não se aplica.
+.. code-block:: json
+  :linenos:
+  
+	Não se aplica
 
 Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -50,20 +31,20 @@ Exemplo Requisição (cURL)
   :linenos:
 
    curl -k -X GET \
-     "${BASE_URL}/v1/orgaos/{cnpj}/contratos/{ano}/{sequencial}" \
-     -H "accept: */*"
+     "${BASE_URL}/v1/orgaos/{cnpj}/contratos/{ano}/{sequencial}" -H "accept: */*"
 
 Dados de Entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
 
-  Alimentar os parâmetros {cnpj}, {ano} e {sequencial} na URL. 
+  Alimentar os parâmetros ``{cnpj}``, ``{ano}`` e ``{sequencial}`` na URL. 
 
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 5 10 10 15 55
    :header-rows: 1
+   :class: quebra-linha-ultima-coluna
 
    * - Id
      - Campo
@@ -86,8 +67,8 @@ Dados de Entrada
      - Sim
      - Sequencial do contrato ou empenho no PNCP; número sequencial gerado no momento que o contrato ou empenho foi inserido no PNCP
 
-**Dados de Retorno**
-~~~~~~~~~~~~~~~~~~~~
+Dados de Retorno
+~~~~~~~~~~~~~~~~
 
 .. list-table::
    :header-rows: 1
@@ -99,7 +80,7 @@ Dados de Entrada
    * - 1
      - numeroControlePNCP
      - String
-     - Número de controle PNCP do contrato ou empenho (id contrato PNCP)
+     - Número de controle PNCP do contrato/empenho (id contrato PNCP)
    * - 2
      - sequencialContrato
      - Inteiro
@@ -171,11 +152,11 @@ Dados de Entrada
    * - 12.3
      - poderId
      - String
-     - Código do poder (L, E, J)
+     - Código do poder a que pertence o Órgão. L - Legislativo; E - Executivo; J - Judiciário
    * - 12.4
      - esferaId
      - String
-     - Código da esfera (F, E, M, D)
+     - Código da esfera a que pertence o Órgão. F - Federal; E - Estadual; M - Municipal; D - Distrital
    * - 13
      - unidadeOrgao
      - Objeto
@@ -219,11 +200,12 @@ Dados de Entrada
    * - 14.3
      - poderId
      - String
-     - Código do poder (L, E, J)
+     - Código do poder a que pertence o Órgão. L - Legislativo; E - Executivo; J - Judiciário
    * - 14.4
      - esferaId
      - String
-     - Código da esfera (F, E, M, D)
+     - Código da esfera a que pertence o Órgão. F - Federal; E - Estadual; M - Municipal; D - Distrital
+
    * - 15
      - unidadeSubRogada
      - Objeto
@@ -239,19 +221,31 @@ Dados de Entrada
    * - 16
      - tipoPessoa
      - Texto (2)
-     - PJ, PF ou PE
+     - PJ - Pessoa jurídica; PF - Pessoa física; PE - Pessoa estrangeira
    * - 17
      - niFornecedor
      - Texto (30)
-     - Identificação do fornecedor (CNPJ/CPF/estrangeiro)
+     - Número de identificação do fornecedor/arrematante; CNPJ, CPF ou identificador de empresa estrangeira
    * - 18
      - nomeRazaoSocialFornecedor
      - Texto (100)
      - Nome/razão social do fornecedor
+   * - 19
+     - tipoPessoaSubContratada
+     - Texto (2)
+     - PJ - Pessoa jurídica; PF - Pessoa física; PE - Pessoa estrangeira; Somente em caso de subcontratação;
+   * - 20
+     - niFornecedorSubContratado
+     - Texto (30)
+     - Número de identificação do fornecedor subcontratado; CNPJ, CPF ou identificador de empresa estrangeira; Somente em caso de subcontratação;
+   * - 21
+     - nomeFornecedorSubContratado
+     - Texto (100)
+     - Nome ou razão social do fornecedor subcontratado; Somente em caso de subcontratação;
    * - 22
      - valorInicial
      - Decimal
-     - Valor inicial do contrato
+     - Valor inicial do contrato/empenho. Precisão de até 4 dígitos decimais; Ex: 100.0001;
    * - 23
      - numeroParcelas
      - Inteiro
@@ -304,14 +298,14 @@ Dados de Entrada
      - urlCipi
      - String
      - URL do CIPI
-   * - :destaque:`36`
-     - :destaque:`frutoAdesao`
-     - :destaque:`Booleano`
-     - :destaque:`Indica se é fruto de adesão`
-   * - :destaque:`37`
-     - :destaque:`numeroControlePncpAta`
-     - :destaque:`String`
-     - :destaque:`Número de controle da ata relacionada`
+   * - :destaque-amarelo-claro:`36`
+     - :destaque-amarelo-claro:`frutoAdesao`
+     - :destaque-amarelo-claro:`Booleano`
+     - :destaque-amarelo-claro:`Indica se é fruto de adesão`
+   * - :destaque-amarelo-claro:`37`
+     - :destaque-amarelo-claro:`numeroControlePncpAta`
+     - :destaque-amarelo-claro:`String`
+     - :destaque-amarelo-claro:`Número de controle da ata relacionada`
    * - :destaque:`38`
      - :destaque:`temRemanejamento`
      - :destaque:`Boleano`
@@ -321,8 +315,8 @@ Dados de Entrada
      - :destaque:`Boleano`
      - :destaque:`Indicador de Emenda Parlamentar (False-Não / True-Sim)`
 
-**Códigos de Retorno**
-~~~~~~~~~~~~~~~~~~~~~~
+Códigos de Retorno
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
@@ -332,6 +326,9 @@ Dados de Entrada
    * - Código HTTP
      - Mensagem
      - Tipo
+   * - 200
+     - Ok
+     - Sucesso
    * - 400
      - BadRequest
      - Erro
