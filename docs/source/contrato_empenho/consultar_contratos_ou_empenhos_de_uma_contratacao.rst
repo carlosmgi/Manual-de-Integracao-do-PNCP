@@ -36,7 +36,7 @@ Dados de Entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-  Alimentar o parâmetro ``{cnpj}``, ``{anoContratacao}`` e ``{sequencialContratacao}`` na URL.
+  Alimentar os parâmetros ``{cnpj}``, ``{anoContratacao}`` e ``{sequencialContratacao}`` na URL.
 
 .. list-table::
    :width: 100%
