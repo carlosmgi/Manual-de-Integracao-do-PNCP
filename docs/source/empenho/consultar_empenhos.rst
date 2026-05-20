@@ -95,7 +95,7 @@ Dados de retorno
      - Descrição
    * - :destaque:`1`
      - :destaque:`data`
-     - :destaque:``
+     - 
      - :destaque:`Dados retornados pela consulta`
    * - :destaque:`1.1`
      - :destaque:`cnpj`
@@ -191,7 +191,7 @@ Dados de retorno
      - :destaque:`Data/Hora da última atualização`
    * - :destaque:`1.24`
      - :destaque:`emendaParlamentar`
-     - :destaque:``
+     - 
      - :destaque:`Dados da Emenda Parlamentar`
    * - :destaque:`1.24.1`
      - :destaque:`codigoEmenda`
