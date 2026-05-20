@@ -45,3 +45,11 @@ table.quebra-linha-ultima-coluna th:last-child {
   word-break: break-word !important;
   overflow-wrap: anywhere !important;
 }
+
+/*Quebra a linha das colunas 2 e 3*/
+table.quebra-linha-colunas-dois-tres :is(td, th):nth-child(2),
+table.quebra-linha-colunas-dois-tres :is(td, th):nth-child(3) {
+  white-space: normal !important;
+  word-break: break-word !important;
+  overflow-wrap: anywhere !important;
+}
