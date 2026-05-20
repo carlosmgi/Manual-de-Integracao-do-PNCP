@@ -90,7 +90,7 @@ Códigos de Retorno
      - Mensagem
      - Tipo
    * - 200
-     - Delete
+     - Ok
      - Sucesso
    * - 400
      - BadRequest
