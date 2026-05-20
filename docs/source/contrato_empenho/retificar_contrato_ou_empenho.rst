@@ -334,5 +334,7 @@ Códigos de Retorno
      - Unprocessable Entity
      - Erro
    * - 500
+     - Internal Server Error
+     - Erro
 
 \
