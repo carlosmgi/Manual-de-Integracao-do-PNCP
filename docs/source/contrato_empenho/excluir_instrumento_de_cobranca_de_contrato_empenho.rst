@@ -82,24 +82,30 @@ Códigos de Retorno
 
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 15 35 20
    :header-rows: 1
+   :class: quebra-linha-ultima-coluna
 
    * - Código HTTP
      - Mensagem
      - Tipo
+
    * - 200
      - Delete
      - Sucesso
+
    * - 400
      - BadRequest
      - Erro
+
    * - 401
      - Unauthorized
      - Erro
+
    * - 422
      - Unprocessable Entity
      - Erro
+
    * - 500
      - Internal Server Error
      - Erro
