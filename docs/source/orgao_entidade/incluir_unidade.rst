@@ -11,7 +11,7 @@ Para a inclusão de nova unidade, a plataforma deve ter o órgão/entidade habil
 Para unidades localizadas fora do território brasileiro, foi incluído o código genérico ``9097071`` para ser cadastrado no campo ``codigoIBGE``.
 Será retornado nome do município ``Exterior`` e UF ``EX``.
 
-.. warning::
+.. Attention::
 
    Disponível apenas no ambiente de treinamento/homologação.
    No ambiente de produção, utilize o procedimento do item `Gestão de Órgão e Entidade. <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/orgao_entidade/gestao_de_orgao_e_entidade.html>`_
@@ -54,19 +54,20 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
 
    curl -k -X POST --header "Authorization: Bearer access_token" 
-   "${BASE_URL}/v1/orgaos/10000000000003/unidades" -H "accept: */*" -H "Content-Type: 
-   application/json" --data "@/home/objeto.json"
+   "${BASE_URL}/v1/orgaos/10000000000003/unidades" -H "accept: */*" 
+   -H "Content-Type: application/json" --data "@/home/objeto.json"
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-   A URL possui o parâmetro ``cnpj``.
+   Alimentar o parâmetro ``cnpj``.
 
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 5 10 10 15 55
    :header-rows: 1
+   :class: quebra-linha-ultima-coluna
 
    * - Id
      - Campo
@@ -156,7 +157,7 @@ Códigos de Retorno
      - Erro
    * - 422
      - Unprocessable Entity
-     - NotFound
+     - Erro
    * - 500
      - Internal Server Error
      - Erro
