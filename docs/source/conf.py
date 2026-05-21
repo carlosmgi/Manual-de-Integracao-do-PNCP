@@ -23,9 +23,6 @@ roles.register_local_role('linha-destaque', linha_destaque_role)
 #-- Alterar a versão atual do manual em todas as páginas
 version = "2.5"
 
-#-- Alterar a versão última do manual em todas as páginas
-last_version = "2.4"
-
 rst_epilog = f"""
 .. |versio| replace:: {versio}
 """
