@@ -27,8 +27,8 @@ version = "2.5"
 last_version = "2.4"
 
 rst_epilog = f"""
+.. |versio| replace:: {versio}
 .. |last_versio| replace:: {last_versio}
-..
 """
 
 
