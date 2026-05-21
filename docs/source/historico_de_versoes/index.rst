@@ -2,7 +2,7 @@ Histórico de Versões
 ====================
 .. Attention::
 
-   As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
+   As alterações da versão atual |versao| estão em destaque, conforme exemplo a seguir:
 
 .. list-table::
    :width: 100%
@@ -30,7 +30,7 @@ Histórico de Versões
 
 .. Attention::
 
-   As alterações da versão |versao| estão em destaque, conforme exemplo a seguir:
+   As alterações da versão última |last_version| estão em destaque, conforme exemplo a seguir:
 
 .. list-table::
    :width: 100%
@@ -45,10 +45,10 @@ Histórico de Versões
      - cnpj
      - Texto
      - CNPJ do órgão do contrato/empenho
-   * - :destaque:`2`
-     - :destaque:`ano`
-     - :destaque:`Inteiro`
-     - :destaque:`Ano do contrato/empenho`
+   * - :destaque-amarelo-claro:`2`
+     - :destaque-amarelo-claro:`ano`
+     - :destaque-amarelo-claro:`Inteiro`
+     - :destaque-amarelo-claro:`Ano do contrato/empenho`
    * - 3
      - sequencialContrato
      - Inteiro
