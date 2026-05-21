@@ -30,11 +30,6 @@ rst_epilog = f"""
 .. |versio| replace:: {versio}
 """
 
-rst_epilog = f"""
-.. |last_versio| replace:: {last_versio}
-"""
-
-
 # -- Project information
 project = 'Manual de Integração do PNCP'
 copyright = '2026, Ministério da Gestão e Inovação em Serviços Públicos - MGI'
