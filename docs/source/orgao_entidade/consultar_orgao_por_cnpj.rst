@@ -87,7 +87,7 @@ Códigos de Retorno
      - Erro
    * - 422
      - Unprocessable Entity
-     - NotFound
+     - Erro
    * - 500
      - Internal Server Error
      - Erro
