@@ -33,8 +33,8 @@ Exemplo Requisição (cURL)
 
 .. code-block:: bash
 
-   curl -k -X PUT --header "Authorization: Bearer access_token" \
-   "${BASE_URL}/v1/orgaos" -H "accept: */*" -H "Content-Type: application/json" \
+   curl -k -X PUT --header "Authorization: Bearer access_token" 
+   "${BASE_URL}/v1/orgaos" -H "accept: */*" -H "Content-Type: application/json" 
    --data "@/home/objeto.json"
 
 Dados de entrada
