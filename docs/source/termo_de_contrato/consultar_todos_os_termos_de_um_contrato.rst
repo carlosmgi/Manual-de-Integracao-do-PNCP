@@ -31,19 +31,19 @@ Exemplo Requisição (cURL)
   :linenos:
   :emphasize-lines: 1
 
-  curl -k -X GET "${BASE_URL}/v1/orgaos/10000000000003/contratos/2021/1/termos" \
-   -H "accept: */*"
+  curl -k -X GET "${BASE_URL}/v1/orgaos/10000000000003/contratos/2021/1/termos" -H "accept: */*"
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-   Alimentar os parâmetros {cnpj}, {ano} e {sequencial} na URL.
+   Alimentar os parâmetros ``{cnpj}``, ``{ano}`` e ``{sequencial}`` na URL.
 
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 5 10 10 15 55
    :header-rows: 1
+   :class: quebra-linha-ultima-coluna
 
    * - Id
      - Campo
@@ -66,30 +66,6 @@ Dados de entrada
      - Sim
      - Número sequencial do contrato (gerado pelo PNCP)
 
-Códigos de Retorno
-~~~~~~~~~~~~~~~~~~
-
-.. list-table::
-   :width: 100%
-   :widths: auto
-   :header-rows: 1
-
-   * - Código HTTP
-     - Mensagem
-     - Tipo
-   * - 200
-     - OK
-     - Sucesso
-   * - 400
-     - BadRequest
-     - Erro
-   * - 422
-     - Unprocessable Entity
-     - Erro
-   * - 500
-     - Internal Server Error
-     - Erro
-     
 Exemplo de Retorno
 ~~~~~~~~~~~~~~~~~~
 
@@ -139,4 +115,28 @@ Exemplo de Retorno
     }
     ]
 
+Códigos de Retorno
+~~~~~~~~~~~~~~~~~~
+
+.. list-table::
+   :width: 100%
+   :widths: auto
+   :header-rows: 1
+
+   * - Código HTTP
+     - Mensagem
+     - Tipo
+   * - 200
+     - OK
+     - Sucesso
+   * - 400
+     - BadRequest
+     - Erro
+   * - 422
+     - Unprocessable Entity
+     - Erro
+   * - 500
+     - Internal Server Error
+     - Erro
+     
 \
