@@ -1,12 +1,11 @@
 Retificar Termo de Contrato
 ===========================
 
-Serviço que permite retificar um termo de contrato. O termo pode ser um termo aditivo,
-um termo de rescisão ou um termo de apostilamento. 
+Serviço que permite retificar um termo de contrato. O termo pode ser um termo aditivo, um termo de rescisão ou um termo de apostilamento. 
 
 .. Attention::
-  
- Importante lembrar que na Retificação todas as informações terão que ser enviadas novamente, não apenas as que sofreram alteração.
+
+  Importante lembrar que na Retificação todas as informações terão que ser enviadas novamente, não apenas as que sofreram alteração.
 
 \
 
@@ -63,24 +62,20 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
   :linenos:
 
-   curl -k -X PUT \
-     --header "Authorization: Bearer access_token" \
-     "${BASE_URL}/v1/orgaos/10000000000003/contratos/2021/1/termos/1" \
-     -H "accept: */*" \
-     -H "Content-Type: application/json" \
-     --data "@/home/objeto.json"
+   curl -k -X PUT --header "Authorization: Bearer access_token" "${BASE_URL}/v1/orgaos/10000000000003/contratos/2021/1/termos/1" 
+     -H "accept: */*" -H "Content-Type: application/json" --data "@/home/objeto.json"
 
 Dados de Entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-
-   A URL possui os parâmetros {cnpj}, {ano}, {sequencial} e {sequencialTermoContrato}.
+   A URL possui os parâmetros ``{cnpj}``, ``{ano}``, ``{sequencial}`` e ``{sequencialTermoContrato}``.
 
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 5 10 10 15 55
    :header-rows: 1
+   :class: quebra-linha-ultima-coluna
 
    * - Id
      - Campo
@@ -275,8 +270,8 @@ Exemplo de retorno
    x-frame-options: DENY
    x-xss-protection: 1; mode=block
 
-**Códigos de Retorno**
-~~~~~~~~~~~~~~~~~~~~~~
+Códigos de Retorno
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
