@@ -31,19 +31,19 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
   :linenos:
 
-  curl -k -X GET "${BASE_URL}/v1/orgaos/10000000000003/contratos/2021/1/termos/1" \
-   -H "accept: */*"
+  curl -k -X GET "${BASE_URL}/v1/orgaos/10000000000003/contratos/2021/1/termos/1" -H "accept: */*"
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-   Alimentar os parâmetros {cnpj}, {ano}, {sequencial} e {sequencialTermoContrato} na URL.
+   Alimentar os parâmetros ``{cnpj}``, ``{ano}``, ``{sequencial}`` e ``{sequencialTermoContrato}`` na URL.
 
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 5 10 10 15 55
    :header-rows: 1
+   :class: quebra-linha-ultima-coluna
 
    * - Id
      - Campo
@@ -71,30 +71,6 @@ Dados de entrada
      - Sim
      - Número sequencial do termo de contrato (gerado pelo PNCP)
 
-Códigos de Retorno
-~~~~~~~~~~~~~~~~~~
-
-.. list-table::
-   :width: 100%
-   :widths: auto
-   :header-rows: 1
-
-   * - Código HTTP
-     - Mensagem
-     - Tipo
-   * - 200
-     - OK
-     - Sucesso
-   * - 400
-     - BadRequest
-     - Erro
-   * - 422
-     - Unprocessable Entity
-     - Erro
-   * - 500
-     - Internal Server Error
-     - Erro
-
 Exemplo de Retorno
 ~~~~~~~~~~~~~~~~~~
 
@@ -114,8 +90,8 @@ Exemplo de Retorno
 	  "unidadeSubrogada": { dados da unidade subrogada },
 	  "dataVigenciaInicio": "yyyy-mm-dd",
 	  "orgaoEntidade": { dados do órgão do contrato },
-	"dataInclusao": "yyyy-mm-ddThh:mm:ss",
-	"excluido": boolean,
+	  "dataInclusao": "yyyy-mm-ddThh:mm:ss",
+	  "excluido": boolean,
 	  "compra": { dados da compra },
 	  "informativoObservacao": "string",
 	  "prazoAditadoDias": 0,
@@ -141,5 +117,30 @@ Exemplo de Retorno
 	  "orgaoSubrogado": { dados do órgão subrogado },
 	"dataPublicacaoPncp": "yyyy-mm-ddThh:mm:ss"
 	}
+
+
+Códigos de Retorno
+~~~~~~~~~~~~~~~~~~
+
+.. list-table::
+   :width: 100%
+   :widths: auto
+   :header-rows: 1
+
+   * - Código HTTP
+     - Mensagem
+     - Tipo
+   * - 200
+     - OK
+     - Sucesso
+   * - 400
+     - BadRequest
+     - Erro
+   * - 422
+     - Unprocessable Entity
+     - Erro
+   * - 500
+     - Internal Server Error
+     - Erro
 
 \
