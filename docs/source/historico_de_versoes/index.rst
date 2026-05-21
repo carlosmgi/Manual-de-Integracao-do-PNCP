@@ -27,34 +27,6 @@ Histórico de Versões
      - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
 
 \
-
-.. Attention::
-
-   As alterações da versão última |last_version| estão em destaque, conforme exemplo a seguir:
-
-.. list-table::
-   :width: 100%
-   :widths: auto
-   :header-rows: 1
-
-   * - Id
-     - Campo
-     - Tipo
-     - Descrição
-   * - 1
-     - cnpj
-     - Texto
-     - CNPJ do órgão do contrato/empenho
-   * - :destaque-amarelo-claro:`2`
-     - :destaque-amarelo-claro:`ano`
-     - :destaque-amarelo-claro:`Inteiro`
-     - :destaque-amarelo-claro:`Ano do contrato/empenho`
-   * - 3
-     - sequencialContrato
-     - Inteiro
-     - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
-
-\
 Versão: 2.3.10
 ++++++++++++++
 
