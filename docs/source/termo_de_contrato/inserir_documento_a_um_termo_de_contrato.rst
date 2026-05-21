@@ -31,15 +31,19 @@ Exemplo Requisição (cURL)
   :linenos:
   :emphasize-lines: 1
 
-    curl -k -X POST --header "Authorization: Beareraccess_token" "${BASE_URL}/v1/orgaos/10000000000003/contratos/2021/1/termos/1/arquivos" -H "accept: */*" -H "Content-Type: multipart/form-data" -H "Titulo-Documento: TermoContrato-2021-1" -H "Tipo-Documento-Id: 14" -F "arquivo=@TermoContrato-2021-1.pdf;type=application/pdf"
+    curl -k -X POST --header "Authorization: Beareraccess_token" 
+   "${BASE_URL}/v1/orgaos/10000000000003/contratos/2021/1/termos/1/arquivos" -H "accept: */*" 
+   -H "Content-Type: multipart/form-data" -H "Titulo-Documento: TermoContrato-2021-1" 
+   -H "Tipo-Documento-Id: 14" -F "arquivo=@TermoContrato-2021-1.pdf;type=application/pdf"
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 5 10 10 15 55
    :header-rows: 1
+   :class: quebra-linha-ultima-coluna
 
    * - Id
      - Campo
