@@ -112,7 +112,7 @@ Exemplo de Retorno
         "numeroParcelas": 0,
         "orgaoSubrogado": { dados do órgão subrogado },
     	"dataPublicacaoPncp": "yyyy-mm-ddThh:mm:ss"
-     }
+      }
     ]
 
 Códigos de Retorno
