@@ -115,7 +115,7 @@ Exemplo de Retorno
 	  "valorGlobal": 0,
 	  "numeroParcelas": 0,
 	  "orgaoSubrogado": { dados do órgão subrogado },
-	"dataPublicacaoPncp": "yyyy-mm-ddThh:mm:ss"
+	  "dataPublicacaoPncp": "yyyy-mm-ddThh:mm:ss"
 	}
 
 
