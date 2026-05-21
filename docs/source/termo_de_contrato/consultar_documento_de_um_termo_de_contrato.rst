@@ -31,19 +31,20 @@ Exemplo Requisição (cURL)
   :linenos:
   :emphasize-lines: 1
 
-    curl -X GET  "${BASE_URL}/v1/orgaos/10000000000003/contratos/2021/1/termos/1/arquivos/1" \
-     -H "accept: */*"
+    curl -X GET  "${BASE_URL}/v1/orgaos/10000000000003/contratos/2021/1/termos/1/arquivos/1"
+    -H "accept: */*"
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-   Alimentar os parâmetros {cnpj}, {ano}, {sequencial}, {sequencialTermo} e {sequencialDocumento} na URL.
+   Alimentar os parâmetros ``{cnpj}``, ``{ano}``, ``{sequencial}``, ``{sequencialTermo}`` e ``{sequencialDocumento}`` na URL.
 
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 5 10 10 15 55
    :header-rows: 1
+   :class: quebra-linha-ultima-coluna
 
    * - Id
      - Campo
