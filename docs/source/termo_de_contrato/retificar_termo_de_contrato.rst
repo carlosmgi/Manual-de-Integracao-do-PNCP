@@ -73,9 +73,9 @@ Dados de Entrada
 
 .. list-table::
    :width: 100%
-   :widths: 5 10 10 15 55
+   :widths: 14 25 18 20 45
    :header-rows: 1
-   :class: quebra-linha-ultima-coluna
+   :class: quebra-linha
 
    * - Id
      - Campo
