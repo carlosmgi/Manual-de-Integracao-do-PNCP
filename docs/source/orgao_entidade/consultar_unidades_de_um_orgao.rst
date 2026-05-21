@@ -21,15 +21,13 @@ Exemplo Requisição (cURL)
 
 .. code-block:: bash
 
-   curl -k -X GET \
-   "${BASE_URL}/v1/orgaos/10000000000003/unidades" -H "accept: */*"
+   curl -k -X GET "${BASE_URL}/v1/orgaos/10000000000003/unidades" -H "accept: */*"
 
 Dados de Entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-
-   A URL possui o parâmetro ``cnpj``.
+   Alimentar o parâmetro ``cnpj``.
 
 .. list-table::
    :width: 100%
@@ -52,8 +50,9 @@ Dados de Retorno
 
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 5 10 15 55
    :header-rows: 1
+   :class: quebra-linha-ultima-coluna
 
    * - Id
      - Campo
