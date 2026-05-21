@@ -5,7 +5,7 @@ Serviço que permite atualizar os dados (nome da unidade e código IBGE do munic
 Incluído no PNCP o código genérico 9097071 a ser usado como codigoIBGE possibilitando inclusão de Unidade localizada no exterior. Será retornado nome do 
 município “Exterior” e UF “EX”. 
 
-.. warning::
+.. Attention::
 
 	Disponível apenas no ambiente de treinamento/homologação. No ambiente de produção, utilize o procedimento do item `Gestão de Órgão e Entidade. <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/orgao_entidade/gestao_de_orgao_e_entidade.html>`_ 
 
@@ -16,11 +16,11 @@ município “Exterior” e UF “EX”.
 	:align: center
 	:alt: Editar Unidade Administrativa
 
-.. warning::
+.. Attention::
 	- Status: Ativar/Inativar 
 	- Nome da Unidade: campo alfanumérico de livre escolha; 
 	- Código Unidade: campo único para o órgão alfanumérico de livre escolha (não pode ser editado); 
-	- Código IBGE: Códigos de Municípios do IBGE composto de 7 dígitos, sendo os dois primeiros referentes ao código da Unidade da Federação. 	`https://www.ibge.gov.br/explica/codigos-dos-municipios.php <https://www.ibge.gov.br/explica/codigos-dos-municipios.php>`_
+	- Código IBGE: Códigos de Municípios do IBGE composto de 7 dígitos, sendo os dois primeiros referentes ao código da Unidade da Federação. 			 `https://www.ibge.gov.br/explica/codigos-dos-municipios.php <https://www.ibge.gov.br/explica/codigos-dos-municipios.php>`_
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -54,19 +54,20 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
 
    curl -k -X PUT --header "Authorization: Bearer access_token" 
-	"${BASE_URL}/v1/orgaos/10000000000003 /unidades" -H "accept: */*" -H "Content-Type: 
-	application/json" --data "@/home/objeto.json"
+	"${BASE_URL}/v1/orgaos/10000000000003 /unidades" -H "accept: */*" 
+	-H "Content-Type: application/json" --data "@/home/objeto.json"
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-   A URL possui o parâmetro ``cnpj``.
+   Alimentar o parâmetro ``cnpj``.
 
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 5 10 10 15 55
    :header-rows: 1
+   :class: quebra-linha-ultima-coluna
 
    * - Id
      - Campo
@@ -132,7 +133,7 @@ Códigos de Retorno
      - Erro
    * - 422
      - Unprocessable Entity
-     - NotFound
+     - Erro
    * - 500
      - Internal Server Error
      - Erro
