@@ -22,20 +22,19 @@ Exemplo Requisição (cURL)
 
 .. code-block:: bash
 
-	curl -k -X GET 
-	"${BASE_URL}/v1/orgaos/10000000000003/unidades/1" -H "accept: */*" 
+	curl -k -X GET "${BASE_URL}/v1/orgaos/10000000000003/unidades/1" -H "accept: */*" 
 
 Dados de Entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-
-   A URL possui os parâmetros ``cnpj`` e ``codigoUnidade``.
+   Alimentar os parâmetros ``cnpj`` e ``codigoUnidade``.
 
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 5 10 10 15 55
    :header-rows: 1
+   :class: quebra-linha-ultima-coluna
 
    * - Id
      - Campo
@@ -58,8 +57,9 @@ Dados de Retorno
 
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 5 10 15 55
    :header-rows: 1
+   :class: quebra-linha-ultima-coluna
 
    * - Id
      - Campo
@@ -189,7 +189,7 @@ Códigos de Retorno
      - Erro
    * - 422
      - Unprocessable Entity
-     - NotFound
+     - Erro
    * - 500
      - Internal Server Error
      - Erro
