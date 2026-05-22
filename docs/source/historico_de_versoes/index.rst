@@ -2,7 +2,7 @@ Histórico de Versões
 ====================
 .. Attention::
 
-   As alterações da versão 2.5 estão em destaque, conforme exemplo a seguir:
+   As alterações da versão 2.5 estão destacadas em alaranjado, conforme o exemplo a seguir:
 
 .. list-table::
    :width: 100%
@@ -30,7 +30,7 @@ Histórico de Versões
 
 .. Attention::
 
-   As alterações da versão 2.4 estão em destaque, conforme exemplo a seguir:
+  As alterações da versão 2.4 estão destacadas em amarelo-claro, conforme o exemplo a seguir:
 
 .. list-table::
    :width: 100%
