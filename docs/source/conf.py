@@ -24,7 +24,7 @@ roles.register_local_role('linha-destaque', linha_destaque_role)
 version = "2.5"
 
 rst_epilog = f"""
-.. |versio| replace:: {versio}
+.. |versao| replace:: {version}
 """
 
 # -- Project information
