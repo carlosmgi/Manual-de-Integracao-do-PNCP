@@ -66,11 +66,15 @@ Data: 09/04/2026
    :numbered:
    :maxdepth: 3
 
-   5. Tabelas de Domínio
-      5.9. Tipo de Contrato <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/tabelas_de_dominio/tipo_de_contrato.html>`_ 
-      5.9.1. Consultar Tipo de Contrato por Código <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/tabelas_de_dominio/consultar_tipo_de_contrato_por_codigo.html>`_ 
-      5.9.2. Consultar Tipos de Contrato <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/tabelas_de_dominio/consultar_tipos_de_contrato.html>`_ 
-      5.12. Tipo de Documento
+Tabelas de Domínio
+~~~~~~~~~~~~~~~~~~
+
+`Tipo de Contrato  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/tabelas_de_dominio/tipo_de_contrato.html>`_ 
+`Consultar Tipo de Contrato por Código  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/tabelas_de_dominio/consultar_tipo_de_contrato_por_codigo.html>`_ 
+      `Consultar Tipos de Contrato  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/tabelas_de_dominio/consultar_tipos_de_contrato.html>`_ 
+
+Tipo de Documento  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/tabelas_de_dominio/tipo_de_documento.html>`_ 
+   
       5.12.1. Consultar Tipo de Documento por Código
       5.12.2. Consultar Tipos de Documento
    6.3. Serviços de Contratação (Editais, Avisos e Atos)
