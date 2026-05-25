@@ -54,6 +54,53 @@ Histórico de Versões
      - Inteiro
      - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
 
+Versão: 2.3.4
+++++++++++++++
+
+Data: 09/04/2026
+
+.. note::
+    Funcionalidades que possibilitam recepcionar Emendas Parlamentares (Empenho) e novas tabelas de domínio de Tipo de Contrato e Documento.
+
+.. toctree::
+   :numbered:
+   :maxdepth: 3
+
+   5. Tabelas de Domínio
+      5.9. Tipo de Contrato <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/tabelas_de_dominio/tipo_de_contrato.html>`_ 
+      5.9.1. Consultar Tipo de Contrato por Código <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/tabelas_de_dominio/consultar_tipo_de_contrato_por_codigo.html>`_ 
+      5.9.2. Consultar Tipos de Contrato <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/tabelas_de_dominio/consultar_tipos_de_contrato.html>`_ 
+      5.12. Tipo de Documento
+      5.12.1. Consultar Tipo de Documento por Código
+      5.12.2. Consultar Tipos de Documento
+   6.3. Serviços de Contratação (Editais, Avisos e Atos)
+      6.3.3. Retificar Parcialmente uma Contratação
+      6.3.5. Consultar uma Contratação
+      6.4. Serviços de Ata
+      6.4.1. Inserir Ata de Registro de Preço
+      6.5. Serviços de Contrato/Empenho
+      6.5.1. Inserir Contrato/Empenho
+      6.5.2. Retificar Contrato/Empenho
+      6.5.8. Consultar Contrato/Empenho
+      6.5.9. Consultar Contratos/Empenhos de uma Contratação
+      6.5.10. Consultar Histórico do Contrato/Empenho
+      6.5.17. Retificar Parcialmente um Contrato/Empenho
+
+
+Versão: 2.3.11
+++++++++++++++
+
+Data: 18/03/2026
+
+.. note::
+ Funcionalidades que possibilitam recepcionar e identificar contratos fruto de ata de registro de preços no PNCP, bem como informações sobre as partes envolvidas.
+
+.. toctree::
+   :numbered:
+   :maxdepth: 3
+
+      Fluxos de Inclusão de Contratos fruto de Ata de Registro de Preços (ARP) no PNCP <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contrato_empenho/fluxos_de_inclusao_de_contratos_fruto_de_ata_de_registro_de_precos_(arp)_no_pncp.html>`_ 
+
 Versão: 2.3.10
 ++++++++++++++
 
