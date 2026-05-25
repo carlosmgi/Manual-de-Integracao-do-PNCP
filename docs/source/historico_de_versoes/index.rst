@@ -20,7 +20,7 @@ Histórico de Versões
      - CNPJ do órgão do contrato/empenho
    * - :destaque-azul-claro:`2`
      - :destaque-azul-claro:`ano`
-     - :destaque:`Inteiro`
+     - :destaque-azul-claro:`Inteiro`
      - :destaque-azul-claro:`Ano do contrato/empenho`
    * - 3
      - sequencialContrato
