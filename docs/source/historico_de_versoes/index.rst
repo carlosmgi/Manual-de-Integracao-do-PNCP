@@ -69,10 +69,15 @@ Data: 09/04/2026
 Tabelas de domínio:
 
 `Tipo de Contrato  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/tabelas_de_dominio/tipo_de_contrato.html>`_ 
+
 `Consultar Tipo de Contrato por Código  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/tabelas_de_dominio/consultar_tipo_de_contrato_por_codigo.html>`_ 
+
 `Consultar Tipos de Contrato  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/tabelas_de_dominio/consultar_tipos_de_contrato.html>`_    
+
 `Tipo de Documento  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/tabelas_de_dominio/tipo_de_documento.html>`_ 
+
 `Consultar Tipo de Documento por Código    <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/tabelas_de_dominio/consultar_tipo_documento_por_codigo.html>`_ 
+
 `Consultar Tipos de Documento  Código    <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/tabelas_de_dominio/consultar_tipos_de_documentos.html>`_ 
 
 \
