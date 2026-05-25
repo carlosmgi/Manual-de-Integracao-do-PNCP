@@ -21,6 +21,15 @@ kbd {
     display: inline; 
 }
 
+.destaque-azul-claro {
+    background-color: #ADD8E6; 
+    border-radius: 4px;
+    text-align: justify;
+    padding: 2px 6px; 
+    border-radius: 4px;
+    display: inline; 
+}
+
 .linha-destaque {
     background-color: #F9B066;
     padding: 2px 4px;
