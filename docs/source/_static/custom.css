@@ -22,12 +22,11 @@ kbd {
 }
 
 .destaque-azul-claro {
-    background-color: #ADD8E6; 
+    background-color: #ADD8E6;
     border-radius: 4px;
     text-align: justify;
-    padding: 2px 6px; 
-    border-radius: 4px;
-    display: inline; 
+    padding: 2px 6px;
+    display: inline;
 }
 
 .linha-destaque {
