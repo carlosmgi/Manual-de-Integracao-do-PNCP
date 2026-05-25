@@ -189,7 +189,7 @@ Data: 06/01/2026
 
 `Inserir Entes Autorizados para um Usuário  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/usuario/atualizar_usuario.html>`_
 
-´Excluir Entes Autorizados de um Usuário  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/usuario/excluir_entes_autorizados_de_um_usuario.html>`_ 
+`Excluir Entes Autorizados de um Usuário  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/usuario/excluir_entes_autorizados_de_um_usuario.html>`_ 
 
 **Gestão de Plataforma**
 
@@ -205,11 +205,11 @@ Data: 06/01/2026
 
 `Incluir Gestor de Órgão e Entidade  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/orgao_entidade/gestao_de_orgao_e_entidade.html>`_ 
 
- `Habilitar/Desabilitar plataforma 
+`Habilitar/Desabilitar plataforma  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/orgao_entidade/gestao_de_orgao_e_entidade.html>`_  
 
- Incluir Unidade Administrativa 
+`Incluir Unidade Administrativa  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/orgao_entidade/gestao_de_orgao_e_entidade.html>`_  
 
- Editar, Ativar/Inativar Unidade Administrativa 
+`Editar, Ativar/Inativar Unidade Administrativa  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/orgao_entidade/gestao_de_orgao_e_entidade.html>`_  
 
 Versão: 2.3.8
 ++++++++++++++
