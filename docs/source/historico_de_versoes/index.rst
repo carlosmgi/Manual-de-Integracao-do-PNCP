@@ -66,7 +66,7 @@ Data: 09/04/2026
    :numbered:
    :maxdepth: 3
 
-Tabelas de domínio:
+**Tabelas de domínio:**
 
 `Tipo de Contrato  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/tabelas_de_dominio/tipo_de_contrato.html>`_ 
 
@@ -80,19 +80,17 @@ Tabelas de domínio:
 
 `Consultar Tipos de Documento  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/tabelas_de_dominio/consultar_tipos_de_documentos.html>`_ 
 
-\
-
-Serviços de Contratação (Editais, Avisos e Atos):
+**Serviços de Contratação (Editais, Avisos e Atos):**
 
 `Retificar Parcialmente uma Contratação   <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contratacao/retificar_parcialmente_uma_contratacao.html>`_ 
 
 `Consultar uma Contratação   <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contratacao/consultar_uma_contratacao.html>`_ 
 
-Serviços de Ata:
+**Serviços de Ata:**
 
 `Inserir Ata de Registro de Preço   <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/ata_de_registro_de_preco/inserir_ata_de_registro_de_preco.html>`_ 
 
-Serviços de Contrato/Empenho:
+**Serviços de Contrato/Empenho:**
 
 `Inserir Contrato/Empenho  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contrato_empenho/inserir_contratos_ou_empenhos.html>`_ 
 
