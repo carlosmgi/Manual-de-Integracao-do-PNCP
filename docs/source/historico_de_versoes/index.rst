@@ -66,14 +66,13 @@ Data: 09/04/2026
    :numbered:
    :maxdepth: 3
 
-Tabelas de Domínio
-~~~~~~~~~~~~~~~~~~
+   Tabelas de Domínio
+   ~~~~~~~~~~~~~~~~~~
 
-`Tipo de Contrato  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/tabelas_de_dominio/tipo_de_contrato.html>`_ 
-`Consultar Tipo de Contrato por Código  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/tabelas_de_dominio/consultar_tipo_de_contrato_por_codigo.html>`_ 
-      `Consultar Tipos de Contrato  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/tabelas_de_dominio/consultar_tipos_de_contrato.html>`_ 
-
-Tipo de Documento  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/tabelas_de_dominio/tipo_de_documento.html>`_ 
+   `Tipo de Contrato  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/tabelas_de_dominio/tipo_de_contrato.html>`_ 
+   `Consultar Tipo de Contrato por Código  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/tabelas_de_dominio/consultar_tipo_de_contrato_por_codigo.html>`_ 
+    `Consultar Tipos de Contrato  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/tabelas_de_dominio/consultar_tipos_de_contrato.html>`_    
+    `Tipo de Documento  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/tabelas_de_dominio/tipo_de_documento.html>`_ 
    
       5.12.1. Consultar Tipo de Documento por Código
       5.12.2. Consultar Tipos de Documento
