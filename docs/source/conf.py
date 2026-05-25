@@ -16,17 +16,17 @@ def linha_destaque_role(name, rawtext, text, lineno, inliner, options={}, conten
     node = nodes.inline(rawtext, text, classes=['linha-destaque'])
     return [node], []
 
-def linha_destaque_role(name, rawtext, text, lineno, inliner, options={}, content=[]):
+def destaque_amarelo_role(name, rawtext, text, lineno, inliner, options={}, content=[]):
     node = nodes.inline(rawtext, text, classes=['destaque-amarelo'])
     return [node], []
 
-def linha_destaque_role(name, rawtext, text, lineno, inliner, options={}, content=[]):
+def destaque_azul_claro_role(name, rawtext, text, lineno, inliner, options={}, content=[]):
     node = nodes.inline(rawtext, text, classes=['destaque-azul-claro'])
     return [node], []
 
-roles.register_local_role('destaque-amarelo', destaque_role)
+roles.register_local_role('destaque-amarelo', destaque_amarelo_role)
 roles.register_local_role('destaque', destaque_role)
-roles.register_local_role('destaque-azul-claro', destaque_role)
+roles.register_local_role('destaque-azul-claro', destaque_azul_claro_role)
 roles.register_local_role('destaque-amarelo-claro', destaque_amarelo_claro_role)
 roles.register_local_role('linha-destaque', linha_destaque_role)
 
