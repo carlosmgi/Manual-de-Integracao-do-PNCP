@@ -84,9 +84,12 @@ Tabelas de domínio:
 
 Serviços de Contratação (Editais, Avisos e Atos):
 
-      6.3.3. Retificar Parcialmente uma Contratação
-      6.3.5. Consultar uma Contratação
-      6.4. Serviços de Ata
+`Retificar Parcialmente uma Contratação   <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contratacao/retificar_parcialmente_uma_contratacao.html>`_ 
+
+`Consultar uma Contratação   <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contratacao/consultar_uma_contratacao.html>`_ 
+
+Serviços de Ata:
+
       6.4.1. Inserir Ata de Registro de Preço
       6.5. Serviços de Contrato/Empenho
       6.5.1. Inserir Contrato/Empenho
