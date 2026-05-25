@@ -145,33 +145,33 @@ Data: 24/02/2026
 
 `Retificar Ata de Registro de Preço <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/ata_de_registro_de_preco/retificar_ata_de_registro_de_preco.html>`_ 
 
-`Retificar Parcialmente Ata de Registro de Preço <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/ata_de_registro_de_preco/retificar_parcialmente_ata_de_registro_de_preco.html>`_
+`Retificar Parcialmente Ata de Registro de Preço  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/ata_de_registro_de_preco/retificar_parcialmente_ata_de_registro_de_preco.html>`_
 
 `Excluir Ata de Registro de Preço  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/ata_de_registro_de_preco/excluir_ata_de_registro_de_preco.html>`_
 
 `Consultar Atas de Registro de Preço por Compra   <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/ata_de_registro_de_preco/consultar_atas_de_registro_de_preco_por_compra.html>`_
 
-`Consultar Ata de Registro de Preço    <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/ata_de_registro_de_preco/consultar_atas_de_registro_de_preco.html>`_
+`Consultar Ata de Registro de Preço   <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/ata_de_registro_de_preco/consultar_atas_de_registro_de_preco.html>`_
 
-`Consultar Contratos de Ata de Registro de Preço     <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/ata_de_registro_de_preco/consultar_contratos_de_ata_de_registro_de_preco.html>`_
+`Consultar Contratos de Ata de Registro de Preço   <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/ata_de_registro_de_preco/consultar_contratos_de_ata_de_registro_de_preco.html>`_
 
-`Inserir Parte Envolvida na Ata de Registro de Preço      <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/ata_de_registro_de_preco/inserir_parte_envolvida_na_ata_de_registro_de_preco.html>`_
+`Inserir Parte Envolvida na Ata de Registro de Preço   <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/ata_de_registro_de_preco/inserir_parte_envolvida_na_ata_de_registro_de_preco.html>`_
 
-`Excluir Parte Envolvida em Ata de Registro de Preço       <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/ata_de_registro_de_preco/excluir_parte_envolvida_em_ata_de_registro_de_preco.html>`_
+`Excluir Parte Envolvida em Ata de Registro de Preço   <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/ata_de_registro_de_preco/excluir_parte_envolvida_em_ata_de_registro_de_preco.html>`_
 
-`Consultar Parte Envolvida em Ata de Registro de Preço        <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/ata_de_registro_de_preco/consultar_parte_envolvida_em_ata_de_registro_de_preco.html>`_
+`Consultar Parte Envolvida em Ata de Registro de Preço   <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/ata_de_registro_de_preco/consultar_parte_envolvida_em_ata_de_registro_de_preco.html>`_
 
-`Consultar Partes envolvidas em Ata de Registro de Preço         <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/ata_de_registro_de_preco/consultar_partes_envolvidas_em_ata_de_registro_de_preco.html>`_
+`Consultar Partes envolvidas em Ata de Registro de Preço   <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/ata_de_registro_de_preco/consultar_partes_envolvidas_em_ata_de_registro_de_preco.html>`_
 
 **Serviços de Contrato/Empenho**
 
-`Inserir Contrato/Empenho       <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contrato_empenho/inserir_contratos_ou_empenhos.html>`_
+`Inserir Contrato/Empenho   <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contrato_empenho/inserir_contratos_ou_empenhos.html>`_
 
-`Retificar Contrato/Empenho       <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contrato_empenho/retificar_contrato_ou_empenho.html>`_
+`Retificar Contrato/Empenho   <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contrato_empenho/retificar_contrato_ou_empenho.html>`_
 
-`Consultar Contrato/Empenho       <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contrato_empenho/consultar_contrato_ou_empenho.html>`_
+`Consultar Contrato/Empenho   <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contrato_empenho/consultar_contrato_ou_empenho.html>`_
 
-`Consultar Contratos/Empenhos de uma Contratação       <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contrato_empenho/consultar_contratos_ou_empenhos_de_uma_contratacao.html>`_
+`Consultar Contratos/Empenhos de uma Contratação   <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contrato_empenho/consultar_contratos_ou_empenhos_de_uma_contratacao.html>`_
 
 Versão: 2.3.9
 ++++++++++++++
@@ -181,31 +181,31 @@ Data: 06/01/2026
 .. note::
  Funcionalidades voltadas ao fortalecimento da segurança e à padronização da gestão de acessos, órgãos e plataformas. As alterações impactam órgãos e entidades da Administração Pública, bem como plataformas públicas e privadas integradas ao Portal.
 
-**Recomendações Iniciais**
+**Recomendações Iniciais:**
 
-Cadastro Inicial dos Órgãos/Entidades e suas Unidades 
+`Cadastro Inicial dos Órgãos/Entidades e suas Unidades <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/recomendacoes_iniciais/index.html>`_
 
-**Serviços de Usuário**
+**Serviços de Usuário:**
 
-Inserir Entes Autorizados para um Usuário 
+`Inserir Entes Autorizados para um Usuário  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/usuario/atualizar_usuario.html>`_
 
-Excluir Entes Autorizados de um Usuário 
+´Excluir Entes Autorizados de um Usuário  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/usuario/excluir_entes_autorizados_de_um_usuario.html>`_ 
 
-Gestão de Plataforma 
+**Gestão de Plataforma**
 
 **Serviços de Órgão/Entidade**
 
-Incluir Unidade 
+`Incluir Unidade  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/orgao_entidade/incluir_unidade.html>`_  
 
-Atualizar Unidade 
+`Atualizar Unidade  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/orgao_entidade/atualizar_unidade.html>`_   
 
-Requerimento Perfil Gestor 
+`Requerimento Perfil Gestor  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/orgao_entidade/atualizar_unidade.html>`_  
 
-Gestão de Órgão e Entidade 
+**Gestão de Órgão e Entidade** 
 
- Incluir Gestor de Órgão e Entidade 
+`Incluir Gestor de Órgão e Entidade  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/orgao_entidade/gestao_de_orgao_e_entidade.html>`_ 
 
- Habilitar/Desabilitar plataforma 
+ `Habilitar/Desabilitar plataforma 
 
  Incluir Unidade Administrativa 
 
