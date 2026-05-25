@@ -90,14 +90,21 @@ Serviços de Contratação (Editais, Avisos e Atos):
 
 Serviços de Ata:
 
-      6.4.1. Inserir Ata de Registro de Preço
-      6.5. Serviços de Contrato/Empenho
-      6.5.1. Inserir Contrato/Empenho
-      6.5.2. Retificar Contrato/Empenho
-      6.5.8. Consultar Contrato/Empenho
-      6.5.9. Consultar Contratos/Empenhos de uma Contratação
-      6.5.10. Consultar Histórico do Contrato/Empenho
-      6.5.17. Retificar Parcialmente um Contrato/Empenho
+`Inserir Ata de Registro de Preço   <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/ata_de_registro_de_preco/inserir_ata_de_registro_de_preco.html>`_ 
+
+Serviços de Contrato/Empenho:
+
+`Inserir Contrato/Empenho  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contrato_empenho/inserir_contratos_ou_empenhos.html>`_ 
+
+`Retificar Contrato/Empenho  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contrato_empenho/retificar_contrato_ou_empenho.html>`_ 
+
+`Consultar Contrato/Empenho  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contrato_empenho/consultar_contrato_ou_empenho.html>`_  
+
+`Consultar Contratos/Empenhos de uma Contratação  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contrato_empenho/consultar_contratos_ou_empenhos_de_uma_contratacao.html>`_  
+
+`Consultar Histórico do Contrato/Empenho  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contrato_empenho/consultar_historico_do_contrato_ou_empenho.html>`_  
+
+`Retificar Parcialmente um Contrato/Empenho  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contrato_empenho/retificar_parcialmente_um_contrato_ou_empenho.html>`_  
 
 
 Versão: 2.3.11
