@@ -54,8 +54,8 @@ Histórico de Versões
      - Inteiro
      - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
 
-Versão: 2.3.4
-++++++++++++++
+Versão: 2.4
++++++++++++
 
 Data: 09/04/2026
 
@@ -104,6 +104,15 @@ Data: 09/04/2026
 
 `Retificar Parcialmente um Contrato/Empenho  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contrato_empenho/retificar_parcialmente_um_contrato_ou_empenho.html>`_  
 
+`Inserir Empenho  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/empenho/inserir_empenho.html>`_ 
+
+`Retificar Parcialmente Empenho  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/empenho/retificar_parcialmente_empenho.html>`_  
+
+`Excluir Empenho  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/empenho/excluir_empenho.html>`_ 
+
+`Consultar Empenho pelo Número Sequencial  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/empenho/consultar_empenho_pelo_numero_sequencial.html>`_ 
+
+`Consultar Empenhos  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/empenho/consultar_empenhos.html>`_ 
 
 Versão: 2.3.11
 ++++++++++++++
@@ -117,7 +126,7 @@ Data: 18/03/2026
    :numbered:
    :maxdepth: 3
 
-      Fluxos de Inclusão de Contratos fruto de Ata de Registro de Preços (ARP) no PNCP <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contrato_empenho/fluxos_de_inclusao_de_contratos_fruto_de_ata_de_registro_de_precos_(arp)_no_pncp.html>`_ 
+`Fluxos de Inclusão de Contratos fruto de Ata de Registro de Preços (ARP) no PNCP <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contrato_empenho/fluxos_de_inclusao_de_contratos_fruto_de_ata_de_registro_de_precos_(arp)_no_pncp.html>`_ 
 
 Versão: 2.3.10
 ++++++++++++++
