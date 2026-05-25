@@ -78,7 +78,7 @@ Tabelas de domínio:
 
 `Consultar Tipo de Documento por Código    <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/tabelas_de_dominio/consultar_tipo_documento_por_codigo.html>`_ 
 
-`Consultar Tipos de Documento  Código    <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/tabelas_de_dominio/consultar_tipos_de_documentos.html>`_ 
+`Consultar Tipos de Documento  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/tabelas_de_dominio/consultar_tipos_de_documentos.html>`_ 
 
 \
 
