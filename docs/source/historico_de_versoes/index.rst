@@ -28,7 +28,6 @@ Histórico de Versões
      - Inteiro
      - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
 
-\
 
 .. Attention::
 
@@ -57,7 +56,6 @@ Histórico de Versões
      - Inteiro
      - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
 
-\
 
 .. Attention::
 
