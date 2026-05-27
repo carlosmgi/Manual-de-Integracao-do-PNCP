@@ -86,6 +86,14 @@ Histórico de Versões
      - Inteiro
      - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
 
+Versão: 2.5
++++++++++++
+
+Data: xx/05/2026
+
+.. note::
+    xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
 Versão: 2.4
 +++++++++++
 
