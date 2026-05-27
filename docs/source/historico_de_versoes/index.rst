@@ -250,7 +250,6 @@ Data: 06/01/2026
 `Incluir Unidade Administrativa  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/orgao_entidade/gestao_de_orgao_e_entidade.html>`_  
 
 `Editar, Ativar/Inativar Unidade Administrativa  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/orgao_entidade/gestao_de_orgao_e_entidade.html>`_  
-
 Versão: 2.3.8
 -------------
 
