@@ -42,8 +42,8 @@ project = 'Manual de Integração do PNCP'
 copyright = '2026, Ministério da Gestão e Inovação em Serviços Públicos - MGI'
 author = 'COPNCP/CGGES/DELOG/SEGES/MGI'
 
-release = '2.5'
-version = '2.5'
+release = 'V. 2.5'
+version = 'V. 2.5'
 
 # -- General configuration
 extensions = [
