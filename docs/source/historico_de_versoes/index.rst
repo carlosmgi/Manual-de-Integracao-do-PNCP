@@ -214,7 +214,7 @@ Data: 24/02/2026
 `Consultar Contratos/Empenhos de uma Contratação   <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contrato_empenho/consultar_contratos_ou_empenhos_de_uma_contratacao.html>`_
 
 Versão: 2.3.9
-++++++++++++++
++++++++++++++
 
 Data: 06/01/2026
 
@@ -252,7 +252,7 @@ Data: 06/01/2026
 `Editar, Ativar/Inativar Unidade Administrativa  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/orgao_entidade/gestao_de_orgao_e_entidade.html>`_  
 
 Versão: 2.3.8
-++++++++++++++
++++++++++++++
 
 Data: 18/08/2025
 
@@ -286,7 +286,7 @@ Incluir Unidade
 Atualizar Unidade 
 
 Versão: 2.3.7
-++++++++++++++
++++++++++++++
 
 Data: 13/06/2025
 
@@ -308,7 +308,7 @@ Consultar Itens de uma Contratação
 Consultar Item de uma Contratação
 
 Versão: 2.3.6
-++++++++++++++
++++++++++++++
 
 Data: 13/05/2025
 
