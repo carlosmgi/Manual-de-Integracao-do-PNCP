@@ -100,10 +100,6 @@ Data: 09/04/2026
 .. note::
     Funcionalidades que possibilitam recepcionar Emendas Parlamentares (Empenho) e novas tabelas de domínio de Tipo de Contrato e Documento.
 
-.. toctree::
-   :numbered:
-   :maxdepth: 3
-
 **Tabelas de domínio:**
 
 `Tipo de Contrato  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/tabelas_de_dominio/tipo_de_contrato.html>`_ 
@@ -160,10 +156,6 @@ Data: 18/03/2026
 .. note::
  Funcionalidades que possibilitam recepcionar e identificar contratos fruto de ata de registro de preços no PNCP, bem como informações sobre as partes envolvidas.
 
-.. toctree::
-   :numbered:
-   :maxdepth: 3
-
 `Fluxos de Inclusão de Contratos fruto de Ata de Registro de Preços (ARP) no PNCP <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contrato_empenho/fluxos_de_inclusao_de_contratos_fruto_de_ata_de_registro_de_precos_(arp)_no_pncp.html>`_ 
 
 Versão: 2.3.10
@@ -174,10 +166,6 @@ Data: 24/02/2026
 .. note::
  Funcionalidades que possibilitam recepcionar e identificar contratos fruto de ata de registro de preços no PNCP, bem como informações sobre as partes envolvidas.
  
-.. toctree::
-   :numbered:
-   :maxdepth: 3
-
 `Inserir Ata de Registro de Preço <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/ata_de_registro_de_preco/inserir_ata_de_registro_de_preco
 .html>`_ 
 
@@ -248,6 +236,7 @@ Data: 06/01/2026
 `Incluir Unidade Administrativa  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/orgao_entidade/gestao_de_orgao_e_entidade.html>`_  
 
 `Editar, Ativar/Inativar Unidade Administrativa  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/orgao_entidade/gestao_de_orgao_e_entidade.html>`_  
+
 Versão: 2.3.8
 -------------
 
@@ -288,7 +277,7 @@ Versão: 2.3.7
 Data: 13/06/2025
 
 .. note::
- Funcionalidade que possibilita recepcionar e exibir o tipo de margem de preferência utilizado em contratações públicas, sendo elas Resolução CIIA-PAC e CICS, conforme a Lei nº 14.133/2021.
+   Funcionalidade que possibilita recepcionar e exibir o tipo de margem de preferência utilizado em contratações públicas, sendo elas Resolução CIIA-PAC e CICS, conforme a Lei nº 14.133/2021.
 
 **Serviços de Contratação (Editais, Avisos e Atos)**
 
