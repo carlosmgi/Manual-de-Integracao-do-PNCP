@@ -66,34 +66,34 @@ Dados de retorno
    :header-rows: 1
    :class: quebra-linha-ultima-coluna
    
-		 * - Id
-       - Campo
-       - Tipo
-       - Descrição
-     * - :destaque:`1`
-       - :destaque:`id`
-       - :destaque:`Inteiro`
-       - :destaque:`Código de identificação do tipo de contrato`
-     * - :destaque:`2`
-       - :destaque:`nome`
-       - :destaque:`Texto`
-       - :destaque:`Nome do tipo de contrato`
-     * - :destaque:`3`
-       - :destaque:`descricao`
-       - :destaque:`Texto`
-       - :destaque:`Descrição do tipo de contrato`
-     * - :destaque:`4`
-       - :destaque:`dataInclusao`
-       - :destaque:`Data/Hora`
-       - :destaque:`Data e hora da inclusão do registro`
-     * - :destaque:`5`
-       - :destaque:`dataAtualizacao`
-       - :destaque:`Data/Hora`
-       - :destaque:`Data e hora da última atualização do registro`
-     * - :destaque:`6`
-       - :destaque:`statusAtivo`
-       - :destaque:`Booleano`
-       - :destaque:`Indicador de status do tipo de contrato. True-Ativo / False-Inativo`
+  * - Id
+    - Campo
+    - Tipo
+    - Descrição
+  * - :destaque:`1`
+    - :destaque:`id`
+    - :destaque:`Inteiro`
+    - :destaque:`Código de identificação do tipo de contrato`
+  * - :destaque:`2`
+    - :destaque:`nome`
+    - :destaque:`Texto`
+    - :destaque:`Nome do tipo de contrato`
+  * - :destaque:`3`
+    - :destaque:`descricao`
+    - :destaque:`Texto`
+    - :destaque:`Descrição do tipo de contrato`
+  * - :destaque:`4`
+    - :destaque:`dataInclusao`
+    - :destaque:`Data/Hora`
+    - :destaque:`Data e hora da inclusão do registro`
+  * - :destaque:`5`
+    - :destaque:`dataAtualizacao`
+    - :destaque:`Data/Hora`
+    - :destaque:`Data e hora da última atualização do registro`
+  * - :destaque:`6`
+    - :destaque:`statusAtivo`
+    - :destaque:`Booleano`
+    - :destaque:`Indicador de status do tipo de contrato. True-Ativo / False-Inativo`
 
 Códigos de Retorno
 ~~~~~~~~~~~~~~~~~~
