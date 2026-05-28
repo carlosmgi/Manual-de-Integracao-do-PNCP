@@ -30,8 +30,7 @@ Dados de Entrada
 ~~~~~~~~~~~~~~~~
 
 .. note:: 
-
-Alimentar o query parâmetro `statusAtivo`.  
+  Alimentar o query parâmetro `statusAtivo`.  
 
 .. list-table::
    :width: 100%
@@ -50,10 +49,11 @@ Alimentar o query parâmetro `statusAtivo`.
 Dados de retorno
 ~~~~~~~~~~~~~~~~
 
-.. list-table:: 
+.. list-table::
    :width: 100%
+   :widths: 5 10 15 55
    :header-rows: 1
-   :widths: auto
+   :class: quebra-linha-dois-quatro
 
    * - Id
      - Campo
