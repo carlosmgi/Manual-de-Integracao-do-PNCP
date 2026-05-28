@@ -60,3 +60,11 @@ table.quebra-linha-colunas-dois-tres :is(td, th):nth-child(3) {
   word-break: break-word !important;
   overflow-wrap: anywhere !important;
 }
+
+/*Quebra a linha das colunas 2 e 4 */
+table.quebra-linha-dois-quatro :is(td, th):nth-child(2),
+table.quebra-linha-dois-quatro :is(td, th):nth-child(4) {
+  white-space: normal !important;
+  word-break: break-word !important;
+  overflow-wrap: anywhere !important;
+}
