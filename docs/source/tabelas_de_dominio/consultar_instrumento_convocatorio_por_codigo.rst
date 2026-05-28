@@ -28,8 +28,7 @@ Dados de Entrada
 ~~~~~~~~~~~~~~~~
 
 .. note:: 
-
-Alimentar o path parâmetro {id} na URL.  
+   Alimentar o path parâmetro {id} na URL.  
 
 .. list-table::
    :width: 100%
@@ -49,10 +48,11 @@ Alimentar o path parâmetro {id} na URL.
 Dados de retorno
 ~~~~~~~~~~~~~~~~
 
-.. list-table:: 
+.. list-table::
    :width: 100%
+   :widths: 5 10 15 55
    :header-rows: 1
-   :widths: auto
+   :class: quebra-linha-ultima-coluna
 
    * - Id
      - Campo
