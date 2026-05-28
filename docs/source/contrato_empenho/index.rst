@@ -23,5 +23,10 @@ Serviços que disponibilizam conjunto de operações relacionadas aos contratos/
    consultar_instrumento_de_cobranca_de_um_contrato_empenho
    consultar_instrumentos_de_cobranca_de_um_contrato_ou_empenho
    fluxos_de_inclusao_de_contratos_fruto_de_ata_de_registro_de_precos_(arp)_no_pncp
+   termo_de_contrato/inserir_termo_de_contrato
+   termo_de_contrato/retificar_termo_de_contrato
+   termo_de_contrato/excluir_termo_de_contrato
+   termo_de_contrato/consultar_um_termo_de_contrato
+   termo_de_contrato/consultar_todos_os_termos_de_um_contrato
+   termo_de_contrato/inserir_documento_a_um_termo_de_contrato
    termo_de_contrato/consultar_documento_de_um_termo_de_contrato
-   
