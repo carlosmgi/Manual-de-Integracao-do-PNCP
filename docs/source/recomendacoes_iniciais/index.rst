@@ -23,7 +23,7 @@ Uma vez habilitada, a plataforma usuária deve realizar os seguintes passos:
 #. Verificar se os órgãos desejados já estão cadastrados no PNCP*;
 #. Cadastrar as unidades compradoras desses órgãos*;
 #. Vincular os entes autorizados junto ao seu usuário da API de Integração do PNCP, conforme orientação contida no tópico :ref:`vinculo-entes-api`;
-#. Iniciar o envio das informações através dos serviços disponíveis.
+#. Iniciar o envio das informações por meio dos serviços disponíveis.
 
 .. note::
 
@@ -48,7 +48,7 @@ Composição do Número de Controle PNCP de PCA/Contratação/Ata/Contrato
 
 O PNCP gera automaticamente um identificador (número de controle) utilizado para reconhecer todas as demais transações realizadas para aquele registro.
 
-Atualmente encontram-se disponíveis: plano de contratações anual (PCA), contratação (licitação ou contratação direta), ata de registro de preços ou contrato, conforme a composição abaixo.
+Atualmente encontram-se disponíveis: planos de contratações anuais (PCA), contratação (licitação ou contratação direta), ata de registro de preços ou contrato, conforme a composição abaixo.
 
 .. _numero-controle-pca:
 
