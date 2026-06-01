@@ -39,8 +39,7 @@ Dados de Entrada
 ~~~~~~~~~~~~~~~~
 
 .. note:: 
-
-   Alimentar o query parâmetro {amparoLegalId} ou {modalidadeId} ou {tipoInstrumentoConvocatorioId}.
+   Alimentar o query parâmetro ``{amparoLegalId}`` ou ``{modalidadeId}`` ou ``{tipoInstrumentoConvocatorioId}``.
 
 .. list-table::
    :width: 100%
