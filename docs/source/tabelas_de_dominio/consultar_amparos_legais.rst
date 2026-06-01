@@ -39,8 +39,12 @@ Dados de Entrada
 ~~~~~~~~~~~~~~~~
 
 .. note:: 
-
    Alimentar o query parâmetro {statusAtivo} ou {tipoAmparoLegalId}.  
+
+.. list-table::
+   :width: 100%
+   :widths: 5 25 15 25
+   :header-rows: 1
 
    * - Campo
      - Tipo
