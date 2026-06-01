@@ -1,8 +1,7 @@
 Consultar conformidade entre Instrumento Convocatório, Modalidade de Contratação e Amparo Legal por Código
 ==========================================================================================================
 
-Serviço que permite consultar a combinação de conformidade pelo código do instrumento convocatório, código da modalidade de contratação e código do amparo 
-legal. 
+Serviço que permite consultar a combinação de conformidade pelo código do instrumento convocatório, código da modalidade de contratação e código do amparo legal. 
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -25,14 +24,6 @@ Exemplo de Payload
 
     Não se aplica
 
-Exemplo de Payload
-~~~~~~~~~~~~~~~~~~
-
-.. code-block:: json
-  :linenos:
-
-    Não se aplica
-
 Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -45,7 +36,7 @@ Dados de Entrada
 
 .. note:: 
 
-   Alimentar o path parâmetro {amparoLegalId} e {modalidadeId} e {tipoInstrumentoConvocatorioId} na URL. 
+   Alimentar o path parâmetro ``{amparoLegalId}`` e ``{modalidadeId}`` e ``{tipoInstrumentoConvocatorioId}`` na URL. 
 
 .. list-table::
    :width: 100%
