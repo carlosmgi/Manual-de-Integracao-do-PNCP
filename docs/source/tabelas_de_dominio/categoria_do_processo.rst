@@ -11,7 +11,7 @@ Categoria do Processo
 
 - (código = 5) **Locação Imóveis**
 
-- (código = 6) **Mão de Obr** 
+- (código = 6) **Mão de Obra** 
 
 - (código = 7) **Obras**
 
