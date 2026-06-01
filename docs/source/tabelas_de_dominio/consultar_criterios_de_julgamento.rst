@@ -37,8 +37,7 @@ Dados de Entrada
 ~~~~~~~~~~~~~~~~
 
 .. note:: 
-
-Alimentar o query parâmetro {statusAtivo}. 
+   Alimentar o query parâmetro ``{statusAtivo}``. 
 
 .. list-table::
    :width: 100%
