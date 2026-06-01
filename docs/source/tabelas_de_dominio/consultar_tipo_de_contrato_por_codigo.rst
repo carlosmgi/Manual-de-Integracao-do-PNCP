@@ -41,6 +41,7 @@ Dados de entrada
 .. Note::
   Alimentar o parâmetro ``{id}`` na URL.
 
+
 .. list-table::
    :width: 100%
    :widths: 5 10 15 55
@@ -57,9 +58,9 @@ Dados de entrada
      - :destaque:`Código de identificação do tipo de contrato`
 
 
+
 Dados de retorno
 ~~~~~~~~~~~~~~~~
-
 
 .. list-table::
    :width: 100%
@@ -96,6 +97,7 @@ Dados de retorno
     - :destaque:`statusAtivo`
     - :destaque:`Booleano`
     - :destaque:`Indicador de status do tipo de contrato. True-Ativo / False-Inativo`
+
 
 Códigos de Retorno
 ~~~~~~~~~~~~~~~~~~
