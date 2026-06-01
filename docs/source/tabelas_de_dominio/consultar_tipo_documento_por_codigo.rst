@@ -43,7 +43,7 @@ Dados de entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-  alimentar o path parâmetro {id} na URL
+  Alimentar o path parâmetro ``{id}`` na URL
 
 .. list-table::
    :width: 100%
