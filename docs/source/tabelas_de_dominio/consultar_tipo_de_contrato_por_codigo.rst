@@ -119,7 +119,7 @@ Códigos de Retorno
      - Erro
    * - 404
      - Tipo de contrato não encontrado.
-     - Erro     
+     - NotFound     
    * - 422
      - Unprocessable Entity
      - Erro
