@@ -187,7 +187,7 @@ Data: 24/02/2026
 
 `Consultar Parte Envolvida em Ata de Registro de Preço   <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/ata_de_registro_de_preco/consultar_parte_envolvida_em_ata_de_registro_de_preco.html>`_
 
-`Consultar Partes envolvidas em Ata de Registro de Preço   <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/ata_de_registro_de_preco/consultar_partes_envolvidas_em_ata_de_registro_de_preco.html>`_
+`Consultar Partes Envolvidas em Ata de Registro de Preço   <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/ata_de_registro_de_preco/consultar_partes_envolvidas_em_ata_de_registro_de_preco.html>`_
 
 **Serviços de Contrato/Empenho**
 
@@ -311,7 +311,7 @@ Consultar Fontes Orçamentárias
 
 Consultar conformidade entre Modalidade de Contratação e Fonte Orçamentária por Código 
 
-Consultar conformidade entre Modalidade de Contratação e Fonte Orçamentaria 
+Consultar conformidade entre Modalidade de Contratação e Fonte Orçamentária 
 
 **Incluir Unidade**
 
