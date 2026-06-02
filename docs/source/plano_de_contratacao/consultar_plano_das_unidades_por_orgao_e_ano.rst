@@ -1,4 +1,4 @@
-Consultar Plano das Unidades por Órgão e Ano
+Consultar Plano de Contratação das Unidades por Órgão e Ano
 ============================================
 
 
@@ -76,8 +76,9 @@ Dados de retorno
 
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 5 10 15 55
    :header-rows: 1
+   :class: quebra-linha-ultima-coluna
 
    * - Id
      - Campo
