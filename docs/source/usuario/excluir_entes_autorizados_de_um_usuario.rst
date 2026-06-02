@@ -41,7 +41,8 @@ Exemplo Requisição (cURL)
   :linenos:
   :emphasize-lines: 1
 
-	curl -k -X DELETE --header "Authorization: Bearer access_token" "${BASE_URL}/v1/usuarios/5/orgaos" -H "accept: */*" -H "Content-Type: application/json" --data "@/home/objeto.json"
+	curl -k -X DELETE --header "Authorization: Bearer access_token" "${BASE_URL}/v1/usuarios/5/orgaos" 
+	-H "accept: */*" -H "Content-Type: application/json" --data "@/home/objeto.json"
 
 Dados de retorno
 ~~~~~~~~~~~~~~~~
