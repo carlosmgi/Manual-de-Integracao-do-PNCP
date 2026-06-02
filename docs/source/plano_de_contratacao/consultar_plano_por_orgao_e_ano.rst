@@ -1,4 +1,4 @@
-Consultar Plano por Órgão e Ano
+Consultar Plano de Contratação por Órgão e Ano
 ===============================
 
 Serviço que permite consultar o plano de contratações anual específico de um determinado órgão.
@@ -33,7 +33,7 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
   :linenos:
 
-  curl -X 'GET' 'https://treina.pncp.gov.br/api/pncp/v1/orgaos/00394460000141/pca/2022/consolidado' \ -H 'accept: */*'
+  curl -X 'GET' 'https://treina.pncp.gov.br/api/pncp/v1/orgaos/00394460000141/pca/2022/consolidado' -H 'accept: */*'
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
@@ -70,8 +70,9 @@ Dados de retorno
 
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 5 10 15 55
    :header-rows: 1
+   :class: quebra-linha-ultima-coluna
 
    * - Id
      - Campo
