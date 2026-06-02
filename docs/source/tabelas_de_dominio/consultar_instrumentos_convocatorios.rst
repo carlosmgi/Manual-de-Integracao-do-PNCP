@@ -28,12 +28,12 @@ Exemplo Requisição (cURL)
 Dados de Entrada
 ~~~~~~~~~~~~~~~~
 
-.. note:: 
-  Alimentar o query parâmetro `statusAtivo`.  
+.. note::
+   Alimentar o query parâmetro ``statusAtivo``.
 
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 15 10 10 65
    :header-rows: 1
 
    * - Campo
@@ -41,9 +41,10 @@ Dados de Entrada
      - Obrigatório
      - Descrição
    * - statusAtivo
-     - Boolean
+     - Booleano
      - Não
-     - Indicador de status do instrumento convocatório. True = Ativo / False = Inativo
+     - Indicador de status do instrumento convocatório.
+       True = Ativo / False = Inativo
 
 Dados de retorno
 ~~~~~~~~~~~~~~~~
