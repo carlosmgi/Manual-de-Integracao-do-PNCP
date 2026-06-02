@@ -39,12 +39,13 @@ Dados de entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-   alimentar o parâmetro ``{cnpj}``, ``{ano}`` e ``{sequencial}`` na URL.
+   Alimentar os parâmetros ``{cnpj}``, ``{ano}`` e ``{sequencial}`` na URL.
 
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 5 25 10 30 55
    :header-rows: 1
+   :class: quebra-linha
 
    * - Id
      - Campo
@@ -87,8 +88,9 @@ Dados de retorno
 
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 5 10 15 55
    :header-rows: 1
+   :class: quebra-linha-dois-quatro
 
    * - Id
      - Campo
