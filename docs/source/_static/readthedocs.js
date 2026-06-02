@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-
+    // 1. MAPEAMENTO DO BOTÃO DE PESQUISA
     const searchSelectors = [
         "[role='search'] input",
         "input[name='q']",
@@ -22,6 +22,28 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    // 2. FUNÇÃO PARA INJETAR ESTILO (Aumentar a largura do modal)
+    function customizarLarguraModal(shadowRoot) {
+        // Verifica se o estilo já foi injetado para não duplicar
+        if (shadowRoot.querySelector('#rtd-custom-width-style')) return;
+
+        const estilo = document.createElement('style');
+        estilo.id = 'rtd-custom-width-style';
+        
+        // Aplica uma largura maior (ex: 850px) e garante que ela responda bem em telas menores
+        estilo.textContent = `
+            .rtd-search-modal-container, 
+            .DocSearch-Modal, 
+            div[class*="modal"], 
+            div[class*="container"] {
+                max-width: 850px !important; 
+                width: 90% !important;
+            }
+        `;
+        shadowRoot.appendChild(estilo);
+    }
+
+    // 3. TRADUÇÃO DO MODAL E AJUSTES VISUAIS
     function traduzirElemento(elemento) {
         if (!elemento) return;
 
@@ -57,16 +79,27 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function observarETraduzir(alvo) {
+        // Se for um Shadow DOM, injeta o estilo de largura
+        if (alvo.nodeType === Node.DOCUMENT_FRAGMENT_NODE || alvo.shadowRoot) {
+            customizarLarguraModal(alvo);
+        }
+
         alvo.childNodes.forEach(traduzirElemento);
 
         const observer = new MutationObserver((mutations) => {
             mutations.forEach((mutation) => {
-                mutation.addedNodes.forEach(traduzirElemento);
+                mutation.addedNodes.forEach(node => {
+                    if (alvo.nodeType === Node.DOCUMENT_FRAGMENT_NODE || alvo.shadowRoot) {
+                        customizarLarguraModal(alvo);
+                    }
+                    traduzirElemento(node);
+                });
             });
         });
         observer.observe(alvo, { childList: true, subtree: true });
     }
 
+    // Procura o componente do Read the Docs
     const rtdSearchComponent = document.querySelector("readthedocs-search");
     
     if (rtdSearchComponent) {
