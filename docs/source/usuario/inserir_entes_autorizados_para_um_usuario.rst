@@ -43,7 +43,8 @@ Exemplo Requisição (cURL)
 
 .. code-block:: bash
 
-  	 curl -k -X POST --header "Authorization: Bearer access_token" "${BASE_URL}/v1/usuarios/5/orgaos" -H "accept: */*" -H "Content-Type: application/json" --data "@/home/objeto.json" 
+  	curl -k -X POST --header "Authorization: Bearer access_token" "${BASE_URL}/v1/usuarios/5/orgaos" 
+	-H "accept: */*" -H "Content-Type: application/json" --data "@/home/objeto.json" 
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
@@ -124,7 +125,7 @@ Códigos de Retorno
      - Erro
    * - 422
      - Unprocessable Entity
-     - NotFound
+     - Erro
    * - 500
      - Internal Server Error
      - Erro
