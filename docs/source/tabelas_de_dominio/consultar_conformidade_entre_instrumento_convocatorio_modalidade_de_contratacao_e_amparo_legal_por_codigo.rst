@@ -40,8 +40,9 @@ Dados de Entrada
 
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 5 10 15 55
    :header-rows: 1
+   :class: quebra-linha-ultima-coluna1
 
    * - Campo
      - Tipo
@@ -63,10 +64,11 @@ Dados de Entrada
 Dados de retorno
 ~~~~~~~~~~~~~~~~
 
-.. list-table:: 
+.. list-table::
    :width: 100%
+   :widths: 5 10 15 55
    :header-rows: 1
-   :widths: auto
+   :class: quebra-linha-ultima-coluna
 
    * - Id
      - Campo
