@@ -37,8 +37,9 @@ Dados de Entrada
 
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 5 25 10 30 55
    :header-rows: 1
+   :class: quebra-linha
 
    * - Id
      - Campo
@@ -49,9 +50,7 @@ Dados de Entrada
      - cnpj
      - Texto (14)
      - Sim
-     - Cnpj do órgão a que a unidade
-       administrativa do PCA está
-       vinculada
+     - Cnpj do órgão a que a unidade administrativa do PCA está vinculada
    * - 2
      - ano
      - Inteiro
@@ -88,8 +87,9 @@ Dados de retorno
 
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 5 10 15 55
    :header-rows: 1
+   :class: quebra-linha-dois-quatro
 
    * - Id
      - Campo
@@ -126,13 +126,11 @@ Dados de retorno
    * - 1.7
      - nomeClassificacao
      - Texto
-     - Nome da Indicação se Item é Material ou Serviço. Domínio: 1 - Material; 2 -
-       Serviço;
+     - Nome da Indicação se Item é Material ou Serviço. Domínio: 1 - Material; 2 - Serviço;
    * - 1.8
      - categoriaItemPcaid
      - Inteiro
-     - Código da categoria do item. Consultar item 5.17 Categoria de Item para mais
-       informações
+     - Código da categoria do item. Consultar item 5.17 Categoria de Item para mais informações
    * - 1.9
      - nomeCatalogo
      - Texto
@@ -168,9 +166,7 @@ Dados de retorno
    * - 1.17
      - quantidade
      - Decimal
-     - Quantidade do item do plano de
-       contratação (maior ou igual a zero).
-       Precisão de até 4 dígitos decimais; Ex: 10.0001;
+     - Quantidade do item do plano de contratação (maior ou igual a zero). Precisão de até 4 dígitos decimais; Ex: 10.0001;
    * - 1.18
      - valorUnitario
      - Decimal
