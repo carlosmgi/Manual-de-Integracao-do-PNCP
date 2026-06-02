@@ -7,7 +7,7 @@ altere sua própria senha ou cadastre a lista de CNPJs dos entes autorizados (ó
 .. container:: destaque-amarelo
 
  **Observação:** 
-  - O item "Incluir Órgão" foi construído para incluir um Órgão que eventualmente não se encontre no repositório de dados do PNCP. A funcionalidade não deve ser confundida com a inclusão de Órgãos gerenciados pelo usuário. 
+  - O item "Incluir Órgão" foi construído para incluir um órgão que, eventualmente, não se encontre no repositório de dados do PNCP. A funcionalidade não deve ser confundida com a inclusão de órgãos gerenciados pelo usuário.
   - O parâmetro “entesAutorizados” não está disponível para plataformas privadas desde 18/08/2025.
 
 Detalhes da Requisição
