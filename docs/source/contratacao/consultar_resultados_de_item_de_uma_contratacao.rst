@@ -274,6 +274,7 @@ Dados de Retorno
      - Texto
      - Nome da moeda estrangeira.
 
+
 Códigos de Retorno
 ~~~~~~~~~~~~~~~~~~
 
