@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // 1. MAPEAMENTO DO BOTÃO DE PESQUISA (Código que já funcionou)
+
     const searchSelectors = [
         "[role='search'] input",
         "input[name='q']",
@@ -22,50 +22,66 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // 2. TRADUÇÃO DOS BOTÕES DO MODAL (Português do Brasil)
-    // Criamos um observador que fica de olho na página esperando o modal abrir
-    const observer = new MutationObserver((mutations) => {
-        mutations.forEach((mutation) => {
-            if (mutation.addedNodes.length) {
-                // Procura pelas dicas de teclado dentro do modal do Read the Docs
-                const commands = document.querySelectorAll(".rtd-search-hits-footer-commands-command, .DocSearch-Commands-Key");
-                
-                if (commands.length > 0) {
-                    traduzirModal();
-                }
+    function traduzirElemento(elemento) {
+        if (!elemento) return;
+
+        if (elemento.nodeType === Node.TEXT_NODE) {
+            let texto = elemento.nodeValue;
+            if (texto.includes("Enter to select")) {
+                elemento.nodeValue = texto.replace("Enter to select", "Enter para selecionar");
             }
-        });
-    });
-
-    // Inicia a observação no corpo do site
-    observer.observe(document.body, { childList: true, subtree: true });
-
-    function traduzirModal() {
-        // Altera os textos de ajuda de navegação
-        document.querySelectorAll(".rtd-search-hits-footer-commands-command").forEach(el => {
-            let texto = el.innerHTML;
+            if (texto.includes("Up / Down to navigate")) {
+                elemento.nodeValue = texto.replace("Up / Down to navigate", "Setas para navegar");
+            }
             if (texto.includes("to select")) {
-                el.innerHTML = texto.replace("to select", "para selecionar");
+                elemento.nodeValue = texto.replace("to select", "para selecionar");
             }
             if (texto.includes("to navigate")) {
-                el.innerHTML = texto.replace("to navigate", "para navegar");
+                elemento.nodeValue = texto.replace("to navigate", "para navegar");
             }
             if (texto.includes("to close")) {
-                el.innerHTML = texto.replace("to close", "para fechar");
+                elemento.nodeValue = texto.replace("to close", "para fechar");
             }
-        });
-
-        // Caso o tema use o padrão DocSearch/Algolia internamente:
-        document.querySelectorAll(".DocSearch-Label").forEach(el => {
-            if (el.textContent === "Select") el.textContent = "Selecionar";
-            if (el.textContent === "Navigate") el.textContent = "Navegar";
-            if (el.textContent === "Close") el.textContent = "Fechar";
-        });
-        
-        // Traduz o placeholder interno do modal, se necessário
-        const modalInput = document.querySelector(".rtd-search-modal-input, .DocSearch-Input");
-        if (modalInput && modalInput.getAttribute("placeholder") === "Search docs") {
-            modalInput.setAttribute("placeholder", "Pesquisar documentação...");
+            return;
         }
+
+        if (elemento.placeholder && elemento.placeholder.includes("Search docs")) {
+            elemento.placeholder = "Pesquisar na documentação...";
+        }
+
+        if (elemento.shadowRoot) {
+            observarETraduzir(elemento.shadowRoot);
+        }
+
+        elemento.childNodes.forEach(traduzirElemento);
+    }
+
+    function observarETraduzir(alvo) {
+        alvo.childNodes.forEach(traduzirElemento);
+
+        const observer = new MutationObserver((mutations) => {
+            mutations.forEach((mutation) => {
+                mutation.addedNodes.forEach(traduzirElemento);
+            });
+        });
+        observer.observe(alvo, { childList: true, subtree: true });
+    }
+
+    const rtdSearchComponent = document.querySelector("readthedocs-search");
+    
+    if (rtdSearchComponent) {
+        if (rtdSearchComponent.shadowRoot) {
+            observarETraduzir(rtdSearchComponent.shadowRoot);
+        } else {
+            const rtdObserver = new MutationObserver(() => {
+                if (rtdSearchComponent.shadowRoot) {
+                    observarETraduzir(rtdSearchComponent.shadowRoot);
+                    rtdObserver.disconnect();
+                }
+            });
+            rtdObserver.observe(rtdSearchComponent, { attributes: true, childList: true });
+        }
+    } else {
+        observarETraduzir(document.body);
     }
 });
