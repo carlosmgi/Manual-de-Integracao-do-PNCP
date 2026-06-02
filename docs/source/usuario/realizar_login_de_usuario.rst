@@ -32,7 +32,8 @@ Exemplo Requisição (cURL)
 
 .. code-block:: bash
 
-   	curl -X 'GET' --header "Authorization: Bearer access_token" "${BASE_URL}/v1/usuarios/login" -H "accept: */*" -H "Content-Type: application/json" --data "@/home/objeto.json" 
+   	curl -X 'GET' --header "Authorization: Bearer access_token" "${BASE_URL}/v1/usuarios/login" 
+	-H "accept: */*" -H "Content-Type: application/json" --data "@/home/objeto.json" 
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
@@ -64,8 +65,9 @@ Dados de retorno
 
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 5 10 15 55
    :header-rows: 1
+   :class: quebra-linha-ultima-coluna
 
    * - Id
      - Campo
@@ -122,7 +124,7 @@ Códigos de Retorno
      - Erro
    * - 422
      - Unprocessable Entity
-     - NotFound
+     - Erro
    * - 500
      - Internal Server Error
      - Erro
