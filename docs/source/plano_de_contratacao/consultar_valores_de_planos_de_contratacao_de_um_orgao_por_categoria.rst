@@ -38,12 +38,13 @@ Dados de entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-   Alimentar o parâmetro {cnpj} e {ano} na URL.
+   Alimentar os parâmetros ``{cnpj}`` e ``{ano}`` na URL.
 
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 5 10 10 15 55
    :header-rows: 1
+   :class: quebra-linha-ultima-coluna
 
    * - Id
      - Campo
@@ -74,8 +75,9 @@ Dados de retorno
 
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 5 10 15 55
    :header-rows: 1
+   :class: quebra-linha-ultima-coluna
 
    * - Id
      - Campo
