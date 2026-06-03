@@ -32,7 +32,7 @@ Exemplo de Payload
 Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. code-block:: bash
+.. code-block:: lua
 
 	curl -k -X ‘DELETE’ --header 'Authorization: Bearer access_token'	
 	'${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/arquivos/1' 
