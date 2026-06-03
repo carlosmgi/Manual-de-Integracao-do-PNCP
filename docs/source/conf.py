@@ -78,6 +78,7 @@ latex_documents = [
      'Author', 'manual'),
 ]
 
-html_js_files = [
-    ("readthedocs.js", {"defer": "defer"}),
-]
+# Arquivo para injetar javascript
+# html_js_files = [
+#     ("readthedocs.js", {"defer": "defer"}),
+# ]
