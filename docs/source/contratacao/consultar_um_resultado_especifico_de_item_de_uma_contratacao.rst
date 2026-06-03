@@ -27,9 +27,10 @@ Exemplo de Payload
 Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. code-block:: bash
+.. code-block:: Bash
 
-	curl -k -X GET "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/itens/1/resultados/1" -H "accept: */*" 
+	curl -k -X GET "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/itens/1/resultados/1" \
+	  -H "Accept: */*" 
 
 Dados de Entrada
 ~~~~~~~~~~~~~~~~
@@ -39,9 +40,9 @@ Dados de Entrada
 
 .. list-table::
    :width: 100%
-   :widths: 5 10 10 15 55
+   :widths: 5 25 10 15 55
    :header-rows: 1
-   :class: quebra-linha-ultima-coluna
+   :class: quebra-linha-dois-ultima
 
    * - Id
      - Campo
