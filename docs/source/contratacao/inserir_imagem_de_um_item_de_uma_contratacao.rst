@@ -30,10 +30,14 @@ Exemplo Requisição (cURL)
 
 .. code-block:: bash
 
-	curl -k -X POST --header "Authorization: Bearer access_token"
-	"${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/itens/1/imagem" -H "accept: */*" -H "Content-Type: multipart/form-data" 
-	-H "Titulo-Imagem: Casa" -H "Legenda-Imagem: Casa em condomínio fechado" -H "Texto-Alternativo-Imagem: Texto Alternativo Imagem" 
-	-F "arquivo=@lote1_imagem1.jpeg;type=image/jpeg"
+	curl -k -X POST \
+	  "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/itens/1/imagem" \
+	  -H "Authorization: Bearer access_token" \
+	  -H "Accept: */*" \
+	  -H "Titulo-Imagem: Casa" \
+	  -H "Legenda-Imagem: Casa em condomínio fechado" \
+	  -H "Texto-Alternativo-Imagem: Texto Alternativo Imagem" \
+	  -F "arquivo=@lote1_imagem1.jpeg;type=image/jpeg"
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
