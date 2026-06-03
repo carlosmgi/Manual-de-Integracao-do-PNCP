@@ -29,14 +29,8 @@ Exemplo Requisição (cURL)
 
 .. code-block:: bash
 
-	curl -X POST \
-	  "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/fonte-orcamentaria" \
-	  -H "Authorization: Bearer access_token" \
-	  -H "Accept: */*" \
-	  -H "Content-Type: application/json" \
-	  -d '{
-	        "listaFonteOrcamentariaId": [1, 2]
-	      }'
+	curl -k -X GET "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/itens/1/imagem/1" \
+		  -H "Accept: */*"
 
 
 Dados de entrada
