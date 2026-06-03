@@ -45,16 +45,16 @@ Exemplo de Payload
    :emphasize-lines: 1-12
 
    [
-     {
-       "tipoParteEnvolvidaId": 1,
-       "cnpj": "00394460000141",
-       "codigoUnidadeCompradora": "1"
-     },
-     {
-       "tipoParteEnvolvidaId": 2,
-       "cnpj": "00394460000141",
-       "codigoUnidadeCompradora": "2"
-     }
+   	{
+   		"tipoParteEnvolvidaId": 1,
+   		"cnpj": "00394460000141",
+   		"codigoUnidadeCompradora": "1"
+   	},
+   	{
+   		"tipoParteEnvolvidaId": 2,
+   		"cnpj": "00394460000141",
+   		"codigoUnidadeCompradora": "2"
+   	}
    ]
 
 Exemplo Requisição (cURL)
@@ -64,8 +64,10 @@ Exemplo Requisição (cURL)
    :linenos:
    :emphasize-lines: 1-2
 
-   curl -X 'POST' '${BASE_URL}/v1/orgaos/00394460000141/compras/2021/1/atas/1/partesenvolvidas' 
-   -H 'accept: */*' -H 'Authorization: Bearer<TOKEN_AUTORIZACAO>' 
+   curl -X POST \
+     "${BASE_URL}/v1/orgaos/00394460000141/compras/2021/1/atas/1/partesenvolvidas" \
+     -H "Accept: */*" \
+     -H "Authorization: Bearer <TOKEN_AUTORIZACAO>"
     
 
 Dados de entrada
@@ -76,9 +78,9 @@ Dados de entrada
 
 .. list-table::
    :width: 100%
-   :widths: 5 10 10 15 55
+   :widths: 5 25 10 15 55
    :header-rows: 1
-   :class: quebra-linha-ultima-coluna
+   :class: quebra-linha-dois-ultima
 
    * - Id
      - Campo
