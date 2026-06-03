@@ -1,3 +1,4 @@
+// Modal de pesquisa - INICIO ------------------------------------------------------------------------
 document.addEventListener("DOMContentLoaded", function () {
     const searchSelectors = [
         "[role='search'] input",
@@ -111,3 +112,4 @@ document.addEventListener("DOMContentLoaded", function () {
         observarETraduzir(document.body);
     }
 });
+// Modal de pesquisa - FIM ------------------------------------------------------------------------
