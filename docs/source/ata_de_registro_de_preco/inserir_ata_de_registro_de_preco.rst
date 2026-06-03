@@ -25,7 +25,7 @@ Exemplo de Payload
 
 .. code-block:: json
    :linenos:
-   :emphasize-lines: 1,8-16
+   :emphasize-lines: 8-15
 
    {
    	"numeroAtaRegistroPreco": "00001",
@@ -48,7 +48,7 @@ Exemplo Requisição (cURL)
 
 .. code-block:: bash
    :linenos:
-   :emphasize-lines: 1-6
+   :emphasize-lines: 1-8
 
 
    curl -k -X POST \
