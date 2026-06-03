@@ -34,21 +34,22 @@ Exemplo Requisição (cURL)
 
 .. code-block:: bash
 
-	curl -k -X ‘DELETE’ --header 'Authorization: Bearer access_token'	'${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/arquivos/1' 
-  -H 'accept: */*’ -H 'Content-Type: application/json' -d 
-  '{ "listaFonteOrcamentariaId": [ 2 ], "justificativaAtualizacao": "Justificativa da exclusão" }'
+	curl -k -X ‘DELETE’ --header 'Authorization: Bearer access_token'	
+	'${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/arquivos/1' 
+  	-H 'accept: */*’ -H 'Content-Type: application/json' -d 
+  	'{ "listaFonteOrcamentariaId": [ 2 ], "justificativaAtualizacao": "Justificativa da exclusão" }'
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-	Alimentar o parâmetro ``{cnpj}``, ``{ano}``, ``{sequencial}`` e ``{sequencialDocumento}`` na URL.
+	Alimentar os parâmetros ``{cnpj}``, ``{ano}``, ``{sequencial}`` e ``{sequencialDocumento}`` na URL.
 
 .. list-table::
    :width: 100%
-   :widths: 5 10 10 15 55
+   :widths: 5 25 10 15 55
    :header-rows: 1
-   :class: quebra-linha-ultima-coluna
+   :class: quebra-linha-dois-ultima
 
    * - Id
      - Campo
