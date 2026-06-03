@@ -37,9 +37,9 @@ Exemplo Requisição (cURL)
 Dados de Entrada
 ~~~~~~~~~~~~~~~~
 
-.. note:: 
+.. note::
 
-Alimentar o query parâmetro `statusAtivo`.
+   Alimentar o query parâmetro ``statusAtivo``.
 
 .. list-table::
    :width: 100%
