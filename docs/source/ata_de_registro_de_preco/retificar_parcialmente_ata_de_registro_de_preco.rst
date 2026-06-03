@@ -53,8 +53,11 @@ Exemplo Requisição (cURL)
    :linenos:
    :emphasize-lines: 1-5
 
-   curl -X 'PATCH' '${BASE_URL}/v1/orgaos/00394460000141/compras/2021/1/atas/1' -H 'accept: */*'
-   -H 'Authorization: Bearer <TOKEN_AUTORIZACAO>' -H 'Content-Type: application/json' -d '@/home/objeto.json'
+   curl -X 'PATCH' '${BASE_URL}/v1/orgaos/00394460000141/compras/2021/1/atas/1' \
+     -H 'accept: */*' \
+     -H 'Authorization: Bearer <TOKEN_AUTORIZACAO>' \
+     -H 'Content-Type: application/json' \
+     -d '@/home/objeto.json'
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
@@ -64,9 +67,9 @@ Dados de entrada
 
 .. list-table::
    :width: 100%
-   :widths: 5 10 10 15 55
+   :widths: 5 25 10 15 55
    :header-rows: 1
-   :class: quebra-linha-ultima-coluna
+   :class: quebra-linha-dois-ultima
 
    * - Id
      - Campo
