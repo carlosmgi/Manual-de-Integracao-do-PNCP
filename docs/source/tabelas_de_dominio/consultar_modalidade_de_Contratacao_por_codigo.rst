@@ -28,7 +28,7 @@ Exemplo Requisição (cURL)
 
 .. code-block:: bash
 
-   curl -X 'GET' '${BASE_URL}/v1/modalidades/{id}' -H 'accept: */*
+   curl -X GET \ "${BASE_URL}/v1/modalidades/{id}" \  -H "accept: */*"
 
 Dados de Entrada
 ~~~~~~~~~~~~~~~~
