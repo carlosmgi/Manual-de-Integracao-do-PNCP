@@ -19,10 +19,10 @@ Detalhes da Requisição
 Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. code-block:: bash
+.. code-block:: Bash
 
 	curl -k -X GET "${BASE_URL}/v1/orgaos/10000000000003/compras/2025/2/fonte-orcamentaria" \
-	 -H "Accept: */*”
+	  -H "Accept: */*"
 
 
 Dados de entrada
