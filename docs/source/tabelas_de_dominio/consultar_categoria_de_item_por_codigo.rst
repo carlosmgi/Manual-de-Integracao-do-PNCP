@@ -29,7 +29,7 @@ Exemplo Requisição (cURL)
 
 .. code-block:: bash
 
-   curl -X 'GET' '${BASE_URL}/v1/categoriaItemPcas/{id} -H 'accept: */*'
+   curl -X 'GET' '${BASE_URL}/v1/categoriaItemPcas/{id}' -H 'accept: */*'
  
 Dados de Entrada
 ~~~~~~~~~~~~~~~~
