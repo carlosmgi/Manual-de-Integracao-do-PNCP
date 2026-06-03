@@ -30,9 +30,13 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
    :linenos:
 
-   curl -X 'POST' '${BASE_URL}/v1/orgaos/00394460000141/compras/2021/1/atas/1/arquivos' -H 'accept: */*' 
-   -H 'Titulo-Documento: teste doc' -H 'Tipo-Documento: 1' -H 'Authorization: Bearer <TOKEN_AUTORIZACAO>' 
-   -H 'Content-Type: multipart/form-data' -F 'arquivo=@10_coisas_que_todo_programador_Java_deve_saber.pdf;type=application/pdf'
+	curl -X POST \
+	  "${BASE_URL}/v1/orgaos/00394460000141/compras/2021/1/atas/1/arquivos" \
+	  -H "Accept: */*" \
+	  -H "Titulo-Documento: teste doc" \
+	  -H "Tipo-Documento: 1" \
+	  -H "Authorization: Bearer <TOKEN_AUTORIZACAO>" \
+	  -F "arquivo=@10_coisas_que_todo_programador_Java_deve_saber.pdf;type=application/pdf"
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
