@@ -19,21 +19,23 @@ Detalhes da Requisição
 Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. code-block:: bash
+.. code-block:: Bash
 
-	curl -k -X GET "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/fonte-orcamentaria/1" -H "Accept: */*”
+	curl -k -X GET \
+	  "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/fonte-orcamentaria/1" \
+	  -H "Accept: */*"
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-   Alimentar o parâmetro ``{cnpj}``, ``{ano}`` e ``{sequencial}`` na URL.
+   Alimentar os parâmetros ``{cnpj}``, ``{ano}`` e ``{sequencial}`` na URL.
 
 .. list-table::
    :width: 100%
-   :widths: 5 10 10 15 55
+   :widths: 5 25 10 15 55
    :header-rows: 1
-   :class: quebra-linha-ultima-coluna
+   :class: quebra-linha-dois-ultima
 
    * - Id
      - Campo
@@ -67,8 +69,9 @@ Dados de retorno
 
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 5 25 15 55
    :header-rows: 1
+   :class: quebra-linha-dois-ultima
 
    * - Id
      - Campo
