@@ -36,8 +36,8 @@ Exemplo Requisição (cURL)
 
 	curl -k -X ‘DELETE’ --header 'Authorization: Bearer access_token'	
 	'${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/arquivos/1' 
-  	-H 'accept: */*’ -H 'Content-Type: application/json' -d 
-  	'{ "listaFonteOrcamentariaId": [ 2 ], "justificativaAtualizacao": "Justificativa da exclusão" }'
+  	-H 'accept: */*’ -H 'Content-Type: application/json' -d '{ "listaFonteOrcamentariaId": [ 2 ], 
+	"justificativaAtualizacao": "Justificativa da exclusão" }'
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
