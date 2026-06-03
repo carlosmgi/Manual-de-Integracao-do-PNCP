@@ -75,7 +75,7 @@ Código – Natureza Jurídica
 - **3107** – Comissão de Conciliação Prévia
 - **3115** – Entidade de Mediação e Arbitragem
 - **3131** – Entidade Sindical
-- **3204** – Estabelecimento, no Brasil, de Fundação ou Associação Estrangeiras
+- **3204** – Estabelecimento, no Brasil, de Fundação ou Associação Estrangeira
 - **3212** – Fundação ou Associação Domiciliada no Exterior
 - **3220** – Organização Religiosa
 - **3239** – Comunidade Indígena
