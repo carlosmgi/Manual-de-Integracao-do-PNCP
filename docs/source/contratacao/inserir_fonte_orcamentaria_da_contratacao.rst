@@ -23,8 +23,8 @@ Exemplo de Payload
   :linenos:
   
 	{
-    	"listaFonteOrcamentariaId": [ 1, 2 ]
-  	}
+		"listaFonteOrcamentariaId": [1, 2]
+	}
 
 
 Exemplo Requisição (cURL)
