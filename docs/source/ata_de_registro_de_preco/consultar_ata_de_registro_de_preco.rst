@@ -30,7 +30,9 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
   :linenos:
 
-  curl -X 'GET' '${BASE_URL}/v1/orgaos/00394460000141/compras/2021/1/atas/1' -H 'accept: */*'
+	curl -X GET \
+	  "${BASE_URL}/v1/orgaos/00394460000141/compras/2021/1/atas/1" \
+	  -H "Accept: */*"
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
@@ -81,6 +83,7 @@ Dados de retorno
    :width: 100%
    :widths: 5 25 15 55
    :header-rows: 1
+   :class: quebra-linha-dois-ultima
 
    * - Id
      - Campo
