@@ -62,7 +62,7 @@ Exemplo Requisição (cURL)
 
 .. code-block:: bash
    :linenos:
-   :emphasize-lines: 1-2
+   :emphasize-lines: 1-4
 
    curl -X POST \
      "${BASE_URL}/v1/orgaos/00394460000141/compras/2021/1/atas/1/partesenvolvidas" \
