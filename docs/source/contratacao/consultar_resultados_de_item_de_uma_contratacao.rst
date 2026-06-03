@@ -21,15 +21,14 @@ Exemplo de Payload
 
 .. code-block:: json
   :linenos:
-
 	Não se aplica
 
 Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. code-block:: bash
-
-	curl -k -X GET "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/itens/1/resultados" -H "accept: */*" 
+.. code-block:: Bash
+	curl -k -i "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/itens/1/resultados" \
+	  -H "Accept: */*"
 
 Dados de Entrada
 ~~~~~~~~~~~~~~~~
