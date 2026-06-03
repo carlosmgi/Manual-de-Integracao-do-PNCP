@@ -25,7 +25,7 @@ Exemplo de Payload
 
 .. code-block:: json
    :linenos:
-   :emphasize-lines: 8-15
+   :emphasize-lines: 7-14
 
    {
    	"numeroAtaRegistroPreco": "00001",
