@@ -23,10 +23,10 @@ Exemplo de Payload
 .. code-block:: json
   :linenos:
 
-		{
-			"listaFonteOrcamentariaId": [ 2, 3 ],
-			“justificativaAtualizacao": "Motivo/justificativa para exclusão da fonte orçamentária da contratação"
-		}
+	{
+		"listaFonteOrcamentariaId": [2, 3],
+		"justificativaAtualizacao": "Motivo/justificativa para exclusão da fonte orçamentária da contratação"
+	}
 
 
 Exemplo Requisição (cURL)
@@ -34,10 +34,15 @@ Exemplo Requisição (cURL)
 
 .. code-block:: lua
 
-	curl -k -X ‘DELETE’ --header 'Authorization: Bearer access_token'	
-	'${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/arquivos/1' 
-	-H 'accept: */*’ -H 'Content-Type: application/json' -d '{ "listaFonteOrcamentariaId": [ 2 ], 
-	"justificativaAtualizacao": "Justificativa da exclusão" }'
+	curl -k -X DELETE \
+	  "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/arquivos/1" \
+	  -H "Authorization: Bearer access_token" \
+	  -H "Accept: */*" \
+	  -H "Content-Type: application/json" \
+	  -d '{
+	        "listaFonteOrcamentariaId": [2],
+	        "justificativaAtualizacao": "Justificativa da exclusão"
+	      }'
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
