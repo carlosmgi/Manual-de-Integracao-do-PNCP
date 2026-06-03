@@ -23,10 +23,10 @@ Exemplo de Payload
 .. code-block:: json
   :linenos:
 
-	{
-		"listaFonteOrcamentariaId": [ 2, 3 ],
-		“justificativaAtualizacao": "Motivo/justificativa para exclusão da fonte orçamentária da contratação"
-	}
+		{
+			"listaFonteOrcamentariaId": [ 2, 3 ],
+			“justificativaAtualizacao": "Motivo/justificativa para exclusão da fonte orçamentária da contratação"
+		}
 
 
 Exemplo Requisição (cURL)
