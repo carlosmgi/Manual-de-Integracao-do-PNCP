@@ -29,16 +29,18 @@ Exemplo Requisição (cURL)
 
 .. code-block:: bash
 
-   curl -X 'GET' '${BASE_URL}/v1/modalidades' -H 'accept: */*' -H 'accept: */*'
-   ou
-   curl -X 'GET' '${BASE_URL}/v1/modalidades?statusAtivo=true' -H 'accept: */* 
+   curl -X 'GET' '${BASE_URL}/v1/modalidades' -H 'accept: */*'
+
+    ou
+
+   curl -X 'GET' '${BASE_URL}/v1/modalidades?statusAtivo=true' -H 'accept: */*'
 
 Dados de Entrada
 ~~~~~~~~~~~~~~~~
 
-.. note:: 
+.. note::
 
-Alimentar o query parâmetro `statusAtivo`.
+   Alimentar o query parâmetro ``statusAtivo``.
 
 .. list-table::
    :width: 100%
