@@ -3,7 +3,7 @@ Inserir Ata de Registro de Preço
 
 Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a uma contratação.
 
-.. container:: destaque-amarelo
+.. attention::
 
    O sistema exige o upload de um arquivo anexo à ata de registro de preço enviada. As extensões permitidas para o arquivo anexo são listadas na seção Tabelas de domínio - Envio de arquivos pelas APIs de Documento e os tipos de documento/arquivo aceitos pelo PNCP podem ser consultados na seção Tabelas de domínio - Tipo de Documento, deste manual.
 
@@ -27,22 +27,21 @@ Exemplo de Payload
    :linenos:
    :emphasize-lines: 1,8-16
 
-   Arquivo JSON:
-     {
-        "numeroAtaRegistroPreco": "00001",
-        "anoAta": 2021,
-        "dataAssinatura": “2021-07-21",
-        "dataVigenciaInicio": “2021-07-21",
-        "dataVigenciaFim": “2022-07-21",
-        "possibilidadeAdesao": true,
-        "partesEnvolvidas": [
-          {
-            "tipoParteEnvolvidaId": 1,
-            "cnpj": "10000000000003",
-            "codigoUnidadeCompradora": "1"
-          }
-        ]
-      }
+   {
+   	"numeroAtaRegistroPreco": "00001",
+   	"anoAta": 2021,
+   	"dataAssinatura": "2021-07-21",
+   	"dataVigenciaInicio": "021-07-21",
+   	"dataVigenciaFim": "2022-07-21",
+   	"possibilidadeAdesao": true,
+   	"partesEnvolvidas": [
+   		{
+   			"tipoParteEnvolvidaId": 1,
+   			"cnpj": "10000000000003",
+   			"codigoUnidadeCompradora": "1"
+   		}
+   	]
+   }
 
 Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -51,11 +50,15 @@ Exemplo Requisição (cURL)
    :linenos:
    :emphasize-lines: 1-6
 
-   Enviando como arquivo:
-   curl -k -X POST --header "Authorization: Bearer access_token"
-   "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/atas" -H "accept: */*” -H “Content-Type: multipart/form-data” 
-   -H 'Titulo-Documento: nome_do_arquivo' -H 'Tipo-Documento-Id: 11' --form ‘ata=@”/home/atametadados.json";type=application/json’ 
-   --form ‘documento=@”ataarquivo.pdf”'
+
+   curl -k -X POST \
+     "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/atas" \
+     -H "Authorization: Bearer access_token" \
+     -H "Accept: */*" \
+     -H "Titulo-Documento: nome_do_arquivo" \
+     -H "Tipo-Documento-Id: 11" \
+     --form 'ata=@/home/atametadados.json;type=application/json' \
+     --form 'documento=@ataarquivo.pdf;type=application/pdf'
 
 
 Dados de entrada
@@ -66,9 +69,9 @@ Dados de entrada
 
 .. list-table::
    :width: 100%
-   :widths: 5 10 10 15 55
+   :widths: 5 25 10 30 55
    :header-rows: 1
-   :class: quebra-linha-ultima-coluna
+   :class: quebra-linha
 
    * - Id
      - Campo
