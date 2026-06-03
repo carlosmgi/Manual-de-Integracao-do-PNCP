@@ -23,7 +23,7 @@ Exemplo de Payload
   :linenos:
   
 	{
-  		"justificativa": " Motivo/justificativa para exclusão da imagem do item da contratação"
+		"justificativa": " Motivo/justificativa para exclusão da imagem do item da contratação"
 	}
 
 
@@ -32,9 +32,12 @@ Exemplo Requisição (cURL)
 
 .. code-block:: bash
 
-	curl -k -X DELETE --header "Authorization: Bearer access_token"
-	"${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/1/imagens/1" -H "accept: */* -H "Content-Type: application/pdf" 
-	-H Content-Disposition: filename="nome_arquivo"
+	curl -k -X DELETE \
+	  "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/1/imagens/1" \
+	  -H "Authorization: Bearer access_token" \
+	  -H "Accept: */*" \
+	  -H "Content-Type: application/pdf" \
+	  -H 'Content-Disposition: filename="nome_arquivo"'
 
 
 
