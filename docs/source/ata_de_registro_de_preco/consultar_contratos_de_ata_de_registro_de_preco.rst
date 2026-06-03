@@ -30,21 +30,22 @@ Exemplo Requisição (cURL)
 
 .. code-block:: bash
    :linenos:
-   :emphasize-lines: 1
+   :emphasize-lines: 1,2
 
-      curl -k -X GET "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/atas/1/contratos" -H "accept: */*"
+	curl -k -X GET "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/atas/1/contratos" \
+	  -H "Accept: */*"
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-   :destaque-amarelo-claro:`Alimentar os parâmetros {cnpj}, {ano}, {sequencial} e {sequencialAta} na URL.`
+   :destaque-amarelo-claro:`Alimentar os parâmetros ``{cnpj}``, ``{ano}``, ``{sequencial}`` e ``{sequencialAta}`` na URL.`
 
 .. list-table::
    :width: 100%
-   :widths: 5 10 10 15 55
+   :widths: 5 25 10 15 55
    :header-rows: 1
-   :class: quebra-linha-ultima-coluna
+   :class: quebra-linha-dois-ultima
 
    * - Id
      - Campo
@@ -93,9 +94,9 @@ Dados de retorno
 
 .. list-table::
    :width: 100%
-   :widths: 5 10 15 55
+   :widths: 5 25 15 55
    :header-rows: 1
-   :class: quebra-linha-ultima-coluna
+   :class: quebra-linha-dois-ultima
 
    * - Id
      - Campo
