@@ -3,7 +3,9 @@ Retificar Ata de Registro de Preço
 
 Serviço que permite retificar os dados de uma ata de Registro de Preço. 
 
-**Importante lembrar que na Retificação todas as informações terão que ser enviadas novamente, não apenas as que sofreram alteração.**
+:: attention::
+
+   **Importante lembrar que na Retificação todas as informações terão que ser enviadas novamente, não apenas as que sofreram alteração.**
 
 
 Detalhes da Requisição
@@ -178,7 +180,7 @@ Dados de retorno
      - Descrição
 
    * - 1
-     - -
+     - 
      - JSON
      - Dados da Ata de Registro de Preço após alteração
 
