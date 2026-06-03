@@ -29,14 +29,14 @@ Exemplo Requisição (cURL)
 
 .. code-block:: bash
 
-   curl -X 'GET' '${BASE_URL}/v1/modos-disputas/{id} -H 'accept: */*'
+   curl -X 'GET' '${BASE_URL}/v1/modos-disputas/{id}' -H 'accept: */*'
 
 Dados de Entrada
 ~~~~~~~~~~~~~~~~
 
-.. note:: 
+.. note::
 
-Alimentar o path parâmetro `{id}` na URL.
+   Alimentar o path parâmetro ``{id}`` na URL.
 
 .. list-table::
    :width: 100%
