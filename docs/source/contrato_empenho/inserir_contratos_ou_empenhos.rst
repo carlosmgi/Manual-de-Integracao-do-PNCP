@@ -4,13 +4,9 @@ Inserir Contratos/Empenhos
 
 Serviço que permite incluir um contrato ou empenho. Este serviço será acionado por qualquer plataforma digital credenciada. 
 
-.. container:: destaque-amarelo
+.. Attention::
 
     O sistema exige o upload de um arquivo anexo ao contrato enviado. As extensões permitidas para o arquivo anexo são listadas na seção Tabelas de domínio - Envio de arquivos pelas APIs de Documento e os tipos de documento/arquivo aceitos pelo PNCP podem ser consultados na seção Tabelas de domínio - Tipo de Documento, deste manual.
-
-\
-
-.. Attention::
   
     Conforme regra de conformidade, prevista no item 5.19, não é possível a inclusão ou retificação de contrato ou empenho que pertença à contratação realizada por Sistema de Registro de Preços (SRP), a qual não possua ao menos uma ata de registro de preços publicada no PNCP. 
 
@@ -35,35 +31,35 @@ Exemplo de Payload
   :emphasize-lines: 1,6-8
 
     Arquivo JSON:
-      {
-      "cnpjCompra": "10000000000003",
-      "anoCompra": 2021,
-      "sequencialCompra": 1,
-      "sequencialAta": 1,
-      "frutoAdesao": true,
-      "temRemanejamento": false,
-      "tipoContratoId": 1,
-      "numeroContratoEmpenho": "1",
-      "anoContrato": 2021,
-      "processo": "1/2021",
-      "categoriaProcessoId": 2,
-      "receita": false,
-      "codigoUnidade": "1",
-      "niFornecedor": "10000000000010",
-      "tipoPessoaFornecedor": "PJ",
-      "nomeRazaoSocialFornecedor": "Fornecedor do Teste I",
-      "objetoContrato": "Contrato para exemplificar uso da API PNCP",
-      "informacaoComplementar": "",
-      "valorInicial": 10000.0000,
-      "numeroParcelas": 2,
-      "valorParcela": 5000.0000,
-      "valorGlobal": 10000.0000,
-      "valorAcumulado": 10000.0000,
-      "dataAssinatura": "2021-07-27",
-      "dataVigenciaInicio": "2021-07-28",
-      "dataVigenciaFim": "2021-07-29",
-      "identificadorCipi": "111.11-011",
-      "urlCipi": "https://cipi.economia.gov.br/111.11-011"
+    {
+    	"cnpjCompra": "10000000000003",
+    	"anoCompra": 2021,
+    	"sequencialCompra": 1,
+    	"sequencialAta": 1,
+    	"frutoAdesao": true,
+    	"temRemanejamento": false,
+    	"tipoContratoId": 1,
+    	"numeroContratoEmpenho": "1",
+    	"anoContrato": 2021,
+    	"processo": "1/2021",
+    	"categoriaProcessoId": 2,
+    	"receita": false,
+    	"codigoUnidade": "1",
+    	"niFornecedor": "10000000000010",
+    	"tipoPessoaFornecedor": "PJ",
+    	"nomeRazaoSocialFornecedor": "Fornecedor do Teste I",
+    	"objetoContrato": "Contrato para exemplificar uso da API PNCP",
+    	"informacaoComplementar": "",
+    	"valorInicial": 10000.0,
+    	"numeroParcelas": 2,
+    	"valorParcela": 5000.0,
+    	"valorGlobal": 10000.0,
+    	"valorAcumulado": 10000.0,
+    	"dataAssinatura": "2021-07-27",
+    	"dataVigenciaInicio": "2021-07-28",
+    	"dataVigenciaFim": "2021-07-29",
+    	"identificadorCipi": "111.11-011",
+    	"urlCipi": "https://cipi.economia.gov.br/111.11-011"
     }
 
 Exemplo Requisição (cURL)
@@ -73,9 +69,12 @@ Exemplo Requisição (cURL)
   :linenos:
   :emphasize-lines: 1-6
 
-   curl -X POST --header "Authorization: Bearer access_token" 
-     --header "accept: */*" --header "Content-Type: application/json" 
-     --data "@home/objeto.json" "$BASE_URL/v1/orgaos/100000000000003/contratos"
+    curl -X POST \
+      --header "Authorization: Bearer access_token" \
+      --header "Accept: */*" \
+      --header "Content-Type: application/json" \
+      --data "@/home/objeto.json" \
+      "${BASE_URL}/v1/orgaos/10000000000003/contratos"
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
