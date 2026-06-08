@@ -45,6 +45,7 @@ Dados de Entrada
    :width: 100%
    :widths: 5 25 15 25
    :header-rows: 1
+   :class: quebra-linha-dois-quatro
 
    * - Campo
      - Tipo
@@ -66,6 +67,7 @@ Dados de retorno (lista de Amparos Legais)
    :width: 100%
    :header-rows: 1
    :widths: auto
+   :class: quebra-linha-dois-quatro
 
    * - Id
      - Campo
