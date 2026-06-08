@@ -21,52 +21,53 @@ Exemplo de Payload
 ~~~~~~~~~~~~~~~~~~
 
 .. code-block:: json
-  :linenos:
+   :linenos:
 
-        “lista”: [
-                  {
-                    "numeroItem": 2,
-                    "categoriaItemPca": "2",
-                    "catalogo": "1",
-                    "classificacaoCatalogo": "2",
-                    "classificacaoSuperiorCodigo": "547",
-                    " classificacaoSuperiorNome": "Serviço de acabamento e finalização dos edifícios",
-                    "codigoItem": "1090",
-                    "descricao": "Pintura industrial",
-                    "unidadeFornecimento": "UNIDADE",
-                    "quantidade": 10,
-                    "valorUnitario": 50,00,
-                    "valorTotal": 500,00,
-                    "valorOrcamentoExercicio": 500,00,
-                    "dataDesejada": "2022-07-10",
-                    "unidadeRequisitante": "Departamento Logístico",
-                    "grupoContratacaoCodigo": "",
-                    "grupoContratacaoNome": ""
-                },
-                {
-                    "numeroItem": 3,
-                    "categoriaItemPca": "2",
-                    "catalogo": "1",
-                    "classificacaoCatalogo": "2",
-                    "classificacaoSuperiorCodigo": "8405",
-                    " classificacaoSuperiorNome": "Vestuário externo masculino",
-                    “pdmCodigo”: “8524”,
-                    "pdmDescricao": "Japona",
-                    "codigoItem": "19",
-                    "descricao": "Japona Masculina",
-                    "unidadeFornecimento": "UNIDADE",
-                    "quantidade": 20,
-                    "valorUnitario": 20,00,
-                    "valorTotal": 400,00,
-                    "valorOrcamentoExercicio": 400,00,
-                    "dataDesejada": "2022-07-10",
-                    "unidadeRequisitante": "Departamento RH",
-                    "grupoContratacaoCodigo": "200999-2/2022",
-                    "grupoContratacaoNome": "Contratação 2022"
-                  }
-                ],
-                  “justificativa”: “”
-                }
+   {
+     "lista": [
+       {
+         "numeroItem": 2,
+         "categoriaItemPca": "2",
+         "catalogo": "1",
+         "classificacaoCatalogo": "2",
+         "classificacaoSuperiorCodigo": "547",
+         "classificacaoSuperiorNome": "Serviço de acabamento e finalização dos edifícios",
+         "codigoItem": "1090",
+         "descricao": "Pintura industrial",
+         "unidadeFornecimento": "UNIDADE",
+         "quantidade": 10,
+         "valorUnitario": 50.00,
+         "valorTotal": 500.00,
+         "valorOrcamentoExercicio": 500.00,
+         "dataDesejada": "2022-07-10",
+         "unidadeRequisitante": "Departamento Logístico",
+         "grupoContratacaoCodigo": "",
+         "grupoContratacaoNome": ""
+       },
+       {
+         "numeroItem": 3,
+         "categoriaItemPca": "2",
+         "catalogo": "1",
+         "classificacaoCatalogo": "2",
+         "classificacaoSuperiorCodigo": "8405",
+         "classificacaoSuperiorNome": "Vestuário externo masculino",
+         "pdmCodigo": "8524",
+         "pdmDescricao": "Japona",
+         "codigoItem": "19",
+         "descricao": "Japona Masculina",
+         "unidadeFornecimento": "UNIDADE",
+         "quantidade": 20,
+         "valorUnitario": 20.00,
+         "valorTotal": 400.00,
+         "valorOrcamentoExercicio": 400.00,
+         "dataDesejada": "2022-07-10",
+         "unidadeRequisitante": "Departamento RH",
+         "grupoContratacaoCodigo": "200999-2/2022",
+         "grupoContratacaoNome": "Contratação 2022"
+       }
+     ],
+     "justificativa": ""
+   }
 
 Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
