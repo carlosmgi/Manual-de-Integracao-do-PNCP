@@ -30,8 +30,7 @@ Exemplo de Payload
 
 .. code-block:: json
   :linenos:
-  :emphasize-lines: 1,6-8
-
+  :emphasize-lines: 5-7
 
     {
     	"cnpjCompra": "10000000000003",
