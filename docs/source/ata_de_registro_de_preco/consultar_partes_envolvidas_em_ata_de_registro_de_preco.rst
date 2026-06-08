@@ -117,7 +117,7 @@ Dados de retorno
 
    * - :destaque-amarelo-claro:`1.2`
      - :destaque-amarelo-claro:`tipoParteEnvolvida`
-     - :destaque-amarelo-claro:``
+     - 
      - :destaque-amarelo-claro:`Tipo de Parte Envolvida`
 
    * - :destaque-amarelo-claro:`1.2.1`
@@ -137,7 +137,7 @@ Dados de retorno
 
    * - :destaque-amarelo-claro:`1.3`
      - :destaque-amarelo-claro:`orgao`
-     - :destaque-amarelo-claro:``
+     - 
      - :destaque-amarelo-claro:`Dados do Órgão/Entidade`
 
    * - :destaque-amarelo-claro:`1.3.1`
@@ -152,7 +152,7 @@ Dados de retorno
 
    * - :destaque-amarelo-claro:`1.4`
      - :destaque-amarelo-claro:`unidade`
-     - :destaque-amarelo-claro:``
+     - 
      - :destaque-amarelo-claro:`Dados da Unidade Administrativa`
 
    * - :destaque-amarelo-claro:`1.4.1`
@@ -167,7 +167,7 @@ Dados de retorno
 
    * - :destaque-amarelo-claro:`1.4.3`
      - :destaque-amarelo-claro:`localidade`
-     - :destaque-amarelo-claro:``
+     - 
      - :destaque-amarelo-claro:`Localidade da Unidade Administrativa`
 
    * - :destaque-amarelo-claro:`1.4.3.1`
