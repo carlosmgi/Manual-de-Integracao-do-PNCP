@@ -5,7 +5,7 @@ Serviço que permite retificar um contrato ou empenho. Este serviço será acion
 
 .. Attention::
   
-  Na Retificação todas as informações terão que ser enviadas novamente, não apenas as que sofreram alteração. Conforme regra de conformidade, prevista no item 5.19, não é possível a inclusão ou retificação de contrato ou empenho que pertença à contratação realizada por Sistema de Registro de Preços (SRP), a qual não possua ao menos uma ata de registro de preços publicada no PNCP.
+  Na Retificação todas as informações terão que ser enviadas novamente, não apenas as que sofreram alteração. Conforme regra de conformidade, prevista em `Consultar conformidade entre Instrumentos Convocatórios e Modos de Disputa <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/tabelas_de_dominio/consultar_conformidade_entre_instrumentos_convocatorios_e_modos_de_disputa.html>`_ , não é possível a inclusão ou retificação de contrato ou empenho que pertença à contratação realizada por Sistema de Registro de Preços (SRP), a qual não possua ao menos uma ata de registro de preços publicada no PNCP.
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
