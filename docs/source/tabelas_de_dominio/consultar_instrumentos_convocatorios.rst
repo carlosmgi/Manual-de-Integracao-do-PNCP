@@ -21,8 +21,10 @@ Exemplo Requisição (cURL)
 
 .. code-block:: bash
 
-   curl -X 'GET' '${BASE_URL}/v1/tipos-instrumentos-convocatorios -H 'accept: */*'
+   curl -X 'GET' '${BASE_URL}/v1/tipos-instrumentos-convocatorios' -H 'accept: */*'
+
    ou
+
    curl -X 'GET' '${BASE_URL}/v1/tipos-instrumentos-convocatorios?statusAtivo=true' -H 'accept: */*'
    
 Dados de Entrada
@@ -35,6 +37,7 @@ Dados de Entrada
    :width: 100%
    :widths: 15 10 10 65
    :header-rows: 1
+   :class: quebra-linha-dois-quatro
 
    * - Campo
      - Tipo
