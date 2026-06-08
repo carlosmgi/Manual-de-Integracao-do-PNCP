@@ -296,25 +296,24 @@ Dados de retorno
 Exemplo de retorno
 ~~~~~~~~~~~~~~~~~~
 
-   Retorno
-
 .. code-block:: http
    :linenos:
 
-   Access-Control-Allow-Credentials: true
-   Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With, Content-Length, Accept, Origin
-   Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS
-   Access-Control-Allow-Origin: *
-   Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-   Content-Length: 0
-   Date: ?
-   Expires: 0
-   Location: https://treina.pncp.gov.br/api/pncp/v1/orgaos/10000000000003/contratos/2021/1
-   Pragma: no-cache
-   Strict-Transport-Security: max-age=?
-   X-Content-Type-Options: nosniff
-   X-Frame-Options: DENY
-   X-XSS-Protection: 1; mode=block
+    Retorno
+    Access-Control-Allow-Credentials: true
+    Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With, Content-Length, Accept, Origin
+    Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS
+    Access-Control-Allow-Origin: *
+    Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+    Content-Length: 0
+    Date: ?
+    Expires: 0
+    Location: https://treina.pncp.gov.br/api/pncp/v1/orgaos/10000000000003/contratos/2021/1
+    Pragma: no-cache
+    Strict-Transport-Security: max-age=?
+    X-Content-Type-Options: nosniff
+    X-Frame-Options: DENY
+    X-XSS-Protection: 1; mode=block
 
 Códigos de Retorno
 ~~~~~~~~~~~~~~~~~~
