@@ -59,6 +59,7 @@ Dados de retorno
    :width: 100%
    :header-rows: 1
    :widths: auto
+   :class: quebra-linha-dois-quatro
 
    * - Id
      - Campo
