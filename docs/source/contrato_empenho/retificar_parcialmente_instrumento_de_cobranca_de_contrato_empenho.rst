@@ -22,14 +22,14 @@ Exemplo de Payload
 .. code-block:: json
   :linenos:
 
-    {
-      "justificativa": "motivo/justificativa para a retificação do instrumento de cobrança do contrato/empenho",
-      "numeroInstrumentoCobranca": "001",
-      "dataEmissaoDocumento": "2025-01-15",
-      "observacao": "Nota Fiscal do Empenho",
-      "tipoInstrumentoCobrancaId": 1,
-      "chaveNFe": "chave da nota fiscal"
-    }
+   {
+   	"justificativa": "motivo/justificativa para a retificação do instrumento de cobrança do contrato/empenho",
+   	"numeroInstrumentoCobranca": "001",
+   	"dataEmissaoDocumento": "2025-01-15",
+   	"observacao": "Nota Fiscal do Empenho",
+   	"tipoInstrumentoCobrancaId": 1,
+   	"chaveNFe": "chave da nota fiscal"
+   }
 
 
 Exemplo Requisição (cURL)
@@ -38,8 +38,12 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
   :linenos:
 
-    curl -k -X  PUT --header "Authorization: Bearer access_token" "${BASE_URL}/v1/orgaos/10000000000003/contratos/2025/1/instrumentocobranca/1" 
-    -H "accept: */*" -H "Content-Type: application/json" --data "@/home/objeto.json"
+   curl -k -X PUT \
+     "${BASE_URL}/v1/orgaos/10000000000003/contratos/2025/1/instrumentocobranca/1" \
+     -H "Authorization: Bearer access_token" \
+     -H "Accept: */*" \
+     -H "Content-Type: application/json" \
+     --data "@/home/objeto.json"
 
 
 Dados de entrada
