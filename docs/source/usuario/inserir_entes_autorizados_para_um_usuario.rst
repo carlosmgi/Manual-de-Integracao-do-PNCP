@@ -57,6 +57,7 @@ Dados de entrada
    :width: 100%
    :widths: auto
    :header-rows: 1
+   :class: quebra-linha-ultima-coluna
 
    * - Id
      - Campo
@@ -90,21 +91,21 @@ Exemplo de Retorno
 
 .. code-block:: bash
 
-	Retorno: 
-	access-control-allow-credentials: true   
-	access-control-allow-headers: Content-Type,Authorization,X-Requested-With,Content-Length,Accept,Origin,   
-	access-control-allow-methods: GET,PUT,POST,DELETE,OPTIONS   
-	access-control-allow-origin: *   
-	cache-control: no-cache,no-store,max-age=0,must-revalidate   
-	content-length: 0   
-	date: ? 
-	expires: 0   
-	pragma: no-cache   
-	strict-transport-security: max-age=?   
-	x-content-type-options: nosniff 
-	x-firefox-spdy: ? 
-	x-frame-options: DENY   
-	x-xss-protection: 1; mode=block
+   Retorno:
+   access-control-allow-credentials: true
+   access-control-allow-headers: Content-Type,Authorization,X-Requested-With,Content-Length,Accept,Origin
+   access-control-allow-methods: GET,PUT,POST,DELETE,OPTIONS
+   access-control-allow-origin: *
+   cache-control: no-cache,no-store,max-age=0,must-revalidate
+   content-length: 0
+   date: ?
+   expires: 0
+   pragma: no-cache
+   strict-transport-security: max-age=?
+   x-content-type-options: nosniff
+   x-firefox-spdy: ?
+   x-frame-options: DENY
+   x-xss-protection: 1; mode=block
 
 Códigos de Retorno
 ~~~~~~~~~~~~~~~~~~
