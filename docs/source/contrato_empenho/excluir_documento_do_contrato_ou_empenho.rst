@@ -33,8 +33,10 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
   :linenos:
 
-   curl -k -X DELETE --header "Authorization: Bearer access_token" 
-     -H "accept: */*" "${BASE_URL}/v1/orgaos/10000000000003/contratos/2021/1/arquivos/1"
+   curl -k -X DELETE \
+     "${BASE_URL}/v1/orgaos/10000000000003/contratos/2021/1/arquivos/1" \
+     -H "Authorization: Bearer access_token" \
+     -H "Accept: */*"
 
 Dados de Entrada
 ~~~~~~~~~~~~~~~~
@@ -44,8 +46,9 @@ Dados de Entrada
 
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 5 25 15 10 55
    :header-rows: 1
+   :class: quebra-linha-dois-ultima
 
    * - Id
      - Campo
