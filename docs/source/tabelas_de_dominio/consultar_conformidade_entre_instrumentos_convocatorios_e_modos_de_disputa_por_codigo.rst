@@ -42,6 +42,7 @@ Dados de Entrada
    :width: 100%
    :widths: auto
    :header-rows: 1
+   :class: quebra-linha-ultima-coluna
 
    * - Campo
      - Tipo
