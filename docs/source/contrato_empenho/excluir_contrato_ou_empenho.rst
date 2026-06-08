@@ -3,7 +3,7 @@ Excluir Contrato/Empenho
 
 Serviço que permite remover um contrato ou empenho. Este serviço será acionado por qualquer plataforma digital credenciada
 
-.. Attention::
+.. attention::
   
    Não será possível excluir o Contrato com Termo ativo.
 
@@ -36,8 +36,10 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
   :linenos:  
 
-   curl -k -X DELETE --header "Authorization: Bearer access_token" -H "accept: */*" 
-    "${BASE_URL}/v1/orgaos/10000000000003/contratos/2021/1"
+  curl -k -X DELETE \
+    "${BASE_URL}/v1/orgaos/10000000000003/contratos/2021/1" \
+    -H "Authorization: Bearer access_token" \
+    -H "Accept: */*"
 
 Dados de Entrada
 ~~~~~~~~~~~~~~~~
