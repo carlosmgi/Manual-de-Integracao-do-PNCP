@@ -19,10 +19,10 @@ Detalhes da Requisição
 	:widths: auto
 	:header-rows: 1
 		
-		   * - Endpoint
-		     - Método HTTP
-		   * - :destaque:`/v1/orgaos/{cnpj}/contratos/{ano}/{sequencial}`
-		     - :destaque:`PATCH`
+	* - Endpoint
+	  - Método HTTP
+	* - :destaque:`/v1/orgaos/{cnpj}/contratos/{ano}/{sequencial}`
+	  - :destaque:`PATCH`
 			 
 		
 Exemplo de Payload
