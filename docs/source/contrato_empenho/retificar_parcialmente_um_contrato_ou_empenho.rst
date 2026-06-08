@@ -92,7 +92,7 @@ Dados de entrada
 
 .. list-table::
    :width: 100%
-   :widths: 5 25 15 55
+   :widths: 5 25 15 10 55
    :header-rows: 1
    :class: quebra-linha-dois-ultima
 
@@ -281,6 +281,9 @@ Dados de entrada
      - :destaque:`Boleano`
      - :destaque:`Não`
      - :destaque:`O remanejamento de quantidade em atas de registro de preços (SRP) é a transferência de saldos de itens entre órgãos participantes ou para não participantes (caronas), permitindo otimizar a compra. Deve ser autorizado pelo órgão gerenciador, respeitando limites legais e a anuência do fornecedor para garantir o equilíbrio econômico-financeiro. Indicador de Remanejamento (False-Não / True-Sim)`
+
+Dados de retorno
+~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
