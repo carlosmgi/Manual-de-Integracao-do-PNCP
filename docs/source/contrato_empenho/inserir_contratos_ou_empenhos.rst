@@ -26,11 +26,13 @@ Detalhes da Requisição
 Exemplo de Payload
 ~~~~~~~~~~~~~~~~~~
 
+    Arquivo JSON:
+
 .. code-block:: json
   :linenos:
   :emphasize-lines: 1,6-8
 
-    Arquivo JSON:
+
     {
     	"cnpjCompra": "10000000000003",
     	"anoCompra": 2021,
