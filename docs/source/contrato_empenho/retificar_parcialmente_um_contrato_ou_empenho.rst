@@ -74,7 +74,7 @@ Exemplo Requisição (cURL)
 		
 .. code-block:: bash
 	:linenos:
-	:emphasize-lines: 1,6
+	:emphasize-lines: 1-6
 		
 	curl -k -X PATCH \
 	  "${BASE_URL}/v1/orgaos/10000000000003/contratos/2021/1" \
