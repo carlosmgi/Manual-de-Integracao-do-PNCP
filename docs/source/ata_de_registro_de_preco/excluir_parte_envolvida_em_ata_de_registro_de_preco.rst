@@ -27,9 +27,9 @@ Exemplo de Payload
    :linenos:
    :emphasize-lines: 1-3
 
-      {
-        "justificativa": "Motivo/justificativa para exclusão da parte envolvida"
-      }
+   {
+   	"justificativa": "Motivo/justificativa para exclusão da parte envolvida"
+   }
 
 Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -38,8 +38,10 @@ Exemplo Requisição (cURL)
    :linenos:
    :emphasize-lines: 1-2
 
-      curl -k -X DELETE --header "Authorization: Bearer access_token" "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/atas/1/partesenvolvidas/10000000000003/1/2" 
-      -H "accept: */* -H "Content-Type: application/pdf"
+   curl -k -X DELETE \
+     "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/atas/1/partesenvolvidas/10000000000003/1/2" \
+     -H "Authorization: Bearer access_token" \
+     -H "Accept: */*"
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
