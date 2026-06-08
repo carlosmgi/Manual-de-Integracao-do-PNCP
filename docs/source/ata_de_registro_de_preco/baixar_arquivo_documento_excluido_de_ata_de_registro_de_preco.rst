@@ -30,13 +30,14 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
    :linenos:
 
-   curl -k -X GET "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/atas/1/arquivos/1/excluido/conteudo" -H "accept: */*"
+	curl -k -X GET "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/atas/1/arquivos/1/excluido/conteudo" \
+	  -H "Accept: */*"
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-   Alimentar os parâmetros {cnpj}, {anoCompra}, {sequencialCompra}, {sequencialAta} e {sequencialDocumento} na URL.
+   Alimentar os parâmetros ``{cnpj}``, ``{anoCompra}``, ``{sequencialCompra}``, ``{sequencialAta}`` e ``{sequencialDocumento}`` na URL.
 
 .. list-table::
    :width: 100%
