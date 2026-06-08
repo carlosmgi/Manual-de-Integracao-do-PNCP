@@ -45,6 +45,7 @@ Dados de Entrada
    :width: 100%
    :widths: auto
    :header-rows: 1
+   :class: quebra-linha-dois-quatro
 
    * - Campo
      - Tipo
@@ -62,6 +63,7 @@ Dados de retorno
    :width: 100%
    :header-rows: 1
    :widths: auto
+   :class: quebra-linha-dois-quatro
 
    * - Id
      - Campo
