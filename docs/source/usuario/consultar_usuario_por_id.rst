@@ -119,27 +119,26 @@ Exemplo de Retorno
 
 .. code-block:: json
 
-	Retorno:  
-	{ 
-	  "id": 5, 
-	  "login": "1b182cec-f639-11eb-9a03-0242ac130003", 
-	  "nome": "Fulano de Tal", 
-	  "cpfCnpj": "10000000001", 
-	  "email": fulano@example.com, 
-	  "telefone": "string", 
-	  "administrador": false, 
-	  "gestaoEnteAutorizado": true, 
-	  "entesAutorizados": [ 
-	    { 
-	      "cnpj": "10000000000003", 
-	      "razaoSocial": "Organização Alfa" 
-	    }, 
-	    { 
-	      "cnpj": "10000000000005", 
-	      "razaoSocial": "Instituição Gama" 
-	    } 
-	  ] 
-	} 
+   {
+     "id": 5,
+     "login": "1b182cec-f639-11eb-9a03-0242ac130003",
+     "nome": "Fulano de Tal",
+     "cpfCnpj": "10000000001",
+     "email": "fulano@example.com",
+     "telefone": "string",
+     "administrador": false,
+     "gestaoEnteAutorizado": true,
+     "entesAutorizados": [
+       {
+         "cnpj": "10000000000003",
+         "razaoSocial": "Organização Alfa"
+       },
+       {
+         "cnpj": "10000000000005",
+         "razaoSocial": "Instituição Gama"
+       }
+     ]
+   }
 
 Códigos de Retorno
 ~~~~~~~~~~~~~~~~~~
