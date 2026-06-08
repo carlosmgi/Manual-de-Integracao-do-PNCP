@@ -37,7 +37,7 @@ Dados de Entrada
    :width: 100%
    :widths: 15 10 10 65
    :header-rows: 1
-   :class: quebra-linha-dois-quatro
+   :class: quebra-linha-ultima-coluna
 
    * - Campo
      - Tipo
