@@ -1,7 +1,7 @@
 Excluir Empenho
 ===============
 
-.. container:: destaque-amarelo
+.. WARNING:: 
 
 	Serviço que permite remover um empenho. Este serviço será acionado por qualquer plataforma digital credenciada.
 
@@ -28,8 +28,8 @@ Exemplo de Payload
   :linenos:
   :emphasize-lines: 1-3
 
-    {
-  		"justificativa": "motivo/justificativa da ex-clusão do empenho"
+	{
+		"justificativa": "motivo/justificativa da ex-clusão do empenho"
 	}
 
   
@@ -38,16 +38,18 @@ Exemplo Requisição (cURL)
 
 .. code-block:: bash
 	:linenos:
-    :emphasize-lines: 1
+    :emphasize-lines: 1-4
 
-		curl -k -X  DELETE --header "Authorization: Bearer access_token" 
-		"${BASE_URL}/v1/orgaos/10000000000003/contratos/2025/1/empenhos/1" -H "accept: */*"
+	curl -k -X DELETE \
+	  --header "Authorization: Bearer access_token" \
+	  "${BASE_URL}/v1/orgaos/10000000000003/contratos/2025/1/empenhos/1" \
+	  -H "accept: */*"
 
 .. list-table::
    :width: 100%
-   :widths: 5 10 10 15 55
+   :widths: 5 25 15 10 55
    :header-rows: 1
-   :class: quebra-linha-ultima-coluna
+   :class: quebra-linha-dois-ultima
 
    * - Id
      - Campo
