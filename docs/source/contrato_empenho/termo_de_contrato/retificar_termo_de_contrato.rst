@@ -28,33 +28,33 @@ Exemplo de Payload
 .. code-block:: json
   :linenos:
 
-   {
-     "tipoTermoContratoId": 2,
-     "numeroTermoContrato": "1",
-     "objetoTermoContrato": "Termo de contrato para exemplificar uso da API.",
-     "dataAssinatura": "2021-07-22",
-     "qualificacaoAcrescimoSupressao": false,
-     "qualificacaoVigencia": false,
-     "qualificacaoFornecedor": false,
-     "qualificacaoReajuste": false,
-     "qualificacaoInformativo": true,
-     "informativoObservacao": "Exemplo de retificação.",
-     "niFornecedor": "12345678000190",
-     "tipoPessoaFornecedor": "PJ",
-     "nomeRazaoSocialFornecedor": "Fornecedor de teste",
-     "niFornecedorSubContratado": "",
-     "tipoPessoaFornecedorSubContratado": "",
-     "nomeRazaoSocialFornecedorSubContratado": "",
-     "fundamentoLegal": "",
-     "valorAcrescido": 0,
-     "numeroParcelas": 0,
-     "valorParcela": 0,
-     "valorGlobal": 0,
-     "prazoAditadoDias": 0,
-     "dataVigenciaInicio": "2021-07-23",
-     "dataVigenciaFim": "2021-07-24",
-     "justificativa": "motivo/justificativa para a retificação dos atributos do termo do contrato"
-   }
+  {
+  	"tipoTermoContratoId": 2,
+  	"numeroTermoContrato": "1",
+  	"objetoTermoContrato": "Termo de contrato para exemplificar uso da API.",
+  	"dataAssinatura": "2021-07-22",
+  	"qualificacaoAcrescimoSupressao": false,
+  	"qualificacaoVigencia": false,
+  	"qualificacaoFornecedor": false,
+  	"qualificacaoReajuste": false,
+  	"qualificacaoInformativo": true,
+  	"informativoObservacao": "Exemplo de retificação.",
+  	"niFornecedor": "12345678000190",
+  	"tipoPessoaFornecedor": "PJ",
+  	"nomeRazaoSocialFornecedor": "Fornecedor de teste",
+  	"niFornecedorSubContratado": "",
+  	"tipoPessoaFornecedorSubContratado": "",
+  	"nomeRazaoSocialFornecedorSubContratado": "",
+  	"fundamentoLegal": "",
+  	"valorAcrescido": 0,
+  	"numeroParcelas": 0,
+  	"valorParcela": 0,
+  	"valorGlobal": 0,
+  	"prazoAditadoDias": 0,
+  	"dataVigenciaInicio": "2021-07-23",
+  	"dataVigenciaFim": "2021-07-24",
+  	"justificativa": "motivo/justificativa para a retificação dos atributos do termo do contrato"
+  }
 
 Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -62,18 +62,22 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
   :linenos:
 
-   curl -k -X PUT --header "Authorization: Bearer access_token" "${BASE_URL}/v1/orgaos/10000000000003/contratos/2021/1/termos/1" 
-     -H "accept: */*" -H "Content-Type: application/json" --data "@/home/objeto.json"
+  curl -k -X PUT \
+    --header "Authorization: Bearer access_token" \
+    "${BASE_URL}/v1/orgaos/10000000000003/contratos/2021/1/termos/1" \
+    -H "accept: */*" \
+    -H "Content-Type: application/json" \
+    --data @/home/objeto.json
 
 Dados de Entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-   A URL possui os parâmetros ``{cnpj}``, ``{ano}``, ``{sequencial}`` e ``{sequencialTermoContrato}``.
+   Alimentar os parâmetros ``{cnpj}``, ``{ano}``, ``{sequencial}`` e ``{sequencialTermoContrato}``.
 
 .. list-table::
    :width: 100%
-   :widths: 14 25 18 20 45
+   :widths: 14 25 18 10 45
    :header-rows: 1
    :class: quebra-linha
 
