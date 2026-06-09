@@ -9,7 +9,7 @@ A partir de 25/08/2023 este serviço está integrado com o sistema CNPJ bastando
 
 .. attention::
 
-	Não está disponível para plataformas públicas e privadas desde 18/08/2025.
+	Não está disponível para plataformas públicas e privadas a partir 18/08/2025.
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
