@@ -6,7 +6,10 @@ Serviço **destinado exclusivamente aos administradores do PNCP** que permite in
 **Observação:** Este serviço não pode ser confundido com o serviço `Inserir Entes Autorizados para um Usuário <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/usuario/inserir_entes_autorizados_para_um_usuario.html>`_, que cadastra a lista de CNPJs dos entes autorizados (órgão) o qual o usuário estar-se-á apto a divulgar informações. 
 
 A partir de 25/08/2023 este serviço está integrado com o sistema CNPJ bastando informar apenas o número de CNPJ do órgão. 
-**Observação:** não está disponível para plataformas públicas e privadas a desde 18/08/2025.
+
+.. attention::
+
+	Não está disponível para plataformas públicas e privadas desde 18/08/2025.
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
