@@ -29,22 +29,22 @@ Exemplo de Payload
   :linenos:
   :emphasize-lines: 1-16
 
-		{
-		  "empenhos": [
-		    {
-		      "numeroEmpenho": "string",
-		      "tipoPessoa": "PJ",
-		      "niCredorFornecedor": "string",
-		      "nomeCredorFornecedor": "string",
-		      "numeroPlanoInterno": "string",
-		      "codigoNaturezaDespesa": "string",
-		      "dataEmissaoEmpenho": "2026-01-01T12:00:00",
-		      "valorTotal": 1000.0000,
-		      "valorSubItem": 1000.0000,
-		      "codigoEmenda": "string"
-		    }
-		  ]
-		}
+	{
+		"empenhos": [
+			{
+				"numeroEmpenho": "string",
+				"tipoPessoa": "PJ",
+				"niCredorFornecedor": "string",
+				"nomeCredorFornecedor": "string",
+				"numeroPlanoInterno": "string",
+				"codigoNaturezaDespesa": "string",
+				"dataEmissaoEmpenho": "2026-01-01T12:00:00",
+				"valorTotal": 1000.0,
+				"valorSubItem": 1000.0,
+				"codigoEmenda": "string"
+			}
+		]
+	}
 
 
 Exemplo Requisição (cURL)
@@ -52,22 +52,24 @@ Exemplo Requisição (cURL)
 
 .. code-block:: bash
   :linenos:
-  :emphasize-lines: 1,2
+  :emphasize-lines: 1-3
 
-	   curl -X 'GET' '${BASE_URL}/v1/tipos-instrumentos-convocatorios -H 'accept: */*'
+	curl -k -X GET \
+	  "${BASE_URL}/v1/tipos-instrumentos-convocatorios" \
+	  -H "accept: */*"
 
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-   Nota: alimentar os parâmetros :destaque:`{cnpj}`, :destaque:`{ano}` e :destaque:`{sequencial}` na URL.
+   Alimentar os parâmetros :destaque:`{cnpj}`, :destaque:`{ano}` e :destaque:`{sequencial}` na URL.
 
 .. list-table::
    :width: 100%
-   :widths: 5 10 10 15 55
+   :widths: 5 25 15 10 55
    :header-rows: 1
-   :class: quebra-linha-ultima-coluna
+   :class: quebra-linha-dois-ultima
 
    * - Id
      - Campo
