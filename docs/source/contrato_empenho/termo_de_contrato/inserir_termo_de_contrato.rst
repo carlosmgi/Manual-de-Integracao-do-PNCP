@@ -23,30 +23,30 @@ Exemplo de Payload
   :linenos:
 
    {
-     "tipoTermoContratoId": 2,
-     "numeroTermoContrato": "1",
-     "objetoTermoContrato": "Termo de contrato para exemplificar uso da API.",
-     "dataAssinatura": "2021-07-22",
-     "qualificacaoAcrescimoSupressao": false,
-     "qualificacaoVigencia": false,
-     "qualificacaoFornecedor": false,
-     "qualificacaoReajuste": false,
-     "qualificacaoInformativo": true,
-     "informativoObservacao": "Registro exemplificativo.",
-     "niFornecedor": "12345678000190",
-     "tipoPessoaFornecedor": "PJ",
-     "nomeRazaoSocialFornecedor": "Fornecedor de teste",
-     "niFornecedorSubContratado": "",
-     "tipoPessoaFornecedorSubContratado": "",
-     "nomeRazaoSocialFornecedorSubContratado": "",
-     "fundamentoLegal": "",
-     "valorAcrescido": 0,
-     "numeroParcelas": 0,
-     "valorParcela": 0,
-     "valorGlobal": 0,
-     "prazoAditadoDias": 0,
-     "dataVigenciaInicio": "2021-07-23",
-     "dataVigenciaFim": "2021-07-24"
+   	"tipoTermoContratoId": 2,
+   	"numeroTermoContrato": "1",
+   	"objetoTermoContrato": "Termo de contrato para exemplificar uso da API.",
+   	"dataAssinatura": "2021-07-22",
+   	"qualificacaoAcrescimoSupressao": false,
+   	"qualificacaoVigencia": false,
+   	"qualificacaoFornecedor": false,
+   	"qualificacaoReajuste": false,
+   	"qualificacaoInformativo": true,
+   	"informativoObservacao": "Registro exemplificativo.",
+   	"niFornecedor": "12345678000190",
+   	"tipoPessoaFornecedor": "PJ",
+   	"nomeRazaoSocialFornecedor": "Fornecedor de teste",
+   	"niFornecedorSubContratado": "",
+   	"tipoPessoaFornecedorSubContratado": "",
+   	"nomeRazaoSocialFornecedorSubContratado": "",
+   	"fundamentoLegal": "",
+   	"valorAcrescido": 0,
+   	"numeroParcelas": 0,
+   	"valorParcela": 0,
+   	"valorGlobal": 0,
+   	"prazoAditadoDias": 0,
+   	"dataVigenciaInicio": "2021-07-23",
+   	"dataVigenciaFim": "2021-07-24"
    }
 
 Exemplo Requisição (cURL)
@@ -55,9 +55,12 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
   :linenos:
 
-   curl -k -X POST --header "Authorization: Bearer access_token" 
-   "${BASE_URL}/v1/orgaos/10000000000003/contratos/2021/1/termos"
-   -H "accept: */*" -H "Content-Type: application/json" --data "@/home/objeto.json"
+   curl -k -X POST \
+     --header "Authorization: Bearer access_token" \
+     "${BASE_URL}/v1/orgaos/10000000000003/contratos/2021/1/termos" \
+     -H "accept: */*" \
+     -H "Content-Type: application/json" \
+     --data "@/home/objeto.json"
 
 Dados de Entrada
 ~~~~~~~~~~~~~~~~
@@ -67,7 +70,7 @@ Dados de Entrada
 
 .. list-table::
    :width: 100%
-   :widths: 5 27 18 20 55
+   :widths: 5 25 15 10 55
    :header-rows: 1
    :class: quebra-linha
 
