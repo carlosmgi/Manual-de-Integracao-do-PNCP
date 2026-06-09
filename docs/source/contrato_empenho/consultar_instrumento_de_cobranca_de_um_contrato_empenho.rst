@@ -31,17 +31,18 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
   :linenos:
 
-    curl -k -X GET "${BA-SE_URL}/v1/orgaos/10000000000003/contratos/2025/1/instrumentocobranca/1" 
-    -H "Ac-cept: */*”
+	curl -k -X GET \
+	  "${BASE_URL}/v1/orgaos/10000000000003/contratos/2025/1/instrumentocobranca/1" \
+	  -H "Accept: */*"
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
-   :widths: 5 10 10 15 55
+   :widths: 5 25 10 15 55
    :header-rows: 1
-   :class: quebra-linha-ultima-coluna
+   :class: quebra-linha-dois-ultima
 
    * - Id
      - Campo
@@ -74,9 +75,9 @@ Dados de retorno
 
 .. list-table::
    :width: 100%
-   :widths: 5 10 15 55
+   :widths: 5 25 15 55
    :header-rows: 1
-   :class: quebra-linha-ultima-coluna
+   :class: quebra-linha-dois-ultima
 
    * - Id
      - Campo
