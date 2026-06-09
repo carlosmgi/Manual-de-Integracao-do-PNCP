@@ -169,7 +169,7 @@ Dados de retorno
      - :destaque:`Data/hora da última atualização do empenho no PNCP`
    * - :destaque:`24`
      - :destaque:`emendaParlamentar`
-     - :destaque:``
+     - 
      - :destaque:`Dados da emenda parlamentar`
    * - :destaque:`24.1`
      - :destaque:`codigoEmenda`
