@@ -100,7 +100,8 @@ Exemplos
 .. code-block:: json
   :linenos:
 
-	   "partesEnvolvidas": [
+	   "partesEnvolvidas": 
+		[
 	       {
 	           "tipoParteEnvolvidaId": 1,
 	           "cnpj": "10000000000003",
@@ -113,18 +114,19 @@ Exemplos
 .. code-block:: json
   :linenos:
 
-	   "partesEnvolvidas": [
-	       {
-	           "tipoParteEnvolvidaId": 1,
-	           "cnpj": "10000000000003",
-	           "codigoUnidadeCompradora": "1"
-	       },
-	       {
-	           "tipoParteEnvolvidaId": 2,
-	           "cnpj": "10000000000004",
-	           "codigoUnidadeCompradora": "2"
-	       }
-	   ]
+	"partesEnvolvidas": 
+	[
+		{
+			"tipoParteEnvolvidaId": 1,
+			"cnpj": "10000000000003",
+			"codigoUnidadeCompradora": "1"
+		},
+		{
+			"tipoParteEnvolvidaId": 2,
+			"cnpj": "10000000000004",
+			"codigoUnidadeCompradora": "2"
+		}
+	]
 
 .. note::
 
@@ -188,7 +190,8 @@ Exemplos
 .. code-block:: json
   :linenos:
 
-	   "partesEnvolvidas": [
+	   "partesEnvolvidas": 
+		[
 	       {
 	           "tipoParteEnvolvidaId": 1,
 	           "cnpj": "10000000000003",
@@ -206,7 +209,8 @@ Exemplos
 .. code-block:: json
   :linenos:
 
-	   "partesEnvolvidas": [
+	   "partesEnvolvidas": 
+		[
 	       {
 	           "tipoParteEnvolvidaId": 2,
 	           "cnpj": "10000000000004",
@@ -259,7 +263,7 @@ Fluxo de Processo
      - | • informar partes envolvidas:
        |   - TipoParteEnvolvidaId: 2 (Participante)
        |   - TipoParteEnvolvidaId: 3 (Não Participante)
-   * - Gerenciadora
+   * - Órgão/Entidade Pública não participante
      - Inserir Contrato
      - | • informar campo cnpj do contratante (/v1/orgaos/{cnpj}/contratos)
        | • informar campo "cnpjCompra" da gerenciadora
@@ -275,7 +279,8 @@ Exemplos
 .. code-block:: json
   :linenos:
 
-	   "partesEnvolvidas": [
+	   "partesEnvolvidas": 
+		[
 	       {
 	           "tipoParteEnvolvidaId": 1,
 	           "cnpj": "10000000000003",
@@ -293,7 +298,8 @@ Exemplos
 .. code-block:: json
   :linenos:
 
-	   "partesEnvolvidas": [
+	   "partesEnvolvidas": 
+		[
 	       {
 	           "tipoParteEnvolvidaId": 2,
 	           "cnpj": "10000000000004",
