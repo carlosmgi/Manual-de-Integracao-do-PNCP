@@ -1,7 +1,7 @@
 Consultar Empenho pelo Número Sequencial
 ========================================
 
-.. container:: destaque-amarelo
+.. warning::
 
 	Serviço que permite consultar um empenho específico pertencente a um contra-to/empenho.
 
@@ -34,9 +34,11 @@ Exemplo Requisição (cURL)
 
 .. code-block:: bash
   :linenos:
-  :emphasize-lines: 1
+  :emphasize-lines: 1-3
 
-	curl -k -X GET "${BA-SE_URL}/v1/orgaos/10000000000003/contratos/2025/1/empenhos/1" -H "Accept: */*”
+	curl -k -X GET \
+	  "${BASE_URL}/v1/orgaos/10000000000003/contratos/2025/1/empenhos/1" \
+	  -H "Accept: */*"
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
@@ -60,10 +62,14 @@ Dados de entrada
      - :destaque:`Sim`
      - :destaque:`CNPJ do órgão`
 
+Dados de retorno
+~~~~~~~~~~~~~~~~
+
 .. list-table::
    :width: 100%
-   :widths: auto
+   :widths: 5 25 15 55
    :header-rows: 1
+   :class: quebra-linha-dois-ultima
 
    * - Id
      - Campo
