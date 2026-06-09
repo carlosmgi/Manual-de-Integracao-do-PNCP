@@ -20,8 +20,11 @@ Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
+   ..linenos::
 
-   curl -k -X GET "${BASE_URL}/v1/orgaos/10000000000003/unidades" -H "accept: */*"
+   curl -k -X GET \
+     "${BASE_URL}/v1/orgaos/10000000000003/unidades" \
+     -H "accept: */*"
 
 Dados de Entrada
 ~~~~~~~~~~~~~~~~
@@ -171,31 +174,32 @@ Exemplo de Retorno
 ~~~~~~~~~~~~~~~~~~
 
 .. code-block:: json
+   ..linenos::
 
    {
-     "orgao": {
-       "cnpj": "10000000000003",
-       "razaoSocial": "SECRETARIA MUNICIPAL DO BEM ESTAR SOCIAL",
-       "cnpjEnteResponsavel": "",
-       "poderId": "E",
-       "esferaId": "F",
-       "validado": false,
-       "dataValidacao": null
-     },
-     "codigoUnidade": "1",
-     "nomeUnidade": "Unidade de compra e contratações",
-     "municipio": {
-       "uf": {
-         "siglaUF": "SP",
-         "nomeUF": "São Paulo",
-         "dataHoraRegistro": "2021-05-14T02:24:08.239+00:00"
-       },
-       "nome": "Município Xpto",
-       "codigoIbge": "0000001",
-       "dataHoraRegistro": "2021-06-17T18:09:18.634+00:00"
-     },
-     "dataInclusao": "2021-06-24T23:40:44.491+00:00",
-     "dataAtualizacao": "2021-06-24T23:40:44.491+00:00"
+   	"orgao": {
+   		"cnpj": "10000000000003",
+   		"razaoSocial": "SECRETARIA MUNICIPAL DO BEM ESTAR SOCIAL",
+   		"cnpjEnteResponsavel": "",
+   		"poderId": "E",
+   		"esferaId": "F",
+   		"validado": false,
+   		"dataValidacao": null
+   	},
+   	"codigoUnidade": "1",
+   	"nomeUnidade": "Unidade de compra e contratações",
+   	"municipio": {
+   		"uf": {
+   			"siglaUF": "SP",
+   			"nomeUF": "São Paulo",
+   			"dataHoraRegistro": "2021-05-14T02:24:08.239+00:00"
+   		},
+   		"nome": "Município Xpto",
+   		"codigoIbge": "0000001",
+   		"dataHoraRegistro": "2021-06-17T18:09:18.634+00:00"
+   	},
+   	"dataInclusao": "2021-06-24T23:40:44.491+00:00",
+   	"dataAtualizacao": "2021-06-24T23:40:44.491+00:00"
    }
 
 Códigos de Retorno
