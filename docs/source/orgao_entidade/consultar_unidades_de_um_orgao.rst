@@ -20,7 +20,7 @@ Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
-   ..lineno::
+  :linenos:
 
    curl -k -X GET \
      "${BASE_URL}/v1/orgaos/10000000000003/unidades" \
@@ -174,7 +174,7 @@ Exemplo de Retorno
 ~~~~~~~~~~~~~~~~~~
 
 .. code-block:: json
-   ..lineno::
+  :linenos:
 
    {
    	"orgao": {
