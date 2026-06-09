@@ -3,7 +3,9 @@ Atualizar Órgão
 
 Serviço **destinado exclusivamente aos administradores do PNCP** que permite atualizar os dados de um órgão/entidade no repositório do PNCP que eventualmente esteja desatualizado.
 
-**Observação:** não está disponível para plataformas privadas a partir de 18/08/2025.
+.. attention::
+
+   Não está disponível para plataformas privadas a partir de 18/08/2025.
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
