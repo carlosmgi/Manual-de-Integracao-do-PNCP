@@ -32,7 +32,7 @@ Exemplo Requisição (cURL)
 
 .. code-block:: bash
   :linenos:
-  :emphasize-lines: 1,2
+  :emphasize-lines: 1-4
 
 	curl -k -X DELETE \
 	  --header "Authorization: Bearer access_token" \
