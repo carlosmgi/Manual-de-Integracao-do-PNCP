@@ -50,7 +50,7 @@ Exemplo Requisição (cURL)
 
 .. code-block:: bash
   :linenos:
-  :emphasize-lines: 1,2
+  :emphasize-lines: 1-6
 
 	curl -k -X PATCH \
 	  --header "Authorization: Bearer access_token" \
