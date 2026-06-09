@@ -32,10 +32,12 @@ Exemplo Requisição (cURL)
 
 .. code-block:: bash
   :linenos:
-  :emphasize-lines: 1
+  :emphasize-lines: 1,2
 
-    curl -k -X  DELETE --header "Authorization: Bearer access_token" "${BASE_URL}/v1/orgaos/10000000000003/contratos/2025/1/instrumentocobranca/1" 
-    -H "accept: */*"
+	curl -k -X DELETE \
+	  --header "Authorization: Bearer access_token" \
+	  -H "accept: */*" \
+	  "${BASE_URL}/v1/orgaos/10000000000003/contratos/2025/1/instrumentocobranca/1"
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
