@@ -1,7 +1,7 @@
 Retificar Parcialmente Empenho
 ==============================
 
-.. container:: destaque-amarelo
+.. warning::
 
 	Serviço que permite retificar um empenho. Além da justificativa, pelo menos um dos campos relacionados ao empenho deve ser enviado para retificação. Este serviço será acionado por qualquer plataforma digital credenciada.
 
@@ -29,19 +29,19 @@ Exemplo de Payload
   :emphasize-lines: 1-15
 
 	{
-	  "numeroEmpenho": "string",
-	  "tipoPessoa": "PJ",
-	  "niCredorFornecedor": "string",
-	  "nomeCredorFornecedor": "string",
-	  "numeroPlanoInterno": "string",
-	  "codigoNaturezaDespesa": "string",
-	  "dataEmissaoEmpenho": "2026-01-01T12:00:00",
-	  "valorTotal": 1000.0000,
-	  "valorSubItem": 1000.0000,
-	  "codigoEmenda": "string"
-	  "situacaoEmpenhoId": 2,
-	  "dataSituacaoEmpenho": "2026-01-01T12:00:00",
-	  "justificativa": "motivo/justificativa para a retificação do empenho",
+		  "numeroEmpenho": "string",
+		  "tipoPessoa": "PJ",
+		  "niCredorFornecedor": "string",
+		  "nomeCredorFornecedor": "string",
+		  "numeroPlanoInterno": "string",
+		  "codigoNaturezaDespesa": "string",
+		  "dataEmissaoEmpenho": "2026-01-01T12:00:00",
+		  "valorTotal": 1000.0000,
+		  "valorSubItem": 1000.0000,
+		  "codigoEmenda": "string"
+		  "situacaoEmpenhoId": 2,
+		  "dataSituacaoEmpenho": "2026-01-01T12:00:00",
+		  "justificativa": "motivo/justificativa para a retificação do empenho"
 	}
 
   
@@ -52,9 +52,12 @@ Exemplo Requisição (cURL)
   :linenos:
   :emphasize-lines: 1,2
 
-	curl -k -X  PUT --header "Authorization: Bearer access_token" 
-	"${BASE_URL}/v1/orgaos/10000000000003/contratos/2025/1/empenhos/1" -H "accept: */*" 
-	-H "Content-Type: application/json" --data "@/home/objeto.json"
+	curl -k -X PATCH \
+	  --header "Authorization: Bearer access_token" \
+	  "${BASE_URL}/v1/orgaos/10000000000003/contratos/2025/1/empenhos/1" \
+	  -H "accept: */*" \
+	  -H "Content-Type: application/json" \
+	  --data "@/home/objeto.json"
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
