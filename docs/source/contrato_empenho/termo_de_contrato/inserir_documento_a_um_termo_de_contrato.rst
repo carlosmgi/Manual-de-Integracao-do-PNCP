@@ -29,12 +29,16 @@ Exemplo Requisição (cURL)
 
 .. code-block:: bash
   :linenos:
-  :emphasize-lines: 1
+  :emphasize-lines: 1-8
 
-    curl -k -X POST --header "Authorization: Beareraccess_token" 
-   "${BASE_URL}/v1/orgaos/10000000000003/contratos/2021/1/termos/1/arquivos" -H "accept: */*" 
-   -H "Content-Type: multipart/form-data" -H "Titulo-Documento: TermoContrato-2021-1" 
-   -H "Tipo-Documento-Id: 14" -F "arquivo=@TermoContrato-2021-1.pdf;type=application/pdf"
+   curl -k -X POST \
+     --header "Authorization: Bearer access_token" \
+     "${BASE_URL}/v1/orgaos/10000000000003/contratos/2021/1/termos/1/arquivos" \
+     -H "accept: */*" \
+     -H "Content-Type: multipart/form-data" \
+     -H "Titulo-Documento: TermoContrato-2021-1" \
+     -H "Tipo-Documento-Id: 14" \
+     -F "arquivo=@TermoContrato-2021-1.pdf;type=application/pdf"
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
