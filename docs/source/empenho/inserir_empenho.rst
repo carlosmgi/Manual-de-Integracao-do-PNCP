@@ -2,7 +2,7 @@
 Inserir Empenho
 ===============
 
-.. container:: destaque-amarelo
+.. warning::
 
 	Serviço que permite incluir um empenho para um respectivo Contrato. Este serviço será acionado por qualquer plataforma digital credenciada.
 
