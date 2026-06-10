@@ -94,7 +94,9 @@ Novo Padrão CNPJ:
 .. tip:: 
 
    Diante do crescimento contínuo do número de empresas e do iminente esgotamento dos números de CNPJ disponíveis, a Receita Federal do Brasil lança o CNPJ Alfanumérico. Essa solução tem como objetivo facilitar a identificação de todas as empresas e aprimorar o ambiente de negócios, contribuindo para o desenvolvimento econômico e social do Brasil.
+
    O CNPJ Alfanumérico será atribuído a partir de Julho de 2026, exclusivamente a novas inscrições. Os números de CNPJ já existentes não sofrerão nenhuma alteração, ou seja, quem já está inscrito no CNPJ permanecerá com o seu número válido!
+
    CNPJ do órgão (Alfanumérico) - https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/cnpj-alfanumerico
    Recepção de novas informações do fornecedor como localidade e identificação de Cadastro de Reserva ou Remanescente.`
 
