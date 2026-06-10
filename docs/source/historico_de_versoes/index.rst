@@ -89,8 +89,25 @@ Versão: 2.5
 
 Data: xx/05/2026
 
-.. note::
-    xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Novo Padrão CNPJ:
+
+:destaque-azul-claro:`Diante do crescimento contínuo do número de empresas e do iminente esgotamento dos números de CNPJ disponíveis, a Receita Federal do Brasil lança o CNPJ Alfanumérico. Essa solução tem como objetivo facilitar a identificação de todas as empresas e aprimorar o ambiente de negócios, contribuindo para o desenvolvimento econômico e social do Brasil.
+   O CNPJ Alfanumérico será atribuído a partir de Julho de 2026, exclusivamente a novas inscrições. Os números de CNPJ já existentes não sofrerão nenhuma alteração, ou seja, quem já está inscrito no CNPJ permanecerá com o seu número válido!
+   CNPJ do órgão (Alfanumérico) - https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/cnpj-alfanumerico
+   Recepção de novas informações do fornecedor como localidade e identificação de Cadastro de Reserva ou Remanescente.`
+
+**Tabelas de domínio:**
+
+`Consultar Porte de Empresa por Código  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/tabelas_de_dominio/consultar_porte_de_empresa_por_codigo.html>`_ 
+5.27.1. 
+5.27.2. Consultar Porte de Empresa
+
+6.3. Serviços de Contratação (Editais, Avisos e Atos):
+6.3.15. Inserir Resultado do Item de uma Contratação
+6.3.16. Retificar Resultado do Item de uma Contratação
+6.3.17. Consultar Resultados de Item de uma Contratação
+6.3.18. Consultar um Resultado específico de Item de uma Contratação
+
 
 Versão: 2.4
 -----------
