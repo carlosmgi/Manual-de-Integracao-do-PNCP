@@ -40,8 +40,8 @@ Exemplo Requisição (cURL)
 Dados de entrada
 ~~~~~~~~~~~~~~~~
 
-.. note:
-   Alimentar o parâmetro ``{id}`` na URL.
+.. Note::
+  Alimentar o parâmetro ``{id}`` na URL.
 
 .. list-table::
    :width: 100%
