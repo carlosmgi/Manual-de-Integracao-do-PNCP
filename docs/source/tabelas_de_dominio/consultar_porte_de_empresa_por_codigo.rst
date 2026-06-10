@@ -2,7 +2,6 @@ Consultar Porte de Empresa por Código
 =====================================
 
 .. container:: destaque-azul-claro
-
    Serviço que permite consultar o porte de empresa por código.
 
 Detalhes da Requisição
@@ -105,20 +104,20 @@ Códigos de Retorno
    * - Código HTTP
      - Mensagem
      - Tipo
-   * - 200
-     - OK
-     - Sucesso
-   * - 400
-     - BadRequest
-     - Erro
-   * - 404
-     - Catálogo não encontrado
-     - NotFound
-   * - 422
-     - Unprocessable Entity
-     - Erro
-   * - 500
-     - Internal Server Error
-     - Erro
+   * - :destaque-azul-claro:`200`
+     - :destaque-azul-claro:`OK`
+     - :destaque-azul-claro:`Sucesso`
+   * - :destaque-azul-claro:`400`
+     - :destaque-azul-claro:`BadRequest`
+     - :destaque-azul-claro:`Erro`
+   * - :destaque-azul-claro:`404`
+     - :destaque-azul-claro:`Catálogo não encontrado`
+     - :destaque-azul-claro:`NotFound`
+   * - :destaque-azul-claro:`422`
+     - :destaque-azul-claro:`Unprocessable Entity`
+     - :destaque-azul-claro:`Erro`
+   * - :destaque-azul-claro:`500`
+     - :destaque-azul-claro:`Internal Server Error`
+     - :destaque-azul-claro:`Erro`
 \
 
