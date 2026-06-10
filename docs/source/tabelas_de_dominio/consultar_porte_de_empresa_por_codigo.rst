@@ -1,7 +1,7 @@
 Consultar Porte de Empresa por Código
 =====================================
 
-:destaque-azul-claro: `Serviço que permite consultar um porte de empresa a partir do código.`
+:destaque-azul-claro:`Serviço que permite consultar um porte de empresa a partir do código.`
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
