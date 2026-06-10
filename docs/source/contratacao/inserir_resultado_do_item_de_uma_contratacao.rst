@@ -51,7 +51,10 @@ Exemplo de Payload
 		"simboloMoedaEstrangeira": "USD",
 		"dataCotacaoMoedaEstrangeira": "2024-07-10T21:17:02",
 		"timezoneCotacaoMoedaEstrangeira": "UTC-0400",
-		"valorNominalMoedaEstrangeira": 0.24
+		"valorNominalMoedaEstrangeira": 0.24,
+  		:destaque-azul-claro:`"codigoIbgeMunicipio": "5300108",`
+   		:destaque-azul-claro:`"localidadeExterior": "Miami - Estados Unidos da América",`
+   		:destaque-azul-claro:`"reservaRemanescenteId": 2`
 	}  
   
 
@@ -228,7 +231,21 @@ Dados de Entrada
      - Decimal
      - Não
      - Valor nominal da moeda nacional (BRL) em relação uma unidade da moeda estrangeira no momento da cotação. Ex: 1 USD = 5,450 BRL, então enviar 5.450
-
+   * - :destaque-azul-claro:`28`
+     - :destaque-azul-claro:`codigoIbgeMunicipio`
+     - :destaque-azul-claro:`Texto`
+     - :destaque-azul-claro:`Não`
+     - :destaque-azul-claro:`Código IBGE do Município`
+   * - :destaque-azul-claro:`29`
+     - :destaque-azul-claro:`localidadeExterior`
+     - :destaque-azul-claro:`Texto`
+     - :destaque-azul-claro:`Não`
+     - :destaque-azul-claro:`Nome Localidade Exterior do Fornecedor/Arrematante`
+   * - :destaque-azul-claro:`30`
+     - :destaque-azul-claro:`reservaRemanescenteId`
+     - :destaque-azul-claro:`Inteiro`
+     - :destaque-azul-claro:`Não`
+     - :destaque-azul-claro:`Identificador de Fornecedor Reserva ou Remanescente (1 - Não se aplica; 2 – Remanescente; 3 - Cadastro de Reserva`
 
 Dados de Retorno
 ~~~~~~~~~~~~~~~~
