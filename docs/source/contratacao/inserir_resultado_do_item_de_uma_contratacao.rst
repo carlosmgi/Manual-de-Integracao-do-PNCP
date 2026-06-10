@@ -53,9 +53,9 @@ Exemplo de Payload
 		"dataCotacaoMoedaEstrangeira": "2024-07-10T21:17:02",
 		"timezoneCotacaoMoedaEstrangeira": "UTC-0400",
 		"valorNominalMoedaEstrangeira": 0.24,
-  		:destaque-azul-claro:`"codigoIbgeMunicipio": "5300108",`
-   		:destaque-azul-claro:`"localidadeExterior": "Miami - Estados Unidos da América",`
-   		:destaque-azul-claro:`"reservaRemanescenteId": 2`
+  		"codigoIbgeMunicipio": "5300108",
+   		"localidadeExterior": "Miami - Estados Unidos da América",
+   		"reservaRemanescenteId": 2
 	}  
   
 
