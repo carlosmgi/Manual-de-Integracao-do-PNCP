@@ -29,48 +29,52 @@ Exemplo de Payload
   :linenos:
   :emphasize-lines: 29-31
 
-	{
-		"quantidadeHomologada": 1,
-		"valorUnitarioHomologado": 100.0,
-		"valorTotalHomologado": 100.0,
-		"percentualDesconto": 0,
-		"tipoPessoaId": "PJ",
-		"niFornecedor": "10000000000010",
-		"nomeRazaoSocialFornecedor": " Fornecedor/arrematante para exemplo",
-		"porteFornecedorId": 3,
-		"naturezaJuridicaId": "2062",
-		"codigoPais": "BRA",
-		"indicadorSubcontratacao": false,
-		"ordemClassificacaoSrp": 1,
-		"dataResultado": "2021-07-26",
-		"dataCancelamento": "",
-		"motivoCancelamento": "",
-		"situacaoCompraItemResultadoId": 1,
-		"aplicacaoMargemPreferencia": true,
-		"amparoLegalMargemPreferenciaId": 143,
-		"paisOrigemProdutoServicoId": "BRA",
-		"aplicacaoBeneficioMeEpp": true,
-		"aplicacaoCriterioDesempate": true,
-		"amparoLegalCriterioDesempateId": 146,
-		"simboloMoedaEstrangeira": "USD",
-		"dataCotacaoMoedaEstrangeira": "2024-07-10T21:17:02",
-		"timezoneCotacaoMoedaEstrangeira": "UTC-0400",
-		"valorNominalMoedaEstrangeira": 0.24,
-		"justificativa": "motivo/justificativa para a retificação dos atributos do resultado do item da contratação",
-  		"codigoIbgeMunicipio": "5300108",
-   		"localidadeExterior": "Miami - Estados Unidos da América",
-    	"reservaRemanescenteId": 2
-
-	}
+{
+	"quantidadeHomologada": 1,
+	"valorUnitarioHomologado": 100.0,
+	"valorTotalHomologado": 100.0,
+	"percentualDesconto": 0,
+	"tipoPessoaId": "PJ",
+	"niFornecedor": "10000000000010",
+	"nomeRazaoSocialFornecedor": " Fornecedor/arrematante para exemplo",
+	"porteFornecedorId": 3,
+	"naturezaJuridicaId": "2062",
+	"codigoPais": "BRA",
+	"indicadorSubcontratacao": false,
+	"ordemClassificacaoSrp": 1,
+	"dataResultado": "2021-07-26",
+	"dataCancelamento": "",
+	"motivoCancelamento": "",
+	"situacaoCompraItemResultadoId": 1,
+	"aplicacaoMargemPreferencia": true,
+	"amparoLegalMargemPreferenciaId": 143,
+	"paisOrigemProdutoServicoId": "BRA",
+	"aplicacaoBeneficioMeEpp": true,
+	"aplicacaoCriterioDesempate": true,
+	"amparoLegalCriterioDesempateId": 146,
+	"simboloMoedaEstrangeira": "USD",
+	"dataCotacaoMoedaEstrangeira": "2024-07-10T21:17:02",
+	"timezoneCotacaoMoedaEstrangeira": "UTC-0400",
+	"valorNominalMoedaEstrangeira": 0.24,
+	"justificativa": "motivo/justificativa para a retificação dos atributos do resultado do item da contratação",
+	"codigoIbgeMunicipio": "5300108",
+	"localidadeExterior": "Miami - Estados Unidos da América",
+	"reservaRemanescenteId": 2
+}
     
 
 Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
+  :linenos:
 
-	curl -k -X PUT --header "Authorization: Bearer access_token" "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/itens/1/resultados" 
-	-H "accept: */*" -H "Content-Type: application/json" --data "@/home/objeto.json" 
+	curl -k -X PUT \
+	  --header "Authorization: Bearer access_token" \
+	  "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/itens/1/resultados" \
+	  -H "accept: */*" \
+	  -H "Content-Type: application/json" \
+	  --data "@/home/objeto.json"
 
 
 Dados de Entrada
@@ -262,21 +266,21 @@ Dados de Entrada
      - Texto (255)
      - Sim
      - Motivo/justificativa para a retificação dos atributos do resultado de um item da contratação.
-   * - 33
-     - codigoIbgeMunicipio
-     - Texto
-     - Não
-     - Código IBGE do Município
-   * - 34
-     - localidadeExterior
-     - Texto
-     - Não
-     - Nome Localidade Exterior do Fornecedor/Arrematante
-   * - 35
-     - reservaRemanescenteId
-     - Inteiro
-     - Não
-     - Identificador de Fornecedor Reserva ou Remanescente (1 - Não se aplica; 2 – Remanescente; 3 - Cadastro de Reserva
+   * - :destaque-azul-claro:`33`
+     - :destaque-azul-claro:`codigoIbgeMunicipio`
+     - :destaque-azul-claro:`Texto`
+     - :destaque-azul-claro:`Não`
+     - :destaque-azul-claro:`Código IBGE do Município`
+   * - :destaque-azul-claro:`34`
+     - :destaque-azul-claro:`localidadeExterior`
+     - :destaque-azul-claro:`Texto`
+     - :destaque-azul-claro:`Não`
+     - :destaque-azul-claro:`Nome Localidade Exterior do Fornecedor/Arrematante`
+   * - :destaque-azul-claro:`35`
+     - :destaque-azul-claro:`reservaRemanescenteId`
+     - :destaque-azul-claro:`Inteiro`
+     - :destaque-azul-claro:`Não`
+     - :destaque-azul-claro:`Identificador de Fornecedor Reserva ou Remanescente (1 - Não se aplica; 2 – Remanescente; 3 - Cadastro de Reserva`
 
 ** Para cancelamento do Resultado informar situação do resultado igual a 2, data e motivo do cancelamento junto com os outros dados do resultado.
 
