@@ -34,7 +34,7 @@ Exemplo Requisição (cURL)
    :emphasize-lines: 1-3
    
    curl -k -X GET \
-     "${BASE_URL}/v1/portes-empresa" \
+     "${BASE_URL}/v1/portes-empresa/{id}" \
      -H "accept: */*"
 
 Dados de entrada
