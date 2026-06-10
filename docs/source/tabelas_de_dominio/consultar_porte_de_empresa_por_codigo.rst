@@ -2,6 +2,7 @@ Consultar Porte de Empresa por Código
 =====================================
 
 .. container:: destaque-azul-claro
+
    Serviço que permite consultar o porte de empresa por código.
 
 Detalhes da Requisição
@@ -28,13 +29,14 @@ Exemplo de Payload
 Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. code-block:: bash
-   :linenos:
-   :emphasize-lines: 1-3
-
-   curl -k -X GET \
-     "${BASE_URL}/v1/portes-empresa" \
-     -H "accept: */*"
+.. container:: destaque-azul-claro
+   .. code-block:: bash
+      :linenos:
+      :emphasize-lines: 1-3 destaque-azul-claro
+   
+      curl -k -X GET \
+        "${BASE_URL}/v1/portes-empresa" \
+        -H "accept: */*"
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
