@@ -32,7 +32,7 @@ Exemplo Requisição (cURL)
 .. tip::
    .. code-block:: bash
       :linenos:
-      :emphasize-lines: 1-3 destaque-azul-claro
+      :emphasize-lines: 1-3
    
       curl -k -X GET \
         "${BASE_URL}/v1/portes-empresa" \
