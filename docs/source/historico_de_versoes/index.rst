@@ -103,13 +103,17 @@ Novo Padrão CNPJ:
 **Tabelas de domínio:**
 
 `Consultar Porte de Empresa por Código  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/tabelas_de_dominio/consultar_porte_de_empresa_por_codigo.html>`_ 
+
 `Consultar Porte de Empresao  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/tabelas_de_dominio/consultar_porte_de_empresa.html>`_ 
 
 **Serviços de Contratação (Editais, Avisos e Atos):**
 
 `Inserir Resultado do Item de uma Contratação  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contratacao/inserir_resultado_do_item_de_uma_contratacao.html>`_ 
+
 `Retificar Resultado do Item de uma Contratação  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contratacao/retificar_resultado_do_item_de_uma_contratacao.html>`_ 
+
 `Consultar Resultados de Item de uma Contratação  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contratacao/consultar_resultados_de_item_de_uma_contratacao.html>`_ 
+
 `Consultar um Resultado específico de Item de uma Contratação  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contratacao/consultar_um_resultado_especifico_de_item_de_uma_contratacao.html>`_ 
 
 
