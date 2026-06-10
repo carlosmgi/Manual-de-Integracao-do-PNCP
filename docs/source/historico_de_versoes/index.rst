@@ -87,7 +87,7 @@ Histórico de Versões
 Versão: 2.5
 -----------
 
-Data: xx/05/2026
+Data: 11/06/2026
 
 Novo Padrão CNPJ:
 
@@ -103,14 +103,14 @@ Novo Padrão CNPJ:
 **Tabelas de domínio:**
 
 `Consultar Porte de Empresa por Código  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/tabelas_de_dominio/consultar_porte_de_empresa_por_codigo.html>`_ 
-5.27.1. 
-5.27.2. Consultar Porte de Empresa
+`Consultar Porte de Empresao  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/tabelas_de_dominio/consultar_porte_de_empresa.html>`_ 
 
-6.3. Serviços de Contratação (Editais, Avisos e Atos):
-6.3.15. Inserir Resultado do Item de uma Contratação
-6.3.16. Retificar Resultado do Item de uma Contratação
-6.3.17. Consultar Resultados de Item de uma Contratação
-6.3.18. Consultar um Resultado específico de Item de uma Contratação
+**Serviços de Contratação (Editais, Avisos e Atos):**
+
+`Inserir Resultado do Item de uma Contratação  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contratacao/inserir_resultado_do_item_de_uma_contratacao.html>`_ 
+`Retificar Resultado do Item de uma Contratação  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contratacao/retificar_resultado_do_item_de_uma_contratacao.html>`_ 
+`Consultar Resultados de Item de uma Contratação  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contratacao/consultar_resultados_de_item_de_uma_contratacao.html>`_ 
+`Consultar um Resultado específico de Item de uma Contratação  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contratacao/consultar_um_resultado_especifico_de_item_de_uma_contratacao.html>`_ 
 
 
 Versão: 2.4
