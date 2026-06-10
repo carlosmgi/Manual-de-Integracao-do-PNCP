@@ -29,7 +29,8 @@ Exemplo Requisição (cURL)
 
 .. code-block:: Bash
 
-	curl -k -i "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/itens/1/resultados" \
+	curl -k -X GET -i \
+	  "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/itens/1/resultados" \
 	  -H "Accept: */*"
 
 Dados de Entrada
@@ -275,6 +276,42 @@ Dados de Retorno
      - Texto
      - Nome da moeda estrangeira.
 
+   * - :destaque-azul-claro:`2`
+     - :destaque-azul-claro:`localidadeFornecedor`
+     - 
+     - 
+   * - :destaque-azul-claro:`2.1`
+     - :destaque-azul-claro:`codigoIbge`
+     - :destaque-azul-claro:`Texto`
+     - :destaque-azul-claro:`Código IBGE do Município`
+   * - :destaque-azul-claro:`2.2`
+     - :destaque-azul-claro:`nomeMunicipio`
+     - :destaque-azul-claro:`Texto`
+     - :destaque-azul-claro:`Nome do município`
+   * - :destaque-azul-claro:`2.3`
+     - :destaque-azul-claro:`uf`
+     - :destaque-azul-claro:`Texto`
+     - :destaque-azul-claro:`Código da unidade federativa do município`
+   * - :destaque-azul-claro:`2.4`
+     - :destaque-azul-claro:`ufNome`
+     - :destaque-azul-claro:`Texto`
+     - :destaque-azul-claro:`Nome da unidade federativa do município`
+   * - :destaque-azul-claro:`3`
+     - :destaque-azul-claro:`localidadeExterior`
+     - :destaque-azul-claro:`Texto`
+     - :destaque-azul-claro:`Nome Localidade Exterior do Fornecedor/Arrematante`
+   * - :destaque-azul-claro:`4`
+     - :destaque-azul-claro:`reservaRemanescenteId`
+     - 
+     - 
+   * - :destaque-azul-claro:`4.1`
+     - :destaque-azul-claro:`codigo`
+     - :destaque-azul-claro:`Inteiro`
+     - :destaque-azul-claro:`Identificador de Fornecedor Reserva ou Remanescente (1 - Não se aplica; 2 – Remanescente; 3 - Cadastro de Reserva)`
+   * - :destaque-azul-claro:`4.2`
+     - :destaque-azul-claro:`nome`
+     - :destaque-azul-claro:`Texto`
+     - :destaque-azul-claro:`Identificador de Fornecedor Reserva ou Remanescente (1 - Não se aplica; 2 – Remanescente; 3 - Cadastro de Reserva)`
 
 Códigos de Retorno
 ~~~~~~~~~~~~~~~~~~
