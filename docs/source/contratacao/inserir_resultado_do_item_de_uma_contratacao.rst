@@ -64,8 +64,12 @@ Exemplo Requisição (cURL)
 
 .. code-block:: bash
 
-	curl -k -X POST --header "Authorization: Bearer access_token" "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/itens/1/resultados" 
-	-H "accept: */*" -H "Content-Type: application/json" --data "@/home/objeto.json" 
+	curl -k -X POST \
+	  --header "Authorization: Bearer access_token" \
+	  "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/itens/1/resultados" \
+	  -H "accept: */*" \
+	  -H "Content-Type: application/json" \
+	  --data "@/home/objeto.json"
 
 
 Dados de Entrada
@@ -246,7 +250,7 @@ Dados de Entrada
      - :destaque-azul-claro:`reservaRemanescenteId`
      - :destaque-azul-claro:`Inteiro`
      - :destaque-azul-claro:`Não`
-     - :destaque-azul-claro:`Identificador de Fornecedor Reserva ou Remanescente (1 - Não se aplica; 2 – Remanescente; 3 - Cadastro de Reserva`
+     - :destaque-azul-claro:`Identificador de Fornecedor Reserva ou Remanescente (1 - Não se aplica; 2 – Remanescente; 3 - Cadastro de Reserva)`
 
 Dados de Retorno
 ~~~~~~~~~~~~~~~~
