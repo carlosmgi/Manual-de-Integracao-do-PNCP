@@ -125,7 +125,7 @@ Dados de Entrada
      - Decimal
      - Sim
      - Quantidade do item homologada. Precisão de 4 dígitos decimais; Ex: 1.0000;
-    * - 7
+   * - 7
      - valorUnitarioHomologado
      - Decimal
      - Sim
