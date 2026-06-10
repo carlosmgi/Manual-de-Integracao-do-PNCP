@@ -27,6 +27,7 @@ Exemplo de Payload
 
 .. code-block:: json
   :linenos:
+  :emphasize-lines: 25-27
 
 	{
 		"quantidadeHomologada": 1,
