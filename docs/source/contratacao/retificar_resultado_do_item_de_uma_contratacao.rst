@@ -280,7 +280,7 @@ Dados de Entrada
      - :destaque-azul-claro:`reservaRemanescenteId`
      - :destaque-azul-claro:`Inteiro`
      - :destaque-azul-claro:`Não`
-     - :destaque-azul-claro:`Identificador de Fornecedor Reserva ou Remanescente (1 - Não se aplica; 2 – Remanescente; 3 - Cadastro de Reserva`
+     - :destaque-azul-claro:`Identificador de Fornecedor Reserva ou Remanescente (1 - Não se aplica; 2 – Remanescente; 3 - Cadastro de Reserva)`
 
 ** Para cancelamento do Resultado informar situação do resultado igual a 2, data e motivo do cancelamento junto com os outros dados do resultado.
 
