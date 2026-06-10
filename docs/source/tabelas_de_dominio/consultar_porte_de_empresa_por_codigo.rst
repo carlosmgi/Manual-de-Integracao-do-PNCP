@@ -29,14 +29,13 @@ Exemplo de Payload
 Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. tip::
-   .. code-block:: bash
-      :linenos:
-      :emphasize-lines: 1-3
+.. code-block:: bash
+   :linenos:
+   :emphasize-lines: 1-3
    
-      curl -k -X GET \
-        "${BASE_URL}/v1/portes-empresa" \
-        -H "accept: */*"
+   curl -k -X GET \
+     "${BASE_URL}/v1/portes-empresa" \
+     -H "accept: */*"
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
