@@ -179,6 +179,8 @@ Data: 09/04/2026
 Versão: 2.3.11
 --------------
 
+Versão em .pdf disponível para download em `Manual de Integração do PNCP v. 2.3.11 <https://www.gov.br/pncp/pt-br/pncp/manuais/manual-de-integracao-pncp/@@display-file/file>`_
+
 Data: 18/03/2026
 
 .. note::
