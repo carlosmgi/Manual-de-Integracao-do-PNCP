@@ -1,7 +1,7 @@
 Histórico de Versões
 ====================
 
-O Histórico de Versões do Manual de Integração do PNCP tem como objetivo registrar a evolução cronológica das atualizações e melhorias técnicas do documento, assegurando que todas as equipes de desenvolvimento e órgãos integradores acompanhem as mudanças normativas e sistêmicas. Ao utilizar esse histórico, os desenvolvedores e gestores garantem o alinhamento com os schemas e endpoints vigentes, o que otimiza a manutenção das APIs, a correção de inconformidades e a implementação de novas funcionalidades no portal. O uso do histórico de versões contribui para a previsibilidade, a transparência e a governança das manutenções evolutivas no ecossistema de contratações públicas.
+O Histórico de Versões do Manual de Integração do PNCP. tem como objetivo registrar a evolução cronológica das atualizações e melhorias técnicas do documento, assegurando que todas as equipes de desenvolvimento e órgãos integradores acompanhem as mudanças normativas e sistêmicas. Ao utilizar esse histórico, os desenvolvedores e gestores garantem o alinhamento com os schemas e endpoints vigentes, o que otimiza a manutenção das APIs, a correção de inconformidades e a implementação de novas funcionalidades no portal. O uso do histórico de versões contribui para a previsibilidade, a transparência e a governança das manutenções evolutivas no ecossistema de contratações públicas.
  
 
 .. Attention::
@@ -90,7 +90,7 @@ O Histórico de Versões do Manual de Integração do PNCP tem como objetivo reg
 Versão: 2.5
 -----------
 
-Versão em .pdf disponível para download em `Manual de Integração do PNCP <xxxxxxxxxxxxxx>`_
+Versão em .pdf disponível para download em `Manual de Integração do PNCP. <xxxxxxxxxxxxxx>`_
 
 Data: 11/06/2026
 
@@ -125,7 +125,7 @@ Novo Padrão CNPJ:
 Versão: 2.4
 -----------
 
-Versão em .pdf disponível para download em `Manual de Integração do PNCP <xxxxxxxxxxxxxxx>`_
+Versão em .pdf disponível para download em `Manual de Integração do PNCP. <xxxxxxxxxxxxxxx>`_
 
 Data: 09/04/2026
 
@@ -183,7 +183,7 @@ Data: 09/04/2026
 Versão: 2.3.11
 --------------
 
-Versão em .pdf disponível para download em `Manual de Integração do PNCP <https://www.gov.br/pncp/pt-br/pncp/manuais/manual-de-integracao-pncp/@@display-file/file>`_
+Versão em .pdf disponível para download em `Manual de Integração do PNCP. <https://www.gov.br/pncp/pt-br/pncp/manuais/manual-de-integracao-pncp/@@display-file/file>`_
 
 Data: 18/03/2026
 
@@ -195,7 +195,7 @@ Data: 18/03/2026
 Versão: 2.3.10
 --------------
 
-Versão em .pdf disponível para download em `Manual de Integração do PNCP <https://www.gov.br/pncp/pt-br/pncp/manuais/versoes-anteriores/manualdeintegracaopncp2.3.10.pdf/@@display-file/file>`_
+Versão em .pdf disponível para download em `Manual de Integração do PNCP. <https://www.gov.br/pncp/pt-br/pncp/manuais/versoes-anteriores/manualdeintegracaopncp2.3.10.pdf/@@display-file/file>`_
 
 Data: 24/02/2026
 
@@ -238,7 +238,7 @@ Data: 24/02/2026
 Versão: 2.3.9
 -------------
 
-Versão em .pdf disponível para download em `Manual de Integração do PNCP <https://www.gov.br/pncp/pt-br/pncp/manuais/versoes-anteriores/manual-de-integracao-2-3-9.pdf/@@display-file/file>`_
+Versão em .pdf disponível para download em `Manual de Integração do PNCP. <https://www.gov.br/pncp/pt-br/pncp/manuais/versoes-anteriores/manual-de-integracao-2-3-9.pdf/@@display-file/file>`_
 
 Data: 06/01/2026
 
@@ -278,7 +278,7 @@ Data: 06/01/2026
 Versão: 2.3.8
 -------------
 
-Versão em .pdf disponível para download em `Manual de Integração do PNCP <https://www.gov.br/pncp/pt-br/pncp/manuais/versoes-anteriores/ManualdeIntegraoPNCPVerso2.3.8.pdf/@@display-file/file>`_
+Versão em .pdf disponível para download em `Manual de Integração do PNCP. <https://www.gov.br/pncp/pt-br/pncp/manuais/versoes-anteriores/ManualdeIntegraoPNCPVerso2.3.8.pdf/@@display-file/file>`_
 
 Data: 18/08/2025
 
@@ -314,7 +314,7 @@ Atualizar Unidade
 Versão: 2.3.7
 -------------
 
-Versão em .pdf disponível para download em `Manual de Integração do PNCP <https://www.gov.br/pncp/pt-br/pncp/manuais/versoes-anteriores/manual-de-integracao-pncp-237/@@display-file/file>`_
+Versão em .pdf disponível para download em `Manual de Integração do PNCP. <https://www.gov.br/pncp/pt-br/pncp/manuais/versoes-anteriores/manual-de-integracao-pncp-237/@@display-file/file>`_
 
 Data: 13/06/2025
 
@@ -338,7 +338,7 @@ Consultar Item de uma Contratação
 Versão: 2.3.6
 -------------
 
-Versão em .pdf disponível para download em `Manual de Integração do PNCP <https://www.gov.br/pncp/pt-br/pncp/manuais/versoes-anteriores/manual-de-integracao-pncp-v2.3.6/@@display-file/file>`_
+Versão em .pdf disponível para download em `Manual de Integração do PNCP. <https://www.gov.br/pncp/pt-br/pncp/manuais/versoes-anteriores/manual-de-integracao-pncp-v2.3.6/@@display-file/file>`_
 
 Data: 13/05/2025
 
