@@ -205,7 +205,7 @@ Data: 24/02/2026
 
 `Consultar Atas de Registro de Preço por Compra   <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/ata_de_registro_de_preco/consultar_atas_de_registro_de_preco_por_compra.html>`_
 
-`Consultar Ata de Registro de Preço   <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/ata_de_registro_de_preco/consultar_atas_de_registro_de_preco.html>`_
+`Consultar Ata de Registro de Preço   <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/ata_de_registro_de_preco/consultar_ata_de_registro_de_preco.html>`_
 
 `Consultar Contratos de Ata de Registro de Preço   <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/ata_de_registro_de_preco/consultar_contratos_de_ata_de_registro_de_preco.html>`_
 
