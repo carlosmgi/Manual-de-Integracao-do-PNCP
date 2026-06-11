@@ -1,7 +1,7 @@
 Consultar Tipos de Contrato
 ===========================
 
-.. container:: destaque-amarelo
+.. attention::
 
   Serviço que permite consultar os tipos de contrato cadastrados no PNCP.
 
