@@ -1,7 +1,7 @@
 Consultar Tipos de Documento
 ============================
 
-.. container:: destaque-amarelo
+.. attention::
 
   Serviço que permite consultar os tipos de documento/arquivo cadastrados no PNCP.
 
@@ -37,9 +37,15 @@ Exemplo Requisição (cURL)
   :linenos:
   :emphasize-lines: 1-3
 
-    curl -X 'GET' '${BASE_URL}/v1/tipos-documentos' -H 'accept: */*'
+	curl -k -X GET \
+	  "${BASE_URL}/v1/tipos-documentos" \
+	  -H "accept: */*"
+
     ou
-    curl -X 'GET' '${BASE_URL}/v1/tipos-documentos?statusAtivo=true' -H 'accept: */*'
+
+	curl -k -X GET \
+	  "${BASE_URL}/v1/tipos-documentos?statusAtivo=true" \
+	  -H "accept: */*"
 
     
 Dados de entrada
@@ -47,7 +53,7 @@ Dados de entrada
 
 .. note::
 
-  Alimentar o query parâmetro ``{statusAtivo}``.
+  Alimentar o parâmetro ``{statusAtivo}``.
 
 .. list-table::
    :width: 100%
