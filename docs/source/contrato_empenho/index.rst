@@ -1,7 +1,7 @@
 Contratos/Empenhos
 ==================
 
-Serviços que disponibilizam conjunto de operações relacionadas aos contratos/empenhos no PNCP.
+Os Serviços de Contratos, Empenhos e Termos têm como objetivo centralizar o acompanhamento da execução das despesas públicas, assegurando a publicidade, a eficácia e a regularidade jurídica dos instrumentos contratuais e notas de empenho decorrentes dos certames ou contratações diretas. Ao utilizar esses serviços, as plataformas integradas e os entes públicos viabilizam o registro do ciclo de vida contratual — incluindo aditivos, apostilamentos e instrumentos de cobrança (como notas fiscais) —, o que otimiza o controle de saldos licitados, o cronograma financeiro e a transparência na aplicação dos recursos. O uso desses serviços garante a estrita observância à Lei 14.133/2021 e às normas de responsabilidade fiscal, mitigando assimetrias e fortalecendo o controle social e institucional.
 
 .. toctree::
    :maxdepth: 3
