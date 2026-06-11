@@ -28,19 +28,29 @@ Exemplo de Payload
 
 .. code-block:: json
   :linenos:
-  { 
-    "nome": "Fulano de Tal", 
-    "email": "fulano@example.com", 
-    "senha": "&1NaoCompartilho1Senha&", 
-    "entesAutorizados": ["10000000000003", "10000000000005"] 
-  } 
+
+  {
+  	"nome": "Fulano de Tal",
+  	"email": "fulano@example.com",
+  	"senha": "&1NaoCompartilho1Senha&",
+  	"entesAutorizados": [
+  		"10000000000003",
+  		"10000000000005"
+  	]
+  }
 
 Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
+  :linenos:
 
- curl -k -X PUT --header "Authorization: Bearer access_token" "${BASE_URL}/v1/usuarios/5" -H "accept: */*" -H "Content-Type: application/json" --data "@/home/objeto.json" 
+  curl -k -X PUT \
+    --header "Authorization: Bearer access_token" \
+    "${BASE_URL}/v1/usuarios/5" \
+    -H "accept: */*" \
+    -H "Content-Type: application/json" \
+    --data "@/home/objeto.json"
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
