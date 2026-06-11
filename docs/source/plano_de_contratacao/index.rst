@@ -1,7 +1,8 @@
 Plano de Contratação
 ====================
 
-Serviços que disponibilizam conjunto de operações relacionadas aos planos de contratação no PNCP.
+Os Serviços de Plano de Contratações têm como objetivo centralizar, estruturar e consolidar o planejamento anual de compras, obras e serviços dos órgãos e entidades públicas, assegurando o alinhamento com o Plano de Contratações Anual (PCA) previsto na legislação vigente. Ao utilizar esses serviços, as plataformas integradas e os entes federativos garantem a padronização e o envio tempestivo do cronograma estimado de contratações, o que otimiza a consolidação de demandas, o planejamento orçamentário e a detecção de oportunidades de compras compartilhadas. O uso dos serviços de plano de contratações contribui para a previsibilidade do mercado fornecedor, a eficiência alocativa e a transparência ativa no ecossistema de contratações públicas.
+
 
 .. toctree::
   :maxdepth: 3
