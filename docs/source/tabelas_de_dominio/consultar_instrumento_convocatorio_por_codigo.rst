@@ -20,7 +20,7 @@ Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
-   .. elinus::
+  :linenos:
 
    curl -k -X GET \
      "${BASE_URL}/v1/tipos-instrumentos-convocatorios/{id}" \
