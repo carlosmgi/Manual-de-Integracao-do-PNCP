@@ -90,7 +90,7 @@ O Histórico de Versões do Manual de Integração do PNCP. tem como objetivo re
 Versão: 2.5
 -----------
 
-Versão em .pdf disponível para download em `Manual de Integração do PNCP. <xxxxxxxxxxxxxx>`_
+Versão em .pdf disponível para download em `Manual de Integração do PNCP. <https://www.gov.br/pncp/pt-br/pncp/manuais/manual-de-integracao-pncp/@@display-file/file>`_
 
 Data: 11/06/2026
 
@@ -125,7 +125,7 @@ Novo Padrão CNPJ:
 Versão: 2.4
 -----------
 
-Versão em .pdf disponível para download em `Manual de Integração do PNCP. <xxxxxxxxxxxxxxx>`_
+Versão em .pdf disponível para download em `Manual de Integração do PNCP. <https://www.gov.br/pncp/pt-br/pncp/manuais/versoes-anteriores/manual-de-integracao-2-4.pdf/@@display-file/file>`_
 
 Data: 09/04/2026
 
