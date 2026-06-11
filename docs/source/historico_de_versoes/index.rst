@@ -253,7 +253,7 @@ Data: 06/01/2026
 
 `Atualizar Unidade  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/orgao_entidade/atualizar_unidade.html>`_   
 
-`Requerimento Perfil Gestor  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/orgao_entidade/atualizar_unidade.html>`_  
+`Requerimento Perfil Gestor  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/orgao_entidade/requerimento_perfil_gestor.html>`_  
 
 **Gestão de Órgão e Entidade** 
 
