@@ -32,8 +32,9 @@ Exemplo Requisição (cURL)
 	:linenos:
 	:emphasize-lines: 1,2
 
-	curl -X 'GET' '${BASE_URL}/v1/orgaos/00394460000141/compras/2021/1/atas/1/partesenvolvidas/00394460000141/1/1' \
-	  -H 'accept: */*'
+	curl -k -X GET \
+	  "${BASE_URL}/v1/orgaos/00394460000141/compras/2021/1/atas/1/partesenvolvidas/00394460000141/1/1" \
+	  -H "accept: */*"
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
