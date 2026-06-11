@@ -4,7 +4,7 @@ Atualizar Usuário
 Serviço que permite alterar/atualizar os dados de um usuário. Disponível para o próprio usuário logado ou usuário administrador. Com esse serviço é possível que o usuário 
 altere sua própria senha ou cadastre a lista de CNPJs dos entes autorizados (órgãos) o qual o usuário estará apto a divulgar informações. 
 
-.. container:: destaque-amarelo
+.. attention::
 
  **Observação:** 
   - O item "Incluir Órgão" foi construído para incluir um órgão que, eventualmente, não se encontre no repositório de dados do PNCP. A funcionalidade não deve ser confundida com a inclusão de órgãos gerenciados pelo usuário.
