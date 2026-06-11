@@ -179,7 +179,7 @@ Data: 09/04/2026
 Versão: 2.3.11
 --------------
 
-Versão em .pdf disponível para download em `Manual de Integração do PNCP v. 2.3.11 <https://www.gov.br/pncp/pt-br/pncp/manuais/manual-de-integracao-pncp/@@display-file/file>`_
+Versão em .pdf disponível para download em `Manual de Integração do PNCP <https://www.gov.br/pncp/pt-br/pncp/manuais/manual-de-integracao-pncp/@@display-file/file>`_
 
 Data: 18/03/2026
 
@@ -190,6 +190,8 @@ Data: 18/03/2026
 
 Versão: 2.3.10
 --------------
+
+Versão em .pdf disponível para download em `Manual de Integração do PNCP <https://www.gov.br/pncp/pt-br/pncp/manuais/versoes-anteriores/manualdeintegracaopncp2.3.10.pdf/@@display-file/file>`_
 
 Data: 24/02/2026
 
@@ -232,6 +234,8 @@ Data: 24/02/2026
 Versão: 2.3.9
 -------------
 
+Versão em .pdf disponível para download em `Manual de Integração do PNCP <https://www.gov.br/pncp/pt-br/pncp/manuais/versoes-anteriores/manual-de-integracao-2-3-9.pdf/@@display-file/file>`_
+
 Data: 06/01/2026
 
 .. note::
@@ -270,6 +274,8 @@ Data: 06/01/2026
 Versão: 2.3.8
 -------------
 
+Versão em .pdf disponível para download em `Manual de Integração do PNCP <https://www.gov.br/pncp/pt-br/pncp/manuais/versoes-anteriores/ManualdeIntegraoPNCPVerso2.3.8.pdf/@@display-file/file>`_
+
 Data: 18/08/2025
 
 .. note::
@@ -304,6 +310,8 @@ Atualizar Unidade
 Versão: 2.3.7
 -------------
 
+Versão em .pdf disponível para download em `Manual de Integração do PNCP <https://www.gov.br/pncp/pt-br/pncp/manuais/versoes-anteriores/manual-de-integracao-pncp-237/@@display-file/file>`_
+
 Data: 13/06/2025
 
 .. note::
@@ -325,6 +333,8 @@ Consultar Item de uma Contratação
 
 Versão: 2.3.6
 -------------
+
+Versão em .pdf disponível para download em `Manual de Integração do PNCP <https://www.gov.br/pncp/pt-br/pncp/manuais/versoes-anteriores/manual-de-integracao-pncp-v2.3.6/@@display-file/file>`_
 
 Data: 13/05/2025
 
