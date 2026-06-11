@@ -1,6 +1,8 @@
 Usuário
 =======
 
+Os Serviços de Usuário têm como objetivo gerenciar as credenciais, permissões e perfis de acesso dos agentes públicos e sistemas integrados, assegurando que as ações no portal sejam realizadas por usuários devidamente autenticados e autorizados. Ao utilizar esses serviços, as plataformas integradas e os órgãos públicos garantem a segurança e a rastreabilidade das operações de envio e alteração de dados, o que otimiza o controle de acessos, a auditoria de processos e a integridade das informações trafegadas. O uso dos serviços de usuário contribui para a segurança da informação, a confiabilidade operacional e a governança no ecossistema de contratações públicas.
+
 .. toctree::
    :maxdepth: 3
 
