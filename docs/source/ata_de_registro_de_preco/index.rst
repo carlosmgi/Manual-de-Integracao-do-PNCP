@@ -1,7 +1,7 @@
 Atas de Registro de Preço
 =========================
 
-Serviços que disponibilizam conjunto de operações relacionadas às Atas de Registro de Preço no PNCP.
+Os Serviços de Ata de Registro de Preços têm como objetivo gerenciar o ciclo de vida dos compromissos firmados para contratações futuras, assegurando a correta disponibilização das Atas de Registro de Preços (ARP) decorrentes de licitações ou contratações diretas. Ao utilizar esses serviços, as plataformas integradas e os órgãos públicos garantem a centralização de dados sobre preços registrados, fornecedores e órgãos participantes, o que otimiza a economicidade de escala, o compartilhamento de atas e a celeridade nas futuras aquisições. O uso dos serviços de ata de registro de preços contribui para o controle de gastos, o planejamento logístico governamental e a eficiência na gestão das contratações públicas.
 
 .. toctree::
    :maxdepth: 3
