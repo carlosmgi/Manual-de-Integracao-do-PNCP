@@ -1,7 +1,7 @@
 Consultar Tipo de Documento por Código
 ======================================
 
-.. container:: destaque-amarelo
+.. attention::
 
   Serviço que permite consultar um tipo de documento/arquivo pelo seu código.
 
