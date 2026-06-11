@@ -35,15 +35,17 @@ Exemplo Requisição (cURL)
 
 .. code-block:: bash
   :linenos:
-  :emphasize-lines: 1
+  :emphasize-lines: 1-3
 
-    curl -X 'GET' '${BASE_URL}/v1/tipos-documentos/{id}' -H 'accept: */*'
+	curl -k -X GET \
+	  "${BASE_URL}/v1/tipos-documentos/{id}" \
+	  -H "accept: */*"
     
 Dados de entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
-  Alimentar o path parâmetro ``{id}`` na URL
+  Alimentar o parâmetro ``{id}`` na URL
 
 .. list-table::
    :width: 100%
