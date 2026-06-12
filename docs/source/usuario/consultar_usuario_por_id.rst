@@ -28,8 +28,12 @@ Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
- 
-   curl -k -X GET --header "Authorization: Bearer access_token" "${BASE_URL}/v1/usuarios/5" -H "accept: */*" 
+   :linenos:
+
+   curl -k -X GET \
+     --header "Authorization: Bearer access_token" \
+     "${BASE_URL}/v1/usuarios/5" \
+     -H "accept: */*"
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
@@ -118,6 +122,7 @@ Exemplo de Retorno
 ~~~~~~~~~~~~~~~~~~
 
 .. code-block:: json
+  :linenos:
 
    {
      "id": 5,
@@ -139,6 +144,7 @@ Exemplo de Retorno
        }
      ]
    }
+
 
 Códigos de Retorno
 ~~~~~~~~~~~~~~~~~~
