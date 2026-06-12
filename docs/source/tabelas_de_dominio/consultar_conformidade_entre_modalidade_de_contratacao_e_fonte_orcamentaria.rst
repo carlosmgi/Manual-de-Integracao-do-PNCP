@@ -57,7 +57,7 @@ Dados de entrada
 
 .. note::
    
-   Alimentar o query parâmetro ``modalidadeId`` ou ``fonteOrcamentariaId``.
+   Alimentar os parâmetros ``modalidadeId`` ou ``fonteOrcamentariaId``.
 
 .. list-table::
    :width: 100%
