@@ -1,5 +1,5 @@
-Consultar Tipo de Instrumento de Cobrança 
-=========================================
+Consultar Tipos de Instrumento de Cobrança 
+==========================================
 
 Serviço que permite consultar os tipos de instrumentos de cobrança cadastrados no PNCP. 
 
@@ -28,17 +28,24 @@ Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
+  :linenos:
 
-   curl -X 'GET' '${BASE_URL}/v1/tipos-instrumentos-cobranca' -H 'accept: */*' 
+   curl -k -X GET \
+     "${BASE_URL}/v1/tipos-instrumentos-cobranca" \
+     -H "accept: */*"
+
    ou 
-   curl -X 'GET' '${BASE_URL}/v1/tipos-instrumentos-cobranca?statusAtivo=true' -H 'accept: */*'
+
+   curl -k -X GET \
+     "${BASE_URL}/v1/tipos-instrumentos-cobranca?statusAtivo=true" \
+     -H "accept: */*"
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
 
-   Alimentar o query parâmetro ``statusAtivo``.
+   Alimentar o parâmetro ``statusAtivo``.
 
 .. list-table::
    :width: 100%
