@@ -39,7 +39,7 @@ Dados de entrada
 
 .. note::
    
-   Alimentar o parâmetro ``modalidadeId`` e ``fonteOrcamentariaId`` na URL.
+   Alimentar os parâmetros ``modalidadeId`` e ``fonteOrcamentariaId`` na URL.
 
 .. list-table::
    :width: 100%
