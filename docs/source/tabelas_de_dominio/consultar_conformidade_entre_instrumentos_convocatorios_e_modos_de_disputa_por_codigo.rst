@@ -28,15 +28,18 @@ Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
+  :linenos:
 
-   curl -X 'GET' '${BASE_URL}/v1/tipo-instrumento-convocatorio-modo-disputa/1/1' -H 'accept: */*'
+   curl -k -X GET \
+     "${BASE_URL}/v1/tipo-instrumento-convocatorio-modo-disputa/1/1" \
+     -H "accept: */*"
 
 Dados de Entrada
 ~~~~~~~~~~~~~~~~
 
 .. note:: 
 
-   Alimentar o path parâmetro ``{tipoInstrumentoConvocatorioId}`` e ``{modoDisputaId}`` na URL.
+   Alimentar os parâmetros ``{tipoInstrumentoConvocatorioId}`` e ``{modoDisputaId}`` na URL.
 
 .. list-table::
    :width: 100%
