@@ -1,7 +1,7 @@
 Gestão de Plataforma
 ====================
 
-.. container:: destaque-amarelo
+.. attention::
 
 	Esta funcionalidade permite ao usuário representante de plataforma pública ou privada solicitar a geração de **nova senha** ou de **novo login e senha**.
 	O acesso se dá pela opção **Gestão de Plataforma**, disponível na **Área de Trabalho do PNCP**, disponível no endereço https://pncp.gov.br/app/area-de-trabalho. 
