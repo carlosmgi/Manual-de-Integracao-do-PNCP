@@ -28,15 +28,18 @@ Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
+  :linenos:
 
-   curl -X 'GET' '${BASE_URL}/v1/modalidade-fonte-orcamentaria/6/1' -H 'accept: */*'
+   curl -k -X GET \
+     "${BASE_URL}/v1/modalidade-fonte-orcamentaria/6/1" \
+     -H "accept: */*"
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
    
-   Alimentar o path parâmetro ``modalidadeId`` e ``fonteOrcamentariaId`` na URL.
+   Alimentar o parâmetro ``modalidadeId`` e ``fonteOrcamentariaId`` na URL.
 
 .. list-table::
    :width: 100%
