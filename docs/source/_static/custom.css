@@ -8,6 +8,13 @@
     margin: auto !important;
 }
 
+/* Fixa a barra lateral esquerda na tela */
+.wy-nav-side {
+    position: fixed !important;
+    height: 100vh !important;
+    overflow-y: auto !important;
+}
+
 kbd {
   background-color: #fff3cd !important;
   color: #000 !important;
