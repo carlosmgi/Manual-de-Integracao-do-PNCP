@@ -1,33 +1,11 @@
 /* Remove o limite de largura máxima do contêiner principal */
-max-width: 100% !important;
-@media screen and (min-width: 768px) {
-    /* Garante que o contêiner do menu fique preso na esquerda */
-    .wy-nav-side {
-        position: fixed !important;
-        height: 100vh !important;
-        width: 300px !important; /* Força a largura padrão do menu */
-        top: 0 !important;
-        left: 0 !important;
-        overflow-y: auto !important; /* Permite rolar o menu se ele for gigante */
-        z-index: 1000 !important;
-    }
+.wy-nav-content-wrap {
+    max-width: none !important;
+}
 
-    /* Ajusta a área do conteúdo para não "bater" nem entrar embaixo do menu fixo */
-    .wy-nav-content-wrap {
-        margin-left: 300px !important; /* Empurra o conteúdo exatamente a largura do menu */
-        width: calc(100% - 300px) !important;
-        float: none !important;
-    }
-
-    .wy-nav-content {
-        max-width: 100% !important;
-        margin: auto !important;
-    }
-
-    /* Corrige a barra de navegação do topo em telas menores/médias se necessário */
-    .wy-nav-top {
-        display: none !important; /* Esconde a barra redundante do topo no desktop */
-    }
+.wy-nav-content {
+    max-width: 100% !important;
+    margin: auto !important;
 }
 
 kbd {
