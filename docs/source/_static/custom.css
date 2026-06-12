@@ -3,9 +3,8 @@
     max-width: none !important;
 }
 
-/* Define a nova largura máxima para o bloco de texto */
 .wy-nav-content {
-    max-width: 1200px !important; /* Mude para 100% se quiser ocupar a tela toda */
+    max-width: 100% !important;
     margin: auto !important;
 }
 
