@@ -28,18 +28,29 @@ Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
+  :linenos:
 
-   curl -X 'GET' '${BASE_URL}/v1/instrumento-convocatorio-modalidade-amparo-legal' -H 'accept: */*'
+   curl -k -X GET \
+     "${BASE_URL}/v1/instrumento-convocatorio-modalidade-amparo-legal" \
+     -H "accept: */*"
+
    ou
-   curl -X 'GET' '${BASE_URL}/v1/instrumento-convocatorio-modalidade-amparo-legal?tipoInstrumentoConvocatorioId=1' -H 'accept: */*'
+
+   curl -k -X GET \
+     "${BASE_URL}/v1/instrumento-convocatorio-modalidade-amparo-legal?tipoInstrumentoConvocatorioId=1" \
+     -H "accept: */*"
+
    ou
-   curl -X 'GET' '${BASE_URL}/v1/instrumento-convocatorio-modalidade-amparo-legal?tipoInstrumentoConvocatorioId=1&modalidadeId=6' -H 'accept: */*'
+
+   curl -k -X GET \
+     "${BASE_URL}/v1/instrumento-convocatorio-modalidade-amparo-legal?tipoInstrumentoConvocatorioId=1&modalidadeId=6" \
+     -H "accept: */*"
  
 Dados de Entrada
 ~~~~~~~~~~~~~~~~
 
 .. note:: 
-   Alimentar o query parâmetro ``{amparoLegalId}`` ou ``{modalidadeId}`` ou ``{tipoInstrumentoConvocatorioId}``.
+   Alimentar os parâmetros ``{amparoLegalId}`` ou ``{modalidadeId}`` ou ``{tipoInstrumentoConvocatorioId}``.
 
 .. list-table::
    :width: 100%
