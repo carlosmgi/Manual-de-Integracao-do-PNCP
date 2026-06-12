@@ -28,18 +28,29 @@ Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
+  :linenos:
 
-   curl -X 'GET' '${BASE_URL}/v1/amparos-legais' -H 'accept: */*'
+   curl -k -X GET \
+     "${BASE_URL}/v1/amparos-legais" \
+     -H "accept: */*"
+
    ou
-   curl -X 'GET' '${BASE_URL}/v1/amparos-legais?statusAtivo=true' -H 'accept: */*'
+
+   curl -k -X GET \
+     "${BASE_URL}/v1/amparos-legais?statusAtivo=true" \
+     -H "accept: */*"
+
    ou
-   curl -X 'GET' '${BASE_URL}/v1/amparos-legais?tipoAmparoLegalId=1&statusAtivo=true' -H 'accept: */*'
+
+   curl -k -X GET \
+     "${BASE_URL}/v1/amparos-legais?tipoAmparoLegalId=1&statusAtivo=true" \
+     -H "accept: */*"
 
 Dados de Entrada
 ~~~~~~~~~~~~~~~~
 
 .. note:: 
-   Alimentar o query parâmetro ``{statusAtivo}`` ou ``{tipoAmparoLegalId}``.  
+   Alimentar os parâmetros ``{statusAtivo}`` ou ``{tipoAmparoLegalId}``.  
 
 .. list-table::
    :width: 100%
