@@ -7,11 +7,6 @@ Inserir Ata de Registro de Preço
   
 Serviço que permite inserir uma ata de Registro de Preço no PNCP referente a uma contratação.
 
-**Atualizações da versão 2.3.10**
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. versionadded:: 2.3.10
-
 Exemplo de Payload
 ^^^^^^^^^^^^^^^^^^
 
@@ -76,10 +71,4 @@ Dados de Entrada
     - Não
     - Código da Unidade Administrativa.
 
-.. versionchanged:: 2.3.10
-
-  não houve alterações.
-
-.. deprecated:: 2.3.10
-
-  não houve alterações.
+\
