@@ -42,9 +42,14 @@ Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
+  :linenos:
 
-  	curl -k -X POST --header "Authorization: Bearer access_token" "${BASE_URL}/v1/usuarios/5/orgaos" 
-	-H "accept: */*" -H "Content-Type: application/json" --data "@/home/objeto.json" 
+	curl -k -X POST \
+	  --header "Authorization: Bearer access_token" \
+	  "${BASE_URL}/v1/usuarios/5/orgaos" \
+	  -H "accept: */*" \
+	  -H "Content-Type: application/json" \
+	  --data "@/home/objeto.json"
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
@@ -90,6 +95,7 @@ Exemplo de Retorno
 ~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
+  :linenos:
 
    Retorno:
    access-control-allow-credentials: true
