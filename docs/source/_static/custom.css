@@ -2,11 +2,11 @@
 /* .wy-nav-content-wrap {
     max-width: none !important;
 }
-
+*/
 .wy-nav-content {
     max-width: 100% !important;
     margin: auto !important;
-} */
+}
 
 @media screen and (min-width: 768px) {
     /* 1. Força a estrutura principal a ocupar a tela inteira sem rolar o site todo */
