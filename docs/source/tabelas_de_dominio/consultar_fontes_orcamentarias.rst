@@ -28,17 +28,25 @@ Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
+  :linenos:
 
-   curl -X 'GET' '${BASE_URL}/v1/fontes-orcamentarias' -H 'accept: */*' 
+   curl -k -X GET \
+     "${BASE_URL}/v1/fontes-orcamentarias" \
+     -H "accept: */*"
+
    ou 
-   curl -X 'GET' '${BASE_URL}/v1/fontes-orcamentarias?statusAtivo=true' -H 'accept: */*' 
+
+   curl -k -X GET \
+     "${BASE_URL}/v1/fontes-orcamentarias?statusAtivo=true" \
+     -H "accept: */*"
+
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
 
 .. note::
    
-   Alimentar o query parâmetro ``statusAtivo``.
+   Alimentar o parâmetro ``statusAtivo``.
 
 .. list-table::
    :width: 100%
