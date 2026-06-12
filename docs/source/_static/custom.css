@@ -1,5 +1,5 @@
 /* Remove o limite de largura máxima do contêiner principal */
-max-width: none !important;
+max-width: 100% !important;
 @media screen and (min-width: 768px) {
     /* Garante que o contêiner do menu fique preso na esquerda */
     .wy-nav-side {
