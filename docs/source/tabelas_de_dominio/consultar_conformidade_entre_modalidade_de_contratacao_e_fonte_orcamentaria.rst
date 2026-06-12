@@ -28,14 +28,29 @@ Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
+  :linenos:
 
-   curl -X 'GET' '${BASE_URL}/v1/modalidade-fonte-orcamentaria' -H 'accept: */*' 
+   curl -k -X GET \
+     "${BASE_URL}/v1/modalidade-fonte-orcamentaria" \
+     -H "accept: */*"
+
    ou 
-   curl -X 'GET' '${BASE_URL}/v1/modalidade-fonte-orcamentaria?modalidadeId=6' -H 'accept: */*' 
+
+   curl -k -X GET \
+     "${BASE_URL}/v1/modalidade-fonte-orcamentaria?modalidadeId=6" \
+     -H "accept: */*"
+
    ou 
-   curl 'GET' '${BASE_URL}/v1/modalidade-fonte-orcamentaria?fonteOrcamentariaId=1' -H 'accept: */*' 
+
+   curl -k -X GET \
+     "${BASE_URL}/v1/modalidade-fonte-orcamentaria?fonteOrcamentariaId=1" \
+     -H "accept: */*"
+
    ou 
-   curl -X 'GET' '${BASE_URL}/v1/modalidade-fonte-orcamentaria?modalidadeId=6&fonteOrcamentariaId=1' -H 'accept: */*'
+
+   curl -k -X GET \
+     "${BASE_URL}/v1/modalidade-fonte-orcamentaria?modalidadeId=6&fonteOrcamentariaId=1" \
+     -H "accept: */*"
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
