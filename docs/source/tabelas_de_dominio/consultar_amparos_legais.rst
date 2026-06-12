@@ -50,7 +50,7 @@ Dados de Entrada
 ~~~~~~~~~~~~~~~~
 
 .. note:: 
-   Alimentar os parâmetros ``{statusAtivo}`` ou ``{tipoAmparoLegalId}``.  
+   Alimentar o parâmetro ``{statusAtivo}`` ou ``{tipoAmparoLegalId}``.  
 
 .. list-table::
    :width: 100%
