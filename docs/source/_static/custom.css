@@ -1,3 +1,14 @@
+/* Remove o limite de largura máxima do contêiner principal */
+.wy-nav-content-wrap {
+    max-width: none !important;
+}
+
+/* Define a nova largura máxima para o bloco de texto */
+.wy-nav-content {
+    max-width: 1200px !important; /* Mude para 100% se quiser ocupar a tela toda */
+    margin: auto !important;
+}
+
 kbd {
   background-color: #fff3cd !important;
   color: #000 !important;
