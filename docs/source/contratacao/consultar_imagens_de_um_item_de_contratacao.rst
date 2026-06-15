@@ -30,7 +30,8 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
   :linenos:
 
-	curl -k "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/itens/1/imagem" \
+	curl -k \
+	  "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/itens/1/imagem" \
 	  -H "Accept: */*"
 
 Dados de entrada
