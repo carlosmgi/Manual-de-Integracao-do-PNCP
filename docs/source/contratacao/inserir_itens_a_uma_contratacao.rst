@@ -62,10 +62,14 @@ Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
+  :linenos:
 
-	curl -k -X POST --header "Authorization: Bearer access_token" "${BASE_URL}/v1/orgaos
-	/10000000000003/compras/2021/1/itens" -H "accept: */*" -H "Content-Type: application/json" 
-	-data "@/home/objeto.json" 
+	curl -k -X POST \
+	  --header "Authorization: Bearer access_token" \
+	  "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/itens" \
+	  -H "accept: */*" \
+	  -H "Content-Type: application/json" \
+	  --data "@/home/objeto.json"
 
 
 Dados de Entrada
@@ -73,8 +77,6 @@ Dados de Entrada
 
 .. note::
    Alimentar os parâmetros ``cnpj``, ``ano`` e ``sequencial`` na URL.
-
-
 
 .. list-table::
    :width: 100%
@@ -258,7 +260,8 @@ Exemplo de Retorno
 ~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
- 
+  :linenos:
+
 	Retorno: 
 	["https://treina.pncp.gov.br/api/pncp/v1/orgaos/10000000000003/compras/2021/1/itens/1"]
 
