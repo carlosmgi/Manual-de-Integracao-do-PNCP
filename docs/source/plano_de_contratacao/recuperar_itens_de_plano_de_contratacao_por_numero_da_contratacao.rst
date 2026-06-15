@@ -26,8 +26,9 @@ Exemplo Requisição (cURL)
 
 .. code-block:: bash
 
-   curl -X GET \
-     "https://treina.pncp.gov.br/api/pncp/v1/orgaos/00394460000141/pca/2022/1/itens/contratacao" -H "accept: */*"
+   curl -k -X GET \
+     "https://treina.pncp.gov.br/api/pncp/v1/orgaos/00394460000141/pca/2022/1/itens/contratacao" \
+     -H "accept: */*"
 
 Dados de Entrada
 ~~~~~~~~~~~~~~~~
@@ -220,8 +221,8 @@ Dados de retorno
      - Texto
      - Código da Indicação se Item é Material ou Serviço. Domínio: 1 - Material; 2 - Serviço;
 
-**Códigos de Retorno**
-~~~~~~~~~~~~~~~~~~~~~~
+Códigos de Retorno
+~~~~~~~~~~~~~~~~~~
 
 .. list-table::
    :width: 100%
