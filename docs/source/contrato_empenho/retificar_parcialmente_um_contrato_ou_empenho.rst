@@ -1,7 +1,7 @@
 Retificar Parcialmente um Contrato/Empenho
 ==========================================
 
-.. container:: destaque-amarelo
+.. attention::
 
 	Serviço que permite retificar parcialmente um contrato/empenho. Além da justificativa, pelo menos um dos campos relacionados ao empenho deve ser enviado para retificação. Este serviço será acionado por qualquer plataforma digital credenciada.
 
