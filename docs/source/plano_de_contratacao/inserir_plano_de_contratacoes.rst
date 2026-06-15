@@ -28,51 +28,51 @@ Exemplo de Payload
 .. code-block:: json
   :linenos:
 
-   {
-     "codigoUnidade": "170456",
-     "anoPca": 2022,
-     "itensPlano": [
-       {
-         "numeroItem": 1,
-         "categoriaItemPca": "1",
-         "catalogo": "1",
-         "classificacaoCatalogo": "1",
-         "classificacaoSuperiorCodigo": "7510",
-         "classificacaoSuperiorNome": "Artigos para escritório",
-         "codigoItem": "468205",
-         "descricao": "Apontador Lápis",
-         "unidadeFornecimento": "Caixa 100 unidades",
-         "quantidade": 500,
-         "valorUnitario": 50.00,
-         "valorTotal": 25000.00,
-         "valorOrcamentoExercicio": 25000.00,
-         "renovacaoContrato": false,
-         "dataDesejada": "2022-05-15",
-         "unidadeRequisitante": "Departamento Administrativo",
-         "grupoContratacaoCodigo": "",
-         "grupoContratacaoNome": ""
-       },
-       {
-         "numeroItem": 2,
-         "categoriaItemPca": "2",
-         "catalogo": "1",
-         "classificacaoCatalogo": "2",
-         "classificacaoSuperiorCodigo": "547",
-         "classificacaoSuperiorNome": "Serviço de acabamento e finalização dos edifícios",
-         "codigoItem": "21776",
-         "descricao": "Troca Filtro - Veículo Automotivo",
-         "unidadeFornecimento": "UNIDADE",
-         "quantidade": 10,
-         "valorUnitario": 50.00,
-         "valorTotal": 500.00,
-         "valorOrcamentoExercicio": 500.00,
-         "dataDesejada": "2022-07-10",
-         "unidadeRequisitante": "Departamento Logístico",
-         "grupoContratacaoCodigo": "",
-         "grupoContratacaoNome": ""
-       }
-     ]
-   }
+  {
+  	"codigoUnidade": "170456",
+  	"anoPca": 2022,
+  	"itensPlano": [
+  		{
+  			"numeroItem": 1,
+  			"categoriaItemPca": "1",
+  			"catalogo": "1",
+  			"classificacaoCatalogo": "1",
+  			"classificacaoSuperiorCodigo": "7510",
+  			"classificacaoSuperiorNome": "Artigos para escritório",
+  			"codigoItem": "468205",
+  			"descricao": "Apontador Lápis",
+  			"unidadeFornecimento": "Caixa 100 unidades",
+  			"quantidade": 500,
+  			"valorUnitario": 50.0,
+  			"valorTotal": 25000.0,
+  			"valorOrcamentoExercicio": 25000.0,
+  			"renovacaoContrato": false,
+  			"dataDesejada": "2022-05-15",
+  			"unidadeRequisitante": "Departamento Administrativo",
+  			"grupoContratacaoCodigo": "",
+  			"grupoContratacaoNome": ""
+  		},
+  		{
+  			"numeroItem": 2,
+  			"categoriaItemPca": "2",
+  			"catalogo": "1",
+  			"classificacaoCatalogo": "2",
+  			"classificacaoSuperiorCodigo": "547",
+  			"classificacaoSuperiorNome": "Serviço de acabamento e finalização dos edifícios",
+  			"codigoItem": "21776",
+  			"descricao": "Troca Filtro - Veículo Automotivo",
+  			"unidadeFornecimento": "UNIDADE",
+  			"quantidade": 10,
+  			"valorUnitario": 50.0,
+  			"valorTotal": 500.0,
+  			"valorOrcamentoExercicio": 500.0,
+  			"dataDesejada": "2022-07-10",
+  			"unidadeRequisitante": "Departamento Logístico",
+  			"grupoContratacaoCodigo": "",
+  			"grupoContratacaoNome": ""
+  		}
+  	]
+  }
 
 Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -80,8 +80,12 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
    :linenos:
 
-   curl -k -X POST --header "Authorization: Bearer access_token" "${BASE_URL}/v1/orgaos/10000000000003/pca" 
-   -H "accept: */*" -H "Content-Type: application/json" --data "@/home/objeto.json"
+  curl -k -X POST \
+    --header "Authorization: Bearer access_token" \
+    "${BASE_URL}/v1/orgaos/10000000000003/pca" \
+    -H "accept: */*" \
+    -H "Content-Type: application/json" \
+    --data "@/home/objeto.json"
 
 Dados de Entrada
 ~~~~~~~~~~~~~~~~
