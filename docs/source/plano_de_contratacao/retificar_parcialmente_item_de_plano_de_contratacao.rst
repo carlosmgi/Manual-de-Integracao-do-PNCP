@@ -22,27 +22,27 @@ Exemplo de Payload
 
 .. code-block:: json
   :linenos:
-
-      {
-        "numeroItem": 2,
-        "categoriaItemPca": "2",
-        "catalogo": "1",
-        "classificacaoCatalogo": "2",
-        "classificacaoSuperiorCodigo": "547",
-        " classificacaoSuperiorNome": "Serviço de acabamento e finalização dos edifícios",
-        "codigoItem": "1090",
-        "descricao": "Pintura industrial",
-        "unidadeFornecimento": "UNIDADE",
-        "quantidade": 10,
-        "valorUnitario": 50,00,
-        "valorTotal": 500,00,
-        "valorOrcamentoExercicio": 500,00,
-        "dataDesejada": "2022-07-10",
-        "unidadeRequisitante": "Departamento Logístico",
-        "grupoContratacaoCodigo": "",
-        "grupoContratacaoNome": "",
-        "justificativa": ""
-    }
+	
+	{
+		"numeroItem": 2,
+		"categoriaItemPca": "2",
+		"catalogo": "1",
+		"classificacaoCatalogo": "2",
+		"classificacaoSuperiorCodigo": "547",
+		"classificacaoSuperiorNome": "Serviço de acabamento e finalização dos edifícios",
+		"codigoItem": "1090",
+		"descricao": "Pintura industrial",
+		"unidadeFornecimento": "UNIDADE",
+		"quantidade": 10,
+		"valorUnitario": 50.0,
+		"valorTotal": 500.0,
+		"valorOrcamentoExercicio": 500.0,
+		"dataDesejada": "2022-07-10",
+		"unidadeRequisitante": "Departamento Logístico",
+		"grupoContratacaoCodigo": "",
+		"grupoContratacaoNome": "",
+		"justificativa": ""
+	}
 
 
 Exemplo Requisição (cURL)
@@ -51,9 +51,12 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
   :linenos:
 
-    curl -k -X PATCH --header "Authorization: Bearer access_token" 
-	"${BASE_URL}/v1/orgaos/10000000000003/pca/2022/1/itens/1" -H "accept: */*" 
-	-H "Content-Type: application/json" --data "@/home/objeto.json"
+	curl -k -X PATCH \
+	  --header "Authorization: Bearer access_token" \
+	  "${BASE_URL}/v1/orgaos/10000000000003/pca/2022/1/itens/1" \
+	  -H "accept: */*" \
+	  -H "Content-Type: application/json" \
+	  --data "@/home/objeto.json"
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
