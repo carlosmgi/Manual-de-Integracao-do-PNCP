@@ -56,9 +56,13 @@ Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
+  :linenos:
 
-	curl -k -X  PATCH --header "Authorization: Bearer access_token" 
-	"${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1" -H "accept: */*" -H "Content-Type: application/json" 
+	curl -k -X PATCH \
+	  --header "Authorization: Bearer access_token" \
+	  "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1" \
+	  -H "accept: */*" \
+	  -H "Content-Type: application/json"
 
 Dados de Entrada
 ~~~~~~~~~~~~~~~~
