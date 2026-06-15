@@ -20,17 +20,17 @@ Exemplo de Payload
 ~~~~~~~~~~~~~~~~~~
 
 .. code-block:: json
-.. linenos::
+  .. linenos::
 
-{
-	"justificativa": ""
-}
+	{
+		"justificativa": ""
+	}
 
 Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
-.. linenos::
+  .. linenos::
 
    curl -k -X DELETE \
      --header "Authorization: Bearer access_token" \
