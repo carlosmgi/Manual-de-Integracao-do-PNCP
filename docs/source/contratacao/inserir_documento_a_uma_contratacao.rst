@@ -29,10 +29,15 @@ Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
+  :linenos:
 
-	curl -k -X POST --header "Authorization: Bearer access_token" 
-	"${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/arquivos" -H "accept: */*" -H "Content-Type: multipart/form-data" 
-	-H "Titulo-Documento: Edital-2021-1" -H "Tipo-Documento-Id: 2" -F "arquivo=@Edital-2021-1.pdf;type=application/pdf" 
+	curl -k -X POST \
+	  --header "Authorization: Bearer access_token" \
+	  "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/arquivos" \
+	  -H "accept: */*" \
+	  -H "Titulo-Documento: Edital-2021-1" \
+	  -H "Tipo-Documento-Id: 2" \
+	  -F "arquivo=@Edital-2021-1.pdf;type=application/pdf"
 
 Dados de Entrada
 ~~~~~~~~~~~~~~~~
@@ -110,7 +115,7 @@ Exemplo de Retorno
 ~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
-
+  :linenos:
  
 	Retorno: 
 	access-control-allow-credentials: true 
