@@ -63,6 +63,7 @@ Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
+  :linenos:
 
 	curl -k -X POST \
 	  --header "Authorization: Bearer access_token" \
@@ -274,7 +275,8 @@ Exemplo de Retorno
 ~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
- 
+  :linenos:
+
 	Retorno: 
 	access-control-allow-credentials: true 
 	access-control-allow-headers: Content-Type,Authorization,X-Requested-With,Content-Length,Accept,Origin, 
