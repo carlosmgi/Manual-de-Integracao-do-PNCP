@@ -23,9 +23,9 @@ Exemplo de Payload
 .. code-block:: json
   :linenos:
 
-    {
-      "justificativa": "motivo/justificativa da exclusão do instrumento de cobrança do contrato/empenho"
-    }
+	{
+		"justificativa": "motivo/justificativa da exclusão do instrumento de cobrança do contrato/empenho"
+	}
 
 Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
