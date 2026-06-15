@@ -94,7 +94,10 @@ Dados de entrada
 Dados de retorno
 ~~~~~~~~~~~~~~~~
 
-Não se aplica.  
+.. code-block:: bash
+  :linenos:
+
+  Não se aplica.  
 
 Exemplo de Retorno
 ~~~~~~~~~~~~~~~~~~
