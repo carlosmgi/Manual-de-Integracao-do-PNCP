@@ -125,58 +125,58 @@ Enviando como JSON:
 .. code-block:: bash
   :linenos:
 
-curl -k -X POST \
-  --header "Authorization: Bearer access_token" \
-  "${BASE_URL}/v1/orgaos/10000000000003/compras" \
-  -H "accept: */*" \
-  -H "Content-Type: multipart/form-data" \
-  -H "Titulo Documento: nome_do_arquivo" \
-  -H "Tipo-Documento-Id: 1"
-  --form "compra=@"	{
-		"anoCompra": 2021,
-		"itensCompra": [
-			{
-				"numeroItem": 1,
-				"materialOuServico": "M",
-				"tipoBeneficioId": "1",
-				"incentivoProdutivoBasico": false,
-				"descricao": "string",
-				"quantidade": 1,
-				"unidadeMedida": "string",
-				"orcamentoSigiloso": false,
-				"valorUnitarioEstimado": 1,
-				"valorTotal": 1,
-				"criterioJulgamentoId": "1",
-				"itemCategoriaId": "1",
-				"patrimonio": "string",
-				"codigoRegistroImobiliario": "string",
-				"aplicabilidadeMargemPreferenciaNormal": true,
-				"aplicabilidadeMargemPreferenciaAdicional": true,
-				"percentualMargemPreferenciaNormal": 10.0,
-				"percentualMargemPreferenciaAdicional": 10.0,
-				"catalogoId": 1,
-				"categoriaItemCatalogoId": 1,
-				"catalogoCodigoItem": "string",
-				"informacaoComplementar": "string"
-			}
-		],
-		"tipoInstrumentoConvocatorioId": "1",
-		"modalidadeId": "6",
-		"modoDisputaId": "1",
-		"numeroCompra": "1",
-		"numeroProcesso": "1",
-		"objetoCompra": "string",
-		"informacaoComplementar": "string",
-		"amparoLegalId": 1,
-		"srp": true,
-		"dataAberturaProposta": "2022-01-18T14:30:01",
-		"dataEncerramentoProposta": "2022-01-31T14:30:01",
-		"codigoUnidadeCompradora": "1",
-		"linkSistemaOrigem": "string",
-		"linkProcessoEletronico": "string",
-		"justificativaPresencial": "string"
-	};
-	type=application/json ’ -form ‘documento=@”arquivo.pdf” ’ 
+	curl -k -X POST \
+	  --header "Authorization: Bearer access_token" \
+	  "${BASE_URL}/v1/orgaos/10000000000003/compras" \
+	  -H "accept: */*" \
+	  -H "Content-Type: multipart/form-data" \
+	  -H "Titulo Documento: nome_do_arquivo" \
+	  -H "Tipo-Documento-Id: 1"
+	  --form "compra=@"	{
+			"anoCompra": 2021,
+			"itensCompra": [
+				{
+					"numeroItem": 1,
+					"materialOuServico": "M",
+					"tipoBeneficioId": "1",
+					"incentivoProdutivoBasico": false,
+					"descricao": "string",
+					"quantidade": 1,
+					"unidadeMedida": "string",
+					"orcamentoSigiloso": false,
+					"valorUnitarioEstimado": 1,
+					"valorTotal": 1,
+					"criterioJulgamentoId": "1",
+					"itemCategoriaId": "1",
+					"patrimonio": "string",
+					"codigoRegistroImobiliario": "string",
+					"aplicabilidadeMargemPreferenciaNormal": true,
+					"aplicabilidadeMargemPreferenciaAdicional": true,
+					"percentualMargemPreferenciaNormal": 10.0,
+					"percentualMargemPreferenciaAdicional": 10.0,
+					"catalogoId": 1,
+					"categoriaItemCatalogoId": 1,
+					"catalogoCodigoItem": "string",
+					"informacaoComplementar": "string"
+				}
+			],
+			"tipoInstrumentoConvocatorioId": "1",
+			"modalidadeId": "6",
+			"modoDisputaId": "1",
+			"numeroCompra": "1",
+			"numeroProcesso": "1",
+			"objetoCompra": "string",
+			"informacaoComplementar": "string",
+			"amparoLegalId": 1,
+			"srp": true,
+			"dataAberturaProposta": "2022-01-18T14:30:01",
+			"dataEncerramentoProposta": "2022-01-31T14:30:01",
+			"codigoUnidadeCompradora": "1",
+			"linkSistemaOrigem": "string",
+			"linkProcessoEletronico": "string",
+			"justificativaPresencial": "string"
+		};
+		type=application/json ’ -form ‘documento=@”arquivo.pdf” ’ 
 
 
 Exemplo Requisição (Java, usando Spring/RestTemplate) 
