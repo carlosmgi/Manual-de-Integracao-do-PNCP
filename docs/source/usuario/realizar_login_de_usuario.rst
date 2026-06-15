@@ -22,9 +22,9 @@ Exemplo de Payload
 .. code-block:: json
   :linenos:
 
-	{ 
-		"login": "1b182cec-f639-11eb-9a03-0242ac130003", 
-		"senha": "&1NaoCompartilho1Senha&" 
+	{
+		"login": "1b182cec-f639-11eb-9a03-0242ac130003",
+		"senha": "&1NaoCompartilho1Senha&"
 	}
 
 Exemplo Requisição (cURL)
