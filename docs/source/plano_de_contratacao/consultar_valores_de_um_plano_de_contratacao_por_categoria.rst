@@ -32,7 +32,9 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
   :linenos:
 
-    curl -X 'GET' 'https://treina.pncp.gov.br/api/pncp/v1/orgaos/00394460000141/pca/2022/1/valorcategoriaitem' -H 'accept: */*'
+	curl -k -X GET \
+	  "https://treina.pncp.gov.br/api/pncp/v1/orgaos/00394460000141/pca/2022/1/valorcategoriaitem" \
+	  -H "accept: */*"
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
