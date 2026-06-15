@@ -19,12 +19,16 @@ Detalhes da Requisição
 Exemplo de Payload
 ~~~~~~~~~~~~~~~~~~
 
-Não se aplica.
+.. code-block:: json
+  :linenos:
+
+   Não se aplica.
 
 Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
+  :linenos:
 
    curl -k -X GET \
      "https://treina.pncp.gov.br/api/pncp/v1/orgaos/00394460000141/pca/2022/1/itens/contratacao" \
