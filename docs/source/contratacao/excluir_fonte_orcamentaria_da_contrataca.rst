@@ -24,7 +24,10 @@ Exemplo de Payload
   :linenos:
 
 	{
-		"listaFonteOrcamentariaId": [2, 3],
+		"listaFonteOrcamentariaId": [
+			2,
+			3
+		],
 		"justificativaAtualizacao": "Motivo/justificativa para exclusão da fonte orçamentária da contratação"
 	}
 
@@ -33,6 +36,7 @@ Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: Bash
+  :linenos:
 
 	curl -k -X DELETE \
 	  "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1/arquivos/1" \
