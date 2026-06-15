@@ -21,8 +21,11 @@ Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
+  :linenos:
 
-	curl -X ‘GET’ "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1" -H "accept: */*" 
+	curl -k -X GET \
+	  "${BASE_URL}/v1/orgaos/10000000000003/compras/2021/1" \
+	  -H "accept: */*"
 
 Dados de Entrada
 ~~~~~~~~~~~~~~~~
