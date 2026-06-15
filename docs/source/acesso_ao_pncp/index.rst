@@ -1,7 +1,7 @@
 Acesso ao PNCP
 ==============
 
-Serviços que disponibilizam conjunto de operações relacionadas aos acessos no PNCP.
+Esta seção agrupa os serviços responsáveis pelo gerenciamento de acessos, autenticação e autorização no ecossistema do PNCP.
 
 Endereços de Acesso
 -------------------
