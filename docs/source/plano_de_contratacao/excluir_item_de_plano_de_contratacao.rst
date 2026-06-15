@@ -23,9 +23,9 @@ Exemplo de Payload
 .. code-block:: json
   :linenos:
 
-    {
-      "justificativa": ""
-    }
+	{
+		"justificativa": ""
+	}
 
 Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -33,9 +33,12 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
   :linenos:
 
-    curl -k -X DELETE --header "Authorization: Bearer access_token" 
-	"${BASE_URL}/v1/orgaos/10000000000003/pca/2022/1/itens/1" -H "accept: */*" 
-	-H "Content-Type: application/json" --data "@/home/objeto.json"
+	curl -k -X DELETE \
+	  --header "Authorization: Bearer access_token" \
+	  "${BASE_URL}/v1/orgaos/10000000000003/pca/2022/1/itens/1" \
+	  -H "accept: */*" \
+	  -H "Content-Type: application/json" \
+	  --data "@/home/objeto.json"
 
 Dados de entrada
 ~~~~~~~~~~~~~~~~
