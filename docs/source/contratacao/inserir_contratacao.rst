@@ -117,8 +117,8 @@ Enviando como arquivo:
 	  -H "accept: */*" \
 	  -H "Titulo-Documento: nome_do_arquivo" \
 	  -H "Tipo-Documento-Id: 1" \
-	  --form 'compra=@/home/objeto.json;type=application/json' \
-	  --form 'documento=@arquivo.pdf'
+	  --form "compra=@/home/objeto.json;type=application/json" \
+	  --form "documento=@arquivo.pdf"
 
 Enviando como JSON:
 
@@ -176,7 +176,7 @@ Enviando como JSON:
 			"linkProcessoEletronico": "string",
 			"justificativaPresencial": "string"
 		};
-		type=application/json ’ -form ‘documento=@”arquivo.pdf” ’ 
+		type=application/json  -form "documento=@arquivo.pdf”
 
 
 Exemplo Requisição (Java, usando Spring/RestTemplate) 
