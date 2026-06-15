@@ -109,21 +109,30 @@ Exemplo Requisição (cURL)
 Enviando como arquivo:
 
 .. code-block:: bash
-   
-    curl -k -X POST --header "Authorization: Beareraccess_token" "${BASE_URL}/v1/orgaos/10000000000003/compras" 
-	-H "accept: */*" -H "Content-Type: multipart/form-data" -H 'Titulo Documento: nome_do_arquivo' 
-	-H 'Tipo-Documento-Id: 1' --form ‘compra=@”/home/objeto.json";type=application/json ’ 
-	--form ‘documento=@”arquivo.pdf” ’ 
+  :linenos:
+
+	curl -k -X POST \
+	  --header "Authorization: Bearer access_token" \
+	  "${BASE_URL}/v1/orgaos/10000000000003/compras" \
+	  -H "accept: */*" \
+	  -H "Titulo-Documento: nome_do_arquivo" \
+	  -H "Tipo-Documento-Id: 1" \
+	  --form 'compra=@/home/objeto.json;type=application/json' \
+	  --form 'documento=@arquivo.pdf'
 
 Enviando como JSON:
 
 .. code-block:: bash
-     
-    curl -k -X POST --header "Authorization: Beareraccess_token" 
-	"${BASE_URL}/v1/orgaos/10000000000003/compras" 
-	-H "accept: */*" -H "Content-Type: multipart/form-data" -H 'Titulo Documento: nome_do_arquivo' 
-	-H 'Tipo-Documento-Id: 1' --form 
-	‘compra=@” {
+  :linenos:
+
+curl -k -X POST \
+  --header "Authorization: Bearer access_token" \
+  "${BASE_URL}/v1/orgaos/10000000000003/compras" \
+  -H "accept: */*" \
+  -H "Content-Type: multipart/form-data" \
+  -H "Titulo Documento: nome_do_arquivo" \
+  -H "Tipo-Documento-Id: 1"
+  --form "compra=@"	{
 		"anoCompra": 2021,
 		"itensCompra": [
 			{
@@ -174,6 +183,7 @@ Exemplo Requisição (Java, usando Spring/RestTemplate)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
+  :linenos:
 
     **gerando headers da requisição** 
     HttpHeaders headers = new HttpHeaders(); 
@@ -519,7 +529,8 @@ Exemplo de Retorno
 ~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
- 
+  :linenos:
+
     Retorno:  
     Headers: 
     access-control-allow-credentials: true 
@@ -536,8 +547,7 @@ Exemplo de Retorno
     x-content-type-options: nosniff 
     x-firefox-spdy: ? 
     x-frame-options: DENY 
-    x-xss-protection: 1; mode=block 
-     
+    x-xss-protection: 1; mode=block      
     Body: 
     { 
     "compraUri": https://treina.pncp.gov.br/api/pncp/v1/orgaos/10000000000003/compras/2022/1, 
