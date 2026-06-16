@@ -1,6 +1,8 @@
 Natureza Jurídica
 =================
 
+Identifica a classificação institucional e a estrutura jurídico-administrativa do órgão/entidade pública ou empresa cadastrada no PNCP.
+
 Código – Natureza Jurídica
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
