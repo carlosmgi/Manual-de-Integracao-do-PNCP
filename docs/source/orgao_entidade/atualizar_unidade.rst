@@ -12,7 +12,7 @@ município “Exterior” e UF “EX”.
 \
 
 .. figure:: ../../_static/img/Editar_unidade_administrativa.jpg
-	:width: 80%
+	:width: 50%
 	:align: center
 	:alt: Editar Unidade Administrativa
 
