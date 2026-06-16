@@ -31,7 +31,8 @@ Exemplo Requisição (cURL)
   :linenos:
   :emphasize-lines: 1
 
-  curl -k -X GET "${BASE_URL}/v1/orgaos/10000000000003/contratos/2021/1/termos/1/arquivos" \
+  curl -k -X GET \
+   "${BASE_URL}/v1/orgaos/10000000000003/contratos/2021/1/termos/1/arquivos" \
    -H "accept: */*"
 
 Dados de entrada
