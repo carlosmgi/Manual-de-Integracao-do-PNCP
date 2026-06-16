@@ -143,7 +143,7 @@ Exemplos
 Publicação de contrato por ente participante (SRP):
 """""""""""""""""""""""""""""""""""""""""""""""""""
 
-.. figure:: ../../_static/img/Publicacao_participante_v3.png
+.. figure:: ../../_static/img/Publicacao_participante_v2.png
    :width: 80%
    :align: center
    :alt: Publicação de contrato por ente participante (SRP)
