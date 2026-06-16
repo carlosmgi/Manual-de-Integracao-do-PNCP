@@ -1,9 +1,7 @@
 Consultar Porte de Empresa por Código
 =====================================
 
-.. tip::
-
-   Serviço que permite consultar o porte de empresa por código.
+Serviço que permite consultar o porte de empresa por código.
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
