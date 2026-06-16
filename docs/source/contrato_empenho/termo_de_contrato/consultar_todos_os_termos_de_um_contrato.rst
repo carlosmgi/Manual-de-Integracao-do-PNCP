@@ -72,6 +72,7 @@ Exemplo de Retorno
 ~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
+  :linenos:
 
 	Retorno:
 	
