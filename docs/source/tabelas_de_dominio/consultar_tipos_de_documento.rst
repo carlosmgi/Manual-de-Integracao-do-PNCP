@@ -1,11 +1,7 @@
 Consultar Tipos de Documento
 ============================
 
-.. attention::
-
-  Serviço que permite consultar os tipos de documento/arquivo cadastrados no PNCP.
-
-\
+Serviço que permite consultar os tipos de documento/arquivo cadastrados no PNCP.
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
