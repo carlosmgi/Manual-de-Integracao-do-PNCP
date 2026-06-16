@@ -1,9 +1,7 @@
 Consultar Porte de Empresa
 ==========================
 
-.. tip::
-
-   Serviço que recupera todos os portes de empresa. Opcionalmente poderá filtrar por ativos e inativos.
+Serviço que recupera todos os portes de empresa. Opcionalmente poderá filtrar por ativos e inativos.
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
