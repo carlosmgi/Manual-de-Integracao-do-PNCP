@@ -8,3 +8,5 @@ Domínio do tipo de amparo legal:
 - **Margem de preferência:** Tipo de amparo legal que deverá ser utilizado na   fundamentação legal da aplicação da margem de preferência no resultado do item.
 
 - **Critério de desempate:** Tipo de amparo legal que deverá ser utilizado na   fundamentação legal da aplicação do critério de desempate no resultado do item.
+
+Para consulta aos amparos legais acessar a página no Portal PNCP pelo endereço https://pncp.gov.br/app/entidades-dominio. Para ajudar na integração com o PNCP foram disponibilizados os serviços para consulta de amparo(s) legal(is).
