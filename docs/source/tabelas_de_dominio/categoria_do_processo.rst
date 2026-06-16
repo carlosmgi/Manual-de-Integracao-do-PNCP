@@ -1,6 +1,8 @@
 Categoria do Processo
 =====================
 
+O campo **categoriaProcessoId** identifica a classificação temática e a natureza do objeto principal do processo de contratação pública ou do procedimento administrativo.
+
 - (código = 1) **Cessão** 
 
 - (código = 2) **Compras**
