@@ -77,6 +77,7 @@ Exemplo de Retorno
 ~~~~~~~~~~~~~~~~~~
 
 .. code-block:: json
+  :linenos:
 
 	Retorno:
 	{
