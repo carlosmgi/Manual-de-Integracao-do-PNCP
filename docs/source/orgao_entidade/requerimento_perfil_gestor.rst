@@ -12,21 +12,21 @@ Com essa habilitação, o gestor se torna o responsável por fazer a gestão de 
 
 
 .. figure:: ../../_static/img/Requerimento_perfil_gestor_01.jpg
-	:width: 50%
+	:width: 100%
 	:align: center
 	:alt: Requerimento Perfil Gestor (dados do solicitante)
 
 \
 
 .. figure:: ../../_static/img/Requerimento_perfil_gestor_02.jpg
-	:width: 50%
+	:width: 100%
 	:align: center
 	:alt: Requerimento Perfil Gestor (dados do órgão/entidade)
 
 \
 
 .. figure:: ../../_static/img/Requerimento_perfil_gestor_03.jpg
-	:width: 50%
+	:width: 100%
 	:align: center
 	:alt: Requerimento Perfil Gestor (documentação comprobatória)
 
