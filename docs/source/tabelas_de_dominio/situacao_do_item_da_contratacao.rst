@@ -1,7 +1,7 @@
 Situação do Item da Contratação
 ===============================
 
-O campo **situacaoItemContratacao** é um atributo utilizado para rastrear o ciclo de vida e o estado atual de cada item ou lote pertencente a um processo licitatório ou contratação direta. Ele reflete com precisão o andamento da fase de disputa jurídica e administrativa do certame.
+O campo **situacaocompraitemid** é um atributo utilizado para rastrear o ciclo de vida e o estado atual de cada item ou lote pertencente a um processo licitatório ou contratação direta. Ele reflete com precisão o andamento da fase de disputa jurídica e administrativa do certame.
 
 - (código = 1) **Em Andamento:** Item com disputa/seleção do fornecedor/arrematante não finalizada. Situação atribuída na inclusão do item da contratação.
 
