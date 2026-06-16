@@ -6,14 +6,14 @@ O acesso à funcionalidade se dá pelo endereço: `https://pncp.gov.br/app/area-
 Cabe ao gestor órgão autorizar plataforma publicadora, seja ela pública ou privada, que passe a representar um novo órgão perante o PNCP.
 
 .. figure:: ../../_static/img/Consultar_orgao_entidade.jpg
-	:width: 80%
+	:width: 50%
 	:align: center
 	:alt: Consultar Órgão/Entidade
 
 \
 
 .. figure:: ../../_static/img/Gestao_orgao_entidade.jpg
-	:width: 80%
+	:width: 50%
 	:align: center
 	:alt: Gestão de Órgão/Entidade
 
@@ -25,7 +25,7 @@ Incluir Gestor de Órgão e Entidade
 \
 
 .. figure:: ../../_static/img/Incluir_gestor_orgao_entidade.jpg
-	:width: 80%
+	:width: 50%
 	:align: center
 	:alt: Incluir Gestor de Órgão e Entidade
 
@@ -37,14 +37,14 @@ Habilitar/Desabilitar plataforma
 \
 
 .. figure:: ../../_static/img/Habilitar_desabilitar_plataforma_busca.jpg
-	:width: 80%
+	:width: 50%
 	:align: center
 	:alt: Habilitar/Desabilitar plataforma (busca)
 
 \
 
 .. figure:: ../../_static/img/Habilitar_desabilitar_plataforma_adicionar.jpg
-	:width: 80%
+	:width: 50%
 	:align: center
 	:alt: Habilitar/Desabilitar plataforma (adicionar)
 
@@ -56,7 +56,7 @@ Incluir Unidade Administrativa
 \
 
 .. figure:: ../../_static/img/Incluir_unidade_administrativa.jpg
-	:width: 80%
+	:width: 50%
 	:align: center
 	:alt: Incluir Unidade Administrativa (adicionar)
 
@@ -68,7 +68,7 @@ Editar, Ativar/Inativar Unidade Administrativa
 \
 
 .. figure:: ../../_static/img/Editar_unidade_administrativa.jpg
-	:width: 80%
+	:width: 50%
 	:align: center
 	:alt: Editar, Ativar/Inativar Unidade Administrativa
 
