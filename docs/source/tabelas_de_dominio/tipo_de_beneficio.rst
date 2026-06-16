@@ -1,7 +1,7 @@
 Tipo de Benefício
 =================
 
-O campo **tipoBeneficio** é utilizado para identificar a aplicação dos benefícios legais e tratamentos diferenciados concedidos a Microempresas (ME) e Empresas de Pequeno Porte (EPP) no objeto da contratação, conforme previsto na legislação vigente.
+O campo **tipoBeneficioId** é utilizado para identificar a aplicação dos benefícios legais e tratamentos diferenciados concedidos a Microempresas (ME) e Empresas de Pequeno Porte (EPP) no objeto da contratação, conforme previsto na legislação vigente.
 
 - (código = 1) **Participação exclusiva para ME/EPP**
 
