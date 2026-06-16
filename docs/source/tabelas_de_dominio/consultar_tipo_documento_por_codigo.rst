@@ -1,11 +1,7 @@
 Consultar Tipo de Documento por Código
 ======================================
 
-.. attention::
-
-  Serviço que permite consultar um tipo de documento/arquivo pelo seu código.
-
-\
+Serviço que permite consultar um tipo de documento/arquivo pelo seu código.
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
