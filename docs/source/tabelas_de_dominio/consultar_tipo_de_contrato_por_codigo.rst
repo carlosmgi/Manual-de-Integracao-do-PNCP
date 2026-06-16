@@ -1,8 +1,7 @@
 Consultar Tipo de Contrato por Código
 =====================================
 
-.. Attention::
-  Serviço que permite consultar um tipo de contrato pelo seu código.
+Serviço que permite consultar um tipo de contrato pelo seu código.
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
