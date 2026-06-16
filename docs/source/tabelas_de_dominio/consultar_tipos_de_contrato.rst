@@ -1,9 +1,7 @@
 Consultar Tipos de Contrato
 ===========================
 
-.. attention::
-
-  Serviço que permite consultar os tipos de contrato cadastrados no PNCP.
+Serviço que permite consultar os tipos de contrato cadastrados no PNCP.
 
 \
 
