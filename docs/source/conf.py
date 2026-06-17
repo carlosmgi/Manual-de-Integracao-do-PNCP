@@ -78,7 +78,7 @@ latex_documents = [
      'Author', 'manual'),
 ]
 
-html_logo = "_static/logo-pncp-transparente.png"
+html_logo = "_static/img/logo-pncp-transparente.png"
 
 html_theme_options = {
     'logo_only': False,
