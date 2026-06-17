@@ -31,7 +31,7 @@ Incluir Gestor de Órgão e Entidade
 \
 
 .. figure:: ../../_static/img/Incluir_gestor_orgao_entidade.jpg
-	:width: 60%
+	:width: 50%
 	:align: center
 	:alt: Incluir Gestor de Órgão e Entidade
 
@@ -43,14 +43,14 @@ Habilitar/Desabilitar plataforma
 \
 
 .. figure:: ../../_static/img/Habilitar_desabilitar_plataforma_busca.jpg
-	:width: 60%
+	:width: 50%
 	:align: center
 	:alt: Habilitar/Desabilitar plataforma (busca)
 
 \
 
 .. figure:: ../../_static/img/Habilitar_desabilitar_plataforma_adicionar.jpg
-	:width: 60%
+	:width: 50%
 	:align: center
 	:alt: Habilitar/Desabilitar plataforma (adicionar)
 
@@ -62,7 +62,7 @@ Incluir Unidade Administrativa
 \
 
 .. figure:: ../../_static/img/Incluir_unidade_administrativa.jpg
-	:width: 60%
+	:width: 50%
 	:align: center
 	:alt: Incluir Unidade Administrativa (adicionar)
 
@@ -74,7 +74,7 @@ Editar, Ativar/Inativar Unidade Administrativa
 \
 
 .. figure:: ../../_static/img/Editar_unidade_administrativa.jpg
-	:width: 60%
+	:width: 50%
 	:align: center
 	:alt: Editar, Ativar/Inativar Unidade Administrativa
 
