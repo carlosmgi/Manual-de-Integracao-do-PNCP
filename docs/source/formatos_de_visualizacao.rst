@@ -5,4 +5,3 @@ Para garantir a melhor experiência de consulta e atender às diferentes necessi
 
 * `Padrão - formato html com paginação <../latest/>`_
 * `Página única - formato html em uma única página <../latest/singlehtml/>`_
-* `Visualização local - download do Manual em formato html com paginação <_/downloads/pt-br/latest/htmlzip/>`_
