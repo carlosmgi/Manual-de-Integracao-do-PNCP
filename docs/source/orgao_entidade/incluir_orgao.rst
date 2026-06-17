@@ -3,7 +3,7 @@ Incluir Órgão
 
 Serviço **destinado exclusivamente aos administradores do PNCP** que permite inserir um órgão/entidade que eventualmente não se encontre nos repositórios do PNCP, ou seja, o portal possui uma base de dados com as informações dos Órgãos ou Entes da Federação. No entanto, caso o Órgão ou Ente não esteja incluso nessa base de dados o usuário pode utilizar este serviço com vistas a inclusão. 
 
-**Observação:** Este serviço não pode ser confundido com o serviço `Inserir Entes Autorizados para um Usuário <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/usuario/inserir_entes_autorizados_para_um_usuario.html>`_, que cadastra a lista de CNPJs dos entes autorizados (órgão) o qual o usuário estar-se-á apto a divulgar informações. 
+**Observação:** Este serviço não pode ser confundido com o serviço `Inserir Entes Autorizados para um Usuário <../usuario/inserir_entes_autorizados_para_um_usuario.html>`_, que cadastra a lista de CNPJs dos entes autorizados (órgão) o qual o usuário estar-se-á apto a divulgar informações. 
 
 A partir de 25/08/2023 este serviço está integrado com o sistema CNPJ bastando informar apenas o número de CNPJ do órgão. 
 
