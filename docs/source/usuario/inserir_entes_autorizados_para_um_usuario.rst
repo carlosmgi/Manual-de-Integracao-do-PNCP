@@ -5,7 +5,7 @@ Serviço que permite inserir um ou mais CNPJs de entes autorizados para um usuá
 Para plataformas privadas, a inclusão de novos entes autorizados requer contato prévio com a central de atendimento e apresentação de comprovação de vínculo com o ente público. 
 
 .. warning::
-   Disponível apenas no ambiente de treinamento/homologação. No ambiente de produção, utilize o procedimento do item `Gestão de Órgão e Entidade  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/orgao_entidade/index.html>`_.
+   Disponível apenas no ambiente de treinamento/homologação. No ambiente de produção, utilize o procedimento do item `Gestão de Órgão e Entidade  <../orgao_entidade/index.html>`_.
 
 \
 
