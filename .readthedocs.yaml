@@ -4,6 +4,8 @@ build:
   os: "ubuntu-22.04"
   tools:
     python: "3.11"
+    install:
+      - requirements: docs/requirements.txt
   jobs:
     post_build:
       # Cria a pasta para a página única dentro do diretório de saída HTML
