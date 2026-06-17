@@ -90,7 +90,7 @@ O Histórico de Versões do Manual de Integração do PNCP. tem como objetivo re
 Versão: 2.5
 -----------
 
-Versão em .pdf disponível para download em `Manual de Integração do PNCP. <https://manual-de-integracao-do-pncp.readthedocs.io/_/downloads/pt-br/latest/pdf/>`_
+Versão em .pdf disponível para download em `Manual de Integração do PNCP. <../../../_/downloads/pt-br/latest/pdf/>`_
 
 Data: 11/06/2026
 
