@@ -1,7 +1,7 @@
 Situação da Contratação 
 =======================
 
-O campo **situacaoCompraId** determina o estado administrativo e jurídico global do processo de contratação pública dentro do Portal Nacional de Contratações Públicas (PNCP). Diferente da situação do item, este atributo reflete o status do procedimento como um todo.
+O campo ``situacaoCompraId`` determina o estado administrativo e jurídico global do processo de contratação pública dentro do Portal Nacional de Contratações Públicas (PNCP). Diferente da situação do item, este atributo reflete o status do procedimento como um todo.
 
 - (código = 1) **Divulgada no PNCP:** Contratação divulgada no PNCP. Situação atribuída na inclusão da contratação.
 
