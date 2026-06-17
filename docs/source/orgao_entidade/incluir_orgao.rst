@@ -91,6 +91,7 @@ Exemplo de Retorno
 ~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
+  :linenos:
 
 	Retorno: 
 	access-control-allow-credentials: true 
