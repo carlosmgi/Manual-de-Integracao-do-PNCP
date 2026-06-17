@@ -18,8 +18,3 @@ python:
 
 sphinx:
   configuration: docs/source/conf.py
-
-# Formatos adicionais na raiz
-formats:
-  - pdf
-  - htmlzip
