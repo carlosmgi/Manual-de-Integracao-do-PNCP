@@ -4,10 +4,6 @@ build:
   os: "ubuntu-22.04"
   tools:
     python: "3.11"
-  python:
-    install:
-      # Certifique-se de que o seu requirements.txt esteja nesta pasta
-      - requirements: docs/requirements.txt  
   jobs:
     post_build:
       # Cria a pasta para a página única dentro do diretório de saída HTML
@@ -15,7 +11,12 @@ build:
       # Compila a versão de página única apontando para a pasta source
       - sphinx-build -b singlehtml docs/source/ $READTHEDOCS_OUTPUT/html/singlehtml/
 
-# Configuração do Sphinx atualizada com o seu caminho
+# CORREÇÃO: A chave 'python' agora fica no primeiro nível do arquivo
+python:
+  install:
+    - requirements: docs/requirements.txt  
+
+# Configuração do Sphinx
 sphinx:
   configuration: docs/source/conf.py
 
