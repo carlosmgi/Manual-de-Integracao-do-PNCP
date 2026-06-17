@@ -7,4 +7,4 @@ Para garantir a melhor experiência de consulta e atender às diferentes necessi
 * `Página única - formato html em página única (impressão) <../latest/singlehtml/>`_
 
 * `Padrão - formato html com paginação <.>`_
-* `Página única - formato html em página única (impressão) <singlehtml/index.html>`_
+* `Página única - formato html em página única (impressão) <./singlehtml/index.html>`_
