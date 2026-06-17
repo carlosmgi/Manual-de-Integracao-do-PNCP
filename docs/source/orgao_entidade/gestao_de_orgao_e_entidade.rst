@@ -40,7 +40,8 @@ Incluir Gestor de Órgão/ Entidade
 Habilitar/ Desabilitar plataforma 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-\
+Remover plataforma
+++++++++++++++++++
 
 .. figure:: ../../_static/img/Habilitar_desabilitar_plataforma_busca.jpg
 	:width: 50%
@@ -48,6 +49,9 @@ Habilitar/ Desabilitar plataforma
 	:alt: Habilitar/Desabilitar plataforma (busca)
 
 \
+
+Incluir plataforma
+++++++++++++++++++
 
 .. figure:: ../../_static/img/Habilitar_desabilitar_plataforma_adicionar.jpg
 	:width: 50%
