@@ -78,6 +78,8 @@ latex_documents = [
      'Author', 'manual'),
 ]
 
+html_logo = "_static/logo-pncp-transparente.png"
+
 # Arquivo para injetar javascript
 # html_js_files = [
 #     ("readthedocs.js", {"defer": "defer"}),
