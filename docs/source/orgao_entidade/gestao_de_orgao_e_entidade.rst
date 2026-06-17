@@ -25,7 +25,7 @@ Gerir Órgão/ Entidade
 
 \
 
-Incluir Gestor de Órgão e Entidade
+Incluir Gestor de Órgão/ Entidade
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 \
