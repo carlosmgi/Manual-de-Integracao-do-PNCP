@@ -8,15 +8,14 @@ build:
     post_build:
       # Cria a pasta para a página única dentro do diretório de saída HTML
       - mkdir -p $READTHEDOCS_OUTPUT/html/singlehtml/
-      # Compila a versão de página única apontando para a pasta source
-      - sphinx-build -b singlehtml docs/source/ $READTHEDOCS_OUTPUT/html/singlehtml/
+      # CORREÇÃO: Adicionado "-D language=pt_BR" para forçar a tradução das diretivas
+      - sphinx-build -b singlehtml -D language=pt_BR docs/source/ $READTHEDOCS_OUTPUT/html/singlehtml/
 
-# CORREÇÃO: A chave 'python' agora fica no primeiro nível do arquivo
+# Configuração do Sphinx
 python:
   install:
     - requirements: docs/requirements.txt  
 
-# Configuração do Sphinx
 sphinx:
   configuration: docs/source/conf.py
 
