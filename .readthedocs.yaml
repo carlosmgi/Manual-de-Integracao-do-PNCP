@@ -14,3 +14,7 @@ sphinx:
 
 formats:
   - pdf
+
+site_name: Manual de Integração do PNCP
+site_author: COPNCP/CGGES/DELOG/SEGES/MGI
+site_description: Manual de Integração do PNCP
