@@ -9,8 +9,8 @@ Gestão de Plataforma
 
 \
 
-.. figure:: ../../_static/img/Redefinicao_login_senha.jpg
-	:width: 80%
+.. figure:: ../../_static/img/Redefinicao_login_senha.png
+	:width: 100%
 	:align: center
 	:alt: Redefinição de login e senha
 \
