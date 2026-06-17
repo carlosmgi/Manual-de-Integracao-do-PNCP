@@ -13,4 +13,6 @@ sphinx:
   configuration: docs/source/conf.py
 
 formats:
-  - pdf
+  - htmlzip                 # Opcional: download em ZIP
+  - pdf                     # Opcional: download em PDF
+  - singlehtml              # OBRIGATÓRIO: ativa a página única HTML
