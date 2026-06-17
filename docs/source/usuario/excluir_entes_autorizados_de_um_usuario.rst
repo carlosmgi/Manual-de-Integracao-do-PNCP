@@ -7,7 +7,7 @@ PNCP.
 Para plataformas privadas, a exclusão de novos entes autorizados requer contato prévio com a central de atendimento e comprovação de vínculo com a plataforma privada. 
 
 .. Attention::
-	Disponível apenas no ambiente de treinamento/homologação. No ambiente de produção, utilize o procedimento do item `Gestão de Órgão e Entidade. <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/orgao_entidade/gestao_de_orgao_e_entidade.html>`_
+	Disponível apenas no ambiente de treinamento/homologação. No ambiente de produção, utilize o procedimento do item `Gestão de Órgão e Entidade. <../orgao_entidade/gestao_de_orgao_e_entidade.html>`_
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
