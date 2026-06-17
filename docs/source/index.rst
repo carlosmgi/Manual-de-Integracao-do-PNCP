@@ -10,6 +10,7 @@ Sumário
    :numbered:
    :maxdepth: 3
 
+   formatos_de_visualizacao.rst
    historico_de_versoes/index
    objetivo/index
    protocolo_de_comunicacao/index
