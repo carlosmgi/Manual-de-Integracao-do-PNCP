@@ -1,6 +1,8 @@
 Consultar Fonte Orçamentária por Código 
 =======================================
 
+Serviço que permite consultar fonte orçamentária cadastrada no PNCP.
+
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
 
