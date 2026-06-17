@@ -8,7 +8,7 @@ Serviço que permite incluir um contrato ou empenho. Este serviço será acionad
 
     O sistema exige o upload de um arquivo anexo ao contrato enviado. As extensões permitidas para o arquivo anexo são listadas na seção Tabelas de domínio - Envio de arquivos pelas APIs de Documento e os tipos de documento/arquivo aceitos pelo PNCP podem ser consultados na seção Tabelas de domínio - Tipo de Documento, deste manual.
   
-    Conforme regra de conformidade, prevista em `Consultar conformidade entre Instrumentos Convocatórios e Modos de Disputa <../tabelas_de_dominio/consultar_conformidade_entre_instrumentos_convocatorios_e_modos_de_disputa.html>`_ não é possível a inclusão ou retificação de contrato ou empenho que pertença à contratação realizada por Sistema de Registro de Preços (SRP), a qual não possua ao menos uma ata de registro de preços publicada no PNCP. 
+    Conforme regra de conformidade, prevista em `Consultar conformidade entre Instrumentos Convocatórios e Modos de Disputa <../../tabelas_de_dominio/consultar_conformidade_entre_instrumentos_convocatorios_e_modos_de_disputa.html>`_ não é possível a inclusão ou retificação de contrato ou empenho que pertença à contratação realizada por Sistema de Registro de Preços (SRP), a qual não possua ao menos uma ata de registro de preços publicada no PNCP. 
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
