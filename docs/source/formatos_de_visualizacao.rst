@@ -6,5 +6,5 @@ Para garantir a melhor experiência de consulta e atender às diferentes necessi
 * `Padrão - formato html com paginação <../latest/>`_
 * `Página única - formato html em página única (impressão) <../latest/singlehtml/>`_
 
-* `Padrão - formato html com paginação <../../../index.html>`_
-* `Página única - formato html em página única (impressão) <../singlehtml/index.html>`_
+* `Padrão - formato html com paginação </pt-br/latest/>`_
+* `Página única - formato html em página única (impressão) </pt-br/latest/singlehtml/>`_
