@@ -80,6 +80,11 @@ latex_documents = [
 
 html_logo = "_static/logo-pncp-transparente.png"
 
+html_theme_options = {
+    'logo_only': False,
+    'display_version': True,
+}
+
 # Arquivo para injetar javascript
 # html_js_files = [
 #     ("readthedocs.js", {"defer": "defer"}),
