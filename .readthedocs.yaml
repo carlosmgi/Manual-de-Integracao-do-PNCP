@@ -11,6 +11,7 @@ python:
 
 sphinx:
   configuration: docs/source/conf.py
+  builder: singlehtml
 
 formats:
   - htmlzip
