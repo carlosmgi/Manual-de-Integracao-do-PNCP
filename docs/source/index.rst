@@ -1,7 +1,7 @@
 Manual de Integração do PNCP
 ============================
 
-.. figure:: ../../_static/img/logo-pncp-transparente.png
+.. figure:: _static/img/logo-pncp-transparente.png
 	:align: left
 	:alt: logo PNCP
 
