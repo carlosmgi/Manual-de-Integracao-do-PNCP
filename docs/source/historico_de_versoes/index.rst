@@ -107,19 +107,19 @@ Novo Padrão CNPJ:
 
 **Tabelas de domínio:**
 
-`Consultar Porte de Empresa por Código  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/tabelas_de_dominio/consultar_porte_de_empresa_por_codigo.html>`_ 
+`Consultar Porte de Empresa por Código  <../tabelas_de_dominio/consultar_porte_de_empresa_por_codigo.html>`_ 
 
-`Consultar Porte de Empresao  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/tabelas_de_dominio/consultar_porte_de_empresa.html>`_ 
+`Consultar Porte de Empresao  <../tabelas_de_dominio/consultar_porte_de_empresa.html>`_ 
 
 **Serviços de Contratação (Editais, Avisos e Atos):**
 
-`Inserir Resultado do Item de uma Contratação  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contratacao/inserir_resultado_do_item_de_uma_contratacao.html>`_ 
+`Inserir Resultado do Item de uma Contratação  <../contratacao/inserir_resultado_do_item_de_uma_contratacao.html>`_ 
 
-`Retificar Resultado do Item de uma Contratação  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contratacao/retificar_resultado_do_item_de_uma_contratacao.html>`_ 
+`Retificar Resultado do Item de uma Contratação  <../contratacao/retificar_resultado_do_item_de_uma_contratacao.html>`_ 
 
-`Consultar Resultados de Item de uma Contratação  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contratacao/consultar_resultados_de_item_de_uma_contratacao.html>`_ 
+`Consultar Resultados de Item de uma Contratação  <../contratacao/consultar_resultados_de_item_de_uma_contratacao.html>`_ 
 
-`Consultar um Resultado específico de Item de uma Contratação  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contratacao/consultar_um_resultado_especifico_de_item_de_uma_contratacao.html>`_ 
+`Consultar um Resultado específico de Item de uma Contratação  <../contratacao/consultar_um_resultado_especifico_de_item_de_uma_contratacao.html>`_ 
 
 
 Versão: 2.4
@@ -132,51 +132,51 @@ Data: 09/04/2026
 
 **Tabelas de domínio:**
 
-`Tipo de Contrato  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/tabelas_de_dominio/tipo_de_contrato.html>`_ 
+`Tipo de Contrato  <../tabelas_de_dominio/tipo_de_contrato.html>`_ 
 
-`Consultar Tipo de Contrato por Código  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/tabelas_de_dominio/consultar_tipo_de_contrato_por_codigo.html>`_ 
+`Consultar Tipo de Contrato por Código  <../tabelas_de_dominio/consultar_tipo_de_contrato_por_codigo.html>`_ 
 
-`Consultar Tipos de Contrato  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/tabelas_de_dominio/consultar_tipos_de_contrato.html>`_    
+`Consultar Tipos de Contrato  <../tabelas_de_dominio/consultar_tipos_de_contrato.html>`_    
 
-`Tipo de Documento  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/tabelas_de_dominio/tipo_de_documento.html>`_ 
+`Tipo de Documento  <../tabelas_de_dominio/tipo_de_documento.html>`_ 
 
-`Consultar Tipo de Documento por Código    <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/tabelas_de_dominio/consultar_tipo_documento_por_codigo.html>`_ 
+`Consultar Tipo de Documento por Código    <../tabelas_de_dominio/consultar_tipo_documento_por_codigo.html>`_ 
 
-`Consultar Tipos de Documento  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/tabelas_de_dominio/consultar_tipos_de_documentos.html>`_ 
+`Consultar Tipos de Documento  <../tabelas_de_dominio/consultar_tipos_de_documentos.html>`_ 
 
 **Serviços de Contratação (Editais, Avisos e Atos):**
 
-`Retificar Parcialmente uma Contratação   <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contratacao/retificar_parcialmente_uma_contratacao.html>`_ 
+`Retificar Parcialmente uma Contratação   <../contratacao/retificar_parcialmente_uma_contratacao.html>`_ 
 
-`Consultar uma Contratação   <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contratacao/consultar_uma_contratacao.html>`_ 
+`Consultar uma Contratação   <../contratacao/consultar_uma_contratacao.html>`_ 
 
 **Serviços de Ata:**
 
-`Inserir Ata de Registro de Preço   <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/ata_de_registro_de_preco/inserir_ata_de_registro_de_preco.html>`_ 
+`Inserir Ata de Registro de Preço   <../ata_de_registro_de_preco/inserir_ata_de_registro_de_preco.html>`_ 
 
 **Serviços de Contrato/Empenho:**
 
-`Inserir Contrato/Empenho  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contrato_empenho/inserir_contratos_ou_empenhos.html>`_ 
+`Inserir Contrato/Empenho  <../contrato_empenho/inserir_contratos_ou_empenhos.html>`_ 
 
-`Retificar Contrato/Empenho  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contrato_empenho/retificar_contrato_ou_empenho.html>`_ 
+`Retificar Contrato/Empenho  <../contrato_empenho/retificar_contrato_ou_empenho.html>`_ 
 
-`Consultar Contrato/Empenho  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contrato_empenho/consultar_contrato_ou_empenho.html>`_  
+`Consultar Contrato/Empenho  <../contrato_empenho/consultar_contrato_ou_empenho.html>`_  
 
-`Consultar Contratos/Empenhos de uma Contratação  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contrato_empenho/consultar_contratos_ou_empenhos_de_uma_contratacao.html>`_  
+`Consultar Contratos/Empenhos de uma Contratação  <../contrato_empenho/consultar_contratos_ou_empenhos_de_uma_contratacao.html>`_  
 
-`Consultar Histórico do Contrato/Empenho  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contrato_empenho/consultar_historico_do_contrato_ou_empenho.html>`_  
+`Consultar Histórico do Contrato/Empenho  <../contrato_empenho/consultar_historico_do_contrato_ou_empenho.html>`_  
 
-`Retificar Parcialmente um Contrato/Empenho  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contrato_empenho/retificar_parcialmente_um_contrato_ou_empenho.html>`_  
+`Retificar Parcialmente um Contrato/Empenho  <../contrato_empenho/retificar_parcialmente_um_contrato_ou_empenho.html>`_  
 
-`Inserir Empenho  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/empenho/inserir_empenho.html>`_ 
+`Inserir Empenho  <../empenho/inserir_empenho.html>`_ 
 
-`Retificar Parcialmente Empenho  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/empenho/retificar_parcialmente_empenho.html>`_  
+`Retificar Parcialmente Empenho  <../empenho/retificar_parcialmente_empenho.html>`_  
 
-`Excluir Empenho  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/empenho/excluir_empenho.html>`_ 
+`Excluir Empenho  <../empenho/excluir_empenho.html>`_ 
 
-`Consultar Empenho pelo Número Sequencial  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/empenho/consultar_empenho_pelo_numero_sequencial.html>`_ 
+`Consultar Empenho pelo Número Sequencial  <../empenho/consultar_empenho_pelo_numero_sequencial.html>`_ 
 
-`Consultar Empenhos  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/empenho/consultar_empenhos.html>`_ 
+`Consultar Empenhos  <../empenho/consultar_empenhos.html>`_ 
 
 Versão: 2.3.11
 --------------
@@ -186,7 +186,7 @@ Data: 18/03/2026
 .. note::
  Funcionalidades que possibilitam recepcionar e identificar contratos fruto de ata de registro de preços no PNCP, bem como informações sobre as partes envolvidas.
 
-`Fluxos de Inclusão de Contratos fruto de Ata de Registro de Preços (ARP) no PNCP <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contrato_empenho/fluxos_de_inclusao_de_contratos_fruto_de_ata_de_registro_de_precos_(arp)_no_pncp.html>`_ 
+`Fluxos de Inclusão de Contratos fruto de Ata de Registro de Preços (ARP) no PNCP <../contrato_empenho/fluxos_de_inclusao_de_contratos_fruto_de_ata_de_registro_de_precos_(arp)_no_pncp.html>`_ 
 
 Versão: 2.3.10
 --------------
@@ -196,38 +196,38 @@ Data: 24/02/2026
 .. note::
  Funcionalidades que possibilitam recepcionar e identificar contratos fruto de ata de registro de preços no PNCP, bem como informações sobre as partes envolvidas.
  
-`Inserir Ata de Registro de Preço <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/ata_de_registro_de_preco/inserir_ata_de_registro_de_preco
+`Inserir Ata de Registro de Preço <../ata_de_registro_de_preco/inserir_ata_de_registro_de_preco
 .html>`_ 
 
-`Retificar Ata de Registro de Preço <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/ata_de_registro_de_preco/retificar_ata_de_registro_de_preco.html>`_ 
+`Retificar Ata de Registro de Preço <../ata_de_registro_de_preco/retificar_ata_de_registro_de_preco.html>`_ 
 
-`Retificar Parcialmente Ata de Registro de Preço  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/ata_de_registro_de_preco/retificar_parcialmente_ata_de_registro_de_preco.html>`_
+`Retificar Parcialmente Ata de Registro de Preço  <../ata_de_registro_de_preco/retificar_parcialmente_ata_de_registro_de_preco.html>`_
 
-`Excluir Ata de Registro de Preço  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/ata_de_registro_de_preco/excluir_ata_de_registro_de_preco.html>`_
+`Excluir Ata de Registro de Preço  <../ata_de_registro_de_preco/excluir_ata_de_registro_de_preco.html>`_
 
-`Consultar Atas de Registro de Preço por Compra   <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/ata_de_registro_de_preco/consultar_atas_de_registro_de_preco_por_compra.html>`_
+`Consultar Atas de Registro de Preço por Compra   <../ata_de_registro_de_preco/consultar_atas_de_registro_de_preco_por_compra.html>`_
 
-`Consultar Ata de Registro de Preço   <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/ata_de_registro_de_preco/consultar_ata_de_registro_de_preco.html>`_
+`Consultar Ata de Registro de Preço   <../ata_de_registro_de_preco/consultar_ata_de_registro_de_preco.html>`_
 
-`Consultar Contratos de Ata de Registro de Preço   <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/ata_de_registro_de_preco/consultar_contratos_de_ata_de_registro_de_preco.html>`_
+`Consultar Contratos de Ata de Registro de Preço   <../ata_de_registro_de_preco/consultar_contratos_de_ata_de_registro_de_preco.html>`_
 
-`Inserir Parte Envolvida na Ata de Registro de Preço   <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/ata_de_registro_de_preco/inserir_parte_envolvida_na_ata_de_registro_de_preco.html>`_
+`Inserir Parte Envolvida na Ata de Registro de Preço   <../ata_de_registro_de_preco/inserir_parte_envolvida_na_ata_de_registro_de_preco.html>`_
 
-`Excluir Parte Envolvida em Ata de Registro de Preço   <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/ata_de_registro_de_preco/excluir_parte_envolvida_em_ata_de_registro_de_preco.html>`_
+`Excluir Parte Envolvida em Ata de Registro de Preço   <../ata_de_registro_de_preco/excluir_parte_envolvida_em_ata_de_registro_de_preco.html>`_
 
-`Consultar Parte Envolvida em Ata de Registro de Preço   <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/ata_de_registro_de_preco/consultar_parte_envolvida_em_ata_de_registro_de_preco.html>`_
+`Consultar Parte Envolvida em Ata de Registro de Preço   <../ata_de_registro_de_preco/consultar_parte_envolvida_em_ata_de_registro_de_preco.html>`_
 
-`Consultar Partes Envolvidas em Ata de Registro de Preço   <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/ata_de_registro_de_preco/consultar_partes_envolvidas_em_ata_de_registro_de_preco.html>`_
+`Consultar Partes Envolvidas em Ata de Registro de Preço   <../ata_de_registro_de_preco/consultar_partes_envolvidas_em_ata_de_registro_de_preco.html>`_
 
 **Serviços de Contrato/Empenho**
 
-`Inserir Contrato/Empenho   <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contrato_empenho/inserir_contratos_ou_empenhos.html>`_
+`Inserir Contrato/Empenho   <../contrato_empenho/inserir_contratos_ou_empenhos.html>`_
 
-`Retificar Contrato/Empenho   <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contrato_empenho/retificar_contrato_ou_empenho.html>`_
+`Retificar Contrato/Empenho   <../contrato_empenho/retificar_contrato_ou_empenho.html>`_
 
-`Consultar Contrato/Empenho   <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contrato_empenho/consultar_contrato_ou_empenho.html>`_
+`Consultar Contrato/Empenho   <../contrato_empenho/consultar_contrato_ou_empenho.html>`_
 
-`Consultar Contratos/Empenhos de uma Contratação   <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/contrato_empenho/consultar_contratos_ou_empenhos_de_uma_contratacao.html>`_
+`Consultar Contratos/Empenhos de uma Contratação   <../contrato_empenho/consultar_contratos_ou_empenhos_de_uma_contratacao.html>`_
 
 Versão: 2.3.9
 -------------
@@ -239,33 +239,33 @@ Data: 06/01/2026
 
 **Recomendações Iniciais:**
 
-`Cadastro Inicial dos Órgãos/Entidades e suas Unidades <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/recomendacoes_iniciais/index.html>`_
+`Cadastro Inicial dos Órgãos/Entidades e suas Unidades <../recomendacoes_iniciais/index.html>`_
 
 **Serviços de Usuário:**
 
-`Inserir Entes Autorizados para um Usuário  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/usuario/atualizar_usuario.html>`_
+`Inserir Entes Autorizados para um Usuário  <../usuario/atualizar_usuario.html>`_
 
-`Excluir Entes Autorizados de um Usuário  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/usuario/excluir_entes_autorizados_de_um_usuario.html>`_ 
+`Excluir Entes Autorizados de um Usuário  <../usuario/excluir_entes_autorizados_de_um_usuario.html>`_ 
 
 **Gestão de Plataforma**
 
 **Serviços de Órgão/Entidade**
 
-`Incluir Unidade  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/orgao_entidade/incluir_unidade.html>`_  
+`Incluir Unidade  <../orgao_entidade/incluir_unidade.html>`_  
 
-`Atualizar Unidade  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/orgao_entidade/atualizar_unidade.html>`_   
+`Atualizar Unidade  <../orgao_entidade/atualizar_unidade.html>`_   
 
-`Requerimento Perfil Gestor  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/orgao_entidade/requerimento_perfil_gestor.html>`_  
+`Requerimento Perfil Gestor  <../orgao_entidade/requerimento_perfil_gestor.html>`_  
 
 **Gestão de Órgão e Entidade** 
 
-`Incluir Gestor de Órgão e Entidade  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/orgao_entidade/gestao_de_orgao_e_entidade.html>`_ 
+`Incluir Gestor de Órgão e Entidade  <../orgao_entidade/gestao_de_orgao_e_entidade.html>`_ 
 
-`Habilitar/Desabilitar plataforma  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/orgao_entidade/gestao_de_orgao_e_entidade.html>`_  
+`Habilitar/Desabilitar plataforma  <../orgao_entidade/gestao_de_orgao_e_entidade.html>`_  
 
-`Incluir Unidade Administrativa  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/orgao_entidade/gestao_de_orgao_e_entidade.html>`_  
+`Incluir Unidade Administrativa  <../orgao_entidade/gestao_de_orgao_e_entidade.html>`_  
 
-`Editar, Ativar/Inativar Unidade Administrativa  <https://manual-de-integracao-do-pncp.readthedocs.io/pt-br/latest/orgao_entidade/gestao_de_orgao_e_entidade.html>`_  
+`Editar, Ativar/Inativar Unidade Administrativa  <../orgao_entidade/gestao_de_orgao_e_entidade.html>`_  
 
 Versão: 2.3.8
 -------------
