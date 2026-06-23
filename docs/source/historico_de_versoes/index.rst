@@ -140,7 +140,7 @@ Data: 09/04/2026
 
 `Consultar Tipo de Documento por Código    <../tabelas_de_dominio/consultar_tipo_documento_por_codigo.html>`_ 
 
-`Consultar Tipos de Documento  <../tabelas_de_dominio/consultar_tipos_de_documentos.html>`_ 
+`Consultar Tipos de Documento  <../tabelas_de_dominio/consultar_tipos_de_documento.html>`_ 
 
 **Serviços de Contratação (Editais, Avisos e Atos):**
 
