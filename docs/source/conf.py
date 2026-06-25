@@ -78,12 +78,12 @@ latex_documents = [
      'Author', 'manual'),
 ]
 
-html_logo = "_static/img/logo-pncp-transparente-branco.png"
+# html_logo = "_static/img/logo-pncp-transparente-branco.png"
 
-html_theme_options = {
-    'logo_only': False,
-    'display_version': True,
-}
+# html_theme_options = {
+#     'logo_only': False,
+#     'display_version': True,
+# }
 
 # Arquivo para injetar javascript
 # html_js_files = [
