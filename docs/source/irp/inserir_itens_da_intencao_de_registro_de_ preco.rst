@@ -48,8 +48,6 @@ Exemplo de Payload
 Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Enviando como arquivo:
-
 .. code-block:: bash
   :linenos:
   :emphasize-lines: 1-6
