@@ -12,6 +12,10 @@ def destaque_amarelo_claro_role(name, rawtext, text, lineno, inliner, options={}
     node = nodes.inline(text, text, classes=['destaque-amarelo-claro'])
     return [node], []
 
+def destaque_verde_claro_role(name, rawtext, text, lineno, inliner, options={}, content=[]):
+    node = nodes.inline(text, text, classes=['destaque-verde-claro'])
+    return [node], []
+
 def linha_destaque_role(name, rawtext, text, lineno, inliner, options={}, content=[]):
     node = nodes.inline(rawtext, text, classes=['linha-destaque'])
     return [node], []
@@ -29,9 +33,10 @@ roles.register_local_role('destaque', destaque_role)
 roles.register_local_role('destaque-azul-claro', destaque_azul_claro_role)
 roles.register_local_role('destaque-amarelo-claro', destaque_amarelo_claro_role)
 roles.register_local_role('linha-destaque', linha_destaque_role)
+roles.register_local_role('destaque-verde-claro', destaque_verde_claro_role)
 
 #-- Alterar a versão atual do manual em todas as páginas
-version = "2.5"
+version = "2.6"
 
 rst_epilog = f"""
 .. |versao| replace:: {version}
