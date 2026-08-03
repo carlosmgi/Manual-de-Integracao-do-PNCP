@@ -1,7 +1,7 @@
 Inserir Intenção de Registro de Preço
 =====================================
 
-Serviço que permite inserir uma Intenção de Registro de Preço. Este serviço será acionado por qualquer plataforma digital credenciada.
+Serviço que permite inserir uma Intenção de Registro de Preço (IRP). Este serviço será acionado por qualquer plataforma digital credenciada.
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -22,6 +22,7 @@ Exemplo de Payload
 
 .. code-block:: json
   :linenos:
+  :emphasize-lines: 1-53
 
 		"codigoUnidadeGerenciadora": "1010",
 		"tipoInstrumentoConvocatorioId": 1,
@@ -84,6 +85,7 @@ Enviando como arquivo:
 
 .. code-block:: bash
   :linenos:
+  :emphasize-lines: 1-8
 
 	curl -k -X POST \
 	  --header "Authorization: Bearer access_token" \
@@ -112,161 +114,161 @@ Dados de Entrada
      - Obrigatório
      - Descrição
 
-   * - 1
-     - codigoUnidadeGerenciadora
-     - String
-     - Sim
-     - Código da unidade executora do órgão da IRP; a unidade deverá estar cadastrada para o órgão
-   * - 2
-     - tipoInstrumentoConvocatorioId
-     - Inteiro
-     - Sim
-     - Código da tabela de domínio Tipo de instrumento convocatório
-   * - 3
-     - modalidadeId
-     - Inteiro
-     - Sim
-     - Código da tabela de domínio Modalidade
-   * - 4
-     - amparoLegalId
-     - Inteiro
-     - Sim
-     - Código da tabela de domínio Amparo Legal
-   * - 5
-     - modoDisputaId
-     - Inteiro
-     - Sim
-     - Código da tabela de domínio Modo de disputa
-   * - 6
-     - numeroIrp
-     - Texto (50)
-     - Sim
-     - Número da IRP no sistema de origem
-   * - 7
-     - anoIrp
-     - Inteiro
-     - Sim
-     - Ano da IRP. Esse é o ano relacionado à IRP. (Ex: 2021)
-   * - 8
-     - numeroProcesso
-     - Texto (50)
-     - Sim
-     - Número do processo no sistema de origem
-   * - 9
-     - objetoIrp
-     - Texto (512)
-     - Sim
-     - Objeto da IRP.
-   * - 10
-     - informacaoComplementar
-     - Texto (512)
-     - Não
-     - Informações complementares; Se existir;
-   * - 11
-     - indicadorPossibilidadeAdesao
-     - Booleano
-     - Sim
-     - Indica se a IRP poderá admitir adesão por órgãos ou entidades participantes
-   * - 12
-     - dataHoraFinalManifestacaoInteresse
-     - Data
-     - Sim
-     - Data/Hora Final de Manifestação de Interesse (AAAA-MM-DD)
-   * - 13
-     - urlPlataformaOrigem
-     - Texto (512)
-     - Sim
-     - URL para página/portal do sistema de origem da IRP. Esta url será exibida no Portal PNCP.
-   * - 14
-     - urlProcessoEletronico
-     - Texto (512)
-     - Sim
-     - URL para página do sistema de controle de processos eletrônicos com os dados do processo desta contratação. Esta url será exibida no Portal PNCP.
-   * - 15
-     - itensIrp
-     - Lista
-     - Sim
+   * - destaque-verde-claro`1`
+     - destaque-verde-claro`codigoUnidadeGerenciadora`
+     - destaque-verde-claro`String`
+     - destaque-verde-claro`Sim`
+     - destaque-verde-claro`Código da unidade executora do órgão da IRP; a unidade deverá estar cadastrada para o órgão`
+   * - destaque-verde-claro`2`
+     - destaque-verde-claro`tipoInstrumentoConvocatorioId`
+     - destaque-verde-claro`Inteiro`
+     - destaque-verde-claro`Sim`
+     - destaque-verde-claro`Código da tabela de domínio Tipo de instrumento convocatório`
+   * - destaque-verde-claro`3`
+     - destaque-verde-claro`modalidadeId`
+     - destaque-verde-claro`Inteiro`
+     - destaque-verde-claro`Sim`
+     - destaque-verde-claro`Código da tabela de domínio Modalidade`
+   * - destaque-verde-claro`4`
+     - destaque-verde-claro`amparoLegalId`
+     - destaque-verde-claro`Inteiro`
+     - destaque-verde-claro`Sim`
+     - destaque-verde-claro`Código da tabela de domínio Amparo Legal`
+   * - destaque-verde-claro`5`
+     - destaque-verde-claro`modoDisputaId`
+     - destaque-verde-claro`Inteiro`
+     - destaque-verde-claro`Sim`
+     - destaque-verde-claro`Código da tabela de domínio Modo de disputa`
+   * - destaque-verde-claro`6`
+     - destaque-verde-claro`numeroIrp`
+     - destaque-verde-claro`Texto (50)`
+     - destaque-verde-claro`Sim`
+     - destaque-verde-claro`Número da IRP no sistema de origem`
+   * - destaque-verde-claro`7`
+     - destaque-verde-claro`anoIrp`
+     - destaque-verde-claro`Inteiro`
+     - destaque-verde-claro`Sim`
+     - destaque-verde-claro`Ano da IRP. Esse é o ano relacionado à IRP. (Ex: 2021)`
+   * - destaque-verde-claro`8`
+     - destaque-verde-claro`numeroProcesso`
+     - destaque-verde-claro`Texto (50)`
+     - destaque-verde-claro`Sim`
+     - destaque-verde-claro`Número do processo no sistema de origem`
+   * - destaque-verde-claro`9`
+     - destaque-verde-claro`objetoIrp`
+     - destaque-verde-claro`Texto (512)`
+     - destaque-verde-claro`Sim`
+     - destaque-verde-claro`Objeto da IRP.`
+   * - destaque-verde-claro`10`
+     - destaque-verde-claro`informacaoComplementar`
+     - destaque-verde-claro`Texto (512)`
+     - destaque-verde-claro`Não`
+     - destaque-verde-claro`Informações complementares; Se existir;`
+   * - destaque-verde-claro`11`
+     - destaque-verde-claro`indicadorPossibilidadeAdesao`
+     - destaque-verde-claro`Booleano`
+     - destaque-verde-claro`Sim`
+     - destaque-verde-claro`Indica se a IRP poderá admitir adesão por órgãos ou entidades participantes`
+   * - destaque-verde-claro`12`
+     - destaque-verde-claro`dataHoraFinalManifestacaoInteresse`
+     - destaque-verde-claro`Data`
+     - destaque-verde-claro`Sim`
+     - destaque-verde-claro`Data/Hora Final de Manifestação de Interesse (AAAA-MM-DD)`
+   * - destaque-verde-claro`13`
+     - destaque-verde-claro`urlPlataformaOrigem`
+     - destaque-verde-claro`Texto (512)`
+     - destaque-verde-claro`Sim`
+     - destaque-verde-claro`URL para página/portal do sistema de origem da IRP. Esta url será exibida no Portal PNCP.`
+   * - destaque-verde-claro`14`
+     - destaque-verde-claro`urlProcessoEletronico`
+     - destaque-verde-claro`Texto (512)`
+     - destaque-verde-claro`Sim`
+     - destaque-verde-claro`URL para página do sistema de controle de processos eletrônicos com os dados do processo desta contratação. Esta url será exibida no Portal PNCP.`
+   * - destaque-verde-claro`15`
+     - destaque-verde-claro`itensIrp`
+     - destaque-verde-claro`Lista`
+     - destaque-verde-claro`Sim`
      - 
-   * - 15.1
-     - numeroItem
-     - Inteiro
-     - Sim
-     - Número do item na IRP (único e sequencial crescente)
-   * - 15.2
-     - materialOuServico
-     - Texto (1)
-     - Sim
-     - Domínio: M - Material; S - Serviço;
-   * - 15.3
-     - categoriaItemId
-     - Inteiro
-     - Não
-     - Código da categoria do item. Consultar `Categoria de Item <https://pncp.gov.br/app/entidades-dominio>`_ para mais informações.
-   * - 15.4
-     - criterioJulgamentoId
-     - Inteiro
-     - Sim
-     - Código da tabela de domínio Critério de julgamento
-   * - 15.5
-     - aplicabilidadeMargemPreferencia
-     - Booleano
-     - Sim
-     - Indicador da aplicabilidade de Margem de Preferência para o item. (False/Não; True/Sim)
-   * - 15.6
-     - exigenciaConteudoNacional
-     - Booleano
-     - Sim
-     - Indicador de Exigência de Conteúdo Nacional (False/Não; True/Sim)
-   * - 15.7
-     - descricao
-     - Texto (512)
-     - Sim
-     - Descrição para o item
-   * - 15.8
-     - informacaoComplementar
-     - Texto (512)
-     - Não
-     - Informações complementares; Se existir;
-   * - 15.9
-     - unidadeFornecimento
-     - Texto (30)
-     - Sim
-     - Unidade de Fornecimento
-   * - 15.10
-     - valorUnitarioEstimado
-     - Decimal
-     - Sim
-     - Valor unitário estimado para o item da IRP. Maior ou igual a 0 (zero). Precisão de 4 dígitos decimais; Ex: 100.0000;
-   * - 15.11
-     - indicadorValorSigiloso
-     - Booleano
-     - Sim
-     - Identifica se o valor do item é sigiloso; true - Sigiloso; false - Não sigiloso;
-   * - 15.12
-     - codigoGtin
-     - Texto (20)
-     - Não
-     - Identifica precisamente um item quando ele possui um código de barras padronizado
-   * - 15.13
-     - codigoNcmNbs
-     - Texto (15)
-     - Não
-     - Código NCM do material ou Código NBS do serviço com ou sem a formatação da máscara.
-   * - 15.14
-     - descricaoNcmNbs
-     - Texto (2048)
-     - Não
-     - Descrição respectiva ao NCM para material ou NBS para serviço.
-   * - 15.15
-     - catalogoId
-     - Inteiro
-     - Não
-     - Código do Catálogo de itens utilizado como referência. Consultar 7.45. Catálogos (Itens de Plano de Contratações e Contratações) para mais informações.
-   * - 15.16
-     - codigoItemCatalogo
-     - Texto (20)
-     - Não
-     - Código do item conforme consta no Catálogo utilizado como referência.
+   * - destaque-verde-claro`15.1`
+     - destaque-verde-claro`numeroItem`
+     - destaque-verde-claro`Inteiro`
+     - destaque-verde-claro`Sim`
+     - destaque-verde-claro`Número do item na IRP (único e sequencial crescente)`
+   * - destaque-verde-claro`15.2`
+     - destaque-verde-claro`materialOuServico`
+     - destaque-verde-claro`Texto (1)`
+     - destaque-verde-claro`Sim`
+     - destaque-verde-claro`Domínio: M - Material; S - Serviço;`
+   * - destaque-verde-claro`15.3`
+     - destaque-verde-claro`categoriaItemId`
+     - destaque-verde-claro`Inteiro`
+     - destaque-verde-claro`Não`
+     - destaque-verde-claro`Código da categoria do item. Consultar `Categoria de Item <https://pncp.gov.br/app/entidades-dominio>`_ para mais informações.`
+   * - destaque-verde-claro`15.4`
+     - destaque-verde-claro`criterioJulgamentoId`
+     - destaque-verde-claro`Inteiro`
+     - destaque-verde-claro`Sim`
+     - destaque-verde-claro`Código da tabela de domínio Critério de julgamento`
+   * - destaque-verde-claro`15.5`
+     - destaque-verde-claro`aplicabilidadeMargemPreferencia`
+     - destaque-verde-claro`Booleano`
+     - destaque-verde-claro`Sim`
+     - destaque-verde-claro`Indicador da aplicabilidade de Margem de Preferência para o item. (False/Não; True/Sim)`
+   * - destaque-verde-claro`15.6`
+     - destaque-verde-claro`exigenciaConteudoNacional`
+     - destaque-verde-claro`Booleano`
+     - destaque-verde-claro`Sim`
+     - destaque-verde-claro`Indicador de Exigência de Conteúdo Nacional (False/Não; True/Sim)`
+   * - destaque-verde-claro`15.7`
+     - destaque-verde-claro`descricao`
+     - destaque-verde-claro`Texto (512)`
+     - destaque-verde-claro`Sim`
+     - destaque-verde-claro`Descrição para o item`
+   * - destaque-verde-claro`15.8`
+     - destaque-verde-claro`informacaoComplementar`
+     - destaque-verde-claro`Texto (512)`
+     - destaque-verde-claro`Não
+     - destaque-verde-claro`Informações complementares; Se existir;
+   * - destaque-verde-claro`15.9`
+     - destaque-verde-claro`unidadeFornecimento`
+     - destaque-verde-claro`Texto (30)`
+     - destaque-verde-claro`Sim`
+     - destaque-verde-claro`Unidade de Fornecimento`
+   * - destaque-verde-claro`15.10`
+     - destaque-verde-claro`valorUnitarioEstimado`
+     - destaque-verde-claro`Decimal`
+     - destaque-verde-claro`Sim`
+     - destaque-verde-claro`Valor unitário estimado para o item da IRP. Maior ou igual a 0 (zero). Precisão de 4 dígitos decimais; Ex: 100.0000;`
+   * - destaque-verde-claro`15.11`
+     - destaque-verde-claro`indicadorValorSigiloso`
+     - destaque-verde-claro`Booleano`
+     - destaque-verde-claro`Sim`
+     - destaque-verde-claro`Identifica se o valor do item é sigiloso; true - Sigiloso; false - Não sigiloso;`
+   * - destaque-verde-claro`15.12`
+     - destaque-verde-claro`codigoGtin`
+     - destaque-verde-claro`Texto (20)`
+     - destaque-verde-claro`Não`
+     - destaque-verde-claro`Identifica precisamente um item quando ele possui um código de barras padronizado`
+   * - destaque-verde-claro`15.13`
+     - destaque-verde-claro`codigoNcmNbs`
+     - destaque-verde-claro`Texto (15)`
+     - destaque-verde-claro`Não`
+     - destaque-verde-claro`Código NCM do material ou Código NBS do serviço com ou sem a formatação da máscara.`
+   * - destaque-verde-claro`15.14`
+     - destaque-verde-claro`descricaoNcmNbs`
+     - destaque-verde-claro`Texto (2048)`
+     - destaque-verde-claro`Não`
+     - destaque-verde-claro`Descrição respectiva ao NCM para material ou NBS para serviço.`
+   * - destaque-verde-claro`15.15`
+     - destaque-verde-claro`catalogoId`
+     - destaque-verde-claro`Inteiro`
+     - destaque-verde-claro`Não`
+     - destaque-verde-claro`Código do Catálogo de itens utilizado como referência. Consultar 7.45. Catálogos (Itens de Plano de Contratações e Contratações) para mais informações.`
+   * - destaque-verde-claro`15.16`
+     - destaque-verde-claro`codigoItemCatalogo`
+     - destaque-verde-claro`Texto (20)`
+     - destaque-verde-claro`Não`
+     - destaque-verde-claro`Código do item conforme consta no Catálogo utilizado como referência.`
 
 Códigos de Retorno
 ~~~~~~~~~~~~~~~~~~
@@ -279,21 +281,21 @@ Códigos de Retorno
    * - Código HTTP
      - Mensagem
      - Tipo
-   * - 200
-     - Created
-     - Sucesso
-   * - 204
-     - No Content
-     - Sucesso
-   * - 400
-     - Bad Request
-     - Erro
-   * - 401
-     - Unauthorized
-     - Erro
-   * - 422
-     - Unprocessable Entity
-     - Erro
-   * - 500
-     - Internal Server Error
-     - Erro
+   * - destaque-verde-claro`200`
+     - destaque-verde-claro`Created`
+     - destaque-verde-claro`Sucesso`
+   * - destaque-verde-claro`204`
+     - destaque-verde-claro`No Content`
+     - destaque-verde-claro`Sucesso`
+   * - destaque-verde-claro`400`
+     - destaque-verde-claro`Bad Request`
+     - destaque-verde-claro`Erro`
+   * - destaque-verde-claro`401`
+     - destaque-verde-claro`Unauthorized`
+     - destaque-verde-claro`Erro`
+   * - destaque-verde-claro`422`
+     - destaque-verde-claro`Unprocessable Entity`
+     - destaque-verde-claro`Erro`
+   * - destaque-verde-claro`500`
+     - destaque-verde-claro`Internal Server Error`
+     - destaque-verde-claro`Erro`
