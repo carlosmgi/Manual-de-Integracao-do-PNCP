@@ -123,7 +123,7 @@ Dados de Entrada
    * - :destaque-verde-claro:`1.8`
      - :destaque-verde-claro:`informacaoComplementar`
      - :destaque-verde-claro:`Texto (5120)`
-     - :destaque-verde-claro:`Não
+     - :destaque-verde-claro:`Não`
      - :destaque-verde-claro:`Informações complementares; Se existir;`
    * - :destaque-verde-claro:`1.9`
      - :destaque-verde-claro:`unidadeFornecimento`
