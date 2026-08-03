@@ -23,6 +23,7 @@ Exemplo de Payload
 .. code-block:: json
   :linenos:
   :emphasize-lines: 1-54
+
 	{
 		"codigoUnidadeGerenciadora": "1010",
 		"tipoInstrumentoConvocatorioId": 1,
@@ -104,7 +105,7 @@ Dados de Entrada
 
 .. list-table::
    :width: 100%
-   :widths: 5 25 20 15 55
+   :widths: 5 25 10 30 55
    :header-rows: 1
    :class: quebra-linha-dois-ultima
 
