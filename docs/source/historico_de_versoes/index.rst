@@ -5,7 +5,7 @@ O Histórico de Versões do Manual de Integração do PNCP. tem como objetivo re
 
 .. Attention::
 
-   As alterações da versão 2.6 estão destacadas em xxxxxxxxxxxxxxxxx, conforme o exemplo a seguir:
+   As alterações da versão 2.6 estão destacadas em verde, conforme o exemplo a seguir:
 
 .. list-table::
    :width: 100%
@@ -21,10 +21,10 @@ O Histórico de Versões do Manual de Integração do PNCP. tem como objetivo re
      - cnpj
      - Texto
      - CNPJ do órgão do contrato/empenho
-   * - :destaque-azul-claro:`2`
-     - :destaque-azul-claro:`ano`
-     - :destaque-azul-claro:`Inteiro`
-     - :destaque-azul-claro:`Ano do contrato/empenho`
+   * - :destaque-verde-claro:`2`
+     - :destaque-verde-claro:`ano`
+     - :destaque-verde-claro:`Inteiro`
+     - :destaque-verde-claro:`Ano do contrato/empenho`
    * - 3
      - sequencialContrato
      - Inteiro
@@ -129,7 +129,8 @@ Novo Padrão CNPJ:
 
 **Tabelas de domínio:**
 
-`Inserir Intenção de Registro de Preço  <../irp/inserir_intencao_de_registro_de_preco.html>`_ 
+`Inserir Intenção de Registro de Preço  <../irp/inserir_intencao_de_registro_de_preco.html>`_
+`Inserir Itens da Intenção de Registro de Preço <../irp/inserir_itens_da_intencao_de_registro_de_ preco.html>`_
 
 Versão: 2.5
 -----------
