@@ -125,6 +125,21 @@ Dados de Entrada
      - Lista
      - Sim
      - 
+   * - 15.1
+     - numeroItem
+     - Inteiro
+     - Sim
+     - Número do item na IRP (único e sequencial crescente)
+   * - 15.2
+     - materialOuServico
+     - Texto (1)
+     - Sim
+     - Domínio: M - Material; S - Serviço;
+   * - 15.3
+     - materialOuServico
+     - Texto (1)
+     - Sim
+     - Domínio: M - Material; S - Serviço;
 
 Códigos de Retorno
 ~~~~~~~~~~~~~~~~~~
