@@ -23,6 +23,41 @@ Exemplo de Payload
 .. code-block:: json
   :linenos:
 
+		"codigoUnidadeGerenciadora": "1010",
+		"tipoInstrumentoConvocatorioId": 1,
+		"modalidadeId": 6,
+		"amparoLegalId": 1,
+		"modoDisputaId": 1,
+		"numeroIrp": "0001",
+		"anoIrp": 2026,
+		"numeroProcesso": "1/2026",
+		"objetoIrp": "Descrição do objeto da contratação",
+		"informacaoComplementar": "",
+		"indicadorPossibilidadeAdesao": true,
+		"dataHoraFinalManifestacaoInteresse": "2026-12-30T10:00:00",
+		"urlPlataformaOrigem": "url do sistema de origem da IRP",
+		"urlProcessoEletronico": "url para página do sistema de controle de processos eletrônicos com os dados da IRP.",
+		"itensIrp": [
+			{
+				"numeroItem": 1,
+				"materialOuServico": "M",
+				"categoriaItemId": 1,
+				"criterioJulgamentoId": 1,
+				"aplicabilidadeMargemPreferencia": false,
+				"exigenciaConteudoNacional": false,
+				"descricao": "Item do tipo material",
+				"informacaoComplementar": "SUCO DE UVA INTEGRAL 200ML",
+				"unidadeFornecimento": "UN",
+				"valorUnitarioEstimado": 10.5,
+				"indicadorValorSigiloso": false,
+				"codigoGtin": "7891141029318",
+				"codigoNcmNbs": "2009.69.00",
+				"descricaoNcmNbs": "suco de uva integral 200 ml",
+				"catalogoId": 1,
+				"codigoItemCatalogo": "9999999"
+			}
+		]
+	}
 
 Exemplo Requisição (cURL)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
