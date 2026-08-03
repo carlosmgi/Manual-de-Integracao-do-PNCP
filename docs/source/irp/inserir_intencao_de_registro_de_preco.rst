@@ -13,7 +13,7 @@ Detalhes da Requisição
 
    * - Endpoint
      - Método HTTP
-   * - /v1/orgaos/{cnpj}/compras 
+   * - /v1/orgaos/{cnpj}/irp 
      - POST
 	 
 
@@ -84,6 +84,15 @@ Enviando como arquivo:
 
 .. code-block:: bash
   :linenos:
+
+	curl -k -X POST \
+	  --header "Authorization: Bearer access_token" \
+	  "${BASE_URL}/v1/orgaos/10000000000003/irp" \
+	  -H "accept: */*" \
+	  -H "Titulo-Documento: nome_do_arquivo" \
+	  -H "Tipo-Documento-Id: 1" \
+	  --form "irp=@/home/objeto.json;type=application/json" \
+	  --form "documento=@arquivo.pdf"
 
 Dados de Entrada
 ~~~~~~~~~~~~~~~~
