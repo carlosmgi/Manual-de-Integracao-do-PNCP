@@ -253,7 +253,7 @@ Dados de entrada
    * - :destaque-amarelo-claro:`32`
      - :destaque-amarelo-claro:`sequencialAta`
      - :destaque-amarelo-claro:`Inteiro`
-     - :destaque-amarelo-claro:`Não`
+     - :destaque-amarelo-claro:`Condicional: informar este campo apenas quando o contrato estiver vinculado a uma contratação do tipo SRP. Nos demais casos, o campo deve ser suprimido.`
      - :destaque-amarelo-claro:`Número sequencial da ata de registro de preço (gerado pelo PNCP no momento da inclusão da ata)`
    * - :destaque-amarelo-claro:`33`
      - :destaque-amarelo-claro:`frutoAdesao`
