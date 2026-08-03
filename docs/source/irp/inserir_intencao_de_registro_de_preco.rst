@@ -105,7 +105,7 @@ Dados de Entrada
 
 .. list-table::
    :width: 100%
-   :widths: 5 25 10 30 55
+   :widths: 5 25 10 10 55
    :header-rows: 1
    :class: quebra-linha-dois-ultima
 
@@ -157,7 +157,7 @@ Dados de Entrada
      - :destaque-verde-claro:`Número do processo no sistema de origem`
    * - :destaque-verde-claro:`9`
      - :destaque-verde-claro:`objetoIrp`
-     - :destaque-verde-claro:`Texto (512)`
+     - :destaque-verde-claro:`Texto (5120)`
      - :destaque-verde-claro:`Sim`
      - :destaque-verde-claro:`Objeto da IRP.`
    * - :destaque-verde-claro:`10`
@@ -204,7 +204,7 @@ Dados de Entrada
      - :destaque-verde-claro:`categoriaItemId`
      - :destaque-verde-claro:`Inteiro`
      - :destaque-verde-claro:`Não`
-     - :destaque-verde-claro:`Código da categoria do item. Consultar `Categoria de Item <https://pncp.gov.br/app/entidades-dominio>`_ para mais informações.`
+     - :destaque-verde-claro:`Código da categoria do item. Consultar Categoria de Item para mais informações.`
    * - :destaque-verde-claro:`15.4`
      - :destaque-verde-claro:`criterioJulgamentoId`
      - :destaque-verde-claro:`Inteiro`
@@ -227,9 +227,9 @@ Dados de Entrada
      - :destaque-verde-claro:`Descrição para o item`
    * - :destaque-verde-claro:`15.8`
      - :destaque-verde-claro:`informacaoComplementar`
-     - :destaque-verde-claro:`Texto (512)`
+     - :destaque-verde-claro:`Texto (5120)`
      - :destaque-verde-claro:`Não
-     - :destaque-verde-claro:`Informações complementares; Se existir;
+     - :destaque-verde-claro:`Informações complementares; Se existir;`
    * - :destaque-verde-claro:`15.9`
      - :destaque-verde-claro:`unidadeFornecimento`
      - :destaque-verde-claro:`Texto (30)`
