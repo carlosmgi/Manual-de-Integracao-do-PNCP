@@ -279,11 +279,17 @@ Códigos de Retorno
    * - Código HTTP
      - Mensagem
      - Tipo
-   * - 201
+   * - 200
      - Created
+     - Sucesso
+   * - 204
+     - No Content
      - Sucesso
    * - 400
      - Bad Request
+     - Erro
+   * - 401
+     - Unauthorized
      - Erro
    * - 422
      - Unprocessable Entity
