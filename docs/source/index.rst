@@ -26,4 +26,5 @@ Sumário
    empenho/index
    termo_de_contrato/index
    orgao_entidade/index
+   irp/index
    suporte/index
