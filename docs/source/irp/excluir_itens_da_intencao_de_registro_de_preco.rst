@@ -24,7 +24,7 @@ Exemplo de Payload
   :emphasize-lines: 1-4
 
     {
-      "numerosItens": [1],
+      "numerosItens": [1,2,3],
       "justificativa": "string"
     }
 
