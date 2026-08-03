@@ -2,7 +2,35 @@ Histórico de Versões
 ====================
 
 O Histórico de Versões do Manual de Integração do PNCP. tem como objetivo registrar a evolução cronológica das atualizações e melhorias técnicas do documento, assegurando que todas as equipes de desenvolvimento e órgãos integradores acompanhem as mudanças normativas e sistêmicas. Ao utilizar esse histórico, os desenvolvedores e gestores garantem o alinhamento com os schemas e endpoints vigentes, o que otimiza a manutenção das APIs, a correção de inconformidades e a implementação de novas funcionalidades no portal. O uso do histórico de versões contribui para a previsibilidade, a transparência e a governança das manutenções evolutivas no ecossistema de contratações públicas.
- 
+
+.. Attention::
+
+   As alterações da versão 2.6 estão destacadas em xxxxxxxxxxxxxxxxx, conforme o exemplo a seguir:
+
+.. list-table::
+   :width: 100%
+   :widths: 5 10 15 55
+   :header-rows: 1
+   :class: quebra-linha-ultima-coluna
+
+   * - Id
+     - Campo
+     - Tipo
+     - Descrição
+   * - 1
+     - cnpj
+     - Texto
+     - CNPJ do órgão do contrato/empenho
+   * - :destaque-azul-claro:`2`
+     - :destaque-azul-claro:`ano`
+     - :destaque-azul-claro:`Inteiro`
+     - :destaque-azul-claro:`Ano do contrato/empenho`
+   * - 3
+     - sequencialContrato
+     - Inteiro
+     - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
+
+
 
 .. Attention::
 
@@ -86,6 +114,22 @@ O Histórico de Versões do Manual de Integração do PNCP. tem como objetivo re
      - sequencialContrato
      - Inteiro
      - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
+
+
+Versão: 2.6
+-----------
+
+Data: xx/xx/2026
+
+Novo Padrão CNPJ:
+
+.. tip:: 
+
+  Texto aqui
+
+**Tabelas de domínio:**
+
+`Inserir Intenção de Registro de Preço  <../irp/inserir_intencao_de_registro_de_preco.html>`_ 
 
 Versão: 2.5
 -----------
