@@ -136,10 +136,75 @@ Dados de Entrada
      - Sim
      - Domínio: M - Material; S - Serviço;
    * - 15.3
-     - materialOuServico
-     - Texto (1)
+     - categoriaItemId
+     - Inteiro
+     - Não
+     - Código da categoria do item. Consultar `Categoria de Item <https://pncp.gov.br/app/entidades-dominio>`_ para mais informações.
+   * - 15.4
+     - criterioJulgamentoId
+     - Inteiro
      - Sim
-     - Domínio: M - Material; S - Serviço;
+     - Código da tabela de domínio Critério de julgamento
+   * - 15.5
+     - aplicabilidadeMargemPreferencia
+     - Booleano
+     - Sim
+     - Indicador da aplicabilidade de Margem de Preferência para o item. (False/Não; True/Sim)
+   * - 15.6
+     - exigenciaConteudoNacional
+     - Booleano
+     - Sim
+     - Indicador de Exigência de Conteúdo Nacional (False/Não; True/Sim)
+   * - 15.7
+     - descricao
+     - Texto (512)
+     - Sim
+     - Descrição para o item
+   * - 15.8
+     - informacaoComplementar
+     - Texto (512)
+     - Não
+     - Informações complementares; Se existir;
+   * - 15.9
+     - unidadeFornecimento
+     - Texto (30)
+     - Sim
+     - Unidade de Fornecimento
+   * - 15.10
+     - valorUnitarioEstimado
+     - Decimal
+     - Sim
+     - Valor unitário estimado para o item da IRP. Maior ou igual a 0 (zero). Precisão de 4 dígitos decimais; Ex: 100.0000;
+   * - 15.11
+     - indicadorValorSigiloso
+     - Booleano
+     - Sim
+     - Identifica se o valor do item é sigiloso; true - Sigiloso; false - Não sigiloso;
+   * - 15.12
+     - codigoGtin
+     - Texto (20)
+     - Não
+     - Identifica precisamente um item quando ele possui um código de barras padronizado
+   * - 15.13
+     - codigoNcmNbs
+     - Texto (15)
+     - Não
+     - Código NCM do material ou Código NBS do serviço com ou sem a formatação da máscara.
+   * - 15.14
+     - descricaoNcmNbs
+     - Texto (2048)
+     - Não
+     - Descrição respectiva ao NCM para material ou NBS para serviço.
+   * - 15.15
+     - catalogoId
+     - Inteiro
+     - Não
+     - Código do Catálogo de itens utilizado como referência. Consultar 7.45. Catálogos (Itens de Plano de Contratações e Contratações) para mais informações.
+   * - 15.16
+     - codigoItemCatalogo
+     - Texto (20)
+     - Não
+     - Código do item conforme consta no Catálogo utilizado como referência.
 
 Códigos de Retorno
 ~~~~~~~~~~~~~~~~~~
