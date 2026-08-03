@@ -283,13 +283,13 @@ Dados de Entrada
 
    * - 11
      - objetoCompra
-     - Texto (512)
+     - Texto (5120)
      - Sim
      - Objeto da contratação
 
    * - 12
      - informacaoComplementar
-     - Texto (512)
+     - Texto (5120)
      - Não
      - Informações complementares; Se existir;
 
@@ -463,7 +463,7 @@ Dados de Entrada
 
    * - 17.24
      - informacaoComplementar
-     - Texto (4096)
+     - Texto (5120)
      - Não
      - Descrição complementar para o produto ou serviço
 
