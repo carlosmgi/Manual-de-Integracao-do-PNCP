@@ -447,7 +447,7 @@ Dados de Entrada
      - categoriaItemCatalogoId
      - Inteiro
      - Não
-     - Código da categoria do item. Consultar item 5.17 Categoria de Item para mais informações
+     - Código da categoria do item. Consultar `Categoria de Item <https://pncp.gov.br/app/entidades-dominio>`_ para mais informações
 
    * - 17.22
      - catalogoId
