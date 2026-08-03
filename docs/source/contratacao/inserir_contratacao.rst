@@ -453,7 +453,7 @@ Dados de Entrada
      - catalogoId
      - Inteiro
      - Não
-     - Código do Catálogo de itens utilizado como referência. Consultar item 5.23 Catálogos para mais informações
+     - Código do Catálogo de itens utilizado como referência. Consultar 7.45. Catálogos (Itens de Plano de Contratações e Contratações) para mais informações
 
    * - 17.23
      - catalogoCodigoItem
