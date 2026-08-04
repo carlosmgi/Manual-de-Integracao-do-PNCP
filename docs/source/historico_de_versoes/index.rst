@@ -132,6 +132,7 @@ Novo Padrão CNPJ:
 `Inserir Intenção de Registro de Preço  <../irp/inserir_intencao_de_registro_de_preco.html>`_
 `Inserir Itens da Intenção de Registro de Preço  <../irp/inserir_itens_da_intencao_de_registro_de_ preco.html>`_
 `Excluir Itens da Intenção de Registro de Preço  <../irp/excluir_itens_da_intencao_de_registro_de_preco.html>`_
+`Retificar Parcialmente Itens da Intenção de Registro de Preço  <../irp/retificar_parcialmente_itens_da_intencao_de_registro_de_preco.html>`_
 
 Versão: 2.5
 -----------
