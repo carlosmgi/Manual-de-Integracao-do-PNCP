@@ -129,7 +129,7 @@ Dados de Entrada
      - :destaque-verde-claro:`Código da tabela de domínio Modo de disputa`
    * - :destaque-verde-claro:`10`
      - :destaque-verde-claro:`situacaoIrpId`
-     - :destaque-verde-claro:
+     - 
      - :destaque-verde-claro:`Não`
      - :destaque-verde-claro:`Caso informe este campo, os itens até 10.5 serão obrigatórios.`
    * - :destaque-verde-claro:`10.1`
