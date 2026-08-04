@@ -134,6 +134,7 @@ Novo Padrão CNPJ:
 `Excluir Itens da Intenção de Registro de Preço  <../irp/excluir_itens_da_intencao_de_registro_de_preco.html>`_
 `Retificar Parcialmente Itens da Intenção de Registro de Preço  <../irp/retificar_parcialmente_itens_da_intencao_de_registro_de_preco.html>`_
 `Inserir Documento em Intenção de Registro de Preço  <../irp/inserir_documento_em_intencao_de_registro_de_preco.html>`_
+`Excluir Intenção de Registro de Preço <../irp/excluir_intencao_de_registro_de_preco.html>`_
 
 Versão: 2.5
 -----------
