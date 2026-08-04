@@ -8,3 +8,4 @@ Intenção de Registro de Preços
   inserir_intencao_de_registro_de_preco
   inserir_itens_da_intencao_de_registro_de_ preco
   excluir_itens_da_intencao_de_registro_de_preco
+  retificar_parcialmente_itens_da_intencao_de_registro_de_preco
