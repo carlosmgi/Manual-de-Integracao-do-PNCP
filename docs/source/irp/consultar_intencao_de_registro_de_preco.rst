@@ -285,6 +285,7 @@ Dados de Retorno
      - :destaque-verde-claro:`Data`
      - :destaque-verde-claro:`Data da última atualização global do registro da IRP considerando seus dependentes (item da IRP, arquivo/documento da IRP, etc)`
 
+
 Códigos de Retorno
 ~~~~~~~~~~~~~~~~~~
 
