@@ -136,6 +136,7 @@ Novo Padrão CNPJ:
 `Retificar Parcialmente Itens da Intenção de Registro de Preço  <../irp/retificar_parcialmente_itens_da_intencao_de_registro_de_preco.html>`_
 `Consultar Dados de Todos os Documentos de uma Intenção de Registro de Preço  <../irp/consultar_dados_de_todos_os_documentos_de_uma_intencao_de_registro_de_preco.html>`_
 `Inserir Documento em Intenção de Registro de Preço  <../irp/inserir_documento_em_intencao_de_registro_de_preco.html>`_
+`Consultar Intenção de Registro de Preço  <../irp/consultar_intencao_de_registro_de_preco.html>`_
 `Excluir Intenção de Registro de Preço <../irp/excluir_intencao_de_registro_de_preco.html>`_
 `Retificar parcialmente uma Intenção de Registro de Preço <../irp/retificar_parcialmente_uma_intencao_de_registro_de_preco.html>`_
 `Excluir Arquivo/Documento de Intenção de Registro de Preço <../irp/excluir_arquivodocumento_de_intencao_de_registro_de_preco.html>`_
