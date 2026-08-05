@@ -204,6 +204,107 @@ Dados de Retorno
      - :destaque-verde-claro:`ufNome`
      - :destaque-verde-claro:`String`
      - :destaque-verde-claro:`Nome da unidade federativa`  
+   * - :destaque-verde-claro:`12`
+     - :destaque-verde-claro:`tipoInstrumentoConvocatorioCodigo`
+     - :destaque-verde-claro:`Inteiro`
+     - :destaque-verde-claro:`Código do instrumento convocatório da Contratação`  
+   * - :destaque-verde-claro:`13`
+     - :destaque-verde-claro:`tipoInstrumentoConvocatorioNome`
+     - :destaque-verde-claro:`String`
+     - :destaque-verde-claro:`Nome do instrumento convocatório da Contratação`      
+   * - :destaque-verde-claro:`14`
+     - :destaque-verde-claro:`amparoLegalId`
+     - :destaque-verde-claro:`Inteiro`
+     - :destaque-verde-claro:`Código do Amparo Legal na tabela de domínio`
+   * - :destaque-verde-claro:`15`
+     - :destaque-verde-claro:`amparoLegalNome`
+     - :destaque-verde-claro:`String`
+     - :destaque-verde-claro:`Nome do Amparo Legal na tabela de domínio`
+   * - :destaque-verde-claro:`16`
+     - :destaque-verde-claro:`modalidadeId`
+     - :destaque-verde-claro:`Inteiro`
+     - :destaque-verde-claro:`Código da Modalidade na tabela de domínio`
+   * - :destaque-verde-claro:`17`
+     - :destaque-verde-claro:`modalidadeNome`
+     - :destaque-verde-claro:`String`
+     - :destaque-verde-claro:`Nome da Modalidade na tabela de domínio`
+   * - :destaque-verde-claro:`18`
+     - :destaque-verde-claro:`modoDisputaId`
+     - :destaque-verde-claro:`Inteiro`
+     - :destaque-verde-claro:`Código do Modo de disputa na tabela de domínio`
+   * - :destaque-verde-claro:`19`
+     - :destaque-verde-claro:`modoDisputaNome`
+     - :destaque-verde-claro:`String`
+     - :destaque-verde-claro:`Nome do Modo de disputa na tabela de domínio`
+   * - :destaque-verde-claro:`20`
+     - :destaque-verde-claro:`objetoIrp`
+     - :destaque-verde-claro:`String`
+     - :destaque-verde-claro:`Objeto da IRP.`
+   * - :destaque-verde-claro:`21`
+     - :destaque-verde-claro:`informacaoComplementar`
+     - :destaque-verde-claro:`String`
+     - :destaque-verde-claro:`Informações complementares; Se existir;`
+   * - :destaque-verde-claro:`22`
+     - :destaque-verde-claro:`dataHoraFinalManifestacaoInteresse`
+     - :destaque-verde-claro:`Data`
+     - :destaque-verde-claro:`Data/Hora Final de Manifestação de Interesse (AAAA-MM-DD)`
+   * - :destaque-verde-claro:`23`
+     - :destaque-verde-claro:`urlPlataformaOrigem`
+     - :destaque-verde-claro:`String`
+     - :destaque-verde-claro:`URL para página/portal do sistema de origem da IRP. Esta url será exibida no Portal PNCP.`
+   * - :destaque-verde-claro:`24`
+     - :destaque-verde-claro:`urlProcessoEletronico`
+     - :destaque-verde-claro:`String`
+     - :destaque-verde-claro:`URL para página do sistema de controle de processos eletrônicos com os dados do processo desta contratação. Esta url será exibida no Portal PNCP.`
+   * - :destaque-verde-claro:`25`
+     - :destaque-verde-claro:`usuarioNome`
+     - :destaque-verde-claro:`String`
+     - :destaque-verde-claro:`Nome do usuário/plataforma que enviou a publicação`
+   * - :destaque-verde-claro:`26`
+     - :destaque-verde-claro:`dataPublicacaoPncp`
+     - :destaque-verde-claro:`Data`
+     - :destaque-verde-claro:`data da publicação no PNCP`
+   * - :destaque-verde-claro:`27`
+     - :destaque-verde-claro:`dataCancelamento`
+     - :destaque-verde-claro:`Data`
+     - :destaque-verde-claro:`data do cancelamento da publicação no PNCP`
+   * - :destaque-verde-claro:`28`
+     - :destaque-verde-claro:`motivoCancelamento`
+     - :destaque-verde-claro:`String`
+     - :destaque-verde-claro:`Motivo/justificativa do cancelamento da IRP`
+   * - :destaque-verde-claro:`29`
+     - :destaque-verde-claro:`dataInclusao`
+     - :destaque-verde-claro:`Data`
+     - :destaque-verde-claro:`Data de inclusão da IRP no PNCP`
+   * - :destaque-verde-claro:`30`
+     - :destaque-verde-claro:`dataAtualizacao`
+     - :destaque-verde-claro:`Data`
+     - :destaque-verde-claro:`Data de atualização da IRP no PNCP`
+   * - :destaque-verde-claro:`31`
+     - :destaque-verde-claro:`dataAtualizacaoGlobal`
+     - :destaque-verde-claro:`Data`
+     - :destaque-verde-claro:`Data da última atualização global do registro da IRP considerando seus dependentes (item da IRP, arquivo/documento da IRP, etc)`
 
-     
+Códigos de Retorno
+~~~~~~~~~~~~~~~~~~
 
+.. list-table::
+   :width: 100%
+   :widths: auto
+   :header-rows: 1
+
+   * - Código HTTP
+     - Mensagem
+     - Tipo
+   * - :destaque-verde-claro:`200`
+     - :destaque-verde-claro:`OK`
+     - :destaque-verde-claro:`Sucesso`
+   * - :destaque-verde-claro:`400`
+     - :destaque-verde-claro:`BadRequest`
+     - :destaque-verde-claro:`Erro`
+   * - :destaque-verde-claro:`422`
+     - :destaque-verde-claro:`Unprocessable Entity`
+     - :destaque-verde-claro:`Erro`
+   * - :destaque-verde-claro:`500`
+     - :destaque-verde-claro:`Internal Server Error`
+     - :destaque-verde-claro:`Erro`
