@@ -110,5 +110,50 @@ Dados de Retorno
    * - :destaque-verde-claro:`1.5`
      - :destaque-verde-claro:`titulo`
      - :destaque-verde-claro:`String`
-     - :destaque-verde-claro:`Título do arquivo/documento na IRP
+     - :destaque-verde-claro:`Título do arquivo/documento na IRP`
+   * - :destaque-verde-claro:`1.6`
+     - :destaque-verde-claro:`tipoDocumentoDescricao`
+     - :destaque-verde-claro:`String`
+     - :destaque-verde-claro:`Descrição do tipo de arquivo/documento na IRP`
+   * - :destaque-verde-claro:`1.7`
+     - :destaque-verde-claro:`tipoDocumentoCodigo`
+     - :destaque-verde-claro:`String`
+     - :destaque-verde-claro:`Código do tipo de arquivo/documento na IRP`
+   * - :destaque-verde-claro:`1.8`
+     - :destaque-verde-claro:`cnpjOrgaoGerenciadorIrp`
+     - :destaque-verde-claro:`String`
+     - :destaque-verde-claro:`CNPJ do órgão gerenciador da IRP`
+   * - :destaque-verde-claro:`1.9`
+     - :destaque-verde-claro:`numeroControleIrp`
+     - :destaque-verde-claro:`String`
+     - :destaque-verde-claro:`Número de controle da IRP`
+   * - :destaque-verde-claro:`1.10`
+     - :destaque-verde-claro:`tipoDocumentoNome`
+     - :destaque-verde-claro:`String`
+     - :destaque-verde-claro:`Nome do tipo de arquivo/documento`
+
+
+Códigos de Retorno
+~~~~~~~~~~~~~~~~~~
+
+.. list-table::
+   :width: 100%
+   :widths: auto
+   :header-rows: 1
+
+   * - Código HTTP
+     - Mensagem
+     - Tipo
+   * - :destaque-verde-claro:`200`
+     - :destaque-verde-claro:`OK`
+     - :destaque-verde-claro:`Sucesso`
+   * - :destaque-verde-claro:`400`
+     - :destaque-verde-claro:`BadRequest`
+     - :destaque-verde-claro:`Erro`
+   * - :destaque-verde-claro:`422`
+     - :destaque-verde-claro:`Unprocessable Entity`
+     - :destaque-verde-claro:`Erro`
+   * - :destaque-verde-claro:`500`
+     - :destaque-verde-claro:`Internal Server Error`
+     - :destaque-verde-claro:`Erro`
 
