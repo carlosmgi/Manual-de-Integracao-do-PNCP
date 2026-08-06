@@ -22,3 +22,4 @@ Os Serviços de Intenção de Registro de Preços (IRP) têm como objetivo opera
   consultar_quantidade_historico_de_intencao_de_registro_de_preco
   baixar_arquivodocumento_de_intencao_de_registro_de_preco
   excluir_arquivodocumento_de_intencao_de_registro_de_preco
+  consultar_quantidade_de_documentos_de_irp
