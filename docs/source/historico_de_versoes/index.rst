@@ -159,7 +159,9 @@ Novo Padrão CNPJ:
 
 `Baixar Arquivo/Documento de Intenção de Registro de Preço    <../irp/baixar_arquivodocumento_de_intencao_de_registro_de_preco.html>`_
 
-`Excluir Arquivo/Documento de Intenção de Registro de Preço <../irp/excluir_arquivodocumento_de_intencao_de_registro_de_preco.html>`_
+`Excluir Arquivo/Documento de Intenção de Registro de Preço  <../irp/excluir_arquivodocumento_de_intencao_de_registro_de_preco.html>`_
+
+`Consultar Quantidade de Documentos de IRP  <../irp/consultar_quantidade_de_documentos_de_irp.html>`_
 
 Versão: 2.5
 -----------
