@@ -153,6 +153,8 @@ Novo Padrão CNPJ:
 
 `Consultar Quantidade de Itens da Intenção de Registro de Preço  <../irp/consultar_quantidade_de_itens_da_intencao_de_registro_de_preco.html>`_
 
+`Consultar Histórico de Intenção de Registro de Preço   <../irp/consultar_historico_de_intencao_de_registro_de_preco.html>`_
+
 `Excluir Arquivo/Documento de Intenção de Registro de Preço <../irp/excluir_arquivodocumento_de_intencao_de_registro_de_preco.html>`_
 
 Versão: 2.5
