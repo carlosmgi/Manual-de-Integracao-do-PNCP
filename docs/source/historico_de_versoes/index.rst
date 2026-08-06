@@ -127,20 +127,32 @@ Novo Padrão CNPJ:
 
   Texto aqui
 
-**Tabelas de domínio:**
+**Texto**
 
 `Inserir Intenção de Registro de Preço  <../irp/inserir_intencao_de_registro_de_preco.html>`_
+
 `Consultar Todos os Itens da Intenção de Registro de Preço   <../irp/consultar_todos_os_itens_da_intencao_de_registro_de_preco.html>`_
+
 `Inserir Itens da Intenção de Registro de Preço  <../irp/inserir_itens_da_intencao_de_registro_de_ preco.html>`_
+
 `Excluir Itens da Intenção de Registro de Preço  <../irp/excluir_itens_da_intencao_de_registro_de_preco.html>`_
+
 `Retificar Parcialmente Itens da Intenção de Registro de Preço  <../irp/retificar_parcialmente_itens_da_intencao_de_registro_de_preco.html>`_
+
 `Consultar Dados de Todos os Documentos de uma Intenção de Registro de Preço  <../irp/consultar_dados_de_todos_os_documentos_de_uma_intencao_de_registro_de_preco.html>`_
+
 `Inserir Documento em Intenção de Registro de Preço  <../irp/inserir_documento_em_intencao_de_registro_de_preco.html>`_
+
 `Consultar Intenção de Registro de Preço  <../irp/consultar_intencao_de_registro_de_preco.html>`_
+
 `Excluir Intenção de Registro de Preço <../irp/excluir_intencao_de_registro_de_preco.html>`_
+
 `Retificar parcialmente uma Intenção de Registro de Preço <../irp/retificar_parcialmente_uma_intencao_de_registro_de_preco.html>`_
+
 `Consultar Item da Intenção de Registro de Preço <../irp/consultar_item_da_intencao_de_registro_de_preco.html>`_
+
 `Consultar Quantidade de Itens da Intenção de Registro de Preço  <../irp/consultar_quantidade_de_itens_da_intencao_de_registro_de_preco.html>`_
+
 `Excluir Arquivo/Documento de Intenção de Registro de Preço <../irp/excluir_arquivodocumento_de_intencao_de_registro_de_preco.html>`_
 
 Versão: 2.5
