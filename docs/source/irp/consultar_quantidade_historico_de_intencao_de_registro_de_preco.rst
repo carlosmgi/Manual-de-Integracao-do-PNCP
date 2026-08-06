@@ -83,7 +83,7 @@ Dados de Retorno
    * - :destaque-verde-claro:`1`
      - :destaque-verde-claro:`quantidade`
      - :destaque-verde-claro:`Inteiro`
-     - :destaque-verde-claro:`Quantidade de itens pertencente a uma Intenção de Registro de Preço`
+     - :destaque-verde-claro:`Quantidade de históricos pertencentes a uma Intenção de Registro de Preço`
 
 
 Códigos de Retorno
