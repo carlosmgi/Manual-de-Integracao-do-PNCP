@@ -1,7 +1,7 @@
 Inserir Intenção de Registro de Preço
 =====================================
 
-Serviço que permite inserir uma Intenção de Registro de Preço (IRP). Este serviço será acionado por qualquer plataforma digital credenciada.
+Serviço que permite inserir uma Intenção de Registro de Preço (IRP).
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
