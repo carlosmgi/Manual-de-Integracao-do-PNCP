@@ -1,7 +1,7 @@
 Retificar Parcialmente Itens da Intenção de Registro de Preço
 =============================================================
 
-Serviço que permite retificar parcialmente uma Intenção de Registro de Preço específica. Este serviço será acionado por qualquer plataforma digital credenciada.
+Serviço que permite retificar parcialmente uma Intenção de Registro de Preço específica (IRP).
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
