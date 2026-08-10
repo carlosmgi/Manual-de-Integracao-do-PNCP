@@ -1,7 +1,7 @@
 Consultar Quantidade Histórico de Intenção de Registro de Preço
 ===============================================================
 
-Serviço que permite recuperar a quantidade de histórico pertencente a uma Intenção de Registro de Preço.
+Serviço que permite recuperar a quantidade de histórico pertencente a uma Intenção de Registro de Preço (IRP).
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
