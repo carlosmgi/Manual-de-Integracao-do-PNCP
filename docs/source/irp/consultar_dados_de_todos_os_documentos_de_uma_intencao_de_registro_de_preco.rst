@@ -1,7 +1,7 @@
 Consultar Dados de Todos os Documentos de uma Intenção de Registro de Preço
 ===========================================================================
 
-Serviço que permite recuperar arquivos pertencentes a uma Intenção de Registro de Preço. Este serviço será acionado por qualquer plataforma digital credenciada.
+Serviço que permite recuperar arquivos pertencentes a uma Intenção de Registro de Preço (IRP).
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
