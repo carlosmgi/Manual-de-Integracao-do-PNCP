@@ -1,7 +1,7 @@
 Excluir Arquivo/Documento de Intenção de Registro de Preço
 ==========================================================
 
-Serviço destinado a excluir Arquivo/Documento de uma Intenção de Registro de Preços. Este serviço será acionado por qualquer plataforma digital credenciada.
+Serviço destinado a excluir Arquivo/Documento de uma Intenção de Registro de Preços (IRP).
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
