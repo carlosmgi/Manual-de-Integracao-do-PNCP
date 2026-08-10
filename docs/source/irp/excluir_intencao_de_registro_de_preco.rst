@@ -1,7 +1,7 @@
 Excluir Intenção de Registro de Preço
 =====================================
 
-Serviço que permite marcar uma Intenção Registro de Preço como excluída logicamente. Este serviço será acionado por qualquer plataforma digital credenciada.
+Serviço que permite marcar uma Intenção Registro de Preço como excluída logicamente (IRP).
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
