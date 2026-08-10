@@ -1,7 +1,7 @@
 Consultar Quantidade de Documentos de IRP
 =========================================
 
-Serviço que permite recuperar a quantidade de arquivos/documentos pertencentes a uma Intenção de Registro de Preço.
+Serviço que permite recuperar a quantidade de arquivos/documentos pertencentes a uma Intenção de Registro de Preço (IRP).
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
