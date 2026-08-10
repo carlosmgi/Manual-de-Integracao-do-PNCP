@@ -1,7 +1,7 @@
 Consultar Todos os Itens da Intenção de Registro de Preço
 =========================================================
 
-Serviço que permite recuperar os dados de um item específico pertencente a uma Intenção de Registro de Preço.
+Serviço que permite recuperar os dados de um item específico pertencente a uma Intenção de Registro de Preço (IRP).
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
