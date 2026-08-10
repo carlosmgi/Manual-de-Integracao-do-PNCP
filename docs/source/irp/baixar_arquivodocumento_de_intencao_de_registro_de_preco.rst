@@ -1,7 +1,7 @@
 Baixar Arquivo/Documento de Intenção de Registro de Preço
 =========================================================
 
-Serviço que permite recuperar um arquivo/Documento pertencente a uma Intenção de Registro de Preço.
+Serviço que permite recuperar um arquivo/Documento pertencente a uma Intenção de Registro de Preço (IRP).
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
