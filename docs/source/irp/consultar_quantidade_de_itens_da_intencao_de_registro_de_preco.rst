@@ -1,7 +1,7 @@
 Consultar Quantidade de Itens da Intenção de Registro de Preço
 ==============================================================
 
-Serviço que permite recuperar a quantidade de itens pertencentes a uma Intenção de Registro de Preço.
+Serviço que permite recuperar a quantidade de itens pertencentes a uma Intenção de Registro de Preço (IRP).
 
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
