@@ -3,6 +3,12 @@ Histórico de Versões
 
 O Histórico de Versões do Manual de Integração do PNCP. tem como objetivo registrar a evolução cronológica das atualizações e melhorias técnicas do documento, assegurando que todas as equipes de desenvolvimento e órgãos integradores acompanhem as mudanças normativas e sistêmicas. Ao utilizar esse histórico, os desenvolvedores e gestores garantem o alinhamento com os schemas e endpoints vigentes, o que otimiza a manutenção das APIs, a correção de inconformidades e a implementação de novas funcionalidades no portal. O uso do histórico de versões contribui para a previsibilidade, a transparência e a governança das manutenções evolutivas no ecossistema de contratações públicas.
 
+
+Versão: 2.6
+-----------
+
+Data: xx/xx/2026
+
 .. Attention::
 
    As alterações da versão 2.6 estão destacadas em verde, conforme o exemplo a seguir:
@@ -30,104 +36,11 @@ O Histórico de Versões do Manual de Integração do PNCP. tem como objetivo re
      - Inteiro
      - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
 
+Intenção de Registro de Preços
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+Os Serviços de Intenção de Registro de Preços (IRP) têm como objetivo operacionalizar o procedimento antecedente à elaboração dos editais, permitindo que o órgão gerenciador divulgue formalmente suas demandas e colete as manifestações de interesse de órgãos e entidades participantes. Ao utilizar esses serviços, os sistemas integrados e as administrações públicas padronizam o fluxo de consolidação de quantitativos, adequação de especificações técnicas e estimativas de consumo, otimizando o ganho de escala e a eficiência na alocação de recursos públicos. A utilização do serviço de IRP assegura o alinhamento do planejamento com o mercado, fortalece o princípio da celeridade processual e previne a duplicidade de esforços administrativos, garantindo plena conformidade com as disposições legais vigentes.
 
-.. Attention::
-
-   As alterações da versão 2.5 estão destacadas em azul, conforme o exemplo a seguir:
-
-.. list-table::
-   :width: 100%
-   :widths: 5 10 15 55
-   :header-rows: 1
-   :class: quebra-linha-ultima-coluna
-
-   * - Id
-     - Campo
-     - Tipo
-     - Descrição
-   * - 1
-     - cnpj
-     - Texto
-     - CNPJ do órgão do contrato/empenho
-   * - :destaque-azul-claro:`2`
-     - :destaque-azul-claro:`ano`
-     - :destaque-azul-claro:`Inteiro`
-     - :destaque-azul-claro:`Ano do contrato/empenho`
-   * - 3
-     - sequencialContrato
-     - Inteiro
-     - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
-
-
-.. Attention::
-
-   As alterações da versão 2.4 estão destacadas em alaranjado, conforme o exemplo a seguir:
-
-.. list-table::
-   :width: 100%
-   :widths: 5 10 15 55
-   :header-rows: 1
-   :class: quebra-linha-ultima-coluna
-
-   * - Id
-     - Campo
-     - Tipo
-     - Descrição
-   * - 1
-     - cnpj
-     - Texto
-     - CNPJ do órgão do contrato/empenho
-   * - :destaque:`2`
-     - :destaque:`ano`
-     - :destaque:`Inteiro`
-     - :destaque:`Ano do contrato/empenho`
-   * - 3
-     - sequencialContrato
-     - Inteiro
-     - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
-
-
-.. Attention::
-
-  As alterações da versão 2.3.11 estão destacadas em amarelo-claro, conforme o exemplo a seguir:
-
-.. list-table::
-   :width: 100%
-   :widths: 5 10 15 55
-   :header-rows: 1
-   :class: quebra-linha-ultima-coluna
-
-   * - Id
-     - Campo
-     - Tipo
-     - Descrição
-   * - 1
-     - cnpj
-     - Texto
-     - CNPJ do órgão do contrato/empenho
-   * - :destaque-amarelo-claro:`2`
-     - :destaque-amarelo-claro:`ano`
-     - :destaque-amarelo-claro:`Inteiro`
-     - :destaque-amarelo-claro:`Ano do contrato/empenho`
-   * - 3
-     - sequencialContrato
-     - Inteiro
-     - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
-
-
-Versão: 2.6
------------
-
-Data: xx/xx/2026
-
-Novo Padrão CNPJ:
-
-.. tip:: 
-
-  Texto aqui
-
-**Texto**
 
 `Inserir Intenção de Registro de Preço  <../irp/inserir_intencao_de_registro_de_preco.html>`_
 
@@ -168,6 +81,34 @@ Versão: 2.5
 
 Data: 11/06/2026
 
+
+.. Attention::
+
+   As alterações da versão 2.5 estão destacadas em azul, conforme o exemplo a seguir:
+
+.. list-table::
+   :width: 100%
+   :widths: 5 10 15 55
+   :header-rows: 1
+   :class: quebra-linha-ultima-coluna
+
+   * - Id
+     - Campo
+     - Tipo
+     - Descrição
+   * - 1
+     - cnpj
+     - Texto
+     - CNPJ do órgão do contrato/empenho
+   * - :destaque-azul-claro:`2`
+     - :destaque-azul-claro:`ano`
+     - :destaque-azul-claro:`Inteiro`
+     - :destaque-azul-claro:`Ano do contrato/empenho`
+   * - 3
+     - sequencialContrato
+     - Inteiro
+     - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
+
 Novo Padrão CNPJ:
 
 .. tip:: 
@@ -195,11 +136,37 @@ Novo Padrão CNPJ:
 
 `Consultar um Resultado específico de Item de uma Contratação  <../contratacao/consultar_um_resultado_especifico_de_item_de_uma_contratacao.html>`_ 
 
-
 Versão: 2.4
 -----------
 
 Data: 09/04/2026
+
+.. Attention::
+
+   As alterações da versão 2.4 estão destacadas em alaranjado, conforme o exemplo a seguir:
+
+.. list-table::
+   :width: 100%
+   :widths: 5 10 15 55
+   :header-rows: 1
+   :class: quebra-linha-ultima-coluna
+
+   * - Id
+     - Campo
+     - Tipo
+     - Descrição
+   * - 1
+     - cnpj
+     - Texto
+     - CNPJ do órgão do contrato/empenho
+   * - :destaque:`2`
+     - :destaque:`ano`
+     - :destaque:`Inteiro`
+     - :destaque:`Ano do contrato/empenho`
+   * - 3
+     - sequencialContrato
+     - Inteiro
+     - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
 
 .. note::
     Funcionalidades que possibilitam recepcionar Emendas Parlamentares (Empenho) e novas tabelas de domínio de Tipo de Contrato e Documento.
@@ -251,6 +218,40 @@ Data: 09/04/2026
 `Consultar Empenho pelo Número Sequencial  <../empenho/consultar_empenho_pelo_numero_sequencial.html>`_ 
 
 `Consultar Empenhos  <../empenho/consultar_empenhos.html>`_ 
+
+
+.. Attention::
+
+  As alterações da versão 2.3.11 estão destacadas em amarelo-claro, conforme o exemplo a seguir:
+
+.. list-table::
+   :width: 100%
+   :widths: 5 10 15 55
+   :header-rows: 1
+   :class: quebra-linha-ultima-coluna
+
+   * - Id
+     - Campo
+     - Tipo
+     - Descrição
+   * - 1
+     - cnpj
+     - Texto
+     - CNPJ do órgão do contrato/empenho
+   * - :destaque-amarelo-claro:`2`
+     - :destaque-amarelo-claro:`ano`
+     - :destaque-amarelo-claro:`Inteiro`
+     - :destaque-amarelo-claro:`Ano do contrato/empenho`
+   * - 3
+     - sequencialContrato
+     - Inteiro
+     - Sequencial do contrato/empenho no PNCP; número sequencial gerado no momento da inclusão
+
+
+
+
+
+
 
 Versão: 2.3.11
 --------------
