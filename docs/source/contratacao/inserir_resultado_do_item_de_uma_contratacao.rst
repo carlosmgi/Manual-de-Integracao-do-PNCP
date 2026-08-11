@@ -125,11 +125,11 @@ Dados de Entrada
      - Decimal
      - Sim
      - Valor total do item homologado. Maior ou igual a 0 (zero). Precisão de 4 dígitos decimais; Ex: 1000.0000;
-   * - 8
-     - percentualDesconto
-     - Decimal
-     - Sim
-     - Percentual de desconto aplicado quando o critério de julgamento for Maior Desconto. Precisão de 4 dígitos decimais; Ex: 10.0000;
+   * - :destaque-verde-claro:`8`
+     - :destaque-verde-claro:`percentualDesconto`
+     - :destaque-verde-claro:`Decimal`
+     - :destaque-verde-claro:`Sim`
+     - :destaque-verde-claro:`Percentual de desconto aplicado quando o critério de julgamento for Maior Desconto. Precisão de 4 dígitos decimais; Ex: 10.0000;`
    * - 9
      - tipoPessoaId
      - Texto (2)
