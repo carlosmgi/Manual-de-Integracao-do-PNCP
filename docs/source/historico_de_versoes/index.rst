@@ -77,6 +77,28 @@ Data: xx/xx/2026
 
 `Consultar Quantidade de Documentos de IRP  <../irp/consultar_quantidade_de_documentos_de_irp.html>`_
 
+.. note::
+
+   Inserir Contratos/Empenhos
+
+   Condicional: informar este campo apenas quando o contrato estiver vinculado a uma contratação do tipo SRP. Nos demais casos, o campo deve ser suprimido.
+
+   Retificar Contrato/Empenho
+
+   Condicional: informar este campo apenas quando o contrato estiver vinculado a uma contratação do tipo SRP. Nos demais casos, o campo deve ser suprimido.
+
+   Retificar Parcialmente um Contrato/Empenho
+
+   Condicional: informar este campo apenas quando o contrato estiver vinculado a uma contratação do tipo SRP. Nos demais casos, o campo deve ser suprimido.
+
+
+`Inserir Contratos/Empenhos    <../contrato_empenho/inserir_contratos_ou_empenhos.html>`_
+
+`Retificar Contrato/Empenho    <../contrato_empenho/retificar_contrato_ou_empenho.html>`_
+
+`Retificar Parcialmente um Contrato/Empenho    <../contrato_empenho/retificar_parcialmente_um_contrato_ou_empenho.rst.html>`_
+
+
 Versão: 2.5
 -----------
 
