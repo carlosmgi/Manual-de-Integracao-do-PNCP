@@ -311,7 +311,7 @@ Códigos de Retorno
    :header-rows: 1
 
    * - Código HTTP
-     - `Mensagem
+     - Mensagem
      - Tipo
    * - :destaque:`201`
      - :destaque:`Created`
