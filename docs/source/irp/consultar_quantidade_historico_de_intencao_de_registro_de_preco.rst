@@ -17,7 +17,7 @@ Detalhes da Requisição
      - GET
 	 
 Exemplo de Payload
-------------------
+~~~~~~~~~~~~~~~~~~
 
 .. code-block:: json
   :linenos:
