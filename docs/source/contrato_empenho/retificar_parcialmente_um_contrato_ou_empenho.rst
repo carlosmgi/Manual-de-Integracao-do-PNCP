@@ -269,7 +269,7 @@ Dados de entrada
    * - :destaque:`34`
      - :destaque:`sequencialAta`
      - :destaque:`Inteiro`
-     - :destaque:`Não`
+     - :destaque:`Condicional: informar este campo apenas quando o contrato estiver vinculado a uma contratação do tipo SRP. Nos demais casos, o campo deve ser suprimido.`
      - :destaque:`Número sequencial da ata de registro de preço`
    * - :destaque:`35`
      - :destaque:`frutoAdesao`
