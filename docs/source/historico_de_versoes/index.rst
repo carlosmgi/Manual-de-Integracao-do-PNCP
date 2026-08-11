@@ -79,7 +79,7 @@ Data: xx/xx/2026
 
 .. note::
 
-   Alteração da obrigatoriedade do campo "sequencialAta" de "Não" para "Condicional: informar este campo apenas quando o contrato estiver vinculado a uma contratação do tipo SRP. Nos demais casos, o campo deve ser suprimido." nos endpoints a seguir:
+   Correção da obrigatoriedade do campo "sequencialAta" de "Não" para "Condicional: informar este campo apenas quando o contrato estiver vinculado a uma contratação do tipo SRP. Nos demais casos, o campo deve ser suprimido." nos endpoints a seguir:
 
    Inserir Contratos/Empenhos
 
@@ -97,7 +97,7 @@ Data: xx/xx/2026
 
 .. note::
 
-   Alteração da obrigatoriedade do campo "percentualDesconto" de "Não" para "Sim" no endpoint a seguir:
+   Correção da obrigatoriedade do campo "percentualDesconto" de "Não" para "Sim" no endpoint a seguir:
 
    Inserir Resultado do Item de uma Contratação
 
