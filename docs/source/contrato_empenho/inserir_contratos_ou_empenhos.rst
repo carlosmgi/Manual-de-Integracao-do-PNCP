@@ -250,11 +250,11 @@ Dados de entrada
      - Não
      - URL com informações do contrato no sistema de Cadastro Integrado de Projetos de Investimento (não se aplica a leilão)
 
-   * - :destaque-amarelo-claro:`32`
-     - :destaque-amarelo-claro:`sequencialAta`
-     - :destaque-amarelo-claro:`Inteiro`
-     - :destaque-amarelo-claro:`Condicional: informar este campo apenas quando o contrato estiver vinculado a uma contratação do tipo SRP. Nos demais casos, o campo deve ser suprimido.`
-     - :destaque-amarelo-claro:`Número sequencial da ata de registro de preço (gerado pelo PNCP no momento da inclusão da ata)`
+   * - :destaque-verde-claro:`32`
+     - :destaque-verde-claro:`sequencialAta`
+     - :destaque-verde-claro:`Inteiro`
+     - :destaque-verde-claro:`Condicional: informar este campo apenas quando o contrato estiver vinculado a uma contratação do tipo SRP. Nos demais casos, o campo deve ser suprimido.`
+     - :destaque-verde-claro:`Número sequencial da ata de registro de preço (gerado pelo PNCP no momento da inclusão da ata)`
    * - :destaque-amarelo-claro:`33`
      - :destaque-amarelo-claro:`frutoAdesao`
      - :destaque-amarelo-claro:`Booleano`
