@@ -266,11 +266,11 @@ Dados de entrada
      - :destaque:`String (8 a 14)`
      - :destaque:`Não`
      - :destaque:`Url com informações do contrato no sistema de Cadastro Integrado de Projetos de Investimento`
-   * - :destaque:`34`
-     - :destaque:`sequencialAta`
-     - :destaque:`Inteiro`
-     - :destaque:`Condicional: informar este campo apenas quando o contrato estiver vinculado a uma contratação do tipo SRP. Nos demais casos, o campo deve ser suprimido.`
-     - :destaque:`Número sequencial da ata de registro de preço`
+   * - :destaque-verde-claro:`34`
+     - :destaque-verde-claro:`sequencialAta`
+     - :destaque-verde-claro:`Inteiro`
+     - :destaque-verde-claro:`Condicional: informar este campo apenas quando o contrato estiver vinculado a uma contratação do tipo SRP. Nos demais casos, o campo deve ser suprimido.`
+     - :destaque-verde-claro:`Número sequencial da ata de registro de preço`
    * - :destaque:`35`
      - :destaque:`frutoAdesao`
      - :destaque:`Booleano`
