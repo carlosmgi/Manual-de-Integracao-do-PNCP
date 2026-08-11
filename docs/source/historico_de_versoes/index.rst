@@ -79,17 +79,13 @@ Data: xx/xx/2026
 
 .. note::
 
-   Inserir Contratos/Empenhos
+   Alteração da obrigatoriedade do campo "sequencialAta" de "Não" para "Condicional: informar este campo apenas quando o contrato estiver vinculado a uma contratação do tipo SRP. Nos demais casos, o campo deve ser suprimido." nos endpoints a seguir:
 
-   Condicional: informar este campo apenas quando o contrato estiver vinculado a uma contratação do tipo SRP. Nos demais casos, o campo deve ser suprimido.
+   Inserir Contratos/Empenhos
 
    Retificar Contrato/Empenho
 
-   Condicional: informar este campo apenas quando o contrato estiver vinculado a uma contratação do tipo SRP. Nos demais casos, o campo deve ser suprimido.
-
    Retificar Parcialmente um Contrato/Empenho
-
-   Condicional: informar este campo apenas quando o contrato estiver vinculado a uma contratação do tipo SRP. Nos demais casos, o campo deve ser suprimido.
 
 
 `Inserir Contratos/Empenhos    <../contrato_empenho/inserir_contratos_ou_empenhos.html>`_
