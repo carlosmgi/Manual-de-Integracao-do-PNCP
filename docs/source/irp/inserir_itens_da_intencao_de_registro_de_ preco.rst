@@ -115,7 +115,7 @@ Dados de Entrada
      - :destaque-verde-claro:`Indicador de Exigência de Conteúdo Nacional (False/Não; True/Sim)`
    * - :destaque-verde-claro:`1.7`
      - :destaque-verde-claro:`descricao`
-     - :destaque-verde-claro:`Texto (512)`
+     - :destaque-verde-claro:`Texto (2048)`
      - :destaque-verde-claro:`Sim`
      - :destaque-verde-claro:`Descrição para o item`
    * - :destaque-verde-claro:`1.8`
