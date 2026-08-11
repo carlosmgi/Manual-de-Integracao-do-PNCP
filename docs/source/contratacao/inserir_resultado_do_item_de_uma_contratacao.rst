@@ -128,7 +128,7 @@ Dados de Entrada
    * - 8
      - percentualDesconto
      - Decimal
-     - Não
+     - Sim
      - Percentual de desconto aplicado quando o critério de julgamento for Maior Desconto. Precisão de 4 dígitos decimais; Ex: 10.0000;
    * - 9
      - tipoPessoaId
