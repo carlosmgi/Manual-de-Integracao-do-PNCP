@@ -99,7 +99,7 @@ Dados de Retorno
    * - :destaque-verde-claro:`1.2`
      - :destaque-verde-claro:`tipoLogManutencao`
      - :destaque-verde-claro:`String`
-     - :destaque-verde-claro:`Código da operação efetuada. Domínio: 0 - Inclusão; 1 - Retificação; 2 - Exclusão;`
+     - :destaque-verde-claro:`Código da operação efetuada. Domínio: (0 - Inclusão; 1 - Retificação; 2 - Exclusão;)`
    * - :destaque-verde-claro:`1.3`
      - :destaque-verde-claro:`categoriaLogManutencao`
      - :destaque-verde-claro:`String`
@@ -139,7 +139,7 @@ Dados de Retorno
    * - :destaque-verde-claro:`1.12`
      - :destaque-verde-claro:`categoriaLogManutencaoNome`
      - :destaque-verde-claro:`String`
-     - :destaque-verde-claro:`Nome da operação efetuada. (Domínio: Intenção de Registro de Preço (IRP); Item de IRP; Documento de IRP;)`
+     - :destaque-verde-claro:`Nome da operação efetuada. Domínio: (Intenção de Registro de Preço (IRP); Item de IRP; Documento de IRP;)`
    * - :destaque-verde-claro:`1.13`
      - :destaque-verde-claro:`irpAno`
      - :destaque-verde-claro:`Inteiro`
