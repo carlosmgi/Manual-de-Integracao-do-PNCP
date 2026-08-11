@@ -92,7 +92,16 @@ Data: xx/xx/2026
 
 `Retificar Contrato/Empenho    <../contrato_empenho/retificar_contrato_ou_empenho.html>`_
 
-`Retificar Parcialmente um Contrato/Empenho    <../contrato_empenho/retificar_parcialmente_um_contrato_ou_empenho.rst.html>`_
+`Retificar Parcialmente um Contrato/Empenho    <../contrato_empenho/retificar_parcialmente_um_contrato_ou_empenho.html>`_
+
+
+.. note::
+
+   Alteração da obrigatoriedade do campo "percentualDesconto" de "Não" para "Sim" no endpoint a seguir:
+
+   Inserir Resultado do Item de uma Contratação
+
+`Inserir Resultado do Item de uma Contratação    <../contratacao/inserir_resultado_do_item_de_uma_contratacao.html>`_
 
 
 Versão: 2.5
