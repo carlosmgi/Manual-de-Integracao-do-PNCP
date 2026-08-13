@@ -61,16 +61,31 @@ Dados de Entrada
      - Descrição
 
    * - :destaque-verde-claro:`1`
+     - :destaque-verde-claro:`cnpj`
+     - :destaque-verde-claro:`Texto (14)`
+     - :destaque-verde-claro:`Sim`
+     - :destaque-verde-claro:`Cnpj do órgão originário da IRP informado na inclusão (proprietário da IRP)`
+   * - :destaque-verde-claro:`2`
+     - :destaque-verde-claro:`ano`
+     - :destaque-verde-claro:`Inteiro`
+     - :destaque-verde-claro:`Sim`
+     - :destaque-verde-claro:`Ano da IRP`
+   * - :destaque-verde-claro:`3`
+     - :destaque-verde-claro:`sequencial`
+     - :destaque-verde-claro:`Inteiro`
+     - :destaque-verde-claro:`Sim`
+     - :destaque-verde-claro:`Sequencial da IRP no PNCP; Número sequencial gerado no momento que a IRP foi inserida no PNCP`
+   * - :destaque-verde-claro:`4`
      - :destaque-verde-claro:`itensIrp`
      - :destaque-verde-claro:`Lista`
      - :destaque-verde-claro:`Sim`
      - 
-   * - :destaque-verde-claro:`1.1`
+   * - :destaque-verde-claro:`4.1`
      - :destaque-verde-claro:`numerosItens`
      - :destaque-verde-claro:`inteiro`
      - :destaque-verde-claro:`Sim`
      - :destaque-verde-claro:`Lista dos itens da IRP a serem excluídos`
-   * - :destaque-verde-claro:`2`
+   * - :destaque-verde-claro:`5`
      - :destaque-verde-claro:`justificativa`
      - :destaque-verde-claro:`Texto (255)`
      - :destaque-verde-claro:`Sim`
