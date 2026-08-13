@@ -130,7 +130,7 @@ Dados de Retorno
      - :destaque-verde-claro:`Descrição para o item`
    * - :destaque-verde-claro:`1.10`
      - :destaque-verde-claro:`informacaoComplementar`
-     - :destaque-verde-claro:`Texto (5120)`
+     - :destaque-verde-claro:`Texto (4096)`
      - :destaque-verde-claro:`Informações complementares; Se existir;`
    * - :destaque-verde-claro:`1.11`
      - :destaque-verde-claro:`unidadeFornecimento`
