@@ -91,7 +91,7 @@ Dados de Entrada
      - :destaque-verde-claro:`sequencial`
      - :destaque-verde-claro:`String`
      - :destaque-verde-claro:`Sim`
-     - :destaque-verde-claro:`Título do documento`
+     - :destaque-verde-claro:`Sequencial da IRP no PNCP; Número sequencial gerado no momento que a IRP foi inserida no PNCP`
    * - :destaque-verde-claro:`3`
      - :destaque-verde-claro:`ano`
      - :destaque-verde-claro:`Inteiro`
