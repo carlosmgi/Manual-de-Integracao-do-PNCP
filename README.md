@@ -1,3 +1,5 @@
+Versão 2.6
+
 Resumo:
 
 Intenção de Registro de Preços
