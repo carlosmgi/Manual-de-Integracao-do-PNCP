@@ -97,7 +97,7 @@ Dados de Retorno
      - :destaque-verde-claro:`Url para download do arquivo/documento`
    * - :destaque-verde-claro:`1.2`
      - :destaque-verde-claro:`dataPublicacaoPncp`
-     - :destaque-verde-claro:Data/hora`
+     - :destaque-verde-claro:`Data/hora`
      - :destaque-verde-claro:`Data/hora de inclusão do arquivo na IRP.`
    * - :destaque-verde-claro:`1.3`
      - :destaque-verde-claro:`sequencialIrp`
