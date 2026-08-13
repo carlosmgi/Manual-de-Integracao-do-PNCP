@@ -35,6 +35,14 @@ roles.register_local_role('destaque-amarelo-claro', destaque_amarelo_claro_role)
 roles.register_local_role('linha-destaque', linha_destaque_role)
 roles.register_local_role('destaque-verde-claro', destaque_verde_claro_role)
 
+#-- Versão principal / Funcional
+#-- Menu seletor de versões (flyout menu), URL e título lateral.
+version = 'v. 2.6'
+
+#-- Edição exata da build
+#-- Rodapé da página, capa do PDF gerado e notas de copyright.
+release = 'v. 2.6'
+
 rst_epilog = f"""
 .. |versao| replace:: {version}
 """
@@ -43,14 +51,6 @@ rst_epilog = f"""
 project = 'Manual de Integração do PNCP'
 copyright = '2026, Ministério da Gestão e Inovação em Serviços Públicos - MGI'
 author = 'COPNCP/CGGES/DELOG/SEGES/MGI'
-
-#-- Versão principal / Funcional
-#-- Menu seletor de versões (flyout menu), URL e título lateral.
-version = 'v. 2.6'
-
-#-- Edição exata da build
-#-- Rodapé da página, capa do PDF gerado e notas de copyright.
-release = 'v. 2.6'
 
 # -- General configuration
 extensions = [
