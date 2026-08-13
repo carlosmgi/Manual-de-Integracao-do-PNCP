@@ -90,7 +90,7 @@ Versão Atual
 ------------
 
 .. note::
-    Acesse a versão mais recente do Manual de Integração do PNCP, disponível em: `Manual de Integração do PNCP    <../../../../pt-br/latest/>`_
+    Acesse a versão mais recente do `Manual de Integração do PNCP    <../../../../pt-br/latest/>`_.
 
 Versão: 2.5
 -----------
