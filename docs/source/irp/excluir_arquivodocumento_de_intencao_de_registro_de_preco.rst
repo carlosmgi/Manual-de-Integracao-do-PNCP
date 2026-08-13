@@ -61,7 +61,7 @@ Dados de Entrada
 
    * - :destaque-verde-claro:`1`
      - :destaque-verde-claro:`justificativa`
-     - :destaque-verde-claro:`String`
+     - :destaque-verde-claro:`Texto (255)`
      - :destaque-verde-claro:`Sim`
      - :destaque-verde-claro:`Motivo/justificativa para exclusão do Arquivo/Documento na IRP`
 
