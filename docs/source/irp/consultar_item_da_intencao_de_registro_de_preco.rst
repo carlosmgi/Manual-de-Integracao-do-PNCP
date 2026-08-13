@@ -117,11 +117,11 @@ Dados de Retorno
      - :destaque-verde-claro:`Indicador de Exigência de Conteúdo Nacional (False/Não; True/Sim)`
    * - :destaque-verde-claro:`9`
      - :destaque-verde-claro:`descricao`
-     - :destaque-verde-claro:`Texto (512)`
+     - :destaque-verde-claro:`Texto (2048)`
      - :destaque-verde-claro:`Descrição para o item`
    * - :destaque-verde-claro:`10`
      - :destaque-verde-claro:`informacaoComplementar`
-     - :destaque-verde-claro:`Texto (5120)`
+     - :destaque-verde-claro:`Texto (4096)`
      - :destaque-verde-claro:`Informações complementares; Se existir;`
    * - :destaque-verde-claro:`11`
      - :destaque-verde-claro:`unidadeFornecimento`
