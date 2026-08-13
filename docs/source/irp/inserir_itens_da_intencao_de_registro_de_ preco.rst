@@ -111,7 +111,7 @@ Dados de Entrada
    * - :destaque-verde-claro:`1.6`
      - :destaque-verde-claro:`exigenciaConteudoNacional`
      - :destaque-verde-claro:`Booleano`
-     - :destaque-verde-claro:`Sim`
+     - :destaque-verde-claro:`Não`
      - :destaque-verde-claro:`Indicador de Exigência de Conteúdo Nacional (False/Não; True/Sim)`
    * - :destaque-verde-claro:`1.7`
      - :destaque-verde-claro:`descricao`
@@ -120,7 +120,7 @@ Dados de Entrada
      - :destaque-verde-claro:`Descrição para o item`
    * - :destaque-verde-claro:`1.8`
      - :destaque-verde-claro:`informacaoComplementar`
-     - :destaque-verde-claro:`Texto (5120)`
+     - :destaque-verde-claro:`Texto (4096)`
      - :destaque-verde-claro:`Não`
      - :destaque-verde-claro:`Informações complementares; Se existir;`
    * - :destaque-verde-claro:`1.9`
