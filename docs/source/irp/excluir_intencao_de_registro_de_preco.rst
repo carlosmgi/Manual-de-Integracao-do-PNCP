@@ -71,7 +71,7 @@ Dados de Entrada
      - :destaque-verde-claro:`sequencial`
      - :destaque-verde-claro:`Inteiro`
      - :destaque-verde-claro:`Sim`
-     - :destaque-verde-claro:`Sequencial da contratação no PNCP; Número sequencial gerado no momento que a contratação foi inserida no PNCP`
+     - :destaque-verde-claro:`Sequencial da IRP no PNCP; Número sequencial gerado no momento que a IRP foi inserida no PNCP`
    * - :destaque-verde-claro:`4`
      - :destaque-verde-claro:`justificativa`
      - :destaque-verde-claro:`Texto (255)`
