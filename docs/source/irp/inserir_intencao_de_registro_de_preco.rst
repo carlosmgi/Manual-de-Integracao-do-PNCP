@@ -115,22 +115,21 @@ Dados de Entrada
      - Obrigatório
      - Descrição
 
- *   - :destaque-verde-claro:`1`
+   * - :destaque-verde-claro:`1`
      - :destaque-verde-claro:`cnpj`
      - :destaque-verde-claro:`Texto (14)`
      - :destaque-verde-claro:`Sim`
      - :destaque-verde-claro:`Cnpj do órgão originário da IRP  (proprietário da IRP)`
- * - :destaque-verde-claro:`2`
+   * - :destaque-verde-claro:`2`
      - :destaque-verde-claro:`Titulo-Documento`
      - :destaque-verde-claro:`Texto (255)`
      - :destaque-verde-claro:`Sim`
      - :destaque-verde-claro:`Título do documento`
- * - :destaque-verde-claro:`3`
+   * - :destaque-verde-claro:`3`
      - :destaque-verde-claro:`Tipo-Documento-Id`
      - :destaque-verde-claro:`Inteiro`
      - :destaque-verde-claro:`Sim`
      - :destaque-verde-claro:`Código da tabela de domínio Tipo de documento`
-
    * - :destaque-verde-claro:`4`
      - :destaque-verde-claro:`codigoUnidadeGerenciadora`
      - :destaque-verde-claro:`String`
