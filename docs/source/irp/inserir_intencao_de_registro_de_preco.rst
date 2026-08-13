@@ -115,7 +115,7 @@ Dados de Entrada
      - Obrigatório
      - Descrição
 
- * - :destaque-verde-claro:`1`
+ *   - :destaque-verde-claro:`1`
      - :destaque-verde-claro:`cnpj`
      - :destaque-verde-claro:`Texto (14)`
      - :destaque-verde-claro:`Sim`
