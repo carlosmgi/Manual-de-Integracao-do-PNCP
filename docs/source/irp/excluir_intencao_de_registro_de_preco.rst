@@ -63,9 +63,9 @@ Dados de Entrada
      - :destaque-verde-claro:`Sim`
      - :destaque-verde-claro:`Cnpj do órgão originário da IRP informado na inclusão (proprietário da IRP)`
    * - :destaque-verde-claro:`2`
-     - ano`
+     - :destaque-verde-claro:`ano`
      - :destaque-verde-claro:`Inteiro`
-     - Sim`
+     - :destaque-verde-claro:`Sim`
      - :destaque-verde-claro:`Ano da IRP`
    * - :destaque-verde-claro:`3`
      - :destaque-verde-claro:`sequencial`
