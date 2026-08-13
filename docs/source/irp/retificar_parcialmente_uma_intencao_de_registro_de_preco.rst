@@ -81,113 +81,113 @@ Dados de Entrada
      - Tipo
      - Obrigatório
      - Descrição
-     
+
    * - :destaque-verde-claro:`1`
+     - :destaque-verde-claro:`cnpj`
+     - :destaque-verde-claro:`Texto (14)`
+     - :destaque-verde-claro:`Sim`
+     - :destaque-verde-claro:`Cnpj do órgão originário da IRP  (proprietário da IRP)`
+   * - :destaque-verde-claro:`2`
+     - :destaque-verde-claro:`sequencial`
+     - :destaque-verde-claro:`String`
+     - :destaque-verde-claro:`Sim`
+     - :destaque-verde-claro:`Título do documento`
+   * - :destaque-verde-claro:`3`
+     - :destaque-verde-claro:`ano`
+     - :destaque-verde-claro:`Inteiro`
+     - :destaque-verde-claro:`Sim`
+     - :destaque-verde-claro:`Ano da IRP. Esse é o ano relacionado à IRP. (Ex: 2021)`
+   * - :destaque-verde-claro:`4`
      - :destaque-verde-claro:`codigoUnidadeGerenciadora`
      - :destaque-verde-claro:`String`
      - :destaque-verde-claro:`Não`
      - :destaque-verde-claro:`Código da unidade executora do órgão da IRP; a unidade deverá estar cadastrada para o órgão`
-   * - :destaque-verde-claro:`2`
+   * - :destaque-verde-claro:`5`
      - :destaque-verde-claro:`cnpjOrgaoSubRogado`
      - :destaque-verde-claro:`String`
      - :destaque-verde-claro:`Não`
      - :destaque-verde-claro:`CNPJ do órgão subrogado`     
-   * - :destaque-verde-claro:`3`
+   * - :destaque-verde-claro:`6`
      - :destaque-verde-claro:`codigoUnidadeSubRogada`
      - :destaque-verde-claro:`String`
      - :destaque-verde-claro:`Não`
      - :destaque-verde-claro:`Código da Unidade Gerenciadora Subrogada do Órgão/Entidade Subrogado`   
-   * - :destaque-verde-claro:`4`
+   * - :destaque-verde-claro:`7`
      - :destaque-verde-claro:`numeroIrp`
      - :destaque-verde-claro:`Texto (50)`
      - :destaque-verde-claro:`Não`
      - :destaque-verde-claro:`Número da IRP no sistema de origem` 
-   * - :destaque-verde-claro:`5`
+   * - :destaque-verde-claro:`8`
      - :destaque-verde-claro:`numeroProcesso`
      - :destaque-verde-claro:`Texto (50)`
      - :destaque-verde-claro:`Não`
      - :destaque-verde-claro:`Número do processo no sistema de origem`
-   * - :destaque-verde-claro:`6`
+   * - :destaque-verde-claro:`9`
      - :destaque-verde-claro:`tipoInstrumentoConvocatorioId`
      - :destaque-verde-claro:`Inteiro`
      - :destaque-verde-claro:`Não`
      - :destaque-verde-claro:`Código da tabela de domínio Tipo de instrumento convocatório`
-   * - :destaque-verde-claro:`7`
+   * - :destaque-verde-claro:`10`
      - :destaque-verde-claro:`amparoLegalId`
      - :destaque-verde-claro:`Inteiro`
      - :destaque-verde-claro:`Não`
      - :destaque-verde-claro:`Código da tabela de domínio Amparo Legal`
-   * - :destaque-verde-claro:`8`
+   * - :destaque-verde-claro:`11`
      - :destaque-verde-claro:`modalidadeId`
      - :destaque-verde-claro:`Inteiro`
      - :destaque-verde-claro:`Não`
      - :destaque-verde-claro:`Código da tabela de domínio Modalidade`
-   * - :destaque-verde-claro:`9`
+   * - :destaque-verde-claro:`12`
      - :destaque-verde-claro:`modoDisputaId`
      - :destaque-verde-claro:`Inteiro`
      - :destaque-verde-claro:`Não`
      - :destaque-verde-claro:`Código da tabela de domínio Modo de disputa`
-   * - :destaque-verde-claro:`10`
+   * - :destaque-verde-claro:`13`
      - :destaque-verde-claro:`situacaoIrpId`
-     - 
-     - :destaque-verde-claro:`Não`
-     - :destaque-verde-claro:`Caso informe este campo, os itens até 10.5 serão obrigatórios.`
-   * - :destaque-verde-claro:`10.1`
-     - :destaque-verde-claro:`id`
      - :destaque-verde-claro:`Inteiro`
-     - :destaque-verde-claro:`Condicional`
+     - :destaque-verde-claro:`Não`
      - :destaque-verde-claro:`Identificação da Situações da Intenção de Registro de Preço (1 = Divulgada no PNCP; 2 = Cancelada; 3 = Suspensa; 4 = Anulada)`
-   * - :destaque-verde-claro:`10.2`
-     - :destaque-verde-claro:`nome`
-     - :destaque-verde-claro:`String`
-     - :destaque-verde-claro:`Condicional`
-     - :destaque-verde-claro:`Nome da Identificação da Situações da Intenção de Registro de Preço  (1 = Divulgada no PNCP; 2 = Cancelada; 3 = Suspensa; 4 = Anulada)`
-   * - :destaque-verde-claro:`10.3`
-     - :destaque-verde-claro:`descricao`
-     - :destaque-verde-claro:`String`
-     - :destaque-verde-claro:`Condicional`
-     - :destaque-verde-claro:`Descrição da Identificação da Situações da Intenção de Registro de Preço  (1 = Divulgada no PNCP     (Intenção de Registro de Preço divulgada no PNCP); 2 = Cancelada  (Intenção de Registro de Preço cancelada conforme justificativa); 3 = Suspensa (Intenção de Registro de Preço suspensa conforme justificativa); 4 = Anulada (Intenção de Registro de Preço anulada conforme justificativa))`
-   * - :destaque-verde-claro:`10.4`
-     - :destaque-verde-claro:`dataInclusao`
+   * - :destaque-verde-claro:`14`
+     - :destaque-verde-claro:`dataCancelamento`
      - :destaque-verde-claro:`Data/Hora`
-     - :destaque-verde-claro:`Condicional`
-     - :destaque-verde-claro:`Data e hora inclusão da Situações da Intenção de Registro de Preço`
-   * - :destaque-verde-claro:`10.5`
-     - :destaque-verde-claro:`dataInclusao`
-     - :destaque-verde-claro:`Data/Hora`
-     - :destaque-verde-claro:`Condicional`
-     - :destaque-verde-claro:`Data e hora atualização da Situações da Intenção de Registro de Preço`
-   * - :destaque-verde-claro:`11`
+     - :destaque-verde-claro:`Não`
+     - :destaque-verde-claro:`Data/Hora do cancelamento da IRP.`
+   * - :destaque-verde-claro:`15`
+     - :destaque-verde-claro:`motivoCancelamento`
+     - :destaque-verde-claro:`String`
+     - :destaque-verde-claro:`Não`
+     - :destaque-verde-claro:`Motivo/justificativa para cancelamento da IRP`
+   * - :destaque-verde-claro:`16`
      - :destaque-verde-claro:`objetoIrp`
      - :destaque-verde-claro:`Texto (5120)`
      - :destaque-verde-claro:`Não`
      - :destaque-verde-claro:`Objeto da IRP.`
-   * - :destaque-verde-claro:`12`
+   * - :destaque-verde-claro:`17`
      - :destaque-verde-claro:`informacaoComplementar`
-     - :destaque-verde-claro:`Texto (512)`
+     - :destaque-verde-claro:`Texto (5120)`
      - :destaque-verde-claro:`Não`
      - :destaque-verde-claro:`Informações complementares; Se existir;`
-   * - :destaque-verde-claro:`13`
+   * - :destaque-verde-claro:`18`
      - :destaque-verde-claro:`indicadorPossibilidadeAdesao`
      - :destaque-verde-claro:`Booleano`
      - :destaque-verde-claro:`Não`
      - :destaque-verde-claro:`Indica se a IRP poderá admitir adesão por órgãos ou entidades participantes`
-   * - :destaque-verde-claro:`14`
+   * - :destaque-verde-claro:`19`
      - :destaque-verde-claro:`dataHoraFinalManifestacaoInteresse`
      - :destaque-verde-claro:`Data`
      - :destaque-verde-claro:`Não`
      - :destaque-verde-claro:`Data/Hora Final de Manifestação de Interesse (AAAA-MM-DD)`
-   * - :destaque-verde-claro:`15`
+   * - :destaque-verde-claro:`20`
      - :destaque-verde-claro:`urlPlataformaOrigem`
      - :destaque-verde-claro:`Texto (512)`
      - :destaque-verde-claro:`Não`
      - :destaque-verde-claro:`URL para página/portal do sistema de origem da IRP. Esta url será exibida no Portal PNCP.`
-   * - :destaque-verde-claro:`16`
+   * - :destaque-verde-claro:`21`
      - :destaque-verde-claro:`urlProcessoEletronico`
      - :destaque-verde-claro:`Texto (512)`
      - :destaque-verde-claro:`Não`
      - :destaque-verde-claro:`URL para página do sistema de controle de processos eletrônicos com os dados do processo desta contratação. Esta url será exibida no Portal PNCP.`
-   * - :destaque-verde-claro:`17`
+   * - :destaque-verde-claro:`22`
      - :destaque-verde-claro:`justificativa`
      - :destaque-verde-claro:`Texto (255)`
      - :destaque-verde-claro:`Sim`
