@@ -67,7 +67,7 @@ Dados de Entrada
    * - :destaque-verde-claro:`4`
      - :destaque-verde-claro:`sequencialDocumento`
      - :destaque-verde-claro:`Inteiro`
-     - :destaque-verde-claro:`Sequencial do arquivo/documento na IRP no PNCP.
+     - :destaque-verde-claro:`Sequencial do arquivo/documento na IRP no PNCP.`
 
 
 Dados de Retorno
