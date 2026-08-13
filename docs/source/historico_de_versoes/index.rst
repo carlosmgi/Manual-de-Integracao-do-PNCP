@@ -111,7 +111,7 @@ Data: 11/06/2026
 
 .. note::
 
-   Acesse a versão 2.5 do `Manual de Integração do PNCP    <../../../../pt-br/2.5/>`_
+   Acesse a `versão 2.5 do Manual de Integração do PNCP    <../../../../pt-br/2.5/>`_.
 
 .. Attention::
 
