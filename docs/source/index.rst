@@ -19,6 +19,7 @@ Sumário
    tabelas_de_dominio/index
    usuario/index
    plano_de_contratacao/index
+   irp/index
    contratacao/index
    Fonte_orcamentaria_da_contratacao/index
    ata_de_registro_de_preco/index
@@ -26,5 +27,4 @@ Sumário
    empenho/index
    termo_de_contrato/index
    orgao_entidade/index
-   irp/index
    suporte/index
