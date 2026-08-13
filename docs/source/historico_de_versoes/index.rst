@@ -91,6 +91,9 @@ Versão Atual
 
 Disponível em: `Manual de Integração do PNCP    <../../../../pt-br/latest/>`_
 
+.. note::
+    Acesse a versão mais recente do Manual de Integração do PNCP.
+
 Versão: 2.5
 -----------
 
