@@ -108,7 +108,9 @@ Versão: 2.5
 
 Data: 11/06/2026
 
-Disponível em: `Manual de Integração do PNCP v2.5    <../../../../pt-br/2.5/>`_
+.. note::
+
+   Acesse a `versão 2.5 do Manual de Integração do PNCP    <../../../../pt-br/2.5/>`_.
 
 .. Attention::
 
