@@ -6,7 +6,7 @@ O Histórico de Versões do Manual de Integração do PNCP. tem como objetivo re
 Versão: 2.6 (atual)
 -------------------
 
-Data: xx/xx/2026
+Data: 31/08/2026
 
 .. Attention::
 
