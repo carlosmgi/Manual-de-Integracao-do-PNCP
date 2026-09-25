@@ -308,7 +308,7 @@ Dados de retorno
 
    * - 22
      - valorInicial
-     - Decimal
+     - Decimal (17,4)
      - Valor inicial do contrato/empenho. Precisão de até 4 dígitos decimais; Ex: 100.0001;
 
    * - 23
@@ -318,17 +318,17 @@ Dados de retorno
 
    * - 24
      - valorParcela
-     - Decimal
+     - Decimal (17,4)
      - Valor da parcela. Precisão de até 4 dígitos decimais; Ex: 100.0001;
 
    * - 25
      - valorGlobal
-     - Decimal
+     - Decimal (17,4)
      - Valor global do contrato/empenho. Precisão de até 4 dígitos decimais; Ex: 100.0001;
 
    * - 26
      - valorAcumulado
-     - Decimal
+     - Decimal (17,4)
      - Valor acumulado do contrato/empenho. Precisão de até 4 dígitos decimais; Ex: 100.0001;
 
    * - 27
