@@ -55,11 +55,11 @@ Exemplo de Payload
 		"nomeRazaoSocialFornecedorSubContratado": "",
 		"objetoContrato": "Contrato para exemplificar uso da API de retificação no PNCP.",
 		"informacaoComplementar": "",
-		"valorInicial": 10000.0,
+		"valorInicial": 10000.0000,
 		"numeroParcelas": 2,
-		"valorParcela": 5000.0,
-		"valorGlobal": 10000.0,
-		"valorAcumulado": 10000.0,
+		"valorParcela": 5000.0000,
+		"valorGlobal": 10000.0000,
+		"valorAcumulado": 10000.0000,
 		"dataAssinatura": "2021-07-21",
 		"dataVigenciaInicio": "2021-07-22",
 		"dataVigenciaFim": "2021-07-23",
@@ -214,7 +214,7 @@ Dados de entrada
      - :destaque:`Informações complementares; se existir`
    * - :destaque:`23`
      - :destaque:`valorInicial`
-     - :destaque:`Decimal`
+     - :destaque:`Decimal (17,4)`
      - :destaque:`Não`
      - :destaque:`Valor inicial do contrato/empenho; precisão de 4 dígitos decimais; ex: 100.0000`
    * - :destaque:`24`
@@ -224,17 +224,17 @@ Dados de entrada
      - :destaque:`Número de parcelas`
    * - :destaque:`25`
      - :destaque:`valorParcela`
-     - :destaque:`Decimal`
+     - :destaque:`Decimal (17,4)`
      - :destaque:`Não`
      - :destaque:`Valor da parcela; precisão de 4 dígitos decimais; ex: 100.0000`
    * - :destaque:`26`
      - :destaque:`valorGlobal`
-     - :destaque:`Decimal`
+     - :destaque:`Decimal (17,4)`
      - :destaque:`Não`
      - :destaque:`Valor global do contrato/empenho; precisão de 4 dígitos decimais; ex: 100.0000`
    * - :destaque:`27`
      - :destaque:`valorAcumulado`
-     - :destaque:`Decimal`
+     - :destaque:`Decimal (17,4)`
      - :destaque:`Não`
      - :destaque:`Valor acumulado do contrato/empenho; precisão de 4 dígitos decimais; ex: 100.0000`
    * - :destaque:`28`
