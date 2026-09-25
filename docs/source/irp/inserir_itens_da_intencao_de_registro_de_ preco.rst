@@ -35,7 +35,7 @@ Exemplo de Payload
 				"descricao": "Item do tipo material",
 				"informacaoComplementar": "SUCO DE UVA INTEGRAL 200ml",
 				"unidadeFornecimento": "UN",
-				"valorUnitarioEstimado": 10.5,
+				"valorUnitarioEstimado": 10.5000,
 				"indicadorValorSigiloso": false,
 				"codigoGtin": "7891141029318",
 				"codigoNcmNbs": "2009.69.00",
@@ -130,7 +130,7 @@ Dados de Entrada
      - :destaque-verde-claro:`Unidade de Fornecimento`
    * - :destaque-verde-claro:`1.10`
      - :destaque-verde-claro:`valorUnitarioEstimado`
-     - :destaque-verde-claro:`Decimal`
+     - :destaque-verde-claro:`Decimal (17,4)`
      - :destaque-verde-claro:`Sim`
      - :destaque-verde-claro:`Valor unitário estimado para o item da IRP. Maior ou igual a 0 (zero). Precisão de 4 dígitos decimais; Ex: 100.0000;`
    * - :destaque-verde-claro:`1.11`
