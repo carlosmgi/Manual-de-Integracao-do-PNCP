@@ -43,6 +43,7 @@ Exemplo de Payload
 		"dataEncerramentoProposta": "2021-07-22T17:00:00",
 		"amparoLegalId": "1",
 		"linkSistemaOrigem": "url do sistema de origem para envio de proposta / lance",
+		"codigoUnidadeCompradora": "1",
 		"linkProcessoEletronico": "url para página do sistema de controle de processos eletrônicos com os dados do processo desta contratação",
 		"justificativaPresencial": "justificativa pela escolha da modalidade presencial",
 		"justificativa": "motivo/justificativa para a retificação da contratação"
@@ -204,7 +205,11 @@ Dados de Entrada
      - Texto (512)
      - Não
      - URL para página do sistema de controle de processos eletrônicos com os dados do processo desta contratação. Esta url será exibida no Portal PNCP no detalhamento da Contratação.
-
+   * - 22
+     - codigoUnidadeCompradora
+     - destaque: String
+     - destaque: Não
+     - Código da unidade; A unidade deverá estar cadastrada para o órgão originário da contratação (proprietário da contratação ou alienação de bens)
 
 Códigos de Retorno
 ~~~~~~~~~~~~~~~~~~
