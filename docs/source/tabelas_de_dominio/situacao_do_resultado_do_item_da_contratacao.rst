@@ -7,6 +7,6 @@ O campo ``situacaoCompraItemResultadoId`` é utilizado para controlar o status e
 
 - (código = 2) **Cancelado:** Resultado do item cancelado conforme justificativa.
 
-- (código = 3) Informado cadastro de reserva: texto aqui
+- (código = 3) **Informado cadastro de reserva:** Indica que foi informado cadastro de reserva para a contratação.
 
-- (código = 4) Informado remanescente: texto aqui
+- (código = 4) **Informado remanescente:** Indica que foi informado remanescente relacionado à contratação.
