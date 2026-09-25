@@ -170,19 +170,19 @@ Dados de retorno
      - Unidade de fornecimento
    * - 1.17
      - quantidade
-     - Decimal
+     - Decimal (17,4)
      - Quantidade do item do plano de contratação (maior ou igual a zero). Precisão de até 4 dígitos decimais; Ex: 10.0001;
    * - 1.18
      - valorUnitario
-     - Decimal
+     - Decimal (17,4)
      - Valor unitário do item (maior ou igual a zero). Precisão de até 4 dígitos decimais; Ex: 100.0001;
    * - 1.19
      - valorTotal
-     - Decimal
+     - Decimal (17,4)
      - Valor total do item (maior ou igual a zero). Precisão de até 4 dígitos decimais; Ex: 100.0001;
    * - 1.20
      - valorOrcamentoExercicio
-     - Decimal
+     - Decimal (17,4)
      - Valor orçamentário estimado para o exercício (maior ou igual a zero). Precisão de até 4 dígitos decimais; Ex: 100.0001;
    * - 1.21
      - dataDesejada
