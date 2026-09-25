@@ -138,12 +138,12 @@ Dados de entrada
      - :destaque:`Data/Hora da emissão do empenho`
    * - :destaque:`13`
      - :destaque:`valorTotal`
-     - :destaque:`Decimal`
+     - :destaque:`Decimal (17,4)`
      - :destaque:`Não`
      - :destaque:`Valor total do empenho`
    * - :destaque:`14`
      - :destaque:`valorSubItem`
-     - :destaque:`Decimal`
+     - :destaque:`Decimal (17,4)`
      - :destaque:`Não`
      - :destaque:`Valor do subelemento ou subitem`
    * - :destaque:`15`
