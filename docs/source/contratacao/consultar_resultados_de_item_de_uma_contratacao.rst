@@ -102,11 +102,11 @@ Dados de Retorno
      - Sequencial do resultado do item da contratação no PNCP; Número sequencial gerado no momento que o resultado do item foi inserido no PNCP
    * - 1.3
      - quantidadeHomologada
-     - Decimal
+     - Decimal (17,4)
      - Quantidade do item homologada. Precisão de até 4 dígitos decimais; Ex: 1.0001;
    * - 1.4
      - valorUnitarioHomologado
-     - Decimal
+     - Decimal (17,4)
      - Valor unitário do item homologado. Precisão de até 4 dígitos decimais; Ex: 100.0001;
    * - 1.5
      - percentualDesconto
@@ -258,7 +258,7 @@ Dados de Retorno
      - Time Zone no momento da cotação da moeda estrangeira. Offset no formato 'UTC±[hh][mm]' ou somente 'UTC±[hh]'.
    * - 1.32
      - valorNominalMoedaEstrangeira
-     - Decimal
+     - Decimal (17,4)
      - Valor nominal da moeda nacional (BRL) em relação uma unidade da moeda estrangeira no momento da cotação.
    * - 1.33
      - moedaEstrangeira
