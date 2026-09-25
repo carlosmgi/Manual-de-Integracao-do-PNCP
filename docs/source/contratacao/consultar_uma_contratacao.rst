@@ -174,12 +174,12 @@ Dados de Retorno
 
    * - 19
      - valorTotalEstimado
-     - Decimal
+     - Decimal (17,4)
      - Valor total estimado da Contratação. Precisão de até 4 dígitos decimais; Ex: 100.0001; Obs: Retornará valor zero (0) se atributo orcamentoSigiloso for true e o item não possuir resultado.
 
    * - 20
      - valorTotalHomologado
-     - Decimal
+     - Decimal (17,4)
      - Valor total homologado com base nos resultados incluídos. Precisão de até 4 dígitos decimais; Ex: 100.0001;
 
    * - 21
