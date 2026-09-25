@@ -34,11 +34,11 @@ Exemplo de Payload
 		"tipoBeneficioId": "4",
 		"incentivoProdutivoBasico": false,
 		"descricao": "Item exemplificativo 2",
-		"quantidade": 100,
+		"quantidade": 100.0000,
 		"unidadeMedida": "Unidade",
 		"orcamentoSigiloso": false,
-		"valorUnitarioEstimado": 10.0,
-		"valorTotal": 1000.0,
+		"valorUnitarioEstimado": 10.0000,
+		"valorTotal": 1000.0000,
 		"situacaocompraitemid": "1",
 		"criterioJulgamentoId": "1",
 		"itemCategoriaId": 0,
@@ -130,7 +130,7 @@ Dados de Entrada
      - Descrição para o produto ou serviço;
    * - 9
      - quantidade
-     - Decimal
+     - Decimal (17,4)
      - Sim
      - Quantidade do item da contratação. Precisão de 4 dígitos decimais; Ex: 100.0000;
    * - 10
@@ -140,12 +140,12 @@ Dados de Entrada
      - Unidade de medida do item
    * - 11
      - valorUnitarioEstimado
-     - Decimal
+     - Decimal (17,4)
      - Sim
      - Valor unitário estimado/avaliado. Maior ou igual a 0 (zero). Precisão de 4 dígitos decimais; Ex: 100.0000;
    * - 12
      - valorTotal
-     - Decimal
+     - Decimal (17,4)
      - Sim
      - Valor total do item. Maior ou igual a 0 (zero). Precisão de 4 dígitos decimais; Ex: 100.0000;
    * - 13
