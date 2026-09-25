@@ -24,7 +24,7 @@ Exemplo de Payload
   :linenos:
 
     {
-      " tipoInstrumentoCobrancaId ": 1,
+      "tipoInstrumentoCobrancaId": 1,
       "numeroInstrumentoCobranca": "01",
       "chaveNFe": "string",
       "dataEmissaoDocumento": "2025-01-10",
