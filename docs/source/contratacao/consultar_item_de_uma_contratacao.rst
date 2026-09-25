@@ -116,7 +116,7 @@ Dados de Retorno
      - Descrição para o produto ou serviço;
    * - 8
      - quantidade
-     - Decimal
+     - Decimal (17,4)
      - Quantidade do item. Precisão de até 4 dígitos decimais; Ex: 1.0001;
    * - 9
      - unidadeMedida
@@ -124,11 +124,11 @@ Dados de Retorno
      - Unidade de medida
    * - 10
      - valorUnitarioEstimado
-     - Decimal
+     - Decimal (17,4)
      - Valor unitário estimado/avaliado. Precisão de até 4 dígitos decimais; Ex: 100.0001; Obs: Retornará valor zero (0) se atributo orcamentoSigiloso for true e o item não possuir resultado.
    * - 11
      - valorTotal
-     - Decimal
+     - Decimal (17,4)
      - Valor total. Precisão de até 4 dígitos decimais; Ex: 100.0001; Obs: Retornará valor zero (0) se atributo orcamentoSigiloso for true e o item não possuir resultado.
    * - 12
      - situacaoCompraItemId
