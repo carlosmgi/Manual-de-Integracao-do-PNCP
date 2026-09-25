@@ -35,7 +35,7 @@ Exemplo de Payload
     			"descricao": "string",
     			"informacaoComplementar": "string",
     			"unidadeFornecimento": "string",
-    			"valorUnitarioEstimado": 0,
+    			"valorUnitarioEstimado": 5.0000,
     			"indicadorValorSigiloso": true,
     			"codigoGtin": "string",
     			"codigoNcmNbs": "string",
@@ -131,7 +131,7 @@ Dados de Entrada
      - :destaque-verde-claro:`Unidade de Fornecimento`
    * - :destaque-verde-claro:`1.10`
      - :destaque-verde-claro:`valorUnitarioEstimado`
-     - :destaque-verde-claro:`Decimal`
+     - :destaque-verde-claro:`Decimal (17,4)`
      - :destaque-verde-claro:`Sim`
      - :destaque-verde-claro:`Valor unitário estimado para o item da IRP. Maior ou igual a 0 (zero). Precisão de 4 dígitos decimais; Ex: 100.0000;`
    * - :destaque-verde-claro:`1.11`
