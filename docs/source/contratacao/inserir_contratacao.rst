@@ -355,7 +355,7 @@ Dados de Entrada
 
    * - 17.6
      - quantidade
-     - Decimal
+     - Decimal (17,4)
      - Sim
      - Quantidade do item da contratação. Precisão de 4 dígitos decimais; Ex: 100.0000;
 
@@ -367,13 +367,13 @@ Dados de Entrada
 
    * - 17.8
      - valorUnitarioEstimado
-     - Decimal
+     - Decimal (17,4)
      - Sim
      - Valor unitário estimado para o item da contratação. Maior ou igual a 0 (zero). Precisão de 4 dígitos decimais; Ex: 100.0000;
 
    * - 17.9
      - valorTotal
-     - Decimal
+     - Decimal (17,4)
      - Sim
      - Valor total para contratação tradicional. Maior ou igual a 0 (zero). Precisão de 4 dígitos decimais; Ex: 100.0000;
 
