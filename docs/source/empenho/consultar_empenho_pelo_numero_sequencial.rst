@@ -133,11 +133,11 @@ Dados de retorno
      - :destaque:`Data/hora da emissão do empenho`
    * - :destaque:`15`
      - :destaque:`valorTotal`
-     - :destaque:`Decimal`
+     - :destaque:`Decimal (17,4)`
      - :destaque:`Valor total do empenho`
    * - :destaque:`16`
      - :destaque:`valorSubItem`
-     - :destaque:`Decimal`
+     - :destaque:`Decimal (17,4)`
      - :destaque:`Valor do subelemento ou subitem`
    * - :destaque:`17`
      - :destaque:`codigoEmenda`
