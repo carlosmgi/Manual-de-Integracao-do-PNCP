@@ -213,11 +213,11 @@ Dados de Entrada
      - :destaque:`Boleano`
      - :destaque:`Não`
      - :destaque:`Marcador de emenda parlamentar na Contratação.`
-   * - :destaque:`23`
-     - :destaque:`codigoUnidadeCompradora`
-     - :destaque:`String`
-     - :destaque:`Não`
-     - :destaque:`Código da unidade; A unidade deverá estar cadastrada para o órgão originário da contratação (proprietário da contratação ou alienação de bens)`
+   * - 3
+     - codigoUnidadeCompradora
+     - String
+     - Não
+     - Código da unidade; A unidade deverá estar cadastrada para o órgão originário da contratação (proprietário da contratação ou alienação de bens)
 
 
 Códigos de Retorno
