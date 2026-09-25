@@ -47,6 +47,7 @@ Exemplo de Payload
 		  "linkProcessoEletronico": "url para página do sistema de controle de processos eletrônicos com os dados do processo desta contratação",
 		  "justificativaPresencial": "justificativa pela escolha da modalidade presencial",
 		  "emendaParlamentar": false,
+		  "codigoUnidadeCompradora": "927049",
 		  "justificativa": "motivo/justificativa para a retificação da contratação"
 	}
 
@@ -212,6 +213,12 @@ Dados de Entrada
      - :destaque:`Boleano`
      - :destaque:`Não`
      - :destaque:`Marcador de emenda parlamentar na Contratação.`
+   * - :destaque:`23`
+     - :destaque:`codigoUnidadeCompradora`
+     - :destaque:`String`
+     - :destaque:`Não`
+     - :destaque:`Código da unidade; A unidade deverá estar cadastrada para o órgão originário da contratação (proprietário da contratação ou alienação de bens)`
+
 
 Códigos de Retorno
 ~~~~~~~~~~~~~~~~~~
