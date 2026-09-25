@@ -39,8 +39,8 @@ Exemplo de Payload
 				"numeroPlanoInterno": "string",
 				"codigoNaturezaDespesa": "string",
 				"dataEmissaoEmpenho": "2026-01-01T12:00:00",
-				"valorTotal": 1000.0,
-				"valorSubItem": 1000.0,
+				"valorTotal": 1000.0000,
+				"valorSubItem": 1000.0000,
 				"codigoEmenda": "string"
 			}
 		]
@@ -133,12 +133,12 @@ Dados de entrada
      - :destaque:`Data/Hora da emissão do empenho`
    * - :destaque:`4.8`
      - :destaque:`valorTotal`
-     - :destaque:`Decimal`
+     - :destaque:`Decimal (17,4)`
      - :destaque:`Sim`
      - :destaque:`Valor total do empenho`
    * - :destaque:`4.9`
      - :destaque:`valorSubItem`
-     - :destaque:`Decimal`
+     - :destaque:`Decimal (17,4)`
      - :destaque:`Não`
      - :destaque:`Valor do subelemento`
    * - :destaque:`4.10`
