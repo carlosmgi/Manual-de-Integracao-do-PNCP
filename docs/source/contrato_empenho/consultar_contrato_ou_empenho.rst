@@ -248,7 +248,7 @@ Dados de Retorno
      - Nome ou razão social do fornecedor subcontratado; Somente em caso de subcontratação;
    * - 22
      - valorInicial
-     - Decimal
+     - Decimal (17,4)
      - Valor inicial do contrato/empenho. Precisão de até 4 dígitos decimais; Ex: 100.0001;
    * - 23
      - numeroParcelas
@@ -256,15 +256,15 @@ Dados de Retorno
      - Número de parcelas
    * - 24
      - valorParcela
-     - Decimal
+     - Decimal (17,4)
      - Valor da parcela
    * - 25
      - valorGlobal
-     - Decimal
+     - Decimal (17,4)
      - Valor global do contrato
    * - 26
      - valorAcumulado
-     - Decimal
+     - Decimal (17,4)
      - Valor acumulado
    * - 27
      - dataAssinatura
