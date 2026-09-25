@@ -129,7 +129,7 @@ Dados de Retorno
      - :destaque-verde-claro:`Unidade de Fornecimento`
    * - :destaque-verde-claro:`12`
      - :destaque-verde-claro:`valorUnitarioEstimado`
-     - :destaque-verde-claro:`Decimal`
+     - :destaque-verde-claro:`Decimal (17,4)`
      - :destaque-verde-claro:`Valor unitário estimado para o item da IRP. Maior ou igual a 0 (zero). Precisão de 4 dígitos decimais; Ex: 100.0000;`
    * - :destaque-verde-claro:`13`
      - :destaque-verde-claro:`indicadorValorSigiloso`
