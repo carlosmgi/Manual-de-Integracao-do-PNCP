@@ -51,11 +51,11 @@ Exemplo de Payload
     	"nomeRazaoSocialFornecedor": "Fornecedor do Teste I",
     	"objetoContrato": "Contrato para exemplificar uso da API PNCP",
     	"informacaoComplementar": "",
-    	"valorInicial": 10000.0,
+    	"valorInicial": 10000.0000,
     	"numeroParcelas": 2,
-    	"valorParcela": 5000.0,
-    	"valorGlobal": 10000.0,
-    	"valorAcumulado": 10000.0,
+    	"valorParcela": 5000.0000,
+    	"valorGlobal": 10000.0000,
+    	"valorAcumulado": 10000.0000,
     	"dataAssinatura": "2021-07-27",
     	"dataVigenciaInicio": "2021-07-28",
     	"dataVigenciaFim": "2021-07-29",
@@ -201,7 +201,7 @@ Dados de entrada
      - Informações complementares, se existirem
    * - 22
      - valorInicial
-     - Decimal
+     - Decimal (17,4)
      - Sim
      - Valor inicial do contrato/empenho (precisão de 4 dígitos decimais; ex: 100.0000)
    * - 23
@@ -211,17 +211,17 @@ Dados de entrada
      - Número de parcelas
    * - 24
      - valorParcela
-     - Decimal
+     - Decimal (17,4)
      - Não
      - Valor da parcela (precisão de 4 dígitos decimais; ex: 100.0000)
    * - 25
      - valorGlobal
-     - Decimal
+     - Decimal (17,4)
      - Sim
      - Valor global do contrato/empenho (precisão de 4 dígitos decimais; ex: 100.0000)
    * - 26
      - valorAcumulado
-     - Decimal
+     - Decimal (17,4)
      - Não
      - Valor acumulado do contrato/empenho (precisão de 4 dígitos decimais; ex: 100.0000)
    * - 27
