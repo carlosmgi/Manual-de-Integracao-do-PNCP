@@ -30,9 +30,9 @@ Exemplo de Payload
   :emphasize-lines: 25-27
 
 	{
-		"quantidadeHomologada": 1,
-		"valorUnitarioHomologado": 100.0,
-		"valorTotalHomologado": 100.0,
+		"quantidadeHomologada": 1.0000,
+		"valorUnitarioHomologado": 100.0000,
+		"valorTotalHomologado": 100.0000,
 		"percentualDesconto": 0,
 		"tipoPessoaId": "PJ",
 		"niFornecedor": "10000000000010",
@@ -52,7 +52,7 @@ Exemplo de Payload
 		"simboloMoedaEstrangeira": "USD",
 		"dataCotacaoMoedaEstrangeira": "2024-07-10T21:17:02",
 		"timezoneCotacaoMoedaEstrangeira": "UTC-0400",
-		"valorNominalMoedaEstrangeira": 0.24,
+		"valorNominalMoedaEstrangeira": 0.2400,
   		"codigoIbgeMunicipio": "5300108",
    		"localidadeExterior": "Miami - Estados Unidos da América",
    		"reservaRemanescenteId": 2
@@ -112,22 +112,22 @@ Dados de Entrada
      - Número do item na contratação
    * - 5
      - quantidadeHomologada
-     - Decimal
+     - Decimal (17,4)
      - Sim
      - Quantidade do item homologada. Precisão de 4 dígitos decimais; Ex: 1.0000;
    * - 6
      - valorUnitarioHomologado
-     - Decimal
+     - Decimal (17,4)
      - Sim
      - Valor unitário do item homologado. Maior ou igual a 0 (zero). Precisão de 4 dígitos decimais; Ex: 100.0000;
    * - 7
      - valorTotalHomologado
-     - Decimal
+     - Decimal (17,4)
      - Sim
      - Valor total do item homologado. Maior ou igual a 0 (zero). Precisão de 4 dígitos decimais; Ex: 1000.0000;
    * - :destaque-verde-claro:`8`
      - :destaque-verde-claro:`percentualDesconto`
-     - :destaque-verde-claro:`Decimal`
+     - :destaque-verde-claro:`Decimal (17,4)`
      - :destaque-verde-claro:`Sim`
      - :destaque-verde-claro:`Percentual de desconto aplicado quando o critério de julgamento for Maior Desconto. Precisão de 4 dígitos decimais; Ex: 10.0000;`
    * - 9
@@ -234,7 +234,7 @@ Dados de Entrada
          - **'UTC+0930'** é nove horas e trinta minutos adiantado em relação ao UTC (horário de Adelaide, Austrália).
    * - 27
      - valorNominalMoedaEstrangeira
-     - Decimal
+     - Decimal (17,4)
      - Não
      - Valor nominal da moeda nacional (BRL) em relação uma unidade da moeda estrangeira no momento da cotação. Ex: 1 USD = 5,450 BRL, então enviar 5.450
    * - :destaque-azul-claro:`28`
