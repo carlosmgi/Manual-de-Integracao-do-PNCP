@@ -30,9 +30,9 @@ Exemplo de Payload
   :emphasize-lines: 29-31
 
 	{
-		"quantidadeHomologada": 1,
-		"valorUnitarioHomologado": 100.0,
-		"valorTotalHomologado": 100.0,
+		"quantidadeHomologada": 1.0000,
+		"valorUnitarioHomologado": 100.0000,
+		"valorTotalHomologado": 100.0000,
 		"percentualDesconto": 0,
 		"tipoPessoaId": "PJ",
 		"niFornecedor": "10000000000010",
@@ -128,19 +128,19 @@ Dados de Entrada
 
    * - 6
      - quantidadeHomologada
-     - Decimal
+     - Decimal (17,4)
      - Sim
      - Quantidade do item homologada. Precisão de 4 dígitos decimais; Ex: 1.0000;
 
    * - 7
      - valorUnitarioHomologado
-     - Decimal
+     - Decimal (17,4)
      - Sim
      - Valor unitário do item homologado. Maior ou igual a 0 (zero). Precisão de 4 dígitos decimais; Ex: 100.0000;
 
    * - 8
      - valorTotalHomologado
-     - Decimal
+     - Decimal (17,4)
      - Sim
      - Valor total do item homologado. Maior ou igual a 0 (zero). Precisão de 4 dígitos decimais; Ex: 1000.0000;
 
@@ -290,7 +290,7 @@ Dados de Entrada
 
    * - 31
      - valorNominalMoedaEstrangeira
-     - Decimal
+     - Decimal (17,4)
      - Não
      - Valor nominal da moeda nacional (BRL) em relação uma unidade da moeda estrangeira no momento da cotação. Ex: 1 USD = 5,450 BRL, então enviar 5.450
 
