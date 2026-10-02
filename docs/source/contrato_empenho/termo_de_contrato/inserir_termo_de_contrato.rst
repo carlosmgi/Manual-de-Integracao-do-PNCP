@@ -5,7 +5,7 @@ Serviço que permite inserir um termo de contrato a um contrato. O termo pode se
 
 .. Note::
 
-   A inclusão de termo aditivo não atualiza automaticamente os campos de vigência do contrato. Quando houver alteração de vigência, a plataforma integradora deverá também atualizar os respectivos campos no cadastro do contrato, utilizando o serviço descrito no item 13.3 — Retificar Parcialmente um Contrato/Empenho, com a justificativa da alteração.
+   A inclusão de termo aditivo não atualiza automaticamente os campos de vigência do contrato. Quando houver alteração de vigência, a plataforma integradora deverá também atualizar os respectivos campos no cadastro do contrato, utilizando o serviço descrito no item 13.3 - Retificar Parcialmente um Contrato/Empenho, com a justificativa da alteração.
 
 
 Detalhes da Requisição
