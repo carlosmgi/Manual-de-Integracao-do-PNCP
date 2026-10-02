@@ -12,3 +12,5 @@ O campo ``tipoBeneficioId`` é utilizado para identificar a aplicação dos bene
 - (código = 4) **Sem benefício**
 
 - (código = 5) **Não se aplica**
+
+- (código = 6) **Empate ficto**
