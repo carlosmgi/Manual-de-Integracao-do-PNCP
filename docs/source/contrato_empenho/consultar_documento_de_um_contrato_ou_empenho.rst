@@ -72,6 +72,7 @@ Dados de Entrada
      - Sim
      - Sequencial do documento no PNCP; Número sequencial gerado no momento que o documento foi inserido no PNCP;
 
+
 Dados de Retorno
 ~~~~~~~~~~~~~~~~
 
@@ -80,14 +81,14 @@ Dados de Retorno
    :widths: auto
    :header-rows: 1
 
-    * - Id
-      - Campo
-      - Tipo
-      - Descrição
-    * - 1
-      - string
-      - String
-      - string do arquivo
+   * - Id
+     - Campo
+     - Tipo
+     - Descrição
+   * - 1
+     - string
+     - string
+     - string do arquivo
 
 Códigos de Retorno
 ~~~~~~~~~~~~~~~~~~
