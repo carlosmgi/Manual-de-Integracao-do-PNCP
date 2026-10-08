@@ -73,6 +73,7 @@ Benefícios das Tabelas de Domínio e Regras de Conformidade no PNCP:
   consultar_conformidade_entre_modalidade_de_contratacao_e_fonte_orcamentaria
   consultar_porte_de_empresa_por_codigo
   consultar_porte_de_empresa
+  consultar_normativo_base
 
 
 
