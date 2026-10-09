@@ -3,6 +3,10 @@ Consultar uma Contratação
 
 Serviço que permite consultar uma contratação. 
 
+.. note::
+
+	Consulta foi movida para a API de Consulta, disponível em `https://pncp.gov.br/api/consulta/swagger-ui/index.html <https://pncp.gov.br/api/consulta/swagger-ui/index.html>`_
+
 Detalhes da Requisição
 ~~~~~~~~~~~~~~~~~~~~~~
 
