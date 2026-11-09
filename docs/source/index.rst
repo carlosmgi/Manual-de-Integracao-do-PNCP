@@ -7,6 +7,7 @@ Este documento apresenta as orientações técnicas e os pré-requisitos necess�
 	:width: 100%
 	:align: center
 	:alt: Capa Manual de Integração
+\
 
 Sumário
 -------
