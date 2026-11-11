@@ -3,7 +3,7 @@ Manual de Integração do PNCP
 
 Este documento apresenta as orientações técnicas e os pré-requisitos necessários para integrar sistemas externos às APIs REST do Portal Nacional de Contratações Públicas (PNCP). O objetivo é viabilizar o envio, a consulta e a atualização automatizada de dados de contratações, permitindo que órgãos públicos e sistemas parceiros operem em conformidade com as exigências da Lei nº 14.133/2021.
 
-.. figure:: _static/img/capa_manual_Integracao_pncp.png
+.. figure:: _static/img/capa_manual_Integracao_pncp.jpg
 	:width: 50%
 	:align: center
 	:alt: Capa Manual de Integração
