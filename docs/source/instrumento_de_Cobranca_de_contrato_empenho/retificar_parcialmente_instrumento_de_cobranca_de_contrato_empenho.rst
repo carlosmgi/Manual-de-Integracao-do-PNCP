@@ -14,7 +14,7 @@ Detalhes da Requisição
    * - Endpoint
      - Método HTTP
    * - /v1/orgaos/{cnpj}/contra-tos/{ano}/{sequencialContra-to}/instrumentocobran-ca/{sequencialInstrumentoCobranca}
-     - PUT	 
+     - PATCH	 
 
 Exemplo de Payload
 ~~~~~~~~~~~~~~~~~~
@@ -38,7 +38,7 @@ Exemplo Requisição (cURL)
 .. code-block:: bash
   :linenos:
 
-    curl -k -X  PUT --header "Authorization: Bearer access_token" "${BASE_URL}/v1/orgaos/10000000000003/contratos/2025/1/instrumentocobranca/1" -H "accept: */*" -H "Content-Type: application/json" --data "@/home/objeto.json"
+    curl -k -X  PATCH --header "Authorization: Bearer access_token" "${BASE_URL}/v1/orgaos/10000000000003/contratos/2025/1/instrumentocobranca/1" -H "accept: */*" -H "Content-Type: application/json" --data "@/home/objeto.json"
 
 
 Dados de entrada
