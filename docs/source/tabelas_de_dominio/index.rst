@@ -75,6 +75,11 @@ Benefícios das Tabelas de Domínio e Regras de Conformidade no PNCP:
   consultar_porte_de_empresa
   consultar_normativo_base
   consultar_normativo_base_por_codigo
+  normativo_base
+  porte_da_empresa
+  categoria_do_item_do_plano_de_contratacoes
+  identificador_de_usuario
+
 
 
 
